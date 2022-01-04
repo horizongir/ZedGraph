@@ -1,0 +1,1347 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class PieItem
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class PieItem
+   ">
+    <meta name="generator" content="docfx 2.56.7.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="ZedGraph.PieItem">
+  
+  
+  <h1 id="ZedGraph_PieItem" data-uid="ZedGraph.PieItem" class="text-break">Class PieItem
+  </h1>
+  <div class="markdown level0 summary"><p>A class representing a pie chart object comprised of one or more
+<a class="xref" href="ZedGraph.PieItem.html">PieItem</a>s.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
+    <div class="level1"><a class="xref" href="ZedGraph.CurveItem.html">CurveItem</a></div>
+    <div class="level2"><span class="xref">PieItem</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.icloneable">ICloneable</a></div>
+    <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.runtime.serialization.iserializable">ISerializable</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="ZedGraph.CurveItem.html#ZedGraph_CurveItem__isX2Axis">CurveItem._isX2Axis</a>
+    </div>
+    <div>
+      <a class="xref" href="ZedGraph.CurveItem.html#ZedGraph_CurveItem__isY2Axis">CurveItem._isY2Axis</a>
+    </div>
+    <div>
+      <a class="xref" href="ZedGraph.CurveItem.html#ZedGraph_CurveItem__yAxisIndex">CurveItem._yAxisIndex</a>
+    </div>
+    <div>
+      <a class="xref" href="ZedGraph.CurveItem.html#ZedGraph_CurveItem__isVisible">CurveItem._isVisible</a>
+    </div>
+    <div>
+      <a class="xref" href="ZedGraph.CurveItem.html#ZedGraph_CurveItem__isSelected">CurveItem._isSelected</a>
+    </div>
+    <div>
+      <a class="xref" href="ZedGraph.CurveItem.html#ZedGraph_CurveItem__isSelectable">CurveItem._isSelectable</a>
+    </div>
+    <div>
+      <a class="xref" href="ZedGraph.CurveItem.html#ZedGraph_CurveItem__isOverrideOrdinal">CurveItem._isOverrideOrdinal</a>
+    </div>
+    <div>
+      <a class="xref" href="ZedGraph.CurveItem.html#ZedGraph_CurveItem__points">CurveItem._points</a>
+    </div>
+    <div>
+      <a class="xref" href="ZedGraph.CurveItem.html#ZedGraph_CurveItem_Tag">CurveItem.Tag</a>
+    </div>
+    <div>
+      <a class="xref" href="ZedGraph.CurveItem.html#ZedGraph_CurveItem_schema">CurveItem.schema</a>
+    </div>
+    <div>
+      <a class="xref" href="ZedGraph.CurveItem.html#ZedGraph_CurveItem_Label">CurveItem.Label</a>
+    </div>
+    <div>
+      <a class="xref" href="ZedGraph.CurveItem.html#ZedGraph_CurveItem_Color">CurveItem.Color</a>
+    </div>
+    <div>
+      <a class="xref" href="ZedGraph.CurveItem.html#ZedGraph_CurveItem_IsVisible">CurveItem.IsVisible</a>
+    </div>
+    <div>
+      <a class="xref" href="ZedGraph.CurveItem.html#ZedGraph_CurveItem_IsSelected">CurveItem.IsSelected</a>
+    </div>
+    <div>
+      <a class="xref" href="ZedGraph.CurveItem.html#ZedGraph_CurveItem_IsSelectable">CurveItem.IsSelectable</a>
+    </div>
+    <div>
+      <a class="xref" href="ZedGraph.CurveItem.html#ZedGraph_CurveItem_IsOverrideOrdinal">CurveItem.IsOverrideOrdinal</a>
+    </div>
+    <div>
+      <a class="xref" href="ZedGraph.CurveItem.html#ZedGraph_CurveItem_IsX2Axis">CurveItem.IsX2Axis</a>
+    </div>
+    <div>
+      <a class="xref" href="ZedGraph.CurveItem.html#ZedGraph_CurveItem_IsY2Axis">CurveItem.IsY2Axis</a>
+    </div>
+    <div>
+      <a class="xref" href="ZedGraph.CurveItem.html#ZedGraph_CurveItem_YAxisIndex">CurveItem.YAxisIndex</a>
+    </div>
+    <div>
+      <a class="xref" href="ZedGraph.CurveItem.html#ZedGraph_CurveItem_IsBar">CurveItem.IsBar</a>
+    </div>
+    <div>
+      <a class="xref" href="ZedGraph.CurveItem.html#ZedGraph_CurveItem_IsPie">CurveItem.IsPie</a>
+    </div>
+    <div>
+      <a class="xref" href="ZedGraph.CurveItem.html#ZedGraph_CurveItem_IsLine">CurveItem.IsLine</a>
+    </div>
+    <div>
+      <a class="xref" href="ZedGraph.CurveItem.html#ZedGraph_CurveItem_NPts">CurveItem.NPts</a>
+    </div>
+    <div>
+      <a class="xref" href="ZedGraph.CurveItem.html#ZedGraph_CurveItem_Points">CurveItem.Points</a>
+    </div>
+    <div>
+      <a class="xref" href="ZedGraph.CurveItem.html#ZedGraph_CurveItem_Item_System_Int32_">CurveItem.Item[Int32]</a>
+    </div>
+    <div>
+      <a class="xref" href="ZedGraph.CurveItem.html#ZedGraph_CurveItem_Link">CurveItem.Link</a>
+    </div>
+    <div>
+      <a class="xref" href="ZedGraph.CurveItem.html#ZedGraph_CurveItem_AddPoint_System_Double_System_Double_">CurveItem.AddPoint(Double, Double)</a>
+    </div>
+    <div>
+      <a class="xref" href="ZedGraph.CurveItem.html#ZedGraph_CurveItem_AddPoint_ZedGraph_PointPair_">CurveItem.AddPoint(PointPair)</a>
+    </div>
+    <div>
+      <a class="xref" href="ZedGraph.CurveItem.html#ZedGraph_CurveItem_Clear">CurveItem.Clear()</a>
+    </div>
+    <div>
+      <a class="xref" href="ZedGraph.CurveItem.html#ZedGraph_CurveItem_RemovePoint_System_Int32_">CurveItem.RemovePoint(Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="ZedGraph.CurveItem.html#ZedGraph_CurveItem_GetXAxis_ZedGraph_GraphPane_">CurveItem.GetXAxis(GraphPane)</a>
+    </div>
+    <div>
+      <a class="xref" href="ZedGraph.CurveItem.html#ZedGraph_CurveItem_GetYAxis_ZedGraph_GraphPane_">CurveItem.GetYAxis(GraphPane)</a>
+    </div>
+    <div>
+      <a class="xref" href="ZedGraph.CurveItem.html#ZedGraph_CurveItem_GetYAxisIndex_ZedGraph_GraphPane_">CurveItem.GetYAxisIndex(GraphPane)</a>
+    </div>
+    <div>
+      <a class="xref" href="ZedGraph.CurveItem.html#ZedGraph_CurveItem_MakeUnique">CurveItem.MakeUnique()</a>
+    </div>
+    <div>
+      <a class="xref" href="ZedGraph.CurveItem.html#ZedGraph_CurveItem_MakeUnique_ZedGraph_ColorSymbolRotator_">CurveItem.MakeUnique(ColorSymbolRotator)</a>
+    </div>
+    <div>
+      <a class="xref" href="ZedGraph.CurveItem.html#ZedGraph_CurveItem_GetRange_System_Double__System_Double__System_Double__System_Double__System_Boolean_System_Boolean_ZedGraph_GraphPane_">CurveItem.GetRange(Double, Double, Double, Double, Boolean, Boolean, GraphPane)</a>
+    </div>
+    <div>
+      <a class="xref" href="ZedGraph.CurveItem.html#ZedGraph_CurveItem_BaseAxis_ZedGraph_GraphPane_">CurveItem.BaseAxis(GraphPane)</a>
+    </div>
+    <div>
+      <a class="xref" href="ZedGraph.CurveItem.html#ZedGraph_CurveItem_ValueAxis_ZedGraph_GraphPane_">CurveItem.ValueAxis(GraphPane)</a>
+    </div>
+    <div>
+      <a class="xref" href="ZedGraph.CurveItem.html#ZedGraph_CurveItem_GetBarWidth_ZedGraph_GraphPane_">CurveItem.GetBarWidth(GraphPane)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#System_Object_Equals_System_Object_">Object.Equals(Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#System_Object_Equals_System_Object_System_Object_">Object.Equals(Object, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gethashcode#System_Object_GetHashCode">Object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gettype#System_Object_GetType">Object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.memberwiseclone#System_Object_MemberwiseClone">Object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.referenceequals#System_Object_ReferenceEquals_System_Object_System_Object_">Object.ReferenceEquals(Object, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.tostring#System_Object_ToString">Object.ToString()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="ZedGraph.html">ZedGraph</a></h6>
+  <h6><strong>Assembly</strong>: ZedGraph.dll</h6>
+  <h5 id="ZedGraph_PieItem_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Serializable]
+public class PieItem : CurveItem, ICloneable, ISerializable</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_PieItem__ctor_System_Double_System_Drawing_Color_System_Double_System_String_.md&amp;value=---%0Auid%3A%20ZedGraph.PieItem.%23ctor(System.Double%2CSystem.Drawing.Color%2CSystem.Double%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/PieItem.cs/#L416">View Source</a>
+  </span>
+  <a id="ZedGraph_PieItem__ctor_" data-uid="ZedGraph.PieItem.#ctor*"></a>
+  <h4 id="ZedGraph_PieItem__ctor_System_Double_System_Drawing_Color_System_Double_System_String_" data-uid="ZedGraph.PieItem.#ctor(System.Double,System.Drawing.Color,System.Double,System.String)">PieItem(Double, Color, Double, String)</h4>
+  <div class="markdown level1 summary"><p>Create a new <a class="xref" href="ZedGraph.PieItem.html">PieItem</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PieItem(double pieValue, Color color, double displacement, string label)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.double">Double</a></td>
+        <td><span class="parametername">pieValue</span></td>
+        <td><p>The value associated with this <a class="xref" href="ZedGraph.PieItem.html">PieItem</a> instance.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.drawing.color">Color</a></td>
+        <td><span class="parametername">color</span></td>
+        <td><p>The display color for this <a class="xref" href="ZedGraph.PieItem.html">PieItem</a> instance.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.double">Double</a></td>
+        <td><span class="parametername">displacement</span></td>
+        <td><p>The amount this <a class="xref" href="ZedGraph.PieItem.html">PieItem</a>  instance will be
+displaced from the center point.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">label</span></td>
+        <td><p>Text label for this <a class="xref" href="ZedGraph.PieItem.html">PieItem</a> instance.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_PieItem__ctor_System_Double_System_Drawing_Color_System_Drawing_Color_System_Single_System_Double_System_String_.md&amp;value=---%0Auid%3A%20ZedGraph.PieItem.%23ctor(System.Double%2CSystem.Drawing.Color%2CSystem.Drawing.Color%2CSystem.Single%2CSystem.Double%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/PieItem.cs/#L399">View Source</a>
+  </span>
+  <a id="ZedGraph_PieItem__ctor_" data-uid="ZedGraph.PieItem.#ctor*"></a>
+  <h4 id="ZedGraph_PieItem__ctor_System_Double_System_Drawing_Color_System_Drawing_Color_System_Single_System_Double_System_String_" data-uid="ZedGraph.PieItem.#ctor(System.Double,System.Drawing.Color,System.Drawing.Color,System.Single,System.Double,System.String)">PieItem(Double, Color, Color, Single, Double, String)</h4>
+  <div class="markdown level1 summary"><p>Create a new <a class="xref" href="ZedGraph.PieItem.html">PieItem</a>, providing a gradient fill for the pie color.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PieItem(double pieValue, Color color1, Color color2, float fillAngle, double displacement, string label)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.double">Double</a></td>
+        <td><span class="parametername">pieValue</span></td>
+        <td><p>The value associated with this <a class="xref" href="ZedGraph.PieItem.html">PieItem</a> instance.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.drawing.color">Color</a></td>
+        <td><span class="parametername">color1</span></td>
+        <td><p>The starting display color for the gradient <a class="xref" href="ZedGraph.PieItem.html#ZedGraph_PieItem_Fill">Fill</a> for this
+<a class="xref" href="ZedGraph.PieItem.html">PieItem</a> instance.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.drawing.color">Color</a></td>
+        <td><span class="parametername">color2</span></td>
+        <td><p>The ending display color for the gradient <a class="xref" href="ZedGraph.PieItem.html#ZedGraph_PieItem_Fill">Fill</a> for this
+<a class="xref" href="ZedGraph.PieItem.html">PieItem</a> instance.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td><span class="parametername">fillAngle</span></td>
+        <td><p>The angle for the gradient <a class="xref" href="ZedGraph.PieItem.html#ZedGraph_PieItem_Fill">Fill</a>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.double">Double</a></td>
+        <td><span class="parametername">displacement</span></td>
+        <td><p>The amount this <a class="xref" href="ZedGraph.PieItem.html">PieItem</a>  instance will be
+displaced from the center point.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">label</span></td>
+        <td><p>Text label for this <a class="xref" href="ZedGraph.PieItem.html">PieItem</a> instance.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_PieItem__ctor_System_Double_System_String_.md&amp;value=---%0Auid%3A%20ZedGraph.PieItem.%23ctor(System.Double%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/PieItem.cs/#L436">View Source</a>
+  </span>
+  <a id="ZedGraph_PieItem__ctor_" data-uid="ZedGraph.PieItem.#ctor*"></a>
+  <h4 id="ZedGraph_PieItem__ctor_System_Double_System_String_" data-uid="ZedGraph.PieItem.#ctor(System.Double,System.String)">PieItem(Double, String)</h4>
+  <div class="markdown level1 summary"><p>Create a  new <a class="xref" href="ZedGraph.PieItem.html">PieItem</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PieItem(double pieValue, string label)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.double">Double</a></td>
+        <td><span class="parametername">pieValue</span></td>
+        <td><p>The value associated with this <a class="xref" href="ZedGraph.PieItem.html">PieItem</a> instance.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">label</span></td>
+        <td><p>Text label for this <a class="xref" href="ZedGraph.PieItem.html">PieItem</a> instance</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_PieItem__ctor_System_Runtime_Serialization_SerializationInfo_System_Runtime_Serialization_StreamingContext_.md&amp;value=---%0Auid%3A%20ZedGraph.PieItem.%23ctor(System.Runtime.Serialization.SerializationInfo%2CSystem.Runtime.Serialization.StreamingContext)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/PieItem.cs/#L494">View Source</a>
+  </span>
+  <a id="ZedGraph_PieItem__ctor_" data-uid="ZedGraph.PieItem.#ctor*"></a>
+  <h4 id="ZedGraph_PieItem__ctor_System_Runtime_Serialization_SerializationInfo_System_Runtime_Serialization_StreamingContext_" data-uid="ZedGraph.PieItem.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">PieItem(SerializationInfo, StreamingContext)</h4>
+  <div class="markdown level1 summary"><p>Constructor for deserializing objects</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected PieItem(SerializationInfo info, StreamingContext context)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.runtime.serialization.serializationinfo">SerializationInfo</a></td>
+        <td><span class="parametername">info</span></td>
+        <td><p>A <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.runtime.serialization.serializationinfo">SerializationInfo</a> instance that defines the serialized data</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.runtime.serialization.streamingcontext">StreamingContext</a></td>
+        <td><span class="parametername">context</span></td>
+        <td><p>A <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.runtime.serialization.streamingcontext">StreamingContext</a> instance that contains the serialized data</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_PieItem__ctor_ZedGraph_PieItem_.md&amp;value=---%0Auid%3A%20ZedGraph.PieItem.%23ctor(ZedGraph.PieItem)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/PieItem.cs/#L446">View Source</a>
+  </span>
+  <a id="ZedGraph_PieItem__ctor_" data-uid="ZedGraph.PieItem.#ctor*"></a>
+  <h4 id="ZedGraph_PieItem__ctor_ZedGraph_PieItem_" data-uid="ZedGraph.PieItem.#ctor(ZedGraph.PieItem)">PieItem(PieItem)</h4>
+  <div class="markdown level1 summary"><p>The Copy Constructor</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PieItem(PieItem rhs)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ZedGraph.PieItem.html">PieItem</a></td>
+        <td><span class="parametername">rhs</span></td>
+        <td><p>The <a class="xref" href="ZedGraph.PieItem.html">PieItem</a> object from which to copy</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="fields">Fields
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_PieItem_schema2.md&amp;value=---%0Auid%3A%20ZedGraph.PieItem.schema2%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/PieItem.cs/#L485">View Source</a>
+  </span>
+  <h4 id="ZedGraph_PieItem_schema2" data-uid="ZedGraph.PieItem.schema2">schema2</h4>
+  <div class="markdown level1 summary"><p>Current schema value that defines the version of the serialized file</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int schema2 = 10</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_PieItem_Border.md&amp;value=---%0Auid%3A%20ZedGraph.PieItem.Border%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/PieItem.cs/#L261">View Source</a>
+  </span>
+  <a id="ZedGraph_PieItem_Border_" data-uid="ZedGraph.PieItem.Border*"></a>
+  <h4 id="ZedGraph_PieItem_Border" data-uid="ZedGraph.PieItem.Border">Border</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the <a class="xref" href="ZedGraph.PieItem.html#ZedGraph_PieItem_Border">Border</a> object so as to be able to modify
+its properties.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Border Border { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ZedGraph.Border.html">Border</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_PieItem_Displacement.md&amp;value=---%0Auid%3A%20ZedGraph.PieItem.Displacement%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/PieItem.cs/#L233">View Source</a>
+  </span>
+  <a id="ZedGraph_PieItem_Displacement_" data-uid="ZedGraph.PieItem.Displacement*"></a>
+  <h4 id="ZedGraph_PieItem_Displacement" data-uid="ZedGraph.PieItem.Displacement">Displacement</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the a value which determines the amount, if any, of this <a class="xref" href="ZedGraph.PieItem.html">PieItem</a><br>
+displacement.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double Displacement { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.double">Double</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_PieItem_Fill.md&amp;value=---%0Auid%3A%20ZedGraph.PieItem.Fill%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/PieItem.cs/#L271">View Source</a>
+  </span>
+  <a id="ZedGraph_PieItem_Fill_" data-uid="ZedGraph.PieItem.Fill*"></a>
+  <h4 id="ZedGraph_PieItem_Fill" data-uid="ZedGraph.PieItem.Fill">Fill</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the <a class="xref" href="ZedGraph.PieItem.html#ZedGraph_PieItem_Fill">Fill</a> object which is used to fill the
+pie slice with color.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Fill Fill { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ZedGraph.Fill.html">Fill</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_PieItem_LabelDetail.md&amp;value=---%0Auid%3A%20ZedGraph.PieItem.LabelDetail%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/PieItem.cs/#L251">View Source</a>
+  </span>
+  <a id="ZedGraph_PieItem_LabelDetail_" data-uid="ZedGraph.PieItem.LabelDetail*"></a>
+  <h4 id="ZedGraph_PieItem_LabelDetail" data-uid="ZedGraph.PieItem.LabelDetail">LabelDetail</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the <a class="xref" href="ZedGraph.TextObj.html">TextObj</a> to be used
+for displaying this <a class="xref" href="ZedGraph.PieItem.html">PieItem</a>'s label.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TextObj LabelDetail { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ZedGraph.TextObj.html">TextObj</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_PieItem_LabelType.md&amp;value=---%0Auid%3A%20ZedGraph.PieItem.LabelType%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/PieItem.cs/#L319">View Source</a>
+  </span>
+  <a id="ZedGraph_PieItem_LabelType_" data-uid="ZedGraph.PieItem.LabelType*"></a>
+  <h4 id="ZedGraph_PieItem_LabelType" data-uid="ZedGraph.PieItem.LabelType">LabelType</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the <a class="xref" href="ZedGraph.PieLabelType.html">PieLabelType</a> to be used in displaying
+<a class="xref" href="ZedGraph.PieItem.html">PieItem</a> labels.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PieLabelType LabelType { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ZedGraph.PieLabelType.html">PieLabelType</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_PieItem_PercentDecimalDigits.md&amp;value=---%0Auid%3A%20ZedGraph.PieItem.PercentDecimalDigits%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/PieItem.cs/#L346">View Source</a>
+  </span>
+  <a id="ZedGraph_PieItem_PercentDecimalDigits_" data-uid="ZedGraph.PieItem.PercentDecimalDigits*"></a>
+  <h4 id="ZedGraph_PieItem_PercentDecimalDigits" data-uid="ZedGraph.PieItem.PercentDecimalDigits">PercentDecimalDigits</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the number of decimal digits to be displayed in a <a class="xref" href="ZedGraph.PieItem.html">PieItem</a>
+percent label.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int PercentDecimalDigits { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_PieItem_SlicePath.md&amp;value=---%0Auid%3A%20ZedGraph.PieItem.SlicePath%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/PieItem.cs/#L242">View Source</a>
+  </span>
+  <a id="ZedGraph_PieItem_SlicePath_" data-uid="ZedGraph.PieItem.SlicePath*"></a>
+  <h4 id="ZedGraph_PieItem_SlicePath" data-uid="ZedGraph.PieItem.SlicePath">SlicePath</h4>
+  <div class="markdown level1 summary"><p>Gets a path representing this <a class="xref" href="ZedGraph.PieItem.html">PieItem</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GraphicsPath SlicePath { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.drawing.drawing2d.graphicspath">GraphicsPath</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_PieItem_Value.md&amp;value=---%0Auid%3A%20ZedGraph.PieItem.Value%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/PieItem.cs/#L309">View Source</a>
+  </span>
+  <a id="ZedGraph_PieItem_Value_" data-uid="ZedGraph.PieItem.Value*"></a>
+  <h4 id="ZedGraph_PieItem_Value" data-uid="ZedGraph.PieItem.Value">Value</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the value of this <a class="xref" href="ZedGraph.PieItem.html">PieItem</a>.<br>
+Minimum value is 0.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double Value { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.double">Double</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_PieItem_ValueDecimalDigits.md&amp;value=---%0Auid%3A%20ZedGraph.PieItem.ValueDecimalDigits%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/PieItem.cs/#L336">View Source</a>
+  </span>
+  <a id="ZedGraph_PieItem_ValueDecimalDigits_" data-uid="ZedGraph.PieItem.ValueDecimalDigits*"></a>
+  <h4 id="ZedGraph_PieItem_ValueDecimalDigits" data-uid="ZedGraph.PieItem.ValueDecimalDigits">ValueDecimalDigits</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the number of decimal digits to be displayed in a <a class="xref" href="ZedGraph.PieItem.html">PieItem</a>
+value label.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int ValueDecimalDigits { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_PieItem_CalcPieRect_System_Drawing_Graphics_ZedGraph_GraphPane_System_Single_System_Drawing_RectangleF_.md&amp;value=---%0Auid%3A%20ZedGraph.PieItem.CalcPieRect(System.Drawing.Graphics%2CZedGraph.GraphPane%2CSystem.Single%2CSystem.Drawing.RectangleF)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/PieItem.cs/#L655">View Source</a>
+  </span>
+  <a id="ZedGraph_PieItem_CalcPieRect_" data-uid="ZedGraph.PieItem.CalcPieRect*"></a>
+  <h4 id="ZedGraph_PieItem_CalcPieRect_System_Drawing_Graphics_ZedGraph_GraphPane_System_Single_System_Drawing_RectangleF_" data-uid="ZedGraph.PieItem.CalcPieRect(System.Drawing.Graphics,ZedGraph.GraphPane,System.Single,System.Drawing.RectangleF)">CalcPieRect(Graphics, GraphPane, Single, RectangleF)</h4>
+  <div class="markdown level1 summary"><p>Calculate the <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.drawing.rectanglef">RectangleF</a> that will be used to define the bounding rectangle of
+the Pie.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static RectangleF CalcPieRect(Graphics g, GraphPane pane, float scaleFactor, RectangleF chartRect)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.drawing.graphics">Graphics</a></td>
+        <td><span class="parametername">g</span></td>
+        <td><p>A graphic device object to be drawn into.  This is normally e.Graphics from the
+PaintEventArgs argument to the Paint() method.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ZedGraph.GraphPane.html">GraphPane</a></td>
+        <td><span class="parametername">pane</span></td>
+        <td><p>A reference to the <a class="xref" href="ZedGraph.GraphPane.html">GraphPane</a> object that is the parent or
+owner of this object.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td><span class="parametername">scaleFactor</span></td>
+        <td><p>The scaling factor to be used for rendering objects.  This is calculated and
+passed down by the parent <a class="xref" href="ZedGraph.GraphPane.html">GraphPane</a> object using the
+<a class="xref" href="ZedGraph.PaneBase.html#ZedGraph_PaneBase_CalcScaleFactor">CalcScaleFactor()</a> method, and is used to proportionally adjust
+font sizes, etc. according to the actual size of the graph.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.drawing.rectanglef">RectangleF</a></td>
+        <td><span class="parametername">chartRect</span></td>
+        <td><p>The <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.drawing.rectanglef">RectangleF</a> (normally the <a class="xref" href="ZedGraph.Chart.html#ZedGraph_Chart_Rect">Rect</a>)
+that bounds this pie.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.drawing.rectanglef">RectangleF</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="ZedGraph_PieItem_CalcPieRect_System_Drawing_Graphics_ZedGraph_GraphPane_System_Single_System_Drawing_RectangleF__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This rectangle always lies inside of the <a class="xref" href="ZedGraph.Chart.html#ZedGraph_Chart_Rect">Rect</a>, and it is
+normally a square so that the pie itself is not oval-shaped.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_PieItem_Clone.md&amp;value=---%0Auid%3A%20ZedGraph.PieItem.Clone%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/PieItem.cs/#L473">View Source</a>
+  </span>
+  <a id="ZedGraph_PieItem_Clone_" data-uid="ZedGraph.PieItem.Clone*"></a>
+  <h4 id="ZedGraph_PieItem_Clone" data-uid="ZedGraph.PieItem.Clone">Clone()</h4>
+  <div class="markdown level1 summary"><p>Typesafe, deep-copy clone method.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PieItem Clone()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ZedGraph.PieItem.html">PieItem</a></td>
+        <td><p>A new, independent copy of this class</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_PieItem_DesignLabel_System_Drawing_Graphics_ZedGraph_GraphPane_System_Drawing_RectangleF_System_Single_.md&amp;value=---%0Auid%3A%20ZedGraph.PieItem.DesignLabel(System.Drawing.Graphics%2CZedGraph.GraphPane%2CSystem.Drawing.RectangleF%2CSystem.Single)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/PieItem.cs/#L822">View Source</a>
+  </span>
+  <a id="ZedGraph_PieItem_DesignLabel_" data-uid="ZedGraph.PieItem.DesignLabel*"></a>
+  <h4 id="ZedGraph_PieItem_DesignLabel_System_Drawing_Graphics_ZedGraph_GraphPane_System_Drawing_RectangleF_System_Single_" data-uid="ZedGraph.PieItem.DesignLabel(System.Drawing.Graphics,ZedGraph.GraphPane,System.Drawing.RectangleF,System.Single)">DesignLabel(Graphics, GraphPane, RectangleF, Single)</h4>
+  <div class="markdown level1 summary"><p>This method collects all the data relative to rendering this <a class="xref" href="ZedGraph.PieItem.html">PieItem</a>'s label.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DesignLabel(Graphics g, GraphPane pane, RectangleF rect, float scaleFactor)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.drawing.graphics">Graphics</a></td>
+        <td><span class="parametername">g</span></td>
+        <td><p>A graphic device object to be drawn into.  This is normally e.Graphics from the
+PaintEventArgs argument to the Paint() method.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ZedGraph.GraphPane.html">GraphPane</a></td>
+        <td><span class="parametername">pane</span></td>
+        <td><p>A graphic device object to be drawn into.  This is normally e.Graphics from the
+PaintEventArgs argument to the Paint() method.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.drawing.rectanglef">RectangleF</a></td>
+        <td><span class="parametername">rect</span></td>
+        <td><p>The rectangle used for rendering this <a class="xref" href="ZedGraph.PieItem.html">PieItem</a></p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td><span class="parametername">scaleFactor</span></td>
+        <td><p>The scaling factor to be used for rendering objects.  This is calculated and
+passed down by the parent <a class="xref" href="ZedGraph.GraphPane.html">GraphPane</a> object using the
+<a class="xref" href="ZedGraph.PaneBase.html#ZedGraph_PaneBase_CalcScaleFactor">CalcScaleFactor()</a> method, and is used to proportionally adjust
+font sizes, etc. according to the actual size of the graph.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_PieItem_Draw_System_Drawing_Graphics_ZedGraph_GraphPane_System_Int32_System_Single_.md&amp;value=---%0Auid%3A%20ZedGraph.PieItem.Draw(System.Drawing.Graphics%2CZedGraph.GraphPane%2CSystem.Int32%2CSystem.Single)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/PieItem.cs/#L572">View Source</a>
+  </span>
+  <a id="ZedGraph_PieItem_Draw_" data-uid="ZedGraph.PieItem.Draw*"></a>
+  <h4 id="ZedGraph_PieItem_Draw_System_Drawing_Graphics_ZedGraph_GraphPane_System_Int32_System_Single_" data-uid="ZedGraph.PieItem.Draw(System.Drawing.Graphics,ZedGraph.GraphPane,System.Int32,System.Single)">Draw(Graphics, GraphPane, Int32, Single)</h4>
+  <div class="markdown level1 summary"><p>Do all rendering associated with this <a class="xref" href="ZedGraph.PieItem.html">PieItem</a> item to the specified
+<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.drawing.graphics">Graphics</a> device.  This method is normally only
+called by the Draw method of the parent <a class="xref" href="ZedGraph.CurveList.html">CurveList</a>
+collection object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void Draw(Graphics g, GraphPane pane, int pos, float scaleFactor)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.drawing.graphics">Graphics</a></td>
+        <td><span class="parametername">g</span></td>
+        <td><p>A graphic device object to be drawn into.  This is normally e.Graphics from the
+PaintEventArgs argument to the Paint() method.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ZedGraph.GraphPane.html">GraphPane</a></td>
+        <td><span class="parametername">pane</span></td>
+        <td><p>A reference to the <a class="xref" href="ZedGraph.GraphPane.html">GraphPane</a> object that is the parent or
+owner of this object.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">pos</span></td>
+        <td><p>Not used for rendering Pies</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td><span class="parametername">scaleFactor</span></td>
+        <td><p>The scaling factor to be used for rendering objects.  This is calculated and
+passed down by the parent <a class="xref" href="ZedGraph.GraphPane.html">GraphPane</a> object using the
+<a class="xref" href="ZedGraph.PaneBase.html#ZedGraph_PaneBase_CalcScaleFactor">CalcScaleFactor()</a> method, and is used to proportionally adjust
+font sizes, etc. according to the actual size of the graph.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="ZedGraph.CurveItem.html#ZedGraph_CurveItem_Draw_System_Drawing_Graphics_ZedGraph_GraphPane_System_Int32_System_Single_">CurveItem.Draw(Graphics, GraphPane, Int32, Single)</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_PieItem_DrawLabel_System_Drawing_Graphics_ZedGraph_GraphPane_System_Drawing_RectangleF_System_Single_.md&amp;value=---%0Auid%3A%20ZedGraph.PieItem.DrawLabel(System.Drawing.Graphics%2CZedGraph.GraphPane%2CSystem.Drawing.RectangleF%2CSystem.Single)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/PieItem.cs/#L785">View Source</a>
+  </span>
+  <a id="ZedGraph_PieItem_DrawLabel_" data-uid="ZedGraph.PieItem.DrawLabel*"></a>
+  <h4 id="ZedGraph_PieItem_DrawLabel_System_Drawing_Graphics_ZedGraph_GraphPane_System_Drawing_RectangleF_System_Single_" data-uid="ZedGraph.PieItem.DrawLabel(System.Drawing.Graphics,ZedGraph.GraphPane,System.Drawing.RectangleF,System.Single)">DrawLabel(Graphics, GraphPane, RectangleF, Single)</h4>
+  <div class="markdown level1 summary"><p>Render the label for this <a class="xref" href="ZedGraph.PieItem.html">PieItem</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DrawLabel(Graphics g, GraphPane pane, RectangleF rect, float scaleFactor)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.drawing.graphics">Graphics</a></td>
+        <td><span class="parametername">g</span></td>
+        <td><p>A graphic device object to be drawn into.  This is normally e.Graphics from the
+PaintEventArgs argument to the Paint() method.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ZedGraph.GraphPane.html">GraphPane</a></td>
+        <td><span class="parametername">pane</span></td>
+        <td><p>A graphic device object to be drawn into.  This is normally e.Graphics from the
+PaintEventArgs argument to the Paint() method.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.drawing.rectanglef">RectangleF</a></td>
+        <td><span class="parametername">rect</span></td>
+        <td><p>Bounding rectangle for this <a class="xref" href="ZedGraph.PieItem.html">PieItem</a>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td><span class="parametername">scaleFactor</span></td>
+        <td><p>The scaling factor to be used for rendering objects.  This is calculated and
+passed down by the parent <a class="xref" href="ZedGraph.GraphPane.html">GraphPane</a> object using the
+<a class="xref" href="ZedGraph.PaneBase.html#ZedGraph_PaneBase_CalcScaleFactor">CalcScaleFactor()</a> method, and is used to proportionally adjust
+font sizes, etc. according to the actual size of the graph.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_PieItem_DrawLegendKey_System_Drawing_Graphics_ZedGraph_GraphPane_System_Drawing_RectangleF_System_Single_.md&amp;value=---%0Auid%3A%20ZedGraph.PieItem.DrawLegendKey(System.Drawing.Graphics%2CZedGraph.GraphPane%2CSystem.Drawing.RectangleF%2CSystem.Single)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/PieItem.cs/#L1017">View Source</a>
+  </span>
+  <a id="ZedGraph_PieItem_DrawLegendKey_" data-uid="ZedGraph.PieItem.DrawLegendKey*"></a>
+  <h4 id="ZedGraph_PieItem_DrawLegendKey_System_Drawing_Graphics_ZedGraph_GraphPane_System_Drawing_RectangleF_System_Single_" data-uid="ZedGraph.PieItem.DrawLegendKey(System.Drawing.Graphics,ZedGraph.GraphPane,System.Drawing.RectangleF,System.Single)">DrawLegendKey(Graphics, GraphPane, RectangleF, Single)</h4>
+  <div class="markdown level1 summary"><p>Draw a legend key entry for this <a class="xref" href="ZedGraph.PieItem.html">PieItem</a> at the specified location</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void DrawLegendKey(Graphics g, GraphPane pane, RectangleF rect, float scaleFactor)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.drawing.graphics">Graphics</a></td>
+        <td><span class="parametername">g</span></td>
+        <td><p>A graphic device object to be drawn into.  This is normally e.Graphics from the
+PaintEventArgs argument to the Paint() method.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ZedGraph.GraphPane.html">GraphPane</a></td>
+        <td><span class="parametername">pane</span></td>
+        <td><p>A reference to the <a class="xref" href="ZedGraph.GraphPane.html">GraphPane</a> object that is the parent or
+owner of this object.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.drawing.rectanglef">RectangleF</a></td>
+        <td><span class="parametername">rect</span></td>
+        <td><p>The <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.drawing.rectanglef">RectangleF</a> struct that specifies the
+location for the legend key</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td><span class="parametername">scaleFactor</span></td>
+        <td><p>The scaling factor to be used for rendering objects.  This is calculated and
+passed down by the parent <a class="xref" href="ZedGraph.GraphPane.html">GraphPane</a> object using the
+<a class="xref" href="ZedGraph.PaneBase.html#ZedGraph_PaneBase_CalcScaleFactor">CalcScaleFactor()</a> method, and is used to proportionally adjust
+font sizes, etc. according to the actual size of the graph.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="ZedGraph.CurveItem.html#ZedGraph_CurveItem_DrawLegendKey_System_Drawing_Graphics_ZedGraph_GraphPane_System_Drawing_RectangleF_System_Single_">CurveItem.DrawLegendKey(Graphics, GraphPane, RectangleF, Single)</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_PieItem_GetCoords_ZedGraph_GraphPane_System_Int32_System_String__.md&amp;value=---%0Auid%3A%20ZedGraph.PieItem.GetCoords(ZedGraph.GraphPane%2CSystem.Int32%2CSystem.String%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/PieItem.cs/#L1047">View Source</a>
+  </span>
+  <a id="ZedGraph_PieItem_GetCoords_" data-uid="ZedGraph.PieItem.GetCoords*"></a>
+  <h4 id="ZedGraph_PieItem_GetCoords_ZedGraph_GraphPane_System_Int32_System_String__" data-uid="ZedGraph.PieItem.GetCoords(ZedGraph.GraphPane,System.Int32,System.String@)">GetCoords(GraphPane, Int32, out String)</h4>
+  <div class="markdown level1 summary"><p>Determine the coords for the rectangle associated with a specified point for
+this <a class="xref" href="ZedGraph.CurveItem.html">CurveItem</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool GetCoords(GraphPane pane, int i, out string coords)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ZedGraph.GraphPane.html">GraphPane</a></td>
+        <td><span class="parametername">pane</span></td>
+        <td><p>The <a class="xref" href="ZedGraph.GraphPane.html">GraphPane</a> to which this curve belongs</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">i</span></td>
+        <td><p>The index of the point of interest</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">coords</span></td>
+        <td><p>A list of coordinates that represents the &quot;rect&quot; for
+this point (used in an html AREA tag)</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><p>true if it's a valid point, false otherwise</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="ZedGraph.CurveItem.html#ZedGraph_CurveItem_GetCoords_ZedGraph_GraphPane_System_Int32_System_String__">CurveItem.GetCoords(GraphPane, Int32, out String)</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_PieItem_GetObjectData_System_Runtime_Serialization_SerializationInfo_System_Runtime_Serialization_StreamingContext_.md&amp;value=---%0Auid%3A%20ZedGraph.PieItem.GetObjectData(System.Runtime.Serialization.SerializationInfo%2CSystem.Runtime.Serialization.StreamingContext)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/PieItem.cs/#L524">View Source</a>
+  </span>
+  <a id="ZedGraph_PieItem_GetObjectData_" data-uid="ZedGraph.PieItem.GetObjectData*"></a>
+  <h4 id="ZedGraph_PieItem_GetObjectData_System_Runtime_Serialization_SerializationInfo_System_Runtime_Serialization_StreamingContext_" data-uid="ZedGraph.PieItem.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">GetObjectData(SerializationInfo, StreamingContext)</h4>
+  <div class="markdown level1 summary"><p>Populates a <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.runtime.serialization.serializationinfo">SerializationInfo</a> instance with the data needed to serialize the target object</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[SecurityPermission(SecurityAction.Demand, SerializationFormatter = true)]
+public override void GetObjectData(SerializationInfo info, StreamingContext context)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.runtime.serialization.serializationinfo">SerializationInfo</a></td>
+        <td><span class="parametername">info</span></td>
+        <td><p>A <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.runtime.serialization.serializationinfo">SerializationInfo</a> instance that defines the serialized data</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.runtime.serialization.streamingcontext">StreamingContext</a></td>
+        <td><span class="parametername">context</span></td>
+        <td><p>A <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.runtime.serialization.streamingcontext">StreamingContext</a> instance that contains the serialized data</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="ZedGraph.CurveItem.html#ZedGraph_CurveItem_GetObjectData_System_Runtime_Serialization_SerializationInfo_System_Runtime_Serialization_StreamingContext_">CurveItem.GetObjectData(SerializationInfo, StreamingContext)</a></div>
+  <h3 id="eii">Explicit Interface Implementations
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_PieItem_System_ICloneable_Clone.md&amp;value=---%0Auid%3A%20ZedGraph.PieItem.System%23ICloneable%23Clone%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/PieItem.cs/#L464">View Source</a>
+  </span>
+  <a id="ZedGraph_PieItem_System_ICloneable_Clone_" data-uid="ZedGraph.PieItem.System#ICloneable#Clone*"></a>
+  <h4 id="ZedGraph_PieItem_System_ICloneable_Clone" data-uid="ZedGraph.PieItem.System#ICloneable#Clone">ICloneable.Clone()</h4>
+  <div class="markdown level1 summary"><p>Implement the <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.icloneable">ICloneable</a> interface in a typesafe manner by just
+calling the typed version of <a class="xref" href="ZedGraph.PieItem.html#ZedGraph_PieItem_Clone">Clone()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">object ICloneable.Clone()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></td>
+        <td><p>A deep copy of this object</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.icloneable">System.ICloneable</a>
+  </div>
+  <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.runtime.serialization.iserializable">System.Runtime.Serialization.ISerializable</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_PieItem.md&amp;value=---%0Auid%3A%20ZedGraph.PieItem%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/PieItem.cs/#L36" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

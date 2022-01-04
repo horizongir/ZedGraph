@@ -1,0 +1,2224 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class CurveItem
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class CurveItem
+   ">
+    <meta name="generator" content="docfx 2.56.7.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="ZedGraph.CurveItem">
+  
+  
+  <h1 id="ZedGraph_CurveItem" data-uid="ZedGraph.CurveItem" class="text-break">Class CurveItem
+  </h1>
+  <div class="markdown level0 summary"><p>This class contains the data and methods for an individual curve within
+a graph pane.  It carries the settings for the curve including the
+key and item names, colors, symbols and sizes, linetypes, etc.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
+    <div class="level1"><span class="xref">CurveItem</span></div>
+      <div class="level2"><a class="xref" href="ZedGraph.BarItem.html">BarItem</a></div>
+      <div class="level2"><a class="xref" href="ZedGraph.ErrorBarItem.html">ErrorBarItem</a></div>
+      <div class="level2"><a class="xref" href="ZedGraph.GasGaugeNeedle.html">GasGaugeNeedle</a></div>
+      <div class="level2"><a class="xref" href="ZedGraph.GasGaugeRegion.html">GasGaugeRegion</a></div>
+      <div class="level2"><a class="xref" href="ZedGraph.JapaneseCandleStickItem.html">JapaneseCandleStickItem</a></div>
+      <div class="level2"><a class="xref" href="ZedGraph.LineItem.html">LineItem</a></div>
+      <div class="level2"><a class="xref" href="ZedGraph.OHLCBarItem.html">OHLCBarItem</a></div>
+      <div class="level2"><a class="xref" href="ZedGraph.PieItem.html">PieItem</a></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.runtime.serialization.iserializable">ISerializable</a></div>
+    <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.icloneable">ICloneable</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#System_Object_Equals_System_Object_">Object.Equals(Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#System_Object_Equals_System_Object_System_Object_">Object.Equals(Object, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gethashcode#System_Object_GetHashCode">Object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gettype#System_Object_GetType">Object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.memberwiseclone#System_Object_MemberwiseClone">Object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.referenceequals#System_Object_ReferenceEquals_System_Object_System_Object_">Object.ReferenceEquals(Object, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.tostring#System_Object_ToString">Object.ToString()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="ZedGraph.html">ZedGraph</a></h6>
+  <h6><strong>Assembly</strong>: ZedGraph.dll</h6>
+  <h5 id="ZedGraph_CurveItem_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Serializable]
+public abstract class CurveItem : ISerializable, ICloneable</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_CurveItem__ctor.md&amp;value=---%0Auid%3A%20ZedGraph.CurveItem.%23ctor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/CurveItem.cs/#L221">View Source</a>
+  </span>
+  <a id="ZedGraph_CurveItem__ctor_" data-uid="ZedGraph.CurveItem.#ctor*"></a>
+  <h4 id="ZedGraph_CurveItem__ctor" data-uid="ZedGraph.CurveItem.#ctor">CurveItem()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CurveItem()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_CurveItem__ctor_System_Runtime_Serialization_SerializationInfo_System_Runtime_Serialization_StreamingContext_.md&amp;value=---%0Auid%3A%20ZedGraph.CurveItem.%23ctor(System.Runtime.Serialization.SerializationInfo%2CSystem.Runtime.Serialization.StreamingContext)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/CurveItem.cs/#L285">View Source</a>
+  </span>
+  <a id="ZedGraph_CurveItem__ctor_" data-uid="ZedGraph.CurveItem.#ctor*"></a>
+  <h4 id="ZedGraph_CurveItem__ctor_System_Runtime_Serialization_SerializationInfo_System_Runtime_Serialization_StreamingContext_" data-uid="ZedGraph.CurveItem.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">CurveItem(SerializationInfo, StreamingContext)</h4>
+  <div class="markdown level1 summary"><p>Constructor for deserializing objects</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected CurveItem(SerializationInfo info, StreamingContext context)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.runtime.serialization.serializationinfo">SerializationInfo</a></td>
+        <td><span class="parametername">info</span></td>
+        <td><p>A <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.runtime.serialization.serializationinfo">SerializationInfo</a> instance that defines the serialized data</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.runtime.serialization.streamingcontext">StreamingContext</a></td>
+        <td><span class="parametername">context</span></td>
+        <td><p>A <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.runtime.serialization.streamingcontext">StreamingContext</a> instance that contains the serialized data</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_CurveItem__ctor_System_String_.md&amp;value=---%0Auid%3A%20ZedGraph.CurveItem.%23ctor(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/CurveItem.cs/#L215">View Source</a>
+  </span>
+  <a id="ZedGraph_CurveItem__ctor_" data-uid="ZedGraph.CurveItem.#ctor*"></a>
+  <h4 id="ZedGraph_CurveItem__ctor_System_String_" data-uid="ZedGraph.CurveItem.#ctor(System.String)">CurveItem(String)</h4>
+  <div class="markdown level1 summary"><p><a class="xref" href="ZedGraph.CurveItem.html">CurveItem</a> constructor that specifies the label of the CurveItem.
+This is the same as <code>CurveItem(label, null, null)</code>.
+<a class="xref" href="ZedGraph.CurveItem.html#ZedGraph_CurveItem__ctor_System_String_System_Double___System_Double___">CurveItem(String, Double[], Double[])</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CurveItem(string label)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">label</span></td>
+        <td><p>A string label (legend entry) for this curve</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_CurveItem__ctor_System_String_System_Double___System_Double___.md&amp;value=---%0Auid%3A%20ZedGraph.CurveItem.%23ctor(System.String%2CSystem.Double%5B%5D%2CSystem.Double%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/CurveItem.cs/#L163">View Source</a>
+  </span>
+  <a id="ZedGraph_CurveItem__ctor_" data-uid="ZedGraph.CurveItem.#ctor*"></a>
+  <h4 id="ZedGraph_CurveItem__ctor_System_String_System_Double___System_Double___" data-uid="ZedGraph.CurveItem.#ctor(System.String,System.Double[],System.Double[])">CurveItem(String, Double[], Double[])</h4>
+  <div class="markdown level1 summary"><p><a class="xref" href="ZedGraph.CurveItem.html">CurveItem</a> constructor the pre-specifies the curve label, the
+x and y data values as a <a class="xref" href="ZedGraph.IPointList.html">IPointList</a>, the curve
+type (Bar or Line/Symbol), the <a class="xref" href="ZedGraph.CurveItem.html#ZedGraph_CurveItem_Color">Color</a>, and the
+<a class="xref" href="ZedGraph.SymbolType.html">SymbolType</a>. Other properties of the curve are
+defaulted to the values in the <a class="xref" href="ZedGraph.GraphPane.Default.html">GraphPane.Default</a> class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CurveItem(string label, double[] x, double[] y)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">label</span></td>
+        <td><p>A string label (legend entry) for this curve</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.double">Double</a>[]</td>
+        <td><span class="parametername">x</span></td>
+        <td><p>An array of double precision values that define
+the independent (X axis) values for this curve</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.double">Double</a>[]</td>
+        <td><span class="parametername">y</span></td>
+        <td><p>An array of double precision values that define
+the dependent (Y axis) values for this curve</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_CurveItem__ctor_System_String_ZedGraph_IPointList_.md&amp;value=---%0Auid%3A%20ZedGraph.CurveItem.%23ctor(System.String%2CZedGraph.IPointList)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/CurveItem.cs/#L182">View Source</a>
+  </span>
+  <a id="ZedGraph_CurveItem__ctor_" data-uid="ZedGraph.CurveItem.#ctor*"></a>
+  <h4 id="ZedGraph_CurveItem__ctor_System_String_ZedGraph_IPointList_" data-uid="ZedGraph.CurveItem.#ctor(System.String,ZedGraph.IPointList)">CurveItem(String, IPointList)</h4>
+  <div class="markdown level1 summary"><p><a class="xref" href="ZedGraph.CurveItem.html">CurveItem</a> constructor the pre-specifies the curve label, the
+x and y data values as a <a class="xref" href="ZedGraph.IPointList.html">IPointList</a>, the curve
+type (Bar or Line/Symbol), the <a class="xref" href="ZedGraph.CurveItem.html#ZedGraph_CurveItem_Color">Color</a>, and the
+<a class="xref" href="ZedGraph.SymbolType.html">SymbolType</a>. Other properties of the curve are
+defaulted to the values in the <a class="xref" href="ZedGraph.GraphPane.Default.html">GraphPane.Default</a> class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CurveItem(string label, IPointList points)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">label</span></td>
+        <td><p>A string label (legend entry) for this curve</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ZedGraph.IPointList.html">IPointList</a></td>
+        <td><span class="parametername">points</span></td>
+        <td><p>A <a class="xref" href="ZedGraph.IPointList.html">IPointList</a> of double precision value pairs that define
+the X and Y values for this curve</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_CurveItem__ctor_ZedGraph_CurveItem_.md&amp;value=---%0Auid%3A%20ZedGraph.CurveItem.%23ctor(ZedGraph.CurveItem)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/CurveItem.cs/#L229">View Source</a>
+  </span>
+  <a id="ZedGraph_CurveItem__ctor_" data-uid="ZedGraph.CurveItem.#ctor*"></a>
+  <h4 id="ZedGraph_CurveItem__ctor_ZedGraph_CurveItem_" data-uid="ZedGraph.CurveItem.#ctor(ZedGraph.CurveItem)">CurveItem(CurveItem)</h4>
+  <div class="markdown level1 summary"><p>The Copy Constructor</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CurveItem(CurveItem rhs)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ZedGraph.CurveItem.html">CurveItem</a></td>
+        <td><span class="parametername">rhs</span></td>
+        <td><p>The CurveItem object from which to copy</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="fields">Fields
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_CurveItem__isOverrideOrdinal.md&amp;value=---%0Auid%3A%20ZedGraph.CurveItem._isOverrideOrdinal%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/CurveItem.cs/#L116">View Source</a>
+  </span>
+  <h4 id="ZedGraph_CurveItem__isOverrideOrdinal" data-uid="ZedGraph.CurveItem._isOverrideOrdinal">_isOverrideOrdinal</h4>
+  <div class="markdown level1 summary"><p>protected field that stores a boolean value which allows you to override the normal
+ordinal axis behavior.  Use the public property <a class="xref" href="ZedGraph.CurveItem.html#ZedGraph_CurveItem_IsOverrideOrdinal">IsOverrideOrdinal</a> to
+access this value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[CLSCompliant(false)]
+protected bool _isOverrideOrdinal</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_CurveItem__isSelectable.md&amp;value=---%0Auid%3A%20ZedGraph.CurveItem._isSelectable%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/CurveItem.cs/#L108">View Source</a>
+  </span>
+  <h4 id="ZedGraph_CurveItem__isSelectable" data-uid="ZedGraph.CurveItem._isSelectable">_isSelectable</h4>
+  <div class="markdown level1 summary"><p>Protected field that stores the boolean value that determines whether this
+<a class="xref" href="ZedGraph.CurveItem.html">CurveItem</a> can be selected in the graph.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[CLSCompliant(false)]
+protected bool _isSelectable</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_CurveItem__isSelected.md&amp;value=---%0Auid%3A%20ZedGraph.CurveItem._isSelected%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/CurveItem.cs/#L100">View Source</a>
+  </span>
+  <h4 id="ZedGraph_CurveItem__isSelected" data-uid="ZedGraph.CurveItem._isSelected">_isSelected</h4>
+  <div class="markdown level1 summary"><p>Protected field that stores the boolean value that determines whether this
+<a class="xref" href="ZedGraph.CurveItem.html">CurveItem</a> is selected on the graph.
+Use the public property <a class="xref" href="ZedGraph.CurveItem.html#ZedGraph_CurveItem_IsSelected">IsSelected</a> to access this value.
+Note that this value changes the curve display color, but it does not
+affect the display of the legend entry.  To hide the legend entry, you
+have to set <a class="xref" href="ZedGraph.Label.html#ZedGraph_Label_IsVisible">IsVisible</a> to false.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[CLSCompliant(false)]
+protected bool _isSelected</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_CurveItem__isVisible.md&amp;value=---%0Auid%3A%20ZedGraph.CurveItem._isVisible%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/CurveItem.cs/#L88">View Source</a>
+  </span>
+  <h4 id="ZedGraph_CurveItem__isVisible" data-uid="ZedGraph.CurveItem._isVisible">_isVisible</h4>
+  <div class="markdown level1 summary"><p>protected field that stores the boolean value that determines whether this
+<a class="xref" href="ZedGraph.CurveItem.html">CurveItem</a> is visible on the graph.
+Use the public property <a class="xref" href="ZedGraph.CurveItem.html#ZedGraph_CurveItem_IsVisible">IsVisible</a> to access this value.
+Note that this value turns the curve display on or off, but it does not
+affect the display of the legend entry.  To hide the legend entry, you
+have to set <a class="xref" href="ZedGraph.Label.html#ZedGraph_Label_IsVisible">IsVisible</a> to false.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[CLSCompliant(false)]
+protected bool _isVisible</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_CurveItem__isX2Axis.md&amp;value=---%0Auid%3A%20ZedGraph.CurveItem._isX2Axis%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/CurveItem.cs/#L62">View Source</a>
+  </span>
+  <h4 id="ZedGraph_CurveItem__isX2Axis" data-uid="ZedGraph.CurveItem._isX2Axis">_isX2Axis</h4>
+  <div class="markdown level1 summary"><p>protected field that stores the boolean value that determines whether this
+<a class="xref" href="ZedGraph.CurveItem.html">CurveItem</a> is on the bottom X axis or the top X axis (X2).
+Use the public property <a class="xref" href="ZedGraph.CurveItem.html#ZedGraph_CurveItem_IsX2Axis">IsX2Axis</a> to access this value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[CLSCompliant(false)]
+protected bool _isX2Axis</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_CurveItem__isY2Axis.md&amp;value=---%0Auid%3A%20ZedGraph.CurveItem._isY2Axis%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/CurveItem.cs/#L69">View Source</a>
+  </span>
+  <h4 id="ZedGraph_CurveItem__isY2Axis" data-uid="ZedGraph.CurveItem._isY2Axis">_isY2Axis</h4>
+  <div class="markdown level1 summary"><p>protected field that stores the boolean value that determines whether this
+<a class="xref" href="ZedGraph.CurveItem.html">CurveItem</a> is on the left Y axis or the right Y axis (Y2).
+Use the public property <a class="xref" href="ZedGraph.CurveItem.html#ZedGraph_CurveItem_IsY2Axis">IsY2Axis</a> to access this value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[CLSCompliant(false)]
+protected bool _isY2Axis</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_CurveItem__points.md&amp;value=---%0Auid%3A%20ZedGraph.CurveItem._points%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/CurveItem.cs/#L129">View Source</a>
+  </span>
+  <h4 id="ZedGraph_CurveItem__points" data-uid="ZedGraph.CurveItem._points">_points</h4>
+  <div class="markdown level1 summary"><p>The <a class="xref" href="ZedGraph.IPointList.html">IPointList</a> of value sets that
+represent this <a class="xref" href="ZedGraph.CurveItem.html">CurveItem</a>.
+The size of this list determines the number of points that are
+plotted.  Note that values defined as
+System.Double.MaxValue are considered &quot;missing&quot; values
+(see <a class="xref" href="ZedGraph.PointPairBase.html#ZedGraph_PointPairBase_Missing">Missing</a>),
+and are not plotted.  The curve will have a break at these points
+to indicate the values are missing.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[CLSCompliant(false)]
+protected IPointList _points</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ZedGraph.IPointList.html">IPointList</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_CurveItem__yAxisIndex.md&amp;value=---%0Auid%3A%20ZedGraph.CurveItem._yAxisIndex%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/CurveItem.cs/#L77">View Source</a>
+  </span>
+  <h4 id="ZedGraph_CurveItem__yAxisIndex" data-uid="ZedGraph.CurveItem._yAxisIndex">_yAxisIndex</h4>
+  <div class="markdown level1 summary"><p>protected field that stores the index number of the Y Axis to which this
+<a class="xref" href="ZedGraph.CurveItem.html">CurveItem</a> belongs.  Use the public property <a class="xref" href="ZedGraph.CurveItem.html#ZedGraph_CurveItem_YAxisIndex">YAxisIndex</a>
+to access this value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[CLSCompliant(false)]
+protected int _yAxisIndex</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_CurveItem_schema.md&amp;value=---%0Auid%3A%20ZedGraph.CurveItem.schema%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/CurveItem.cs/#L276">View Source</a>
+  </span>
+  <h4 id="ZedGraph_CurveItem_schema" data-uid="ZedGraph.CurveItem.schema">schema</h4>
+  <div class="markdown level1 summary"><p>Current schema value that defines the version of the serialized file</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int schema = 11</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_CurveItem_Tag.md&amp;value=---%0Auid%3A%20ZedGraph.CurveItem.Tag%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/CurveItem.cs/#L141">View Source</a>
+  </span>
+  <h4 id="ZedGraph_CurveItem_Tag" data-uid="ZedGraph.CurveItem.Tag">Tag</h4>
+  <div class="markdown level1 summary"><p>A tag object for use by the user.  This can be used to store additional
+information associated with the <a class="xref" href="ZedGraph.CurveItem.html">CurveItem</a>.  ZedGraph does
+not use this value for any purpose.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public object Tag</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="ZedGraph_CurveItem_Tag_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Note that, if you are going to Serialize ZedGraph data, then any type
+that you store in <a class="xref" href="ZedGraph.CurveItem.html#ZedGraph_CurveItem_Tag">Tag</a> must be a serializable type (or
+it will cause an exception).</p>
+</div>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_CurveItem_Color.md&amp;value=---%0Auid%3A%20ZedGraph.CurveItem.Color%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/CurveItem.cs/#L362">View Source</a>
+  </span>
+  <a id="ZedGraph_CurveItem_Color_" data-uid="ZedGraph.CurveItem.Color*"></a>
+  <h4 id="ZedGraph_CurveItem_Color" data-uid="ZedGraph.CurveItem.Color">Color</h4>
+  <div class="markdown level1 summary"><p>The <a class="xref" href="ZedGraph.Line.html">Line</a>/<a class="xref" href="ZedGraph.Symbol.html">Symbol</a>/<a class="xref" href="ZedGraph.Bar.html">Bar</a>
+color (FillColor for the Bar).  This is a common access to
+<a class="xref" href="ZedGraph.LineBase.html#ZedGraph_LineBase_Color">Color</a>,
+<a class="xref" href="ZedGraph.LineBase.html#ZedGraph_LineBase_Color">Color</a>, and
+<a class="xref" href="ZedGraph.Fill.html#ZedGraph_Fill_Color">Color</a> properties for this curve.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Color Color { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.drawing.color">Color</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_CurveItem_IsBar.md&amp;value=---%0Auid%3A%20ZedGraph.CurveItem.IsBar%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/CurveItem.cs/#L530">View Source</a>
+  </span>
+  <a id="ZedGraph_CurveItem_IsBar_" data-uid="ZedGraph.CurveItem.IsBar*"></a>
+  <h4 id="ZedGraph_CurveItem_IsBar" data-uid="ZedGraph.CurveItem.IsBar">IsBar</h4>
+  <div class="markdown level1 summary"><p>Determines whether this <a class="xref" href="ZedGraph.CurveItem.html">CurveItem</a>
+is a <a class="xref" href="ZedGraph.BarItem.html">BarItem</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsBar { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><p>true for a bar chart, or false for a line or pie graph</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_CurveItem_IsLine.md&amp;value=---%0Auid%3A%20ZedGraph.CurveItem.IsLine%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/CurveItem.cs/#L550">View Source</a>
+  </span>
+  <a id="ZedGraph_CurveItem_IsLine_" data-uid="ZedGraph.CurveItem.IsLine*"></a>
+  <h4 id="ZedGraph_CurveItem_IsLine" data-uid="ZedGraph.CurveItem.IsLine">IsLine</h4>
+  <div class="markdown level1 summary"><p>Determines whether this <a class="xref" href="ZedGraph.CurveItem.html">CurveItem</a>
+is a <a class="xref" href="ZedGraph.LineItem.html">LineItem</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsLine { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><p>true for a line chart, or false for a bar type</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_CurveItem_IsOverrideOrdinal.md&amp;value=---%0Auid%3A%20ZedGraph.CurveItem.IsOverrideOrdinal%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/CurveItem.cs/#L466">View Source</a>
+  </span>
+  <a id="ZedGraph_CurveItem_IsOverrideOrdinal_" data-uid="ZedGraph.CurveItem.IsOverrideOrdinal*"></a>
+  <h4 id="ZedGraph_CurveItem_IsOverrideOrdinal" data-uid="ZedGraph.CurveItem.IsOverrideOrdinal">IsOverrideOrdinal</h4>
+  <div class="markdown level1 summary"><p>Gets or sets a value which allows you to override the normal
+ordinal axis behavior.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsOverrideOrdinal { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="ZedGraph_CurveItem_IsOverrideOrdinal_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Normally for an ordinal axis type, the actual data values corresponding to the ordinal
+axis will be ignored (essentially they are replaced by ordinal values, e.g., 1, 2, 3, etc).
+If IsOverrideOrdinal is true, then the user data values will be used (even if they don't
+make sense).  Fractional values are allowed, such that a value of 1.5 is between the first and
+second ordinal position, etc.</p>
+</div>
+  <h5 id="ZedGraph_CurveItem_IsOverrideOrdinal_seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="ZedGraph.AxisType.html#ZedGraph_AxisType_Ordinal">Ordinal</a></div>
+      <div><a class="xref" href="ZedGraph.AxisType.html#ZedGraph_AxisType_Text">Text</a></div>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_CurveItem_IsPie.md&amp;value=---%0Auid%3A%20ZedGraph.CurveItem.IsPie%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/CurveItem.cs/#L540">View Source</a>
+  </span>
+  <a id="ZedGraph_CurveItem_IsPie_" data-uid="ZedGraph.CurveItem.IsPie*"></a>
+  <h4 id="ZedGraph_CurveItem_IsPie" data-uid="ZedGraph.CurveItem.IsPie">IsPie</h4>
+  <div class="markdown level1 summary"><p>Determines whether this <a class="xref" href="ZedGraph.CurveItem.html">CurveItem</a>
+is a <a class="xref" href="ZedGraph.PieItem.html">PieItem</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsPie { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><p>true for a pie chart, or false for a line or bar graph</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_CurveItem_IsSelectable.md&amp;value=---%0Auid%3A%20ZedGraph.CurveItem.IsSelectable%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/CurveItem.cs/#L447">View Source</a>
+  </span>
+  <a id="ZedGraph_CurveItem_IsSelectable_" data-uid="ZedGraph.CurveItem.IsSelectable*"></a>
+  <h4 id="ZedGraph_CurveItem_IsSelectable" data-uid="ZedGraph.CurveItem.IsSelectable">IsSelectable</h4>
+  <div class="markdown level1 summary"><p>Determines whether this <a class="xref" href="ZedGraph.CurveItem.html">CurveItem</a> can be selected in the graph.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsSelectable { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_CurveItem_IsSelected.md&amp;value=---%0Auid%3A%20ZedGraph.CurveItem.IsSelected%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/CurveItem.cs/#L417">View Source</a>
+  </span>
+  <a id="ZedGraph_CurveItem_IsSelected_" data-uid="ZedGraph.CurveItem.IsSelected*"></a>
+  <h4 id="ZedGraph_CurveItem_IsSelected" data-uid="ZedGraph.CurveItem.IsSelected">IsSelected</h4>
+  <div class="markdown level1 summary"><p>Determines whether this <a class="xref" href="ZedGraph.CurveItem.html">CurveItem</a> is selected on the graph.
+Note that this value changes the curve displayed color, but it does not
+affect the display of the legend entry. To hide the legend entry, you
+have to set <a class="xref" href="ZedGraph.Label.html#ZedGraph_Label_IsVisible">IsVisible</a> to false.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsSelected { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_CurveItem_IsVisible.md&amp;value=---%0Auid%3A%20ZedGraph.CurveItem.IsVisible%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/CurveItem.cs/#L404">View Source</a>
+  </span>
+  <a id="ZedGraph_CurveItem_IsVisible_" data-uid="ZedGraph.CurveItem.IsVisible*"></a>
+  <h4 id="ZedGraph_CurveItem_IsVisible" data-uid="ZedGraph.CurveItem.IsVisible">IsVisible</h4>
+  <div class="markdown level1 summary"><p>Determines whether this <a class="xref" href="ZedGraph.CurveItem.html">CurveItem</a> is visible on the graph.
+Note that this value turns the curve display on or off, but it does not
+affect the display of the legend entry.  To hide the legend entry, you
+have to set <a class="xref" href="ZedGraph.Label.html#ZedGraph_Label_IsVisible">IsVisible</a> to false.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsVisible { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_CurveItem_IsX2Axis.md&amp;value=---%0Auid%3A%20ZedGraph.CurveItem.IsX2Axis%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/CurveItem.cs/#L484">View Source</a>
+  </span>
+  <a id="ZedGraph_CurveItem_IsX2Axis_" data-uid="ZedGraph.CurveItem.IsX2Axis*"></a>
+  <h4 id="ZedGraph_CurveItem_IsX2Axis" data-uid="ZedGraph.CurveItem.IsX2Axis">IsX2Axis</h4>
+  <div class="markdown level1 summary"><p>Gets or sets a value that determines which X axis this <a class="xref" href="ZedGraph.CurveItem.html">CurveItem</a>
+is assigned to.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsX2Axis { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><p>true to assign the curve to the <a class="xref" href="ZedGraph.X2Axis.html">X2Axis</a>,
+false to assign the curve to the <a class="xref" href="ZedGraph.XAxis.html">XAxis</a></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="ZedGraph_CurveItem_IsX2Axis_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The
+<a class="xref" href="ZedGraph.XAxis.html">XAxis</a> is on the bottom side of the graph and the
+<a class="xref" href="ZedGraph.X2Axis.html">X2Axis</a> is on the top side.  Assignment to an axis
+determines the scale that is used to draw the curve on the graph.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_CurveItem_IsY2Axis.md&amp;value=---%0Auid%3A%20ZedGraph.CurveItem.IsY2Axis%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/CurveItem.cs/#L504">View Source</a>
+  </span>
+  <a id="ZedGraph_CurveItem_IsY2Axis_" data-uid="ZedGraph.CurveItem.IsY2Axis*"></a>
+  <h4 id="ZedGraph_CurveItem_IsY2Axis" data-uid="ZedGraph.CurveItem.IsY2Axis">IsY2Axis</h4>
+  <div class="markdown level1 summary"><p>Gets or sets a value that determines which Y axis this <a class="xref" href="ZedGraph.CurveItem.html">CurveItem</a>
+is assigned to.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsY2Axis { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><p>true to assign the curve to the <a class="xref" href="ZedGraph.Y2Axis.html">Y2Axis</a>,
+false to assign the curve to the <a class="xref" href="ZedGraph.YAxis.html">YAxis</a></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="ZedGraph_CurveItem_IsY2Axis_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The
+<a class="xref" href="ZedGraph.YAxis.html">YAxis</a> is on the left side of the graph and the
+<a class="xref" href="ZedGraph.Y2Axis.html">Y2Axis</a> is on the right side.  Assignment to an axis
+determines the scale that is used to draw the curve on the graph.  Note that
+this value is used in combination with the <a class="xref" href="ZedGraph.CurveItem.html#ZedGraph_CurveItem_YAxisIndex">YAxisIndex</a> to determine
+which of the Y Axes (if there are multiples) this curve belongs to.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_CurveItem_Item_System_Int32_.md&amp;value=---%0Auid%3A%20ZedGraph.CurveItem.Item(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/CurveItem.cs/#L601">View Source</a>
+  </span>
+  <a id="ZedGraph_CurveItem_Item_" data-uid="ZedGraph.CurveItem.Item*"></a>
+  <h4 id="ZedGraph_CurveItem_Item_System_Int32_" data-uid="ZedGraph.CurveItem.Item(System.Int32)">Item[Int32]</h4>
+  <div class="markdown level1 summary"><p>An accessor for the <a class="xref" href="ZedGraph.PointPair.html">PointPair</a> datum for this <a class="xref" href="ZedGraph.CurveItem.html">CurveItem</a>.
+Index is the ordinal reference (zero based) of the point.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PointPair this[int index] { get; }</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">index</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ZedGraph.PointPair.html">PointPair</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_CurveItem_Label.md&amp;value=---%0Auid%3A%20ZedGraph.CurveItem.Label%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/CurveItem.cs/#L349">View Source</a>
+  </span>
+  <a id="ZedGraph_CurveItem_Label_" data-uid="ZedGraph.CurveItem.Label*"></a>
+  <h4 id="ZedGraph_CurveItem_Label" data-uid="ZedGraph.CurveItem.Label">Label</h4>
+  <div class="markdown level1 summary"><p>A <a class="xref" href="ZedGraph.CurveItem.html#ZedGraph_CurveItem_Label">Label</a> instance that represents the <a class="xref" href="ZedGraph.Legend.html">Legend</a>
+entry for the this <a class="xref" href="ZedGraph.CurveItem.html">CurveItem</a> object</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Label Label { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ZedGraph.Label.html">Label</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_CurveItem_Link.md&amp;value=---%0Auid%3A%20ZedGraph.CurveItem.Link%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/CurveItem.cs/#L616">View Source</a>
+  </span>
+  <a id="ZedGraph_CurveItem_Link_" data-uid="ZedGraph.CurveItem.Link*"></a>
+  <h4 id="ZedGraph_CurveItem_Link" data-uid="ZedGraph.CurveItem.Link">Link</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the hyperlink information for this <a class="xref" href="ZedGraph.CurveItem.html">CurveItem</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Link Link { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ZedGraph.Link.html">Link</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_CurveItem_NPts.md&amp;value=---%0Auid%3A%20ZedGraph.CurveItem.NPts%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/CurveItem.cs/#L576">View Source</a>
+  </span>
+  <a id="ZedGraph_CurveItem_NPts_" data-uid="ZedGraph.CurveItem.NPts*"></a>
+  <h4 id="ZedGraph_CurveItem_NPts" data-uid="ZedGraph.CurveItem.NPts">NPts</h4>
+  <div class="markdown level1 summary"><p>Readonly property that gives the number of points that define this
+<a class="xref" href="ZedGraph.CurveItem.html">CurveItem</a> object, which is the number of points in the
+<a class="xref" href="ZedGraph.CurveItem.html#ZedGraph_CurveItem_Points">Points</a> data collection.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int NPts { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_CurveItem_Points.md&amp;value=---%0Auid%3A%20ZedGraph.CurveItem.Points%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/CurveItem.cs/#L591">View Source</a>
+  </span>
+  <a id="ZedGraph_CurveItem_Points_" data-uid="ZedGraph.CurveItem.Points*"></a>
+  <h4 id="ZedGraph_CurveItem_Points" data-uid="ZedGraph.CurveItem.Points">Points</h4>
+  <div class="markdown level1 summary"><p>The <a class="xref" href="ZedGraph.IPointList.html">IPointList</a> of X,Y point sets that represent this
+<a class="xref" href="ZedGraph.CurveItem.html">CurveItem</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IPointList Points { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ZedGraph.IPointList.html">IPointList</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_CurveItem_YAxisIndex.md&amp;value=---%0Auid%3A%20ZedGraph.CurveItem.YAxisIndex%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/CurveItem.cs/#L519">View Source</a>
+  </span>
+  <a id="ZedGraph_CurveItem_YAxisIndex_" data-uid="ZedGraph.CurveItem.YAxisIndex*"></a>
+  <h4 id="ZedGraph_CurveItem_YAxisIndex" data-uid="ZedGraph.CurveItem.YAxisIndex">YAxisIndex</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the index number of the Y Axis to which this
+<a class="xref" href="ZedGraph.CurveItem.html">CurveItem</a> belongs.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int YAxisIndex { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="ZedGraph_CurveItem_YAxisIndex_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This value is essentially an index number into the <a class="xref" href="ZedGraph.GraphPane.html#ZedGraph_GraphPane_YAxisList">YAxisList</a>
+or <a class="xref" href="ZedGraph.GraphPane.html#ZedGraph_GraphPane_Y2AxisList">Y2AxisList</a>, depending on the setting of
+<a class="xref" href="ZedGraph.CurveItem.html#ZedGraph_CurveItem_IsY2Axis">IsY2Axis</a>.</p>
+</div>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_CurveItem_AddPoint_System_Double_System_Double_.md&amp;value=---%0Auid%3A%20ZedGraph.CurveItem.AddPoint(System.Double%2CSystem.Double)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/CurveItem.cs/#L681">View Source</a>
+  </span>
+  <a id="ZedGraph_CurveItem_AddPoint_" data-uid="ZedGraph.CurveItem.AddPoint*"></a>
+  <h4 id="ZedGraph_CurveItem_AddPoint_System_Double_System_Double_" data-uid="ZedGraph.CurveItem.AddPoint(System.Double,System.Double)">AddPoint(Double, Double)</h4>
+  <div class="markdown level1 summary"><p>Add a single x,y coordinate point to the end of the points collection for this curve.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddPoint(double x, double y)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.double">Double</a></td>
+        <td><span class="parametername">x</span></td>
+        <td><p>The X coordinate value</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.double">Double</a></td>
+        <td><span class="parametername">y</span></td>
+        <td><p>The Y coordinate value</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_CurveItem_AddPoint_ZedGraph_PointPair_.md&amp;value=---%0Auid%3A%20ZedGraph.CurveItem.AddPoint(ZedGraph.PointPair)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/CurveItem.cs/#L696">View Source</a>
+  </span>
+  <a id="ZedGraph_CurveItem_AddPoint_" data-uid="ZedGraph.CurveItem.AddPoint*"></a>
+  <h4 id="ZedGraph_CurveItem_AddPoint_ZedGraph_PointPair_" data-uid="ZedGraph.CurveItem.AddPoint(ZedGraph.PointPair)">AddPoint(PointPair)</h4>
+  <div class="markdown level1 summary"><p>Add a <a class="xref" href="ZedGraph.PointPair.html">PointPair</a> object to the end of the points collection for this curve.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddPoint(PointPair point)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ZedGraph.PointPair.html">PointPair</a></td>
+        <td><span class="parametername">point</span></td>
+        <td><p>A reference to the <a class="xref" href="ZedGraph.PointPair.html">PointPair</a> object to
+be added</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="ZedGraph_CurveItem_AddPoint_ZedGraph_PointPair__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This method will only work if the <a class="xref" href="ZedGraph.IPointList.html">IPointList</a> instance reference
+at <a class="xref" href="ZedGraph.CurveItem.html#ZedGraph_CurveItem_Points">Points</a> supports the <a class="xref" href="ZedGraph.IPointListEdit.html">IPointListEdit</a> interface.
+Otherwise, it does nothing.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_CurveItem_BaseAxis_ZedGraph_GraphPane_.md&amp;value=---%0Auid%3A%20ZedGraph.CurveItem.BaseAxis(ZedGraph.GraphPane)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/CurveItem.cs/#L972">View Source</a>
+  </span>
+  <a id="ZedGraph_CurveItem_BaseAxis_" data-uid="ZedGraph.CurveItem.BaseAxis*"></a>
+  <h4 id="ZedGraph_CurveItem_BaseAxis_ZedGraph_GraphPane_" data-uid="ZedGraph.CurveItem.BaseAxis(ZedGraph.GraphPane)">BaseAxis(GraphPane)</h4>
+  <div class="markdown level1 summary"><p>Returns a reference to the <a class="xref" href="ZedGraph.Axis.html">Axis</a> object that is the &quot;base&quot;
+(independent axis) from which the values are drawn.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Axis BaseAxis(GraphPane pane)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ZedGraph.GraphPane.html">GraphPane</a></td>
+        <td><span class="parametername">pane</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ZedGraph.Axis.html">Axis</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="ZedGraph_CurveItem_BaseAxis_ZedGraph_GraphPane__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This property is determined by the value of <a class="xref" href="ZedGraph.BarSettings.html#ZedGraph_BarSettings_Base">Base</a> for
+<a class="xref" href="ZedGraph.BarItem.html">BarItem</a>, <a class="xref" href="ZedGraph.ErrorBarItem.html">ErrorBarItem</a>, and <a class="xref" href="ZedGraph.HiLowBarItem.html">HiLowBarItem</a>
+types.  It is always the X axis for regular <a class="xref" href="ZedGraph.LineItem.html">LineItem</a> types.
+Note that the <a class="xref" href="ZedGraph.BarSettings.html#ZedGraph_BarSettings_Base">Base</a> setting can override the
+<a class="xref" href="ZedGraph.CurveItem.html#ZedGraph_CurveItem_IsY2Axis">IsY2Axis</a> and <a class="xref" href="ZedGraph.CurveItem.html#ZedGraph_CurveItem_YAxisIndex">YAxisIndex</a> settings for bar types
+(this is because all the bars that are clustered together must share the
+same base axis).</p>
+</div>
+  <h5 id="ZedGraph_CurveItem_BaseAxis_ZedGraph_GraphPane__seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="ZedGraph.BarBase.html">BarBase</a></div>
+      <div><a class="xref" href="ZedGraph.CurveItem.html#ZedGraph_CurveItem_ValueAxis_ZedGraph_GraphPane_">ValueAxis(GraphPane)</a></div>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_CurveItem_Clear.md&amp;value=---%0Auid%3A%20ZedGraph.CurveItem.Clear%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/CurveItem.cs/#L716">View Source</a>
+  </span>
+  <a id="ZedGraph_CurveItem_Clear_" data-uid="ZedGraph.CurveItem.Clear*"></a>
+  <h4 id="ZedGraph_CurveItem_Clear" data-uid="ZedGraph.CurveItem.Clear">Clear()</h4>
+  <div class="markdown level1 summary"><p>Clears the points from this <a class="xref" href="ZedGraph.CurveItem.html">CurveItem</a>.  This is the same
+as <code>CurveItem.Points.Clear()</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Clear()</code></pre>
+  </div>
+  <h5 id="ZedGraph_CurveItem_Clear_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This method will only work if the <a class="xref" href="ZedGraph.IPointList.html">IPointList</a> instance reference
+at <a class="xref" href="ZedGraph.CurveItem.html#ZedGraph_CurveItem_Points">Points</a> supports the <a class="xref" href="ZedGraph.IPointListEdit.html">IPointListEdit</a> interface.
+Otherwise, it does nothing.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_CurveItem_Draw_System_Drawing_Graphics_ZedGraph_GraphPane_System_Int32_System_Single_.md&amp;value=---%0Auid%3A%20ZedGraph.CurveItem.Draw(System.Drawing.Graphics%2CZedGraph.GraphPane%2CSystem.Int32%2CSystem.Single)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/CurveItem.cs/#L647">View Source</a>
+  </span>
+  <a id="ZedGraph_CurveItem_Draw_" data-uid="ZedGraph.CurveItem.Draw*"></a>
+  <h4 id="ZedGraph_CurveItem_Draw_System_Drawing_Graphics_ZedGraph_GraphPane_System_Int32_System_Single_" data-uid="ZedGraph.CurveItem.Draw(System.Drawing.Graphics,ZedGraph.GraphPane,System.Int32,System.Single)">Draw(Graphics, GraphPane, Int32, Single)</h4>
+  <div class="markdown level1 summary"><p>Do all rendering associated with this <a class="xref" href="ZedGraph.CurveItem.html">CurveItem</a> to the specified
+<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.drawing.graphics">Graphics</a> device.  This method is normally only
+called by the Draw method of the parent <a class="xref" href="ZedGraph.CurveList.html">CurveList</a>
+collection object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract void Draw(Graphics g, GraphPane pane, int pos, float scaleFactor)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.drawing.graphics">Graphics</a></td>
+        <td><span class="parametername">g</span></td>
+        <td><p>A graphic device object to be drawn into.  This is normally e.Graphics from the
+PaintEventArgs argument to the Paint() method.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ZedGraph.GraphPane.html">GraphPane</a></td>
+        <td><span class="parametername">pane</span></td>
+        <td><p>A reference to the <a class="xref" href="ZedGraph.GraphPane.html">GraphPane</a> object that is the parent or
+owner of this object.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">pos</span></td>
+        <td><p>The ordinal position of the current <a class="xref" href="ZedGraph.Bar.html">Bar</a>
+curve.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td><span class="parametername">scaleFactor</span></td>
+        <td><p>The scaling factor to be used for rendering objects.  This is calculated and
+passed down by the parent <a class="xref" href="ZedGraph.GraphPane.html">GraphPane</a> object using the
+<a class="xref" href="ZedGraph.PaneBase.html#ZedGraph_PaneBase_CalcScaleFactor">CalcScaleFactor()</a> method, and is used to proportionally adjust
+font sizes, etc. according to the actual size of the graph.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_CurveItem_DrawLegendKey_System_Drawing_Graphics_ZedGraph_GraphPane_System_Drawing_RectangleF_System_Single_.md&amp;value=---%0Auid%3A%20ZedGraph.CurveItem.DrawLegendKey(System.Drawing.Graphics%2CZedGraph.GraphPane%2CSystem.Drawing.RectangleF%2CSystem.Single)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/CurveItem.cs/#L670">View Source</a>
+  </span>
+  <a id="ZedGraph_CurveItem_DrawLegendKey_" data-uid="ZedGraph.CurveItem.DrawLegendKey*"></a>
+  <h4 id="ZedGraph_CurveItem_DrawLegendKey_System_Drawing_Graphics_ZedGraph_GraphPane_System_Drawing_RectangleF_System_Single_" data-uid="ZedGraph.CurveItem.DrawLegendKey(System.Drawing.Graphics,ZedGraph.GraphPane,System.Drawing.RectangleF,System.Single)">DrawLegendKey(Graphics, GraphPane, RectangleF, Single)</h4>
+  <div class="markdown level1 summary"><p>Draw a legend key entry for this <a class="xref" href="ZedGraph.CurveItem.html">CurveItem</a> at the specified location.
+This abstract base method passes through to <a class="xref" href="ZedGraph.BarItem.html#ZedGraph_BarItem_DrawLegendKey_System_Drawing_Graphics_ZedGraph_GraphPane_System_Drawing_RectangleF_System_Single_">DrawLegendKey(Graphics, GraphPane, RectangleF, Single)</a> or
+<a class="xref" href="ZedGraph.LineItem.html#ZedGraph_LineItem_DrawLegendKey_System_Drawing_Graphics_ZedGraph_GraphPane_System_Drawing_RectangleF_System_Single_">DrawLegendKey(Graphics, GraphPane, RectangleF, Single)</a> to do the rendering.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract void DrawLegendKey(Graphics g, GraphPane pane, RectangleF rect, float scaleFactor)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.drawing.graphics">Graphics</a></td>
+        <td><span class="parametername">g</span></td>
+        <td><p>A graphic device object to be drawn into.  This is normally e.Graphics from the
+PaintEventArgs argument to the Paint() method.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ZedGraph.GraphPane.html">GraphPane</a></td>
+        <td><span class="parametername">pane</span></td>
+        <td><p>A reference to the <a class="xref" href="ZedGraph.GraphPane.html">GraphPane</a> object that is the parent or
+owner of this object.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.drawing.rectanglef">RectangleF</a></td>
+        <td><span class="parametername">rect</span></td>
+        <td><p>The <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.drawing.rectanglef">RectangleF</a> struct that specifies the
+location for the legend key</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td><span class="parametername">scaleFactor</span></td>
+        <td><p>The scaling factor to be used for rendering objects.  This is calculated and
+passed down by the parent <a class="xref" href="ZedGraph.GraphPane.html">GraphPane</a> object using the
+<a class="xref" href="ZedGraph.PaneBase.html#ZedGraph_PaneBase_CalcScaleFactor">CalcScaleFactor()</a> method, and is used to proportionally adjust
+font sizes, etc. according to the actual size of the graph.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_CurveItem_GetBarWidth_ZedGraph_GraphPane_.md&amp;value=---%0Auid%3A%20ZedGraph.CurveItem.GetBarWidth(ZedGraph.GraphPane)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/CurveItem.cs/#L1021">View Source</a>
+  </span>
+  <a id="ZedGraph_CurveItem_GetBarWidth_" data-uid="ZedGraph.CurveItem.GetBarWidth*"></a>
+  <h4 id="ZedGraph_CurveItem_GetBarWidth_ZedGraph_GraphPane_" data-uid="ZedGraph.CurveItem.GetBarWidth(ZedGraph.GraphPane)">GetBarWidth(GraphPane)</h4>
+  <div class="markdown level1 summary"><p>Calculate the width of each bar, depending on the actual bar type</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float GetBarWidth(GraphPane pane)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ZedGraph.GraphPane.html">GraphPane</a></td>
+        <td><span class="parametername">pane</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td><p>The width for an individual bar, in pixel units</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_CurveItem_GetCoords_ZedGraph_GraphPane_System_Int32_System_String__.md&amp;value=---%0Auid%3A%20ZedGraph.CurveItem.GetCoords(ZedGraph.GraphPane%2CSystem.Int32%2CSystem.String%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/CurveItem.cs/#L1074">View Source</a>
+  </span>
+  <a id="ZedGraph_CurveItem_GetCoords_" data-uid="ZedGraph.CurveItem.GetCoords*"></a>
+  <h4 id="ZedGraph_CurveItem_GetCoords_ZedGraph_GraphPane_System_Int32_System_String__" data-uid="ZedGraph.CurveItem.GetCoords(ZedGraph.GraphPane,System.Int32,System.String@)">GetCoords(GraphPane, Int32, out String)</h4>
+  <div class="markdown level1 summary"><p>Determine the coords for the rectangle associated with a specified point for
+this <a class="xref" href="ZedGraph.CurveItem.html">CurveItem</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract bool GetCoords(GraphPane pane, int i, out string coords)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ZedGraph.GraphPane.html">GraphPane</a></td>
+        <td><span class="parametername">pane</span></td>
+        <td><p>The <a class="xref" href="ZedGraph.GraphPane.html">GraphPane</a> to which this curve belongs</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">i</span></td>
+        <td><p>The index of the point of interest</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">coords</span></td>
+        <td><p>A list of coordinates that represents the &quot;rect&quot; for
+this point (used in an html AREA tag)</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><p>true if it's a valid point, false otherwise</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_CurveItem_GetObjectData_System_Runtime_Serialization_SerializationInfo_System_Runtime_Serialization_StreamingContext_.md&amp;value=---%0Auid%3A%20ZedGraph.CurveItem.GetObjectData(System.Runtime.Serialization.SerializationInfo%2CSystem.Runtime.Serialization.StreamingContext)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/CurveItem.cs/#L318">View Source</a>
+  </span>
+  <a id="ZedGraph_CurveItem_GetObjectData_" data-uid="ZedGraph.CurveItem.GetObjectData*"></a>
+  <h4 id="ZedGraph_CurveItem_GetObjectData_System_Runtime_Serialization_SerializationInfo_System_Runtime_Serialization_StreamingContext_" data-uid="ZedGraph.CurveItem.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">GetObjectData(SerializationInfo, StreamingContext)</h4>
+  <div class="markdown level1 summary"><p>Populates a <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.runtime.serialization.serializationinfo">SerializationInfo</a> instance with the data needed to serialize the target object</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[SecurityPermission(SecurityAction.Demand, SerializationFormatter = true)]
+public virtual void GetObjectData(SerializationInfo info, StreamingContext context)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.runtime.serialization.serializationinfo">SerializationInfo</a></td>
+        <td><span class="parametername">info</span></td>
+        <td><p>A <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.runtime.serialization.serializationinfo">SerializationInfo</a> instance that defines the serialized data</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.runtime.serialization.streamingcontext">StreamingContext</a></td>
+        <td><span class="parametername">context</span></td>
+        <td><p>A <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.runtime.serialization.streamingcontext">StreamingContext</a> instance that contains the serialized data</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_CurveItem_GetRange_System_Double__System_Double__System_Double__System_Double__System_Boolean_System_Boolean_ZedGraph_GraphPane_.md&amp;value=---%0Auid%3A%20ZedGraph.CurveItem.GetRange(System.Double%40%2CSystem.Double%40%2CSystem.Double%40%2CSystem.Double%40%2CSystem.Boolean%2CSystem.Boolean%2CZedGraph.GraphPane)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/CurveItem.cs/#L864">View Source</a>
+  </span>
+  <a id="ZedGraph_CurveItem_GetRange_" data-uid="ZedGraph.CurveItem.GetRange*"></a>
+  <h4 id="ZedGraph_CurveItem_GetRange_System_Double__System_Double__System_Double__System_Double__System_Boolean_System_Boolean_ZedGraph_GraphPane_" data-uid="ZedGraph.CurveItem.GetRange(System.Double@,System.Double@,System.Double@,System.Double@,System.Boolean,System.Boolean,ZedGraph.GraphPane)">GetRange(out Double, out Double, out Double, out Double, Boolean, Boolean, GraphPane)</h4>
+  <div class="markdown level1 summary"><p>Go through the list of <a class="xref" href="ZedGraph.PointPair.html">PointPair</a> data values for this <a class="xref" href="ZedGraph.CurveItem.html">CurveItem</a>
+and determine the minimum and maximum values in the data.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void GetRange(out double xMin, out double xMax, out double yMin, out double yMax, bool ignoreInitial, bool isBoundedRanges, GraphPane pane)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.double">Double</a></td>
+        <td><span class="parametername">xMin</span></td>
+        <td><p>The minimum X value in the range of data</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.double">Double</a></td>
+        <td><span class="parametername">xMax</span></td>
+        <td><p>The maximum X value in the range of data</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.double">Double</a></td>
+        <td><span class="parametername">yMin</span></td>
+        <td><p>The minimum Y value in the range of data</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.double">Double</a></td>
+        <td><span class="parametername">yMax</span></td>
+        <td><p>The maximum Y value in the range of data</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="parametername">ignoreInitial</span></td>
+        <td><p>ignoreInitial is a boolean value that
+affects the data range that is considered for the automatic scale
+ranging (see <a class="xref" href="ZedGraph.GraphPane.html#ZedGraph_GraphPane_IsIgnoreInitial">IsIgnoreInitial</a>).  If true, then initial
+data points where the Y value is zero are not included when
+automatically determining the scale <a class="xref" href="ZedGraph.Scale.html#ZedGraph_Scale_Min">Min</a>,
+<a class="xref" href="ZedGraph.Scale.html#ZedGraph_Scale_Max">Max</a>, and <a class="xref" href="ZedGraph.Scale.html#ZedGraph_Scale_MajorStep">MajorStep</a> size.  All data after
+the first non-zero Y value are included.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="parametername">isBoundedRanges</span></td>
+        <td><p>Determines if the auto-scaled axis ranges will subset the
+data points based on any manually set scale range values.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ZedGraph.GraphPane.html">GraphPane</a></td>
+        <td><span class="parametername">pane</span></td>
+        <td><p>A reference to the <a class="xref" href="ZedGraph.GraphPane.html">GraphPane</a> object that is the parent or
+owner of this object.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="ZedGraph_CurveItem_GetRange_System_Double__System_Double__System_Double__System_Double__System_Boolean_System_Boolean_ZedGraph_GraphPane__seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="ZedGraph.GraphPane.html#ZedGraph_GraphPane_IsBoundedRanges">IsBoundedRanges</a></div>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_CurveItem_GetXAxis_ZedGraph_GraphPane_.md&amp;value=---%0Auid%3A%20ZedGraph.CurveItem.GetXAxis(ZedGraph.GraphPane)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/CurveItem.cs/#L749">View Source</a>
+  </span>
+  <a id="ZedGraph_CurveItem_GetXAxis_" data-uid="ZedGraph.CurveItem.GetXAxis*"></a>
+  <h4 id="ZedGraph_CurveItem_GetXAxis_ZedGraph_GraphPane_" data-uid="ZedGraph.CurveItem.GetXAxis(ZedGraph.GraphPane)">GetXAxis(GraphPane)</h4>
+  <div class="markdown level1 summary"><p>Get the X Axis instance (either <a class="xref" href="ZedGraph.XAxis.html">XAxis</a> or <a class="xref" href="ZedGraph.X2Axis.html">X2Axis</a>) to
+which this <a class="xref" href="ZedGraph.CurveItem.html">CurveItem</a> belongs.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Axis GetXAxis(GraphPane pane)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ZedGraph.GraphPane.html">GraphPane</a></td>
+        <td><span class="parametername">pane</span></td>
+        <td><p>The <a class="xref" href="ZedGraph.GraphPane.html">GraphPane</a> object to which this curve belongs.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ZedGraph.Axis.html">Axis</a></td>
+        <td><p>Either a <a class="xref" href="ZedGraph.XAxis.html">XAxis</a> or <a class="xref" href="ZedGraph.X2Axis.html">X2Axis</a> to which this
+<a class="xref" href="ZedGraph.CurveItem.html">CurveItem</a> belongs.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_CurveItem_GetYAxis_ZedGraph_GraphPane_.md&amp;value=---%0Auid%3A%20ZedGraph.CurveItem.GetYAxis(ZedGraph.GraphPane)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/CurveItem.cs/#L771">View Source</a>
+  </span>
+  <a id="ZedGraph_CurveItem_GetYAxis_" data-uid="ZedGraph.CurveItem.GetYAxis*"></a>
+  <h4 id="ZedGraph_CurveItem_GetYAxis_ZedGraph_GraphPane_" data-uid="ZedGraph.CurveItem.GetYAxis(ZedGraph.GraphPane)">GetYAxis(GraphPane)</h4>
+  <div class="markdown level1 summary"><p>Get the Y Axis instance (either <a class="xref" href="ZedGraph.YAxis.html">YAxis</a> or <a class="xref" href="ZedGraph.Y2Axis.html">Y2Axis</a>) to
+which this <a class="xref" href="ZedGraph.CurveItem.html">CurveItem</a> belongs.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Axis GetYAxis(GraphPane pane)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ZedGraph.GraphPane.html">GraphPane</a></td>
+        <td><span class="parametername">pane</span></td>
+        <td><p>The <a class="xref" href="ZedGraph.GraphPane.html">GraphPane</a> object to which this curve belongs.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ZedGraph.Axis.html">Axis</a></td>
+        <td><p>Either a <a class="xref" href="ZedGraph.YAxis.html">YAxis</a> or <a class="xref" href="ZedGraph.Y2Axis.html">Y2Axis</a> to which this
+<a class="xref" href="ZedGraph.CurveItem.html">CurveItem</a> belongs.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="ZedGraph_CurveItem_GetYAxis_ZedGraph_GraphPane__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This method safely retrieves a Y Axis instance from either the <a class="xref" href="ZedGraph.GraphPane.html#ZedGraph_GraphPane_YAxisList">YAxisList</a>
+or the <a class="xref" href="ZedGraph.GraphPane.html#ZedGraph_GraphPane_Y2AxisList">Y2AxisList</a> using the values of <a class="xref" href="ZedGraph.CurveItem.html#ZedGraph_CurveItem_YAxisIndex">YAxisIndex</a> and
+<a class="xref" href="ZedGraph.CurveItem.html#ZedGraph_CurveItem_IsY2Axis">IsY2Axis</a>.  If the value of <a class="xref" href="ZedGraph.CurveItem.html#ZedGraph_CurveItem_YAxisIndex">YAxisIndex</a> is out of bounds, the
+default <a class="xref" href="ZedGraph.YAxis.html">YAxis</a> or <a class="xref" href="ZedGraph.Y2Axis.html">Y2Axis</a> is used.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_CurveItem_GetYAxisIndex_ZedGraph_GraphPane_.md&amp;value=---%0Auid%3A%20ZedGraph.CurveItem.GetYAxisIndex(ZedGraph.GraphPane)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/CurveItem.cs/#L803">View Source</a>
+  </span>
+  <a id="ZedGraph_CurveItem_GetYAxisIndex_" data-uid="ZedGraph.CurveItem.GetYAxisIndex*"></a>
+  <h4 id="ZedGraph_CurveItem_GetYAxisIndex_ZedGraph_GraphPane_" data-uid="ZedGraph.CurveItem.GetYAxisIndex(ZedGraph.GraphPane)">GetYAxisIndex(GraphPane)</h4>
+  <div class="markdown level1 summary"><p>Get the index of the Y Axis in the <a class="xref" href="ZedGraph.YAxis.html">YAxis</a> or <a class="xref" href="ZedGraph.Y2Axis.html">Y2Axis</a> list to
+which this <a class="xref" href="ZedGraph.CurveItem.html">CurveItem</a> belongs.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetYAxisIndex(GraphPane pane)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ZedGraph.GraphPane.html">GraphPane</a></td>
+        <td><span class="parametername">pane</span></td>
+        <td><p>The <a class="xref" href="ZedGraph.GraphPane.html">GraphPane</a> object to which this curve belongs.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><p>An integer value indicating which index position in the list applies to this
+<a class="xref" href="ZedGraph.CurveItem.html">CurveItem</a></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="ZedGraph_CurveItem_GetYAxisIndex_ZedGraph_GraphPane__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This method safely retrieves a Y Axis index into either the <a class="xref" href="ZedGraph.GraphPane.html#ZedGraph_GraphPane_YAxisList">YAxisList</a>
+or the <a class="xref" href="ZedGraph.GraphPane.html#ZedGraph_GraphPane_Y2AxisList">Y2AxisList</a> using the values of <a class="xref" href="ZedGraph.CurveItem.html#ZedGraph_CurveItem_YAxisIndex">YAxisIndex</a> and
+<a class="xref" href="ZedGraph.CurveItem.html#ZedGraph_CurveItem_IsY2Axis">IsY2Axis</a>.  If the value of <a class="xref" href="ZedGraph.CurveItem.html#ZedGraph_CurveItem_YAxisIndex">YAxisIndex</a> is out of bounds, the
+default <a class="xref" href="ZedGraph.YAxis.html">YAxis</a> or <a class="xref" href="ZedGraph.Y2Axis.html">Y2Axis</a> is used, which is index zero.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_CurveItem_MakeUnique.md&amp;value=---%0Auid%3A%20ZedGraph.CurveItem.MakeUnique%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/CurveItem.cs/#L819">View Source</a>
+  </span>
+  <a id="ZedGraph_CurveItem_MakeUnique_" data-uid="ZedGraph.CurveItem.MakeUnique*"></a>
+  <h4 id="ZedGraph_CurveItem_MakeUnique" data-uid="ZedGraph.CurveItem.MakeUnique">MakeUnique()</h4>
+  <div class="markdown level1 summary"><p>Loads some pseudo unique colors/symbols into this CurveItem.  This
+is the same as <code>MakeUnique(ColorSymbolRotator.StaticInstance)</code>.
+<a class="xref" href="ZedGraph.ColorSymbolRotator.html#ZedGraph_ColorSymbolRotator_StaticInstance">StaticInstance</a>
+<a class="xref" href="ZedGraph.ColorSymbolRotator.html">ColorSymbolRotator</a>
+<a class="xref" href="ZedGraph.CurveItem.html#ZedGraph_CurveItem_MakeUnique_ZedGraph_ColorSymbolRotator_">MakeUnique(ColorSymbolRotator)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void MakeUnique()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_CurveItem_MakeUnique_ZedGraph_ColorSymbolRotator_.md&amp;value=---%0Auid%3A%20ZedGraph.CurveItem.MakeUnique(ZedGraph.ColorSymbolRotator)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/CurveItem.cs/#L834">View Source</a>
+  </span>
+  <a id="ZedGraph_CurveItem_MakeUnique_" data-uid="ZedGraph.CurveItem.MakeUnique*"></a>
+  <h4 id="ZedGraph_CurveItem_MakeUnique_ZedGraph_ColorSymbolRotator_" data-uid="ZedGraph.CurveItem.MakeUnique(ZedGraph.ColorSymbolRotator)">MakeUnique(ColorSymbolRotator)</h4>
+  <div class="markdown level1 summary"><p>Loads some pseudo unique colors/symbols into this CurveItem.  This
+is mainly useful for differentiating a set of new CurveItems without
+having to pick your own colors/symbols.
+<a class="xref" href="ZedGraph.CurveItem.html#ZedGraph_CurveItem_MakeUnique_ZedGraph_ColorSymbolRotator_">MakeUnique(ColorSymbolRotator)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void MakeUnique(ColorSymbolRotator rotator)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ZedGraph.ColorSymbolRotator.html">ColorSymbolRotator</a></td>
+        <td><span class="parametername">rotator</span></td>
+        <td><p>The <a class="xref" href="ZedGraph.ColorSymbolRotator.html">ColorSymbolRotator</a> that is used to pick the color
+and symbol for this method call.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_CurveItem_RemovePoint_System_Int32_.md&amp;value=---%0Auid%3A%20ZedGraph.CurveItem.RemovePoint(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/CurveItem.cs/#L733">View Source</a>
+  </span>
+  <a id="ZedGraph_CurveItem_RemovePoint_" data-uid="ZedGraph.CurveItem.RemovePoint*"></a>
+  <h4 id="ZedGraph_CurveItem_RemovePoint_System_Int32_" data-uid="ZedGraph.CurveItem.RemovePoint(System.Int32)">RemovePoint(Int32)</h4>
+  <div class="markdown level1 summary"><p>Removes a single point from this <a class="xref" href="ZedGraph.CurveItem.html">CurveItem</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RemovePoint(int index)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">index</span></td>
+        <td><p>The ordinal position of the point to be removed.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="ZedGraph_CurveItem_RemovePoint_System_Int32__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This method will only work if the <a class="xref" href="ZedGraph.IPointList.html">IPointList</a> instance reference
+at <a class="xref" href="ZedGraph.CurveItem.html#ZedGraph_CurveItem_Points">Points</a> supports the <a class="xref" href="ZedGraph.IPointListEdit.html">IPointListEdit</a> interface.
+Otherwise, it does nothing.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_CurveItem_ValueAxis_ZedGraph_GraphPane_.md&amp;value=---%0Auid%3A%20ZedGraph.CurveItem.ValueAxis(ZedGraph.GraphPane)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/CurveItem.cs/#L1000">View Source</a>
+  </span>
+  <a id="ZedGraph_CurveItem_ValueAxis_" data-uid="ZedGraph.CurveItem.ValueAxis*"></a>
+  <h4 id="ZedGraph_CurveItem_ValueAxis_ZedGraph_GraphPane_" data-uid="ZedGraph.CurveItem.ValueAxis(ZedGraph.GraphPane)">ValueAxis(GraphPane)</h4>
+  <div class="markdown level1 summary"><p>Returns a reference to the <a class="xref" href="ZedGraph.Axis.html">Axis</a> object that is the &quot;value&quot;
+(dependent axis) from which the points are drawn.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Axis ValueAxis(GraphPane pane)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ZedGraph.GraphPane.html">GraphPane</a></td>
+        <td><span class="parametername">pane</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ZedGraph.Axis.html">Axis</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="ZedGraph_CurveItem_ValueAxis_ZedGraph_GraphPane__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This property is determined by the value of <a class="xref" href="ZedGraph.BarSettings.html#ZedGraph_BarSettings_Base">Base</a> for
+<a class="xref" href="ZedGraph.BarItem.html">BarItem</a>, <a class="xref" href="ZedGraph.ErrorBarItem.html">ErrorBarItem</a>, and <a class="xref" href="ZedGraph.HiLowBarItem.html">HiLowBarItem</a>
+types.  It is always the Y axis for regular <a class="xref" href="ZedGraph.LineItem.html">LineItem</a> types.</p>
+</div>
+  <h5 id="ZedGraph_CurveItem_ValueAxis_ZedGraph_GraphPane__seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="ZedGraph.BarBase.html">BarBase</a></div>
+      <div><a class="xref" href="ZedGraph.CurveItem.html#ZedGraph_CurveItem_BaseAxis_ZedGraph_GraphPane_">BaseAxis(GraphPane)</a></div>
+  </div>
+  <h3 id="eii">Explicit Interface Implementations
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_CurveItem_System_ICloneable_Clone.md&amp;value=---%0Auid%3A%20ZedGraph.CurveItem.System%23ICloneable%23Clone%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/CurveItem.cs/#L264">View Source</a>
+  </span>
+  <a id="ZedGraph_CurveItem_System_ICloneable_Clone_" data-uid="ZedGraph.CurveItem.System#ICloneable#Clone*"></a>
+  <h4 id="ZedGraph_CurveItem_System_ICloneable_Clone" data-uid="ZedGraph.CurveItem.System#ICloneable#Clone">ICloneable.Clone()</h4>
+  <div class="markdown level1 summary"><p>Implement the <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.icloneable">ICloneable</a> interface in a typesafe manner by just
+calling the typed version of Clone.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">object ICloneable.Clone()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></td>
+        <td><p>A deep copy of this object</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="ZedGraph_CurveItem_System_ICloneable_Clone_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Note that this method must be called with an explicit cast to ICloneable, and
+that it is inherently virtual.  For example:</p>
+<pre><code>ParentClass foo = new ChildClass();
+ChildClass bar = (ChildClass) ((ICloneable)foo).Clone();</code></pre>
+<p>Assume that ChildClass is inherited from ParentClass.  Even though foo is declared with
+ParentClass, it is actually an instance of ChildClass.  Calling the ICloneable implementation
+of Clone() on foo actually calls ChildClass.Clone() as if it were a virtual function.</p>
+</div>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.runtime.serialization.iserializable">System.Runtime.Serialization.ISerializable</a>
+  </div>
+  <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.icloneable">System.ICloneable</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_CurveItem.md&amp;value=---%0Auid%3A%20ZedGraph.CurveItem%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/CurveItem.cs/#L42" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

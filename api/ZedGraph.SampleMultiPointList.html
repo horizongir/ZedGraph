@@ -1,0 +1,592 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class SampleMultiPointList
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class SampleMultiPointList
+   ">
+    <meta name="generator" content="docfx 2.56.7.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="ZedGraph.SampleMultiPointList">
+  
+  
+  <h1 id="ZedGraph_SampleMultiPointList" data-uid="ZedGraph.SampleMultiPointList" class="text-break">Class SampleMultiPointList
+  </h1>
+  <div class="markdown level0 summary"><p>A sample class that holds an internal collection, and implements the
+<a class="xref" href="ZedGraph.IPointList.html">IPointList</a> interface so that it can be used by ZedGraph as curve data.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
+    <div class="level1"><span class="xref">SampleMultiPointList</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="ZedGraph.IPointList.html">IPointList</a></div>
+    <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.icloneable">ICloneable</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#System_Object_Equals_System_Object_">Object.Equals(Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#System_Object_Equals_System_Object_System_Object_">Object.Equals(Object, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gethashcode#System_Object_GetHashCode">Object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gettype#System_Object_GetType">Object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.memberwiseclone#System_Object_MemberwiseClone">Object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.referenceequals#System_Object_ReferenceEquals_System_Object_System_Object_">Object.ReferenceEquals(Object, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.tostring#System_Object_ToString">Object.ToString()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="ZedGraph.html">ZedGraph</a></h6>
+  <h6><strong>Assembly</strong>: ZedGraph.dll</h6>
+  <h5 id="ZedGraph_SampleMultiPointList_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Serializable]
+public class SampleMultiPointList : IPointList, ICloneable</code></pre>
+  </div>
+  <h5 id="ZedGraph_SampleMultiPointList_remarks"><strong>Remarks</strong></h5>
+  <div class="markdown level0 remarks"><p>This particular class efficiently implements the data storage so that the class
+can be cloned without duplicating the data points.  For example, you can create
+a <a class="xref" href="ZedGraph.SampleMultiPointList.html">SampleMultiPointList</a>, populate it with values, and set
+<a class="xref" href="ZedGraph.SampleMultiPointList.html#ZedGraph_SampleMultiPointList_XData">XData</a> = <a class="xref" href="ZedGraph.PerfDataType.html#ZedGraph_PerfDataType_Time">Time</a> and
+<a class="xref" href="ZedGraph.SampleMultiPointList.html#ZedGraph_SampleMultiPointList_YData">YData</a> = <a class="xref" href="ZedGraph.PerfDataType.html#ZedGraph_PerfDataType_Distance">Distance</a>.
+You can then clone this <a class="xref" href="ZedGraph.SampleMultiPointList.html">SampleMultiPointList</a> to a new one, and set
+<a class="xref" href="ZedGraph.SampleMultiPointList.html#ZedGraph_SampleMultiPointList_YData">YData</a> = <a class="xref" href="ZedGraph.PerfDataType.html#ZedGraph_PerfDataType_Velocity">Velocity</a>.
+Each of these <a class="xref" href="ZedGraph.SampleMultiPointList.html">SampleMultiPointList</a>'s can then be used as an
+<a class="xref" href="ZedGraph.GraphPane.html#ZedGraph_GraphPane_AddCurve_System_String_ZedGraph_IPointList_System_Drawing_Color_">AddCurve(String, IPointList, Color)</a> argument,
+thereby plotting a distance vs time curve and a velocity vs time curve.  There
+will still be only one copy of the data in memory.</p>
+</div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_SampleMultiPointList__ctor.md&amp;value=---%0Auid%3A%20ZedGraph.SampleMultiPointList.%23ctor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/SampleMultiPointList.cs/#L170">View Source</a>
+  </span>
+  <a id="ZedGraph_SampleMultiPointList__ctor_" data-uid="ZedGraph.SampleMultiPointList.#ctor*"></a>
+  <h4 id="ZedGraph_SampleMultiPointList__ctor" data-uid="ZedGraph.SampleMultiPointList.#ctor">SampleMultiPointList()</h4>
+  <div class="markdown level1 summary"><p>Default constructor</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SampleMultiPointList()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_SampleMultiPointList__ctor_ZedGraph_SampleMultiPointList_.md&amp;value=---%0Auid%3A%20ZedGraph.SampleMultiPointList.%23ctor(ZedGraph.SampleMultiPointList)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/SampleMultiPointList.cs/#L184">View Source</a>
+  </span>
+  <a id="ZedGraph_SampleMultiPointList__ctor_" data-uid="ZedGraph.SampleMultiPointList.#ctor*"></a>
+  <h4 id="ZedGraph_SampleMultiPointList__ctor_ZedGraph_SampleMultiPointList_" data-uid="ZedGraph.SampleMultiPointList.#ctor(ZedGraph.SampleMultiPointList)">SampleMultiPointList(SampleMultiPointList)</h4>
+  <div class="markdown level1 summary"><p>The Copy Constructor.  This method does NOT duplicate the data, it merely makes
+another &quot;Window&quot; into the same collection.  You can make multiple copies and
+set the <a class="xref" href="ZedGraph.SampleMultiPointList.html#ZedGraph_SampleMultiPointList_XData">XData</a> and/or <a class="xref" href="ZedGraph.SampleMultiPointList.html#ZedGraph_SampleMultiPointList_YData">YData</a> properties to different
+values to plot different data, while maintaining only one copy of the original values.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SampleMultiPointList(SampleMultiPointList rhs)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ZedGraph.SampleMultiPointList.html">SampleMultiPointList</a></td>
+        <td><span class="parametername">rhs</span></td>
+        <td><p>The <a class="xref" href="ZedGraph.SampleMultiPointList.html">SampleMultiPointList</a> from which to copy</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="fields">Fields
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_SampleMultiPointList_XData.md&amp;value=---%0Auid%3A%20ZedGraph.SampleMultiPointList.XData%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/SampleMultiPointList.cs/#L161">View Source</a>
+  </span>
+  <h4 id="ZedGraph_SampleMultiPointList_XData" data-uid="ZedGraph.SampleMultiPointList.XData">XData</h4>
+  <div class="markdown level1 summary"><p>Determines what X data will be returned by the indexer of this list.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PerfDataType XData</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ZedGraph.PerfDataType.html">PerfDataType</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_SampleMultiPointList_YData.md&amp;value=---%0Auid%3A%20ZedGraph.SampleMultiPointList.YData%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/SampleMultiPointList.cs/#L165">View Source</a>
+  </span>
+  <h4 id="ZedGraph_SampleMultiPointList_YData" data-uid="ZedGraph.SampleMultiPointList.YData">YData</h4>
+  <div class="markdown level1 summary"><p>Determines what Y data will be returned by the indexer of this list.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PerfDataType YData</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ZedGraph.PerfDataType.html">PerfDataType</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_SampleMultiPointList_Count.md&amp;value=---%0Auid%3A%20ZedGraph.SampleMultiPointList.Count%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/SampleMultiPointList.cs/#L246">View Source</a>
+  </span>
+  <a id="ZedGraph_SampleMultiPointList_Count_" data-uid="ZedGraph.SampleMultiPointList.Count*"></a>
+  <h4 id="ZedGraph_SampleMultiPointList_Count" data-uid="ZedGraph.SampleMultiPointList.Count">Count</h4>
+  <div class="markdown level1 summary"><p>Gets the number of data points in the collection</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Count { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_SampleMultiPointList_Item_System_Int32_.md&amp;value=---%0Auid%3A%20ZedGraph.SampleMultiPointList.Item(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/SampleMultiPointList.cs/#L218">View Source</a>
+  </span>
+  <a id="ZedGraph_SampleMultiPointList_Item_" data-uid="ZedGraph.SampleMultiPointList.Item*"></a>
+  <h4 id="ZedGraph_SampleMultiPointList_Item_System_Int32_" data-uid="ZedGraph.SampleMultiPointList.Item(System.Int32)">Item[Int32]</h4>
+  <div class="markdown level1 summary"><p>Indexer to access the data.  This gets the appropriate data and converts to
+the <a class="xref" href="ZedGraph.PointPair.html">PointPair</a> struct that is compatible with ZedGraph.  The
+actual data returned depends on the values of <a class="xref" href="ZedGraph.SampleMultiPointList.html#ZedGraph_SampleMultiPointList_XData">XData</a> and
+<a class="xref" href="ZedGraph.SampleMultiPointList.html#ZedGraph_SampleMultiPointList_YData">YData</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PointPair this[int index] { get; }</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">index</span></td>
+        <td><p>The ordinal position of the desired point in the list</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ZedGraph.PointPair.html">PointPair</a></td>
+        <td><p>A <a class="xref" href="ZedGraph.PointPair.html">PointPair</a> corresponding to the specified ordinal data position</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_SampleMultiPointList_Add_ZedGraph_PerformanceData_.md&amp;value=---%0Auid%3A%20ZedGraph.SampleMultiPointList.Add(ZedGraph.PerformanceData)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/SampleMultiPointList.cs/#L256">View Source</a>
+  </span>
+  <a id="ZedGraph_SampleMultiPointList_Add_" data-uid="ZedGraph.SampleMultiPointList.Add*"></a>
+  <h4 id="ZedGraph_SampleMultiPointList_Add_ZedGraph_PerformanceData_" data-uid="ZedGraph.SampleMultiPointList.Add(ZedGraph.PerformanceData)">Add(PerformanceData)</h4>
+  <div class="markdown level1 summary"><p>Adds the specified <a class="xref" href="ZedGraph.PerformanceData.html">PerformanceData</a> struct to the end of the collection.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Add(PerformanceData perfData)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ZedGraph.PerformanceData.html">PerformanceData</a></td>
+        <td><span class="parametername">perfData</span></td>
+        <td><p>A <a class="xref" href="ZedGraph.PerformanceData.html">PerformanceData</a> struct to be added</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><p>The ordinal position in the collection where the values were added</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_SampleMultiPointList_Clone.md&amp;value=---%0Auid%3A%20ZedGraph.SampleMultiPointList.Clone%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/SampleMultiPointList.cs/#L205">View Source</a>
+  </span>
+  <a id="ZedGraph_SampleMultiPointList_Clone_" data-uid="ZedGraph.SampleMultiPointList.Clone*"></a>
+  <h4 id="ZedGraph_SampleMultiPointList_Clone" data-uid="ZedGraph.SampleMultiPointList.Clone">Clone()</h4>
+  <div class="markdown level1 summary"><p>Typesafe, deep-copy clone method.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SampleMultiPointList Clone()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ZedGraph.SampleMultiPointList.html">SampleMultiPointList</a></td>
+        <td><p>A new, independent copy of this class</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_SampleMultiPointList_Insert_System_Int32_ZedGraph_PerformanceData_.md&amp;value=---%0Auid%3A%20ZedGraph.SampleMultiPointList.Insert(System.Int32%2CZedGraph.PerformanceData)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/SampleMultiPointList.cs/#L278">View Source</a>
+  </span>
+  <a id="ZedGraph_SampleMultiPointList_Insert_" data-uid="ZedGraph.SampleMultiPointList.Insert*"></a>
+  <h4 id="ZedGraph_SampleMultiPointList_Insert_System_Int32_ZedGraph_PerformanceData_" data-uid="ZedGraph.SampleMultiPointList.Insert(System.Int32,ZedGraph.PerformanceData)">Insert(Int32, PerformanceData)</h4>
+  <div class="markdown level1 summary"><p>Insert the specified <a class="xref" href="ZedGraph.PerformanceData.html">PerformanceData</a> struct into the list at
+the specified ordinal location.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Insert(int index, PerformanceData perfData)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">index</span></td>
+        <td><p>The ordinal location at which to insert</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ZedGraph.PerformanceData.html">PerformanceData</a></td>
+        <td><span class="parametername">perfData</span></td>
+        <td><p>The <a class="xref" href="ZedGraph.PerformanceData.html">PerformanceData</a> struct to be inserted</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_SampleMultiPointList_RemoveAt_System_Int32_.md&amp;value=---%0Auid%3A%20ZedGraph.SampleMultiPointList.RemoveAt(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/SampleMultiPointList.cs/#L267">View Source</a>
+  </span>
+  <a id="ZedGraph_SampleMultiPointList_RemoveAt_" data-uid="ZedGraph.SampleMultiPointList.RemoveAt*"></a>
+  <h4 id="ZedGraph_SampleMultiPointList_RemoveAt_System_Int32_" data-uid="ZedGraph.SampleMultiPointList.RemoveAt(System.Int32)">RemoveAt(Int32)</h4>
+  <div class="markdown level1 summary"><p>Remove the <a class="xref" href="ZedGraph.PerformanceData.html">PerformanceData</a> struct from the list at the specified
+ordinal location.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RemoveAt(int index)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">index</span></td>
+        <td><p>The ordinal location of the <a class="xref" href="ZedGraph.PerformanceData.html">PerformanceData</a>
+struct to be removed</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="eii">Explicit Interface Implementations
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_SampleMultiPointList_System_ICloneable_Clone.md&amp;value=---%0Auid%3A%20ZedGraph.SampleMultiPointList.System%23ICloneable%23Clone%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/SampleMultiPointList.cs/#L196">View Source</a>
+  </span>
+  <a id="ZedGraph_SampleMultiPointList_System_ICloneable_Clone_" data-uid="ZedGraph.SampleMultiPointList.System#ICloneable#Clone*"></a>
+  <h4 id="ZedGraph_SampleMultiPointList_System_ICloneable_Clone" data-uid="ZedGraph.SampleMultiPointList.System#ICloneable#Clone">ICloneable.Clone()</h4>
+  <div class="markdown level1 summary"><p>Implement the <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.icloneable">ICloneable</a> interface in a typesafe manner by just
+calling the typed version of <a class="xref" href="ZedGraph.SampleMultiPointList.html#ZedGraph_SampleMultiPointList_Clone">Clone()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">object ICloneable.Clone()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></td>
+        <td><p>A deep copy of this object</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="ZedGraph.IPointList.html">IPointList</a>
+  </div>
+  <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.icloneable">System.ICloneable</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_SampleMultiPointList.md&amp;value=---%0Auid%3A%20ZedGraph.SampleMultiPointList%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/SampleMultiPointList.cs/#L148" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

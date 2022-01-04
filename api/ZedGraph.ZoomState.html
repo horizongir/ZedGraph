@@ -1,0 +1,483 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class ZoomState
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class ZoomState
+   ">
+    <meta name="generator" content="docfx 2.56.7.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="ZedGraph.ZoomState">
+  
+  
+  <h1 id="ZedGraph_ZoomState" data-uid="ZedGraph.ZoomState" class="text-break">Class ZoomState
+  </h1>
+  <div class="markdown level0 summary"><p>A class that captures all the scale range settings for a <a class="xref" href="ZedGraph.GraphPane.html">GraphPane</a>.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
+    <div class="level1"><span class="xref">ZoomState</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.icloneable">ICloneable</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#System_Object_Equals_System_Object_">Object.Equals(Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#System_Object_Equals_System_Object_System_Object_">Object.Equals(Object, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gethashcode#System_Object_GetHashCode">Object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gettype#System_Object_GetType">Object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.memberwiseclone#System_Object_MemberwiseClone">Object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.referenceequals#System_Object_ReferenceEquals_System_Object_System_Object_">Object.ReferenceEquals(Object, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.tostring#System_Object_ToString">Object.ToString()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="ZedGraph.html">ZedGraph</a></h6>
+  <h6><strong>Assembly</strong>: ZedGraph.dll</h6>
+  <h5 id="ZedGraph_ZoomState_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class ZoomState : ICloneable</code></pre>
+  </div>
+  <h5 id="ZedGraph_ZoomState_remarks"><strong>Remarks</strong></h5>
+  <div class="markdown level0 remarks"><p>This class is used to store scale ranges in order to allow zooming out to
+prior scale range states.  <a class="xref" href="ZedGraph.ZoomState.html">ZoomState</a> objects are maintained in the
+<a class="xref" href="ZedGraph.ZoomStateStack.html">ZoomStateStack</a> collection.  The <a class="xref" href="ZedGraph.ZoomState.html">ZoomState</a> object holds
+a <a class="xref" href="ZedGraph.ScaleState.html">ScaleState</a> object for each of the three axes; the <a class="xref" href="ZedGraph.XAxis.html">XAxis</a>,
+the <a class="xref" href="ZedGraph.YAxis.html">YAxis</a>, and the <a class="xref" href="ZedGraph.Y2Axis.html">Y2Axis</a>.</p>
+</div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_ZoomState__ctor_ZedGraph_GraphPane_ZedGraph_ZoomState_StateType_.md&amp;value=---%0Auid%3A%20ZedGraph.ZoomState.%23ctor(ZedGraph.GraphPane%2CZedGraph.ZoomState.StateType)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/ZoomState.cs/#L121">View Source</a>
+  </span>
+  <a id="ZedGraph_ZoomState__ctor_" data-uid="ZedGraph.ZoomState.#ctor*"></a>
+  <h4 id="ZedGraph_ZoomState__ctor_ZedGraph_GraphPane_ZedGraph_ZoomState_StateType_" data-uid="ZedGraph.ZoomState.#ctor(ZedGraph.GraphPane,ZedGraph.ZoomState.StateType)">ZoomState(GraphPane, ZoomState.StateType)</h4>
+  <div class="markdown level1 summary"><p>Construct a <a class="xref" href="ZedGraph.ZoomState.html">ZoomState</a> object from the scale ranges settings contained
+in the specified <a class="xref" href="ZedGraph.GraphPane.html">GraphPane</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ZoomState(GraphPane pane, ZoomState.StateType type)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ZedGraph.GraphPane.html">GraphPane</a></td>
+        <td><span class="parametername">pane</span></td>
+        <td><p>The <a class="xref" href="ZedGraph.GraphPane.html">GraphPane</a> from which to obtain the scale
+range values.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ZedGraph.ZoomState.StateType.html">ZoomState.StateType</a></td>
+        <td><span class="parametername">type</span></td>
+        <td><p>A <a class="xref" href="ZedGraph.ZoomState.StateType.html">ZoomState.StateType</a> enumeration that indicates whether
+this saved state is from a pan or zoom.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_ZoomState__ctor_ZedGraph_ZoomState_.md&amp;value=---%0Auid%3A%20ZedGraph.ZoomState.%23ctor(ZedGraph.ZoomState)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/ZoomState.cs/#L135">View Source</a>
+  </span>
+  <a id="ZedGraph_ZoomState__ctor_" data-uid="ZedGraph.ZoomState.#ctor*"></a>
+  <h4 id="ZedGraph_ZoomState__ctor_ZedGraph_ZoomState_" data-uid="ZedGraph.ZoomState.#ctor(ZedGraph.ZoomState)">ZoomState(ZoomState)</h4>
+  <div class="markdown level1 summary"><p>The Copy Constructor</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ZoomState(ZoomState rhs)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ZedGraph.ZoomState.html">ZoomState</a></td>
+        <td><span class="parametername">rhs</span></td>
+        <td><p>The <a class="xref" href="ZedGraph.ZoomState.html">ZoomState</a> object from which to copy</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_ZoomState_Type.md&amp;value=---%0Auid%3A%20ZedGraph.ZoomState.Type%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/ZoomState.cs/#L82">View Source</a>
+  </span>
+  <a id="ZedGraph_ZoomState_Type_" data-uid="ZedGraph.ZoomState.Type*"></a>
+  <h4 id="ZedGraph_ZoomState_Type" data-uid="ZedGraph.ZoomState.Type">Type</h4>
+  <div class="markdown level1 summary"><p>Gets a <a class="xref" href="ZedGraph.ZoomState.StateType.html">ZoomState.StateType</a> value indicating the type of action (zoom or pan)
+saved by this <a class="xref" href="ZedGraph.ZoomState.html">ZoomState</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ZoomState.StateType Type { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ZedGraph.ZoomState.StateType.html">ZoomState.StateType</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_ZoomState_TypeString.md&amp;value=---%0Auid%3A%20ZedGraph.ZoomState.TypeString%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/ZoomState.cs/#L93">View Source</a>
+  </span>
+  <a id="ZedGraph_ZoomState_TypeString_" data-uid="ZedGraph.ZoomState.TypeString*"></a>
+  <h4 id="ZedGraph_ZoomState_TypeString" data-uid="ZedGraph.ZoomState.TypeString">TypeString</h4>
+  <div class="markdown level1 summary"><p>Gets a string representing the type of adjustment that was made when this scale
+state was saved.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string TypeString { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><p>A string representation for the state change type; typically
+&quot;Pan&quot;, &quot;Zoom&quot;, or &quot;Scroll&quot;.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_ZoomState_ApplyState_ZedGraph_GraphPane_.md&amp;value=---%0Auid%3A%20ZedGraph.ZoomState.ApplyState(ZedGraph.GraphPane)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/ZoomState.cs/#L168">View Source</a>
+  </span>
+  <a id="ZedGraph_ZoomState_ApplyState_" data-uid="ZedGraph.ZoomState.ApplyState*"></a>
+  <h4 id="ZedGraph_ZoomState_ApplyState_ZedGraph_GraphPane_" data-uid="ZedGraph.ZoomState.ApplyState(ZedGraph.GraphPane)">ApplyState(GraphPane)</h4>
+  <div class="markdown level1 summary"><p>Copy the properties from this <a class="xref" href="ZedGraph.ZoomState.html">ZoomState</a> out to the specified <a class="xref" href="ZedGraph.GraphPane.html">GraphPane</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ApplyState(GraphPane pane)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ZedGraph.GraphPane.html">GraphPane</a></td>
+        <td><span class="parametername">pane</span></td>
+        <td><p>The <a class="xref" href="ZedGraph.GraphPane.html">GraphPane</a> to which the scale range properties should be
+copied.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_ZoomState_Clone.md&amp;value=---%0Auid%3A%20ZedGraph.ZoomState.Clone%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/ZoomState.cs/#L157">View Source</a>
+  </span>
+  <a id="ZedGraph_ZoomState_Clone_" data-uid="ZedGraph.ZoomState.Clone*"></a>
+  <h4 id="ZedGraph_ZoomState_Clone" data-uid="ZedGraph.ZoomState.Clone">Clone()</h4>
+  <div class="markdown level1 summary"><p>Typesafe, deep-copy clone method.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ZoomState Clone()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ZedGraph.ZoomState.html">ZoomState</a></td>
+        <td><p>A new, independent copy of this class</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_ZoomState_IsChanged_ZedGraph_GraphPane_.md&amp;value=---%0Auid%3A%20ZedGraph.ZoomState.IsChanged(ZedGraph.GraphPane)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/ZoomState.cs/#L182">View Source</a>
+  </span>
+  <a id="ZedGraph_ZoomState_IsChanged_" data-uid="ZedGraph.ZoomState.IsChanged*"></a>
+  <h4 id="ZedGraph_ZoomState_IsChanged_ZedGraph_GraphPane_" data-uid="ZedGraph.ZoomState.IsChanged(ZedGraph.GraphPane)">IsChanged(GraphPane)</h4>
+  <div class="markdown level1 summary"><p>Determine if the state contained in this <a class="xref" href="ZedGraph.ZoomState.html">ZoomState</a> object is different from
+the state of the specified <a class="xref" href="ZedGraph.GraphPane.html">GraphPane</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsChanged(GraphPane pane)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ZedGraph.GraphPane.html">GraphPane</a></td>
+        <td><span class="parametername">pane</span></td>
+        <td><p>The <a class="xref" href="ZedGraph.GraphPane.html">GraphPane</a> object with which to compare states.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><p>true if the states are different, false otherwise</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="eii">Explicit Interface Implementations
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_ZoomState_System_ICloneable_Clone.md&amp;value=---%0Auid%3A%20ZedGraph.ZoomState.System%23ICloneable%23Clone%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/ZoomState.cs/#L148">View Source</a>
+  </span>
+  <a id="ZedGraph_ZoomState_System_ICloneable_Clone_" data-uid="ZedGraph.ZoomState.System#ICloneable#Clone*"></a>
+  <h4 id="ZedGraph_ZoomState_System_ICloneable_Clone" data-uid="ZedGraph.ZoomState.System#ICloneable#Clone">ICloneable.Clone()</h4>
+  <div class="markdown level1 summary"><p>Implement the <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.icloneable">ICloneable</a> interface in a typesafe manner by just
+calling the typed version of <a class="xref" href="ZedGraph.ZoomState.html#ZedGraph_ZoomState_Clone">Clone()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">object ICloneable.Clone()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></td>
+        <td><p>A deep copy of this object</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.icloneable">System.ICloneable</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_ZoomState.md&amp;value=---%0Auid%3A%20ZedGraph.ZoomState%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/ZoomState.cs/#L41" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

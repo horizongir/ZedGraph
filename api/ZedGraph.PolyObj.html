@@ -1,0 +1,827 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class PolyObj
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class PolyObj
+   ">
+    <meta name="generator" content="docfx 2.56.7.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="ZedGraph.PolyObj">
+  
+  
+  <h1 id="ZedGraph_PolyObj" data-uid="ZedGraph.PolyObj" class="text-break">Class PolyObj
+  </h1>
+  <div class="markdown level0 summary"><p>A class that represents a bordered and/or filled polygon object on
+the graph.  A list of <a class="xref" href="ZedGraph.PolyObj.html">PolyObj</a> objects is maintained by
+the <a class="xref" href="ZedGraph.GraphObjList.html">GraphObjList</a> collection class.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
+    <div class="level1"><a class="xref" href="ZedGraph.GraphObj.html">GraphObj</a></div>
+    <div class="level2"><a class="xref" href="ZedGraph.BoxObj.html">BoxObj</a></div>
+    <div class="level3"><span class="xref">PolyObj</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.icloneable">ICloneable</a></div>
+    <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.runtime.serialization.iserializable">ISerializable</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="ZedGraph.BoxObj.html#ZedGraph_BoxObj__fill">BoxObj._fill</a>
+    </div>
+    <div>
+      <a class="xref" href="ZedGraph.BoxObj.html#ZedGraph_BoxObj__border">BoxObj._border</a>
+    </div>
+    <div>
+      <a class="xref" href="ZedGraph.BoxObj.html#ZedGraph_BoxObj_Fill">BoxObj.Fill</a>
+    </div>
+    <div>
+      <a class="xref" href="ZedGraph.BoxObj.html#ZedGraph_BoxObj_Border">BoxObj.Border</a>
+    </div>
+    <div>
+      <a class="xref" href="ZedGraph.BoxObj.html#ZedGraph_BoxObj_schema2">BoxObj.schema2</a>
+    </div>
+    <div>
+      <a class="xref" href="ZedGraph.BoxObj.html#ZedGraph_BoxObj_GetCoords_ZedGraph_PaneBase_System_Drawing_Graphics_System_Single_System_String__System_String__">BoxObj.GetCoords(PaneBase, Graphics, Single, String, String)</a>
+    </div>
+    <div>
+      <a class="xref" href="ZedGraph.GraphObj.html#ZedGraph_GraphObj__location">GraphObj._location</a>
+    </div>
+    <div>
+      <a class="xref" href="ZedGraph.GraphObj.html#ZedGraph_GraphObj__isVisible">GraphObj._isVisible</a>
+    </div>
+    <div>
+      <a class="xref" href="ZedGraph.GraphObj.html#ZedGraph_GraphObj__isClippedToChartRect">GraphObj._isClippedToChartRect</a>
+    </div>
+    <div>
+      <a class="xref" href="ZedGraph.GraphObj.html#ZedGraph_GraphObj_Tag">GraphObj.Tag</a>
+    </div>
+    <div>
+      <a class="xref" href="ZedGraph.GraphObj.html#ZedGraph_GraphObj_Location">GraphObj.Location</a>
+    </div>
+    <div>
+      <a class="xref" href="ZedGraph.GraphObj.html#ZedGraph_GraphObj_ZOrder">GraphObj.ZOrder</a>
+    </div>
+    <div>
+      <a class="xref" href="ZedGraph.GraphObj.html#ZedGraph_GraphObj_IsVisible">GraphObj.IsVisible</a>
+    </div>
+    <div>
+      <a class="xref" href="ZedGraph.GraphObj.html#ZedGraph_GraphObj_IsClippedToChartRect">GraphObj.IsClippedToChartRect</a>
+    </div>
+    <div>
+      <a class="xref" href="ZedGraph.GraphObj.html#ZedGraph_GraphObj_Link">GraphObj.Link</a>
+    </div>
+    <div>
+      <a class="xref" href="ZedGraph.GraphObj.html#ZedGraph_GraphObj_IsInFrontOfData">GraphObj.IsInFrontOfData</a>
+    </div>
+    <div>
+      <a class="xref" href="ZedGraph.GraphObj.html#ZedGraph_GraphObj_schema">GraphObj.schema</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#System_Object_Equals_System_Object_">Object.Equals(Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#System_Object_Equals_System_Object_System_Object_">Object.Equals(Object, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gethashcode#System_Object_GetHashCode">Object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gettype#System_Object_GetType">Object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.memberwiseclone#System_Object_MemberwiseClone">Object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.referenceequals#System_Object_ReferenceEquals_System_Object_System_Object_">Object.ReferenceEquals(Object, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.tostring#System_Object_ToString">Object.ToString()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="ZedGraph.html">ZedGraph</a></h6>
+  <h6><strong>Assembly</strong>: ZedGraph.dll</h6>
+  <h5 id="ZedGraph_PolyObj_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Serializable]
+public class PolyObj : BoxObj, ICloneable, ISerializable</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_PolyObj__ctor.md&amp;value=---%0Auid%3A%20ZedGraph.PolyObj.%23ctor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/PolyObj.cs/#L125">View Source</a>
+  </span>
+  <a id="ZedGraph_PolyObj__ctor_" data-uid="ZedGraph.PolyObj.#ctor*"></a>
+  <h4 id="ZedGraph_PolyObj__ctor" data-uid="ZedGraph.PolyObj.#ctor">PolyObj()</h4>
+  <div class="markdown level1 summary"><p>A default constructor that creates a <a class="xref" href="ZedGraph.PolyObj.html">PolyObj</a> from an empty
+<a class="xref" href="ZedGraph.PointD.html">PointD</a> array.  Other properties are defaulted.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PolyObj()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_PolyObj__ctor_System_Runtime_Serialization_SerializationInfo_System_Runtime_Serialization_StreamingContext_.md&amp;value=---%0Auid%3A%20ZedGraph.PolyObj.%23ctor(System.Runtime.Serialization.SerializationInfo%2CSystem.Runtime.Serialization.StreamingContext)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/PolyObj.cs/#L195">View Source</a>
+  </span>
+  <a id="ZedGraph_PolyObj__ctor_" data-uid="ZedGraph.PolyObj.#ctor*"></a>
+  <h4 id="ZedGraph_PolyObj__ctor_System_Runtime_Serialization_SerializationInfo_System_Runtime_Serialization_StreamingContext_" data-uid="ZedGraph.PolyObj.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">PolyObj(SerializationInfo, StreamingContext)</h4>
+  <div class="markdown level1 summary"><p>Constructor for deserializing objects</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected PolyObj(SerializationInfo info, StreamingContext context)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.runtime.serialization.serializationinfo">SerializationInfo</a></td>
+        <td><span class="parametername">info</span></td>
+        <td><p>A <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.runtime.serialization.serializationinfo">SerializationInfo</a> instance that defines the serialized data</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.runtime.serialization.streamingcontext">StreamingContext</a></td>
+        <td><span class="parametername">context</span></td>
+        <td><p>A <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.runtime.serialization.streamingcontext">StreamingContext</a> instance that contains the serialized data</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_PolyObj__ctor_ZedGraph_PointD___.md&amp;value=---%0Auid%3A%20ZedGraph.PolyObj.%23ctor(ZedGraph.PointD%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/PolyObj.cs/#L116">View Source</a>
+  </span>
+  <a id="ZedGraph_PolyObj__ctor_" data-uid="ZedGraph.PolyObj.#ctor*"></a>
+  <h4 id="ZedGraph_PolyObj__ctor_ZedGraph_PointD___" data-uid="ZedGraph.PolyObj.#ctor(ZedGraph.PointD[])">PolyObj(PointD[])</h4>
+  <div class="markdown level1 summary"><p>A constructor that allows the position
+of the <a class="xref" href="ZedGraph.PolyObj.html">PolyObj</a> to be pre-specified.  Other properties are defaulted.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PolyObj(PointD[] points)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ZedGraph.PointD.html">PointD</a>[]</td>
+        <td><span class="parametername">points</span></td>
+        <td><p>The <a class="xref" href="ZedGraph.PointD.html">PointD</a> array that defines
+the polygon.  This will be in units determined by
+<a class="xref" href="ZedGraph.Location.html#ZedGraph_Location_CoordinateFrame">CoordinateFrame</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_PolyObj__ctor_ZedGraph_PointD___System_Drawing_Color_System_Drawing_Color_.md&amp;value=---%0Auid%3A%20ZedGraph.PolyObj.%23ctor(ZedGraph.PointD%5B%5D%2CSystem.Drawing.Color%2CSystem.Drawing.Color)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/PolyObj.cs/#L102">View Source</a>
+  </span>
+  <a id="ZedGraph_PolyObj__ctor_" data-uid="ZedGraph.PolyObj.#ctor*"></a>
+  <h4 id="ZedGraph_PolyObj__ctor_ZedGraph_PointD___System_Drawing_Color_System_Drawing_Color_" data-uid="ZedGraph.PolyObj.#ctor(ZedGraph.PointD[],System.Drawing.Color,System.Drawing.Color)">PolyObj(PointD[], Color, Color)</h4>
+  <div class="markdown level1 summary"><p>A constructor that allows the position, border color, and solid fill color
+of the <a class="xref" href="ZedGraph.PolyObj.html">PolyObj</a> to be pre-specified.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PolyObj(PointD[] points, Color borderColor, Color fillColor)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ZedGraph.PointD.html">PointD</a>[]</td>
+        <td><span class="parametername">points</span></td>
+        <td><p>The <a class="xref" href="ZedGraph.PointD.html">PointD</a> array that defines
+the polygon.  This will be in units determined by
+<a class="xref" href="ZedGraph.Location.html#ZedGraph_Location_CoordinateFrame">CoordinateFrame</a>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.drawing.color">Color</a></td>
+        <td><span class="parametername">borderColor</span></td>
+        <td><p>An arbitrary <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.drawing.color">Color</a> specification
+for the box border</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.drawing.color">Color</a></td>
+        <td><span class="parametername">fillColor</span></td>
+        <td><p>An arbitrary <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.drawing.color">Color</a> specification
+for the box fill (will be a solid color fill)</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_PolyObj__ctor_ZedGraph_PointD___System_Drawing_Color_System_Drawing_Color_System_Drawing_Color_.md&amp;value=---%0Auid%3A%20ZedGraph.PolyObj.%23ctor(ZedGraph.PointD%5B%5D%2CSystem.Drawing.Color%2CSystem.Drawing.Color%2CSystem.Drawing.Color)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/PolyObj.cs/#L144">View Source</a>
+  </span>
+  <a id="ZedGraph_PolyObj__ctor_" data-uid="ZedGraph.PolyObj.#ctor*"></a>
+  <h4 id="ZedGraph_PolyObj__ctor_ZedGraph_PointD___System_Drawing_Color_System_Drawing_Color_System_Drawing_Color_" data-uid="ZedGraph.PolyObj.#ctor(ZedGraph.PointD[],System.Drawing.Color,System.Drawing.Color,System.Drawing.Color)">PolyObj(PointD[], Color, Color, Color)</h4>
+  <div class="markdown level1 summary"><p>A constructor that allows the position, border color, and two-color
+gradient fill colors
+of the <a class="xref" href="ZedGraph.PolyObj.html">PolyObj</a> to be pre-specified.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PolyObj(PointD[] points, Color borderColor, Color fillColor1, Color fillColor2)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ZedGraph.PointD.html">PointD</a>[]</td>
+        <td><span class="parametername">points</span></td>
+        <td><p>The <a class="xref" href="ZedGraph.PointD.html">PointD</a> array that defines
+the polygon.  This will be in units determined by
+<a class="xref" href="ZedGraph.Location.html#ZedGraph_Location_CoordinateFrame">CoordinateFrame</a>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.drawing.color">Color</a></td>
+        <td><span class="parametername">borderColor</span></td>
+        <td><p>An arbitrary <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.drawing.color">Color</a> specification
+for the box border</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.drawing.color">Color</a></td>
+        <td><span class="parametername">fillColor1</span></td>
+        <td><p>An arbitrary <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.drawing.color">Color</a> specification
+for the start of the box gradient fill</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.drawing.color">Color</a></td>
+        <td><span class="parametername">fillColor2</span></td>
+        <td><p>An arbitrary <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.drawing.color">Color</a> specification
+for the end of the box gradient fill</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_PolyObj__ctor_ZedGraph_PolyObj_.md&amp;value=---%0Auid%3A%20ZedGraph.PolyObj.%23ctor(ZedGraph.PolyObj)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/PolyObj.cs/#L155">View Source</a>
+  </span>
+  <a id="ZedGraph_PolyObj__ctor_" data-uid="ZedGraph.PolyObj.#ctor*"></a>
+  <h4 id="ZedGraph_PolyObj__ctor_ZedGraph_PolyObj_" data-uid="ZedGraph.PolyObj.#ctor(ZedGraph.PolyObj)">PolyObj(PolyObj)</h4>
+  <div class="markdown level1 summary"><p>The Copy Constructor</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PolyObj(PolyObj rhs)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ZedGraph.PolyObj.html">PolyObj</a></td>
+        <td><span class="parametername">rhs</span></td>
+        <td><p>The <a class="xref" href="ZedGraph.PolyObj.html">PolyObj</a> object from which to copy</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="fields">Fields
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_PolyObj_schema3.md&amp;value=---%0Auid%3A%20ZedGraph.PolyObj.schema3%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/PolyObj.cs/#L186">View Source</a>
+  </span>
+  <h4 id="ZedGraph_PolyObj_schema3" data-uid="ZedGraph.PolyObj.schema3">schema3</h4>
+  <div class="markdown level1 summary"><p>Current schema value that defines the version of the serialized file</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int schema3 = 11</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_PolyObj_IsClosedFigure.md&amp;value=---%0Auid%3A%20ZedGraph.PolyObj.IsClosedFigure%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/PolyObj.cs/#L80">View Source</a>
+  </span>
+  <a id="ZedGraph_PolyObj_IsClosedFigure_" data-uid="ZedGraph.PolyObj.IsClosedFigure*"></a>
+  <h4 id="ZedGraph_PolyObj_IsClosedFigure" data-uid="ZedGraph.PolyObj.IsClosedFigure">IsClosedFigure</h4>
+  <div class="markdown level1 summary"><p>Gets or sets a value that determines if the polygon will be automatically closed.
+true to close the figure, false to leave it &quot;open.&quot;</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsClosedFigure { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="ZedGraph_PolyObj_IsClosedFigure_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This boolean determines whether or not the CloseFigure() method will be called
+to fully close the path of the polygon.  This value defaults to true, and for any
+closed figure it should fine.  If you want to draw a line that does not close into
+a shape, then you should set this value to false.  For a figure that is naturally
+closed (e.g., the first point of the polygon is the same as the last point),
+leaving this value set to false may result in minor pixel artifacts due to
+rounding.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_PolyObj_Points.md&amp;value=---%0Auid%3A%20ZedGraph.PolyObj.Points%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/PolyObj.cs/#L61">View Source</a>
+  </span>
+  <a id="ZedGraph_PolyObj_Points_" data-uid="ZedGraph.PolyObj.Points*"></a>
+  <h4 id="ZedGraph_PolyObj_Points" data-uid="ZedGraph.PolyObj.Points">Points</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the <a class="xref" href="ZedGraph.PointD.html">PointD</a> array that defines
+the polygon.  This will be in units determined by
+<a class="xref" href="ZedGraph.Location.html#ZedGraph_Location_CoordinateFrame">CoordinateFrame</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PointD[] Points { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ZedGraph.PointD.html">PointD</a>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_PolyObj_Clone.md&amp;value=---%0Auid%3A%20ZedGraph.PolyObj.Clone%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/PolyObj.cs/#L175">View Source</a>
+  </span>
+  <a id="ZedGraph_PolyObj_Clone_" data-uid="ZedGraph.PolyObj.Clone*"></a>
+  <h4 id="ZedGraph_PolyObj_Clone" data-uid="ZedGraph.PolyObj.Clone">Clone()</h4>
+  <div class="markdown level1 summary"><p>Typesafe, deep-copy clone method.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PolyObj Clone()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ZedGraph.PolyObj.html">PolyObj</a></td>
+        <td><p>A new, independent copy of this class</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_PolyObj_Draw_System_Drawing_Graphics_ZedGraph_PaneBase_System_Single_.md&amp;value=---%0Auid%3A%20ZedGraph.PolyObj.Draw(System.Drawing.Graphics%2CZedGraph.PaneBase%2CSystem.Single)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/PolyObj.cs/#L245">View Source</a>
+  </span>
+  <a id="ZedGraph_PolyObj_Draw_" data-uid="ZedGraph.PolyObj.Draw*"></a>
+  <h4 id="ZedGraph_PolyObj_Draw_System_Drawing_Graphics_ZedGraph_PaneBase_System_Single_" data-uid="ZedGraph.PolyObj.Draw(System.Drawing.Graphics,ZedGraph.PaneBase,System.Single)">Draw(Graphics, PaneBase, Single)</h4>
+  <div class="markdown level1 summary"><p>Render this object to the specified <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.drawing.graphics">Graphics</a> device.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void Draw(Graphics g, PaneBase pane, float scaleFactor)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.drawing.graphics">Graphics</a></td>
+        <td><span class="parametername">g</span></td>
+        <td><p>A graphic device object to be drawn into.  This is normally e.Graphics from the
+PaintEventArgs argument to the Paint() method.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ZedGraph.PaneBase.html">PaneBase</a></td>
+        <td><span class="parametername">pane</span></td>
+        <td><p>A reference to the <a class="xref" href="ZedGraph.PaneBase.html">PaneBase</a> object that is the parent or
+owner of this object.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td><span class="parametername">scaleFactor</span></td>
+        <td><p>The scaling factor to be used for rendering objects.  This is calculated and
+passed down by the parent <a class="xref" href="ZedGraph.GraphPane.html">GraphPane</a> object using the
+<a class="xref" href="ZedGraph.PaneBase.html#ZedGraph_PaneBase_CalcScaleFactor">CalcScaleFactor()</a> method, and is used to proportionally adjust
+font sizes, etc. according to the actual size of the graph.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="ZedGraph.BoxObj.html#ZedGraph_BoxObj_Draw_System_Drawing_Graphics_ZedGraph_PaneBase_System_Single_">BoxObj.Draw(Graphics, PaneBase, Single)</a></div>
+  <h5 id="ZedGraph_PolyObj_Draw_System_Drawing_Graphics_ZedGraph_PaneBase_System_Single__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This method is normally only called by the Draw method
+of the parent <a class="xref" href="ZedGraph.GraphObjList.html">GraphObjList</a> collection object.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_PolyObj_GetObjectData_System_Runtime_Serialization_SerializationInfo_System_Runtime_Serialization_StreamingContext_.md&amp;value=---%0Auid%3A%20ZedGraph.PolyObj.GetObjectData(System.Runtime.Serialization.SerializationInfo%2CSystem.Runtime.Serialization.StreamingContext)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/PolyObj.cs/#L212">View Source</a>
+  </span>
+  <a id="ZedGraph_PolyObj_GetObjectData_" data-uid="ZedGraph.PolyObj.GetObjectData*"></a>
+  <h4 id="ZedGraph_PolyObj_GetObjectData_System_Runtime_Serialization_SerializationInfo_System_Runtime_Serialization_StreamingContext_" data-uid="ZedGraph.PolyObj.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">GetObjectData(SerializationInfo, StreamingContext)</h4>
+  <div class="markdown level1 summary"><p>Populates a <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.runtime.serialization.serializationinfo">SerializationInfo</a> instance with the data needed to serialize the target object</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[SecurityPermission(SecurityAction.Demand, SerializationFormatter = true)]
+public override void GetObjectData(SerializationInfo info, StreamingContext context)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.runtime.serialization.serializationinfo">SerializationInfo</a></td>
+        <td><span class="parametername">info</span></td>
+        <td><p>A <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.runtime.serialization.serializationinfo">SerializationInfo</a> instance that defines the serialized data</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.runtime.serialization.streamingcontext">StreamingContext</a></td>
+        <td><span class="parametername">context</span></td>
+        <td><p>A <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.runtime.serialization.streamingcontext">StreamingContext</a> instance that contains the serialized data</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="ZedGraph.BoxObj.html#ZedGraph_BoxObj_GetObjectData_System_Runtime_Serialization_SerializationInfo_System_Runtime_Serialization_StreamingContext_">BoxObj.GetObjectData(SerializationInfo, StreamingContext)</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_PolyObj_PointInBox_System_Drawing_PointF_ZedGraph_PaneBase_System_Drawing_Graphics_System_Single_.md&amp;value=---%0Auid%3A%20ZedGraph.PolyObj.PointInBox(System.Drawing.PointF%2CZedGraph.PaneBase%2CSystem.Drawing.Graphics%2CSystem.Single)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/PolyObj.cs/#L319">View Source</a>
+  </span>
+  <a id="ZedGraph_PolyObj_PointInBox_" data-uid="ZedGraph.PolyObj.PointInBox*"></a>
+  <h4 id="ZedGraph_PolyObj_PointInBox_System_Drawing_PointF_ZedGraph_PaneBase_System_Drawing_Graphics_System_Single_" data-uid="ZedGraph.PolyObj.PointInBox(System.Drawing.PointF,ZedGraph.PaneBase,System.Drawing.Graphics,System.Single)">PointInBox(PointF, PaneBase, Graphics, Single)</h4>
+  <div class="markdown level1 summary"><p>Determine if the specified screen point lies inside the bounding box of this
+<a class="xref" href="ZedGraph.PolyObj.html">PolyObj</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool PointInBox(PointF pt, PaneBase pane, Graphics g, float scaleFactor)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.drawing.pointf">PointF</a></td>
+        <td><span class="parametername">pt</span></td>
+        <td><p>The screen point, in pixels</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ZedGraph.PaneBase.html">PaneBase</a></td>
+        <td><span class="parametername">pane</span></td>
+        <td><p>A reference to the <a class="xref" href="ZedGraph.PaneBase.html">PaneBase</a> object that is the parent or
+owner of this object.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.drawing.graphics">Graphics</a></td>
+        <td><span class="parametername">g</span></td>
+        <td><p>A graphic device object to be drawn into.  This is normally e.Graphics from the
+PaintEventArgs argument to the Paint() method.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td><span class="parametername">scaleFactor</span></td>
+        <td><p>The scaling factor to be used for rendering objects.  This is calculated and
+passed down by the parent <a class="xref" href="ZedGraph.GraphPane.html">GraphPane</a> object using the
+<a class="xref" href="ZedGraph.PaneBase.html#ZedGraph_PaneBase_CalcScaleFactor">CalcScaleFactor()</a> method, and is used to proportionally adjust
+font sizes, etc. according to the actual size of the graph.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><p>true if the point lies in the bounding box, false otherwise</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="ZedGraph.BoxObj.html#ZedGraph_BoxObj_PointInBox_System_Drawing_PointF_ZedGraph_PaneBase_System_Drawing_Graphics_System_Single_">BoxObj.PointInBox(PointF, PaneBase, Graphics, Single)</a></div>
+  <h3 id="eii">Explicit Interface Implementations
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_PolyObj_System_ICloneable_Clone.md&amp;value=---%0Auid%3A%20ZedGraph.PolyObj.System%23ICloneable%23Clone%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/PolyObj.cs/#L166">View Source</a>
+  </span>
+  <a id="ZedGraph_PolyObj_System_ICloneable_Clone_" data-uid="ZedGraph.PolyObj.System#ICloneable#Clone*"></a>
+  <h4 id="ZedGraph_PolyObj_System_ICloneable_Clone" data-uid="ZedGraph.PolyObj.System#ICloneable#Clone">ICloneable.Clone()</h4>
+  <div class="markdown level1 summary"><p>Implement the <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.icloneable">ICloneable</a> interface in a typesafe manner by just
+calling the typed version of <a class="xref" href="ZedGraph.PolyObj.html#ZedGraph_PolyObj_Clone">Clone()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">object ICloneable.Clone()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></td>
+        <td><p>A deep copy of this object</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.icloneable">System.ICloneable</a>
+  </div>
+  <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.runtime.serialization.iserializable">System.Runtime.Serialization.ISerializable</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_PolyObj.md&amp;value=---%0Auid%3A%20ZedGraph.PolyObj%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/PolyObj.cs/#L37" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

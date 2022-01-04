@@ -1,0 +1,1690 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class MasterPane
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class MasterPane
+   ">
+    <meta name="generator" content="docfx 2.56.7.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="ZedGraph.MasterPane">
+  
+  
+  <h1 id="ZedGraph_MasterPane" data-uid="ZedGraph.MasterPane" class="text-break">Class MasterPane
+  </h1>
+  <div class="markdown level0 summary"><p>A collection class containing a list of <a class="xref" href="ZedGraph.GraphPane.html">GraphPane</a> objects
+organized together in some form.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
+    <div class="level1"><a class="xref" href="ZedGraph.PaneBase.html">PaneBase</a></div>
+    <div class="level2"><span class="xref">MasterPane</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.icloneable">ICloneable</a></div>
+    <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.runtime.serialization.iserializable">ISerializable</a></div>
+    <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.runtime.serialization.ideserializationcallback">IDeserializationCallback</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="ZedGraph.PaneBase.html#ZedGraph_PaneBase__rect">PaneBase._rect</a>
+    </div>
+    <div>
+      <a class="xref" href="ZedGraph.PaneBase.html#ZedGraph_PaneBase__title">PaneBase._title</a>
+    </div>
+    <div>
+      <a class="xref" href="ZedGraph.PaneBase.html#ZedGraph_PaneBase__legend">PaneBase._legend</a>
+    </div>
+    <div>
+      <a class="xref" href="ZedGraph.PaneBase.html#ZedGraph_PaneBase__tag">PaneBase._tag</a>
+    </div>
+    <div>
+      <a class="xref" href="ZedGraph.PaneBase.html#ZedGraph_PaneBase__isFontsScaled">PaneBase._isFontsScaled</a>
+    </div>
+    <div>
+      <a class="xref" href="ZedGraph.PaneBase.html#ZedGraph_PaneBase__isPenWidthScaled">PaneBase._isPenWidthScaled</a>
+    </div>
+    <div>
+      <a class="xref" href="ZedGraph.PaneBase.html#ZedGraph_PaneBase__fill">PaneBase._fill</a>
+    </div>
+    <div>
+      <a class="xref" href="ZedGraph.PaneBase.html#ZedGraph_PaneBase__border">PaneBase._border</a>
+    </div>
+    <div>
+      <a class="xref" href="ZedGraph.PaneBase.html#ZedGraph_PaneBase__graphObjList">PaneBase._graphObjList</a>
+    </div>
+    <div>
+      <a class="xref" href="ZedGraph.PaneBase.html#ZedGraph_PaneBase__baseDimension">PaneBase._baseDimension</a>
+    </div>
+    <div>
+      <a class="xref" href="ZedGraph.PaneBase.html#ZedGraph_PaneBase__titleGap">PaneBase._titleGap</a>
+    </div>
+    <div>
+      <a class="xref" href="ZedGraph.PaneBase.html#ZedGraph_PaneBase_Rect">PaneBase.Rect</a>
+    </div>
+    <div>
+      <a class="xref" href="ZedGraph.PaneBase.html#ZedGraph_PaneBase_Legend">PaneBase.Legend</a>
+    </div>
+    <div>
+      <a class="xref" href="ZedGraph.PaneBase.html#ZedGraph_PaneBase_Title">PaneBase.Title</a>
+    </div>
+    <div>
+      <a class="xref" href="ZedGraph.PaneBase.html#ZedGraph_PaneBase_Tag">PaneBase.Tag</a>
+    </div>
+    <div>
+      <a class="xref" href="ZedGraph.PaneBase.html#ZedGraph_PaneBase_Border">PaneBase.Border</a>
+    </div>
+    <div>
+      <a class="xref" href="ZedGraph.PaneBase.html#ZedGraph_PaneBase_Fill">PaneBase.Fill</a>
+    </div>
+    <div>
+      <a class="xref" href="ZedGraph.PaneBase.html#ZedGraph_PaneBase_GraphObjList">PaneBase.GraphObjList</a>
+    </div>
+    <div>
+      <a class="xref" href="ZedGraph.PaneBase.html#ZedGraph_PaneBase_Margin">PaneBase.Margin</a>
+    </div>
+    <div>
+      <a class="xref" href="ZedGraph.PaneBase.html#ZedGraph_PaneBase_BaseDimension">PaneBase.BaseDimension</a>
+    </div>
+    <div>
+      <a class="xref" href="ZedGraph.PaneBase.html#ZedGraph_PaneBase_TitleGap">PaneBase.TitleGap</a>
+    </div>
+    <div>
+      <a class="xref" href="ZedGraph.PaneBase.html#ZedGraph_PaneBase_IsFontsScaled">PaneBase.IsFontsScaled</a>
+    </div>
+    <div>
+      <a class="xref" href="ZedGraph.PaneBase.html#ZedGraph_PaneBase_IsPenWidthScaled">PaneBase.IsPenWidthScaled</a>
+    </div>
+    <div>
+      <a class="xref" href="ZedGraph.PaneBase.html#ZedGraph_PaneBase_ShallowClone">PaneBase.ShallowClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="ZedGraph.PaneBase.html#ZedGraph_PaneBase_schema">PaneBase.schema</a>
+    </div>
+    <div>
+      <a class="xref" href="ZedGraph.PaneBase.html#ZedGraph_PaneBase_CalcClientRect_System_Drawing_Graphics_System_Single_">PaneBase.CalcClientRect(Graphics, Single)</a>
+    </div>
+    <div>
+      <a class="xref" href="ZedGraph.PaneBase.html#ZedGraph_PaneBase_DrawPaneFrame_System_Drawing_Graphics_System_Single_">PaneBase.DrawPaneFrame(Graphics, Single)</a>
+    </div>
+    <div>
+      <a class="xref" href="ZedGraph.PaneBase.html#ZedGraph_PaneBase_DrawTitle_System_Drawing_Graphics_System_Single_">PaneBase.DrawTitle(Graphics, Single)</a>
+    </div>
+    <div>
+      <a class="xref" href="ZedGraph.PaneBase.html#ZedGraph_PaneBase_CalcScaleFactor">PaneBase.CalcScaleFactor()</a>
+    </div>
+    <div>
+      <a class="xref" href="ZedGraph.PaneBase.html#ZedGraph_PaneBase_ScaledPenWidth_System_Single_System_Single_">PaneBase.ScaledPenWidth(Single, Single)</a>
+    </div>
+    <div>
+      <a class="xref" href="ZedGraph.PaneBase.html#ZedGraph_PaneBase_GetImage">PaneBase.GetImage()</a>
+    </div>
+    <div>
+      <a class="xref" href="ZedGraph.PaneBase.html#ZedGraph_PaneBase_GetImage_System_Boolean_">PaneBase.GetImage(Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="ZedGraph.PaneBase.html#ZedGraph_PaneBase_GetImage_System_Int32_System_Int32_System_Single_System_Boolean_">PaneBase.GetImage(Int32, Int32, Single, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="ZedGraph.PaneBase.html#ZedGraph_PaneBase_GetImage_System_Int32_System_Int32_System_Single_">PaneBase.GetImage(Int32, Int32, Single)</a>
+    </div>
+    <div>
+      <a class="xref" href="ZedGraph.PaneBase.html#ZedGraph_PaneBase_GetMetafile_System_Int32_System_Int32_System_Boolean_">PaneBase.GetMetafile(Int32, Int32, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="ZedGraph.PaneBase.html#ZedGraph_PaneBase_GetMetafile_System_Int32_System_Int32_">PaneBase.GetMetafile(Int32, Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="ZedGraph.PaneBase.html#ZedGraph_PaneBase_GetMetafile">PaneBase.GetMetafile()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#System_Object_Equals_System_Object_">Object.Equals(Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#System_Object_Equals_System_Object_System_Object_">Object.Equals(Object, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gethashcode#System_Object_GetHashCode">Object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gettype#System_Object_GetType">Object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.memberwiseclone#System_Object_MemberwiseClone">Object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.referenceequals#System_Object_ReferenceEquals_System_Object_System_Object_">Object.ReferenceEquals(Object, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.tostring#System_Object_ToString">Object.ToString()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="ZedGraph.html">ZedGraph</a></h6>
+  <h6><strong>Assembly</strong>: ZedGraph.dll</h6>
+  <h5 id="ZedGraph_MasterPane_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Serializable]
+public class MasterPane : PaneBase, ICloneable, ISerializable, IDeserializationCallback</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_MasterPane__ctor.md&amp;value=---%0Auid%3A%20ZedGraph.MasterPane.%23ctor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/MasterPane.cs/#L257">View Source</a>
+  </span>
+  <a id="ZedGraph_MasterPane__ctor_" data-uid="ZedGraph.MasterPane.#ctor*"></a>
+  <h4 id="ZedGraph_MasterPane__ctor" data-uid="ZedGraph.MasterPane.#ctor">MasterPane()</h4>
+  <div class="markdown level1 summary"><p>Default constructor for the class.  Sets the <a class="xref" href="ZedGraph.PaneBase.html#ZedGraph_PaneBase_Rect">Rect</a> to (0, 0, 500, 375).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MasterPane()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_MasterPane__ctor_System_Runtime_Serialization_SerializationInfo_System_Runtime_Serialization_StreamingContext_.md&amp;value=---%0Auid%3A%20ZedGraph.MasterPane.%23ctor(System.Runtime.Serialization.SerializationInfo%2CSystem.Runtime.Serialization.StreamingContext)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/MasterPane.cs/#L349">View Source</a>
+  </span>
+  <a id="ZedGraph_MasterPane__ctor_" data-uid="ZedGraph.MasterPane.#ctor*"></a>
+  <h4 id="ZedGraph_MasterPane__ctor_System_Runtime_Serialization_SerializationInfo_System_Runtime_Serialization_StreamingContext_" data-uid="ZedGraph.MasterPane.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">MasterPane(SerializationInfo, StreamingContext)</h4>
+  <div class="markdown level1 summary"><p>Constructor for deserializing objects</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected MasterPane(SerializationInfo info, StreamingContext context)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.runtime.serialization.serializationinfo">SerializationInfo</a></td>
+        <td><span class="parametername">info</span></td>
+        <td><p>A <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.runtime.serialization.serializationinfo">SerializationInfo</a> instance that defines the serialized data</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.runtime.serialization.streamingcontext">StreamingContext</a></td>
+        <td><span class="parametername">context</span></td>
+        <td><p>A <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.runtime.serialization.streamingcontext">StreamingContext</a> instance that contains the serialized data</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_MasterPane__ctor_System_String_System_Drawing_RectangleF_.md&amp;value=---%0Auid%3A%20ZedGraph.MasterPane.%23ctor(System.String%2CSystem.Drawing.RectangleF)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/MasterPane.cs/#L265">View Source</a>
+  </span>
+  <a id="ZedGraph_MasterPane__ctor_" data-uid="ZedGraph.MasterPane.#ctor*"></a>
+  <h4 id="ZedGraph_MasterPane__ctor_System_String_System_Drawing_RectangleF_" data-uid="ZedGraph.MasterPane.#ctor(System.String,System.Drawing.RectangleF)">MasterPane(String, RectangleF)</h4>
+  <div class="markdown level1 summary"><p>Default constructor for the class.  Specifies the <a class="xref" href="ZedGraph.PaneBase.html#ZedGraph_PaneBase_Title">Title</a> of
+the <a class="xref" href="ZedGraph.MasterPane.html">MasterPane</a>, and the size of the <a class="xref" href="ZedGraph.PaneBase.html#ZedGraph_PaneBase_Rect">Rect</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MasterPane(string title, RectangleF paneRect)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">title</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.drawing.rectanglef">RectangleF</a></td>
+        <td><span class="parametername">paneRect</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_MasterPane__ctor_ZedGraph_MasterPane_.md&amp;value=---%0Auid%3A%20ZedGraph.MasterPane.%23ctor(ZedGraph.MasterPane)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/MasterPane.cs/#L295">View Source</a>
+  </span>
+  <a id="ZedGraph_MasterPane__ctor_" data-uid="ZedGraph.MasterPane.#ctor*"></a>
+  <h4 id="ZedGraph_MasterPane__ctor_ZedGraph_MasterPane_" data-uid="ZedGraph.MasterPane.#ctor(ZedGraph.MasterPane)">MasterPane(MasterPane)</h4>
+  <div class="markdown level1 summary"><p>The Copy Constructor - Make a deep-copy clone of this class instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MasterPane(MasterPane rhs)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ZedGraph.MasterPane.html">MasterPane</a></td>
+        <td><span class="parametername">rhs</span></td>
+        <td><p>The <a class="xref" href="ZedGraph.MasterPane.html">MasterPane</a> object from which to copy</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="fields">Fields
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_MasterPane_schema2.md&amp;value=---%0Auid%3A%20ZedGraph.MasterPane.schema2%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/MasterPane.cs/#L340">View Source</a>
+  </span>
+  <h4 id="ZedGraph_MasterPane_schema2" data-uid="ZedGraph.MasterPane.schema2">schema2</h4>
+  <div class="markdown level1 summary"><p>Current schema value that defines the version of the serialized file</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int schema2 = 11</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_MasterPane_InnerPaneGap.md&amp;value=---%0Auid%3A%20ZedGraph.MasterPane.InnerPaneGap%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/MasterPane.cs/#L199">View Source</a>
+  </span>
+  <a id="ZedGraph_MasterPane_InnerPaneGap_" data-uid="ZedGraph.MasterPane.InnerPaneGap*"></a>
+  <h4 id="ZedGraph_MasterPane_InnerPaneGap" data-uid="ZedGraph.MasterPane.InnerPaneGap">InnerPaneGap</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the size of the margin between adjacent <a class="xref" href="ZedGraph.GraphPane.html">GraphPane</a>
+objects.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float InnerPaneGap { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td><p>The value is in points (1/72nd inch).</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="ZedGraph_MasterPane_InnerPaneGap_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This property is scaled according to <a class="xref" href="ZedGraph.PaneBase.html#ZedGraph_PaneBase_CalcScaleFactor">CalcScaleFactor()</a>,
+based on <a class="xref" href="ZedGraph.PaneBase.html#ZedGraph_PaneBase_BaseDimension">BaseDimension</a>.  The default value comes from
+<a class="xref" href="ZedGraph.MasterPane.Default.html#ZedGraph_MasterPane_Default_InnerPaneGap">InnerPaneGap</a>.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_MasterPane_IsAntiAlias.md&amp;value=---%0Auid%3A%20ZedGraph.MasterPane.IsAntiAlias%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/MasterPane.cs/#L244">View Source</a>
+  </span>
+  <a id="ZedGraph_MasterPane_IsAntiAlias_" data-uid="ZedGraph.MasterPane.IsAntiAlias*"></a>
+  <h4 id="ZedGraph_MasterPane_IsAntiAlias" data-uid="ZedGraph.MasterPane.IsAntiAlias">IsAntiAlias</h4>
+  <div class="markdown level1 summary"><p>Gets or sets a value that determines if all drawing operations for this
+<a class="xref" href="ZedGraph.MasterPane.html">MasterPane</a> will be forced to operate in Anti-alias mode.
+Note that if this value is set to &quot;true&quot;, it overrides the setting for sub-objects.
+Otherwise, the sub-object settings (such as <a class="xref" href="ZedGraph.FontSpec.html#ZedGraph_FontSpec_IsAntiAlias">IsAntiAlias</a>)
+will be honored.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsAntiAlias { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_MasterPane_IsCommonScaleFactor.md&amp;value=---%0Auid%3A%20ZedGraph.MasterPane.IsCommonScaleFactor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/MasterPane.cs/#L231">View Source</a>
+  </span>
+  <a id="ZedGraph_MasterPane_IsCommonScaleFactor_" data-uid="ZedGraph.MasterPane.IsCommonScaleFactor*"></a>
+  <h4 id="ZedGraph_MasterPane_IsCommonScaleFactor" data-uid="ZedGraph.MasterPane.IsCommonScaleFactor">IsCommonScaleFactor</h4>
+  <div class="markdown level1 summary"><p>Gets or sets a value that determines if the
+<a class="xref" href="ZedGraph.MasterPane.html#ZedGraph_MasterPane_DoLayout_System_Drawing_Graphics_">DoLayout(Graphics)</a> method will automatically set the
+<a class="xref" href="ZedGraph.PaneBase.html#ZedGraph_PaneBase_BaseDimension">BaseDimension</a>
+of each <a class="xref" href="ZedGraph.GraphPane.html">GraphPane</a> in the <a class="xref" href="ZedGraph.MasterPane.html#ZedGraph_MasterPane_PaneList">PaneList</a> such that the
+scale factors have the same value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsCommonScaleFactor { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="ZedGraph_MasterPane_IsCommonScaleFactor_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The scale factors, calculated by <a class="xref" href="ZedGraph.PaneBase.html#ZedGraph_PaneBase_CalcScaleFactor">CalcScaleFactor()</a>, determine
+scaled font sizes, tic lengths, etc.  This function will insure that for
+multiple graphpanes, a certain specified font size will be the same for
+all the panes.</p>
+</div>
+  <h5 id="ZedGraph_MasterPane_IsCommonScaleFactor_seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="ZedGraph.MasterPane.html#ZedGraph_MasterPane_SetLayout_System_Drawing_Graphics_ZedGraph_PaneLayout_">SetLayout(Graphics, PaneLayout)</a></div>
+      <div><a class="xref" href="ZedGraph.MasterPane.html#ZedGraph_MasterPane_SetLayout_System_Drawing_Graphics_System_Int32_System_Int32_">SetLayout(Graphics, Int32, Int32)</a></div>
+      <div><a class="xref" href="ZedGraph.MasterPane.html#ZedGraph_MasterPane_SetLayout_System_Drawing_Graphics_System_Boolean_System_Int32___">SetLayout(Graphics, Boolean, Int32[])</a></div>
+      <div><a class="xref" href="ZedGraph.MasterPane.html#ZedGraph_MasterPane_SetLayout_System_Drawing_Graphics_System_Boolean_System_Int32___System_Single___">SetLayout(Graphics, Boolean, Int32[], Single[])</a></div>
+      <div><a class="xref" href="ZedGraph.MasterPane.html#ZedGraph_MasterPane_ReSize_System_Drawing_Graphics_System_Drawing_RectangleF_">ReSize(Graphics, RectangleF)</a></div>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_MasterPane_IsUniformLegendEntries.md&amp;value=---%0Auid%3A%20ZedGraph.MasterPane.IsUniformLegendEntries%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/MasterPane.cs/#L207">View Source</a>
+  </span>
+  <a id="ZedGraph_MasterPane_IsUniformLegendEntries_" data-uid="ZedGraph.MasterPane.IsUniformLegendEntries*"></a>
+  <h4 id="ZedGraph_MasterPane_IsUniformLegendEntries" data-uid="ZedGraph.MasterPane.IsUniformLegendEntries">IsUniformLegendEntries</h4>
+  <div class="markdown level1 summary"><p>Gets or set the value of the	 <a class="xref" href="ZedGraph.MasterPane.html#ZedGraph_MasterPane_IsUniformLegendEntries">IsUniformLegendEntries</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsUniformLegendEntries { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_MasterPane_Item_System_Int32_.md&amp;value=---%0Auid%3A%20ZedGraph.MasterPane.Item(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/MasterPane.cs/#L417">View Source</a>
+  </span>
+  <a id="ZedGraph_MasterPane_Item_" data-uid="ZedGraph.MasterPane.Item*"></a>
+  <h4 id="ZedGraph_MasterPane_Item_System_Int32_" data-uid="ZedGraph.MasterPane.Item(System.Int32)">Item[Int32]</h4>
+  <div class="markdown level1 summary"><p>Indexer to access the specified <a class="xref" href="ZedGraph.GraphPane.html">GraphPane</a> object from <a class="xref" href="ZedGraph.MasterPane.html#ZedGraph_MasterPane_PaneList">PaneList</a>
+by its ordinal position in the list.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GraphPane this[int index] { get; set; }</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">index</span></td>
+        <td><p>The ordinal position (zero-based) of the
+<a class="xref" href="ZedGraph.GraphPane.html">GraphPane</a> object to be accessed.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ZedGraph.GraphPane.html">GraphPane</a></td>
+        <td><p>A <a class="xref" href="ZedGraph.GraphPane.html">GraphPane</a> object reference.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_MasterPane_Item_System_String_.md&amp;value=---%0Auid%3A%20ZedGraph.MasterPane.Item(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/MasterPane.cs/#L430">View Source</a>
+  </span>
+  <a id="ZedGraph_MasterPane_Item_" data-uid="ZedGraph.MasterPane.Item*"></a>
+  <h4 id="ZedGraph_MasterPane_Item_System_String_" data-uid="ZedGraph.MasterPane.Item(System.String)">Item[String]</h4>
+  <div class="markdown level1 summary"><p>Indexer to access the specified <a class="xref" href="ZedGraph.GraphPane.html">GraphPane</a> object from <a class="xref" href="ZedGraph.MasterPane.html#ZedGraph_MasterPane_PaneList">PaneList</a>
+by its <a class="xref" href="ZedGraph.PaneBase.html#ZedGraph_PaneBase_Title">Title</a> string.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GraphPane this[string title] { get; }</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">title</span></td>
+        <td><p>The string title of the
+<a class="xref" href="ZedGraph.GraphPane.html">GraphPane</a> object to be accessed.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ZedGraph.GraphPane.html">GraphPane</a></td>
+        <td><p>A <a class="xref" href="ZedGraph.GraphPane.html">GraphPane</a> object reference.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_MasterPane_PaneList.md&amp;value=---%0Auid%3A%20ZedGraph.MasterPane.PaneList%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/MasterPane.cs/#L170">View Source</a>
+  </span>
+  <a id="ZedGraph_MasterPane_PaneList_" data-uid="ZedGraph.MasterPane.PaneList*"></a>
+  <h4 id="ZedGraph_MasterPane_PaneList" data-uid="ZedGraph.MasterPane.PaneList">PaneList</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the <a class="xref" href="ZedGraph.MasterPane.html#ZedGraph_MasterPane_PaneList">PaneList</a> collection instance that holds the list of
+<a class="xref" href="ZedGraph.GraphPane.html">GraphPane</a> objects that are included in this <a class="xref" href="ZedGraph.MasterPane.html">MasterPane</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PaneList PaneList { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ZedGraph.PaneList.html">PaneList</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="ZedGraph_MasterPane_PaneList_seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="ZedGraph.MasterPane.html#ZedGraph_MasterPane_Add_ZedGraph_GraphPane_">Add(GraphPane)</a></div>
+      <div><a class="xref" href="ZedGraph.MasterPane.html#ZedGraph_MasterPane_Item_System_Int32_">Item[Int32]</a></div>
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_MasterPane_Add_ZedGraph_GraphPane_.md&amp;value=---%0Auid%3A%20ZedGraph.MasterPane.Add(ZedGraph.GraphPane)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/MasterPane.cs/#L441">View Source</a>
+  </span>
+  <a id="ZedGraph_MasterPane_Add_" data-uid="ZedGraph.MasterPane.Add*"></a>
+  <h4 id="ZedGraph_MasterPane_Add_ZedGraph_GraphPane_" data-uid="ZedGraph.MasterPane.Add(ZedGraph.GraphPane)">Add(GraphPane)</h4>
+  <div class="markdown level1 summary"><p>Add a <a class="xref" href="ZedGraph.GraphPane.html">GraphPane</a> object to the <a class="xref" href="ZedGraph.MasterPane.html#ZedGraph_MasterPane_PaneList">PaneList</a> collection at the end of the list.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Add(GraphPane pane)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ZedGraph.GraphPane.html">GraphPane</a></td>
+        <td><span class="parametername">pane</span></td>
+        <td><p>A reference to the <a class="xref" href="ZedGraph.GraphPane.html">GraphPane</a> object to
+be added</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="ZedGraph_MasterPane_Add_ZedGraph_GraphPane__seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.ilist.add#System_Collections_IList_Add_System_Object_">Add(Object)</a></div>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_MasterPane_AxisChange.md&amp;value=---%0Auid%3A%20ZedGraph.MasterPane.AxisChange%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/MasterPane.cs/#L455">View Source</a>
+  </span>
+  <a id="ZedGraph_MasterPane_AxisChange_" data-uid="ZedGraph.MasterPane.AxisChange*"></a>
+  <h4 id="ZedGraph_MasterPane_AxisChange" data-uid="ZedGraph.MasterPane.AxisChange">AxisChange()</h4>
+  <div class="markdown level1 summary"><p>Call <a class="xref" href="ZedGraph.GraphPane.html#ZedGraph_GraphPane_AxisChange">AxisChange()</a> for all <a class="xref" href="ZedGraph.GraphPane.html">GraphPane</a> objects in the
+<a class="xref" href="ZedGraph.MasterPane.html#ZedGraph_MasterPane_PaneList">PaneList</a> list.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AxisChange()</code></pre>
+  </div>
+  <h5 id="ZedGraph_MasterPane_AxisChange_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This overload of AxisChange just uses a throw-away bitmap as Graphics.
+If you have a Graphics instance available from your Windows Form, you should use
+the <a class="xref" href="ZedGraph.MasterPane.html#ZedGraph_MasterPane_AxisChange_System_Drawing_Graphics_">AxisChange(Graphics)</a> overload instead.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_MasterPane_AxisChange_System_Drawing_Graphics_.md&amp;value=---%0Auid%3A%20ZedGraph.MasterPane.AxisChange(System.Drawing.Graphics)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/MasterPane.cs/#L470">View Source</a>
+  </span>
+  <a id="ZedGraph_MasterPane_AxisChange_" data-uid="ZedGraph.MasterPane.AxisChange*"></a>
+  <h4 id="ZedGraph_MasterPane_AxisChange_System_Drawing_Graphics_" data-uid="ZedGraph.MasterPane.AxisChange(System.Drawing.Graphics)">AxisChange(Graphics)</h4>
+  <div class="markdown level1 summary"><p>Call <a class="xref" href="ZedGraph.GraphPane.html#ZedGraph_GraphPane_AxisChange">AxisChange()</a> for all <a class="xref" href="ZedGraph.GraphPane.html">GraphPane</a> objects in the
+<a class="xref" href="ZedGraph.MasterPane.html#ZedGraph_MasterPane_PaneList">PaneList</a> list.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AxisChange(Graphics g)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.drawing.graphics">Graphics</a></td>
+        <td><span class="parametername">g</span></td>
+        <td><p>A graphic device object to be drawn into.  This is normally e.Graphics from the
+PaintEventArgs argument to the Paint() method.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_MasterPane_Clone.md&amp;value=---%0Auid%3A%20ZedGraph.MasterPane.Clone%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/MasterPane.cs/#L327">View Source</a>
+  </span>
+  <a id="ZedGraph_MasterPane_Clone_" data-uid="ZedGraph.MasterPane.Clone*"></a>
+  <h4 id="ZedGraph_MasterPane_Clone" data-uid="ZedGraph.MasterPane.Clone">Clone()</h4>
+  <div class="markdown level1 summary"><p>Typesafe, deep-copy clone method.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MasterPane Clone()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ZedGraph.MasterPane.html">MasterPane</a></td>
+        <td><p>A new, independent copy of this class</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_MasterPane_CommonScaleFactor.md&amp;value=---%0Auid%3A%20ZedGraph.MasterPane.CommonScaleFactor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/MasterPane.cs/#L537">View Source</a>
+  </span>
+  <a id="ZedGraph_MasterPane_CommonScaleFactor_" data-uid="ZedGraph.MasterPane.CommonScaleFactor*"></a>
+  <h4 id="ZedGraph_MasterPane_CommonScaleFactor" data-uid="ZedGraph.MasterPane.CommonScaleFactor">CommonScaleFactor()</h4>
+  <div class="markdown level1 summary"><p>Method that forces the scale factor calculations
+(via <a class="xref" href="ZedGraph.PaneBase.html#ZedGraph_PaneBase_CalcScaleFactor">CalcScaleFactor()</a>),
+to give a common scale factor for all <a class="xref" href="ZedGraph.GraphPane.html">GraphPane</a> objects in the
+<a class="xref" href="ZedGraph.MasterPane.html#ZedGraph_MasterPane_PaneList">PaneList</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CommonScaleFactor()</code></pre>
+  </div>
+  <h5 id="ZedGraph_MasterPane_CommonScaleFactor_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This will make it such that a given font size will result in the same output font
+size for all <a class="xref" href="ZedGraph.GraphPane.html">GraphPane</a>'s.  Note that this does not make the scale
+factor for the <a class="xref" href="ZedGraph.GraphPane.html">GraphPane</a>'s the same as that of the
+<a class="xref" href="ZedGraph.MasterPane.html">MasterPane</a>.</p>
+</div>
+  <h5 id="ZedGraph_MasterPane_CommonScaleFactor_seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="ZedGraph.MasterPane.html#ZedGraph_MasterPane_IsCommonScaleFactor">IsCommonScaleFactor</a></div>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_MasterPane_DoLayout_System_Drawing_Graphics_.md&amp;value=---%0Auid%3A%20ZedGraph.MasterPane.DoLayout(System.Drawing.Graphics)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/MasterPane.cs/#L940">View Source</a>
+  </span>
+  <a id="ZedGraph_MasterPane_DoLayout_" data-uid="ZedGraph.MasterPane.DoLayout*"></a>
+  <h4 id="ZedGraph_MasterPane_DoLayout_System_Drawing_Graphics_" data-uid="ZedGraph.MasterPane.DoLayout(System.Drawing.Graphics)">DoLayout(Graphics)</h4>
+  <div class="markdown level1 summary"><p>Modify the <a class="xref" href="ZedGraph.GraphPane.html">GraphPane</a> <a class="xref" href="ZedGraph.PaneBase.html#ZedGraph_PaneBase_Rect">Rect</a> sizes of each
+<a class="xref" href="ZedGraph.GraphPane.html">GraphPane</a> such that they fit within the <a class="xref" href="ZedGraph.MasterPane.html">MasterPane</a>
+in a pre-configured layout.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DoLayout(Graphics g)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.drawing.graphics">Graphics</a></td>
+        <td><span class="parametername">g</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="ZedGraph_MasterPane_DoLayout_System_Drawing_Graphics__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The <a class="xref" href="ZedGraph.MasterPane.html#ZedGraph_MasterPane_SetLayout_System_Drawing_Graphics_ZedGraph_PaneLayout_">SetLayout(Graphics, PaneLayout)</a> method (and overloads) is
+used for setting the layout configuration.</p>
+</div>
+  <h5 id="ZedGraph_MasterPane_DoLayout_System_Drawing_Graphics__seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="ZedGraph.MasterPane.html#ZedGraph_MasterPane_SetLayout_System_Drawing_Graphics_ZedGraph_PaneLayout_">SetLayout(Graphics, PaneLayout)</a></div>
+      <div><a class="xref" href="ZedGraph.MasterPane.html#ZedGraph_MasterPane_SetLayout_System_Drawing_Graphics_System_Int32_System_Int32_">SetLayout(Graphics, Int32, Int32)</a></div>
+      <div><a class="xref" href="ZedGraph.MasterPane.html#ZedGraph_MasterPane_SetLayout_System_Drawing_Graphics_System_Boolean_System_Int32___">SetLayout(Graphics, Boolean, Int32[])</a></div>
+      <div><a class="xref" href="ZedGraph.MasterPane.html#ZedGraph_MasterPane_SetLayout_System_Drawing_Graphics_System_Boolean_System_Int32___System_Single___">SetLayout(Graphics, Boolean, Int32[], Single[])</a></div>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_MasterPane_Draw_System_Drawing_Graphics_.md&amp;value=---%0Auid%3A%20ZedGraph.MasterPane.Draw(System.Drawing.Graphics)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/MasterPane.cs/#L573">View Source</a>
+  </span>
+  <a id="ZedGraph_MasterPane_Draw_" data-uid="ZedGraph.MasterPane.Draw*"></a>
+  <h4 id="ZedGraph_MasterPane_Draw_System_Drawing_Graphics_" data-uid="ZedGraph.MasterPane.Draw(System.Drawing.Graphics)">Draw(Graphics)</h4>
+  <div class="markdown level1 summary"><p>Render all the <a class="xref" href="ZedGraph.GraphPane.html">GraphPane</a> objects in the <a class="xref" href="ZedGraph.MasterPane.html#ZedGraph_MasterPane_PaneList">PaneList</a> to the
+specified graphics device.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void Draw(Graphics g)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.drawing.graphics">Graphics</a></td>
+        <td><span class="parametername">g</span></td>
+        <td><p>A graphic device object to be drawn into.  This is normally e.Graphics from the
+PaintEventArgs argument to the Paint() method.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="ZedGraph.PaneBase.html#ZedGraph_PaneBase_Draw_System_Drawing_Graphics_">PaneBase.Draw(Graphics)</a></div>
+  <h5 id="ZedGraph_MasterPane_Draw_System_Drawing_Graphics__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This method should be part of the Paint() update process.  Calling this routine
+will redraw all
+features of all the <a class="xref" href="ZedGraph.GraphPane.html">GraphPane</a> items.  No preparation is required other than
+instantiated <a class="xref" href="ZedGraph.GraphPane.html">GraphPane</a> objects that have been added to the list with the
+<a class="xref" href="ZedGraph.MasterPane.html#ZedGraph_MasterPane_Add_ZedGraph_GraphPane_">Add(GraphPane)</a> method.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_MasterPane_FindChartRect_System_Drawing_PointF_.md&amp;value=---%0Auid%3A%20ZedGraph.MasterPane.FindChartRect(System.Drawing.PointF)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/MasterPane.cs/#L751">View Source</a>
+  </span>
+  <a id="ZedGraph_MasterPane_FindChartRect_" data-uid="ZedGraph.MasterPane.FindChartRect*"></a>
+  <h4 id="ZedGraph_MasterPane_FindChartRect_System_Drawing_PointF_" data-uid="ZedGraph.MasterPane.FindChartRect(System.Drawing.PointF)">FindChartRect(PointF)</h4>
+  <div class="markdown level1 summary"><p>Find the <a class="xref" href="ZedGraph.GraphPane.html">GraphPane</a> within the <a class="xref" href="ZedGraph.MasterPane.html#ZedGraph_MasterPane_PaneList">PaneList</a> that contains the
+<see paramref="mousePt"></see> within its <a class="xref" href="ZedGraph.Chart.html#ZedGraph_Chart_Rect">Rect</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GraphPane FindChartRect(PointF mousePt)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.drawing.pointf">PointF</a></td>
+        <td><span class="parametername">mousePt</span></td>
+        <td><p>The mouse point location where you want to search</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ZedGraph.GraphPane.html">GraphPane</a></td>
+        <td><p>A <a class="xref" href="ZedGraph.GraphPane.html">GraphPane</a> object that contains the mouse point, or
+null if no <a class="xref" href="ZedGraph.GraphPane.html">GraphPane</a> was found.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_MasterPane_FindNearestPaneObject_System_Drawing_PointF_System_Drawing_Graphics_ZedGraph_GraphPane__System_Object__System_Int32__.md&amp;value=---%0Auid%3A%20ZedGraph.MasterPane.FindNearestPaneObject(System.Drawing.PointF%2CSystem.Drawing.Graphics%2CZedGraph.GraphPane%40%2CSystem.Object%40%2CSystem.Int32%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/MasterPane.cs/#L678">View Source</a>
+  </span>
+  <a id="ZedGraph_MasterPane_FindNearestPaneObject_" data-uid="ZedGraph.MasterPane.FindNearestPaneObject*"></a>
+  <h4 id="ZedGraph_MasterPane_FindNearestPaneObject_System_Drawing_PointF_System_Drawing_Graphics_ZedGraph_GraphPane__System_Object__System_Int32__" data-uid="ZedGraph.MasterPane.FindNearestPaneObject(System.Drawing.PointF,System.Drawing.Graphics,ZedGraph.GraphPane@,System.Object@,System.Int32@)">FindNearestPaneObject(PointF, Graphics, out GraphPane, out Object, out Int32)</h4>
+  <div class="markdown level1 summary"><p>Find the pane and the object within that pane that lies closest to the specified
+mouse (screen) point.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool FindNearestPaneObject(PointF mousePt, Graphics g, out GraphPane pane, out object nearestObj, out int index)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.drawing.pointf">PointF</a></td>
+        <td><span class="parametername">mousePt</span></td>
+        <td><p>The screen point, in pixel coordinates.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.drawing.graphics">Graphics</a></td>
+        <td><span class="parametername">g</span></td>
+        <td><p>A graphic device object to be drawn into.  This is normally e.Graphics from the
+PaintEventArgs argument to the Paint() method.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ZedGraph.GraphPane.html">GraphPane</a></td>
+        <td><span class="parametername">pane</span></td>
+        <td><p>A reference to the <a class="xref" href="ZedGraph.GraphPane.html">GraphPane</a> object that was clicked.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></td>
+        <td><span class="parametername">nearestObj</span></td>
+        <td><p>A reference to the nearest object to the
+specified screen point.  This can be any of <a class="xref" href="ZedGraph.Axis.html">Axis</a>,
+<a class="xref" href="ZedGraph.Legend.html">Legend</a>, <a class="xref" href="ZedGraph.PaneBase.html#ZedGraph_PaneBase_Title">Title</a>,
+<a class="xref" href="ZedGraph.TextObj.html">TextObj</a>, <a class="xref" href="ZedGraph.ArrowObj.html">ArrowObj</a>, or <a class="xref" href="ZedGraph.CurveItem.html">CurveItem</a>.
+Note: If the pane title is selected, then the <a class="xref" href="ZedGraph.GraphPane.html">GraphPane</a> object
+will be returned.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">index</span></td>
+        <td><p>The index number of the item within the selected object
+(where applicable).  For example, for a <a class="xref" href="ZedGraph.CurveItem.html">CurveItem</a> object,
+<see paramref="index"></see> will be the index number of the nearest data point,
+accessible via <a class="xref" href="ZedGraph.CurveItem.html#ZedGraph_CurveItem_Points">Points</a>.
+index will be -1 if no data points are available.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><p>true if a <a class="xref" href="ZedGraph.GraphPane.html">GraphPane</a> was found, false otherwise.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="ZedGraph_MasterPane_FindNearestPaneObject_System_Drawing_PointF_System_Drawing_Graphics_ZedGraph_GraphPane__System_Object__System_Int32___remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This method first finds the <a class="xref" href="ZedGraph.GraphPane.html">GraphPane</a> within the list that contains
+the specified mouse point.  It then calls the <a class="xref" href="ZedGraph.GraphPane.html#ZedGraph_GraphPane_FindNearestObject_System_Drawing_PointF_System_Drawing_Graphics_System_Object__System_Int32__">FindNearestObject(PointF, Graphics, out Object, out Int32)</a>
+method to determine which object, if any, was clicked.  With the exception of the
+<see paramref="pane"></see>, all the parameters in this method are identical to those
+in the <a class="xref" href="ZedGraph.GraphPane.html#ZedGraph_GraphPane_FindNearestObject_System_Drawing_PointF_System_Drawing_Graphics_System_Object__System_Int32__">FindNearestObject(PointF, Graphics, out Object, out Int32)</a> method.
+If the mouse point lies within the <a class="xref" href="ZedGraph.PaneBase.html#ZedGraph_PaneBase_Rect">Rect</a> of any
+<a class="xref" href="ZedGraph.GraphPane.html">GraphPane</a> item, then that pane will be returned (otherwise it will be
+null).  Further, within the selected pane, if the mouse point is within the
+bounding box of any of the items (or in the case
+of <a class="xref" href="ZedGraph.ArrowObj.html">ArrowObj</a> and <a class="xref" href="ZedGraph.CurveItem.html">CurveItem</a>, within
+<a class="xref" href="ZedGraph.GraphPane.Default.html#ZedGraph_GraphPane_Default_NearestTol">NearestTol</a> pixels), then the object will be returned.
+You must check the type of the object to determine what object was
+selected (for example, &quot;if ( object is Legend ) ...&quot;).  The
+<see paramref="index"></see> parameter returns the index number of the item
+within the selected object (such as the point number within a
+<a class="xref" href="ZedGraph.CurveItem.html">CurveItem</a> object.</p>
+</div>
+  <h5 id="ZedGraph_MasterPane_FindNearestPaneObject_System_Drawing_PointF_System_Drawing_Graphics_ZedGraph_GraphPane__System_Object__System_Int32___seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="ZedGraph.GraphPane.html#ZedGraph_GraphPane_FindNearestObject_System_Drawing_PointF_System_Drawing_Graphics_System_Object__System_Int32__">FindNearestObject(PointF, Graphics, out Object, out Int32)</a></div>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_MasterPane_FindPane_System_Drawing_PointF_.md&amp;value=---%0Auid%3A%20ZedGraph.MasterPane.FindPane(System.Drawing.PointF)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/MasterPane.cs/#L733">View Source</a>
+  </span>
+  <a id="ZedGraph_MasterPane_FindPane_" data-uid="ZedGraph.MasterPane.FindPane*"></a>
+  <h4 id="ZedGraph_MasterPane_FindPane_System_Drawing_PointF_" data-uid="ZedGraph.MasterPane.FindPane(System.Drawing.PointF)">FindPane(PointF)</h4>
+  <div class="markdown level1 summary"><p>Find the <a class="xref" href="ZedGraph.GraphPane.html">GraphPane</a> within the <a class="xref" href="ZedGraph.MasterPane.html#ZedGraph_MasterPane_PaneList">PaneList</a> that contains the
+<see paramref="mousePt"></see> within its <a class="xref" href="ZedGraph.PaneBase.html#ZedGraph_PaneBase_Rect">Rect</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GraphPane FindPane(PointF mousePt)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.drawing.pointf">PointF</a></td>
+        <td><span class="parametername">mousePt</span></td>
+        <td><p>The mouse point location where you want to search</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ZedGraph.GraphPane.html">GraphPane</a></td>
+        <td><p>A <a class="xref" href="ZedGraph.GraphPane.html">GraphPane</a> object that contains the mouse point, or
+null if no <a class="xref" href="ZedGraph.GraphPane.html">GraphPane</a> was found.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_MasterPane_GetObjectData_System_Runtime_Serialization_SerializationInfo_System_Runtime_Serialization_StreamingContext_.md&amp;value=---%0Auid%3A%20ZedGraph.MasterPane.GetObjectData(System.Runtime.Serialization.SerializationInfo%2CSystem.Runtime.Serialization.StreamingContext)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/MasterPane.cs/#L376">View Source</a>
+  </span>
+  <a id="ZedGraph_MasterPane_GetObjectData_" data-uid="ZedGraph.MasterPane.GetObjectData*"></a>
+  <h4 id="ZedGraph_MasterPane_GetObjectData_System_Runtime_Serialization_SerializationInfo_System_Runtime_Serialization_StreamingContext_" data-uid="ZedGraph.MasterPane.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">GetObjectData(SerializationInfo, StreamingContext)</h4>
+  <div class="markdown level1 summary"><p>Populates a <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.runtime.serialization.serializationinfo">SerializationInfo</a> instance with the data needed to serialize the target object</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[SecurityPermission(SecurityAction.Demand, SerializationFormatter = true)]
+public override void GetObjectData(SerializationInfo info, StreamingContext context)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.runtime.serialization.serializationinfo">SerializationInfo</a></td>
+        <td><span class="parametername">info</span></td>
+        <td><p>A <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.runtime.serialization.serializationinfo">SerializationInfo</a> instance that defines the serialized data</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.runtime.serialization.streamingcontext">StreamingContext</a></td>
+        <td><span class="parametername">context</span></td>
+        <td><p>A <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.runtime.serialization.streamingcontext">StreamingContext</a> instance that contains the serialized data</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="ZedGraph.PaneBase.html#ZedGraph_PaneBase_GetObjectData_System_Runtime_Serialization_SerializationInfo_System_Runtime_Serialization_StreamingContext_">PaneBase.GetObjectData(SerializationInfo, StreamingContext)</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_MasterPane_OnDeserialization_System_Object_.md&amp;value=---%0Auid%3A%20ZedGraph.MasterPane.OnDeserialization(System.Object)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/MasterPane.cs/#L401">View Source</a>
+  </span>
+  <a id="ZedGraph_MasterPane_OnDeserialization_" data-uid="ZedGraph.MasterPane.OnDeserialization*"></a>
+  <h4 id="ZedGraph_MasterPane_OnDeserialization_System_Object_" data-uid="ZedGraph.MasterPane.OnDeserialization(System.Object)">OnDeserialization(Object)</h4>
+  <div class="markdown level1 summary"><p>Respond to the callback when the MasterPane objects are fully initialized.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnDeserialization(object sender)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></td>
+        <td><span class="parametername">sender</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_MasterPane_ReSize_System_Drawing_Graphics_.md&amp;value=---%0Auid%3A%20ZedGraph.MasterPane.ReSize(System.Drawing.Graphics)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/MasterPane.cs/#L494">View Source</a>
+  </span>
+  <a id="ZedGraph_MasterPane_ReSize_" data-uid="ZedGraph.MasterPane.ReSize*"></a>
+  <h4 id="ZedGraph_MasterPane_ReSize_System_Drawing_Graphics_" data-uid="ZedGraph.MasterPane.ReSize(System.Drawing.Graphics)">ReSize(Graphics)</h4>
+  <div class="markdown level1 summary"><p>Redo the layout using the current size of the <a class="xref" href="ZedGraph.PaneBase.html#ZedGraph_PaneBase_Rect">Rect</a>,
+and also handle resizing the
+contents by calling <a class="xref" href="ZedGraph.MasterPane.html#ZedGraph_MasterPane_DoLayout_System_Drawing_Graphics_">DoLayout(Graphics)</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ReSize(Graphics g)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.drawing.graphics">Graphics</a></td>
+        <td><span class="parametername">g</span></td>
+        <td><p>A graphic device object to be drawn into.  This is normally e.Graphics from the
+PaintEventArgs argument to the Paint() method.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="ZedGraph_MasterPane_ReSize_System_Drawing_Graphics__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This method will use the pane layout that was specified by a call to
+<a class="xref" href="ZedGraph.MasterPane.html#ZedGraph_MasterPane_SetLayout_System_Drawing_Graphics_ZedGraph_PaneLayout_">SetLayout(Graphics, PaneLayout)</a>.  If
+<a class="xref" href="ZedGraph.MasterPane.html#ZedGraph_MasterPane_SetLayout_System_Drawing_Graphics_ZedGraph_PaneLayout_">SetLayout(Graphics, PaneLayout)</a> has not previously been called,
+it will default to <a class="xref" href="ZedGraph.MasterPane.Default.html#ZedGraph_MasterPane_Default_PaneLayout">PaneLayout</a>.</p>
+</div>
+  <h5 id="ZedGraph_MasterPane_ReSize_System_Drawing_Graphics__seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="ZedGraph.MasterPane.html#ZedGraph_MasterPane_SetLayout_System_Drawing_Graphics_ZedGraph_PaneLayout_">SetLayout(Graphics, PaneLayout)</a></div>
+      <div><a class="xref" href="ZedGraph.MasterPane.html#ZedGraph_MasterPane_SetLayout_System_Drawing_Graphics_System_Int32_System_Int32_">SetLayout(Graphics, Int32, Int32)</a></div>
+      <div><a class="xref" href="ZedGraph.MasterPane.html#ZedGraph_MasterPane_SetLayout_System_Drawing_Graphics_System_Boolean_System_Int32___">SetLayout(Graphics, Boolean, Int32[])</a></div>
+      <div><a class="xref" href="ZedGraph.MasterPane.html#ZedGraph_MasterPane_SetLayout_System_Drawing_Graphics_System_Boolean_System_Int32___System_Single___">SetLayout(Graphics, Boolean, Int32[], Single[])</a></div>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_MasterPane_ReSize_System_Drawing_Graphics_System_Drawing_RectangleF_.md&amp;value=---%0Auid%3A%20ZedGraph.MasterPane.ReSize(System.Drawing.Graphics%2CSystem.Drawing.RectangleF)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/MasterPane.cs/#L517">View Source</a>
+  </span>
+  <a id="ZedGraph_MasterPane_ReSize_" data-uid="ZedGraph.MasterPane.ReSize*"></a>
+  <h4 id="ZedGraph_MasterPane_ReSize_System_Drawing_Graphics_System_Drawing_RectangleF_" data-uid="ZedGraph.MasterPane.ReSize(System.Drawing.Graphics,System.Drawing.RectangleF)">ReSize(Graphics, RectangleF)</h4>
+  <div class="markdown level1 summary"><p>Change the size of the <a class="xref" href="ZedGraph.PaneBase.html#ZedGraph_PaneBase_Rect">Rect</a>, and also handle resizing the
+contents by calling <a class="xref" href="ZedGraph.MasterPane.html#ZedGraph_MasterPane_DoLayout_System_Drawing_Graphics_">DoLayout(Graphics)</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void ReSize(Graphics g, RectangleF rect)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.drawing.graphics">Graphics</a></td>
+        <td><span class="parametername">g</span></td>
+        <td><p>A graphic device object to be drawn into.  This is normally e.Graphics from the
+PaintEventArgs argument to the Paint() method.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.drawing.rectanglef">RectangleF</a></td>
+        <td><span class="parametername">rect</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="ZedGraph.PaneBase.html#ZedGraph_PaneBase_ReSize_System_Drawing_Graphics_System_Drawing_RectangleF_">PaneBase.ReSize(Graphics, RectangleF)</a></div>
+  <h5 id="ZedGraph_MasterPane_ReSize_System_Drawing_Graphics_System_Drawing_RectangleF__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This method will use the pane layout that was specified by a call to
+<a class="xref" href="ZedGraph.MasterPane.html#ZedGraph_MasterPane_SetLayout_System_Drawing_Graphics_ZedGraph_PaneLayout_">SetLayout(Graphics, PaneLayout)</a>.  If
+<a class="xref" href="ZedGraph.MasterPane.html#ZedGraph_MasterPane_SetLayout_System_Drawing_Graphics_ZedGraph_PaneLayout_">SetLayout(Graphics, PaneLayout)</a> has not previously been called,
+it will default to <a class="xref" href="ZedGraph.MasterPane.Default.html#ZedGraph_MasterPane_Default_PaneLayout">PaneLayout</a>.</p>
+</div>
+  <h5 id="ZedGraph_MasterPane_ReSize_System_Drawing_Graphics_System_Drawing_RectangleF__seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="ZedGraph.MasterPane.html#ZedGraph_MasterPane_SetLayout_System_Drawing_Graphics_ZedGraph_PaneLayout_">SetLayout(Graphics, PaneLayout)</a></div>
+      <div><a class="xref" href="ZedGraph.MasterPane.html#ZedGraph_MasterPane_SetLayout_System_Drawing_Graphics_System_Int32_System_Int32_">SetLayout(Graphics, Int32, Int32)</a></div>
+      <div><a class="xref" href="ZedGraph.MasterPane.html#ZedGraph_MasterPane_SetLayout_System_Drawing_Graphics_System_Boolean_System_Int32___">SetLayout(Graphics, Boolean, Int32[])</a></div>
+      <div><a class="xref" href="ZedGraph.MasterPane.html#ZedGraph_MasterPane_SetLayout_System_Drawing_Graphics_System_Boolean_System_Int32___System_Single___">SetLayout(Graphics, Boolean, Int32[], Single[])</a></div>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_MasterPane_SetLayout_System_Drawing_Graphics_System_Boolean_System_Int32___.md&amp;value=---%0Auid%3A%20ZedGraph.MasterPane.SetLayout(System.Drawing.Graphics%2CSystem.Boolean%2CSystem.Int32%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/MasterPane.cs/#L859">View Source</a>
+  </span>
+  <a id="ZedGraph_MasterPane_SetLayout_" data-uid="ZedGraph.MasterPane.SetLayout*"></a>
+  <h4 id="ZedGraph_MasterPane_SetLayout_System_Drawing_Graphics_System_Boolean_System_Int32___" data-uid="ZedGraph.MasterPane.SetLayout(System.Drawing.Graphics,System.Boolean,System.Int32[])">SetLayout(Graphics, Boolean, Int32[])</h4>
+  <div class="markdown level1 summary"><p>Automatically set all of the <a class="xref" href="ZedGraph.GraphPane.html">GraphPane</a> <a class="xref" href="ZedGraph.PaneBase.html#ZedGraph_PaneBase_Rect">Rect</a>'s in
+the list to the specified configuration.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetLayout(Graphics g, bool isColumnSpecified, int[] countList)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.drawing.graphics">Graphics</a></td>
+        <td><span class="parametername">g</span></td>
+        <td><p>A graphic device object to be drawn into.  This is normally created with a call to
+the CreateGraphics() method of the Control or Form.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="parametername">isColumnSpecified</span></td>
+        <td><p>Specifies whether the number of columns in each row, or
+the number of rows in each column will be specified.  A value of true indicates the
+number of columns in each row are specified in <see paramref="countList"></see>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a>[]</td>
+        <td><span class="parametername">countList</span></td>
+        <td><p>An integer array specifying either the number of columns in
+each row or the number of rows in each column, depending on the value of
+<see paramref="isColumnSpecified"></see>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="ZedGraph_MasterPane_SetLayout_System_Drawing_Graphics_System_Boolean_System_Int32____remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This method specifies the number of rows in each column, or the number of
+columns in each row, allowing for irregular layouts.  Overloads are available that
+provide other layout options.</p>
+</div>
+  <h5 id="ZedGraph_MasterPane_SetLayout_System_Drawing_Graphics_System_Boolean_System_Int32____seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="ZedGraph.MasterPane.html#ZedGraph_MasterPane_SetLayout_System_Drawing_Graphics_ZedGraph_PaneLayout_">SetLayout(Graphics, PaneLayout)</a></div>
+      <div><a class="xref" href="ZedGraph.MasterPane.html#ZedGraph_MasterPane_SetLayout_System_Drawing_Graphics_System_Int32_System_Int32_">SetLayout(Graphics, Int32, Int32)</a></div>
+      <div><a class="xref" href="ZedGraph.MasterPane.html#ZedGraph_MasterPane_SetLayout_System_Drawing_Graphics_System_Boolean_System_Int32___System_Single___">SetLayout(Graphics, Boolean, Int32[], Single[])</a></div>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_MasterPane_SetLayout_System_Drawing_Graphics_System_Boolean_System_Int32___System_Single___.md&amp;value=---%0Auid%3A%20ZedGraph.MasterPane.SetLayout(System.Drawing.Graphics%2CSystem.Boolean%2CSystem.Int32%5B%5D%2CSystem.Single%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/MasterPane.cs/#L900">View Source</a>
+  </span>
+  <a id="ZedGraph_MasterPane_SetLayout_" data-uid="ZedGraph.MasterPane.SetLayout*"></a>
+  <h4 id="ZedGraph_MasterPane_SetLayout_System_Drawing_Graphics_System_Boolean_System_Int32___System_Single___" data-uid="ZedGraph.MasterPane.SetLayout(System.Drawing.Graphics,System.Boolean,System.Int32[],System.Single[])">SetLayout(Graphics, Boolean, Int32[], Single[])</h4>
+  <div class="markdown level1 summary"><p>Automatically set all of the <a class="xref" href="ZedGraph.GraphPane.html">GraphPane</a> <a class="xref" href="ZedGraph.PaneBase.html#ZedGraph_PaneBase_Rect">Rect</a>'s in
+the list to the specified configuration.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetLayout(Graphics g, bool isColumnSpecified, int[] countList, float[] proportion)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.drawing.graphics">Graphics</a></td>
+        <td><span class="parametername">g</span></td>
+        <td><p>A graphic device object to be drawn into.  This is normally created with a call to
+the CreateGraphics() method of the Control or Form.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="parametername">isColumnSpecified</span></td>
+        <td><p>Specifies whether the number of columns in each row, or
+the number of rows in each column will be specified.  A value of true indicates the
+number of columns in each row are specified in <see paramref="_countList"></see>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a>[]</td>
+        <td><span class="parametername">countList</span></td>
+        <td><p>An integer array specifying either the number of columns in
+each row or the number of rows in each column, depending on the value of
+<see paramref="isColumnSpecified"></see>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a>[]</td>
+        <td><span class="parametername">proportion</span></td>
+        <td><p>An array of float values specifying proportional sizes for each
+row or column.  Note that these proportions apply to the non-specified dimension -- that is,
+if <see paramref="isColumnSpecified"></see> is true, then these proportions apply to the row
+heights, and if <see paramref="isColumnSpecified"></see> is false, then these proportions apply
+to the column widths.  The values in this array are arbitrary floats -- the dimension of
+any given row or column is that particular proportional value divided by the sum of all
+the values.  For example, let <see paramref="isColumnSpecified"></see> be true, and
+<see paramref="proportion"></see> is an array with values of { 1.0, 2.0, 3.0 }.  The sum of
+those values is 6.0.  Therefore, the first row is 1/6th of the available height, the
+second row is 2/6th's of the available height, and the third row is 3/6th's of the
+available height.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="ZedGraph_MasterPane_SetLayout_System_Drawing_Graphics_System_Boolean_System_Int32___System_Single____remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This method specifies the number of panes in each row or column, allowing for
+irregular layouts.</p>
+</div>
+  <h5 id="ZedGraph_MasterPane_SetLayout_System_Drawing_Graphics_System_Boolean_System_Int32___System_Single____seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="ZedGraph.MasterPane.html#ZedGraph_MasterPane_SetLayout_System_Drawing_Graphics_ZedGraph_PaneLayout_">SetLayout(Graphics, PaneLayout)</a></div>
+      <div><a class="xref" href="ZedGraph.MasterPane.html#ZedGraph_MasterPane_SetLayout_System_Drawing_Graphics_System_Int32_System_Int32_">SetLayout(Graphics, Int32, Int32)</a></div>
+      <div><a class="xref" href="ZedGraph.MasterPane.html#ZedGraph_MasterPane_SetLayout_System_Drawing_Graphics_System_Boolean_System_Int32___">SetLayout(Graphics, Boolean, Int32[])</a></div>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_MasterPane_SetLayout_System_Drawing_Graphics_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20ZedGraph.MasterPane.SetLayout(System.Drawing.Graphics%2CSystem.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/MasterPane.cs/#L821">View Source</a>
+  </span>
+  <a id="ZedGraph_MasterPane_SetLayout_" data-uid="ZedGraph.MasterPane.SetLayout*"></a>
+  <h4 id="ZedGraph_MasterPane_SetLayout_System_Drawing_Graphics_System_Int32_System_Int32_" data-uid="ZedGraph.MasterPane.SetLayout(System.Drawing.Graphics,System.Int32,System.Int32)">SetLayout(Graphics, Int32, Int32)</h4>
+  <div class="markdown level1 summary"><p>Automatically set all of the <a class="xref" href="ZedGraph.GraphPane.html">GraphPane</a> <a class="xref" href="ZedGraph.PaneBase.html#ZedGraph_PaneBase_Rect">Rect</a>'s in
+the list to a reasonable configuration.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetLayout(Graphics g, int rows, int columns)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.drawing.graphics">Graphics</a></td>
+        <td><span class="parametername">g</span></td>
+        <td><p>A graphic device object to be drawn into.  This is normally created with a call to
+the CreateGraphics() method of the Control or Form.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">rows</span></td>
+        <td><p>The number of rows of <a class="xref" href="ZedGraph.GraphPane.html">GraphPane</a> objects
+to include in the layout</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">columns</span></td>
+        <td><p>The number of columns of <a class="xref" href="ZedGraph.GraphPane.html">GraphPane</a> objects
+to include in the layout</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="ZedGraph_MasterPane_SetLayout_System_Drawing_Graphics_System_Int32_System_Int32__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This method explicitly specifies the number of rows and columns to use
+in the layout, and all <a class="xref" href="ZedGraph.GraphPane.html">GraphPane</a> objects will have the same size.
+Overloads are available that provide other layout options</p>
+</div>
+  <h5 id="ZedGraph_MasterPane_SetLayout_System_Drawing_Graphics_System_Int32_System_Int32__seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="ZedGraph.MasterPane.html#ZedGraph_MasterPane_SetLayout_System_Drawing_Graphics_ZedGraph_PaneLayout_">SetLayout(Graphics, PaneLayout)</a></div>
+      <div><a class="xref" href="ZedGraph.MasterPane.html#ZedGraph_MasterPane_SetLayout_System_Drawing_Graphics_System_Boolean_System_Int32___">SetLayout(Graphics, Boolean, Int32[])</a></div>
+      <div><a class="xref" href="ZedGraph.MasterPane.html#ZedGraph_MasterPane_SetLayout_System_Drawing_Graphics_System_Boolean_System_Int32___System_Single___">SetLayout(Graphics, Boolean, Int32[], Single[])</a></div>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_MasterPane_SetLayout_System_Drawing_Graphics_ZedGraph_PaneLayout_.md&amp;value=---%0Auid%3A%20ZedGraph.MasterPane.SetLayout(System.Drawing.Graphics%2CZedGraph.PaneLayout)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/MasterPane.cs/#L794">View Source</a>
+  </span>
+  <a id="ZedGraph_MasterPane_SetLayout_" data-uid="ZedGraph.MasterPane.SetLayout*"></a>
+  <h4 id="ZedGraph_MasterPane_SetLayout_System_Drawing_Graphics_ZedGraph_PaneLayout_" data-uid="ZedGraph.MasterPane.SetLayout(System.Drawing.Graphics,ZedGraph.PaneLayout)">SetLayout(Graphics, PaneLayout)</h4>
+  <div class="markdown level1 summary"><p>Automatically set all of the <a class="xref" href="ZedGraph.GraphPane.html">GraphPane</a> <a class="xref" href="ZedGraph.PaneBase.html#ZedGraph_PaneBase_Rect">Rect</a>'s in
+the list to a pre-defined layout configuration from a <a class="xref" href="ZedGraph.PaneLayout.html">PaneLayout</a>
+enumeration.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetLayout(Graphics g, PaneLayout paneLayout)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.drawing.graphics">Graphics</a></td>
+        <td><span class="parametername">g</span></td>
+        <td><p>A graphic device object to be drawn into.  This is normally created with a call to
+the CreateGraphics() method of the Control or Form.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ZedGraph.PaneLayout.html">PaneLayout</a></td>
+        <td><span class="parametername">paneLayout</span></td>
+        <td><p>A <a class="xref" href="ZedGraph.PaneLayout.html">PaneLayout</a> enumeration that describes how
+the panes should be laid out within the <a class="xref" href="ZedGraph.PaneBase.html#ZedGraph_PaneBase_Rect">Rect</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="ZedGraph_MasterPane_SetLayout_System_Drawing_Graphics_ZedGraph_PaneLayout__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This method uses a <a class="xref" href="ZedGraph.PaneLayout.html">PaneLayout</a> enumeration to describe the type of layout
+to be used.  Overloads are available that provide other layout options</p>
+</div>
+  <h5 id="ZedGraph_MasterPane_SetLayout_System_Drawing_Graphics_ZedGraph_PaneLayout__seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="ZedGraph.MasterPane.html#ZedGraph_MasterPane_SetLayout_System_Drawing_Graphics_System_Int32_System_Int32_">SetLayout(Graphics, Int32, Int32)</a></div>
+      <div><a class="xref" href="ZedGraph.MasterPane.html#ZedGraph_MasterPane_SetLayout_System_Drawing_Graphics_System_Boolean_System_Int32___">SetLayout(Graphics, Boolean, Int32[])</a></div>
+      <div><a class="xref" href="ZedGraph.MasterPane.html#ZedGraph_MasterPane_SetLayout_System_Drawing_Graphics_System_Boolean_System_Int32___System_Single___">SetLayout(Graphics, Boolean, Int32[], Single[])</a></div>
+  </div>
+  <h3 id="eii">Explicit Interface Implementations
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_MasterPane_System_ICloneable_Clone.md&amp;value=---%0Auid%3A%20ZedGraph.MasterPane.System%23ICloneable%23Clone%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/MasterPane.cs/#L318">View Source</a>
+  </span>
+  <a id="ZedGraph_MasterPane_System_ICloneable_Clone_" data-uid="ZedGraph.MasterPane.System#ICloneable#Clone*"></a>
+  <h4 id="ZedGraph_MasterPane_System_ICloneable_Clone" data-uid="ZedGraph.MasterPane.System#ICloneable#Clone">ICloneable.Clone()</h4>
+  <div class="markdown level1 summary"><p>Implement the <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.icloneable">ICloneable</a> interface in a typesafe manner by just
+calling the typed version of <a class="xref" href="ZedGraph.MasterPane.html#ZedGraph_MasterPane_Clone">Clone()</a> to make a deep copy.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">object ICloneable.Clone()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></td>
+        <td><p>A deep copy of this object</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.icloneable">System.ICloneable</a>
+  </div>
+  <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.runtime.serialization.iserializable">System.Runtime.Serialization.ISerializable</a>
+  </div>
+  <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.runtime.serialization.ideserializationcallback">System.Runtime.Serialization.IDeserializationCallback</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_MasterPane.md&amp;value=---%0Auid%3A%20ZedGraph.MasterPane%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/MasterPane.cs/#L43" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

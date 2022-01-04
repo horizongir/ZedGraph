@@ -1,0 +1,2327 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class FontSpec
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class FontSpec
+   ">
+    <meta name="generator" content="docfx 2.56.7.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="ZedGraph.FontSpec">
+  
+  
+  <h1 id="ZedGraph_FontSpec" data-uid="ZedGraph.FontSpec" class="text-break">Class FontSpec
+  </h1>
+  <div class="markdown level0 summary"><p>The <a class="xref" href="ZedGraph.FontSpec.html">FontSpec</a> class is a generic font class that maintains the font family,
+attributes, colors, border and fill modes, font size, and angle information.
+This class can render text with a variety of alignment options using the
+<a class="xref" href="ZedGraph.AlignH.html">AlignH</a> and <a class="xref" href="ZedGraph.AlignV.html">AlignV</a> parameters in the
+<a class="xref" href="ZedGraph.FontSpec.html#ZedGraph_FontSpec_Draw_System_Drawing_Graphics_ZedGraph_PaneBase_System_String_System_Single_System_Single_ZedGraph_AlignH_ZedGraph_AlignV_System_Single_">Draw(Graphics, PaneBase, String, Single, Single, AlignH, AlignV, Single)</a> method.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
+    <div class="level1"><span class="xref">FontSpec</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.icloneable">ICloneable</a></div>
+    <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.runtime.serialization.iserializable">ISerializable</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#System_Object_Equals_System_Object_">Object.Equals(Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#System_Object_Equals_System_Object_System_Object_">Object.Equals(Object, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gethashcode#System_Object_GetHashCode">Object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gettype#System_Object_GetType">Object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.memberwiseclone#System_Object_MemberwiseClone">Object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.referenceequals#System_Object_ReferenceEquals_System_Object_System_Object_">Object.ReferenceEquals(Object, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.tostring#System_Object_ToString">Object.ToString()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="ZedGraph.html">ZedGraph</a></h6>
+  <h6><strong>Assembly</strong>: ZedGraph.dll</h6>
+  <h5 id="ZedGraph_FontSpec_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Serializable]
+public class FontSpec : ICloneable, ISerializable</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_FontSpec__ctor.md&amp;value=---%0Auid%3A%20ZedGraph.FontSpec.%23ctor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/FontSpec.cs/#L469">View Source</a>
+  </span>
+  <a id="ZedGraph_FontSpec__ctor_" data-uid="ZedGraph.FontSpec.#ctor*"></a>
+  <h4 id="ZedGraph_FontSpec__ctor" data-uid="ZedGraph.FontSpec.#ctor">FontSpec()</h4>
+  <div class="markdown level1 summary"><p>Construct a <a class="xref" href="ZedGraph.FontSpec.html">FontSpec</a> object with default properties.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FontSpec()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_FontSpec__ctor_System_Runtime_Serialization_SerializationInfo_System_Runtime_Serialization_StreamingContext_.md&amp;value=---%0Auid%3A%20ZedGraph.FontSpec.%23ctor(System.Runtime.Serialization.SerializationInfo%2CSystem.Runtime.Serialization.StreamingContext)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/FontSpec.cs/#L611">View Source</a>
+  </span>
+  <a id="ZedGraph_FontSpec__ctor_" data-uid="ZedGraph.FontSpec.#ctor*"></a>
+  <h4 id="ZedGraph_FontSpec__ctor_System_Runtime_Serialization_SerializationInfo_System_Runtime_Serialization_StreamingContext_" data-uid="ZedGraph.FontSpec.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">FontSpec(SerializationInfo, StreamingContext)</h4>
+  <div class="markdown level1 summary"><p>Constructor for deserializing objects</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected FontSpec(SerializationInfo info, StreamingContext context)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.runtime.serialization.serializationinfo">SerializationInfo</a></td>
+        <td><span class="parametername">info</span></td>
+        <td><p>A <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.runtime.serialization.serializationinfo">SerializationInfo</a> instance that defines the serialized data</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.runtime.serialization.streamingcontext">StreamingContext</a></td>
+        <td><span class="parametername">context</span></td>
+        <td><p>A <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.runtime.serialization.streamingcontext">StreamingContext</a> instance that contains the serialized data</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_FontSpec__ctor_System_String_System_Single_System_Drawing_Color_System_Boolean_System_Boolean_System_Boolean_.md&amp;value=---%0Auid%3A%20ZedGraph.FontSpec.%23ctor(System.String%2CSystem.Single%2CSystem.Drawing.Color%2CSystem.Boolean%2CSystem.Boolean%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/FontSpec.cs/#L488">View Source</a>
+  </span>
+  <a id="ZedGraph_FontSpec__ctor_" data-uid="ZedGraph.FontSpec.#ctor*"></a>
+  <h4 id="ZedGraph_FontSpec__ctor_System_String_System_Single_System_Drawing_Color_System_Boolean_System_Boolean_System_Boolean_" data-uid="ZedGraph.FontSpec.#ctor(System.String,System.Single,System.Drawing.Color,System.Boolean,System.Boolean,System.Boolean)">FontSpec(String, Single, Color, Boolean, Boolean, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Construct a <a class="xref" href="ZedGraph.FontSpec.html">FontSpec</a> object with the given properties.  All other properties
+are defaulted according to the values specified in the <a class="xref" href="ZedGraph.FontSpec.Default.html">FontSpec.Default</a>
+default class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FontSpec(string family, float size, Color color, bool isBold, bool isItalic, bool isUnderline)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">family</span></td>
+        <td><p>A text string representing the font family
+(default is &quot;Arial&quot;)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td><span class="parametername">size</span></td>
+        <td><p>A size of the font in points.  This size will be scaled
+based on the ratio of the <a class="xref" href="ZedGraph.PaneBase.html#ZedGraph_PaneBase_Rect">Rect</a> dimension to the
+<a class="xref" href="ZedGraph.PaneBase.html#ZedGraph_PaneBase_BaseDimension">BaseDimension</a> of the <a class="xref" href="ZedGraph.GraphPane.html">GraphPane</a> object.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.drawing.color">Color</a></td>
+        <td><span class="parametername">color</span></td>
+        <td><p>The color with which to render the font</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="parametername">isBold</span></td>
+        <td><p>true for a bold typeface, false otherwise</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="parametername">isItalic</span></td>
+        <td><p>true for an italic typeface, false otherwise</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="parametername">isUnderline</span></td>
+        <td><p>true for an underlined font, false otherwise</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_FontSpec__ctor_System_String_System_Single_System_Drawing_Color_System_Boolean_System_Boolean_System_Boolean_System_Drawing_Color_System_Drawing_Brush_ZedGraph_FillType_.md&amp;value=---%0Auid%3A%20ZedGraph.FontSpec.%23ctor(System.String%2CSystem.Single%2CSystem.Drawing.Color%2CSystem.Boolean%2CSystem.Boolean%2CSystem.Boolean%2CSystem.Drawing.Color%2CSystem.Drawing.Brush%2CZedGraph.FillType)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/FontSpec.cs/#L513">View Source</a>
+  </span>
+  <a id="ZedGraph_FontSpec__ctor_" data-uid="ZedGraph.FontSpec.#ctor*"></a>
+  <h4 id="ZedGraph_FontSpec__ctor_System_String_System_Single_System_Drawing_Color_System_Boolean_System_Boolean_System_Boolean_System_Drawing_Color_System_Drawing_Brush_ZedGraph_FillType_" data-uid="ZedGraph.FontSpec.#ctor(System.String,System.Single,System.Drawing.Color,System.Boolean,System.Boolean,System.Boolean,System.Drawing.Color,System.Drawing.Brush,ZedGraph.FillType)">FontSpec(String, Single, Color, Boolean, Boolean, Boolean, Color, Brush, FillType)</h4>
+  <div class="markdown level1 summary"><p>Construct a <a class="xref" href="ZedGraph.FontSpec.html">FontSpec</a> object with the given properties.  All other properties
+are defaulted according to the values specified in the <a class="xref" href="ZedGraph.FontSpec.Default.html">FontSpec.Default</a>
+default class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FontSpec(string family, float size, Color color, bool isBold, bool isItalic, bool isUnderline, Color fillColor, Brush fillBrush, FillType fillType)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">family</span></td>
+        <td><p>A text string representing the font family
+(default is &quot;Arial&quot;)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td><span class="parametername">size</span></td>
+        <td><p>A size of the font in points.  This size will be scaled
+based on the ratio of the <a class="xref" href="ZedGraph.PaneBase.html#ZedGraph_PaneBase_Rect">Rect</a> dimension to the
+<a class="xref" href="ZedGraph.PaneBase.html#ZedGraph_PaneBase_BaseDimension">BaseDimension</a> of the <a class="xref" href="ZedGraph.GraphPane.html">GraphPane</a> object.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.drawing.color">Color</a></td>
+        <td><span class="parametername">color</span></td>
+        <td><p>The color with which to render the font</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="parametername">isBold</span></td>
+        <td><p>true for a bold typeface, false otherwise</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="parametername">isItalic</span></td>
+        <td><p>true for an italic typeface, false otherwise</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="parametername">isUnderline</span></td>
+        <td><p>true for an underlined font, false otherwise</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.drawing.color">Color</a></td>
+        <td><span class="parametername">fillColor</span></td>
+        <td><p>The <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.drawing.color">Color</a> to use for filling in the text background</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.drawing.brush">Brush</a></td>
+        <td><span class="parametername">fillBrush</span></td>
+        <td><p>The <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.drawing.brush">Brush</a> to use for filling in the text background</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ZedGraph.FillType.html">FillType</a></td>
+        <td><span class="parametername">fillType</span></td>
+        <td><p>The <a class="xref" href="ZedGraph.FillType.html">FillType</a> to use for the
+text background</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_FontSpec__ctor_ZedGraph_FontSpec_.md&amp;value=---%0Auid%3A%20ZedGraph.FontSpec.%23ctor(ZedGraph.FontSpec)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/FontSpec.cs/#L551">View Source</a>
+  </span>
+  <a id="ZedGraph_FontSpec__ctor_" data-uid="ZedGraph.FontSpec.#ctor*"></a>
+  <h4 id="ZedGraph_FontSpec__ctor_ZedGraph_FontSpec_" data-uid="ZedGraph.FontSpec.#ctor(ZedGraph.FontSpec)">FontSpec(FontSpec)</h4>
+  <div class="markdown level1 summary"><p>The Copy Constructor</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FontSpec(FontSpec rhs)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ZedGraph.FontSpec.html">FontSpec</a></td>
+        <td><span class="parametername">rhs</span></td>
+        <td><p>The FontSpec object from which to copy</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="fields">Fields
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_FontSpec_schema.md&amp;value=---%0Auid%3A%20ZedGraph.FontSpec.schema%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/FontSpec.cs/#L602">View Source</a>
+  </span>
+  <h4 id="ZedGraph_FontSpec_schema" data-uid="ZedGraph.FontSpec.schema">schema</h4>
+  <div class="markdown level1 summary"><p>Current schema value that defines the version of the serialized file</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int schema = 10</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_FontSpec_Angle.md&amp;value=---%0Auid%3A%20ZedGraph.FontSpec.Angle%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/FontSpec.cs/#L332">View Source</a>
+  </span>
+  <a id="ZedGraph_FontSpec_Angle_" data-uid="ZedGraph.FontSpec.Angle*"></a>
+  <h4 id="ZedGraph_FontSpec_Angle" data-uid="ZedGraph.FontSpec.Angle">Angle</h4>
+  <div class="markdown level1 summary"><p>The angle at which this <a class="xref" href="ZedGraph.FontSpec.html">FontSpec</a> object is drawn.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float Angle { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td><p>The angle of the font, measured in anti-clockwise degrees from
+horizontal.  Negative values are permitted.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_FontSpec_Border.md&amp;value=---%0Auid%3A%20ZedGraph.FontSpec.Border%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/FontSpec.cs/#L371">View Source</a>
+  </span>
+  <a id="ZedGraph_FontSpec_Border_" data-uid="ZedGraph.FontSpec.Border*"></a>
+  <h4 id="ZedGraph_FontSpec_Border" data-uid="ZedGraph.FontSpec.Border">Border</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the <a class="xref" href="ZedGraph.FontSpec.html#ZedGraph_FontSpec_Border">Border</a> class used to draw the border border
+around this text.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Border Border { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ZedGraph.Border.html">Border</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_FontSpec_DropShadowAngle.md&amp;value=---%0Auid%3A%20ZedGraph.FontSpec.DropShadowAngle%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/FontSpec.cs/#L441">View Source</a>
+  </span>
+  <a id="ZedGraph_FontSpec_DropShadowAngle_" data-uid="ZedGraph.FontSpec.DropShadowAngle*"></a>
+  <h4 id="ZedGraph_FontSpec_DropShadowAngle" data-uid="ZedGraph.FontSpec.DropShadowAngle">DropShadowAngle</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the offset angle of the drop shadow for this <a class="xref" href="ZedGraph.FontSpec.html">FontSpec</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float DropShadowAngle { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td><p>The angle, measured in anti-clockwise degrees from
+horizontal.  Negative values are permitted.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="ZedGraph_FontSpec_DropShadowAngle_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This value only applies if <a class="xref" href="ZedGraph.FontSpec.html#ZedGraph_FontSpec_IsDropShadow">IsDropShadow</a> is true.</p>
+</div>
+  <h5 id="ZedGraph_FontSpec_DropShadowAngle_seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="ZedGraph.FontSpec.html#ZedGraph_FontSpec_IsDropShadow">IsDropShadow</a></div>
+      <div><a class="xref" href="ZedGraph.FontSpec.html#ZedGraph_FontSpec_DropShadowColor">DropShadowColor</a></div>
+      <div><a class="xref" href="ZedGraph.FontSpec.html#ZedGraph_FontSpec_DropShadowOffset">DropShadowOffset</a></div>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_FontSpec_DropShadowColor.md&amp;value=---%0Auid%3A%20ZedGraph.FontSpec.DropShadowColor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/FontSpec.cs/#L425">View Source</a>
+  </span>
+  <a id="ZedGraph_FontSpec_DropShadowColor_" data-uid="ZedGraph.FontSpec.DropShadowColor*"></a>
+  <h4 id="ZedGraph_FontSpec_DropShadowColor" data-uid="ZedGraph.FontSpec.DropShadowColor">DropShadowColor</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the color of the drop shadow for this <a class="xref" href="ZedGraph.FontSpec.html">FontSpec</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Color DropShadowColor { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.drawing.color">Color</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="ZedGraph_FontSpec_DropShadowColor_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This value only applies if <a class="xref" href="ZedGraph.FontSpec.html#ZedGraph_FontSpec_IsDropShadow">IsDropShadow</a> is true.</p>
+</div>
+  <h5 id="ZedGraph_FontSpec_DropShadowColor_seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="ZedGraph.FontSpec.html#ZedGraph_FontSpec_IsDropShadow">IsDropShadow</a></div>
+      <div><a class="xref" href="ZedGraph.FontSpec.html#ZedGraph_FontSpec_DropShadowAngle">DropShadowAngle</a></div>
+      <div><a class="xref" href="ZedGraph.FontSpec.html#ZedGraph_FontSpec_DropShadowOffset">DropShadowOffset</a></div>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_FontSpec_DropShadowOffset.md&amp;value=---%0Auid%3A%20ZedGraph.FontSpec.DropShadowOffset%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/FontSpec.cs/#L456">View Source</a>
+  </span>
+  <a id="ZedGraph_FontSpec_DropShadowOffset_" data-uid="ZedGraph.FontSpec.DropShadowOffset*"></a>
+  <h4 id="ZedGraph_FontSpec_DropShadowOffset" data-uid="ZedGraph.FontSpec.DropShadowOffset">DropShadowOffset</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the offset distance of the drop shadow for this <a class="xref" href="ZedGraph.FontSpec.html">FontSpec</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float DropShadowOffset { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td><p>The offset distance, measured as a fraction of the scaled font height.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="ZedGraph_FontSpec_DropShadowOffset_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This value only applies if <a class="xref" href="ZedGraph.FontSpec.html#ZedGraph_FontSpec_IsDropShadow">IsDropShadow</a> is true.</p>
+</div>
+  <h5 id="ZedGraph_FontSpec_DropShadowOffset_seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="ZedGraph.FontSpec.html#ZedGraph_FontSpec_IsDropShadow">IsDropShadow</a></div>
+      <div><a class="xref" href="ZedGraph.FontSpec.html#ZedGraph_FontSpec_DropShadowColor">DropShadowColor</a></div>
+      <div><a class="xref" href="ZedGraph.FontSpec.html#ZedGraph_FontSpec_DropShadowAngle">DropShadowAngle</a></div>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_FontSpec_Family.md&amp;value=---%0Auid%3A%20ZedGraph.FontSpec.Family%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/FontSpec.cs/#L264">View Source</a>
+  </span>
+  <a id="ZedGraph_FontSpec_Family_" data-uid="ZedGraph.FontSpec.Family*"></a>
+  <h4 id="ZedGraph_FontSpec_Family" data-uid="ZedGraph.FontSpec.Family">Family</h4>
+  <div class="markdown level1 summary"><p>The font family name for this <a class="xref" href="ZedGraph.FontSpec.html">FontSpec</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Family { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><p>A text string with the font family name, e.g., &quot;Arial&quot;</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_FontSpec_Fill.md&amp;value=---%0Auid%3A%20ZedGraph.FontSpec.Fill%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/FontSpec.cs/#L382">View Source</a>
+  </span>
+  <a id="ZedGraph_FontSpec_Fill_" data-uid="ZedGraph.FontSpec.Fill*"></a>
+  <h4 id="ZedGraph_FontSpec_Fill" data-uid="ZedGraph.FontSpec.Fill">Fill</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the <a class="xref" href="ZedGraph.Fill.html">Fill</a> data for this
+<a class="xref" href="ZedGraph.FontSpec.html">FontSpec</a>, which controls how the background
+behind the text is filled.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Fill Fill { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ZedGraph.Fill.html">Fill</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_FontSpec_FontColor.md&amp;value=---%0Auid%3A%20ZedGraph.FontSpec.FontColor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/FontSpec.cs/#L255">View Source</a>
+  </span>
+  <a id="ZedGraph_FontSpec_FontColor_" data-uid="ZedGraph.FontSpec.FontColor*"></a>
+  <h4 id="ZedGraph_FontSpec_FontColor" data-uid="ZedGraph.FontSpec.FontColor">FontColor</h4>
+  <div class="markdown level1 summary"><p>The color of the font characters for this <a class="xref" href="ZedGraph.FontSpec.html">FontSpec</a>.
+Note that the border and background
+colors are set using the <a class="xref" href="ZedGraph.LineBase.html#ZedGraph_LineBase_Color">Color</a> and
+<a class="xref" href="ZedGraph.Fill.html#ZedGraph_Fill_Color">Color</a> properties, respectively.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Color FontColor { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.drawing.color">Color</a></td>
+        <td><p>A system <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.drawing.color">Color</a> reference.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_FontSpec_IsAntiAlias.md&amp;value=---%0Auid%3A%20ZedGraph.FontSpec.IsAntiAlias%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/FontSpec.cs/#L399">View Source</a>
+  </span>
+  <a id="ZedGraph_FontSpec_IsAntiAlias_" data-uid="ZedGraph.FontSpec.IsAntiAlias*"></a>
+  <h4 id="ZedGraph_FontSpec_IsAntiAlias" data-uid="ZedGraph.FontSpec.IsAntiAlias">IsAntiAlias</h4>
+  <div class="markdown level1 summary"><p>Gets or sets a value that determines if the <a class="xref" href="ZedGraph.FontSpec.html">FontSpec</a> will be
+drawn using anti-aliasing logic within GDI+.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsAntiAlias { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="ZedGraph_FontSpec_IsAntiAlias_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>If this property is set to true, it will override the current setting of
+<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.drawing.graphics.smoothingmode#System_Drawing_Graphics_SmoothingMode">SmoothingMode</a> by setting the value temporarily to
+<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.drawing.drawing2d.smoothingmode#System_Drawing_Drawing2D_SmoothingMode_HighQuality">HighQuality</a>.  If this property is set to false,
+the the current setting of <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.drawing.graphics.smoothingmode#System_Drawing_Graphics_SmoothingMode">SmoothingMode</a> will be
+left as-is.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_FontSpec_IsBold.md&amp;value=---%0Auid%3A%20ZedGraph.FontSpec.IsBold%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/FontSpec.cs/#L281">View Source</a>
+  </span>
+  <a id="ZedGraph_FontSpec_IsBold_" data-uid="ZedGraph.FontSpec.IsBold*"></a>
+  <h4 id="ZedGraph_FontSpec_IsBold" data-uid="ZedGraph.FontSpec.IsBold">IsBold</h4>
+  <div class="markdown level1 summary"><p>Determines whether this <a class="xref" href="ZedGraph.FontSpec.html">FontSpec</a> is
+drawn with bold typeface.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsBold { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><p>A boolean value, true for bold, false for normal</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_FontSpec_IsDropShadow.md&amp;value=---%0Auid%3A%20ZedGraph.FontSpec.IsDropShadow%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/FontSpec.cs/#L411">View Source</a>
+  </span>
+  <a id="ZedGraph_FontSpec_IsDropShadow_" data-uid="ZedGraph.FontSpec.IsDropShadow*"></a>
+  <h4 id="ZedGraph_FontSpec_IsDropShadow" data-uid="ZedGraph.FontSpec.IsDropShadow">IsDropShadow</h4>
+  <div class="markdown level1 summary"><p>Gets or sets a value that determines if the <a class="xref" href="ZedGraph.FontSpec.html">FontSpec</a> will be
+displayed with a drop shadow.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsDropShadow { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="ZedGraph_FontSpec_IsDropShadow_seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="ZedGraph.FontSpec.html#ZedGraph_FontSpec_DropShadowColor">DropShadowColor</a></div>
+      <div><a class="xref" href="ZedGraph.FontSpec.html#ZedGraph_FontSpec_DropShadowAngle">DropShadowAngle</a></div>
+      <div><a class="xref" href="ZedGraph.FontSpec.html#ZedGraph_FontSpec_DropShadowOffset">DropShadowOffset</a></div>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_FontSpec_IsItalic.md&amp;value=---%0Auid%3A%20ZedGraph.FontSpec.IsItalic%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/FontSpec.cs/#L298">View Source</a>
+  </span>
+  <a id="ZedGraph_FontSpec_IsItalic_" data-uid="ZedGraph.FontSpec.IsItalic*"></a>
+  <h4 id="ZedGraph_FontSpec_IsItalic" data-uid="ZedGraph.FontSpec.IsItalic">IsItalic</h4>
+  <div class="markdown level1 summary"><p>Determines whether this <a class="xref" href="ZedGraph.FontSpec.html">FontSpec</a> is
+drawn with italic typeface.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsItalic { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><p>A boolean value, true for italic, false for normal</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_FontSpec_IsUnderline.md&amp;value=---%0Auid%3A%20ZedGraph.FontSpec.IsUnderline%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/FontSpec.cs/#L315">View Source</a>
+  </span>
+  <a id="ZedGraph_FontSpec_IsUnderline_" data-uid="ZedGraph.FontSpec.IsUnderline*"></a>
+  <h4 id="ZedGraph_FontSpec_IsUnderline" data-uid="ZedGraph.FontSpec.IsUnderline">IsUnderline</h4>
+  <div class="markdown level1 summary"><p>Determines whether this <a class="xref" href="ZedGraph.FontSpec.html">FontSpec</a> is
+drawn with underlined typeface.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsUnderline { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><p>A boolean value, true for underline, false for normal</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_FontSpec_Size.md&amp;value=---%0Auid%3A%20ZedGraph.FontSpec.Size%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/FontSpec.cs/#L354">View Source</a>
+  </span>
+  <a id="ZedGraph_FontSpec_Size_" data-uid="ZedGraph.FontSpec.Size*"></a>
+  <h4 id="ZedGraph_FontSpec_Size" data-uid="ZedGraph.FontSpec.Size">Size</h4>
+  <div class="markdown level1 summary"><p>The size of the font for this <a class="xref" href="ZedGraph.FontSpec.html">FontSpec</a> object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float Size { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td><p>The size of the font, measured in points (1/72 inch).</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_FontSpec_StringAlignment.md&amp;value=---%0Auid%3A%20ZedGraph.FontSpec.StringAlignment%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/FontSpec.cs/#L344">View Source</a>
+  </span>
+  <a id="ZedGraph_FontSpec_StringAlignment_" data-uid="ZedGraph.FontSpec.StringAlignment*"></a>
+  <h4 id="ZedGraph_FontSpec_StringAlignment" data-uid="ZedGraph.FontSpec.StringAlignment">StringAlignment</h4>
+  <div class="markdown level1 summary"><p>Determines the alignment with which this
+<a class="xref" href="ZedGraph.FontSpec.html">FontSpec</a> object is drawn.  This alignment really only
+affects multi-line strings.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public StringAlignment StringAlignment { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.drawing.stringalignment">StringAlignment</a></td>
+        <td><p>A <a class="xref" href="ZedGraph.FontSpec.html#ZedGraph_FontSpec_StringAlignment">StringAlignment</a> enumeration.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_FontSpec_BoundingBox_System_Drawing_Graphics_System_String_System_Single_.md&amp;value=---%0Auid%3A%20ZedGraph.FontSpec.BoundingBox(System.Drawing.Graphics%2CSystem.String%2CSystem.Single)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/FontSpec.cs/#L1148">View Source</a>
+  </span>
+  <a id="ZedGraph_FontSpec_BoundingBox_" data-uid="ZedGraph.FontSpec.BoundingBox*"></a>
+  <h4 id="ZedGraph_FontSpec_BoundingBox_System_Drawing_Graphics_System_String_System_Single_" data-uid="ZedGraph.FontSpec.BoundingBox(System.Drawing.Graphics,System.String,System.Single)">BoundingBox(Graphics, String, Single)</h4>
+  <div class="markdown level1 summary"><p>Get a <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.drawing.sizef">SizeF</a> struct representing the width and height
+of the bounding box for the specified text string, based on the scaled font size.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SizeF BoundingBox(Graphics g, string text, float scaleFactor)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.drawing.graphics">Graphics</a></td>
+        <td><span class="parametername">g</span></td>
+        <td><p>A graphic device object to be drawn into.  This is normally e.Graphics from the
+PaintEventArgs argument to the Paint() method.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">text</span></td>
+        <td><p>The text string for which the width is to be calculated</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td><span class="parametername">scaleFactor</span></td>
+        <td><p>The scaling factor to be used for rendering objects.  This is calculated and
+passed down by the parent <a class="xref" href="ZedGraph.GraphPane.html">GraphPane</a> object using the
+<a class="xref" href="ZedGraph.PaneBase.html#ZedGraph_PaneBase_CalcScaleFactor">CalcScaleFactor()</a> method, and is used to proportionally adjust
+font sizes, etc. according to the actual size of the graph.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.drawing.sizef">SizeF</a></td>
+        <td><p>The scaled text dimensions, in pixels, in the form of
+a <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.drawing.sizef">SizeF</a> struct</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="ZedGraph_FontSpec_BoundingBox_System_Drawing_Graphics_System_String_System_Single__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This routine differs from <a class="xref" href="ZedGraph.FontSpec.html#ZedGraph_FontSpec_MeasureString_System_Drawing_Graphics_System_String_System_Single_">MeasureString(Graphics, String, Single)</a> in that it takes into
+account the rotation angle of the font, and gives the dimensions of the
+bounding box that encloses the text at the specified angle.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_FontSpec_BoundingBox_System_Drawing_Graphics_System_String_System_Single_System_Drawing_SizeF_.md&amp;value=---%0Auid%3A%20ZedGraph.FontSpec.BoundingBox(System.Drawing.Graphics%2CSystem.String%2CSystem.Single%2CSystem.Drawing.SizeF)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/FontSpec.cs/#L1179">View Source</a>
+  </span>
+  <a id="ZedGraph_FontSpec_BoundingBox_" data-uid="ZedGraph.FontSpec.BoundingBox*"></a>
+  <h4 id="ZedGraph_FontSpec_BoundingBox_System_Drawing_Graphics_System_String_System_Single_System_Drawing_SizeF_" data-uid="ZedGraph.FontSpec.BoundingBox(System.Drawing.Graphics,System.String,System.Single,System.Drawing.SizeF)">BoundingBox(Graphics, String, Single, SizeF)</h4>
+  <div class="markdown level1 summary"><p>Get a <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.drawing.sizef">SizeF</a> struct representing the width and height
+of the bounding box for the specified text string, based on the scaled font size.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SizeF BoundingBox(Graphics g, string text, float scaleFactor, SizeF layoutArea)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.drawing.graphics">Graphics</a></td>
+        <td><span class="parametername">g</span></td>
+        <td><p>A graphic device object to be drawn into.  This is normally e.Graphics from the
+PaintEventArgs argument to the Paint() method.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">text</span></td>
+        <td><p>The text string for which the width is to be calculated</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td><span class="parametername">scaleFactor</span></td>
+        <td><p>The scaling factor to be used for rendering objects.  This is calculated and
+passed down by the parent <a class="xref" href="ZedGraph.GraphPane.html">GraphPane</a> object using the
+<a class="xref" href="ZedGraph.PaneBase.html#ZedGraph_PaneBase_CalcScaleFactor">CalcScaleFactor()</a> method, and is used to proportionally adjust
+font sizes, etc. according to the actual size of the graph.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.drawing.sizef">SizeF</a></td>
+        <td><span class="parametername">layoutArea</span></td>
+        <td><p>The limiting area (<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.drawing.sizef">SizeF</a>) into which the text
+must fit.  The actual rectangle may be smaller than this, but the text will be wrapped
+to accomodate the area.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.drawing.sizef">SizeF</a></td>
+        <td><p>The scaled text dimensions, in pixels, in the form of
+a <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.drawing.sizef">SizeF</a> struct</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="ZedGraph_FontSpec_BoundingBox_System_Drawing_Graphics_System_String_System_Single_System_Drawing_SizeF__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This routine differs from <a class="xref" href="ZedGraph.FontSpec.html#ZedGraph_FontSpec_MeasureString_System_Drawing_Graphics_System_String_System_Single_">MeasureString(Graphics, String, Single)</a> in that it takes into
+account the rotation angle of the font, and gives the dimensions of the
+bounding box that encloses the text at the specified angle.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_FontSpec_BoundingBoxTenPower_System_Drawing_Graphics_System_String_System_Single_.md&amp;value=---%0Auid%3A%20ZedGraph.FontSpec.BoundingBoxTenPower(System.Drawing.Graphics%2CSystem.String%2CSystem.Single)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/FontSpec.cs/#L1223">View Source</a>
+  </span>
+  <a id="ZedGraph_FontSpec_BoundingBoxTenPower_" data-uid="ZedGraph.FontSpec.BoundingBoxTenPower*"></a>
+  <h4 id="ZedGraph_FontSpec_BoundingBoxTenPower_System_Drawing_Graphics_System_String_System_Single_" data-uid="ZedGraph.FontSpec.BoundingBoxTenPower(System.Drawing.Graphics,System.String,System.Single)">BoundingBoxTenPower(Graphics, String, Single)</h4>
+  <div class="markdown level1 summary"><p>Get a <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.drawing.sizef">SizeF</a> struct representing the width and height
+of the bounding box for the specified text string, based on the scaled font size.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SizeF BoundingBoxTenPower(Graphics g, string text, float scaleFactor)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.drawing.graphics">Graphics</a></td>
+        <td><span class="parametername">g</span></td>
+        <td><p>A graphic device object to be drawn into.  This is normally e.Graphics from the
+PaintEventArgs argument to the Paint() method.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">text</span></td>
+        <td><p>The text string for which the width is to be calculated</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td><span class="parametername">scaleFactor</span></td>
+        <td><p>The scaling factor to be used for rendering objects.  This is calculated and
+passed down by the parent <a class="xref" href="ZedGraph.GraphPane.html">GraphPane</a> object using the
+<a class="xref" href="ZedGraph.PaneBase.html#ZedGraph_PaneBase_CalcScaleFactor">CalcScaleFactor()</a> method, and is used to proportionally adjust
+font sizes, etc. according to the actual size of the graph.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.drawing.sizef">SizeF</a></td>
+        <td><p>The scaled text dimensions, in pixels, in the form of
+a <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.drawing.sizef">SizeF</a> struct</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="ZedGraph_FontSpec_BoundingBoxTenPower_System_Drawing_Graphics_System_String_System_Single__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This special case method will show the specified string as a power of 10,
+superscripted and downsized according to the
+<a class="xref" href="ZedGraph.FontSpec.Default.html#ZedGraph_FontSpec_Default_SuperSize">SuperSize</a> and <a class="xref" href="ZedGraph.FontSpec.Default.html#ZedGraph_FontSpec_Default_SuperShift">SuperShift</a>.
+This routine differs from <a class="xref" href="ZedGraph.FontSpec.html#ZedGraph_FontSpec_MeasureString_System_Drawing_Graphics_System_String_System_Single_">MeasureString(Graphics, String, Single)</a> in that it takes into
+account the rotation angle of the font, and gives the dimensions of the
+bounding box that encloses the text at the specified angle.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_FontSpec_Clone.md&amp;value=---%0Auid%3A%20ZedGraph.FontSpec.Clone%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/FontSpec.cs/#L589">View Source</a>
+  </span>
+  <a id="ZedGraph_FontSpec_Clone_" data-uid="ZedGraph.FontSpec.Clone*"></a>
+  <h4 id="ZedGraph_FontSpec_Clone" data-uid="ZedGraph.FontSpec.Clone">Clone()</h4>
+  <div class="markdown level1 summary"><p>Typesafe, deep-copy clone method.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FontSpec Clone()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ZedGraph.FontSpec.html">FontSpec</a></td>
+        <td><p>A new, independent copy of this class</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_FontSpec_Draw_System_Drawing_Graphics_ZedGraph_PaneBase_System_String_System_Single_System_Single_ZedGraph_AlignH_ZedGraph_AlignV_System_Single_.md&amp;value=---%0Auid%3A%20ZedGraph.FontSpec.Draw(System.Drawing.Graphics%2CZedGraph.PaneBase%2CSystem.String%2CSystem.Single%2CSystem.Single%2CZedGraph.AlignH%2CZedGraph.AlignV%2CSystem.Single)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/FontSpec.cs/#L758">View Source</a>
+  </span>
+  <a id="ZedGraph_FontSpec_Draw_" data-uid="ZedGraph.FontSpec.Draw*"></a>
+  <h4 id="ZedGraph_FontSpec_Draw_System_Drawing_Graphics_ZedGraph_PaneBase_System_String_System_Single_System_Single_ZedGraph_AlignH_ZedGraph_AlignV_System_Single_" data-uid="ZedGraph.FontSpec.Draw(System.Drawing.Graphics,ZedGraph.PaneBase,System.String,System.Single,System.Single,ZedGraph.AlignH,ZedGraph.AlignV,System.Single)">Draw(Graphics, PaneBase, String, Single, Single, AlignH, AlignV, Single)</h4>
+  <div class="markdown level1 summary"><p>Render the specified <code data-dev-comment-type="paramref" class="paramref">text</code> to the specifed
+<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.drawing.graphics">Graphics</a> device.  The text, border, and fill options
+will be rendered as required.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Draw(Graphics g, PaneBase pane, string text, float x, float y, AlignH alignH, AlignV alignV, float scaleFactor)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.drawing.graphics">Graphics</a></td>
+        <td><span class="parametername">g</span></td>
+        <td><p>A graphic device object to be drawn into.  This is normally e.Graphics from the
+PaintEventArgs argument to the Paint() method.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ZedGraph.PaneBase.html">PaneBase</a></td>
+        <td><span class="parametername">pane</span></td>
+        <td><p>A reference to the <a class="xref" href="ZedGraph.PaneBase.html">PaneBase</a> object that is the parent or
+owner of this object.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">text</span></td>
+        <td><p>A string value containing the text to be
+displayed.  This can be multiple lines, separated by newline ('\n')
+characters</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td><span class="parametername">x</span></td>
+        <td><p>The X location to display the text, in screen
+coordinates, relative to the horizontal (<a class="xref" href="ZedGraph.AlignH.html">AlignH</a>)
+alignment parameter <code data-dev-comment-type="paramref" class="paramref">alignH</code></p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td><span class="parametername">y</span></td>
+        <td><p>The Y location to display the text, in screen
+coordinates, relative to the vertical (<a class="xref" href="ZedGraph.AlignV.html">AlignV</a>
+alignment parameter <code data-dev-comment-type="paramref" class="paramref">alignV</code></p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ZedGraph.AlignH.html">AlignH</a></td>
+        <td><span class="parametername">alignH</span></td>
+        <td><p>A horizontal alignment parameter specified
+using the <a class="xref" href="ZedGraph.AlignH.html">AlignH</a> enum type</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ZedGraph.AlignV.html">AlignV</a></td>
+        <td><span class="parametername">alignV</span></td>
+        <td><p>A vertical alignment parameter specified
+using the <a class="xref" href="ZedGraph.AlignV.html">AlignV</a> enum type</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td><span class="parametername">scaleFactor</span></td>
+        <td><p>The scaling factor to be used for rendering objects.  This is calculated and
+passed down by the parent <a class="xref" href="ZedGraph.GraphPane.html">GraphPane</a> object using the
+<a class="xref" href="ZedGraph.PaneBase.html#ZedGraph_PaneBase_CalcScaleFactor">CalcScaleFactor()</a> method, and is used to proportionally adjust
+font sizes, etc. according to the actual size of the graph.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_FontSpec_Draw_System_Drawing_Graphics_ZedGraph_PaneBase_System_String_System_Single_System_Single_ZedGraph_AlignH_ZedGraph_AlignV_System_Single_System_Drawing_SizeF_.md&amp;value=---%0Auid%3A%20ZedGraph.FontSpec.Draw(System.Drawing.Graphics%2CZedGraph.PaneBase%2CSystem.String%2CSystem.Single%2CSystem.Single%2CZedGraph.AlignH%2CZedGraph.AlignV%2CSystem.Single%2CSystem.Drawing.SizeF)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/FontSpec.cs/#L801">View Source</a>
+  </span>
+  <a id="ZedGraph_FontSpec_Draw_" data-uid="ZedGraph.FontSpec.Draw*"></a>
+  <h4 id="ZedGraph_FontSpec_Draw_System_Drawing_Graphics_ZedGraph_PaneBase_System_String_System_Single_System_Single_ZedGraph_AlignH_ZedGraph_AlignV_System_Single_System_Drawing_SizeF_" data-uid="ZedGraph.FontSpec.Draw(System.Drawing.Graphics,ZedGraph.PaneBase,System.String,System.Single,System.Single,ZedGraph.AlignH,ZedGraph.AlignV,System.Single,System.Drawing.SizeF)">Draw(Graphics, PaneBase, String, Single, Single, AlignH, AlignV, Single, SizeF)</h4>
+  <div class="markdown level1 summary"><p>Render the specified <code data-dev-comment-type="paramref" class="paramref">text</code> to the specifed
+<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.drawing.graphics">Graphics</a> device.  The text, border, and fill options
+will be rendered as required.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Draw(Graphics g, PaneBase pane, string text, float x, float y, AlignH alignH, AlignV alignV, float scaleFactor, SizeF layoutArea)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.drawing.graphics">Graphics</a></td>
+        <td><span class="parametername">g</span></td>
+        <td><p>A graphic device object to be drawn into.  This is normally e.Graphics from the
+PaintEventArgs argument to the Paint() method.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ZedGraph.PaneBase.html">PaneBase</a></td>
+        <td><span class="parametername">pane</span></td>
+        <td><p>A reference to the <a class="xref" href="ZedGraph.PaneBase.html">PaneBase</a> object that is the parent or
+owner of this object.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">text</span></td>
+        <td><p>A string value containing the text to be
+displayed.  This can be multiple lines, separated by newline ('\n')
+characters</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td><span class="parametername">x</span></td>
+        <td><p>The X location to display the text, in screen
+coordinates, relative to the horizontal (<a class="xref" href="ZedGraph.AlignH.html">AlignH</a>)
+alignment parameter <code data-dev-comment-type="paramref" class="paramref">alignH</code></p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td><span class="parametername">y</span></td>
+        <td><p>The Y location to display the text, in screen
+coordinates, relative to the vertical (<a class="xref" href="ZedGraph.AlignV.html">AlignV</a>
+alignment parameter <code data-dev-comment-type="paramref" class="paramref">alignV</code></p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ZedGraph.AlignH.html">AlignH</a></td>
+        <td><span class="parametername">alignH</span></td>
+        <td><p>A horizontal alignment parameter specified
+using the <a class="xref" href="ZedGraph.AlignH.html">AlignH</a> enum type</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ZedGraph.AlignV.html">AlignV</a></td>
+        <td><span class="parametername">alignV</span></td>
+        <td><p>A vertical alignment parameter specified
+using the <a class="xref" href="ZedGraph.AlignV.html">AlignV</a> enum type</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td><span class="parametername">scaleFactor</span></td>
+        <td><p>The scaling factor to be used for rendering objects.  This is calculated and
+passed down by the parent <a class="xref" href="ZedGraph.GraphPane.html">GraphPane</a> object using the
+<a class="xref" href="ZedGraph.PaneBase.html#ZedGraph_PaneBase_CalcScaleFactor">CalcScaleFactor()</a> method, and is used to proportionally adjust
+font sizes, etc. according to the actual size of the graph.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.drawing.sizef">SizeF</a></td>
+        <td><span class="parametername">layoutArea</span></td>
+        <td><p>The limiting area (<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.drawing.sizef">SizeF</a>) into which the text
+must fit.  The actual rectangle may be smaller than this, but the text will be wrapped
+to accomodate the area.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_FontSpec_DrawTenPower_System_Drawing_Graphics_ZedGraph_GraphPane_System_String_System_Single_System_Single_ZedGraph_AlignH_ZedGraph_AlignV_System_Single_.md&amp;value=---%0Auid%3A%20ZedGraph.FontSpec.DrawTenPower(System.Drawing.Graphics%2CZedGraph.GraphPane%2CSystem.String%2CSystem.Single%2CSystem.Single%2CZedGraph.AlignH%2CZedGraph.AlignV%2CSystem.Single)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/FontSpec.cs/#L917">View Source</a>
+  </span>
+  <a id="ZedGraph_FontSpec_DrawTenPower_" data-uid="ZedGraph.FontSpec.DrawTenPower*"></a>
+  <h4 id="ZedGraph_FontSpec_DrawTenPower_System_Drawing_Graphics_ZedGraph_GraphPane_System_String_System_Single_System_Single_ZedGraph_AlignH_ZedGraph_AlignV_System_Single_" data-uid="ZedGraph.FontSpec.DrawTenPower(System.Drawing.Graphics,ZedGraph.GraphPane,System.String,System.Single,System.Single,ZedGraph.AlignH,ZedGraph.AlignV,System.Single)">DrawTenPower(Graphics, GraphPane, String, Single, Single, AlignH, AlignV, Single)</h4>
+  <div class="markdown level1 summary"><p>Render the specified <code data-dev-comment-type="paramref" class="paramref">text</code> to the specifed
+<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.drawing.graphics">Graphics</a> device.  The text, border, and fill options
+will be rendered as required.  This special case method will show the
+specified text as a power of 10, using the <a class="xref" href="ZedGraph.FontSpec.Default.html#ZedGraph_FontSpec_Default_SuperSize">SuperSize</a>
+and <a class="xref" href="ZedGraph.FontSpec.Default.html#ZedGraph_FontSpec_Default_SuperShift">SuperShift</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DrawTenPower(Graphics g, GraphPane pane, string text, float x, float y, AlignH alignH, AlignV alignV, float scaleFactor)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.drawing.graphics">Graphics</a></td>
+        <td><span class="parametername">g</span></td>
+        <td><p>A graphic device object to be drawn into.  This is normally e.Graphics from the
+PaintEventArgs argument to the Paint() method.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ZedGraph.GraphPane.html">GraphPane</a></td>
+        <td><span class="parametername">pane</span></td>
+        <td><p>A reference to the <a class="xref" href="ZedGraph.GraphPane.html">GraphPane</a> object that is the parent or
+owner of this object.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">text</span></td>
+        <td><p>A string value containing the text to be
+displayed.  This can be multiple lines, separated by newline ('\n')
+characters</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td><span class="parametername">x</span></td>
+        <td><p>The X location to display the text, in screen
+coordinates, relative to the horizontal (<a class="xref" href="ZedGraph.AlignH.html">AlignH</a>)
+alignment parameter <code data-dev-comment-type="paramref" class="paramref">alignH</code></p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td><span class="parametername">y</span></td>
+        <td><p>The Y location to display the text, in screen
+coordinates, relative to the vertical (<a class="xref" href="ZedGraph.AlignV.html">AlignV</a>
+alignment parameter <code data-dev-comment-type="paramref" class="paramref">alignV</code></p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ZedGraph.AlignH.html">AlignH</a></td>
+        <td><span class="parametername">alignH</span></td>
+        <td><p>A horizontal alignment parameter specified
+using the <a class="xref" href="ZedGraph.AlignH.html">AlignH</a> enum type</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ZedGraph.AlignV.html">AlignV</a></td>
+        <td><span class="parametername">alignV</span></td>
+        <td><p>A vertical alignment parameter specified
+using the <a class="xref" href="ZedGraph.AlignV.html">AlignV</a> enum type</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td><span class="parametername">scaleFactor</span></td>
+        <td><p>The scaling factor to be used for rendering objects.  This is calculated and
+passed down by the parent <a class="xref" href="ZedGraph.GraphPane.html">GraphPane</a> object using the
+<a class="xref" href="ZedGraph.PaneBase.html#ZedGraph_PaneBase_CalcScaleFactor">CalcScaleFactor()</a> method, and is used to proportionally adjust
+font sizes, etc. according to the actual size of the graph.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_FontSpec_GetBox_System_Drawing_Graphics_System_String_System_Single_System_Single_ZedGraph_AlignH_ZedGraph_AlignV_System_Single_System_Drawing_SizeF_.md&amp;value=---%0Auid%3A%20ZedGraph.FontSpec.GetBox(System.Drawing.Graphics%2CSystem.String%2CSystem.Single%2CSystem.Single%2CZedGraph.AlignH%2CZedGraph.AlignV%2CSystem.Single%2CSystem.Drawing.SizeF)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/FontSpec.cs/#L1470">View Source</a>
+  </span>
+  <a id="ZedGraph_FontSpec_GetBox_" data-uid="ZedGraph.FontSpec.GetBox*"></a>
+  <h4 id="ZedGraph_FontSpec_GetBox_System_Drawing_Graphics_System_String_System_Single_System_Single_ZedGraph_AlignH_ZedGraph_AlignV_System_Single_System_Drawing_SizeF_" data-uid="ZedGraph.FontSpec.GetBox(System.Drawing.Graphics,System.String,System.Single,System.Single,ZedGraph.AlignH,ZedGraph.AlignV,System.Single,System.Drawing.SizeF)">GetBox(Graphics, String, Single, Single, AlignH, AlignV, Single, SizeF)</h4>
+  <div class="markdown level1 summary"><p>Returns a polygon that defines the bounding box of
+the text, taking into account alignment and rotation parameters.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PointF[] GetBox(Graphics g, string text, float x, float y, AlignH alignH, AlignV alignV, float scaleFactor, SizeF layoutArea)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.drawing.graphics">Graphics</a></td>
+        <td><span class="parametername">g</span></td>
+        <td><p>A graphic device object to be drawn into.  This is normally e.Graphics from the
+PaintEventArgs argument to the Paint() method.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">text</span></td>
+        <td><p>A string value containing the text to be
+displayed.  This can be multiple lines, separated by newline ('\n')
+characters</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td><span class="parametername">x</span></td>
+        <td><p>The X location to display the text, in screen
+coordinates, relative to the horizontal (<a class="xref" href="ZedGraph.AlignH.html">AlignH</a>)
+alignment parameter <code data-dev-comment-type="paramref" class="paramref">alignH</code></p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td><span class="parametername">y</span></td>
+        <td><p>The Y location to display the text, in screen
+coordinates, relative to the vertical (<a class="xref" href="ZedGraph.AlignV.html">AlignV</a>
+alignment parameter <code data-dev-comment-type="paramref" class="paramref">alignV</code></p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ZedGraph.AlignH.html">AlignH</a></td>
+        <td><span class="parametername">alignH</span></td>
+        <td><p>A horizontal alignment parameter specified
+using the <a class="xref" href="ZedGraph.AlignH.html">AlignH</a> enum type</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ZedGraph.AlignV.html">AlignV</a></td>
+        <td><span class="parametername">alignV</span></td>
+        <td><p>A vertical alignment parameter specified
+using the <a class="xref" href="ZedGraph.AlignV.html">AlignV</a> enum type</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td><span class="parametername">scaleFactor</span></td>
+        <td><p>The scaling factor to be used for rendering objects.  This is calculated and
+passed down by the parent <a class="xref" href="ZedGraph.GraphPane.html">GraphPane</a> object using the
+<a class="xref" href="ZedGraph.PaneBase.html#ZedGraph_PaneBase_CalcScaleFactor">CalcScaleFactor()</a> method, and is used to proportionally adjust
+font sizes, etc. according to the actual size of the graph.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.drawing.sizef">SizeF</a></td>
+        <td><span class="parametername">layoutArea</span></td>
+        <td><p>The limiting area (<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.drawing.sizef">SizeF</a>) into which the text
+must fit.  The actual rectangle may be smaller than this, but the text will be wrapped
+to accomodate the area.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.drawing.pointf">PointF</a>[]</td>
+        <td><p>A polygon of 4 points defining the area of this text</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_FontSpec_GetFont_System_Single_.md&amp;value=---%0Auid%3A%20ZedGraph.FontSpec.GetFont(System.Single)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/FontSpec.cs/#L718">View Source</a>
+  </span>
+  <a id="ZedGraph_FontSpec_GetFont_" data-uid="ZedGraph.FontSpec.GetFont*"></a>
+  <h4 id="ZedGraph_FontSpec_GetFont_System_Single_" data-uid="ZedGraph.FontSpec.GetFont(System.Single)">GetFont(Single)</h4>
+  <div class="markdown level1 summary"><p>Get the <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.drawing.font">Font</a> class for the current scaled font.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Font GetFont(float scaleFactor)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td><span class="parametername">scaleFactor</span></td>
+        <td><p>The scaling factor to be used for rendering objects.  This is calculated and
+passed down by the parent <a class="xref" href="ZedGraph.GraphPane.html">GraphPane</a> object using the
+<a class="xref" href="ZedGraph.PaneBase.html#ZedGraph_PaneBase_CalcScaleFactor">CalcScaleFactor()</a> method, and is used to proportionally adjust
+font sizes, etc. according to the actual size of the graph.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.drawing.font">Font</a></td>
+        <td><p>Returns a reference to a <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.drawing.font">Font</a> object
+with a size of <span class="xref">ZedGraph.FontSpec._scaledSize</span>, and font <a class="xref" href="ZedGraph.FontSpec.html#ZedGraph_FontSpec_Family">Family</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_FontSpec_GetHeight_System_Single_.md&amp;value=---%0Auid%3A%20ZedGraph.FontSpec.GetHeight(System.Single)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/FontSpec.cs/#L1000">View Source</a>
+  </span>
+  <a id="ZedGraph_FontSpec_GetHeight_" data-uid="ZedGraph.FontSpec.GetHeight*"></a>
+  <h4 id="ZedGraph_FontSpec_GetHeight_System_Single_" data-uid="ZedGraph.FontSpec.GetHeight(System.Single)">GetHeight(Single)</h4>
+  <div class="markdown level1 summary"><p>Get the height of the scaled font</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float GetHeight(float scaleFactor)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td><span class="parametername">scaleFactor</span></td>
+        <td><p>The scaling factor to be used for rendering objects.  This is calculated and
+passed down by the parent <a class="xref" href="ZedGraph.GraphPane.html">GraphPane</a> object using the
+<a class="xref" href="ZedGraph.PaneBase.html#ZedGraph_PaneBase_CalcScaleFactor">CalcScaleFactor()</a> method, and is used to proportionally adjust
+font sizes, etc. according to the actual size of the graph.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td><p>The scaled font height, in pixels</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_FontSpec_GetObjectData_System_Runtime_Serialization_SerializationInfo_System_Runtime_Serialization_StreamingContext_.md&amp;value=---%0Auid%3A%20ZedGraph.FontSpec.GetObjectData(System.Runtime.Serialization.SerializationInfo%2CSystem.Runtime.Serialization.StreamingContext)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/FontSpec.cs/#L643">View Source</a>
+  </span>
+  <a id="ZedGraph_FontSpec_GetObjectData_" data-uid="ZedGraph.FontSpec.GetObjectData*"></a>
+  <h4 id="ZedGraph_FontSpec_GetObjectData_System_Runtime_Serialization_SerializationInfo_System_Runtime_Serialization_StreamingContext_" data-uid="ZedGraph.FontSpec.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">GetObjectData(SerializationInfo, StreamingContext)</h4>
+  <div class="markdown level1 summary"><p>Populates a <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.runtime.serialization.serializationinfo">SerializationInfo</a> instance with the data needed to serialize the target object</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[SecurityPermission(SecurityAction.Demand, SerializationFormatter = true)]
+public virtual void GetObjectData(SerializationInfo info, StreamingContext context)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.runtime.serialization.serializationinfo">SerializationInfo</a></td>
+        <td><span class="parametername">info</span></td>
+        <td><p>A <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.runtime.serialization.serializationinfo">SerializationInfo</a> instance that defines the serialized data</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.runtime.serialization.streamingcontext">StreamingContext</a></td>
+        <td><span class="parametername">context</span></td>
+        <td><p>A <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.runtime.serialization.streamingcontext">StreamingContext</a> instance that contains the serialized data</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_FontSpec_GetWidth_System_Drawing_Graphics_System_Single_.md&amp;value=---%0Auid%3A%20ZedGraph.FontSpec.GetWidth(System.Drawing.Graphics%2CSystem.Single)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/FontSpec.cs/#L1023">View Source</a>
+  </span>
+  <a id="ZedGraph_FontSpec_GetWidth_" data-uid="ZedGraph.FontSpec.GetWidth*"></a>
+  <h4 id="ZedGraph_FontSpec_GetWidth_System_Drawing_Graphics_System_Single_" data-uid="ZedGraph.FontSpec.GetWidth(System.Drawing.Graphics,System.Single)">GetWidth(Graphics, Single)</h4>
+  <div class="markdown level1 summary"><p>Get the average character width of the scaled font.  The average width is
+based on the character 'x'</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float GetWidth(Graphics g, float scaleFactor)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.drawing.graphics">Graphics</a></td>
+        <td><span class="parametername">g</span></td>
+        <td><p>A graphic device object to be drawn into.  This is normally e.Graphics from the
+PaintEventArgs argument to the Paint() method.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td><span class="parametername">scaleFactor</span></td>
+        <td><p>The scaling factor to be used for rendering objects.  This is calculated and
+passed down by the parent <a class="xref" href="ZedGraph.GraphPane.html">GraphPane</a> object using the
+<a class="xref" href="ZedGraph.PaneBase.html#ZedGraph_PaneBase_CalcScaleFactor">CalcScaleFactor()</a> method, and is used to proportionally adjust
+font sizes, etc. according to the actual size of the graph.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td><p>The scaled font width, in pixels</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_FontSpec_GetWidth_System_Drawing_Graphics_System_String_System_Single_.md&amp;value=---%0Auid%3A%20ZedGraph.FontSpec.GetWidth(System.Drawing.Graphics%2CSystem.String%2CSystem.Single)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/FontSpec.cs/#L1045">View Source</a>
+  </span>
+  <a id="ZedGraph_FontSpec_GetWidth_" data-uid="ZedGraph.FontSpec.GetWidth*"></a>
+  <h4 id="ZedGraph_FontSpec_GetWidth_System_Drawing_Graphics_System_String_System_Single_" data-uid="ZedGraph.FontSpec.GetWidth(System.Drawing.Graphics,System.String,System.Single)">GetWidth(Graphics, String, Single)</h4>
+  <div class="markdown level1 summary"><p>Get the total width of the specified text string</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float GetWidth(Graphics g, string text, float scaleFactor)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.drawing.graphics">Graphics</a></td>
+        <td><span class="parametername">g</span></td>
+        <td><p>A graphic device object to be drawn into.  This is normally e.Graphics from the
+PaintEventArgs argument to the Paint() method.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">text</span></td>
+        <td><p>The text string for which the width is to be calculated</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td><span class="parametername">scaleFactor</span></td>
+        <td><p>The scaling factor to be used for rendering objects.  This is calculated and
+passed down by the parent <a class="xref" href="ZedGraph.GraphPane.html">GraphPane</a> object using the
+<a class="xref" href="ZedGraph.PaneBase.html#ZedGraph_PaneBase_CalcScaleFactor">CalcScaleFactor()</a> method, and is used to proportionally adjust
+font sizes, etc. according to the actual size of the graph.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td><p>The scaled text width, in pixels</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_FontSpec_MeasureString_System_Drawing_Graphics_System_String_System_Single_.md&amp;value=---%0Auid%3A%20ZedGraph.FontSpec.MeasureString(System.Drawing.Graphics%2CSystem.String%2CSystem.Single)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/FontSpec.cs/#L1071">View Source</a>
+  </span>
+  <a id="ZedGraph_FontSpec_MeasureString_" data-uid="ZedGraph.FontSpec.MeasureString*"></a>
+  <h4 id="ZedGraph_FontSpec_MeasureString_System_Drawing_Graphics_System_String_System_Single_" data-uid="ZedGraph.FontSpec.MeasureString(System.Drawing.Graphics,System.String,System.Single)">MeasureString(Graphics, String, Single)</h4>
+  <div class="markdown level1 summary"><p>Get a <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.drawing.sizef">SizeF</a> struct representing the width and height
+of the specified text string, based on the scaled font size</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SizeF MeasureString(Graphics g, string text, float scaleFactor)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.drawing.graphics">Graphics</a></td>
+        <td><span class="parametername">g</span></td>
+        <td><p>A graphic device object to be drawn into.  This is normally e.Graphics from the
+PaintEventArgs argument to the Paint() method.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">text</span></td>
+        <td><p>The text string for which the width is to be calculated</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td><span class="parametername">scaleFactor</span></td>
+        <td><p>The scaling factor to be used for rendering objects.  This is calculated and
+passed down by the parent <a class="xref" href="ZedGraph.GraphPane.html">GraphPane</a> object using the
+<a class="xref" href="ZedGraph.PaneBase.html#ZedGraph_PaneBase_CalcScaleFactor">CalcScaleFactor()</a> method, and is used to proportionally adjust
+font sizes, etc. according to the actual size of the graph.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.drawing.sizef">SizeF</a></td>
+        <td><p>The scaled text dimensions, in pixels, in the form of
+a <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.drawing.sizef">SizeF</a> struct</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_FontSpec_MeasureString_System_Drawing_Graphics_System_String_System_Single_System_Drawing_SizeF_.md&amp;value=---%0Auid%3A%20ZedGraph.FontSpec.MeasureString(System.Drawing.Graphics%2CSystem.String%2CSystem.Single%2CSystem.Drawing.SizeF)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/FontSpec.cs/#L1111">View Source</a>
+  </span>
+  <a id="ZedGraph_FontSpec_MeasureString_" data-uid="ZedGraph.FontSpec.MeasureString*"></a>
+  <h4 id="ZedGraph_FontSpec_MeasureString_System_Drawing_Graphics_System_String_System_Single_System_Drawing_SizeF_" data-uid="ZedGraph.FontSpec.MeasureString(System.Drawing.Graphics,System.String,System.Single,System.Drawing.SizeF)">MeasureString(Graphics, String, Single, SizeF)</h4>
+  <div class="markdown level1 summary"><p>Get a <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.drawing.sizef">SizeF</a> struct representing the width and height
+of the specified text string, based on the scaled font size, and using
+the specified <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.drawing.sizef">SizeF</a> as an outer limit.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SizeF MeasureString(Graphics g, string text, float scaleFactor, SizeF layoutArea)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.drawing.graphics">Graphics</a></td>
+        <td><span class="parametername">g</span></td>
+        <td><p>A graphic device object to be drawn into.  This is normally e.Graphics from the
+PaintEventArgs argument to the Paint() method.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">text</span></td>
+        <td><p>The text string for which the width is to be calculated</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td><span class="parametername">scaleFactor</span></td>
+        <td><p>The scaling factor to be used for rendering objects.  This is calculated and
+passed down by the parent <a class="xref" href="ZedGraph.GraphPane.html">GraphPane</a> object using the
+<a class="xref" href="ZedGraph.PaneBase.html#ZedGraph_PaneBase_CalcScaleFactor">CalcScaleFactor()</a> method, and is used to proportionally adjust
+font sizes, etc. according to the actual size of the graph.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.drawing.sizef">SizeF</a></td>
+        <td><span class="parametername">layoutArea</span></td>
+        <td><p>The limiting area (<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.drawing.sizef">SizeF</a>) into which the text
+must fit.  The actual rectangle may be smaller than this, but the text will be wrapped
+to accomodate the area.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.drawing.sizef">SizeF</a></td>
+        <td><p>The scaled text dimensions, in pixels, in the form of
+a <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.drawing.sizef">SizeF</a> struct</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="ZedGraph_FontSpec_MeasureString_System_Drawing_Graphics_System_String_System_Single_System_Drawing_SizeF__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This method will allow the text to wrap as necessary to fit the
+<see paramref="layoutArea"></see>.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_FontSpec_PointInBox_System_Drawing_PointF_System_Drawing_Graphics_System_String_System_Single_System_Single_ZedGraph_AlignH_ZedGraph_AlignV_System_Single_.md&amp;value=---%0Auid%3A%20ZedGraph.FontSpec.PointInBox(System.Drawing.PointF%2CSystem.Drawing.Graphics%2CSystem.String%2CSystem.Single%2CSystem.Single%2CZedGraph.AlignH%2CZedGraph.AlignV%2CSystem.Single)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/FontSpec.cs/#L1285">View Source</a>
+  </span>
+  <a id="ZedGraph_FontSpec_PointInBox_" data-uid="ZedGraph.FontSpec.PointInBox*"></a>
+  <h4 id="ZedGraph_FontSpec_PointInBox_System_Drawing_PointF_System_Drawing_Graphics_System_String_System_Single_System_Single_ZedGraph_AlignH_ZedGraph_AlignV_System_Single_" data-uid="ZedGraph.FontSpec.PointInBox(System.Drawing.PointF,System.Drawing.Graphics,System.String,System.Single,System.Single,ZedGraph.AlignH,ZedGraph.AlignV,System.Single)">PointInBox(PointF, Graphics, String, Single, Single, AlignH, AlignV, Single)</h4>
+  <div class="markdown level1 summary"><p>Determines if the specified screen point lies within the bounding box of
+the text, taking into account alignment and rotation parameters.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool PointInBox(PointF pt, Graphics g, string text, float x, float y, AlignH alignH, AlignV alignV, float scaleFactor)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.drawing.pointf">PointF</a></td>
+        <td><span class="parametername">pt</span></td>
+        <td><p>The screen point, in pixel units</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.drawing.graphics">Graphics</a></td>
+        <td><span class="parametername">g</span></td>
+        <td><p>A graphic device object to be drawn into.  This is normally e.Graphics from the
+PaintEventArgs argument to the Paint() method.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">text</span></td>
+        <td><p>A string value containing the text to be
+displayed.  This can be multiple lines, separated by newline ('\n')
+characters</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td><span class="parametername">x</span></td>
+        <td><p>The X location to display the text, in screen
+coordinates, relative to the horizontal (<a class="xref" href="ZedGraph.AlignH.html">AlignH</a>)
+alignment parameter <code data-dev-comment-type="paramref" class="paramref">alignH</code></p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td><span class="parametername">y</span></td>
+        <td><p>The Y location to display the text, in screen
+coordinates, relative to the vertical (<a class="xref" href="ZedGraph.AlignV.html">AlignV</a>
+alignment parameter <code data-dev-comment-type="paramref" class="paramref">alignV</code></p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ZedGraph.AlignH.html">AlignH</a></td>
+        <td><span class="parametername">alignH</span></td>
+        <td><p>A horizontal alignment parameter specified
+using the <a class="xref" href="ZedGraph.AlignH.html">AlignH</a> enum type</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ZedGraph.AlignV.html">AlignV</a></td>
+        <td><span class="parametername">alignV</span></td>
+        <td><p>A vertical alignment parameter specified
+using the <a class="xref" href="ZedGraph.AlignV.html">AlignV</a> enum type</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td><span class="parametername">scaleFactor</span></td>
+        <td><p>The scaling factor to be used for rendering objects.  This is calculated and
+passed down by the parent <a class="xref" href="ZedGraph.GraphPane.html">GraphPane</a> object using the
+<a class="xref" href="ZedGraph.PaneBase.html#ZedGraph_PaneBase_CalcScaleFactor">CalcScaleFactor()</a> method, and is used to proportionally adjust
+font sizes, etc. according to the actual size of the graph.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><p>true if the point lies within the bounding box, false otherwise</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_FontSpec_PointInBox_System_Drawing_PointF_System_Drawing_Graphics_System_String_System_Single_System_Single_ZedGraph_AlignH_ZedGraph_AlignV_System_Single_System_Drawing_SizeF_.md&amp;value=---%0Auid%3A%20ZedGraph.FontSpec.PointInBox(System.Drawing.PointF%2CSystem.Drawing.Graphics%2CSystem.String%2CSystem.Single%2CSystem.Single%2CZedGraph.AlignH%2CZedGraph.AlignV%2CSystem.Single%2CSystem.Drawing.SizeF)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/FontSpec.cs/#L1324">View Source</a>
+  </span>
+  <a id="ZedGraph_FontSpec_PointInBox_" data-uid="ZedGraph.FontSpec.PointInBox*"></a>
+  <h4 id="ZedGraph_FontSpec_PointInBox_System_Drawing_PointF_System_Drawing_Graphics_System_String_System_Single_System_Single_ZedGraph_AlignH_ZedGraph_AlignV_System_Single_System_Drawing_SizeF_" data-uid="ZedGraph.FontSpec.PointInBox(System.Drawing.PointF,System.Drawing.Graphics,System.String,System.Single,System.Single,ZedGraph.AlignH,ZedGraph.AlignV,System.Single,System.Drawing.SizeF)">PointInBox(PointF, Graphics, String, Single, Single, AlignH, AlignV, Single, SizeF)</h4>
+  <div class="markdown level1 summary"><p>Determines if the specified screen point lies within the bounding box of
+the text, taking into account alignment and rotation parameters.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool PointInBox(PointF pt, Graphics g, string text, float x, float y, AlignH alignH, AlignV alignV, float scaleFactor, SizeF layoutArea)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.drawing.pointf">PointF</a></td>
+        <td><span class="parametername">pt</span></td>
+        <td><p>The screen point, in pixel units</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.drawing.graphics">Graphics</a></td>
+        <td><span class="parametername">g</span></td>
+        <td><p>A graphic device object to be drawn into.  This is normally e.Graphics from the
+PaintEventArgs argument to the Paint() method.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">text</span></td>
+        <td><p>A string value containing the text to be
+displayed.  This can be multiple lines, separated by newline ('\n')
+characters</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td><span class="parametername">x</span></td>
+        <td><p>The X location to display the text, in screen
+coordinates, relative to the horizontal (<a class="xref" href="ZedGraph.AlignH.html">AlignH</a>)
+alignment parameter <code data-dev-comment-type="paramref" class="paramref">alignH</code></p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td><span class="parametername">y</span></td>
+        <td><p>The Y location to display the text, in screen
+coordinates, relative to the vertical (<a class="xref" href="ZedGraph.AlignV.html">AlignV</a>
+alignment parameter <code data-dev-comment-type="paramref" class="paramref">alignV</code></p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ZedGraph.AlignH.html">AlignH</a></td>
+        <td><span class="parametername">alignH</span></td>
+        <td><p>A horizontal alignment parameter specified
+using the <a class="xref" href="ZedGraph.AlignH.html">AlignH</a> enum type</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ZedGraph.AlignV.html">AlignV</a></td>
+        <td><span class="parametername">alignV</span></td>
+        <td><p>A vertical alignment parameter specified
+using the <a class="xref" href="ZedGraph.AlignV.html">AlignV</a> enum type</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td><span class="parametername">scaleFactor</span></td>
+        <td><p>The scaling factor to be used for rendering objects.  This is calculated and
+passed down by the parent <a class="xref" href="ZedGraph.GraphPane.html">GraphPane</a> object using the
+<a class="xref" href="ZedGraph.PaneBase.html#ZedGraph_PaneBase_CalcScaleFactor">CalcScaleFactor()</a> method, and is used to proportionally adjust
+font sizes, etc. according to the actual size of the graph.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.drawing.sizef">SizeF</a></td>
+        <td><span class="parametername">layoutArea</span></td>
+        <td><p>The limiting area (<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.drawing.sizef">SizeF</a>) into which the text
+must fit.  The actual rectangle may be smaller than this, but the text will be wrapped
+to accomodate the area.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><p>true if the point lies within the bounding box, false otherwise</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="eii">Explicit Interface Implementations
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_FontSpec_System_ICloneable_Clone.md&amp;value=---%0Auid%3A%20ZedGraph.FontSpec.System%23ICloneable%23Clone%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/FontSpec.cs/#L580">View Source</a>
+  </span>
+  <a id="ZedGraph_FontSpec_System_ICloneable_Clone_" data-uid="ZedGraph.FontSpec.System#ICloneable#Clone*"></a>
+  <h4 id="ZedGraph_FontSpec_System_ICloneable_Clone" data-uid="ZedGraph.FontSpec.System#ICloneable#Clone">ICloneable.Clone()</h4>
+  <div class="markdown level1 summary"><p>Implement the <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.icloneable">ICloneable</a> interface in a typesafe manner by just
+calling the typed version of <a class="xref" href="ZedGraph.FontSpec.html#ZedGraph_FontSpec_Clone">Clone()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">object ICloneable.Clone()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></td>
+        <td><p>A deep copy of this object</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.icloneable">System.ICloneable</a>
+  </div>
+  <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.runtime.serialization.iserializable">System.Runtime.Serialization.ISerializable</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_FontSpec.md&amp;value=---%0Auid%3A%20ZedGraph.FontSpec%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/FontSpec.cs/#L39" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,1348 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class RollingPointPairList
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class RollingPointPairList
+   ">
+    <meta name="generator" content="docfx 2.56.7.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="ZedGraph.RollingPointPairList">
+  
+  
+  <h1 id="ZedGraph_RollingPointPairList" data-uid="ZedGraph.RollingPointPairList" class="text-break">Class RollingPointPairList
+  </h1>
+  <div class="markdown level0 summary"><p>A class that provides a rolling list of <a class="xref" href="ZedGraph.PointPair.html">PointPair</a> objects.
+This is essentially a
+first-in-first-out (FIFO) queue with a fixed capacity which allows 'rolling'
+(or oscilloscope like) graphs to be be animated without having the overhead of an
+ever-growing ArrayList.</p>
+<p>The queue is constructed with a fixed capacity and new points can be enqueued. When the
+capacity is reached the oldest (first in) PointPair is overwritten. However, when
+accessing via <a class="xref" href="ZedGraph.IPointList.html">IPointList</a>, the <a class="xref" href="ZedGraph.PointPair.html">PointPair</a> objects are
+seen in the order in which they were enqeued.</p>
+<p>RollingPointPairList supports data editing through the <a class="xref" href="ZedGraph.IPointListEdit.html">IPointListEdit</a>
+interface.</p>
+<p><author>Colin Green with mods by John Champion</author>
+<version> $Date: 2007-11-05 04:33:26 $ </version></p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
+    <div class="level1"><span class="xref">RollingPointPairList</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.runtime.serialization.iserializable">ISerializable</a></div>
+    <div><a class="xref" href="ZedGraph.IPointListEdit.html">IPointListEdit</a></div>
+    <div><a class="xref" href="ZedGraph.IPointList.html">IPointList</a></div>
+    <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.icloneable">ICloneable</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#System_Object_Equals_System_Object_">Object.Equals(Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#System_Object_Equals_System_Object_System_Object_">Object.Equals(Object, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gethashcode#System_Object_GetHashCode">Object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gettype#System_Object_GetType">Object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.memberwiseclone#System_Object_MemberwiseClone">Object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.referenceequals#System_Object_ReferenceEquals_System_Object_System_Object_">Object.ReferenceEquals(Object, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.tostring#System_Object_ToString">Object.ToString()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="ZedGraph.html">ZedGraph</a></h6>
+  <h6><strong>Assembly</strong>: ZedGraph.dll</h6>
+  <h5 id="ZedGraph_RollingPointPairList_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Serializable]
+public class RollingPointPairList : ISerializable, IPointListEdit, IPointList, ICloneable</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_RollingPointPairList__ctor_System_Int32_.md&amp;value=---%0Auid%3A%20ZedGraph.RollingPointPairList.%23ctor(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/RollingPointPairList.cs/#L78">View Source</a>
+  </span>
+  <a id="ZedGraph_RollingPointPairList__ctor_" data-uid="ZedGraph.RollingPointPairList.#ctor*"></a>
+  <h4 id="ZedGraph_RollingPointPairList__ctor_System_Int32_" data-uid="ZedGraph.RollingPointPairList.#ctor(System.Int32)">RollingPointPairList(Int32)</h4>
+  <div class="markdown level1 summary"><p>Constructs an empty buffer with the specified capacity.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public RollingPointPairList(int capacity)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">capacity</span></td>
+        <td><p>Number of elements in the rolling list.  This number
+cannot be changed once the RollingPointPairList is constructed.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_RollingPointPairList__ctor_System_Int32_System_Boolean_.md&amp;value=---%0Auid%3A%20ZedGraph.RollingPointPairList.%23ctor(System.Int32%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/RollingPointPairList.cs/#L97">View Source</a>
+  </span>
+  <a id="ZedGraph_RollingPointPairList__ctor_" data-uid="ZedGraph.RollingPointPairList.#ctor*"></a>
+  <h4 id="ZedGraph_RollingPointPairList__ctor_System_Int32_System_Boolean_" data-uid="ZedGraph.RollingPointPairList.#ctor(System.Int32,System.Boolean)">RollingPointPairList(Int32, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Constructs an empty buffer with the specified capacity.  Pre-allocates space
+for all PointPair's in the list if <code data-dev-comment-type="paramref" class="paramref">preLoad</code> is true.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public RollingPointPairList(int capacity, bool preLoad)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">capacity</span></td>
+        <td><p>Number of elements in the rolling list.  This number
+cannot be changed once the RollingPointPairList is constructed.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="parametername">preLoad</span></td>
+        <td><p>true to pre-allocate all PointPair instances in
+the list, false otherwise.  Note that in order to be memory efficient,
+the <a class="xref" href="ZedGraph.RollingPointPairList.html#ZedGraph_RollingPointPairList_Add_System_Double_System_Double_System_Double_">Add(Double, Double, Double)</a> method should be used to add
+data.  Avoid the <a class="xref" href="ZedGraph.RollingPointPairList.html#ZedGraph_RollingPointPairList_Add_ZedGraph_PointPair_">Add(PointPair)</a> method.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="ZedGraph_RollingPointPairList__ctor_System_Int32_System_Boolean__seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="ZedGraph.RollingPointPairList.html#ZedGraph_RollingPointPairList_Add_System_Double_System_Double_System_Double_">Add(Double, Double, Double)</a></div>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_RollingPointPairList__ctor_System_Runtime_Serialization_SerializationInfo_System_Runtime_Serialization_StreamingContext_.md&amp;value=---%0Auid%3A%20ZedGraph.RollingPointPairList.%23ctor(System.Runtime.Serialization.SerializationInfo%2CSystem.Runtime.Serialization.StreamingContext)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/RollingPointPairList.cs/#L631">View Source</a>
+  </span>
+  <a id="ZedGraph_RollingPointPairList__ctor_" data-uid="ZedGraph.RollingPointPairList.#ctor*"></a>
+  <h4 id="ZedGraph_RollingPointPairList__ctor_System_Runtime_Serialization_SerializationInfo_System_Runtime_Serialization_StreamingContext_" data-uid="ZedGraph.RollingPointPairList.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">RollingPointPairList(SerializationInfo, StreamingContext)</h4>
+  <div class="markdown level1 summary"><p>Constructor for deserializing objects</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected RollingPointPairList(SerializationInfo info, StreamingContext context)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.runtime.serialization.serializationinfo">SerializationInfo</a></td>
+        <td><span class="parametername">info</span></td>
+        <td><p>A <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.runtime.serialization.serializationinfo">SerializationInfo</a> instance that defines the serialized data</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.runtime.serialization.streamingcontext">StreamingContext</a></td>
+        <td><span class="parametername">context</span></td>
+        <td><p>A <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.runtime.serialization.streamingcontext">StreamingContext</a> instance that contains the serialized data</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_RollingPointPairList__ctor_ZedGraph_IPointList_.md&amp;value=---%0Auid%3A%20ZedGraph.RollingPointPairList.%23ctor(ZedGraph.IPointList)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/RollingPointPairList.cs/#L113">View Source</a>
+  </span>
+  <a id="ZedGraph_RollingPointPairList__ctor_" data-uid="ZedGraph.RollingPointPairList.#ctor*"></a>
+  <h4 id="ZedGraph_RollingPointPairList__ctor_ZedGraph_IPointList_" data-uid="ZedGraph.RollingPointPairList.#ctor(ZedGraph.IPointList)">RollingPointPairList(IPointList)</h4>
+  <div class="markdown level1 summary"><p>Constructs a buffer with a copy of the items within the provided
+<a class="xref" href="ZedGraph.IPointList.html">IPointList</a>.
+The <a class="xref" href="ZedGraph.RollingPointPairList.html#ZedGraph_RollingPointPairList_Capacity">Capacity</a> is set to the length of the provided list.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public RollingPointPairList(IPointList rhs)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ZedGraph.IPointList.html">IPointList</a></td>
+        <td><span class="parametername">rhs</span></td>
+        <td><p>The <a class="xref" href="ZedGraph.IPointList.html">IPointList</a> to be copied.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="fields">Fields
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_RollingPointPairList__headIdx.md&amp;value=---%0Auid%3A%20ZedGraph.RollingPointPairList._headIdx%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/RollingPointPairList.cs/#L61">View Source</a>
+  </span>
+  <h4 id="ZedGraph_RollingPointPairList__headIdx" data-uid="ZedGraph.RollingPointPairList._headIdx">_headIdx</h4>
+  <div class="markdown level1 summary"><p>The index of the previously enqueued item. -1 if buffer is empty.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[CLSCompliant(false)]
+protected int _headIdx</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_RollingPointPairList__mBuffer.md&amp;value=---%0Auid%3A%20ZedGraph.RollingPointPairList._mBuffer%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/RollingPointPairList.cs/#L55">View Source</a>
+  </span>
+  <h4 id="ZedGraph_RollingPointPairList__mBuffer" data-uid="ZedGraph.RollingPointPairList._mBuffer">_mBuffer</h4>
+  <div class="markdown level1 summary"><p>An array of PointPair objects that acts as the underlying buffer.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[CLSCompliant(false)]
+protected PointPair[] _mBuffer</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ZedGraph.PointPair.html">PointPair</a>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_RollingPointPairList__tailIdx.md&amp;value=---%0Auid%3A%20ZedGraph.RollingPointPairList._tailIdx%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/RollingPointPairList.cs/#L67">View Source</a>
+  </span>
+  <h4 id="ZedGraph_RollingPointPairList__tailIdx" data-uid="ZedGraph.RollingPointPairList._tailIdx">_tailIdx</h4>
+  <div class="markdown level1 summary"><p>The index of the next item to be dequeued. -1 if buffer is empty.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[CLSCompliant(false)]
+protected int _tailIdx</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_RollingPointPairList_schema.md&amp;value=---%0Auid%3A%20ZedGraph.RollingPointPairList.schema%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/RollingPointPairList.cs/#L622">View Source</a>
+  </span>
+  <h4 id="ZedGraph_RollingPointPairList_schema" data-uid="ZedGraph.RollingPointPairList.schema">schema</h4>
+  <div class="markdown level1 summary"><p>Current schema value that defines the version of the serialized file</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int schema = 10</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_RollingPointPairList_Capacity.md&amp;value=---%0Auid%3A%20ZedGraph.RollingPointPairList.Capacity%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/RollingPointPairList.cs/#L133">View Source</a>
+  </span>
+  <a id="ZedGraph_RollingPointPairList_Capacity_" data-uid="ZedGraph.RollingPointPairList.Capacity*"></a>
+  <h4 id="ZedGraph_RollingPointPairList_Capacity" data-uid="ZedGraph.RollingPointPairList.Capacity">Capacity</h4>
+  <div class="markdown level1 summary"><p>Gets the capacity of the rolling buffer.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Capacity { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_RollingPointPairList_Count.md&amp;value=---%0Auid%3A%20ZedGraph.RollingPointPairList.Count%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/RollingPointPairList.cs/#L142">View Source</a>
+  </span>
+  <a id="ZedGraph_RollingPointPairList_Count_" data-uid="ZedGraph.RollingPointPairList.Count*"></a>
+  <h4 id="ZedGraph_RollingPointPairList_Count" data-uid="ZedGraph.RollingPointPairList.Count">Count</h4>
+  <div class="markdown level1 summary"><p>Gets the count of items within the rolling buffer. Note that this may be less than
+the capacity.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Count { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_RollingPointPairList_IsEmpty.md&amp;value=---%0Auid%3A%20ZedGraph.RollingPointPairList.IsEmpty%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/RollingPointPairList.cs/#L163">View Source</a>
+  </span>
+  <a id="ZedGraph_RollingPointPairList_IsEmpty_" data-uid="ZedGraph.RollingPointPairList.IsEmpty*"></a>
+  <h4 id="ZedGraph_RollingPointPairList_IsEmpty" data-uid="ZedGraph.RollingPointPairList.IsEmpty">IsEmpty</h4>
+  <div class="markdown level1 summary"><p>Gets a bolean that indicates if the buffer is empty.
+Alternatively you can test Count==0.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsEmpty { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_RollingPointPairList_Item_System_Int32_.md&amp;value=---%0Auid%3A%20ZedGraph.RollingPointPairList.Item(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/RollingPointPairList.cs/#L175">View Source</a>
+  </span>
+  <a id="ZedGraph_RollingPointPairList_Item_" data-uid="ZedGraph.RollingPointPairList.Item*"></a>
+  <h4 id="ZedGraph_RollingPointPairList_Item_System_Int32_" data-uid="ZedGraph.RollingPointPairList.Item(System.Int32)">Item[Int32]</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the <a class="xref" href="ZedGraph.PointPair.html">PointPair</a> at the specified index in the buffer.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PointPair this[int index] { get; set; }</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">index</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ZedGraph.PointPair.html">PointPair</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="ZedGraph_RollingPointPairList_Item_System_Int32__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Index must be within the current size of the buffer, e.g., the set
+method will not expand the buffer even if <a class="xref" href="ZedGraph.RollingPointPairList.html#ZedGraph_RollingPointPairList_Capacity">Capacity</a> is available</p>
+</div>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_RollingPointPairList_Add_System_Double_System_Double_.md&amp;value=---%0Auid%3A%20ZedGraph.RollingPointPairList.Add(System.Double%2CSystem.Double)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/RollingPointPairList.cs/#L472">View Source</a>
+  </span>
+  <a id="ZedGraph_RollingPointPairList_Add_" data-uid="ZedGraph.RollingPointPairList.Add*"></a>
+  <h4 id="ZedGraph_RollingPointPairList_Add_System_Double_System_Double_" data-uid="ZedGraph.RollingPointPairList.Add(System.Double,System.Double)">Add(Double, Double)</h4>
+  <div class="markdown level1 summary"><p>Add a set of values onto the head of the queue,
+overwriting old values if the buffer is full.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Add(double x, double y)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.double">Double</a></td>
+        <td><span class="parametername">x</span></td>
+        <td><p>The X value</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.double">Double</a></td>
+        <td><span class="parametername">y</span></td>
+        <td><p>The Y value</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="ZedGraph_RollingPointPairList_Add_System_Double_System_Double__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This method is much more efficient that the <a class="xref" href="ZedGraph.RollingPointPairList.html#ZedGraph_RollingPointPairList_Add_ZedGraph_PointPair_">Add(PointPair)</a>
+method, since it does not require that a new PointPair instance be provided.
+If the buffer already contains a <a class="xref" href="ZedGraph.PointPair.html">PointPair</a> at the head position,
+then the x, y, z, and tag values will be copied into the existing PointPair.
+Otherwise, a new PointPair instance must be created.
+In this way, each PointPair position in the rolling list will only be allocated one time.
+To truly be memory efficient, the <a class="xref" href="ZedGraph.RollingPointPairList.html#ZedGraph_RollingPointPairList_Remove">Remove()</a>, <a class="xref" href="ZedGraph.RollingPointPairList.html#ZedGraph_RollingPointPairList_RemoveAt_System_Int32_">RemoveAt(Int32)</a>,
+and <a class="xref" href="ZedGraph.RollingPointPairList.html#ZedGraph_RollingPointPairList_Pop">Pop()</a> methods should be avoided.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_RollingPointPairList_Add_System_Double_System_Double_System_Double_.md&amp;value=---%0Auid%3A%20ZedGraph.RollingPointPairList.Add(System.Double%2CSystem.Double%2CSystem.Double)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/RollingPointPairList.cs/#L517">View Source</a>
+  </span>
+  <a id="ZedGraph_RollingPointPairList_Add_" data-uid="ZedGraph.RollingPointPairList.Add*"></a>
+  <h4 id="ZedGraph_RollingPointPairList_Add_System_Double_System_Double_System_Double_" data-uid="ZedGraph.RollingPointPairList.Add(System.Double,System.Double,System.Double)">Add(Double, Double, Double)</h4>
+  <div class="markdown level1 summary"><p>Add a set of values onto the head of the queue,
+overwriting old values if the buffer is full.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Add(double x, double y, double z)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.double">Double</a></td>
+        <td><span class="parametername">x</span></td>
+        <td><p>The X value</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.double">Double</a></td>
+        <td><span class="parametername">y</span></td>
+        <td><p>The Y value</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.double">Double</a></td>
+        <td><span class="parametername">z</span></td>
+        <td><p>The Z value</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="ZedGraph_RollingPointPairList_Add_System_Double_System_Double_System_Double__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This method is much more efficient that the <a class="xref" href="ZedGraph.RollingPointPairList.html#ZedGraph_RollingPointPairList_Add_ZedGraph_PointPair_">Add(PointPair)</a>
+method, since it does not require that a new PointPair instance be provided.
+If the buffer already contains a <a class="xref" href="ZedGraph.PointPair.html">PointPair</a> at the head position,
+then the x, y, z, and tag values will be copied into the existing PointPair.
+Otherwise, a new PointPair instance must be created.
+In this way, each PointPair position in the rolling list will only be allocated one time.
+To truly be memory efficient, the <a class="xref" href="ZedGraph.RollingPointPairList.html#ZedGraph_RollingPointPairList_Remove">Remove()</a>, <a class="xref" href="ZedGraph.RollingPointPairList.html#ZedGraph_RollingPointPairList_RemoveAt_System_Int32_">RemoveAt(Int32)</a>,
+and <a class="xref" href="ZedGraph.RollingPointPairList.html#ZedGraph_RollingPointPairList_Pop">Pop()</a> methods should be avoided.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_RollingPointPairList_Add_System_Double_System_Double_System_Double_System_Object_.md&amp;value=---%0Auid%3A%20ZedGraph.RollingPointPairList.Add(System.Double%2CSystem.Double%2CSystem.Double%2CSystem.Object)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/RollingPointPairList.cs/#L440">View Source</a>
+  </span>
+  <a id="ZedGraph_RollingPointPairList_Add_" data-uid="ZedGraph.RollingPointPairList.Add*"></a>
+  <h4 id="ZedGraph_RollingPointPairList_Add_System_Double_System_Double_System_Double_System_Object_" data-uid="ZedGraph.RollingPointPairList.Add(System.Double,System.Double,System.Double,System.Object)">Add(Double, Double, Double, Object)</h4>
+  <div class="markdown level1 summary"><p>Add a set of values onto the head of the queue,
+overwriting old values if the buffer is full.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Add(double x, double y, double z, object tag)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.double">Double</a></td>
+        <td><span class="parametername">x</span></td>
+        <td><p>The X value</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.double">Double</a></td>
+        <td><span class="parametername">y</span></td>
+        <td><p>The Y value</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.double">Double</a></td>
+        <td><span class="parametername">z</span></td>
+        <td><p>The Z value</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></td>
+        <td><span class="parametername">tag</span></td>
+        <td><p>The Tag value for the PointPair</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="ZedGraph_RollingPointPairList_Add_System_Double_System_Double_System_Double_System_Object__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This method is much more efficient that the <a class="xref" href="ZedGraph.RollingPointPairList.html#ZedGraph_RollingPointPairList_Add_ZedGraph_PointPair_">Add(PointPair)</a>
+method, since it does not require that a new PointPair instance be provided.
+If the buffer already contains a <a class="xref" href="ZedGraph.PointPair.html">PointPair</a> at the head position,
+then the x, y, z, and tag values will be copied into the existing PointPair.
+Otherwise, a new PointPair instance must be created.
+In this way, each PointPair position in the rolling list will only be allocated one time.
+To truly be memory efficient, the <a class="xref" href="ZedGraph.RollingPointPairList.html#ZedGraph_RollingPointPairList_Remove">Remove()</a>, <a class="xref" href="ZedGraph.RollingPointPairList.html#ZedGraph_RollingPointPairList_RemoveAt_System_Int32_">RemoveAt(Int32)</a>,
+and <a class="xref" href="ZedGraph.RollingPointPairList.html#ZedGraph_RollingPointPairList_Pop">Pop()</a> methods should be avoided.  Also, the <code data-dev-comment-type="paramref" class="paramref">tag</code> property
+for this method should be null, since it is a reference type.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_RollingPointPairList_Add_System_Double_System_Double_System_Object_.md&amp;value=---%0Auid%3A%20ZedGraph.RollingPointPairList.Add(System.Double%2CSystem.Double%2CSystem.Object)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/RollingPointPairList.cs/#L495">View Source</a>
+  </span>
+  <a id="ZedGraph_RollingPointPairList_Add_" data-uid="ZedGraph.RollingPointPairList.Add*"></a>
+  <h4 id="ZedGraph_RollingPointPairList_Add_System_Double_System_Double_System_Object_" data-uid="ZedGraph.RollingPointPairList.Add(System.Double,System.Double,System.Object)">Add(Double, Double, Object)</h4>
+  <div class="markdown level1 summary"><p>Add a set of values onto the head of the queue,
+overwriting old values if the buffer is full.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Add(double x, double y, object tag)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.double">Double</a></td>
+        <td><span class="parametername">x</span></td>
+        <td><p>The X value</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.double">Double</a></td>
+        <td><span class="parametername">y</span></td>
+        <td><p>The Y value</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></td>
+        <td><span class="parametername">tag</span></td>
+        <td><p>The Tag value for the PointPair</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="ZedGraph_RollingPointPairList_Add_System_Double_System_Double_System_Object__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This method is much more efficient that the <a class="xref" href="ZedGraph.RollingPointPairList.html#ZedGraph_RollingPointPairList_Add_ZedGraph_PointPair_">Add(PointPair)</a>
+method, since it does not require that a new PointPair instance be provided.
+If the buffer already contains a <a class="xref" href="ZedGraph.PointPair.html">PointPair</a> at the head position,
+then the x, y, z, and tag values will be copied into the existing PointPair.
+Otherwise, a new PointPair instance must be created.
+In this way, each PointPair position in the rolling list will only be allocated one time.
+To truly be memory efficient, the <a class="xref" href="ZedGraph.RollingPointPairList.html#ZedGraph_RollingPointPairList_Remove">Remove()</a>, <a class="xref" href="ZedGraph.RollingPointPairList.html#ZedGraph_RollingPointPairList_RemoveAt_System_Int32_">RemoveAt(Int32)</a>,
+and <a class="xref" href="ZedGraph.RollingPointPairList.html#ZedGraph_RollingPointPairList_Pop">Pop()</a> methods should be avoided.  Also, the <code data-dev-comment-type="paramref" class="paramref">tag</code> property
+for this method should be null, since it is a reference type.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_RollingPointPairList_Add_System_Double___System_Double___.md&amp;value=---%0Auid%3A%20ZedGraph.RollingPointPairList.Add(System.Double%5B%5D%2CSystem.Double%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/RollingPointPairList.cs/#L532">View Source</a>
+  </span>
+  <a id="ZedGraph_RollingPointPairList_Add_" data-uid="ZedGraph.RollingPointPairList.Add*"></a>
+  <h4 id="ZedGraph_RollingPointPairList_Add_System_Double___System_Double___" data-uid="ZedGraph.RollingPointPairList.Add(System.Double[],System.Double[])">Add(Double[], Double[])</h4>
+  <div class="markdown level1 summary"><p>Add a set of points to the <a class="xref" href="ZedGraph.RollingPointPairList.html">RollingPointPairList</a>
+from two arrays of type double.
+If either array is null, then a set of ordinal values is automatically
+generated in its place (see <a class="xref" href="ZedGraph.AxisType.html#ZedGraph_AxisType_Ordinal">Ordinal</a>).
+If the arrays are of different size, then the larger array prevails and the
+smaller array is padded with <a class="xref" href="ZedGraph.PointPairBase.html#ZedGraph_PointPairBase_Missing">Missing</a> values.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Add(double[] x, double[] y)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.double">Double</a>[]</td>
+        <td><span class="parametername">x</span></td>
+        <td><p>A double[] array of X values</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.double">Double</a>[]</td>
+        <td><span class="parametername">y</span></td>
+        <td><p>A double[] array of Y values</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_RollingPointPairList_Add_System_Double___System_Double___System_Double___.md&amp;value=---%0Auid%3A%20ZedGraph.RollingPointPairList.Add(System.Double%5B%5D%2CSystem.Double%5B%5D%2CSystem.Double%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/RollingPointPairList.cs/#L575">View Source</a>
+  </span>
+  <a id="ZedGraph_RollingPointPairList_Add_" data-uid="ZedGraph.RollingPointPairList.Add*"></a>
+  <h4 id="ZedGraph_RollingPointPairList_Add_System_Double___System_Double___System_Double___" data-uid="ZedGraph.RollingPointPairList.Add(System.Double[],System.Double[],System.Double[])">Add(Double[], Double[], Double[])</h4>
+  <div class="markdown level1 summary"><p>Add a set of points to the <a class="xref" href="ZedGraph.RollingPointPairList.html">RollingPointPairList</a> from
+three arrays of type double.
+If the X or Y array is null, then a set of ordinal values is automatically
+generated in its place (see <a class="xref" href="ZedGraph.AxisType.html#ZedGraph_AxisType_Ordinal">Ordinal</a>.
+If the <see paramref="z"></see> value
+is null, then it is set to zero.
+If the arrays are of different size, then the larger array prevails and the
+smaller array is padded with <a class="xref" href="ZedGraph.PointPairBase.html#ZedGraph_PointPairBase_Missing">Missing</a> values.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Add(double[] x, double[] y, double[] z)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.double">Double</a>[]</td>
+        <td><span class="parametername">x</span></td>
+        <td><p>A double[] array of X values</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.double">Double</a>[]</td>
+        <td><span class="parametername">y</span></td>
+        <td><p>A double[] array of Y values</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.double">Double</a>[]</td>
+        <td><span class="parametername">z</span></td>
+        <td><p>A double[] array of Z values</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_RollingPointPairList_Add_ZedGraph_IPointList_.md&amp;value=---%0Auid%3A%20ZedGraph.RollingPointPairList.Add(ZedGraph.IPointList)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/RollingPointPairList.cs/#L281">View Source</a>
+  </span>
+  <a id="ZedGraph_RollingPointPairList_Add_" data-uid="ZedGraph.RollingPointPairList.Add*"></a>
+  <h4 id="ZedGraph_RollingPointPairList_Add_ZedGraph_IPointList_" data-uid="ZedGraph.RollingPointPairList.Add(ZedGraph.IPointList)">Add(IPointList)</h4>
+  <div class="markdown level1 summary"><p>Add an <a class="xref" href="ZedGraph.IPointList.html">IPointList</a> object to the head of the queue.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Add(IPointList pointList)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ZedGraph.IPointList.html">IPointList</a></td>
+        <td><span class="parametername">pointList</span></td>
+        <td><p>A reference to the <a class="xref" href="ZedGraph.IPointList.html">IPointList</a> object to
+be added</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_RollingPointPairList_Add_ZedGraph_PointPair_.md&amp;value=---%0Auid%3A%20ZedGraph.RollingPointPairList.Add(ZedGraph.PointPair)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/RollingPointPairList.cs/#L271">View Source</a>
+  </span>
+  <a id="ZedGraph_RollingPointPairList_Add_" data-uid="ZedGraph.RollingPointPairList.Add*"></a>
+  <h4 id="ZedGraph_RollingPointPairList_Add_ZedGraph_PointPair_" data-uid="ZedGraph.RollingPointPairList.Add(ZedGraph.PointPair)">Add(PointPair)</h4>
+  <div class="markdown level1 summary"><p>Add a <a class="xref" href="ZedGraph.PointPair.html">PointPair</a> onto the head of the queue,
+overwriting old values if the buffer is full.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Add(PointPair item)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ZedGraph.PointPair.html">PointPair</a></td>
+        <td><span class="parametername">item</span></td>
+        <td><p>The <a class="xref" href="ZedGraph.PointPair.html">PointPair</a> to be added.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_RollingPointPairList_Clear.md&amp;value=---%0Auid%3A%20ZedGraph.RollingPointPairList.Clear%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/RollingPointPairList.cs/#L229">View Source</a>
+  </span>
+  <a id="ZedGraph_RollingPointPairList_Clear_" data-uid="ZedGraph.RollingPointPairList.Clear*"></a>
+  <h4 id="ZedGraph_RollingPointPairList_Clear" data-uid="ZedGraph.RollingPointPairList.Clear">Clear()</h4>
+  <div class="markdown level1 summary"><p>Clear the buffer of all <a class="xref" href="ZedGraph.PointPair.html">PointPair</a> objects.
+Note that the <a class="xref" href="ZedGraph.RollingPointPairList.html#ZedGraph_RollingPointPairList_Capacity">Capacity</a> remains unchanged.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Clear()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_RollingPointPairList_Clone.md&amp;value=---%0Auid%3A%20ZedGraph.RollingPointPairList.Clone%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/RollingPointPairList.cs/#L220">View Source</a>
+  </span>
+  <a id="ZedGraph_RollingPointPairList_Clone_" data-uid="ZedGraph.RollingPointPairList.Clone*"></a>
+  <h4 id="ZedGraph_RollingPointPairList_Clone" data-uid="ZedGraph.RollingPointPairList.Clone">Clone()</h4>
+  <div class="markdown level1 summary"><p>Typesafe, deep-copy clone method.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public RollingPointPairList Clone()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ZedGraph.RollingPointPairList.html">RollingPointPairList</a></td>
+        <td><p>A new, independent copy of this class</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_RollingPointPairList_GetObjectData_System_Runtime_Serialization_SerializationInfo_System_Runtime_Serialization_StreamingContext_.md&amp;value=---%0Auid%3A%20ZedGraph.RollingPointPairList.GetObjectData(System.Runtime.Serialization.SerializationInfo%2CSystem.Runtime.Serialization.StreamingContext)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/RollingPointPairList.cs/#L646">View Source</a>
+  </span>
+  <a id="ZedGraph_RollingPointPairList_GetObjectData_" data-uid="ZedGraph.RollingPointPairList.GetObjectData*"></a>
+  <h4 id="ZedGraph_RollingPointPairList_GetObjectData_System_Runtime_Serialization_SerializationInfo_System_Runtime_Serialization_StreamingContext_" data-uid="ZedGraph.RollingPointPairList.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">GetObjectData(SerializationInfo, StreamingContext)</h4>
+  <div class="markdown level1 summary"><p>Populates a <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.runtime.serialization.serializationinfo">SerializationInfo</a> instance with the data needed to serialize the target object</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[SecurityPermission(SecurityAction.Demand, SerializationFormatter = true)]
+public virtual void GetObjectData(SerializationInfo info, StreamingContext context)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.runtime.serialization.serializationinfo">SerializationInfo</a></td>
+        <td><span class="parametername">info</span></td>
+        <td><p>A <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.runtime.serialization.serializationinfo">SerializationInfo</a> instance that defines the serialized data</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.runtime.serialization.streamingcontext">StreamingContext</a></td>
+        <td><span class="parametername">context</span></td>
+        <td><p>A <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.runtime.serialization.streamingcontext">StreamingContext</a> instance that contains the serialized data</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_RollingPointPairList_Peek.md&amp;value=---%0Auid%3A%20ZedGraph.RollingPointPairList.Peek%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/RollingPointPairList.cs/#L407">View Source</a>
+  </span>
+  <a id="ZedGraph_RollingPointPairList_Peek_" data-uid="ZedGraph.RollingPointPairList.Peek*"></a>
+  <h4 id="ZedGraph_RollingPointPairList_Peek" data-uid="ZedGraph.RollingPointPairList.Peek">Peek()</h4>
+  <div class="markdown level1 summary"><p>Peek at the <a class="xref" href="ZedGraph.PointPair.html">PointPair</a> item at the head of the queue.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PointPair Peek()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ZedGraph.PointPair.html">PointPair</a></td>
+        <td><p>The <a class="xref" href="ZedGraph.PointPair.html">PointPair</a> item at the head of the queue.
+Throws an <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.invalidoperationexception">InvalidOperationException</a> if the buffer was empty.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_RollingPointPairList_Pop.md&amp;value=---%0Auid%3A%20ZedGraph.RollingPointPairList.Pop%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/RollingPointPairList.cs/#L378">View Source</a>
+  </span>
+  <a id="ZedGraph_RollingPointPairList_Pop_" data-uid="ZedGraph.RollingPointPairList.Pop*"></a>
+  <h4 id="ZedGraph_RollingPointPairList_Pop" data-uid="ZedGraph.RollingPointPairList.Pop">Pop()</h4>
+  <div class="markdown level1 summary"><p>Pop an item off the head of the queue.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PointPair Pop()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ZedGraph.PointPair.html">PointPair</a></td>
+        <td><p>The popped item. Throws an exception if the buffer was empty.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_RollingPointPairList_Remove.md&amp;value=---%0Auid%3A%20ZedGraph.RollingPointPairList.Remove%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/RollingPointPairList.cs/#L295">View Source</a>
+  </span>
+  <a id="ZedGraph_RollingPointPairList_Remove_" data-uid="ZedGraph.RollingPointPairList.Remove*"></a>
+  <h4 id="ZedGraph_RollingPointPairList_Remove" data-uid="ZedGraph.RollingPointPairList.Remove">Remove()</h4>
+  <div class="markdown level1 summary"><p>Remove an old item from the tail of the queue.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PointPair Remove()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ZedGraph.PointPair.html">PointPair</a></td>
+        <td><p>The removed item. Throws an <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.invalidoperationexception">InvalidOperationException</a>
+if the buffer was empty.
+Check the buffer's length (<a class="xref" href="ZedGraph.RollingPointPairList.html#ZedGraph_RollingPointPairList_Count">Count</a>) or the <a class="xref" href="ZedGraph.RollingPointPairList.html#ZedGraph_RollingPointPairList_IsEmpty">IsEmpty</a>
+property to avoid exceptions.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_RollingPointPairList_RemoveAt_System_Int32_.md&amp;value=---%0Auid%3A%20ZedGraph.RollingPointPairList.RemoveAt(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/RollingPointPairList.cs/#L329">View Source</a>
+  </span>
+  <a id="ZedGraph_RollingPointPairList_RemoveAt_" data-uid="ZedGraph.RollingPointPairList.RemoveAt*"></a>
+  <h4 id="ZedGraph_RollingPointPairList_RemoveAt_System_Int32_" data-uid="ZedGraph.RollingPointPairList.RemoveAt(System.Int32)">RemoveAt(Int32)</h4>
+  <div class="markdown level1 summary"><p>Remove the <a class="xref" href="ZedGraph.PointPair.html">PointPair</a> at the specified index</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RemoveAt(int index)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">index</span></td>
+        <td><p>The ordinal position of the item to be removed.
+Throws an <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.argumentoutofrangeexception">ArgumentOutOfRangeException</a> if index is less than
+zero or greater than or equal to <a class="xref" href="ZedGraph.RollingPointPairList.html#ZedGraph_RollingPointPairList_Count">Count</a></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="ZedGraph_RollingPointPairList_RemoveAt_System_Int32__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>All items in the queue that lie after <code data-dev-comment-type="paramref" class="paramref">index</code> will
+be shifted back by one, and the queue will be one item shorter.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_RollingPointPairList_RemoveRange_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20ZedGraph.RollingPointPairList.RemoveRange(System.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/RollingPointPairList.cs/#L363">View Source</a>
+  </span>
+  <a id="ZedGraph_RollingPointPairList_RemoveRange_" data-uid="ZedGraph.RollingPointPairList.RemoveRange*"></a>
+  <h4 id="ZedGraph_RollingPointPairList_RemoveRange_System_Int32_System_Int32_" data-uid="ZedGraph.RollingPointPairList.RemoveRange(System.Int32,System.Int32)">RemoveRange(Int32, Int32)</h4>
+  <div class="markdown level1 summary"><p>Remove a range of <a class="xref" href="ZedGraph.PointPair.html">PointPair</a> objects starting at the specified index</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RemoveRange(int index, int count)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">index</span></td>
+        <td><p>The ordinal position of the item to be removed.
+Throws an <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.argumentoutofrangeexception">ArgumentOutOfRangeException</a> if index is less than
+zero or greater than or equal to <a class="xref" href="ZedGraph.RollingPointPairList.html#ZedGraph_RollingPointPairList_Count">Count</a></p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">count</span></td>
+        <td><p>The number of items to be removed.  Throws an
+<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.argumentoutofrangeexception">ArgumentOutOfRangeException</a> if <code data-dev-comment-type="paramref" class="paramref">count</code> is less than zero
+or greater than the total available items in the queue</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="ZedGraph_RollingPointPairList_RemoveRange_System_Int32_System_Int32__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>All items in the queue that lie after <code data-dev-comment-type="paramref" class="paramref">index</code> will
+be shifted back, and the queue will be <code data-dev-comment-type="paramref" class="paramref">count</code> items shorter.</p>
+</div>
+  <h3 id="eii">Explicit Interface Implementations
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_RollingPointPairList_System_ICloneable_Clone.md&amp;value=---%0Auid%3A%20ZedGraph.RollingPointPairList.System%23ICloneable%23Clone%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/RollingPointPairList.cs/#L211">View Source</a>
+  </span>
+  <a id="ZedGraph_RollingPointPairList_System_ICloneable_Clone_" data-uid="ZedGraph.RollingPointPairList.System#ICloneable#Clone*"></a>
+  <h4 id="ZedGraph_RollingPointPairList_System_ICloneable_Clone" data-uid="ZedGraph.RollingPointPairList.System#ICloneable#Clone">ICloneable.Clone()</h4>
+  <div class="markdown level1 summary"><p>Implement the <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.icloneable">ICloneable</a> interface in a typesafe manner by just
+calling the typed version of <a class="xref" href="ZedGraph.RollingPointPairList.html#ZedGraph_RollingPointPairList_Clone">Clone()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">object ICloneable.Clone()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></td>
+        <td><p>A deep copy of this object</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.runtime.serialization.iserializable">System.Runtime.Serialization.ISerializable</a>
+  </div>
+  <div>
+      <a class="xref" href="ZedGraph.IPointListEdit.html">IPointListEdit</a>
+  </div>
+  <div>
+      <a class="xref" href="ZedGraph.IPointList.html">IPointList</a>
+  </div>
+  <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.icloneable">System.ICloneable</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_RollingPointPairList.md&amp;value=---%0Auid%3A%20ZedGraph.RollingPointPairList%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/RollingPointPairList.cs/#L45" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

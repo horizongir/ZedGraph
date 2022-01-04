@@ -1,0 +1,888 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class ImageObj
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class ImageObj
+   ">
+    <meta name="generator" content="docfx 2.56.7.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="ZedGraph.ImageObj">
+  
+  
+  <h1 id="ZedGraph_ImageObj" data-uid="ZedGraph.ImageObj" class="text-break">Class ImageObj
+  </h1>
+  <div class="markdown level0 summary"><p>A class that represents an image object on the graph.  A list of
+<a class="xref" href="ZedGraph.GraphObj.html">GraphObj</a> objects is maintained by the <a class="xref" href="ZedGraph.GraphObjList.html">GraphObjList</a>
+collection class.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
+    <div class="level1"><a class="xref" href="ZedGraph.GraphObj.html">GraphObj</a></div>
+    <div class="level2"><span class="xref">ImageObj</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.icloneable">ICloneable</a></div>
+    <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.runtime.serialization.iserializable">ISerializable</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="ZedGraph.GraphObj.html#ZedGraph_GraphObj__location">GraphObj._location</a>
+    </div>
+    <div>
+      <a class="xref" href="ZedGraph.GraphObj.html#ZedGraph_GraphObj__isVisible">GraphObj._isVisible</a>
+    </div>
+    <div>
+      <a class="xref" href="ZedGraph.GraphObj.html#ZedGraph_GraphObj__isClippedToChartRect">GraphObj._isClippedToChartRect</a>
+    </div>
+    <div>
+      <a class="xref" href="ZedGraph.GraphObj.html#ZedGraph_GraphObj_Tag">GraphObj.Tag</a>
+    </div>
+    <div>
+      <a class="xref" href="ZedGraph.GraphObj.html#ZedGraph_GraphObj_Location">GraphObj.Location</a>
+    </div>
+    <div>
+      <a class="xref" href="ZedGraph.GraphObj.html#ZedGraph_GraphObj_ZOrder">GraphObj.ZOrder</a>
+    </div>
+    <div>
+      <a class="xref" href="ZedGraph.GraphObj.html#ZedGraph_GraphObj_IsVisible">GraphObj.IsVisible</a>
+    </div>
+    <div>
+      <a class="xref" href="ZedGraph.GraphObj.html#ZedGraph_GraphObj_IsClippedToChartRect">GraphObj.IsClippedToChartRect</a>
+    </div>
+    <div>
+      <a class="xref" href="ZedGraph.GraphObj.html#ZedGraph_GraphObj_Link">GraphObj.Link</a>
+    </div>
+    <div>
+      <a class="xref" href="ZedGraph.GraphObj.html#ZedGraph_GraphObj_IsInFrontOfData">GraphObj.IsInFrontOfData</a>
+    </div>
+    <div>
+      <a class="xref" href="ZedGraph.GraphObj.html#ZedGraph_GraphObj_schema">GraphObj.schema</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#System_Object_Equals_System_Object_">Object.Equals(Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#System_Object_Equals_System_Object_System_Object_">Object.Equals(Object, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gethashcode#System_Object_GetHashCode">Object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gettype#System_Object_GetType">Object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.memberwiseclone#System_Object_MemberwiseClone">Object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.referenceequals#System_Object_ReferenceEquals_System_Object_System_Object_">Object.ReferenceEquals(Object, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.tostring#System_Object_ToString">Object.ToString()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="ZedGraph.html">ZedGraph</a></h6>
+  <h6><strong>Assembly</strong>: ZedGraph.dll</h6>
+  <h5 id="ZedGraph_ImageObj_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Serializable]
+public class ImageObj : GraphObj, ICloneable, ISerializable</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_ImageObj__ctor.md&amp;value=---%0Auid%3A%20ZedGraph.ImageObj.%23ctor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/ImageObj.cs/#L103">View Source</a>
+  </span>
+  <a id="ZedGraph_ImageObj__ctor_" data-uid="ZedGraph.ImageObj.#ctor*"></a>
+  <h4 id="ZedGraph_ImageObj__ctor" data-uid="ZedGraph.ImageObj.#ctor">ImageObj()</h4>
+  <div class="markdown level1 summary"><p>A default constructor that places a null <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.drawing.image">Image</a> at a
+default <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.drawing.rectanglef">RectangleF</a> of (0,0,1,1)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ImageObj()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_ImageObj__ctor_System_Drawing_Image_System_Double_System_Double_System_Double_System_Double_.md&amp;value=---%0Auid%3A%20ZedGraph.ImageObj.%23ctor(System.Drawing.Image%2CSystem.Double%2CSystem.Double%2CSystem.Double%2CSystem.Double)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/ImageObj.cs/#L170">View Source</a>
+  </span>
+  <a id="ZedGraph_ImageObj__ctor_" data-uid="ZedGraph.ImageObj.#ctor*"></a>
+  <h4 id="ZedGraph_ImageObj__ctor_System_Drawing_Image_System_Double_System_Double_System_Double_System_Double_" data-uid="ZedGraph.ImageObj.#ctor(System.Drawing.Image,System.Double,System.Double,System.Double,System.Double)">ImageObj(Image, Double, Double, Double, Double)</h4>
+  <div class="markdown level1 summary"><p>A constructor that allows the <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.drawing.image">Image</a> and
+individual <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a> coordinate locations for the
+<a class="xref" href="ZedGraph.ImageObj.html">ImageObj</a> to be pre-specified.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ImageObj(Image image, double left, double top, double width, double height)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.drawing.image">Image</a></td>
+        <td><span class="parametername">image</span></td>
+        <td><p>A <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.drawing.image">Image</a> class that defines
+the image</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.double">Double</a></td>
+        <td><span class="parametername">left</span></td>
+        <td><p>The position of the left side of the rectangle that defines the
+<a class="xref" href="ZedGraph.ImageObj.html">ImageObj</a> location.  The units of this position are specified by the
+<a class="xref" href="ZedGraph.Location.html#ZedGraph_Location_CoordinateFrame">CoordinateFrame</a> property.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.double">Double</a></td>
+        <td><span class="parametername">top</span></td>
+        <td><p>The position of the top side of the rectangle that defines the
+<a class="xref" href="ZedGraph.ImageObj.html">ImageObj</a> location.  The units of this position are specified by the
+<a class="xref" href="ZedGraph.Location.html#ZedGraph_Location_CoordinateFrame">CoordinateFrame</a> property.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.double">Double</a></td>
+        <td><span class="parametername">width</span></td>
+        <td><p>The width of the rectangle that defines the
+<a class="xref" href="ZedGraph.ImageObj.html">ImageObj</a> location.  The units of this position are specified by the
+<a class="xref" href="ZedGraph.Location.html#ZedGraph_Location_CoordinateFrame">CoordinateFrame</a> property.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.double">Double</a></td>
+        <td><span class="parametername">height</span></td>
+        <td><p>The height of the rectangle that defines the
+<a class="xref" href="ZedGraph.ImageObj.html">ImageObj</a> location.  The units of this position are specified by the
+<a class="xref" href="ZedGraph.Location.html#ZedGraph_Location_CoordinateFrame">CoordinateFrame</a> property.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_ImageObj__ctor_System_Drawing_Image_System_Drawing_RectangleF_.md&amp;value=---%0Auid%3A%20ZedGraph.ImageObj.%23ctor(System.Drawing.Image%2CSystem.Drawing.RectangleF)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/ImageObj.cs/#L118">View Source</a>
+  </span>
+  <a id="ZedGraph_ImageObj__ctor_" data-uid="ZedGraph.ImageObj.#ctor*"></a>
+  <h4 id="ZedGraph_ImageObj__ctor_System_Drawing_Image_System_Drawing_RectangleF_" data-uid="ZedGraph.ImageObj.#ctor(System.Drawing.Image,System.Drawing.RectangleF)">ImageObj(Image, RectangleF)</h4>
+  <div class="markdown level1 summary"><p>A constructor that allows the <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.drawing.image">Image</a> and
+<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.drawing.rectanglef">RectangleF</a> location for the
+<a class="xref" href="ZedGraph.ImageObj.html">ImageObj</a> to be pre-specified.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ImageObj(Image image, RectangleF rect)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.drawing.image">Image</a></td>
+        <td><span class="parametername">image</span></td>
+        <td><p>A <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.drawing.image">Image</a> class that defines
+the image</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.drawing.rectanglef">RectangleF</a></td>
+        <td><span class="parametername">rect</span></td>
+        <td><p>A <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.drawing.rectanglef">RectangleF</a> struct that defines the
+image location, specifed in units based on the
+<a class="xref" href="ZedGraph.Location.html#ZedGraph_Location_CoordinateFrame">CoordinateFrame</a> property.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_ImageObj__ctor_System_Drawing_Image_System_Drawing_RectangleF_ZedGraph_CoordType_ZedGraph_AlignH_ZedGraph_AlignV_.md&amp;value=---%0Auid%3A%20ZedGraph.ImageObj.%23ctor(System.Drawing.Image%2CSystem.Drawing.RectangleF%2CZedGraph.CoordType%2CZedGraph.AlignH%2CZedGraph.AlignV)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/ImageObj.cs/#L141">View Source</a>
+  </span>
+  <a id="ZedGraph_ImageObj__ctor_" data-uid="ZedGraph.ImageObj.#ctor*"></a>
+  <h4 id="ZedGraph_ImageObj__ctor_System_Drawing_Image_System_Drawing_RectangleF_ZedGraph_CoordType_ZedGraph_AlignH_ZedGraph_AlignV_" data-uid="ZedGraph.ImageObj.#ctor(System.Drawing.Image,System.Drawing.RectangleF,ZedGraph.CoordType,ZedGraph.AlignH,ZedGraph.AlignV)">ImageObj(Image, RectangleF, CoordType, AlignH, AlignV)</h4>
+  <div class="markdown level1 summary"><p>A constructor that allows the <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.drawing.image">Image</a> and
+<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.drawing.rectanglef">RectangleF</a> location for the
+<a class="xref" href="ZedGraph.ImageObj.html">ImageObj</a> to be pre-specified.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ImageObj(Image image, RectangleF rect, CoordType coordType, AlignH alignH, AlignV alignV)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.drawing.image">Image</a></td>
+        <td><span class="parametername">image</span></td>
+        <td><p>A <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.drawing.image">Image</a> class that defines
+the image</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.drawing.rectanglef">RectangleF</a></td>
+        <td><span class="parametername">rect</span></td>
+        <td><p>A <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.drawing.rectanglef">RectangleF</a> struct that defines the
+image location, specifed in units based on the
+<a class="xref" href="ZedGraph.Location.html#ZedGraph_Location_CoordinateFrame">CoordinateFrame</a> property.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ZedGraph.CoordType.html">CoordType</a></td>
+        <td><span class="parametername">coordType</span></td>
+        <td><p>The <a class="xref" href="ZedGraph.CoordType.html">CoordType</a> enum value that
+indicates what type of coordinate system the x and y parameters are
+referenced to.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ZedGraph.AlignH.html">AlignH</a></td>
+        <td><span class="parametername">alignH</span></td>
+        <td><p>The <a class="xref" href="ZedGraph.AlignH.html">AlignH</a> enum that specifies
+the horizontal alignment of the object with respect to the (x,y) location</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ZedGraph.AlignV.html">AlignV</a></td>
+        <td><span class="parametername">alignV</span></td>
+        <td><p>The <a class="xref" href="ZedGraph.AlignV.html">AlignV</a> enum that specifies
+the vertical alignment of the object with respect to the (x,y) location</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_ImageObj__ctor_System_Runtime_Serialization_SerializationInfo_System_Runtime_Serialization_StreamingContext_.md&amp;value=---%0Auid%3A%20ZedGraph.ImageObj.%23ctor(System.Runtime.Serialization.SerializationInfo%2CSystem.Runtime.Serialization.StreamingContext)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/ImageObj.cs/#L221">View Source</a>
+  </span>
+  <a id="ZedGraph_ImageObj__ctor_" data-uid="ZedGraph.ImageObj.#ctor*"></a>
+  <h4 id="ZedGraph_ImageObj__ctor_System_Runtime_Serialization_SerializationInfo_System_Runtime_Serialization_StreamingContext_" data-uid="ZedGraph.ImageObj.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">ImageObj(SerializationInfo, StreamingContext)</h4>
+  <div class="markdown level1 summary"><p>Constructor for deserializing objects</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected ImageObj(SerializationInfo info, StreamingContext context)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.runtime.serialization.serializationinfo">SerializationInfo</a></td>
+        <td><span class="parametername">info</span></td>
+        <td><p>A <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.runtime.serialization.serializationinfo">SerializationInfo</a> instance that defines the serialized data</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.runtime.serialization.streamingcontext">StreamingContext</a></td>
+        <td><span class="parametername">context</span></td>
+        <td><p>A <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.runtime.serialization.streamingcontext">StreamingContext</a> instance that contains the serialized data</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_ImageObj__ctor_ZedGraph_ImageObj_.md&amp;value=---%0Auid%3A%20ZedGraph.ImageObj.%23ctor(ZedGraph.ImageObj)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/ImageObj.cs/#L182">View Source</a>
+  </span>
+  <a id="ZedGraph_ImageObj__ctor_" data-uid="ZedGraph.ImageObj.#ctor*"></a>
+  <h4 id="ZedGraph_ImageObj__ctor_ZedGraph_ImageObj_" data-uid="ZedGraph.ImageObj.#ctor(ZedGraph.ImageObj)">ImageObj(ImageObj)</h4>
+  <div class="markdown level1 summary"><p>The Copy Constructor</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ImageObj(ImageObj rhs)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ZedGraph.ImageObj.html">ImageObj</a></td>
+        <td><span class="parametername">rhs</span></td>
+        <td><p>The <a class="xref" href="ZedGraph.ImageObj.html">ImageObj</a> object from which to copy</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="fields">Fields
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_ImageObj_schema2.md&amp;value=---%0Auid%3A%20ZedGraph.ImageObj.schema2%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/ImageObj.cs/#L212">View Source</a>
+  </span>
+  <h4 id="ZedGraph_ImageObj_schema2" data-uid="ZedGraph.ImageObj.schema2">schema2</h4>
+  <div class="markdown level1 summary"><p>Current schema value that defines the version of the serialized file</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int schema2 = 10</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_ImageObj_Image.md&amp;value=---%0Auid%3A%20ZedGraph.ImageObj.Image%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/ImageObj.cs/#L79">View Source</a>
+  </span>
+  <a id="ZedGraph_ImageObj_Image_" data-uid="ZedGraph.ImageObj.Image*"></a>
+  <h4 id="ZedGraph_ImageObj_Image" data-uid="ZedGraph.ImageObj.Image">Image</h4>
+  <div class="markdown level1 summary"><p>The <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.drawing.image">Image</a> object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Image Image { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.drawing.image">Image</a></td>
+        <td><p>A <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.drawing.image">Image</a> class reference.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_ImageObj_IsScaled.md&amp;value=---%0Auid%3A%20ZedGraph.ImageObj.IsScaled%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/ImageObj.cs/#L90">View Source</a>
+  </span>
+  <a id="ZedGraph_ImageObj_IsScaled_" data-uid="ZedGraph.ImageObj.IsScaled*"></a>
+  <h4 id="ZedGraph_ImageObj_IsScaled" data-uid="ZedGraph.ImageObj.IsScaled">IsScaled</h4>
+  <div class="markdown level1 summary"><p>Gets or sets a property that determines if the image will be scaled to the
+output rectangle (see <a class="xref" href="ZedGraph.Location.html">Location</a>).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsScaled { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><p>true to scale the image, false to draw the image unscaled, but clipped
+to the destination rectangle</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_ImageObj_Clone.md&amp;value=---%0Auid%3A%20ZedGraph.ImageObj.Clone%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/ImageObj.cs/#L202">View Source</a>
+  </span>
+  <a id="ZedGraph_ImageObj_Clone_" data-uid="ZedGraph.ImageObj.Clone*"></a>
+  <h4 id="ZedGraph_ImageObj_Clone" data-uid="ZedGraph.ImageObj.Clone">Clone()</h4>
+  <div class="markdown level1 summary"><p>Typesafe, deep-copy clone method.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ImageObj Clone()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ZedGraph.ImageObj.html">ImageObj</a></td>
+        <td><p>A new, independent copy of this class</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_ImageObj_Draw_System_Drawing_Graphics_ZedGraph_PaneBase_System_Single_.md&amp;value=---%0Auid%3A%20ZedGraph.ImageObj.Draw(System.Drawing.Graphics%2CZedGraph.PaneBase%2CSystem.Single)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/ImageObj.cs/#L265">View Source</a>
+  </span>
+  <a id="ZedGraph_ImageObj_Draw_" data-uid="ZedGraph.ImageObj.Draw*"></a>
+  <h4 id="ZedGraph_ImageObj_Draw_System_Drawing_Graphics_ZedGraph_PaneBase_System_Single_" data-uid="ZedGraph.ImageObj.Draw(System.Drawing.Graphics,ZedGraph.PaneBase,System.Single)">Draw(Graphics, PaneBase, Single)</h4>
+  <div class="markdown level1 summary"><p>Render this object to the specified <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.drawing.graphics">Graphics</a> device
+This method is normally only called by the Draw method
+of the parent <a class="xref" href="ZedGraph.GraphObjList.html">GraphObjList</a> collection object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void Draw(Graphics g, PaneBase pane, float scaleFactor)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.drawing.graphics">Graphics</a></td>
+        <td><span class="parametername">g</span></td>
+        <td><p>A graphic device object to be drawn into.  This is normally e.Graphics from the
+PaintEventArgs argument to the Paint() method.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ZedGraph.PaneBase.html">PaneBase</a></td>
+        <td><span class="parametername">pane</span></td>
+        <td><p>A reference to the <a class="xref" href="ZedGraph.PaneBase.html">PaneBase</a> object that is the parent or
+owner of this object.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td><span class="parametername">scaleFactor</span></td>
+        <td><p>The scaling factor to be used for rendering objects.  This is calculated and
+passed down by the parent <a class="xref" href="ZedGraph.GraphPane.html">GraphPane</a> object using the
+<a class="xref" href="ZedGraph.PaneBase.html#ZedGraph_PaneBase_CalcScaleFactor">CalcScaleFactor()</a> method, and is used to proportionally adjust
+font sizes, etc. according to the actual size of the graph.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="ZedGraph.GraphObj.html#ZedGraph_GraphObj_Draw_System_Drawing_Graphics_ZedGraph_PaneBase_System_Single_">GraphObj.Draw(Graphics, PaneBase, Single)</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_ImageObj_GetCoords_ZedGraph_PaneBase_System_Drawing_Graphics_System_Single_System_String__System_String__.md&amp;value=---%0Auid%3A%20ZedGraph.ImageObj.GetCoords(ZedGraph.PaneBase%2CSystem.Drawing.Graphics%2CSystem.Single%2CSystem.String%40%2CSystem.String%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/ImageObj.cs/#L328">View Source</a>
+  </span>
+  <a id="ZedGraph_ImageObj_GetCoords_" data-uid="ZedGraph.ImageObj.GetCoords*"></a>
+  <h4 id="ZedGraph_ImageObj_GetCoords_ZedGraph_PaneBase_System_Drawing_Graphics_System_Single_System_String__System_String__" data-uid="ZedGraph.ImageObj.GetCoords(ZedGraph.PaneBase,System.Drawing.Graphics,System.Single,System.String@,System.String@)">GetCoords(PaneBase, Graphics, Single, out String, out String)</h4>
+  <div class="markdown level1 summary"><p>Determines the shape type and Coords values for this GraphObj</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void GetCoords(PaneBase pane, Graphics g, float scaleFactor, out string shape, out string coords)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ZedGraph.PaneBase.html">PaneBase</a></td>
+        <td><span class="parametername">pane</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.drawing.graphics">Graphics</a></td>
+        <td><span class="parametername">g</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td><span class="parametername">scaleFactor</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">shape</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">coords</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="ZedGraph.GraphObj.html#ZedGraph_GraphObj_GetCoords_ZedGraph_PaneBase_System_Drawing_Graphics_System_Single_System_String__System_String__">GraphObj.GetCoords(PaneBase, Graphics, Single, out String, out String)</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_ImageObj_GetObjectData_System_Runtime_Serialization_SerializationInfo_System_Runtime_Serialization_StreamingContext_.md&amp;value=---%0Auid%3A%20ZedGraph.ImageObj.GetObjectData(System.Runtime.Serialization.SerializationInfo%2CSystem.Runtime.Serialization.StreamingContext)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/ImageObj.cs/#L235">View Source</a>
+  </span>
+  <a id="ZedGraph_ImageObj_GetObjectData_" data-uid="ZedGraph.ImageObj.GetObjectData*"></a>
+  <h4 id="ZedGraph_ImageObj_GetObjectData_System_Runtime_Serialization_SerializationInfo_System_Runtime_Serialization_StreamingContext_" data-uid="ZedGraph.ImageObj.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">GetObjectData(SerializationInfo, StreamingContext)</h4>
+  <div class="markdown level1 summary"><p>Populates a <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.runtime.serialization.serializationinfo">SerializationInfo</a> instance with the data needed to serialize the target object</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[SecurityPermission(SecurityAction.Demand, SerializationFormatter = true)]
+public override void GetObjectData(SerializationInfo info, StreamingContext context)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.runtime.serialization.serializationinfo">SerializationInfo</a></td>
+        <td><span class="parametername">info</span></td>
+        <td><p>A <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.runtime.serialization.serializationinfo">SerializationInfo</a> instance that defines the serialized data</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.runtime.serialization.streamingcontext">StreamingContext</a></td>
+        <td><span class="parametername">context</span></td>
+        <td><p>A <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.runtime.serialization.streamingcontext">StreamingContext</a> instance that contains the serialized data</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="ZedGraph.GraphObj.html#ZedGraph_GraphObj_GetObjectData_System_Runtime_Serialization_SerializationInfo_System_Runtime_Serialization_StreamingContext_">GraphObj.GetObjectData(SerializationInfo, StreamingContext)</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_ImageObj_PointInBox_System_Drawing_PointF_ZedGraph_PaneBase_System_Drawing_Graphics_System_Single_.md&amp;value=---%0Auid%3A%20ZedGraph.ImageObj.PointInBox(System.Drawing.PointF%2CZedGraph.PaneBase%2CSystem.Drawing.Graphics%2CSystem.Single)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/ImageObj.cs/#L308">View Source</a>
+  </span>
+  <a id="ZedGraph_ImageObj_PointInBox_" data-uid="ZedGraph.ImageObj.PointInBox*"></a>
+  <h4 id="ZedGraph_ImageObj_PointInBox_System_Drawing_PointF_ZedGraph_PaneBase_System_Drawing_Graphics_System_Single_" data-uid="ZedGraph.ImageObj.PointInBox(System.Drawing.PointF,ZedGraph.PaneBase,System.Drawing.Graphics,System.Single)">PointInBox(PointF, PaneBase, Graphics, Single)</h4>
+  <div class="markdown level1 summary"><p>Determine if the specified screen point lies inside the bounding box of this
+<a class="xref" href="ZedGraph.ArrowObj.html">ArrowObj</a>.  The bounding box is calculated assuming a distance
+of <a class="xref" href="ZedGraph.GraphPane.Default.html#ZedGraph_GraphPane_Default_NearestTol">NearestTol</a> pixels around the arrow segment.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool PointInBox(PointF pt, PaneBase pane, Graphics g, float scaleFactor)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.drawing.pointf">PointF</a></td>
+        <td><span class="parametername">pt</span></td>
+        <td><p>The screen point, in pixels</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ZedGraph.PaneBase.html">PaneBase</a></td>
+        <td><span class="parametername">pane</span></td>
+        <td><p>A reference to the <a class="xref" href="ZedGraph.PaneBase.html">PaneBase</a> object that is the parent or
+owner of this object.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.drawing.graphics">Graphics</a></td>
+        <td><span class="parametername">g</span></td>
+        <td><p>A graphic device object to be drawn into.  This is normally e.Graphics from the
+PaintEventArgs argument to the Paint() method.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td><span class="parametername">scaleFactor</span></td>
+        <td><p>The scaling factor to be used for rendering objects.  This is calculated and
+passed down by the parent <a class="xref" href="ZedGraph.GraphPane.html">GraphPane</a> object using the
+<a class="xref" href="ZedGraph.PaneBase.html#ZedGraph_PaneBase_CalcScaleFactor">CalcScaleFactor()</a> method, and is used to proportionally adjust
+font sizes, etc. according to the actual size of the graph.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><p>true if the point lies in the bounding box, false otherwise</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="ZedGraph.GraphObj.html#ZedGraph_GraphObj_PointInBox_System_Drawing_PointF_ZedGraph_PaneBase_System_Drawing_Graphics_System_Single_">GraphObj.PointInBox(PointF, PaneBase, Graphics, Single)</a></div>
+  <h3 id="eii">Explicit Interface Implementations
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_ImageObj_System_ICloneable_Clone.md&amp;value=---%0Auid%3A%20ZedGraph.ImageObj.System%23ICloneable%23Clone%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/ImageObj.cs/#L193">View Source</a>
+  </span>
+  <a id="ZedGraph_ImageObj_System_ICloneable_Clone_" data-uid="ZedGraph.ImageObj.System#ICloneable#Clone*"></a>
+  <h4 id="ZedGraph_ImageObj_System_ICloneable_Clone" data-uid="ZedGraph.ImageObj.System#ICloneable#Clone">ICloneable.Clone()</h4>
+  <div class="markdown level1 summary"><p>Implement the <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.icloneable">ICloneable</a> interface in a typesafe manner by just
+calling the typed version of <a class="xref" href="ZedGraph.ImageObj.html#ZedGraph_ImageObj_Clone">Clone()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">object ICloneable.Clone()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></td>
+        <td><p>A deep copy of this object</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.icloneable">System.ICloneable</a>
+  </div>
+  <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.runtime.serialization.iserializable">System.Runtime.Serialization.ISerializable</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_ImageObj.md&amp;value=---%0Auid%3A%20ZedGraph.ImageObj%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/ImageObj.cs/#L41" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

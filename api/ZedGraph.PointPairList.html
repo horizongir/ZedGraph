@@ -1,0 +1,1951 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class PointPairList
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class PointPairList
+   ">
+    <meta name="generator" content="docfx 2.56.7.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="ZedGraph.PointPairList">
+  
+  
+  <h1 id="ZedGraph_PointPairList" data-uid="ZedGraph.PointPairList" class="text-break">Class PointPairList
+  </h1>
+  <div class="markdown level0 summary"><p>A collection class containing a list of <a class="xref" href="ZedGraph.PointPair.html">PointPair</a> objects
+that define the set of points to be displayed on the curve.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
+    <div class="level1"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="ZedGraph.PointPair.html">PointPair</a>&gt;</div>
+    <div class="level2"><span class="xref">PointPairList</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList</a>&lt;<a class="xref" href="ZedGraph.PointPair.html">PointPair</a>&gt;</div>
+    <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.icollection-1">ICollection</a>&lt;<a class="xref" href="ZedGraph.PointPair.html">PointPair</a>&gt;</div>
+    <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="ZedGraph.PointPair.html">PointPair</a>&gt;</div>
+    <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.ilist">IList</a></div>
+    <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.icollection">ICollection</a></div>
+    <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.ienumerable">IEnumerable</a></div>
+    <div><a class="xref" href="ZedGraph.IPointListEdit.html">IPointListEdit</a></div>
+    <div><a class="xref" href="ZedGraph.IPointList.html">IPointList</a></div>
+    <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.icloneable">ICloneable</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Collections.Generic.List&lt;ZedGraph.PointPair&gt;.System.Collections.IList.get_Item(System.Int32)</span>
+    </div>
+    <div>
+      <span class="xref">System.Collections.Generic.List&lt;ZedGraph.PointPair&gt;.System.Collections.IList.set_Item(System.Int32, System.Object)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.addrange#System_Collections_Generic_List_1_AddRange_System_Collections_Generic_IEnumerable__0__">List&lt;PointPair&gt;.AddRange(IEnumerable&lt;PointPair&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.asreadonly#System_Collections_Generic_List_1_AsReadOnly">List&lt;PointPair&gt;.AsReadOnly()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.binarysearch#System_Collections_Generic_List_1_BinarySearch_System_Int32_System_Int32__0_System_Collections_Generic_IComparer__0__">List&lt;PointPair&gt;.BinarySearch(Int32, Int32, PointPair, IComparer&lt;PointPair&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.binarysearch#System_Collections_Generic_List_1_BinarySearch__0_">List&lt;PointPair&gt;.BinarySearch(PointPair)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.binarysearch#System_Collections_Generic_List_1_BinarySearch__0_System_Collections_Generic_IComparer__0__">List&lt;PointPair&gt;.BinarySearch(PointPair, IComparer&lt;PointPair&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.clear#System_Collections_Generic_List_1_Clear">List&lt;PointPair&gt;.Clear()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.contains#System_Collections_Generic_List_1_Contains__0_">List&lt;PointPair&gt;.Contains(PointPair)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.convertall#System_Collections_Generic_List_1_ConvertAll__1_System_Converter__0___0__">List&lt;PointPair&gt;.ConvertAll&lt;TOutput&gt;(Converter&lt;PointPair, TOutput&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.copyto#System_Collections_Generic_List_1_CopyTo_System_Int32__0___System_Int32_System_Int32_">List&lt;PointPair&gt;.CopyTo(Int32, PointPair[], Int32, Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.copyto#System_Collections_Generic_List_1_CopyTo__0___">List&lt;PointPair&gt;.CopyTo(PointPair[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.copyto#System_Collections_Generic_List_1_CopyTo__0___System_Int32_">List&lt;PointPair&gt;.CopyTo(PointPair[], Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.exists#System_Collections_Generic_List_1_Exists_System_Predicate__0__">List&lt;PointPair&gt;.Exists(Predicate&lt;PointPair&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.find#System_Collections_Generic_List_1_Find_System_Predicate__0__">List&lt;PointPair&gt;.Find(Predicate&lt;PointPair&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.findall#System_Collections_Generic_List_1_FindAll_System_Predicate__0__">List&lt;PointPair&gt;.FindAll(Predicate&lt;PointPair&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.findindex#System_Collections_Generic_List_1_FindIndex_System_Int32_System_Int32_System_Predicate__0__">List&lt;PointPair&gt;.FindIndex(Int32, Int32, Predicate&lt;PointPair&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.findindex#System_Collections_Generic_List_1_FindIndex_System_Int32_System_Predicate__0__">List&lt;PointPair&gt;.FindIndex(Int32, Predicate&lt;PointPair&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.findindex#System_Collections_Generic_List_1_FindIndex_System_Predicate__0__">List&lt;PointPair&gt;.FindIndex(Predicate&lt;PointPair&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.findlast#System_Collections_Generic_List_1_FindLast_System_Predicate__0__">List&lt;PointPair&gt;.FindLast(Predicate&lt;PointPair&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.findlastindex#System_Collections_Generic_List_1_FindLastIndex_System_Int32_System_Int32_System_Predicate__0__">List&lt;PointPair&gt;.FindLastIndex(Int32, Int32, Predicate&lt;PointPair&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.findlastindex#System_Collections_Generic_List_1_FindLastIndex_System_Int32_System_Predicate__0__">List&lt;PointPair&gt;.FindLastIndex(Int32, Predicate&lt;PointPair&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.findlastindex#System_Collections_Generic_List_1_FindLastIndex_System_Predicate__0__">List&lt;PointPair&gt;.FindLastIndex(Predicate&lt;PointPair&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.foreach#System_Collections_Generic_List_1_ForEach_System_Action__0__">List&lt;PointPair&gt;.ForEach(Action&lt;PointPair&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.getenumerator#System_Collections_Generic_List_1_GetEnumerator">List&lt;PointPair&gt;.GetEnumerator()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.getrange#System_Collections_Generic_List_1_GetRange_System_Int32_System_Int32_">List&lt;PointPair&gt;.GetRange(Int32, Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.indexof#System_Collections_Generic_List_1_IndexOf__0_">List&lt;PointPair&gt;.IndexOf(PointPair)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.indexof#System_Collections_Generic_List_1_IndexOf__0_System_Int32_">List&lt;PointPair&gt;.IndexOf(PointPair, Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.indexof#System_Collections_Generic_List_1_IndexOf__0_System_Int32_System_Int32_">List&lt;PointPair&gt;.IndexOf(PointPair, Int32, Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.insertrange#System_Collections_Generic_List_1_InsertRange_System_Int32_System_Collections_Generic_IEnumerable__0__">List&lt;PointPair&gt;.InsertRange(Int32, IEnumerable&lt;PointPair&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.lastindexof#System_Collections_Generic_List_1_LastIndexOf__0_">List&lt;PointPair&gt;.LastIndexOf(PointPair)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.lastindexof#System_Collections_Generic_List_1_LastIndexOf__0_System_Int32_">List&lt;PointPair&gt;.LastIndexOf(PointPair, Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.lastindexof#System_Collections_Generic_List_1_LastIndexOf__0_System_Int32_System_Int32_">List&lt;PointPair&gt;.LastIndexOf(PointPair, Int32, Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.remove#System_Collections_Generic_List_1_Remove__0_">List&lt;PointPair&gt;.Remove(PointPair)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.removeall#System_Collections_Generic_List_1_RemoveAll_System_Predicate__0__">List&lt;PointPair&gt;.RemoveAll(Predicate&lt;PointPair&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.removeat#System_Collections_Generic_List_1_RemoveAt_System_Int32_">List&lt;PointPair&gt;.RemoveAt(Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.removerange#System_Collections_Generic_List_1_RemoveRange_System_Int32_System_Int32_">List&lt;PointPair&gt;.RemoveRange(Int32, Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.reverse#System_Collections_Generic_List_1_Reverse">List&lt;PointPair&gt;.Reverse()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.reverse#System_Collections_Generic_List_1_Reverse_System_Int32_System_Int32_">List&lt;PointPair&gt;.Reverse(Int32, Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.sort#System_Collections_Generic_List_1_Sort_System_Collections_Generic_IComparer__0__">List&lt;PointPair&gt;.Sort(IComparer&lt;PointPair&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.sort#System_Collections_Generic_List_1_Sort_System_Comparison__0__">List&lt;PointPair&gt;.Sort(Comparison&lt;PointPair&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.sort#System_Collections_Generic_List_1_Sort_System_Int32_System_Int32_System_Collections_Generic_IComparer__0__">List&lt;PointPair&gt;.Sort(Int32, Int32, IComparer&lt;PointPair&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.system-collections-generic-ienumerable-t--getenumerator#System_Collections_Generic_List_1_System_Collections_Generic_IEnumerable_T__GetEnumerator">List&lt;PointPair&gt;.IEnumerable&lt;PointPair&gt;.GetEnumerator()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.system-collections-icollection-copyto#System_Collections_Generic_List_1_System_Collections_ICollection_CopyTo_System_Array_System_Int32_">List&lt;PointPair&gt;.ICollection.CopyTo(Array, Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.system-collections-ienumerable-getenumerator#System_Collections_Generic_List_1_System_Collections_IEnumerable_GetEnumerator">List&lt;PointPair&gt;.IEnumerable.GetEnumerator()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.system-collections-ilist-add#System_Collections_Generic_List_1_System_Collections_IList_Add_System_Object_">List&lt;PointPair&gt;.IList.Add(Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.system-collections-ilist-contains#System_Collections_Generic_List_1_System_Collections_IList_Contains_System_Object_">List&lt;PointPair&gt;.IList.Contains(Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.system-collections-ilist-indexof#System_Collections_Generic_List_1_System_Collections_IList_IndexOf_System_Object_">List&lt;PointPair&gt;.IList.IndexOf(Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.system-collections-ilist-insert#System_Collections_Generic_List_1_System_Collections_IList_Insert_System_Int32_System_Object_">List&lt;PointPair&gt;.IList.Insert(Int32, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.system-collections-ilist-remove#System_Collections_Generic_List_1_System_Collections_IList_Remove_System_Object_">List&lt;PointPair&gt;.IList.Remove(Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.toarray#System_Collections_Generic_List_1_ToArray">List&lt;PointPair&gt;.ToArray()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.trimexcess#System_Collections_Generic_List_1_TrimExcess">List&lt;PointPair&gt;.TrimExcess()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.trueforall#System_Collections_Generic_List_1_TrueForAll_System_Predicate__0__">List&lt;PointPair&gt;.TrueForAll(Predicate&lt;PointPair&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.capacity#System_Collections_Generic_List_1_Capacity">List&lt;PointPair&gt;.Capacity</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.count#System_Collections_Generic_List_1_Count">List&lt;PointPair&gt;.Count</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.item#System_Collections_Generic_List_1_Item_System_Int32_">List&lt;PointPair&gt;.Item[Int32]</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.system-collections-generic-icollection-t--isreadonly#System_Collections_Generic_List_1_System_Collections_Generic_ICollection_T__IsReadOnly">List&lt;PointPair&gt;.ICollection&lt;PointPair&gt;.IsReadOnly</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.system-collections-icollection-issynchronized#System_Collections_Generic_List_1_System_Collections_ICollection_IsSynchronized">List&lt;PointPair&gt;.ICollection.IsSynchronized</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.system-collections-icollection-syncroot#System_Collections_Generic_List_1_System_Collections_ICollection_SyncRoot">List&lt;PointPair&gt;.ICollection.SyncRoot</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.system-collections-ilist-isfixedsize#System_Collections_Generic_List_1_System_Collections_IList_IsFixedSize">List&lt;PointPair&gt;.IList.IsFixedSize</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.system-collections-ilist-isreadonly#System_Collections_Generic_List_1_System_Collections_IList_IsReadOnly">List&lt;PointPair&gt;.IList.IsReadOnly</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.system-collections-ilist-item#System_Collections_Generic_List_1_System_Collections_IList_Item_System_Int32_">List&lt;PointPair&gt;.IList.Item[Int32]</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#System_Object_Equals_System_Object_System_Object_">Object.Equals(Object, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gettype#System_Object_GetType">Object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.memberwiseclone#System_Object_MemberwiseClone">Object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.referenceequals#System_Object_ReferenceEquals_System_Object_System_Object_">Object.ReferenceEquals(Object, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.tostring#System_Object_ToString">Object.ToString()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="ZedGraph.html">ZedGraph</a></h6>
+  <h6><strong>Assembly</strong>: ZedGraph.dll</h6>
+  <h5 id="ZedGraph_PointPairList_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Serializable]
+public class PointPairList : List&lt;PointPair&gt;, IList&lt;PointPair&gt;, ICollection&lt;PointPair&gt;, IEnumerable&lt;PointPair&gt;, IList, ICollection, IEnumerable, IPointListEdit, IPointList, ICloneable</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_PointPairList__ctor.md&amp;value=---%0Auid%3A%20ZedGraph.PointPairList.%23ctor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/PointPairList.cs/#L76">View Source</a>
+  </span>
+  <a id="ZedGraph_PointPairList__ctor_" data-uid="ZedGraph.PointPairList.#ctor*"></a>
+  <h4 id="ZedGraph_PointPairList__ctor" data-uid="ZedGraph.PointPairList.#ctor">PointPairList()</h4>
+  <div class="markdown level1 summary"><p>Default constructor for the collection class</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PointPairList()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_PointPairList__ctor_System_Double___System_Double___.md&amp;value=---%0Auid%3A%20ZedGraph.PointPairList.%23ctor(System.Double%5B%5D%2CSystem.Double%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/PointPairList.cs/#L85">View Source</a>
+  </span>
+  <a id="ZedGraph_PointPairList__ctor_" data-uid="ZedGraph.PointPairList.#ctor*"></a>
+  <h4 id="ZedGraph_PointPairList__ctor_System_Double___System_Double___" data-uid="ZedGraph.PointPairList.#ctor(System.Double[],System.Double[])">PointPairList(Double[], Double[])</h4>
+  <div class="markdown level1 summary"><p>Constructor to initialize the PointPairList from two arrays of
+type double.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PointPairList(double[] x, double[] y)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.double">Double</a>[]</td>
+        <td><span class="parametername">x</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.double">Double</a>[]</td>
+        <td><span class="parametername">y</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_PointPairList__ctor_System_Double___System_Double___System_Double___.md&amp;value=---%0Auid%3A%20ZedGraph.PointPairList.%23ctor(System.Double%5B%5D%2CSystem.Double%5B%5D%2CSystem.Double%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/PointPairList.cs/#L108">View Source</a>
+  </span>
+  <a id="ZedGraph_PointPairList__ctor_" data-uid="ZedGraph.PointPairList.#ctor*"></a>
+  <h4 id="ZedGraph_PointPairList__ctor_System_Double___System_Double___System_Double___" data-uid="ZedGraph.PointPairList.#ctor(System.Double[],System.Double[],System.Double[])">PointPairList(Double[], Double[], Double[])</h4>
+  <div class="markdown level1 summary"><p>Constructor to initialize the PointPairList from three arrays of
+type double.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PointPairList(double[] x, double[] y, double[] baseVal)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.double">Double</a>[]</td>
+        <td><span class="parametername">x</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.double">Double</a>[]</td>
+        <td><span class="parametername">y</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.double">Double</a>[]</td>
+        <td><span class="parametername">baseVal</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_PointPairList__ctor_ZedGraph_IPointList_.md&amp;value=---%0Auid%3A%20ZedGraph.PointPairList.%23ctor(ZedGraph.IPointList)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/PointPairList.cs/#L95">View Source</a>
+  </span>
+  <a id="ZedGraph_PointPairList__ctor_" data-uid="ZedGraph.PointPairList.#ctor*"></a>
+  <h4 id="ZedGraph_PointPairList__ctor_ZedGraph_IPointList_" data-uid="ZedGraph.PointPairList.#ctor(ZedGraph.IPointList)">PointPairList(IPointList)</h4>
+  <div class="markdown level1 summary"><p>Constructor to initialize the PointPairList from an IPointList</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PointPairList(IPointList list)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ZedGraph.IPointList.html">IPointList</a></td>
+        <td><span class="parametername">list</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_PointPairList__ctor_ZedGraph_PointPairList_.md&amp;value=---%0Auid%3A%20ZedGraph.PointPairList.%23ctor(ZedGraph.PointPairList)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/PointPairList.cs/#L119">View Source</a>
+  </span>
+  <a id="ZedGraph_PointPairList__ctor_" data-uid="ZedGraph.PointPairList.#ctor*"></a>
+  <h4 id="ZedGraph_PointPairList__ctor_ZedGraph_PointPairList_" data-uid="ZedGraph.PointPairList.#ctor(ZedGraph.PointPairList)">PointPairList(PointPairList)</h4>
+  <div class="markdown level1 summary"><p>The Copy Constructor</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PointPairList(PointPairList rhs)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ZedGraph.PointPairList.html">PointPairList</a></td>
+        <td><span class="parametername">rhs</span></td>
+        <td><p>The PointPairList from which to copy</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="fields">Fields
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_PointPairList__sorted.md&amp;value=---%0Auid%3A%20ZedGraph.PointPairList._sorted%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/PointPairList.cs/#L45">View Source</a>
+  </span>
+  <h4 id="ZedGraph_PointPairList__sorted" data-uid="ZedGraph.PointPairList._sorted">_sorted</h4>
+  <div class="markdown level1 summary"><p>Private field to maintain the sort status of this
+<a class="xref" href="ZedGraph.PointPairList.html">PointPairList</a>.  Use the public property
+<a class="xref" href="ZedGraph.PointPairList.html#ZedGraph_PointPairList_Sorted">Sorted</a> to access this value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[CLSCompliant(false)]
+protected bool _sorted</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_PointPairList_Sorted.md&amp;value=---%0Auid%3A%20ZedGraph.PointPairList.Sorted%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/PointPairList.cs/#L66">View Source</a>
+  </span>
+  <a id="ZedGraph_PointPairList_Sorted_" data-uid="ZedGraph.PointPairList.Sorted*"></a>
+  <h4 id="ZedGraph_PointPairList_Sorted" data-uid="ZedGraph.PointPairList.Sorted">Sorted</h4>
+  <div class="markdown level1 summary"><p>true if the list is currently sorted.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Sorted { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="ZedGraph_PointPairList_Sorted_seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="ZedGraph.PointPairList.html#ZedGraph_PointPairList_Sort">Sort()</a></div>
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_PointPairList_Add_System_Double_System_Double_.md&amp;value=---%0Auid%3A%20ZedGraph.PointPairList.Add(System.Double%2CSystem.Double)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/PointPairList.cs/#L280">View Source</a>
+  </span>
+  <a id="ZedGraph_PointPairList_Add_" data-uid="ZedGraph.PointPairList.Add*"></a>
+  <h4 id="ZedGraph_PointPairList_Add_System_Double_System_Double_" data-uid="ZedGraph.PointPairList.Add(System.Double,System.Double)">Add(Double, Double)</h4>
+  <div class="markdown level1 summary"><p>Add a single point to the <a class="xref" href="ZedGraph.PointPairList.html">PointPairList</a> from values of type double.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Add(double x, double y)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.double">Double</a></td>
+        <td><span class="parametername">x</span></td>
+        <td><p>The X value</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.double">Double</a></td>
+        <td><span class="parametername">y</span></td>
+        <td><p>The Y value</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_PointPairList_Add_System_Double_System_Double_System_Double_.md&amp;value=---%0Auid%3A%20ZedGraph.PointPairList.Add(System.Double%2CSystem.Double%2CSystem.Double)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/PointPairList.cs/#L309">View Source</a>
+  </span>
+  <a id="ZedGraph_PointPairList_Add_" data-uid="ZedGraph.PointPairList.Add*"></a>
+  <h4 id="ZedGraph_PointPairList_Add_System_Double_System_Double_System_Double_" data-uid="ZedGraph.PointPairList.Add(System.Double,System.Double,System.Double)">Add(Double, Double, Double)</h4>
+  <div class="markdown level1 summary"><p>Add a single point to the <a class="xref" href="ZedGraph.PointPairList.html">PointPairList</a> from values of type double.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Add(double x, double y, double z)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.double">Double</a></td>
+        <td><span class="parametername">x</span></td>
+        <td><p>The X value</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.double">Double</a></td>
+        <td><span class="parametername">y</span></td>
+        <td><p>The Y value</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.double">Double</a></td>
+        <td><span class="parametername">z</span></td>
+        <td><p>The Z or lower dependent axis value</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_PointPairList_Add_System_Double_System_Double_System_Double_System_String_.md&amp;value=---%0Auid%3A%20ZedGraph.PointPairList.Add(System.Double%2CSystem.Double%2CSystem.Double%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/PointPairList.cs/#L325">View Source</a>
+  </span>
+  <a id="ZedGraph_PointPairList_Add_" data-uid="ZedGraph.PointPairList.Add*"></a>
+  <h4 id="ZedGraph_PointPairList_Add_System_Double_System_Double_System_Double_System_String_" data-uid="ZedGraph.PointPairList.Add(System.Double,System.Double,System.Double,System.String)">Add(Double, Double, Double, String)</h4>
+  <div class="markdown level1 summary"><p>Add a single point to the <a class="xref" href="ZedGraph.PointPairList.html">PointPairList</a> from values of type double.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Add(double x, double y, double z, string tag)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.double">Double</a></td>
+        <td><span class="parametername">x</span></td>
+        <td><p>The X value</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.double">Double</a></td>
+        <td><span class="parametername">y</span></td>
+        <td><p>The Y value</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.double">Double</a></td>
+        <td><span class="parametername">z</span></td>
+        <td><p>The Z or lower dependent axis value</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">tag</span></td>
+        <td><p>The Tag value for the PointPair</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_PointPairList_Add_System_Double_System_Double_System_String_.md&amp;value=---%0Auid%3A%20ZedGraph.PointPairList.Add(System.Double%2CSystem.Double%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/PointPairList.cs/#L294">View Source</a>
+  </span>
+  <a id="ZedGraph_PointPairList_Add_" data-uid="ZedGraph.PointPairList.Add*"></a>
+  <h4 id="ZedGraph_PointPairList_Add_System_Double_System_Double_System_String_" data-uid="ZedGraph.PointPairList.Add(System.Double,System.Double,System.String)">Add(Double, Double, String)</h4>
+  <div class="markdown level1 summary"><p>Add a single point to the <a class="xref" href="ZedGraph.PointPairList.html">PointPairList</a> from values of type double.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Add(double x, double y, string tag)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.double">Double</a></td>
+        <td><span class="parametername">x</span></td>
+        <td><p>The X value</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.double">Double</a></td>
+        <td><span class="parametername">y</span></td>
+        <td><p>The Y value</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">tag</span></td>
+        <td><p>The Tag value for the PointPair</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_PointPairList_Add_System_Double___System_Double___.md&amp;value=---%0Auid%3A%20ZedGraph.PointPairList.Add(System.Double%5B%5D%2CSystem.Double%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/PointPairList.cs/#L187">View Source</a>
+  </span>
+  <a id="ZedGraph_PointPairList_Add_" data-uid="ZedGraph.PointPairList.Add*"></a>
+  <h4 id="ZedGraph_PointPairList_Add_System_Double___System_Double___" data-uid="ZedGraph.PointPairList.Add(System.Double[],System.Double[])">Add(Double[], Double[])</h4>
+  <div class="markdown level1 summary"><p>Add a set of points to the PointPairList from two arrays of type double.
+If either array is null, then a set of ordinal values is automatically
+generated in its place (see <a class="xref" href="ZedGraph.AxisType.html#ZedGraph_AxisType_Ordinal">Ordinal</a>.
+If the arrays are of different size, then the larger array prevails and the
+smaller array is padded with <a class="xref" href="ZedGraph.PointPairBase.html#ZedGraph_PointPairBase_Missing">Missing</a> values.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Add(double[] x, double[] y)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.double">Double</a>[]</td>
+        <td><span class="parametername">x</span></td>
+        <td><p>A double[] array of X values</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.double">Double</a>[]</td>
+        <td><span class="parametername">y</span></td>
+        <td><p>A double[] array of Y values</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_PointPairList_Add_System_Double___System_Double___System_Double___.md&amp;value=---%0Auid%3A%20ZedGraph.PointPairList.Add(System.Double%5B%5D%2CSystem.Double%5B%5D%2CSystem.Double%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/PointPairList.cs/#L232">View Source</a>
+  </span>
+  <a id="ZedGraph_PointPairList_Add_" data-uid="ZedGraph.PointPairList.Add*"></a>
+  <h4 id="ZedGraph_PointPairList_Add_System_Double___System_Double___System_Double___" data-uid="ZedGraph.PointPairList.Add(System.Double[],System.Double[],System.Double[])">Add(Double[], Double[], Double[])</h4>
+  <div class="markdown level1 summary"><p>Add a set of points to the <a class="xref" href="ZedGraph.PointPairList.html">PointPairList</a> from three arrays of type double.
+If the X or Y array is null, then a set of ordinal values is automatically
+generated in its place (see <a class="xref" href="ZedGraph.AxisType.html#ZedGraph_AxisType_Ordinal">Ordinal</a>.  If the <see paramref="baseVal"></see>
+is null, then it is set to zero.
+If the arrays are of different size, then the larger array prevails and the
+smaller array is padded with <a class="xref" href="ZedGraph.PointPairBase.html#ZedGraph_PointPairBase_Missing">Missing</a> values.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Add(double[] x, double[] y, double[] z)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.double">Double</a>[]</td>
+        <td><span class="parametername">x</span></td>
+        <td><p>A double[] array of X values</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.double">Double</a>[]</td>
+        <td><span class="parametername">y</span></td>
+        <td><p>A double[] array of Y values</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.double">Double</a>[]</td>
+        <td><span class="parametername">z</span></td>
+        <td><p>A double[] array of Z or lower-dependent axis values</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_PointPairList_Add_ZedGraph_PointPair_.md&amp;value=---%0Auid%3A%20ZedGraph.PointPairList.Add(ZedGraph.PointPair)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/PointPairList.cs/#L154">View Source</a>
+  </span>
+  <a id="ZedGraph_PointPairList_Add_" data-uid="ZedGraph.PointPairList.Add*"></a>
+  <h4 id="ZedGraph_PointPairList_Add_ZedGraph_PointPair_" data-uid="ZedGraph.PointPairList.Add(ZedGraph.PointPair)">Add(PointPair)</h4>
+  <div class="markdown level1 summary"><p>Add a <a class="xref" href="ZedGraph.PointPair.html">PointPair</a> object to the collection at the end of the list.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Add(PointPair point)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ZedGraph.PointPair.html">PointPair</a></td>
+        <td><span class="parametername">point</span></td>
+        <td><p>The <a class="xref" href="ZedGraph.PointPair.html">PointPair</a> object to
+be added</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_PointPairList_Add_ZedGraph_PointPairList_.md&amp;value=---%0Auid%3A%20ZedGraph.PointPairList.Add(ZedGraph.PointPairList)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/PointPairList.cs/#L168">View Source</a>
+  </span>
+  <a id="ZedGraph_PointPairList_Add_" data-uid="ZedGraph.PointPairList.Add*"></a>
+  <h4 id="ZedGraph_PointPairList_Add_ZedGraph_PointPairList_" data-uid="ZedGraph.PointPairList.Add(ZedGraph.PointPairList)">Add(PointPairList)</h4>
+  <div class="markdown level1 summary"><p>Add a <a class="xref" href="ZedGraph.PointPairList.html">PointPairList</a> object to the collection at the end of the list.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Add(PointPairList pointList)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ZedGraph.PointPairList.html">PointPairList</a></td>
+        <td><span class="parametername">pointList</span></td>
+        <td><p>A reference to the <a class="xref" href="ZedGraph.PointPairList.html">PointPairList</a> object to
+be added</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_PointPairList_Clone.md&amp;value=---%0Auid%3A%20ZedGraph.PointPairList.Clone%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/PointPairList.cs/#L140">View Source</a>
+  </span>
+  <a id="ZedGraph_PointPairList_Clone_" data-uid="ZedGraph.PointPairList.Clone*"></a>
+  <h4 id="ZedGraph_PointPairList_Clone" data-uid="ZedGraph.PointPairList.Clone">Clone()</h4>
+  <div class="markdown level1 summary"><p>Typesafe, deep-copy clone method.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PointPairList Clone()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ZedGraph.PointPairList.html">PointPairList</a></td>
+        <td><p>A new, independent copy of this class</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_PointPairList_Equals_System_Object_.md&amp;value=---%0Auid%3A%20ZedGraph.PointPairList.Equals(System.Object)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/PointPairList.cs/#L438">View Source</a>
+  </span>
+  <a id="ZedGraph_PointPairList_Equals_" data-uid="ZedGraph.PointPairList.Equals*"></a>
+  <h4 id="ZedGraph_PointPairList_Equals_System_Object_" data-uid="ZedGraph.PointPairList.Equals(System.Object)">Equals(Object)</h4>
+  <div class="markdown level1 summary"><p>Compare two <a class="xref" href="ZedGraph.PointPairList.html">PointPairList</a> objects to see if they are equal.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool Equals(object obj)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></td>
+        <td><span class="parametername">obj</span></td>
+        <td><p>The <a class="xref" href="ZedGraph.PointPairList.html">PointPairList</a> to be compared with for equality.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><p>true if the <a class="xref" href="ZedGraph.PointPairList.html">PointPairList</a> objects are equal, false otherwise.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#System_Object_Equals_System_Object_">Object.Equals(Object)</a></div>
+  <h5 id="ZedGraph_PointPairList_Equals_System_Object__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Equality is based on equal count of <a class="xref" href="ZedGraph.PointPair.html">PointPair</a> items, and
+each individual <a class="xref" href="ZedGraph.PointPair.html">PointPair</a> must be equal (as per the
+<a class="xref" href="ZedGraph.PointPair.html#ZedGraph_PointPair_Equals_System_Object_">Equals(Object)</a> method.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_PointPairList_GetHashCode.md&amp;value=---%0Auid%3A%20ZedGraph.PointPairList.GetHashCode%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/PointPairList.cs/#L457">View Source</a>
+  </span>
+  <a id="ZedGraph_PointPairList_GetHashCode_" data-uid="ZedGraph.PointPairList.GetHashCode*"></a>
+  <h4 id="ZedGraph_PointPairList_GetHashCode" data-uid="ZedGraph.PointPairList.GetHashCode">GetHashCode()</h4>
+  <div class="markdown level1 summary"><p>Return the HashCode from the base class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override int GetHashCode()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gethashcode#System_Object_GetHashCode">Object.GetHashCode()</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_PointPairList_IndexOfTag_System_String_.md&amp;value=---%0Auid%3A%20ZedGraph.PointPairList.IndexOfTag(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/PointPairList.cs/#L417">View Source</a>
+  </span>
+  <a id="ZedGraph_PointPairList_IndexOfTag_" data-uid="ZedGraph.PointPairList.IndexOfTag*"></a>
+  <h4 id="ZedGraph_PointPairList_IndexOfTag_System_String_" data-uid="ZedGraph.PointPairList.IndexOfTag(System.String)">IndexOfTag(String)</h4>
+  <div class="markdown level1 summary"><p>Return the zero-based position index of the
+<a class="xref" href="ZedGraph.PointPair.html">PointPair</a> with the specified label <a class="xref" href="ZedGraph.PointPair.html#ZedGraph_PointPair_Tag">Tag</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int IndexOfTag(string label)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">label</span></td>
+        <td><p>The <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a> label that is in the
+<a class="xref" href="ZedGraph.PointPair.html#ZedGraph_PointPair_Tag">Tag</a> attribute of the item to be found.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><p>The zero-based index of the specified <a class="xref" href="ZedGraph.PointPair.html">PointPair</a>,
+or -1 if the <a class="xref" href="ZedGraph.PointPair.html">PointPair</a> is not in the list</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="ZedGraph_PointPairList_IndexOfTag_System_String__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The <a class="xref" href="ZedGraph.PointPair.html#ZedGraph_PointPair_Tag">Tag</a> object must be of type <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>
+for this method to find it.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_PointPairList_Insert_System_Int32_System_Double_System_Double_.md&amp;value=---%0Auid%3A%20ZedGraph.PointPairList.Insert(System.Int32%2CSystem.Double%2CSystem.Double)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/PointPairList.cs/#L357">View Source</a>
+  </span>
+  <a id="ZedGraph_PointPairList_Insert_" data-uid="ZedGraph.PointPairList.Insert*"></a>
+  <h4 id="ZedGraph_PointPairList_Insert_System_Int32_System_Double_System_Double_" data-uid="ZedGraph.PointPairList.Insert(System.Int32,System.Double,System.Double)">Insert(Int32, Double, Double)</h4>
+  <div class="markdown level1 summary"><p>Add a single point (from values of type double ) to the <a class="xref" href="ZedGraph.PointPairList.html">PointPairList</a> at the specified,
+zero-based, index location.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Insert(int index, double x, double y)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">index</span></td>
+        <td><p>The zero-based ordinal index where the point is to be added in the list.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.double">Double</a></td>
+        <td><span class="parametername">x</span></td>
+        <td><p>The X value</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.double">Double</a></td>
+        <td><span class="parametername">y</span></td>
+        <td><p>The Y value</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_PointPairList_Insert_System_Int32_System_Double_System_Double_System_Double_.md&amp;value=---%0Auid%3A%20ZedGraph.PointPairList.Insert(System.Int32%2CSystem.Double%2CSystem.Double%2CSystem.Double)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/PointPairList.cs/#L373">View Source</a>
+  </span>
+  <a id="ZedGraph_PointPairList_Insert_" data-uid="ZedGraph.PointPairList.Insert*"></a>
+  <h4 id="ZedGraph_PointPairList_Insert_System_Int32_System_Double_System_Double_System_Double_" data-uid="ZedGraph.PointPairList.Insert(System.Int32,System.Double,System.Double,System.Double)">Insert(Int32, Double, Double, Double)</h4>
+  <div class="markdown level1 summary"><p>Add a single point (from values of type double ) to the <a class="xref" href="ZedGraph.PointPairList.html">PointPairList</a> at the specified,
+zero-based, index location.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Insert(int index, double x, double y, double z)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">index</span></td>
+        <td><p>The zero-based ordinal index where the point is to be added in the list.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.double">Double</a></td>
+        <td><span class="parametername">x</span></td>
+        <td><p>The X value</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.double">Double</a></td>
+        <td><span class="parametername">y</span></td>
+        <td><p>The Y value</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.double">Double</a></td>
+        <td><span class="parametername">z</span></td>
+        <td><p>The Z or lower dependent axis value</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_PointPairList_Insert_System_Int32_ZedGraph_PointPair_.md&amp;value=---%0Auid%3A%20ZedGraph.PointPairList.Insert(System.Int32%2CZedGraph.PointPair)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/PointPairList.cs/#L342">View Source</a>
+  </span>
+  <a id="ZedGraph_PointPairList_Insert_" data-uid="ZedGraph.PointPairList.Insert*"></a>
+  <h4 id="ZedGraph_PointPairList_Insert_System_Int32_ZedGraph_PointPair_" data-uid="ZedGraph.PointPairList.Insert(System.Int32,ZedGraph.PointPair)">Insert(Int32, PointPair)</h4>
+  <div class="markdown level1 summary"><p>Add a <a class="xref" href="ZedGraph.PointPair.html">PointPair</a> object to the collection at the specified,
+zero-based, index location.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Insert(int index, PointPair point)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">index</span></td>
+        <td><p>The zero-based ordinal index where the point is to be added in the list.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ZedGraph.PointPair.html">PointPair</a></td>
+        <td><span class="parametername">point</span></td>
+        <td><p>The <a class="xref" href="ZedGraph.PointPair.html">PointPair</a> object to be added.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_PointPairList_InterpolateX_System_Double_.md&amp;value=---%0Auid%3A%20ZedGraph.PointPairList.InterpolateX(System.Double)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/PointPairList.cs/#L622">View Source</a>
+  </span>
+  <a id="ZedGraph_PointPairList_InterpolateX_" data-uid="ZedGraph.PointPairList.InterpolateX*"></a>
+  <h4 id="ZedGraph_PointPairList_InterpolateX_System_Double_" data-uid="ZedGraph.PointPairList.InterpolateX(System.Double)">InterpolateX(Double)</h4>
+  <div class="markdown level1 summary"><p>Linearly interpolate the data to find an arbitraty Y value that corresponds to the specified X value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double InterpolateX(double xTarget)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.double">Double</a></td>
+        <td><span class="parametername">xTarget</span></td>
+        <td><p>The target X value on which to interpolate</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.double">Double</a></td>
+        <td><p>The Y value that corresponds to the <see paramref="xTarget"></see> value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="ZedGraph_PointPairList_InterpolateX_System_Double__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This method uses linear interpolation with a binary search algorithm.  It therefore
+requires that the x data be monotonically increasing.  Missing values are not allowed.  This
+method will extrapolate outside the range of the PointPairList if necessary.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_PointPairList_InterpolateY_System_Double_.md&amp;value=---%0Auid%3A%20ZedGraph.PointPairList.InterpolateY(System.Double)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/PointPairList.cs/#L800">View Source</a>
+  </span>
+  <a id="ZedGraph_PointPairList_InterpolateY_" data-uid="ZedGraph.PointPairList.InterpolateY*"></a>
+  <h4 id="ZedGraph_PointPairList_InterpolateY_System_Double_" data-uid="ZedGraph.PointPairList.InterpolateY(System.Double)">InterpolateY(Double)</h4>
+  <div class="markdown level1 summary"><p>Linearly interpolate the data to find an arbitraty X value that corresponds to the specified Y value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double InterpolateY(double yTarget)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.double">Double</a></td>
+        <td><span class="parametername">yTarget</span></td>
+        <td><p>The target Y value on which to interpolate</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.double">Double</a></td>
+        <td><p>The X value that corresponds to the <see paramref="yTarget"></see> value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="ZedGraph_PointPairList_InterpolateY_System_Double__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This method uses linear interpolation with a binary search algorithm.  It therefore
+requires that the Y data be monotonically increasing.  Missing values are not allowed.  This
+method will extrapolate outside the range of the PointPairList if necessary.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_PointPairList_LinearRegression_ZedGraph_IPointList_System_Int32_.md&amp;value=---%0Auid%3A%20ZedGraph.PointPairList.LinearRegression(ZedGraph.IPointList%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/PointPairList.cs/#L858">View Source</a>
+  </span>
+  <a id="ZedGraph_PointPairList_LinearRegression_" data-uid="ZedGraph.PointPairList.LinearRegression*"></a>
+  <h4 id="ZedGraph_PointPairList_LinearRegression_ZedGraph_IPointList_System_Int32_" data-uid="ZedGraph.PointPairList.LinearRegression(ZedGraph.IPointList,System.Int32)">LinearRegression(IPointList, Int32)</h4>
+  <div class="markdown level1 summary"><p>Use linear regression to form a least squares fit of an existing
+<a class="xref" href="ZedGraph.IPointList.html">IPointList</a> instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PointPairList LinearRegression(IPointList points, int pointCount)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ZedGraph.IPointList.html">IPointList</a></td>
+        <td><span class="parametername">points</span></td>
+        <td><p>An <a class="xref" href="ZedGraph.IPointList.html">IPointList</a> instance containing
+the data to be regressed.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">pointCount</span></td>
+        <td><p>The number of desired points to be included
+in the resultant <a class="xref" href="ZedGraph.PointPairList.html">PointPairList</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ZedGraph.PointPairList.html">PointPairList</a></td>
+        <td><p>A new <a class="xref" href="ZedGraph.PointPairList.html">PointPairList</a> containing the resultant
+data fit.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="ZedGraph_PointPairList_LinearRegression_ZedGraph_IPointList_System_Int32__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The output <a class="xref" href="ZedGraph.PointPairList.html">PointPairList</a> will cover the
+same X range of data as the original dataset.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_PointPairList_LinearRegression_ZedGraph_IPointList_System_Int32_System_Double_System_Double_.md&amp;value=---%0Auid%3A%20ZedGraph.PointPairList.LinearRegression(ZedGraph.IPointList%2CSystem.Int32%2CSystem.Double%2CSystem.Double)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/PointPairList.cs/#L896">View Source</a>
+  </span>
+  <a id="ZedGraph_PointPairList_LinearRegression_" data-uid="ZedGraph.PointPairList.LinearRegression*"></a>
+  <h4 id="ZedGraph_PointPairList_LinearRegression_ZedGraph_IPointList_System_Int32_System_Double_System_Double_" data-uid="ZedGraph.PointPairList.LinearRegression(ZedGraph.IPointList,System.Int32,System.Double,System.Double)">LinearRegression(IPointList, Int32, Double, Double)</h4>
+  <div class="markdown level1 summary"><p>Use linear regression to form a least squares fit of an existing
+<a class="xref" href="ZedGraph.IPointList.html">IPointList</a> instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PointPairList LinearRegression(IPointList points, int pointCount, double minX, double maxX)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ZedGraph.IPointList.html">IPointList</a></td>
+        <td><span class="parametername">points</span></td>
+        <td><p>An <a class="xref" href="ZedGraph.IPointList.html">IPointList</a> instance containing
+the data to be regressed.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">pointCount</span></td>
+        <td><p>The number of desired points to be included
+in the resultant <a class="xref" href="ZedGraph.PointPairList.html">PointPairList</a>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.double">Double</a></td>
+        <td><span class="parametername">minX</span></td>
+        <td><p>The minimum X value of the resultant
+<a class="xref" href="ZedGraph.PointPairList.html">PointPairList</a>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.double">Double</a></td>
+        <td><span class="parametername">maxX</span></td>
+        <td><p>The maximum X value of the resultant
+<a class="xref" href="ZedGraph.PointPairList.html">PointPairList</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ZedGraph.PointPairList.html">PointPairList</a></td>
+        <td><p>A new <a class="xref" href="ZedGraph.PointPairList.html">PointPairList</a> containing the resultant
+data fit.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_PointPairList_SetX_System_Double___.md&amp;value=---%0Auid%3A%20ZedGraph.PointPairList.SetX(System.Double%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/PointPairList.cs/#L511">View Source</a>
+  </span>
+  <a id="ZedGraph_PointPairList_SetX_" data-uid="ZedGraph.PointPairList.SetX*"></a>
+  <h4 id="ZedGraph_PointPairList_SetX_System_Double___" data-uid="ZedGraph.PointPairList.SetX(System.Double[])">SetX(Double[])</h4>
+  <div class="markdown level1 summary"><p>Set the X values for this <a class="xref" href="ZedGraph.PointPairList.html">PointPairList</a> from the specified
+array of double values.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetX(double[] x)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.double">Double</a>[]</td>
+        <td><span class="parametername">x</span></td>
+        <td><p>An array of double values that will replace the existing X
+values in the <a class="xref" href="ZedGraph.PointPairList.html">PointPairList</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="ZedGraph_PointPairList_SetX_System_Double____remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>If <see paramref="x"></see> has more values than
+this list, then the extra values will be ignored.  If <see paramref="x"></see>
+has less values, then the corresponding <a class="xref" href="ZedGraph.PointPairList.html">PointPairList</a> values
+will not be changed.  That is, if the <a class="xref" href="ZedGraph.PointPairList.html">PointPairList</a> has 20 values
+and <see paramref="x"></see> has 15 values, then the first 15 values of the
+<a class="xref" href="ZedGraph.PointPairList.html">PointPairList</a> will be changed, and the last 5 values will not be
+changed.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_PointPairList_SetY_System_Double___.md&amp;value=---%0Auid%3A%20ZedGraph.PointPairList.SetY(System.Double%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/PointPairList.cs/#L537">View Source</a>
+  </span>
+  <a id="ZedGraph_PointPairList_SetY_" data-uid="ZedGraph.PointPairList.SetY*"></a>
+  <h4 id="ZedGraph_PointPairList_SetY_System_Double___" data-uid="ZedGraph.PointPairList.SetY(System.Double[])">SetY(Double[])</h4>
+  <div class="markdown level1 summary"><p>Set the Y values for this <a class="xref" href="ZedGraph.PointPairList.html">PointPairList</a> from the specified
+array of double values.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetY(double[] y)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.double">Double</a>[]</td>
+        <td><span class="parametername">y</span></td>
+        <td><p>An array of double values that will replace the existing Y
+values in the <a class="xref" href="ZedGraph.PointPairList.html">PointPairList</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="ZedGraph_PointPairList_SetY_System_Double____remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>If <see paramref="y"></see> has more values than
+this list, then the extra values will be ignored.  If <see paramref="y"></see>
+has less values, then the corresponding <a class="xref" href="ZedGraph.PointPairList.html">PointPairList</a> values
+will not be changed.  That is, if the <a class="xref" href="ZedGraph.PointPairList.html">PointPairList</a> has 20 values
+and <see paramref="y"></see> has 15 values, then the first 15 values of the
+<a class="xref" href="ZedGraph.PointPairList.html">PointPairList</a> will be changed, and the last 5 values will not be
+changed.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_PointPairList_SetZ_System_Double___.md&amp;value=---%0Auid%3A%20ZedGraph.PointPairList.SetZ(System.Double%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/PointPairList.cs/#L563">View Source</a>
+  </span>
+  <a id="ZedGraph_PointPairList_SetZ_" data-uid="ZedGraph.PointPairList.SetZ*"></a>
+  <h4 id="ZedGraph_PointPairList_SetZ_System_Double___" data-uid="ZedGraph.PointPairList.SetZ(System.Double[])">SetZ(Double[])</h4>
+  <div class="markdown level1 summary"><p>Set the Z values for this <a class="xref" href="ZedGraph.PointPairList.html">PointPairList</a> from the specified
+array of double values.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetZ(double[] z)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.double">Double</a>[]</td>
+        <td><span class="parametername">z</span></td>
+        <td><p>An array of double values that will replace the existing Z
+values in the <a class="xref" href="ZedGraph.PointPairList.html">PointPairList</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="ZedGraph_PointPairList_SetZ_System_Double____remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>If <see paramref="z"></see> has more values than
+this list, then the extra values will be ignored.  If <see paramref="z"></see>
+has less values, then the corresponding <a class="xref" href="ZedGraph.PointPairList.html">PointPairList</a> values
+will not be changed.  That is, if the <a class="xref" href="ZedGraph.PointPairList.html">PointPairList</a> has 20 values
+and <see paramref="z"></see> has 15 values, then the first 15 values of the
+<a class="xref" href="ZedGraph.PointPairList.html">PointPairList</a> will be changed, and the last 5 values will not be
+changed.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_PointPairList_Sort.md&amp;value=---%0Auid%3A%20ZedGraph.PointPairList.Sort%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/PointPairList.cs/#L467">View Source</a>
+  </span>
+  <a id="ZedGraph_PointPairList_Sort_" data-uid="ZedGraph.PointPairList.Sort*"></a>
+  <h4 id="ZedGraph_PointPairList_Sort" data-uid="ZedGraph.PointPairList.Sort">Sort()</h4>
+  <div class="markdown level1 summary"><p>Sorts the list according to the point x values. Will not sort the
+list if the list is already sorted.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Sort()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><p>If the list was sorted before sort was called</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_PointPairList_Sort_ZedGraph_SortType_.md&amp;value=---%0Auid%3A%20ZedGraph.PointPairList.Sort(ZedGraph.SortType)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/PointPairList.cs/#L485">View Source</a>
+  </span>
+  <a id="ZedGraph_PointPairList_Sort_" data-uid="ZedGraph.PointPairList.Sort*"></a>
+  <h4 id="ZedGraph_PointPairList_Sort_ZedGraph_SortType_" data-uid="ZedGraph.PointPairList.Sort(ZedGraph.SortType)">Sort(SortType)</h4>
+  <div class="markdown level1 summary"><p>Sorts the list according to the point values . Will not sort the
+list if the list is already sorted.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Sort(SortType type)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ZedGraph.SortType.html">SortType</a></td>
+        <td><span class="parametername">type</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><p>If the list was sorted before sort was called</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_PointPairList_SplineInterpolateX_System_Double_System_Double_.md&amp;value=---%0Auid%3A%20ZedGraph.PointPairList.SplineInterpolateX(System.Double%2CSystem.Double)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/PointPairList.cs/#L685">View Source</a>
+  </span>
+  <a id="ZedGraph_PointPairList_SplineInterpolateX_" data-uid="ZedGraph.PointPairList.SplineInterpolateX*"></a>
+  <h4 id="ZedGraph_PointPairList_SplineInterpolateX_System_Double_System_Double_" data-uid="ZedGraph.PointPairList.SplineInterpolateX(System.Double,System.Double)">SplineInterpolateX(Double, Double)</h4>
+  <div class="markdown level1 summary"><p>Use Cardinal Splines to Interpolate the data to find an arbitraty Y value that corresponds to
+the specified X value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double SplineInterpolateX(double xTarget, double tension)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.double">Double</a></td>
+        <td><span class="parametername">xTarget</span></td>
+        <td><p>The target X value on which to interpolate</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.double">Double</a></td>
+        <td><span class="parametername">tension</span></td>
+        <td><p>The tension setting that controls the curvature of the spline fit.
+Typical values are between 0 and 1, where 0 is a linear fit, and 1 is lots of &quot;roundness&quot;.
+Values greater than 1 may give odd results.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.double">Double</a></td>
+        <td><p>The Y value that corresponds to the <see paramref="xTarget"></see> value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="ZedGraph_PointPairList_SplineInterpolateX_System_Double_System_Double__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This method uses cardinal spline interpolation with a binary search algorithm.  It therefore
+requires that the x data be monotonically increasing.  Missing values are not allowed.  This
+method will not extrapolate outside the range of the PointPairList (it returns
+<a class="xref" href="ZedGraph.PointPairBase.html#ZedGraph_PointPairBase_Missing">Missing</a> if extrapolation would be required).  WARNING: Cardinal
+spline interpolation can generate curves with non-unique X values for higher tension
+settings.  That is, there may be multiple X values for the same Y value.  This routine
+follows the path of the spline curve until it reaches the FIRST OCCURRENCE of the
+target X value.  It does not check to see if other solutions are possible.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_PointPairList_SumX_ZedGraph_PointPairList_.md&amp;value=---%0Auid%3A%20ZedGraph.PointPairList.SumX(ZedGraph.PointPairList)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/PointPairList.cs/#L601">View Source</a>
+  </span>
+  <a id="ZedGraph_PointPairList_SumX_" data-uid="ZedGraph.PointPairList.SumX*"></a>
+  <h4 id="ZedGraph_PointPairList_SumX_ZedGraph_PointPairList_" data-uid="ZedGraph.PointPairList.SumX(ZedGraph.PointPairList)">SumX(PointPairList)</h4>
+  <div class="markdown level1 summary"><p>Add the X values from the specified <a class="xref" href="ZedGraph.PointPairList.html">PointPairList</a> object to this
+<a class="xref" href="ZedGraph.PointPairList.html">PointPairList</a>.  If <see paramref="sumList"></see> has more values than
+this list, then the extra values will be ignored.  If <see paramref="sumList"></see>
+has less values, the missing values are assumed to be zero.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SumX(PointPairList sumList)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ZedGraph.PointPairList.html">PointPairList</a></td>
+        <td><span class="parametername">sumList</span></td>
+        <td><p>A reference to the <a class="xref" href="ZedGraph.PointPairList.html">PointPairList</a> object to
+be summed into the this <a class="xref" href="ZedGraph.PointPairList.html">PointPairList</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_PointPairList_SumY_ZedGraph_PointPairList_.md&amp;value=---%0Auid%3A%20ZedGraph.PointPairList.SumY(ZedGraph.PointPairList)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/PointPairList.cs/#L582">View Source</a>
+  </span>
+  <a id="ZedGraph_PointPairList_SumY_" data-uid="ZedGraph.PointPairList.SumY*"></a>
+  <h4 id="ZedGraph_PointPairList_SumY_ZedGraph_PointPairList_" data-uid="ZedGraph.PointPairList.SumY(ZedGraph.PointPairList)">SumY(PointPairList)</h4>
+  <div class="markdown level1 summary"><p>Add the Y values from the specified <a class="xref" href="ZedGraph.PointPairList.html">PointPairList</a> object to this
+<a class="xref" href="ZedGraph.PointPairList.html">PointPairList</a>.  If <see paramref="sumList"></see> has more values than
+this list, then the extra values will be ignored.  If <see paramref="sumList"></see>
+has less values, the missing values are assumed to be zero.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SumY(PointPairList sumList)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ZedGraph.PointPairList.html">PointPairList</a></td>
+        <td><span class="parametername">sumList</span></td>
+        <td><p>A reference to the <a class="xref" href="ZedGraph.PointPairList.html">PointPairList</a> object to
+be summed into the this <a class="xref" href="ZedGraph.PointPairList.html">PointPairList</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="eii">Explicit Interface Implementations
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_PointPairList_System_ICloneable_Clone.md&amp;value=---%0Auid%3A%20ZedGraph.PointPairList.System%23ICloneable%23Clone%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/PointPairList.cs/#L131">View Source</a>
+  </span>
+  <a id="ZedGraph_PointPairList_System_ICloneable_Clone_" data-uid="ZedGraph.PointPairList.System#ICloneable#Clone*"></a>
+  <h4 id="ZedGraph_PointPairList_System_ICloneable_Clone" data-uid="ZedGraph.PointPairList.System#ICloneable#Clone">ICloneable.Clone()</h4>
+  <div class="markdown level1 summary"><p>Implement the <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.icloneable">ICloneable</a> interface in a typesafe manner by just
+calling the typed version of <a class="xref" href="ZedGraph.PointPairList.html#ZedGraph_PointPairList_Clone">Clone()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">object ICloneable.Clone()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></td>
+        <td><p>A deep copy of this object</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ilist-1">System.Collections.Generic.IList&lt;T&gt;</a>
+  </div>
+  <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.icollection-1">System.Collections.Generic.ICollection&lt;T&gt;</a>
+  </div>
+  <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">System.Collections.Generic.IEnumerable&lt;T&gt;</a>
+  </div>
+  <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.ilist">System.Collections.IList</a>
+  </div>
+  <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.icollection">System.Collections.ICollection</a>
+  </div>
+  <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.ienumerable">System.Collections.IEnumerable</a>
+  </div>
+  <div>
+      <a class="xref" href="ZedGraph.IPointListEdit.html">IPointListEdit</a>
+  </div>
+  <div>
+      <a class="xref" href="ZedGraph.IPointList.html">IPointList</a>
+  </div>
+  <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.icloneable">System.ICloneable</a>
+  </div>
+  <h3 id="seealso">See Also</h3>
+  <div class="seealso">
+      <div><a class="xref" href="ZedGraph.BasicArrayPointList.html">BasicArrayPointList</a></div>
+      <div><a class="xref" href="ZedGraph.IPointList.html">IPointList</a></div>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_PointPairList.md&amp;value=---%0Auid%3A%20ZedGraph.PointPairList%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/PointPairList.cs/#L36" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

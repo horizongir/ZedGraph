@@ -1,0 +1,855 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class GraphObjList
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class GraphObjList
+   ">
+    <meta name="generator" content="docfx 2.56.7.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="ZedGraph.GraphObjList">
+  
+  
+  <h1 id="ZedGraph_GraphObjList" data-uid="ZedGraph.GraphObjList" class="text-break">Class GraphObjList
+  </h1>
+  <div class="markdown level0 summary"><p>A collection class containing a list of <a class="xref" href="ZedGraph.TextObj.html">TextObj</a> objects
+to be displayed on the graph.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
+    <div class="level1"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="ZedGraph.GraphObj.html">GraphObj</a>&gt;</div>
+    <div class="level2"><span class="xref">GraphObjList</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList</a>&lt;<a class="xref" href="ZedGraph.GraphObj.html">GraphObj</a>&gt;</div>
+    <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.icollection-1">ICollection</a>&lt;<a class="xref" href="ZedGraph.GraphObj.html">GraphObj</a>&gt;</div>
+    <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="ZedGraph.GraphObj.html">GraphObj</a>&gt;</div>
+    <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.ilist">IList</a></div>
+    <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.icollection">ICollection</a></div>
+    <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.ienumerable">IEnumerable</a></div>
+    <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.icloneable">ICloneable</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Collections.Generic.List&lt;ZedGraph.GraphObj&gt;.System.Collections.IList.get_Item(System.Int32)</span>
+    </div>
+    <div>
+      <span class="xref">System.Collections.Generic.List&lt;ZedGraph.GraphObj&gt;.System.Collections.IList.set_Item(System.Int32, System.Object)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.add#System_Collections_Generic_List_1_Add__0_">List&lt;GraphObj&gt;.Add(GraphObj)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.addrange#System_Collections_Generic_List_1_AddRange_System_Collections_Generic_IEnumerable__0__">List&lt;GraphObj&gt;.AddRange(IEnumerable&lt;GraphObj&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.asreadonly#System_Collections_Generic_List_1_AsReadOnly">List&lt;GraphObj&gt;.AsReadOnly()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.binarysearch#System_Collections_Generic_List_1_BinarySearch_System_Int32_System_Int32__0_System_Collections_Generic_IComparer__0__">List&lt;GraphObj&gt;.BinarySearch(Int32, Int32, GraphObj, IComparer&lt;GraphObj&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.binarysearch#System_Collections_Generic_List_1_BinarySearch__0_">List&lt;GraphObj&gt;.BinarySearch(GraphObj)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.binarysearch#System_Collections_Generic_List_1_BinarySearch__0_System_Collections_Generic_IComparer__0__">List&lt;GraphObj&gt;.BinarySearch(GraphObj, IComparer&lt;GraphObj&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.clear#System_Collections_Generic_List_1_Clear">List&lt;GraphObj&gt;.Clear()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.contains#System_Collections_Generic_List_1_Contains__0_">List&lt;GraphObj&gt;.Contains(GraphObj)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.convertall#System_Collections_Generic_List_1_ConvertAll__1_System_Converter__0___0__">List&lt;GraphObj&gt;.ConvertAll&lt;TOutput&gt;(Converter&lt;GraphObj, TOutput&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.copyto#System_Collections_Generic_List_1_CopyTo_System_Int32__0___System_Int32_System_Int32_">List&lt;GraphObj&gt;.CopyTo(Int32, GraphObj[], Int32, Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.copyto#System_Collections_Generic_List_1_CopyTo__0___">List&lt;GraphObj&gt;.CopyTo(GraphObj[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.copyto#System_Collections_Generic_List_1_CopyTo__0___System_Int32_">List&lt;GraphObj&gt;.CopyTo(GraphObj[], Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.exists#System_Collections_Generic_List_1_Exists_System_Predicate__0__">List&lt;GraphObj&gt;.Exists(Predicate&lt;GraphObj&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.find#System_Collections_Generic_List_1_Find_System_Predicate__0__">List&lt;GraphObj&gt;.Find(Predicate&lt;GraphObj&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.findall#System_Collections_Generic_List_1_FindAll_System_Predicate__0__">List&lt;GraphObj&gt;.FindAll(Predicate&lt;GraphObj&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.findindex#System_Collections_Generic_List_1_FindIndex_System_Int32_System_Int32_System_Predicate__0__">List&lt;GraphObj&gt;.FindIndex(Int32, Int32, Predicate&lt;GraphObj&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.findindex#System_Collections_Generic_List_1_FindIndex_System_Int32_System_Predicate__0__">List&lt;GraphObj&gt;.FindIndex(Int32, Predicate&lt;GraphObj&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.findindex#System_Collections_Generic_List_1_FindIndex_System_Predicate__0__">List&lt;GraphObj&gt;.FindIndex(Predicate&lt;GraphObj&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.findlast#System_Collections_Generic_List_1_FindLast_System_Predicate__0__">List&lt;GraphObj&gt;.FindLast(Predicate&lt;GraphObj&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.findlastindex#System_Collections_Generic_List_1_FindLastIndex_System_Int32_System_Int32_System_Predicate__0__">List&lt;GraphObj&gt;.FindLastIndex(Int32, Int32, Predicate&lt;GraphObj&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.findlastindex#System_Collections_Generic_List_1_FindLastIndex_System_Int32_System_Predicate__0__">List&lt;GraphObj&gt;.FindLastIndex(Int32, Predicate&lt;GraphObj&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.findlastindex#System_Collections_Generic_List_1_FindLastIndex_System_Predicate__0__">List&lt;GraphObj&gt;.FindLastIndex(Predicate&lt;GraphObj&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.foreach#System_Collections_Generic_List_1_ForEach_System_Action__0__">List&lt;GraphObj&gt;.ForEach(Action&lt;GraphObj&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.getenumerator#System_Collections_Generic_List_1_GetEnumerator">List&lt;GraphObj&gt;.GetEnumerator()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.getrange#System_Collections_Generic_List_1_GetRange_System_Int32_System_Int32_">List&lt;GraphObj&gt;.GetRange(Int32, Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.indexof#System_Collections_Generic_List_1_IndexOf__0_">List&lt;GraphObj&gt;.IndexOf(GraphObj)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.indexof#System_Collections_Generic_List_1_IndexOf__0_System_Int32_">List&lt;GraphObj&gt;.IndexOf(GraphObj, Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.indexof#System_Collections_Generic_List_1_IndexOf__0_System_Int32_System_Int32_">List&lt;GraphObj&gt;.IndexOf(GraphObj, Int32, Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.insert#System_Collections_Generic_List_1_Insert_System_Int32__0_">List&lt;GraphObj&gt;.Insert(Int32, GraphObj)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.insertrange#System_Collections_Generic_List_1_InsertRange_System_Int32_System_Collections_Generic_IEnumerable__0__">List&lt;GraphObj&gt;.InsertRange(Int32, IEnumerable&lt;GraphObj&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.lastindexof#System_Collections_Generic_List_1_LastIndexOf__0_">List&lt;GraphObj&gt;.LastIndexOf(GraphObj)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.lastindexof#System_Collections_Generic_List_1_LastIndexOf__0_System_Int32_">List&lt;GraphObj&gt;.LastIndexOf(GraphObj, Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.lastindexof#System_Collections_Generic_List_1_LastIndexOf__0_System_Int32_System_Int32_">List&lt;GraphObj&gt;.LastIndexOf(GraphObj, Int32, Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.remove#System_Collections_Generic_List_1_Remove__0_">List&lt;GraphObj&gt;.Remove(GraphObj)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.removeall#System_Collections_Generic_List_1_RemoveAll_System_Predicate__0__">List&lt;GraphObj&gt;.RemoveAll(Predicate&lt;GraphObj&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.removeat#System_Collections_Generic_List_1_RemoveAt_System_Int32_">List&lt;GraphObj&gt;.RemoveAt(Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.removerange#System_Collections_Generic_List_1_RemoveRange_System_Int32_System_Int32_">List&lt;GraphObj&gt;.RemoveRange(Int32, Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.reverse#System_Collections_Generic_List_1_Reverse">List&lt;GraphObj&gt;.Reverse()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.reverse#System_Collections_Generic_List_1_Reverse_System_Int32_System_Int32_">List&lt;GraphObj&gt;.Reverse(Int32, Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.sort#System_Collections_Generic_List_1_Sort">List&lt;GraphObj&gt;.Sort()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.sort#System_Collections_Generic_List_1_Sort_System_Collections_Generic_IComparer__0__">List&lt;GraphObj&gt;.Sort(IComparer&lt;GraphObj&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.sort#System_Collections_Generic_List_1_Sort_System_Comparison__0__">List&lt;GraphObj&gt;.Sort(Comparison&lt;GraphObj&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.sort#System_Collections_Generic_List_1_Sort_System_Int32_System_Int32_System_Collections_Generic_IComparer__0__">List&lt;GraphObj&gt;.Sort(Int32, Int32, IComparer&lt;GraphObj&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.system-collections-generic-ienumerable-t--getenumerator#System_Collections_Generic_List_1_System_Collections_Generic_IEnumerable_T__GetEnumerator">List&lt;GraphObj&gt;.IEnumerable&lt;GraphObj&gt;.GetEnumerator()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.system-collections-icollection-copyto#System_Collections_Generic_List_1_System_Collections_ICollection_CopyTo_System_Array_System_Int32_">List&lt;GraphObj&gt;.ICollection.CopyTo(Array, Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.system-collections-ienumerable-getenumerator#System_Collections_Generic_List_1_System_Collections_IEnumerable_GetEnumerator">List&lt;GraphObj&gt;.IEnumerable.GetEnumerator()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.system-collections-ilist-add#System_Collections_Generic_List_1_System_Collections_IList_Add_System_Object_">List&lt;GraphObj&gt;.IList.Add(Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.system-collections-ilist-contains#System_Collections_Generic_List_1_System_Collections_IList_Contains_System_Object_">List&lt;GraphObj&gt;.IList.Contains(Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.system-collections-ilist-indexof#System_Collections_Generic_List_1_System_Collections_IList_IndexOf_System_Object_">List&lt;GraphObj&gt;.IList.IndexOf(Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.system-collections-ilist-insert#System_Collections_Generic_List_1_System_Collections_IList_Insert_System_Int32_System_Object_">List&lt;GraphObj&gt;.IList.Insert(Int32, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.system-collections-ilist-remove#System_Collections_Generic_List_1_System_Collections_IList_Remove_System_Object_">List&lt;GraphObj&gt;.IList.Remove(Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.toarray#System_Collections_Generic_List_1_ToArray">List&lt;GraphObj&gt;.ToArray()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.trimexcess#System_Collections_Generic_List_1_TrimExcess">List&lt;GraphObj&gt;.TrimExcess()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.trueforall#System_Collections_Generic_List_1_TrueForAll_System_Predicate__0__">List&lt;GraphObj&gt;.TrueForAll(Predicate&lt;GraphObj&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.capacity#System_Collections_Generic_List_1_Capacity">List&lt;GraphObj&gt;.Capacity</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.count#System_Collections_Generic_List_1_Count">List&lt;GraphObj&gt;.Count</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.item#System_Collections_Generic_List_1_Item_System_Int32_">List&lt;GraphObj&gt;.Item[Int32]</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.system-collections-generic-icollection-t--isreadonly#System_Collections_Generic_List_1_System_Collections_Generic_ICollection_T__IsReadOnly">List&lt;GraphObj&gt;.ICollection&lt;GraphObj&gt;.IsReadOnly</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.system-collections-icollection-issynchronized#System_Collections_Generic_List_1_System_Collections_ICollection_IsSynchronized">List&lt;GraphObj&gt;.ICollection.IsSynchronized</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.system-collections-icollection-syncroot#System_Collections_Generic_List_1_System_Collections_ICollection_SyncRoot">List&lt;GraphObj&gt;.ICollection.SyncRoot</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.system-collections-ilist-isfixedsize#System_Collections_Generic_List_1_System_Collections_IList_IsFixedSize">List&lt;GraphObj&gt;.IList.IsFixedSize</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.system-collections-ilist-isreadonly#System_Collections_Generic_List_1_System_Collections_IList_IsReadOnly">List&lt;GraphObj&gt;.IList.IsReadOnly</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.system-collections-ilist-item#System_Collections_Generic_List_1_System_Collections_IList_Item_System_Int32_">List&lt;GraphObj&gt;.IList.Item[Int32]</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#System_Object_Equals_System_Object_">Object.Equals(Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#System_Object_Equals_System_Object_System_Object_">Object.Equals(Object, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gethashcode#System_Object_GetHashCode">Object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gettype#System_Object_GetType">Object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.memberwiseclone#System_Object_MemberwiseClone">Object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.referenceequals#System_Object_ReferenceEquals_System_Object_System_Object_">Object.ReferenceEquals(Object, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.tostring#System_Object_ToString">Object.ToString()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="ZedGraph.html">ZedGraph</a></h6>
+  <h6><strong>Assembly</strong>: ZedGraph.dll</h6>
+  <h5 id="ZedGraph_GraphObjList_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Serializable]
+public class GraphObjList : List&lt;GraphObj&gt;, IList&lt;GraphObj&gt;, ICollection&lt;GraphObj&gt;, IEnumerable&lt;GraphObj&gt;, IList, ICollection, IEnumerable, ICloneable</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_GraphObjList__ctor.md&amp;value=---%0Auid%3A%20ZedGraph.GraphObjList.%23ctor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/GraphObjList.cs/#L40">View Source</a>
+  </span>
+  <a id="ZedGraph_GraphObjList__ctor_" data-uid="ZedGraph.GraphObjList.#ctor*"></a>
+  <h4 id="ZedGraph_GraphObjList__ctor" data-uid="ZedGraph.GraphObjList.#ctor">GraphObjList()</h4>
+  <div class="markdown level1 summary"><p>Default constructor for the <a class="xref" href="ZedGraph.GraphObjList.html">GraphObjList</a> collection class</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GraphObjList()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_GraphObjList__ctor_ZedGraph_GraphObjList_.md&amp;value=---%0Auid%3A%20ZedGraph.GraphObjList.%23ctor(ZedGraph.GraphObjList)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/GraphObjList.cs/#L48">View Source</a>
+  </span>
+  <a id="ZedGraph_GraphObjList__ctor_" data-uid="ZedGraph.GraphObjList.#ctor*"></a>
+  <h4 id="ZedGraph_GraphObjList__ctor_ZedGraph_GraphObjList_" data-uid="ZedGraph.GraphObjList.#ctor(ZedGraph.GraphObjList)">GraphObjList(GraphObjList)</h4>
+  <div class="markdown level1 summary"><p>The Copy Constructor</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GraphObjList(GraphObjList rhs)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ZedGraph.GraphObjList.html">GraphObjList</a></td>
+        <td><span class="parametername">rhs</span></td>
+        <td><p>The <a class="xref" href="ZedGraph.GraphObjList.html">GraphObjList</a> object from which to copy</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_GraphObjList_Item_System_String_.md&amp;value=---%0Auid%3A%20ZedGraph.GraphObjList.Item(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/GraphObjList.cs/#L99">View Source</a>
+  </span>
+  <a id="ZedGraph_GraphObjList_Item_" data-uid="ZedGraph.GraphObjList.Item*"></a>
+  <h4 id="ZedGraph_GraphObjList_Item_System_String_" data-uid="ZedGraph.GraphObjList.Item(System.String)">Item[String]</h4>
+  <div class="markdown level1 summary"><p>Indexer to access the specified <a class="xref" href="ZedGraph.GraphObj.html">GraphObj</a> object by its <a class="xref" href="ZedGraph.GraphObj.html#ZedGraph_GraphObj_Tag">Tag</a>.
+Note that the <a class="xref" href="ZedGraph.GraphObj.html#ZedGraph_GraphObj_Tag">Tag</a> must be a <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a> type for this method
+to work.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GraphObj this[string tag] { get; }</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">tag</span></td>
+        <td><p>The <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a> type tag to search for.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ZedGraph.GraphObj.html">GraphObj</a></td>
+        <td><p>A <a class="xref" href="ZedGraph.GraphObj.html">GraphObj</a> object reference.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="ZedGraph_GraphObjList_Item_System_String__seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="ZedGraph.GraphObjList.html#ZedGraph_GraphObjList_IndexOfTag_System_String_">IndexOfTag(String)</a></div>
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_GraphObjList_Clone.md&amp;value=---%0Auid%3A%20ZedGraph.GraphObjList.Clone%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/GraphObjList.cs/#L68">View Source</a>
+  </span>
+  <a id="ZedGraph_GraphObjList_Clone_" data-uid="ZedGraph.GraphObjList.Clone*"></a>
+  <h4 id="ZedGraph_GraphObjList_Clone" data-uid="ZedGraph.GraphObjList.Clone">Clone()</h4>
+  <div class="markdown level1 summary"><p>Typesafe, deep-copy clone method.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GraphObjList Clone()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ZedGraph.GraphObjList.html">GraphObjList</a></td>
+        <td><p>A new, independent copy of this class</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_GraphObjList_Draw_System_Drawing_Graphics_ZedGraph_PaneBase_System_Single_ZedGraph_ZOrder_.md&amp;value=---%0Auid%3A%20ZedGraph.GraphObjList.Draw(System.Drawing.Graphics%2CZedGraph.PaneBase%2CSystem.Single%2CZedGraph.ZOrder)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/GraphObjList.cs/#L229">View Source</a>
+  </span>
+  <a id="ZedGraph_GraphObjList_Draw_" data-uid="ZedGraph.GraphObjList.Draw*"></a>
+  <h4 id="ZedGraph_GraphObjList_Draw_System_Drawing_Graphics_ZedGraph_PaneBase_System_Single_ZedGraph_ZOrder_" data-uid="ZedGraph.GraphObjList.Draw(System.Drawing.Graphics,ZedGraph.PaneBase,System.Single,ZedGraph.ZOrder)">Draw(Graphics, PaneBase, Single, ZOrder)</h4>
+  <div class="markdown level1 summary"><p>Render text to the specified <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.drawing.graphics">Graphics</a> device
+by calling the Draw method of each <a class="xref" href="ZedGraph.GraphObj.html">GraphObj</a> object in
+the collection.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Draw(Graphics g, PaneBase pane, float scaleFactor, ZOrder zOrder)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.drawing.graphics">Graphics</a></td>
+        <td><span class="parametername">g</span></td>
+        <td><p>A graphic device object to be drawn into.  This is normally e.Graphics from the
+PaintEventArgs argument to the Paint() method.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ZedGraph.PaneBase.html">PaneBase</a></td>
+        <td><span class="parametername">pane</span></td>
+        <td><p>A reference to the <a class="xref" href="ZedGraph.PaneBase.html">PaneBase</a> object that is the parent or
+owner of this object.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td><span class="parametername">scaleFactor</span></td>
+        <td><p>The scaling factor to be used for rendering objects.  This is calculated and
+passed down by the parent <a class="xref" href="ZedGraph.GraphPane.html">GraphPane</a> object using the
+<a class="xref" href="ZedGraph.PaneBase.html#ZedGraph_PaneBase_CalcScaleFactor">CalcScaleFactor()</a> method, and is used to proportionally adjust
+font sizes, etc. according to the actual size of the graph.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ZedGraph.ZOrder.html">ZOrder</a></td>
+        <td><span class="parametername">zOrder</span></td>
+        <td><p>A <a class="xref" href="ZedGraph.ZOrder.html">ZOrder</a> enumeration that controls
+the placement of this <a class="xref" href="ZedGraph.GraphObj.html">GraphObj</a> relative to other
+graphic objects.  The order of <a class="xref" href="ZedGraph.GraphObj.html">GraphObj</a>'s with the
+same <a class="xref" href="ZedGraph.ZOrder.html">ZOrder</a> value is control by their order in
+this <a class="xref" href="ZedGraph.GraphObjList.html">GraphObjList</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="ZedGraph_GraphObjList_Draw_System_Drawing_Graphics_ZedGraph_PaneBase_System_Single_ZedGraph_ZOrder__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This method is normally only called by the Draw method
+of the parent <a class="xref" href="ZedGraph.GraphPane.html">GraphPane</a> object.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_GraphObjList_FindPoint_System_Drawing_PointF_ZedGraph_PaneBase_System_Drawing_Graphics_System_Single_System_Int32__.md&amp;value=---%0Auid%3A%20ZedGraph.GraphObjList.FindPoint(System.Drawing.PointF%2CZedGraph.PaneBase%2CSystem.Drawing.Graphics%2CSystem.Single%2CSystem.Int32%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/GraphObjList.cs/#L281">View Source</a>
+  </span>
+  <a id="ZedGraph_GraphObjList_FindPoint_" data-uid="ZedGraph.GraphObjList.FindPoint*"></a>
+  <h4 id="ZedGraph_GraphObjList_FindPoint_System_Drawing_PointF_ZedGraph_PaneBase_System_Drawing_Graphics_System_Single_System_Int32__" data-uid="ZedGraph.GraphObjList.FindPoint(System.Drawing.PointF,ZedGraph.PaneBase,System.Drawing.Graphics,System.Single,System.Int32@)">FindPoint(PointF, PaneBase, Graphics, Single, out Int32)</h4>
+  <div class="markdown level1 summary"><p>Determine if a mouse point is within any <a class="xref" href="ZedGraph.GraphObj.html">GraphObj</a>, and if so,
+return the index number of the the <a class="xref" href="ZedGraph.GraphObj.html">GraphObj</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool FindPoint(PointF mousePt, PaneBase pane, Graphics g, float scaleFactor, out int index)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.drawing.pointf">PointF</a></td>
+        <td><span class="parametername">mousePt</span></td>
+        <td><p>The screen point, in pixel coordinates.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ZedGraph.PaneBase.html">PaneBase</a></td>
+        <td><span class="parametername">pane</span></td>
+        <td><p>A reference to the <a class="xref" href="ZedGraph.PaneBase.html">PaneBase</a> object that is the parent or
+owner of this object.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.drawing.graphics">Graphics</a></td>
+        <td><span class="parametername">g</span></td>
+        <td><p>A graphic device object to be drawn into.  This is normally e.Graphics from the
+PaintEventArgs argument to the Paint() method.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td><span class="parametername">scaleFactor</span></td>
+        <td><p>The scaling factor to be used for rendering objects.  This is calculated and
+passed down by the parent <a class="xref" href="ZedGraph.GraphPane.html">GraphPane</a> object using the
+<a class="xref" href="ZedGraph.PaneBase.html#ZedGraph_PaneBase_CalcScaleFactor">CalcScaleFactor()</a> method, and is used to proportionally adjust
+font sizes, etc. according to the actual size of the graph.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">index</span></td>
+        <td><p>The index number of the <a class="xref" href="ZedGraph.TextObj.html">TextObj</a>
+that is under the mouse point.  The <a class="xref" href="ZedGraph.TextObj.html">TextObj</a> object is
+accessible via the <a class="xref" href="ZedGraph.GraphObjList.html">GraphObjList</a> indexer property.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><p>true if the mouse point is within a <a class="xref" href="ZedGraph.GraphObj.html">GraphObj</a> bounding
+box, false otherwise.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="ZedGraph_GraphObjList_FindPoint_System_Drawing_PointF_ZedGraph_PaneBase_System_Drawing_Graphics_System_Single_System_Int32___seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="ZedGraph.GraphPane.html#ZedGraph_GraphPane_FindNearestObject_System_Drawing_PointF_System_Drawing_Graphics_System_Object__System_Int32__">FindNearestObject(PointF, Graphics, out Object, out Int32)</a></div>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_GraphObjList_IndexOfTag_System_String_.md&amp;value=---%0Auid%3A%20ZedGraph.GraphObjList.IndexOfTag(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/GraphObjList.cs/#L149">View Source</a>
+  </span>
+  <a id="ZedGraph_GraphObjList_IndexOfTag_" data-uid="ZedGraph.GraphObjList.IndexOfTag*"></a>
+  <h4 id="ZedGraph_GraphObjList_IndexOfTag_System_String_" data-uid="ZedGraph.GraphObjList.IndexOfTag(System.String)">IndexOfTag(String)</h4>
+  <div class="markdown level1 summary"><p>Return the zero-based position index of the
+<a class="xref" href="ZedGraph.GraphObj.html">GraphObj</a> with the specified <a class="xref" href="ZedGraph.GraphObj.html#ZedGraph_GraphObj_Tag">Tag</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int IndexOfTag(string tag)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">tag</span></td>
+        <td><p>The <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a> tag that is in the
+<a class="xref" href="ZedGraph.GraphObj.html#ZedGraph_GraphObj_Tag">Tag</a> attribute of the item to be found.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><p>The zero-based index of the specified <a class="xref" href="ZedGraph.GraphObj.html">GraphObj</a>,
+or -1 if the <a class="xref" href="ZedGraph.GraphObj.html">GraphObj</a> is not in the list</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="ZedGraph_GraphObjList_IndexOfTag_System_String__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>In order for this method to work, the <a class="xref" href="ZedGraph.GraphObj.html#ZedGraph_GraphObj_Tag">Tag</a>
+property must be of type <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_GraphObjList_Move_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20ZedGraph.GraphObjList.Move(System.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/GraphObjList.cs/#L180">View Source</a>
+  </span>
+  <a id="ZedGraph_GraphObjList_Move_" data-uid="ZedGraph.GraphObjList.Move*"></a>
+  <h4 id="ZedGraph_GraphObjList_Move_System_Int32_System_Int32_" data-uid="ZedGraph.GraphObjList.Move(System.Int32,System.Int32)">Move(Int32, Int32)</h4>
+  <div class="markdown level1 summary"><p>Move the position of the object at the specified index
+to the new relative position in the list.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Move(int index, int relativePos)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">index</span></td>
+        <td><p>The zero-based index of the object
+to be moved.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">relativePos</span></td>
+        <td><p>The relative number of positions to move
+the object.  A value of -1 will move the
+object one position earlier in the list, a value
+of 1 will move it one position later.  To move an item to the
+beginning of the list, use a large negative value (such as -999).
+To move it to the end of the list, use a large positive value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><p>The new position for the object, or -1 if the object
+was not found.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="ZedGraph_GraphObjList_Move_System_Int32_System_Int32__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>For Graphic type objects, this method controls the
+Z-Order of the items.  Objects at the beginning of the list
+appear in front of objects at the end of the list.</p>
+</div>
+  <h3 id="eii">Explicit Interface Implementations
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_GraphObjList_System_ICloneable_Clone.md&amp;value=---%0Auid%3A%20ZedGraph.GraphObjList.System%23ICloneable%23Clone%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/GraphObjList.cs/#L59">View Source</a>
+  </span>
+  <a id="ZedGraph_GraphObjList_System_ICloneable_Clone_" data-uid="ZedGraph.GraphObjList.System#ICloneable#Clone*"></a>
+  <h4 id="ZedGraph_GraphObjList_System_ICloneable_Clone" data-uid="ZedGraph.GraphObjList.System#ICloneable#Clone">ICloneable.Clone()</h4>
+  <div class="markdown level1 summary"><p>Implement the <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.icloneable">ICloneable</a> interface in a typesafe manner by just
+calling the typed version of <a class="xref" href="ZedGraph.GraphObjList.html#ZedGraph_GraphObjList_Clone">Clone()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">object ICloneable.Clone()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></td>
+        <td><p>A deep copy of this object</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ilist-1">System.Collections.Generic.IList&lt;T&gt;</a>
+  </div>
+  <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.icollection-1">System.Collections.Generic.ICollection&lt;T&gt;</a>
+  </div>
+  <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">System.Collections.Generic.IEnumerable&lt;T&gt;</a>
+  </div>
+  <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.ilist">System.Collections.IList</a>
+  </div>
+  <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.icollection">System.Collections.ICollection</a>
+  </div>
+  <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.ienumerable">System.Collections.IEnumerable</a>
+  </div>
+  <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.icloneable">System.ICloneable</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_GraphObjList.md&amp;value=---%0Auid%3A%20ZedGraph.GraphObjList%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/GraphObjList.cs/#L33" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

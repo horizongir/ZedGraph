@@ -1,0 +1,668 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Struct HSBColor
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Struct HSBColor
+   ">
+    <meta name="generator" content="docfx 2.56.7.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="ZedGraph.HSBColor">
+  
+  
+  <h1 id="ZedGraph_HSBColor" data-uid="ZedGraph.HSBColor" class="text-break">Struct HSBColor
+  </h1>
+  <div class="markdown level0 summary"><p>Hue-Saturation-Brightness Color class to store a color value, and to manage conversions
+to and from RGB colors in the <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.drawing.color">Color</a> struct.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.valuetype.equals#System_ValueType_Equals_System_Object_">ValueType.Equals(Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.valuetype.gethashcode#System_ValueType_GetHashCode">ValueType.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.valuetype.tostring#System_ValueType_ToString">ValueType.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#System_Object_Equals_System_Object_System_Object_">Object.Equals(Object, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gettype#System_Object_GetType">Object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.referenceequals#System_Object_ReferenceEquals_System_Object_System_Object_">Object.ReferenceEquals(Object, Object)</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="ZedGraph.html">ZedGraph</a></h6>
+  <h6><strong>Assembly</strong>: ZedGraph.dll</h6>
+  <h5 id="ZedGraph_HSBColor_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Serializable]
+public struct HSBColor</code></pre>
+  </div>
+  <h5 id="ZedGraph_HSBColor_remarks"><strong>Remarks</strong></h5>
+  <div class="markdown level0 remarks"><p>This class is based on code from <a href="http://www.cs.rit.edu/%7Encs/color/">http://www.cs.rit.edu/~ncs/color/</a> by Eugene Vishnevsky.
+This struct stores the hue, saturation, brightness, and alpha values internally as
+<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.byte">Byte</a> values from 0 to 255.  The hue represents a fraction of the 360 degrees
+of color space available. The saturation is the color intensity, where 0 represents gray scale
+and 255 is the most colored.  For the brightness, 0 represents black and 255
+represents white.</p>
+</div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_HSBColor__ctor_System_Drawing_Color_.md&amp;value=---%0Auid%3A%20ZedGraph.HSBColor.%23ctor(System.Drawing.Color)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/HSBColor.cs/#L83">View Source</a>
+  </span>
+  <a id="ZedGraph_HSBColor__ctor_" data-uid="ZedGraph.HSBColor.#ctor*"></a>
+  <h4 id="ZedGraph_HSBColor__ctor_System_Drawing_Color_" data-uid="ZedGraph.HSBColor.#ctor(System.Drawing.Color)">HSBColor(Color)</h4>
+  <div class="markdown level1 summary"><p>Constructor to load an <a class="xref" href="ZedGraph.HSBColor.html">HSBColor</a> struct from a system
+<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.drawing.color">Color</a> struct.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public HSBColor(Color color)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.drawing.color">Color</a></td>
+        <td><span class="parametername">color</span></td>
+        <td><p>An rgb <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.drawing.color">Color</a> struct containing the equivalent
+color you want to generate</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_HSBColor__ctor_System_Int32_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20ZedGraph.HSBColor.%23ctor(System.Int32%2CSystem.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/HSBColor.cs/#L53">View Source</a>
+  </span>
+  <a id="ZedGraph_HSBColor__ctor_" data-uid="ZedGraph.HSBColor.#ctor*"></a>
+  <h4 id="ZedGraph_HSBColor__ctor_System_Int32_System_Int32_System_Int32_" data-uid="ZedGraph.HSBColor.#ctor(System.Int32,System.Int32,System.Int32)">HSBColor(Int32, Int32, Int32)</h4>
+  <div class="markdown level1 summary"><p>Constructor to load an <a class="xref" href="ZedGraph.HSBColor.html">HSBColor</a> struct from hue, saturation and
+brightness values</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public HSBColor(int h, int s, int b)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">h</span></td>
+        <td><p>The color hue value, ranging from 0 to 255</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">s</span></td>
+        <td><p>The color saturation (intensity) value, ranging from 0 (gray scale)
+to 255 (most colored)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">b</span></td>
+        <td><p>The brightness value, ranging from 0 (black) to 255 (white)</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_HSBColor__ctor_System_Int32_System_Int32_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20ZedGraph.HSBColor.%23ctor(System.Int32%2CSystem.Int32%2CSystem.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/HSBColor.cs/#L71">View Source</a>
+  </span>
+  <a id="ZedGraph_HSBColor__ctor_" data-uid="ZedGraph.HSBColor.#ctor*"></a>
+  <h4 id="ZedGraph_HSBColor__ctor_System_Int32_System_Int32_System_Int32_System_Int32_" data-uid="ZedGraph.HSBColor.#ctor(System.Int32,System.Int32,System.Int32,System.Int32)">HSBColor(Int32, Int32, Int32, Int32)</h4>
+  <div class="markdown level1 summary"><p>Constructor to load an <a class="xref" href="ZedGraph.HSBColor.html">HSBColor</a> struct from hue, saturation,
+brightness, and alpha values</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public HSBColor(int a, int h, int s, int b)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">a</span></td>
+        <td><p>The alpha value (opacity), ranging from 0 (transparent) to
+255 (opaque)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">h</span></td>
+        <td><p>The color hue value, ranging from 0 to 255</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">s</span></td>
+        <td><p>The color saturation (intensity) value, ranging from 0 (gray scale)
+to 255 (most colored)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">b</span></td>
+        <td><p>The brightness value, ranging from 0 (black) to 255 (white)</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="fields">Fields
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_HSBColor_A.md&amp;value=---%0Auid%3A%20ZedGraph.HSBColor.A%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/HSBColor.cs/#L43">View Source</a>
+  </span>
+  <h4 id="ZedGraph_HSBColor_A" data-uid="ZedGraph.HSBColor.A">A</h4>
+  <div class="markdown level1 summary"><p>The alpha value (opacity), ranging from 0 (transparent) to 255 (opaque).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public byte A</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.byte">Byte</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_HSBColor_B.md&amp;value=---%0Auid%3A%20ZedGraph.HSBColor.B%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/HSBColor.cs/#L39">View Source</a>
+  </span>
+  <h4 id="ZedGraph_HSBColor_B" data-uid="ZedGraph.HSBColor.B">B</h4>
+  <div class="markdown level1 summary"><p>The brightness value, ranging from 0 (black) to 255 (white).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public byte B</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.byte">Byte</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_HSBColor_H.md&amp;value=---%0Auid%3A%20ZedGraph.HSBColor.H%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/HSBColor.cs/#L31">View Source</a>
+  </span>
+  <h4 id="ZedGraph_HSBColor_H" data-uid="ZedGraph.HSBColor.H">H</h4>
+  <div class="markdown level1 summary"><p>The color hue value, ranging from 0 to 255.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public byte H</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.byte">Byte</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="ZedGraph_HSBColor_H_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This property is actually a rescaling of the 360 degrees on the color wheel to 255
+possible values.  Therefore, every 42.5 units is a new sector, with the following
+convention:  red=0, yellow=42.5, green=85, cyan=127.5, blue=170, magenta=212.5</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_HSBColor_S.md&amp;value=---%0Auid%3A%20ZedGraph.HSBColor.S%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/HSBColor.cs/#L35">View Source</a>
+  </span>
+  <h4 id="ZedGraph_HSBColor_S" data-uid="ZedGraph.HSBColor.S">S</h4>
+  <div class="markdown level1 summary"><p>The color saturation (intensity) value, ranging from 0 (gray scale) to 255 (most colored).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public byte S</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.byte">Byte</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_HSBColor_FromRGB.md&amp;value=---%0Auid%3A%20ZedGraph.HSBColor.FromRGB%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/HSBColor.cs/#L170">View Source</a>
+  </span>
+  <a id="ZedGraph_HSBColor_FromRGB_" data-uid="ZedGraph.HSBColor.FromRGB*"></a>
+  <h4 id="ZedGraph_HSBColor_FromRGB" data-uid="ZedGraph.HSBColor.FromRGB">FromRGB()</h4>
+  <div class="markdown level1 summary"><p>Convert a <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.drawing.color">Color</a> value to an equivalent <a class="xref" href="ZedGraph.HSBColor.html">HSBColor</a> value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public HSBColor FromRGB()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ZedGraph.HSBColor.html">HSBColor</a></td>
+        <td><p>An equivalent <a class="xref" href="ZedGraph.HSBColor.html">HSBColor</a> struct</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="ZedGraph_HSBColor_FromRGB_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This method is based on code from <a href="http://www.cs.rit.edu/%7Encs/color/">http://www.cs.rit.edu/~ncs/color/</a> by Eugene Vishnevsky.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_HSBColor_FromRGB_System_Drawing_Color_.md&amp;value=---%0Auid%3A%20ZedGraph.HSBColor.FromRGB(System.Drawing.Color)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/HSBColor.cs/#L183">View Source</a>
+  </span>
+  <a id="ZedGraph_HSBColor_FromRGB_" data-uid="ZedGraph.HSBColor.FromRGB*"></a>
+  <h4 id="ZedGraph_HSBColor_FromRGB_System_Drawing_Color_" data-uid="ZedGraph.HSBColor.FromRGB(System.Drawing.Color)">FromRGB(Color)</h4>
+  <div class="markdown level1 summary"><p>Convert a <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.drawing.color">Color</a> value to an equivalent <a class="xref" href="ZedGraph.HSBColor.html">HSBColor</a> value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static HSBColor FromRGB(Color rgbColor)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.drawing.color">Color</a></td>
+        <td><span class="parametername">rgbColor</span></td>
+        <td><p>The <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.drawing.color">Color</a> struct to be converted</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ZedGraph.HSBColor.html">HSBColor</a></td>
+        <td><p>An equivalent <a class="xref" href="ZedGraph.HSBColor.html">HSBColor</a> struct</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="ZedGraph_HSBColor_FromRGB_System_Drawing_Color__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This method is based on code from <a href="http://www.cs.rit.edu/%7Encs/color/">http://www.cs.rit.edu/~ncs/color/</a> by Eugene Vishnevsky.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_HSBColor_ToRGB.md&amp;value=---%0Auid%3A%20ZedGraph.HSBColor.ToRGB%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/HSBColor.cs/#L158">View Source</a>
+  </span>
+  <a id="ZedGraph_HSBColor_ToRGB_" data-uid="ZedGraph.HSBColor.ToRGB*"></a>
+  <h4 id="ZedGraph_HSBColor_ToRGB" data-uid="ZedGraph.HSBColor.ToRGB">ToRGB()</h4>
+  <div class="markdown level1 summary"><p>Convert this <a class="xref" href="ZedGraph.HSBColor.html">HSBColor</a> value to an equivalent <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.drawing.color">Color</a> value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Color ToRGB()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.drawing.color">Color</a></td>
+        <td><p>An equivalent <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.drawing.color">Color</a> struct, compatible with the GDI+ library</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="ZedGraph_HSBColor_ToRGB_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This method is based on code from <a href="http://www.cs.rit.edu/%7Encs/color/">http://www.cs.rit.edu/~ncs/color/</a> by Eugene Vishnevsky.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_HSBColor_ToRGB_ZedGraph_HSBColor_.md&amp;value=---%0Auid%3A%20ZedGraph.HSBColor.ToRGB(ZedGraph.HSBColor)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/HSBColor.cs/#L109">View Source</a>
+  </span>
+  <a id="ZedGraph_HSBColor_ToRGB_" data-uid="ZedGraph.HSBColor.ToRGB*"></a>
+  <h4 id="ZedGraph_HSBColor_ToRGB_ZedGraph_HSBColor_" data-uid="ZedGraph.HSBColor.ToRGB(ZedGraph.HSBColor)">ToRGB(HSBColor)</h4>
+  <div class="markdown level1 summary"><p>Convert an <a class="xref" href="ZedGraph.HSBColor.html">HSBColor</a> value to an equivalent <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.drawing.color">Color</a> value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Color ToRGB(HSBColor hsbColor)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ZedGraph.HSBColor.html">HSBColor</a></td>
+        <td><span class="parametername">hsbColor</span></td>
+        <td><p>The <a class="xref" href="ZedGraph.HSBColor.html">HSBColor</a> struct to be converted</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.drawing.color">Color</a></td>
+        <td><p>An equivalent <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.drawing.color">Color</a> struct, compatible with the GDI+ library</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="ZedGraph_HSBColor_ToRGB_ZedGraph_HSBColor__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This method is based on code from <a href="http://www.cs.rit.edu/%7Encs/color/">http://www.cs.rit.edu/~ncs/color/</a> by Eugene Vishnevsky.</p>
+</div>
+  <h3 id="operators">Operators
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_HSBColor_op_Implicit_ZedGraph_HSBColor__System_Drawing_Color.md&amp;value=---%0Auid%3A%20ZedGraph.HSBColor.op_Implicit(ZedGraph.HSBColor)~System.Drawing.Color%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/HSBColor.cs/#L96">View Source</a>
+  </span>
+  <a id="ZedGraph_HSBColor_op_Implicit_" data-uid="ZedGraph.HSBColor.op_Implicit*"></a>
+  <h4 id="ZedGraph_HSBColor_op_Implicit_ZedGraph_HSBColor__System_Drawing_Color" data-uid="ZedGraph.HSBColor.op_Implicit(ZedGraph.HSBColor)~System.Drawing.Color">Implicit(HSBColor to Color)</h4>
+  <div class="markdown level1 summary"><p>Implicit conversion operator to convert directly from an <a class="xref" href="ZedGraph.HSBColor.html">HSBColor</a> to
+a <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.drawing.color">Color</a> struct.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static implicit operator Color(HSBColor hsbColor)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ZedGraph.HSBColor.html">HSBColor</a></td>
+        <td><span class="parametername">hsbColor</span></td>
+        <td><p>The <a class="xref" href="ZedGraph.HSBColor.html">HSBColor</a> struct to be converted</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.drawing.color">Color</a></td>
+        <td><p>An equivalent <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.drawing.color">Color</a> struct that can be used in the GDI+
+graphics library</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_HSBColor.md&amp;value=---%0Auid%3A%20ZedGraph.HSBColor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/HSBColor.cs/#L20" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

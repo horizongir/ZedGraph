@@ -1,0 +1,889 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class JapaneseCandleStick
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class JapaneseCandleStick
+   ">
+    <meta name="generator" content="docfx 2.56.7.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="ZedGraph.JapaneseCandleStick">
+  
+  
+  <h1 id="ZedGraph_JapaneseCandleStick" data-uid="ZedGraph.JapaneseCandleStick" class="text-break">Class JapaneseCandleStick
+  </h1>
+  <div class="markdown level0 summary"><p>This class handles the drawing of the curve <a class="xref" href="ZedGraph.JapaneseCandleStick.html">JapaneseCandleStick</a> objects.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
+    <div class="level1"><a class="xref" href="ZedGraph.LineBase.html">LineBase</a></div>
+    <div class="level2"><a class="xref" href="ZedGraph.OHLCBar.html">OHLCBar</a></div>
+    <div class="level3"><span class="xref">JapaneseCandleStick</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.icloneable">ICloneable</a></div>
+    <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.runtime.serialization.iserializable">ISerializable</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="ZedGraph.OHLCBar.html#ZedGraph_OHLCBar__isOpenCloseVisible">OHLCBar._isOpenCloseVisible</a>
+    </div>
+    <div>
+      <a class="xref" href="ZedGraph.OHLCBar.html#ZedGraph_OHLCBar__size">OHLCBar._size</a>
+    </div>
+    <div>
+      <a class="xref" href="ZedGraph.OHLCBar.html#ZedGraph_OHLCBar__isAutoSize">OHLCBar._isAutoSize</a>
+    </div>
+    <div>
+      <a class="xref" href="ZedGraph.OHLCBar.html#ZedGraph_OHLCBar_IsOpenCloseVisible">OHLCBar.IsOpenCloseVisible</a>
+    </div>
+    <div>
+      <a class="xref" href="ZedGraph.OHLCBar.html#ZedGraph_OHLCBar_Size">OHLCBar.Size</a>
+    </div>
+    <div>
+      <a class="xref" href="ZedGraph.OHLCBar.html#ZedGraph_OHLCBar_IsAutoSize">OHLCBar.IsAutoSize</a>
+    </div>
+    <div>
+      <a class="xref" href="ZedGraph.OHLCBar.html#ZedGraph_OHLCBar_schema">OHLCBar.schema</a>
+    </div>
+    <div>
+      <a class="xref" href="ZedGraph.OHLCBar.html#ZedGraph_OHLCBar_Draw_System_Drawing_Graphics_ZedGraph_GraphPane_System_Boolean_System_Single_System_Single_System_Single_System_Single_System_Single_System_Single_System_Drawing_Pen_">OHLCBar.Draw(Graphics, GraphPane, Boolean, Single, Single, Single, Single, Single, Single, Pen)</a>
+    </div>
+    <div>
+      <a class="xref" href="ZedGraph.OHLCBar.html#ZedGraph_OHLCBar_Draw_System_Drawing_Graphics_ZedGraph_GraphPane_ZedGraph_OHLCBarItem_ZedGraph_Axis_ZedGraph_Axis_System_Single_">OHLCBar.Draw(Graphics, GraphPane, OHLCBarItem, Axis, Axis, Single)</a>
+    </div>
+    <div>
+      <a class="xref" href="ZedGraph.OHLCBar.html#ZedGraph_OHLCBar_GetBarWidth_ZedGraph_GraphPane_ZedGraph_Axis_System_Single_">OHLCBar.GetBarWidth(GraphPane, Axis, Single)</a>
+    </div>
+    <div>
+      <a class="xref" href="ZedGraph.LineBase.html#ZedGraph_LineBase_Color">LineBase.Color</a>
+    </div>
+    <div>
+      <a class="xref" href="ZedGraph.LineBase.html#ZedGraph_LineBase_Style">LineBase.Style</a>
+    </div>
+    <div>
+      <a class="xref" href="ZedGraph.LineBase.html#ZedGraph_LineBase_DashOn">LineBase.DashOn</a>
+    </div>
+    <div>
+      <a class="xref" href="ZedGraph.LineBase.html#ZedGraph_LineBase_DashOff">LineBase.DashOff</a>
+    </div>
+    <div>
+      <a class="xref" href="ZedGraph.LineBase.html#ZedGraph_LineBase_Width">LineBase.Width</a>
+    </div>
+    <div>
+      <a class="xref" href="ZedGraph.LineBase.html#ZedGraph_LineBase_IsVisible">LineBase.IsVisible</a>
+    </div>
+    <div>
+      <a class="xref" href="ZedGraph.LineBase.html#ZedGraph_LineBase_IsAntiAlias">LineBase.IsAntiAlias</a>
+    </div>
+    <div>
+      <a class="xref" href="ZedGraph.LineBase.html#ZedGraph_LineBase_GradientFill">LineBase.GradientFill</a>
+    </div>
+    <div>
+      <a class="xref" href="ZedGraph.LineBase.html#ZedGraph_LineBase_schema0">LineBase.schema0</a>
+    </div>
+    <div>
+      <a class="xref" href="ZedGraph.LineBase.html#ZedGraph_LineBase_GetPen_ZedGraph_PaneBase_System_Single_">LineBase.GetPen(PaneBase, Single)</a>
+    </div>
+    <div>
+      <a class="xref" href="ZedGraph.LineBase.html#ZedGraph_LineBase_GetPen_ZedGraph_PaneBase_System_Single_ZedGraph_PointPair_">LineBase.GetPen(PaneBase, Single, PointPair)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#System_Object_Equals_System_Object_">Object.Equals(Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#System_Object_Equals_System_Object_System_Object_">Object.Equals(Object, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gethashcode#System_Object_GetHashCode">Object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gettype#System_Object_GetType">Object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.memberwiseclone#System_Object_MemberwiseClone">Object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.referenceequals#System_Object_ReferenceEquals_System_Object_System_Object_">Object.ReferenceEquals(Object, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.tostring#System_Object_ToString">Object.ToString()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="ZedGraph.html">ZedGraph</a></h6>
+  <h6><strong>Assembly</strong>: ZedGraph.dll</h6>
+  <h5 id="ZedGraph_JapaneseCandleStick_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Serializable]
+public class JapaneseCandleStick : OHLCBar, ICloneable, ISerializable</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_JapaneseCandleStick__ctor.md&amp;value=---%0Auid%3A%20ZedGraph.JapaneseCandleStick.%23ctor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/JapaneseCandleStick.cs/#L183">View Source</a>
+  </span>
+  <a id="ZedGraph_JapaneseCandleStick__ctor_" data-uid="ZedGraph.JapaneseCandleStick.#ctor*"></a>
+  <h4 id="ZedGraph_JapaneseCandleStick__ctor" data-uid="ZedGraph.JapaneseCandleStick.#ctor">JapaneseCandleStick()</h4>
+  <div class="markdown level1 summary"><p>Default constructor that sets all <a class="xref" href="ZedGraph.JapaneseCandleStick.html">JapaneseCandleStick</a> properties to
+default values as defined in the <a class="xref" href="ZedGraph.JapaneseCandleStick.Default.html">JapaneseCandleStick.Default</a> class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public JapaneseCandleStick()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_JapaneseCandleStick__ctor_System_Runtime_Serialization_SerializationInfo_System_Runtime_Serialization_StreamingContext_.md&amp;value=---%0Auid%3A%20ZedGraph.JapaneseCandleStick.%23ctor(System.Runtime.Serialization.SerializationInfo%2CSystem.Runtime.Serialization.StreamingContext)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/JapaneseCandleStick.cs/#L244">View Source</a>
+  </span>
+  <a id="ZedGraph_JapaneseCandleStick__ctor_" data-uid="ZedGraph.JapaneseCandleStick.#ctor*"></a>
+  <h4 id="ZedGraph_JapaneseCandleStick__ctor_System_Runtime_Serialization_SerializationInfo_System_Runtime_Serialization_StreamingContext_" data-uid="ZedGraph.JapaneseCandleStick.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">JapaneseCandleStick(SerializationInfo, StreamingContext)</h4>
+  <div class="markdown level1 summary"><p>Constructor for deserializing objects</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected JapaneseCandleStick(SerializationInfo info, StreamingContext context)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.runtime.serialization.serializationinfo">SerializationInfo</a></td>
+        <td><span class="parametername">info</span></td>
+        <td><p>A <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.runtime.serialization.serializationinfo">SerializationInfo</a> instance that defines the serialized data</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.runtime.serialization.streamingcontext">StreamingContext</a></td>
+        <td><span class="parametername">context</span></td>
+        <td><p>A <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.runtime.serialization.streamingcontext">StreamingContext</a> instance that contains the serialized data</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_JapaneseCandleStick__ctor_ZedGraph_JapaneseCandleStick_.md&amp;value=---%0Auid%3A%20ZedGraph.JapaneseCandleStick.%23ctor(ZedGraph.JapaneseCandleStick)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/JapaneseCandleStick.cs/#L198">View Source</a>
+  </span>
+  <a id="ZedGraph_JapaneseCandleStick__ctor_" data-uid="ZedGraph.JapaneseCandleStick.#ctor*"></a>
+  <h4 id="ZedGraph_JapaneseCandleStick__ctor_ZedGraph_JapaneseCandleStick_" data-uid="ZedGraph.JapaneseCandleStick.#ctor(ZedGraph.JapaneseCandleStick)">JapaneseCandleStick(JapaneseCandleStick)</h4>
+  <div class="markdown level1 summary"><p>The Copy Constructor</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public JapaneseCandleStick(JapaneseCandleStick rhs)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ZedGraph.JapaneseCandleStick.html">JapaneseCandleStick</a></td>
+        <td><span class="parametername">rhs</span></td>
+        <td><p>The <a class="xref" href="ZedGraph.JapaneseCandleStick.html">JapaneseCandleStick</a> object from which to copy</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="fields">Fields
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_JapaneseCandleStick__fallingColor.md&amp;value=---%0Auid%3A%20ZedGraph.JapaneseCandleStick._fallingColor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/JapaneseCandleStick.cs/#L80">View Source</a>
+  </span>
+  <h4 id="ZedGraph_JapaneseCandleStick__fallingColor" data-uid="ZedGraph.JapaneseCandleStick._fallingColor">_fallingColor</h4>
+  <div class="markdown level1 summary"><p>Private field that stores the CandleStick color when the <a class="xref" href="ZedGraph.StockPt.html#ZedGraph_StockPt_Close">Close</a>
+value is less than the <a class="xref" href="ZedGraph.StockPt.html#ZedGraph_StockPt_Open">Open</a> value.  Use the public
+property <a class="xref" href="ZedGraph.JapaneseCandleStick.html#ZedGraph_JapaneseCandleStick_FallingColor">FallingColor</a> to access this value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[CLSCompliant(false)]
+protected Color _fallingColor</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.drawing.color">Color</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_JapaneseCandleStick_schema2.md&amp;value=---%0Auid%3A%20ZedGraph.JapaneseCandleStick.schema2%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/JapaneseCandleStick.cs/#L235">View Source</a>
+  </span>
+  <h4 id="ZedGraph_JapaneseCandleStick_schema2" data-uid="ZedGraph.JapaneseCandleStick.schema2">schema2</h4>
+  <div class="markdown level1 summary"><p>Current schema value that defines the version of the serialized file</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int schema2 = 11</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_JapaneseCandleStick_FallingBorder.md&amp;value=---%0Auid%3A%20ZedGraph.JapaneseCandleStick.FallingBorder%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/JapaneseCandleStick.cs/#L154">View Source</a>
+  </span>
+  <a id="ZedGraph_JapaneseCandleStick_FallingBorder_" data-uid="ZedGraph.JapaneseCandleStick.FallingBorder*"></a>
+  <h4 id="ZedGraph_JapaneseCandleStick_FallingBorder" data-uid="ZedGraph.JapaneseCandleStick.FallingBorder">FallingBorder</h4>
+  <div class="markdown level1 summary"><p>The <a class="xref" href="ZedGraph.Border.html">Border</a> instance to be used for drawing the border frame of
+the candlestick &quot;bars&quot; when the <a class="xref" href="ZedGraph.StockPt.html#ZedGraph_StockPt_Close">Close</a> value is less than the
+<a class="xref" href="ZedGraph.StockPt.html#ZedGraph_StockPt_Open">Open</a> value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Border FallingBorder { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ZedGraph.Border.html">Border</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_JapaneseCandleStick_FallingColor.md&amp;value=---%0Auid%3A%20ZedGraph.JapaneseCandleStick.FallingColor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/JapaneseCandleStick.cs/#L169">View Source</a>
+  </span>
+  <a id="ZedGraph_JapaneseCandleStick_FallingColor_" data-uid="ZedGraph.JapaneseCandleStick.FallingColor*"></a>
+  <h4 id="ZedGraph_JapaneseCandleStick_FallingColor" data-uid="ZedGraph.JapaneseCandleStick.FallingColor">FallingColor</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.drawing.color">Color</a> data for this
+<a class="xref" href="ZedGraph.JapaneseCandleStick.html">JapaneseCandleStick</a> when the value of the candlestick is
+falling.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Color FallingColor { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.drawing.color">Color</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="ZedGraph_JapaneseCandleStick_FallingColor_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This property only controls the color of
+the vertical line when the value is falling.  The rising color is controlled
+by the <a class="xref" href="ZedGraph.LineBase.html#ZedGraph_LineBase_Color">Color</a> property.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_JapaneseCandleStick_FallingFill.md&amp;value=---%0Auid%3A%20ZedGraph.JapaneseCandleStick.FallingFill%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/JapaneseCandleStick.cs/#L133">View Source</a>
+  </span>
+  <a id="ZedGraph_JapaneseCandleStick_FallingFill_" data-uid="ZedGraph.JapaneseCandleStick.FallingFill*"></a>
+  <h4 id="ZedGraph_JapaneseCandleStick_FallingFill" data-uid="ZedGraph.JapaneseCandleStick.FallingFill">FallingFill</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the <a class="xref" href="ZedGraph.Fill.html">Fill</a> class that is used to fill the candlestick
+&quot;bars&quot; when the <a class="xref" href="ZedGraph.StockPt.html#ZedGraph_StockPt_Close">Close</a> value is less than the
+<a class="xref" href="ZedGraph.StockPt.html#ZedGraph_StockPt_Open">Open</a> value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Fill FallingFill { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ZedGraph.Fill.html">Fill</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_JapaneseCandleStick_RisingBorder.md&amp;value=---%0Auid%3A%20ZedGraph.JapaneseCandleStick.RisingBorder%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/JapaneseCandleStick.cs/#L144">View Source</a>
+  </span>
+  <a id="ZedGraph_JapaneseCandleStick_RisingBorder_" data-uid="ZedGraph.JapaneseCandleStick.RisingBorder*"></a>
+  <h4 id="ZedGraph_JapaneseCandleStick_RisingBorder" data-uid="ZedGraph.JapaneseCandleStick.RisingBorder">RisingBorder</h4>
+  <div class="markdown level1 summary"><p>The <a class="xref" href="ZedGraph.Border.html">Border</a> instance to be used for drawing the border frame of
+the candlestick &quot;bars&quot; when the <a class="xref" href="ZedGraph.StockPt.html#ZedGraph_StockPt_Close">Close</a> value is greater than the
+<a class="xref" href="ZedGraph.StockPt.html#ZedGraph_StockPt_Open">Open</a> value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Border RisingBorder { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ZedGraph.Border.html">Border</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_JapaneseCandleStick_RisingFill.md&amp;value=---%0Auid%3A%20ZedGraph.JapaneseCandleStick.RisingFill%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/JapaneseCandleStick.cs/#L123">View Source</a>
+  </span>
+  <a id="ZedGraph_JapaneseCandleStick_RisingFill_" data-uid="ZedGraph.JapaneseCandleStick.RisingFill*"></a>
+  <h4 id="ZedGraph_JapaneseCandleStick_RisingFill" data-uid="ZedGraph.JapaneseCandleStick.RisingFill">RisingFill</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the <a class="xref" href="ZedGraph.Fill.html">Fill</a> class that is used to fill the candlestick
+&quot;bars&quot; when the <a class="xref" href="ZedGraph.StockPt.html#ZedGraph_StockPt_Close">Close</a> value is greater than the
+<a class="xref" href="ZedGraph.StockPt.html#ZedGraph_StockPt_Open">Open</a> value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Fill RisingFill { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ZedGraph.Fill.html">Fill</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_JapaneseCandleStick_Clone.md&amp;value=---%0Auid%3A%20ZedGraph.JapaneseCandleStick.Clone%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/JapaneseCandleStick.cs/#L223">View Source</a>
+  </span>
+  <a id="ZedGraph_JapaneseCandleStick_Clone_" data-uid="ZedGraph.JapaneseCandleStick.Clone*"></a>
+  <h4 id="ZedGraph_JapaneseCandleStick_Clone" data-uid="ZedGraph.JapaneseCandleStick.Clone">Clone()</h4>
+  <div class="markdown level1 summary"><p>Typesafe, deep-copy clone method.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public JapaneseCandleStick Clone()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ZedGraph.JapaneseCandleStick.html">JapaneseCandleStick</a></td>
+        <td><p>A new, independent copy of this class</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_JapaneseCandleStick_Draw_System_Drawing_Graphics_ZedGraph_GraphPane_System_Boolean_System_Single_System_Single_System_Single_System_Single_System_Single_System_Single_System_Single_System_Drawing_Pen_ZedGraph_Fill_ZedGraph_Border_ZedGraph_PointPair_.md&amp;value=---%0Auid%3A%20ZedGraph.JapaneseCandleStick.Draw(System.Drawing.Graphics%2CZedGraph.GraphPane%2CSystem.Boolean%2CSystem.Single%2CSystem.Single%2CSystem.Single%2CSystem.Single%2CSystem.Single%2CSystem.Single%2CSystem.Single%2CSystem.Drawing.Pen%2CZedGraph.Fill%2CZedGraph.Border%2CZedGraph.PointPair)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/JapaneseCandleStick.cs/#L323">View Source</a>
+  </span>
+  <a id="ZedGraph_JapaneseCandleStick_Draw_" data-uid="ZedGraph.JapaneseCandleStick.Draw*"></a>
+  <h4 id="ZedGraph_JapaneseCandleStick_Draw_System_Drawing_Graphics_ZedGraph_GraphPane_System_Boolean_System_Single_System_Single_System_Single_System_Single_System_Single_System_Single_System_Single_System_Drawing_Pen_ZedGraph_Fill_ZedGraph_Border_ZedGraph_PointPair_" data-uid="ZedGraph.JapaneseCandleStick.Draw(System.Drawing.Graphics,ZedGraph.GraphPane,System.Boolean,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Drawing.Pen,ZedGraph.Fill,ZedGraph.Border,ZedGraph.PointPair)">Draw(Graphics, GraphPane, Boolean, Single, Single, Single, Single, Single, Single, Single, Pen, Fill, Border, PointPair)</h4>
+  <div class="markdown level1 summary"><p>Draw the <a class="xref" href="ZedGraph.JapaneseCandleStick.html">JapaneseCandleStick</a> to the specified <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.drawing.graphics">Graphics</a>
+device at the specified location.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Draw(Graphics g, GraphPane pane, bool isXBase, float pixBase, float pixHigh, float pixLow, float pixOpen, float pixClose, float halfSize, float scaleFactor, Pen pen, Fill fill, Border border, PointPair pt)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.drawing.graphics">Graphics</a></td>
+        <td><span class="parametername">g</span></td>
+        <td><p>A graphic device object to be drawn into.  This is normally e.Graphics from the
+PaintEventArgs argument to the Paint() method.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ZedGraph.GraphPane.html">GraphPane</a></td>
+        <td><span class="parametername">pane</span></td>
+        <td><p>A reference to the <a class="xref" href="ZedGraph.GraphPane.html">GraphPane</a> object that is the parent or
+owner of this object.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="parametername">isXBase</span></td>
+        <td><p>boolean value that indicates if the &quot;base&quot; axis for this
+<a class="xref" href="ZedGraph.JapaneseCandleStick.html">JapaneseCandleStick</a> is the X axis.  True for an <a class="xref" href="ZedGraph.XAxis.html">XAxis</a> base,
+false for a <a class="xref" href="ZedGraph.YAxis.html">YAxis</a> or <a class="xref" href="ZedGraph.Y2Axis.html">Y2Axis</a> base.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td><span class="parametername">pixBase</span></td>
+        <td><p>The independent axis position of the center of the candlestick in
+pixel units</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td><span class="parametername">pixHigh</span></td>
+        <td><p>The high value position of the candlestick in
+pixel units</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td><span class="parametername">pixLow</span></td>
+        <td><p>The low value position of the candlestick in
+pixel units</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td><span class="parametername">pixOpen</span></td>
+        <td><p>The opening value position of the candlestick in
+pixel units</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td><span class="parametername">pixClose</span></td>
+        <td><p>The closing value position of the candlestick in
+pixel units</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td><span class="parametername">halfSize</span></td>
+        <td><p>The scaled width of one-half of a bar, in pixels</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td><span class="parametername">scaleFactor</span></td>
+        <td><p>The scaling factor for the features of the graph based on the <a class="xref" href="ZedGraph.PaneBase.html#ZedGraph_PaneBase_BaseDimension">BaseDimension</a>.  This
+scaling factor is calculated by the <a class="xref" href="ZedGraph.PaneBase.html#ZedGraph_PaneBase_CalcScaleFactor">CalcScaleFactor()</a> method.  The scale factor
+represents a linear multiple to be applied to font sizes, symbol sizes, etc.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.drawing.pen">Pen</a></td>
+        <td><span class="parametername">pen</span></td>
+        <td><p>A pen with the <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.drawing.color">Color</a> attribute for this
+<a class="xref" href="ZedGraph.JapaneseCandleStick.html">JapaneseCandleStick</a></p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ZedGraph.Fill.html">Fill</a></td>
+        <td><span class="parametername">fill</span></td>
+        <td><p>The <a class="xref" href="ZedGraph.Fill.html">Fill</a> instance to be used for filling this
+<a class="xref" href="ZedGraph.JapaneseCandleStick.html">JapaneseCandleStick</a></p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ZedGraph.Border.html">Border</a></td>
+        <td><span class="parametername">border</span></td>
+        <td><p>The <a class="xref" href="ZedGraph.Border.html">Border</a> instance to be used for drawing the
+border around the <a class="xref" href="ZedGraph.JapaneseCandleStick.html">JapaneseCandleStick</a> filled box</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ZedGraph.PointPair.html">PointPair</a></td>
+        <td><span class="parametername">pt</span></td>
+        <td><p>The <a class="xref" href="ZedGraph.PointPair.html">PointPair</a> to be used for determining the
+<a class="xref" href="ZedGraph.Fill.html">Fill</a>, just in case it's a <a class="xref" href="ZedGraph.FillType.html#ZedGraph_FillType_GradientByX">GradientByX</a>,
+<a class="xref" href="ZedGraph.FillType.html#ZedGraph_FillType_GradientByY">GradientByY</a>, or
+<a class="xref" href="ZedGraph.FillType.html#ZedGraph_FillType_GradientByZ">GradientByZ</a> <a class="xref" href="ZedGraph.FillType.html">FillType</a></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_JapaneseCandleStick_Draw_System_Drawing_Graphics_ZedGraph_GraphPane_ZedGraph_JapaneseCandleStickItem_ZedGraph_Axis_ZedGraph_Axis_System_Single_.md&amp;value=---%0Auid%3A%20ZedGraph.JapaneseCandleStick.Draw(System.Drawing.Graphics%2CZedGraph.GraphPane%2CZedGraph.JapaneseCandleStickItem%2CZedGraph.Axis%2CZedGraph.Axis%2CSystem.Single)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/JapaneseCandleStick.cs/#L388">View Source</a>
+  </span>
+  <a id="ZedGraph_JapaneseCandleStick_Draw_" data-uid="ZedGraph.JapaneseCandleStick.Draw*"></a>
+  <h4 id="ZedGraph_JapaneseCandleStick_Draw_System_Drawing_Graphics_ZedGraph_GraphPane_ZedGraph_JapaneseCandleStickItem_ZedGraph_Axis_ZedGraph_Axis_System_Single_" data-uid="ZedGraph.JapaneseCandleStick.Draw(System.Drawing.Graphics,ZedGraph.GraphPane,ZedGraph.JapaneseCandleStickItem,ZedGraph.Axis,ZedGraph.Axis,System.Single)">Draw(Graphics, GraphPane, JapaneseCandleStickItem, Axis, Axis, Single)</h4>
+  <div class="markdown level1 summary"><p>Draw all the <a class="xref" href="ZedGraph.JapaneseCandleStick.html">JapaneseCandleStick</a>'s to the specified <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.drawing.graphics">Graphics</a>
+device as a candlestick at each defined point.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Draw(Graphics g, GraphPane pane, JapaneseCandleStickItem curve, Axis baseAxis, Axis valueAxis, float scaleFactor)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.drawing.graphics">Graphics</a></td>
+        <td><span class="parametername">g</span></td>
+        <td><p>A graphic device object to be drawn into.  This is normally e.Graphics from the
+PaintEventArgs argument to the Paint() method.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ZedGraph.GraphPane.html">GraphPane</a></td>
+        <td><span class="parametername">pane</span></td>
+        <td><p>A reference to the <a class="xref" href="ZedGraph.GraphPane.html">GraphPane</a> object that is the parent or
+owner of this object.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ZedGraph.JapaneseCandleStickItem.html">JapaneseCandleStickItem</a></td>
+        <td><span class="parametername">curve</span></td>
+        <td><p>A <a class="xref" href="ZedGraph.JapaneseCandleStickItem.html">JapaneseCandleStickItem</a> object representing the
+<a class="xref" href="ZedGraph.JapaneseCandleStick.html">JapaneseCandleStick</a>'s to be drawn.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ZedGraph.Axis.html">Axis</a></td>
+        <td><span class="parametername">baseAxis</span></td>
+        <td><p>The <a class="xref" href="ZedGraph.Axis.html">Axis</a> class instance that defines the base (independent)
+axis for the <a class="xref" href="ZedGraph.JapaneseCandleStick.html">JapaneseCandleStick</a></p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ZedGraph.Axis.html">Axis</a></td>
+        <td><span class="parametername">valueAxis</span></td>
+        <td><p>The <a class="xref" href="ZedGraph.Axis.html">Axis</a> class instance that defines the value (dependent)
+axis for the <a class="xref" href="ZedGraph.JapaneseCandleStick.html">JapaneseCandleStick</a></p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td><span class="parametername">scaleFactor</span></td>
+        <td><p>The scaling factor to be used for rendering objects.  This is calculated and
+passed down by the parent <a class="xref" href="ZedGraph.GraphPane.html">GraphPane</a> object using the
+<a class="xref" href="ZedGraph.PaneBase.html#ZedGraph_PaneBase_CalcScaleFactor">CalcScaleFactor()</a> method, and is used to proportionally adjust
+font sizes, etc. according to the actual size of the graph.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_JapaneseCandleStick_GetObjectData_System_Runtime_Serialization_SerializationInfo_System_Runtime_Serialization_StreamingContext_.md&amp;value=---%0Auid%3A%20ZedGraph.JapaneseCandleStick.GetObjectData(System.Runtime.Serialization.SerializationInfo%2CSystem.Runtime.Serialization.StreamingContext)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/JapaneseCandleStick.cs/#L264">View Source</a>
+  </span>
+  <a id="ZedGraph_JapaneseCandleStick_GetObjectData_" data-uid="ZedGraph.JapaneseCandleStick.GetObjectData*"></a>
+  <h4 id="ZedGraph_JapaneseCandleStick_GetObjectData_System_Runtime_Serialization_SerializationInfo_System_Runtime_Serialization_StreamingContext_" data-uid="ZedGraph.JapaneseCandleStick.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">GetObjectData(SerializationInfo, StreamingContext)</h4>
+  <div class="markdown level1 summary"><p>Populates a <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.runtime.serialization.serializationinfo">SerializationInfo</a> instance with the data needed to serialize the target object</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[SecurityPermission(SecurityAction.Demand, SerializationFormatter = true)]
+public override void GetObjectData(SerializationInfo info, StreamingContext context)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.runtime.serialization.serializationinfo">SerializationInfo</a></td>
+        <td><span class="parametername">info</span></td>
+        <td><p>A <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.runtime.serialization.serializationinfo">SerializationInfo</a> instance that defines the serialized data</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.runtime.serialization.streamingcontext">StreamingContext</a></td>
+        <td><span class="parametername">context</span></td>
+        <td><p>A <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.runtime.serialization.streamingcontext">StreamingContext</a> instance that contains the serialized data</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="ZedGraph.OHLCBar.html#ZedGraph_OHLCBar_GetObjectData_System_Runtime_Serialization_SerializationInfo_System_Runtime_Serialization_StreamingContext_">OHLCBar.GetObjectData(SerializationInfo, StreamingContext)</a></div>
+  <h3 id="eii">Explicit Interface Implementations
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_JapaneseCandleStick_System_ICloneable_Clone.md&amp;value=---%0Auid%3A%20ZedGraph.JapaneseCandleStick.System%23ICloneable%23Clone%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/JapaneseCandleStick.cs/#L214">View Source</a>
+  </span>
+  <a id="ZedGraph_JapaneseCandleStick_System_ICloneable_Clone_" data-uid="ZedGraph.JapaneseCandleStick.System#ICloneable#Clone*"></a>
+  <h4 id="ZedGraph_JapaneseCandleStick_System_ICloneable_Clone" data-uid="ZedGraph.JapaneseCandleStick.System#ICloneable#Clone">ICloneable.Clone()</h4>
+  <div class="markdown level1 summary"><p>Implement the <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.icloneable">ICloneable</a> interface in a typesafe manner by just
+calling the typed version of <a class="xref" href="ZedGraph.JapaneseCandleStick.html#ZedGraph_JapaneseCandleStick_Clone">Clone()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">object ICloneable.Clone()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></td>
+        <td><p>A deep copy of this object</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.icloneable">System.ICloneable</a>
+  </div>
+  <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.runtime.serialization.iserializable">System.Runtime.Serialization.ISerializable</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_JapaneseCandleStick.md&amp;value=---%0Auid%3A%20ZedGraph.JapaneseCandleStick%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/JapaneseCandleStick.cs/#L39" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,476 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class ValueHandler
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class ValueHandler
+   ">
+    <meta name="generator" content="docfx 2.56.7.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="ZedGraph.ValueHandler">
+  
+  
+  <h1 id="ZedGraph_ValueHandler" data-uid="ZedGraph.ValueHandler" class="text-break">Class ValueHandler
+  </h1>
+  <div class="markdown level0 summary"><p>A class designed to simplify the process of getting the actual value for
+the various stacked and regular curve types</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
+    <div class="level1"><span class="xref">ValueHandler</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#System_Object_Equals_System_Object_">Object.Equals(Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#System_Object_Equals_System_Object_System_Object_">Object.Equals(Object, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gethashcode#System_Object_GetHashCode">Object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gettype#System_Object_GetType">Object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.memberwiseclone#System_Object_MemberwiseClone">Object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.referenceequals#System_Object_ReferenceEquals_System_Object_System_Object_">Object.ReferenceEquals(Object, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.tostring#System_Object_ToString">Object.ToString()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="ZedGraph.html">ZedGraph</a></h6>
+  <h6><strong>Assembly</strong>: ZedGraph.dll</h6>
+  <h5 id="ZedGraph_ValueHandler_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class ValueHandler</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_ValueHandler__ctor_ZedGraph_GraphPane_System_Boolean_.md&amp;value=---%0Auid%3A%20ZedGraph.ValueHandler.%23ctor(ZedGraph.GraphPane%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/ValueHandler.cs/#L47">View Source</a>
+  </span>
+  <a id="ZedGraph_ValueHandler__ctor_" data-uid="ZedGraph.ValueHandler.#ctor*"></a>
+  <h4 id="ZedGraph_ValueHandler__ctor_ZedGraph_GraphPane_System_Boolean_" data-uid="ZedGraph.ValueHandler.#ctor(ZedGraph.GraphPane,System.Boolean)">ValueHandler(GraphPane, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Basic constructor that saves a reference to the parent
+<a class="xref" href="ZedGraph.GraphPane.html">GraphPane</a> object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ValueHandler(GraphPane pane, bool initialize)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ZedGraph.GraphPane.html">GraphPane</a></td>
+        <td><span class="parametername">pane</span></td>
+        <td><p>The parent <a class="xref" href="ZedGraph.GraphPane.html">GraphPane</a> object.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="parametername">initialize</span></td>
+        <td><p>A <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a> flag to indicate whether or
+not the drawing variables should be initialized.  Initialization is not
+required if this is part of a ZedGraph internal draw operation (i.e., its in
+the middle of a call to <a class="xref" href="ZedGraph.GraphPane.html#ZedGraph_GraphPane_Draw_System_Drawing_Graphics_">Draw(Graphics)</a>).  Otherwise, you should
+initialize to make sure the drawing variables are configured.  true to do
+an initialization, false otherwise.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_ValueHandler_BarCenterValue_ZedGraph_CurveItem_System_Single_System_Int32_System_Double_System_Int32_.md&amp;value=---%0Auid%3A%20ZedGraph.ValueHandler.BarCenterValue(ZedGraph.CurveItem%2CSystem.Single%2CSystem.Int32%2CSystem.Double%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/ValueHandler.cs/#L344">View Source</a>
+  </span>
+  <a id="ZedGraph_ValueHandler_BarCenterValue_" data-uid="ZedGraph.ValueHandler.BarCenterValue*"></a>
+  <h4 id="ZedGraph_ValueHandler_BarCenterValue_ZedGraph_CurveItem_System_Single_System_Int32_System_Double_System_Int32_" data-uid="ZedGraph.ValueHandler.BarCenterValue(ZedGraph.CurveItem,System.Single,System.Int32,System.Double,System.Int32)">BarCenterValue(CurveItem, Single, Int32, Double, Int32)</h4>
+  <div class="markdown level1 summary"><p>Calculate the user scale position of the center of the specified bar, using the
+<a class="xref" href="ZedGraph.Axis.html">Axis</a> as specified by <a class="xref" href="ZedGraph.BarSettings.html#ZedGraph_BarSettings_Base">Base</a>.  This method is
+used primarily by the
+<a class="xref" href="ZedGraph.GraphPane.html#ZedGraph_GraphPane_FindNearestPoint_System_Drawing_PointF_ZedGraph_CurveItem__System_Int32__">FindNearestPoint(PointF, out CurveItem, out Int32)</a> method in order to
+determine the bar &quot;location,&quot; which is defined as the center of the top of the individual bar.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double BarCenterValue(CurveItem curve, float barWidth, int iCluster, double val, int iOrdinal)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ZedGraph.CurveItem.html">CurveItem</a></td>
+        <td><span class="parametername">curve</span></td>
+        <td><p>The <a class="xref" href="ZedGraph.CurveItem.html">CurveItem</a> representing the
+bar of interest.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td><span class="parametername">barWidth</span></td>
+        <td><p>The width of each individual bar. This can be calculated using
+the <a class="xref" href="ZedGraph.CurveItem.html#ZedGraph_CurveItem_GetBarWidth_ZedGraph_GraphPane_">GetBarWidth(GraphPane)</a> method.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">iCluster</span></td>
+        <td><p>The cluster number for the bar of interest.  This is the ordinal
+position of the current point.  That is, if a particular <a class="xref" href="ZedGraph.CurveItem.html">CurveItem</a> has
+10 points, then a value of 3 would indicate the 4th point in the data array.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.double">Double</a></td>
+        <td><span class="parametername">val</span></td>
+        <td><p>The actual independent axis value for the bar of interest.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">iOrdinal</span></td>
+        <td><p>The ordinal position of the <a class="xref" href="ZedGraph.CurveItem.html">CurveItem</a> of interest.
+That is, the first bar series is 0, the second is 1, etc.  Note that this applies only
+to the bars.  If a graph includes both bars and lines, then count only the bars.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.double">Double</a></td>
+        <td><p>A user scale value position of the center of the bar of interest.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_ValueHandler_GetValues_ZedGraph_CurveItem_System_Int32_System_Double__System_Double__System_Double__.md&amp;value=---%0Auid%3A%20ZedGraph.ValueHandler.GetValues(ZedGraph.CurveItem%2CSystem.Int32%2CSystem.Double%40%2CSystem.Double%40%2CSystem.Double%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/ValueHandler.cs/#L76">View Source</a>
+  </span>
+  <a id="ZedGraph_ValueHandler_GetValues_" data-uid="ZedGraph.ValueHandler.GetValues*"></a>
+  <h4 id="ZedGraph_ValueHandler_GetValues_ZedGraph_CurveItem_System_Int32_System_Double__System_Double__System_Double__" data-uid="ZedGraph.ValueHandler.GetValues(ZedGraph.CurveItem,System.Int32,System.Double@,System.Double@,System.Double@)">GetValues(CurveItem, Int32, out Double, out Double, out Double)</h4>
+  <div class="markdown level1 summary"><p>Get the user scale values associate with a particular point of a
+particular curve.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool GetValues(CurveItem curve, int iPt, out double baseVal, out double lowVal, out double hiVal)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ZedGraph.CurveItem.html">CurveItem</a></td>
+        <td><span class="parametername">curve</span></td>
+        <td><p>A <a class="xref" href="ZedGraph.CurveItem.html">CurveItem</a> object of interest.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">iPt</span></td>
+        <td><p>The zero-based point index for the point of interest.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.double">Double</a></td>
+        <td><span class="parametername">baseVal</span></td>
+        <td><p>A <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.double">Double</a> value representing the value
+for the independent axis.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.double">Double</a></td>
+        <td><span class="parametername">lowVal</span></td>
+        <td><p>A <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.double">Double</a> value representing the lower
+value for the dependent axis.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.double">Double</a></td>
+        <td><span class="parametername">hiVal</span></td>
+        <td><p>A <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.double">Double</a> value representing the upper
+value for the dependent axis.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><p>true if the data point is value, false for
+<a class="xref" href="ZedGraph.PointPairBase.html#ZedGraph_PointPairBase_Missing">Missing</a>, invalid, etc. data.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="ZedGraph_ValueHandler_GetValues_ZedGraph_CurveItem_System_Int32_System_Double__System_Double__System_Double___remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The main purpose of this method is to handle
+stacked bars, in which case the stacked values are returned rather
+than the individual data values.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_ValueHandler_GetValues_ZedGraph_GraphPane_ZedGraph_CurveItem_System_Int32_System_Double__System_Double__System_Double__.md&amp;value=---%0Auid%3A%20ZedGraph.ValueHandler.GetValues(ZedGraph.GraphPane%2CZedGraph.CurveItem%2CSystem.Int32%2CSystem.Double%40%2CSystem.Double%40%2CSystem.Double%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/ValueHandler.cs/#L102">View Source</a>
+  </span>
+  <a id="ZedGraph_ValueHandler_GetValues_" data-uid="ZedGraph.ValueHandler.GetValues*"></a>
+  <h4 id="ZedGraph_ValueHandler_GetValues_ZedGraph_GraphPane_ZedGraph_CurveItem_System_Int32_System_Double__System_Double__System_Double__" data-uid="ZedGraph.ValueHandler.GetValues(ZedGraph.GraphPane,ZedGraph.CurveItem,System.Int32,System.Double@,System.Double@,System.Double@)">GetValues(GraphPane, CurveItem, Int32, out Double, out Double, out Double)</h4>
+  <div class="markdown level1 summary"><p>Get the user scale values associate with a particular point of a
+particular curve.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool GetValues(GraphPane pane, CurveItem curve, int iPt, out double baseVal, out double lowVal, out double hiVal)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ZedGraph.GraphPane.html">GraphPane</a></td>
+        <td><span class="parametername">pane</span></td>
+        <td><p>The parent <a class="xref" href="ZedGraph.GraphPane.html">GraphPane</a> object.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ZedGraph.CurveItem.html">CurveItem</a></td>
+        <td><span class="parametername">curve</span></td>
+        <td><p>A <a class="xref" href="ZedGraph.CurveItem.html">CurveItem</a> object of interest.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">iPt</span></td>
+        <td><p>The zero-based point index for the point of interest.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.double">Double</a></td>
+        <td><span class="parametername">baseVal</span></td>
+        <td><p>A <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.double">Double</a> value representing the value
+for the independent axis.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.double">Double</a></td>
+        <td><span class="parametername">lowVal</span></td>
+        <td><p>A <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.double">Double</a> value representing the lower
+value for the dependent axis.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.double">Double</a></td>
+        <td><span class="parametername">hiVal</span></td>
+        <td><p>A <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.double">Double</a> value representing the upper
+value for the dependent axis.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><p>true if the data point is value, false for
+<a class="xref" href="ZedGraph.PointPairBase.html#ZedGraph_PointPairBase_Missing">Missing</a>, invalid, etc. data.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="ZedGraph_ValueHandler_GetValues_ZedGraph_GraphPane_ZedGraph_CurveItem_System_Int32_System_Double__System_Double__System_Double___remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The main purpose of this method is to handle
+stacked bars and lines, in which case the stacked values are returned rather
+than the individual data values.  However, this method works generically for any
+curve type.</p>
+</div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_ValueHandler.md&amp;value=---%0Auid%3A%20ZedGraph.ValueHandler%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/ValueHandler.cs/#L32" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

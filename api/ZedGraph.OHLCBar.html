@@ -1,0 +1,947 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class OHLCBar
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class OHLCBar
+   ">
+    <meta name="generator" content="docfx 2.56.7.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="ZedGraph.OHLCBar">
+  
+  
+  <h1 id="ZedGraph_OHLCBar" data-uid="ZedGraph.OHLCBar" class="text-break">Class OHLCBar
+  </h1>
+  <div class="markdown level0 summary"><p>This class handles the drawing of the curve <a class="xref" href="ZedGraph.OHLCBar.html">OHLCBar</a> objects.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
+    <div class="level1"><a class="xref" href="ZedGraph.LineBase.html">LineBase</a></div>
+    <div class="level2"><span class="xref">OHLCBar</span></div>
+      <div class="level3"><a class="xref" href="ZedGraph.JapaneseCandleStick.html">JapaneseCandleStick</a></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.icloneable">ICloneable</a></div>
+    <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.runtime.serialization.iserializable">ISerializable</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="ZedGraph.LineBase.html#ZedGraph_LineBase_Color">LineBase.Color</a>
+    </div>
+    <div>
+      <a class="xref" href="ZedGraph.LineBase.html#ZedGraph_LineBase_Style">LineBase.Style</a>
+    </div>
+    <div>
+      <a class="xref" href="ZedGraph.LineBase.html#ZedGraph_LineBase_DashOn">LineBase.DashOn</a>
+    </div>
+    <div>
+      <a class="xref" href="ZedGraph.LineBase.html#ZedGraph_LineBase_DashOff">LineBase.DashOff</a>
+    </div>
+    <div>
+      <a class="xref" href="ZedGraph.LineBase.html#ZedGraph_LineBase_Width">LineBase.Width</a>
+    </div>
+    <div>
+      <a class="xref" href="ZedGraph.LineBase.html#ZedGraph_LineBase_IsVisible">LineBase.IsVisible</a>
+    </div>
+    <div>
+      <a class="xref" href="ZedGraph.LineBase.html#ZedGraph_LineBase_IsAntiAlias">LineBase.IsAntiAlias</a>
+    </div>
+    <div>
+      <a class="xref" href="ZedGraph.LineBase.html#ZedGraph_LineBase_GradientFill">LineBase.GradientFill</a>
+    </div>
+    <div>
+      <a class="xref" href="ZedGraph.LineBase.html#ZedGraph_LineBase_schema0">LineBase.schema0</a>
+    </div>
+    <div>
+      <a class="xref" href="ZedGraph.LineBase.html#ZedGraph_LineBase_GetPen_ZedGraph_PaneBase_System_Single_">LineBase.GetPen(PaneBase, Single)</a>
+    </div>
+    <div>
+      <a class="xref" href="ZedGraph.LineBase.html#ZedGraph_LineBase_GetPen_ZedGraph_PaneBase_System_Single_ZedGraph_PointPair_">LineBase.GetPen(PaneBase, Single, PointPair)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#System_Object_Equals_System_Object_">Object.Equals(Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#System_Object_Equals_System_Object_System_Object_">Object.Equals(Object, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gethashcode#System_Object_GetHashCode">Object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gettype#System_Object_GetType">Object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.memberwiseclone#System_Object_MemberwiseClone">Object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.referenceequals#System_Object_ReferenceEquals_System_Object_System_Object_">Object.ReferenceEquals(Object, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.tostring#System_Object_ToString">Object.ToString()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="ZedGraph.html">ZedGraph</a></h6>
+  <h6><strong>Assembly</strong>: ZedGraph.dll</h6>
+  <h5 id="ZedGraph_OHLCBar_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Serializable]
+public class OHLCBar : LineBase, ICloneable, ISerializable</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_OHLCBar__ctor.md&amp;value=---%0Auid%3A%20ZedGraph.OHLCBar.%23ctor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/OHLCBar.cs/#L159">View Source</a>
+  </span>
+  <a id="ZedGraph_OHLCBar__ctor_" data-uid="ZedGraph.OHLCBar.#ctor*"></a>
+  <h4 id="ZedGraph_OHLCBar__ctor" data-uid="ZedGraph.OHLCBar.#ctor">OHLCBar()</h4>
+  <div class="markdown level1 summary"><p>Default constructor that sets all <a class="xref" href="ZedGraph.OHLCBar.html">OHLCBar</a> properties to
+default values as defined in the <a class="xref" href="ZedGraph.OHLCBar.Default.html">OHLCBar.Default</a> class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public OHLCBar()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_OHLCBar__ctor_System_Drawing_Color_.md&amp;value=---%0Auid%3A%20ZedGraph.OHLCBar.%23ctor(System.Drawing.Color)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/OHLCBar.cs/#L172">View Source</a>
+  </span>
+  <a id="ZedGraph_OHLCBar__ctor_" data-uid="ZedGraph.OHLCBar.#ctor*"></a>
+  <h4 id="ZedGraph_OHLCBar__ctor_System_Drawing_Color_" data-uid="ZedGraph.OHLCBar.#ctor(System.Drawing.Color)">OHLCBar(Color)</h4>
+  <div class="markdown level1 summary"><p>Default constructor that sets the
+<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.drawing.color">Color</a> as specified, and the remaining
+<a class="xref" href="ZedGraph.OHLCBar.html">OHLCBar</a> properties to default
+values as defined in the <a class="xref" href="ZedGraph.OHLCBar.Default.html">OHLCBar.Default</a> class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public OHLCBar(Color color)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.drawing.color">Color</a></td>
+        <td><span class="parametername">color</span></td>
+        <td><p>A <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.drawing.color">Color</a> value indicating
+the color of the symbol</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_OHLCBar__ctor_System_Runtime_Serialization_SerializationInfo_System_Runtime_Serialization_StreamingContext_.md&amp;value=---%0Auid%3A%20ZedGraph.OHLCBar.%23ctor(System.Runtime.Serialization.SerializationInfo%2CSystem.Runtime.Serialization.StreamingContext)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/OHLCBar.cs/#L225">View Source</a>
+  </span>
+  <a id="ZedGraph_OHLCBar__ctor_" data-uid="ZedGraph.OHLCBar.#ctor*"></a>
+  <h4 id="ZedGraph_OHLCBar__ctor_System_Runtime_Serialization_SerializationInfo_System_Runtime_Serialization_StreamingContext_" data-uid="ZedGraph.OHLCBar.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">OHLCBar(SerializationInfo, StreamingContext)</h4>
+  <div class="markdown level1 summary"><p>Constructor for deserializing objects</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected OHLCBar(SerializationInfo info, StreamingContext context)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.runtime.serialization.serializationinfo">SerializationInfo</a></td>
+        <td><span class="parametername">info</span></td>
+        <td><p>A <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.runtime.serialization.serializationinfo">SerializationInfo</a> instance that defines the serialized data</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.runtime.serialization.streamingcontext">StreamingContext</a></td>
+        <td><span class="parametername">context</span></td>
+        <td><p>A <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.runtime.serialization.streamingcontext">StreamingContext</a> instance that contains the serialized data</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_OHLCBar__ctor_ZedGraph_OHLCBar_.md&amp;value=---%0Auid%3A%20ZedGraph.OHLCBar.%23ctor(ZedGraph.OHLCBar)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/OHLCBar.cs/#L183">View Source</a>
+  </span>
+  <a id="ZedGraph_OHLCBar__ctor_" data-uid="ZedGraph.OHLCBar.#ctor*"></a>
+  <h4 id="ZedGraph_OHLCBar__ctor_ZedGraph_OHLCBar_" data-uid="ZedGraph.OHLCBar.#ctor(ZedGraph.OHLCBar)">OHLCBar(OHLCBar)</h4>
+  <div class="markdown level1 summary"><p>The Copy Constructor</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public OHLCBar(OHLCBar rhs)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ZedGraph.OHLCBar.html">OHLCBar</a></td>
+        <td><span class="parametername">rhs</span></td>
+        <td><p>The <a class="xref" href="ZedGraph.OHLCBar.html">OHLCBar</a> object from which to copy</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="fields">Fields
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_OHLCBar__isAutoSize.md&amp;value=---%0Auid%3A%20ZedGraph.OHLCBar._isAutoSize%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/OHLCBar.cs/#L66">View Source</a>
+  </span>
+  <h4 id="ZedGraph_OHLCBar__isAutoSize" data-uid="ZedGraph.OHLCBar._isAutoSize">_isAutoSize</h4>
+  <div class="markdown level1 summary"><p>Private field that determines if the <a class="xref" href="ZedGraph.OHLCBar.html#ZedGraph_OHLCBar_Size">Size</a> property will be
+calculated automatically based on the minimum axis scale step size between
+bars.  Use the public property <a class="xref" href="ZedGraph.OHLCBar.html#ZedGraph_OHLCBar_IsAutoSize">IsAutoSize</a> to access this value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[CLSCompliant(false)]
+protected bool _isAutoSize</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_OHLCBar__isOpenCloseVisible.md&amp;value=---%0Auid%3A%20ZedGraph.OHLCBar._isOpenCloseVisible%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/OHLCBar.cs/#L51">View Source</a>
+  </span>
+  <h4 id="ZedGraph_OHLCBar__isOpenCloseVisible" data-uid="ZedGraph.OHLCBar._isOpenCloseVisible">_isOpenCloseVisible</h4>
+  <div class="markdown level1 summary"><p>Private field that stores the visibility of the <a class="xref" href="ZedGraph.OHLCBar.html">OHLCBar</a> open and
+close line segments (&quot;wings&quot;).  Use the public
+property <a class="xref" href="ZedGraph.OHLCBar.html#ZedGraph_OHLCBar_IsOpenCloseVisible">IsOpenCloseVisible</a> to access this value.  If this value is
+false, the wings will not be shown.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[CLSCompliant(false)]
+protected bool _isOpenCloseVisible</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_OHLCBar__size.md&amp;value=---%0Auid%3A%20ZedGraph.OHLCBar._size%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/OHLCBar.cs/#L58">View Source</a>
+  </span>
+  <h4 id="ZedGraph_OHLCBar__size" data-uid="ZedGraph.OHLCBar._size">_size</h4>
+  <div class="markdown level1 summary"><p>Private field that stores the total width for the Opening/Closing line
+segments.  Use the public property <a class="xref" href="ZedGraph.OHLCBar.html#ZedGraph_OHLCBar_Size">Size</a> to access this value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[CLSCompliant(false)]
+protected float _size</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_OHLCBar_schema.md&amp;value=---%0Auid%3A%20ZedGraph.OHLCBar.schema%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/OHLCBar.cs/#L216">View Source</a>
+  </span>
+  <h4 id="ZedGraph_OHLCBar_schema" data-uid="ZedGraph.OHLCBar.schema">schema</h4>
+  <div class="markdown level1 summary"><p>Current schema value that defines the version of the serialized file</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int schema = 10</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_OHLCBar_IsAutoSize.md&amp;value=---%0Auid%3A%20ZedGraph.OHLCBar.IsAutoSize%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/OHLCBar.cs/#L145">View Source</a>
+  </span>
+  <a id="ZedGraph_OHLCBar_IsAutoSize_" data-uid="ZedGraph.OHLCBar.IsAutoSize*"></a>
+  <h4 id="ZedGraph_OHLCBar_IsAutoSize" data-uid="ZedGraph.OHLCBar.IsAutoSize">IsAutoSize</h4>
+  <div class="markdown level1 summary"><p>Gets or sets a value that determines if the <a class="xref" href="ZedGraph.OHLCBar.html#ZedGraph_OHLCBar_Size">Size</a> property will be
+calculated automatically based on the minimum axis scale step size between
+bars.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsAutoSize { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_OHLCBar_IsOpenCloseVisible.md&amp;value=---%0Auid%3A%20ZedGraph.OHLCBar.IsOpenCloseVisible%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/OHLCBar.cs/#L111">View Source</a>
+  </span>
+  <a id="ZedGraph_OHLCBar_IsOpenCloseVisible_" data-uid="ZedGraph.OHLCBar.IsOpenCloseVisible*"></a>
+  <h4 id="ZedGraph_OHLCBar_IsOpenCloseVisible" data-uid="ZedGraph.OHLCBar.IsOpenCloseVisible">IsOpenCloseVisible</h4>
+  <div class="markdown level1 summary"><p>Gets or sets a property that shows or hides the <a class="xref" href="ZedGraph.OHLCBar.html">OHLCBar</a> open/close &quot;wings&quot;.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsOpenCloseVisible { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><p>true to show the CandleStick wings, false to hide them</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="ZedGraph_OHLCBar_IsOpenCloseVisible_seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="ZedGraph.OHLCBar.Default.html#ZedGraph_OHLCBar_Default_IsOpenCloseVisible">IsOpenCloseVisible</a></div>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_OHLCBar_Size.md&amp;value=---%0Auid%3A%20ZedGraph.OHLCBar.Size%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/OHLCBar.cs/#L134">View Source</a>
+  </span>
+  <a id="ZedGraph_OHLCBar_Size_" data-uid="ZedGraph.OHLCBar.Size*"></a>
+  <h4 id="ZedGraph_OHLCBar_Size" data-uid="ZedGraph.OHLCBar.Size">Size</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the total width to be used for drawing the opening/closing line
+segments (&quot;wings&quot;) of the <a class="xref" href="ZedGraph.OHLCBar.html">OHLCBar</a> items. Units are points.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float Size { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td><p>Size in points (1/72 inch)</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="ZedGraph_OHLCBar_Size_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The size of the candlesticks can be set by this value, which
+is then scaled according to the scaleFactor (see
+<a class="xref" href="ZedGraph.PaneBase.html#ZedGraph_PaneBase_CalcScaleFactor">CalcScaleFactor()</a>).  Alternatively,
+if <a class="xref" href="ZedGraph.OHLCBar.html#ZedGraph_OHLCBar_IsAutoSize">IsAutoSize</a> is true, the bar width will
+be set according to the maximum available cluster width less
+the cluster gap (see <a class="xref" href="ZedGraph.BarSettings.html#ZedGraph_BarSettings_GetClusterWidth">GetClusterWidth()</a>
+and <a class="xref" href="ZedGraph.BarSettings.html#ZedGraph_BarSettings_MinClusterGap">MinClusterGap</a>).  That is, if
+<a class="xref" href="ZedGraph.OHLCBar.html#ZedGraph_OHLCBar_IsAutoSize">IsAutoSize</a> is true, then the value of
+<a class="xref" href="ZedGraph.OHLCBar.html#ZedGraph_OHLCBar_Size">Size</a> will be ignored.  If you modify the value of Size,
+then <a class="xref" href="ZedGraph.OHLCBar.html#ZedGraph_OHLCBar_IsAutoSize">IsAutoSize</a> will be automatically set to false.</p>
+</div>
+  <h5 id="ZedGraph_OHLCBar_Size_seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="ZedGraph.OHLCBar.Default.html#ZedGraph_OHLCBar_Default_Size">Size</a></div>
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_OHLCBar_Clone.md&amp;value=---%0Auid%3A%20ZedGraph.OHLCBar.Clone%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/OHLCBar.cs/#L204">View Source</a>
+  </span>
+  <a id="ZedGraph_OHLCBar_Clone_" data-uid="ZedGraph.OHLCBar.Clone*"></a>
+  <h4 id="ZedGraph_OHLCBar_Clone" data-uid="ZedGraph.OHLCBar.Clone">Clone()</h4>
+  <div class="markdown level1 summary"><p>Typesafe, deep-copy clone method.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public OHLCBar Clone()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ZedGraph.OHLCBar.html">OHLCBar</a></td>
+        <td><p>A new, independent copy of this class</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_OHLCBar_Draw_System_Drawing_Graphics_ZedGraph_GraphPane_System_Boolean_System_Single_System_Single_System_Single_System_Single_System_Single_System_Single_System_Drawing_Pen_.md&amp;value=---%0Auid%3A%20ZedGraph.OHLCBar.Draw(System.Drawing.Graphics%2CZedGraph.GraphPane%2CSystem.Boolean%2CSystem.Single%2CSystem.Single%2CSystem.Single%2CSystem.Single%2CSystem.Single%2CSystem.Single%2CSystem.Drawing.Pen)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/OHLCBar.cs/#L285">View Source</a>
+  </span>
+  <a id="ZedGraph_OHLCBar_Draw_" data-uid="ZedGraph.OHLCBar.Draw*"></a>
+  <h4 id="ZedGraph_OHLCBar_Draw_System_Drawing_Graphics_ZedGraph_GraphPane_System_Boolean_System_Single_System_Single_System_Single_System_Single_System_Single_System_Single_System_Drawing_Pen_" data-uid="ZedGraph.OHLCBar.Draw(System.Drawing.Graphics,ZedGraph.GraphPane,System.Boolean,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Drawing.Pen)">Draw(Graphics, GraphPane, Boolean, Single, Single, Single, Single, Single, Single, Pen)</h4>
+  <div class="markdown level1 summary"><p>Draw the <a class="xref" href="ZedGraph.OHLCBar.html">OHLCBar</a> to the specified <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.drawing.graphics">Graphics</a>
+device at the specified location.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Draw(Graphics g, GraphPane pane, bool isXBase, float pixBase, float pixHigh, float pixLow, float pixOpen, float pixClose, float halfSize, Pen pen)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.drawing.graphics">Graphics</a></td>
+        <td><span class="parametername">g</span></td>
+        <td><p>A graphic device object to be drawn into.  This is normally e.Graphics from the
+PaintEventArgs argument to the Paint() method.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ZedGraph.GraphPane.html">GraphPane</a></td>
+        <td><span class="parametername">pane</span></td>
+        <td><p>A reference to the <a class="xref" href="ZedGraph.GraphPane.html">GraphPane</a> object that is the parent or
+owner of this object.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="parametername">isXBase</span></td>
+        <td><p>boolean value that indicates if the &quot;base&quot; axis for this
+<a class="xref" href="ZedGraph.OHLCBar.html">OHLCBar</a> is the X axis.  True for an <a class="xref" href="ZedGraph.XAxis.html">XAxis</a> base,
+false for a <a class="xref" href="ZedGraph.YAxis.html">YAxis</a> or <a class="xref" href="ZedGraph.Y2Axis.html">Y2Axis</a> base.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td><span class="parametername">pixBase</span></td>
+        <td><p>The independent axis position of the center of the candlestick in
+pixel units</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td><span class="parametername">pixHigh</span></td>
+        <td><p>The dependent axis position of the top of the candlestick in
+pixel units</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td><span class="parametername">pixLow</span></td>
+        <td><p>The dependent axis position of the bottom of the candlestick in
+pixel units</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td><span class="parametername">pixOpen</span></td>
+        <td><p>The dependent axis position of the opening value of the candlestick in
+pixel units</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td><span class="parametername">pixClose</span></td>
+        <td><p>The dependent axis position of the closing value of the candlestick in
+pixel units</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td><span class="parametername">halfSize</span></td>
+        <td><p>The scaled width of the candlesticks, pixels</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.drawing.pen">Pen</a></td>
+        <td><span class="parametername">pen</span></td>
+        <td><p>A pen with attributes of <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.drawing.color">Color</a> and
+<a class="xref" href="ZedGraph.LineBase.html#ZedGraph_LineBase_Width">Width</a> for this <a class="xref" href="ZedGraph.OHLCBar.html">OHLCBar</a></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_OHLCBar_Draw_System_Drawing_Graphics_ZedGraph_GraphPane_ZedGraph_OHLCBarItem_ZedGraph_Axis_ZedGraph_Axis_System_Single_.md&amp;value=---%0Auid%3A%20ZedGraph.OHLCBar.Draw(System.Drawing.Graphics%2CZedGraph.GraphPane%2CZedGraph.OHLCBarItem%2CZedGraph.Axis%2CZedGraph.Axis%2CSystem.Single)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/OHLCBar.cs/#L338">View Source</a>
+  </span>
+  <a id="ZedGraph_OHLCBar_Draw_" data-uid="ZedGraph.OHLCBar.Draw*"></a>
+  <h4 id="ZedGraph_OHLCBar_Draw_System_Drawing_Graphics_ZedGraph_GraphPane_ZedGraph_OHLCBarItem_ZedGraph_Axis_ZedGraph_Axis_System_Single_" data-uid="ZedGraph.OHLCBar.Draw(System.Drawing.Graphics,ZedGraph.GraphPane,ZedGraph.OHLCBarItem,ZedGraph.Axis,ZedGraph.Axis,System.Single)">Draw(Graphics, GraphPane, OHLCBarItem, Axis, Axis, Single)</h4>
+  <div class="markdown level1 summary"><p>Draw all the <a class="xref" href="ZedGraph.OHLCBar.html">OHLCBar</a>'s to the specified <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.drawing.graphics">Graphics</a>
+device as a candlestick at each defined point.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Draw(Graphics g, GraphPane pane, OHLCBarItem curve, Axis baseAxis, Axis valueAxis, float scaleFactor)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.drawing.graphics">Graphics</a></td>
+        <td><span class="parametername">g</span></td>
+        <td><p>A graphic device object to be drawn into.  This is normally e.Graphics from the
+PaintEventArgs argument to the Paint() method.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ZedGraph.GraphPane.html">GraphPane</a></td>
+        <td><span class="parametername">pane</span></td>
+        <td><p>A reference to the <a class="xref" href="ZedGraph.GraphPane.html">GraphPane</a> object that is the parent or
+owner of this object.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ZedGraph.OHLCBarItem.html">OHLCBarItem</a></td>
+        <td><span class="parametername">curve</span></td>
+        <td><p>A <a class="xref" href="ZedGraph.OHLCBarItem.html">OHLCBarItem</a> object representing the
+<a class="xref" href="ZedGraph.OHLCBar.html">OHLCBar</a>'s to be drawn.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ZedGraph.Axis.html">Axis</a></td>
+        <td><span class="parametername">baseAxis</span></td>
+        <td><p>The <a class="xref" href="ZedGraph.Axis.html">Axis</a> class instance that defines the base (independent)
+axis for the <a class="xref" href="ZedGraph.OHLCBar.html">OHLCBar</a></p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ZedGraph.Axis.html">Axis</a></td>
+        <td><span class="parametername">valueAxis</span></td>
+        <td><p>The <a class="xref" href="ZedGraph.Axis.html">Axis</a> class instance that defines the value (dependent)
+axis for the <a class="xref" href="ZedGraph.OHLCBar.html">OHLCBar</a></p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td><span class="parametername">scaleFactor</span></td>
+        <td><p>The scaling factor to be used for rendering objects.  This is calculated and
+passed down by the parent <a class="xref" href="ZedGraph.GraphPane.html">GraphPane</a> object using the
+<a class="xref" href="ZedGraph.PaneBase.html#ZedGraph_PaneBase_CalcScaleFactor">CalcScaleFactor()</a> method, and is used to proportionally adjust
+font sizes, etc. according to the actual size of the graph.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_OHLCBar_GetBarWidth_ZedGraph_GraphPane_ZedGraph_Axis_System_Single_.md&amp;value=---%0Auid%3A%20ZedGraph.OHLCBar.GetBarWidth(ZedGraph.GraphPane%2CZedGraph.Axis%2CSystem.Single)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/OHLCBar.cs/#L423">View Source</a>
+  </span>
+  <a id="ZedGraph_OHLCBar_GetBarWidth_" data-uid="ZedGraph.OHLCBar.GetBarWidth*"></a>
+  <h4 id="ZedGraph_OHLCBar_GetBarWidth_ZedGraph_GraphPane_ZedGraph_Axis_System_Single_" data-uid="ZedGraph.OHLCBar.GetBarWidth(ZedGraph.GraphPane,ZedGraph.Axis,System.Single)">GetBarWidth(GraphPane, Axis, Single)</h4>
+  <div class="markdown level1 summary"><p>Returns the width of the candleStick, in pixels, based on the settings for
+<a class="xref" href="ZedGraph.OHLCBar.html#ZedGraph_OHLCBar_Size">Size</a> and <a class="xref" href="ZedGraph.OHLCBar.html#ZedGraph_OHLCBar_IsAutoSize">IsAutoSize</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float GetBarWidth(GraphPane pane, Axis baseAxis, float scaleFactor)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ZedGraph.GraphPane.html">GraphPane</a></td>
+        <td><span class="parametername">pane</span></td>
+        <td><p>The parent <a class="xref" href="ZedGraph.GraphPane.html">GraphPane</a> object.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ZedGraph.Axis.html">Axis</a></td>
+        <td><span class="parametername">baseAxis</span></td>
+        <td><p>The <a class="xref" href="ZedGraph.Axis.html">Axis</a> object that
+represents the bar base (independent axis).</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td><span class="parametername">scaleFactor</span></td>
+        <td><p>The scaling factor to be used for rendering objects.  This is calculated and
+passed down by the parent <a class="xref" href="ZedGraph.GraphPane.html">GraphPane</a> object using the
+<a class="xref" href="ZedGraph.PaneBase.html#ZedGraph_PaneBase_CalcScaleFactor">CalcScaleFactor()</a> method, and is used to proportionally adjust
+font sizes, etc. according to the actual size of the graph.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td><p>The width of each bar, in pixel units</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_OHLCBar_GetObjectData_System_Runtime_Serialization_SerializationInfo_System_Runtime_Serialization_StreamingContext_.md&amp;value=---%0Auid%3A%20ZedGraph.OHLCBar.GetObjectData(System.Runtime.Serialization.SerializationInfo%2CSystem.Runtime.Serialization.StreamingContext)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/OHLCBar.cs/#L241">View Source</a>
+  </span>
+  <a id="ZedGraph_OHLCBar_GetObjectData_" data-uid="ZedGraph.OHLCBar.GetObjectData*"></a>
+  <h4 id="ZedGraph_OHLCBar_GetObjectData_System_Runtime_Serialization_SerializationInfo_System_Runtime_Serialization_StreamingContext_" data-uid="ZedGraph.OHLCBar.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">GetObjectData(SerializationInfo, StreamingContext)</h4>
+  <div class="markdown level1 summary"><p>Populates a <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.runtime.serialization.serializationinfo">SerializationInfo</a> instance with the data needed to serialize the target object</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[SecurityPermission(SecurityAction.Demand, SerializationFormatter = true)]
+public override void GetObjectData(SerializationInfo info, StreamingContext context)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.runtime.serialization.serializationinfo">SerializationInfo</a></td>
+        <td><span class="parametername">info</span></td>
+        <td><p>A <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.runtime.serialization.serializationinfo">SerializationInfo</a> instance that defines the serialized data</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.runtime.serialization.streamingcontext">StreamingContext</a></td>
+        <td><span class="parametername">context</span></td>
+        <td><p>A <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.runtime.serialization.streamingcontext">StreamingContext</a> instance that contains the serialized data</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="ZedGraph.LineBase.html#ZedGraph_LineBase_GetObjectData_System_Runtime_Serialization_SerializationInfo_System_Runtime_Serialization_StreamingContext_">LineBase.GetObjectData(SerializationInfo, StreamingContext)</a></div>
+  <h3 id="eii">Explicit Interface Implementations
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_OHLCBar_System_ICloneable_Clone.md&amp;value=---%0Auid%3A%20ZedGraph.OHLCBar.System%23ICloneable%23Clone%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/OHLCBar.cs/#L195">View Source</a>
+  </span>
+  <a id="ZedGraph_OHLCBar_System_ICloneable_Clone_" data-uid="ZedGraph.OHLCBar.System#ICloneable#Clone*"></a>
+  <h4 id="ZedGraph_OHLCBar_System_ICloneable_Clone" data-uid="ZedGraph.OHLCBar.System#ICloneable#Clone">ICloneable.Clone()</h4>
+  <div class="markdown level1 summary"><p>Implement the <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.icloneable">ICloneable</a> interface in a typesafe manner by just
+calling the typed version of <a class="xref" href="ZedGraph.OHLCBar.html#ZedGraph_OHLCBar_Clone">Clone()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">object ICloneable.Clone()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></td>
+        <td><p>A deep copy of this object</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.icloneable">System.ICloneable</a>
+  </div>
+  <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.runtime.serialization.iserializable">System.Runtime.Serialization.ISerializable</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_OHLCBar.md&amp;value=---%0Auid%3A%20ZedGraph.OHLCBar%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/OHLCBar.cs/#L39" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

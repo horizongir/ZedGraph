@@ -1,0 +1,901 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class ErrorBarItem
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class ErrorBarItem
+   ">
+    <meta name="generator" content="docfx 2.56.7.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="ZedGraph.ErrorBarItem">
+  
+  
+  <h1 id="ZedGraph_ErrorBarItem" data-uid="ZedGraph.ErrorBarItem" class="text-break">Class ErrorBarItem
+  </h1>
+  <div class="markdown level0 summary"><p>Encapsulates an &quot;Error Bar&quot; curve type that displays a vertical or horizontal
+line with a symbol at each end.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
+    <div class="level1"><a class="xref" href="ZedGraph.CurveItem.html">CurveItem</a></div>
+    <div class="level2"><span class="xref">ErrorBarItem</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.icloneable">ICloneable</a></div>
+    <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.runtime.serialization.iserializable">ISerializable</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="ZedGraph.CurveItem.html#ZedGraph_CurveItem__isX2Axis">CurveItem._isX2Axis</a>
+    </div>
+    <div>
+      <a class="xref" href="ZedGraph.CurveItem.html#ZedGraph_CurveItem__isY2Axis">CurveItem._isY2Axis</a>
+    </div>
+    <div>
+      <a class="xref" href="ZedGraph.CurveItem.html#ZedGraph_CurveItem__yAxisIndex">CurveItem._yAxisIndex</a>
+    </div>
+    <div>
+      <a class="xref" href="ZedGraph.CurveItem.html#ZedGraph_CurveItem__isVisible">CurveItem._isVisible</a>
+    </div>
+    <div>
+      <a class="xref" href="ZedGraph.CurveItem.html#ZedGraph_CurveItem__isSelected">CurveItem._isSelected</a>
+    </div>
+    <div>
+      <a class="xref" href="ZedGraph.CurveItem.html#ZedGraph_CurveItem__isSelectable">CurveItem._isSelectable</a>
+    </div>
+    <div>
+      <a class="xref" href="ZedGraph.CurveItem.html#ZedGraph_CurveItem__isOverrideOrdinal">CurveItem._isOverrideOrdinal</a>
+    </div>
+    <div>
+      <a class="xref" href="ZedGraph.CurveItem.html#ZedGraph_CurveItem__points">CurveItem._points</a>
+    </div>
+    <div>
+      <a class="xref" href="ZedGraph.CurveItem.html#ZedGraph_CurveItem_Tag">CurveItem.Tag</a>
+    </div>
+    <div>
+      <a class="xref" href="ZedGraph.CurveItem.html#ZedGraph_CurveItem_schema">CurveItem.schema</a>
+    </div>
+    <div>
+      <a class="xref" href="ZedGraph.CurveItem.html#ZedGraph_CurveItem_Label">CurveItem.Label</a>
+    </div>
+    <div>
+      <a class="xref" href="ZedGraph.CurveItem.html#ZedGraph_CurveItem_Color">CurveItem.Color</a>
+    </div>
+    <div>
+      <a class="xref" href="ZedGraph.CurveItem.html#ZedGraph_CurveItem_IsVisible">CurveItem.IsVisible</a>
+    </div>
+    <div>
+      <a class="xref" href="ZedGraph.CurveItem.html#ZedGraph_CurveItem_IsSelected">CurveItem.IsSelected</a>
+    </div>
+    <div>
+      <a class="xref" href="ZedGraph.CurveItem.html#ZedGraph_CurveItem_IsSelectable">CurveItem.IsSelectable</a>
+    </div>
+    <div>
+      <a class="xref" href="ZedGraph.CurveItem.html#ZedGraph_CurveItem_IsOverrideOrdinal">CurveItem.IsOverrideOrdinal</a>
+    </div>
+    <div>
+      <a class="xref" href="ZedGraph.CurveItem.html#ZedGraph_CurveItem_IsX2Axis">CurveItem.IsX2Axis</a>
+    </div>
+    <div>
+      <a class="xref" href="ZedGraph.CurveItem.html#ZedGraph_CurveItem_IsY2Axis">CurveItem.IsY2Axis</a>
+    </div>
+    <div>
+      <a class="xref" href="ZedGraph.CurveItem.html#ZedGraph_CurveItem_YAxisIndex">CurveItem.YAxisIndex</a>
+    </div>
+    <div>
+      <a class="xref" href="ZedGraph.CurveItem.html#ZedGraph_CurveItem_IsBar">CurveItem.IsBar</a>
+    </div>
+    <div>
+      <a class="xref" href="ZedGraph.CurveItem.html#ZedGraph_CurveItem_IsPie">CurveItem.IsPie</a>
+    </div>
+    <div>
+      <a class="xref" href="ZedGraph.CurveItem.html#ZedGraph_CurveItem_IsLine">CurveItem.IsLine</a>
+    </div>
+    <div>
+      <a class="xref" href="ZedGraph.CurveItem.html#ZedGraph_CurveItem_NPts">CurveItem.NPts</a>
+    </div>
+    <div>
+      <a class="xref" href="ZedGraph.CurveItem.html#ZedGraph_CurveItem_Points">CurveItem.Points</a>
+    </div>
+    <div>
+      <a class="xref" href="ZedGraph.CurveItem.html#ZedGraph_CurveItem_Item_System_Int32_">CurveItem.Item[Int32]</a>
+    </div>
+    <div>
+      <a class="xref" href="ZedGraph.CurveItem.html#ZedGraph_CurveItem_Link">CurveItem.Link</a>
+    </div>
+    <div>
+      <a class="xref" href="ZedGraph.CurveItem.html#ZedGraph_CurveItem_AddPoint_System_Double_System_Double_">CurveItem.AddPoint(Double, Double)</a>
+    </div>
+    <div>
+      <a class="xref" href="ZedGraph.CurveItem.html#ZedGraph_CurveItem_AddPoint_ZedGraph_PointPair_">CurveItem.AddPoint(PointPair)</a>
+    </div>
+    <div>
+      <a class="xref" href="ZedGraph.CurveItem.html#ZedGraph_CurveItem_Clear">CurveItem.Clear()</a>
+    </div>
+    <div>
+      <a class="xref" href="ZedGraph.CurveItem.html#ZedGraph_CurveItem_RemovePoint_System_Int32_">CurveItem.RemovePoint(Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="ZedGraph.CurveItem.html#ZedGraph_CurveItem_GetXAxis_ZedGraph_GraphPane_">CurveItem.GetXAxis(GraphPane)</a>
+    </div>
+    <div>
+      <a class="xref" href="ZedGraph.CurveItem.html#ZedGraph_CurveItem_GetYAxis_ZedGraph_GraphPane_">CurveItem.GetYAxis(GraphPane)</a>
+    </div>
+    <div>
+      <a class="xref" href="ZedGraph.CurveItem.html#ZedGraph_CurveItem_GetYAxisIndex_ZedGraph_GraphPane_">CurveItem.GetYAxisIndex(GraphPane)</a>
+    </div>
+    <div>
+      <a class="xref" href="ZedGraph.CurveItem.html#ZedGraph_CurveItem_MakeUnique">CurveItem.MakeUnique()</a>
+    </div>
+    <div>
+      <a class="xref" href="ZedGraph.CurveItem.html#ZedGraph_CurveItem_MakeUnique_ZedGraph_ColorSymbolRotator_">CurveItem.MakeUnique(ColorSymbolRotator)</a>
+    </div>
+    <div>
+      <a class="xref" href="ZedGraph.CurveItem.html#ZedGraph_CurveItem_GetRange_System_Double__System_Double__System_Double__System_Double__System_Boolean_System_Boolean_ZedGraph_GraphPane_">CurveItem.GetRange(Double, Double, Double, Double, Boolean, Boolean, GraphPane)</a>
+    </div>
+    <div>
+      <a class="xref" href="ZedGraph.CurveItem.html#ZedGraph_CurveItem_BaseAxis_ZedGraph_GraphPane_">CurveItem.BaseAxis(GraphPane)</a>
+    </div>
+    <div>
+      <a class="xref" href="ZedGraph.CurveItem.html#ZedGraph_CurveItem_ValueAxis_ZedGraph_GraphPane_">CurveItem.ValueAxis(GraphPane)</a>
+    </div>
+    <div>
+      <a class="xref" href="ZedGraph.CurveItem.html#ZedGraph_CurveItem_GetBarWidth_ZedGraph_GraphPane_">CurveItem.GetBarWidth(GraphPane)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#System_Object_Equals_System_Object_">Object.Equals(Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#System_Object_Equals_System_Object_System_Object_">Object.Equals(Object, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gethashcode#System_Object_GetHashCode">Object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gettype#System_Object_GetType">Object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.memberwiseclone#System_Object_MemberwiseClone">Object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.referenceequals#System_Object_ReferenceEquals_System_Object_System_Object_">Object.ReferenceEquals(Object, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.tostring#System_Object_ToString">Object.ToString()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="ZedGraph.html">ZedGraph</a></h6>
+  <h6><strong>Assembly</strong>: ZedGraph.dll</h6>
+  <h5 id="ZedGraph_ErrorBarItem_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Serializable]
+public class ErrorBarItem : CurveItem, ICloneable, ISerializable</code></pre>
+  </div>
+  <h5 id="ZedGraph_ErrorBarItem_remarks"><strong>Remarks</strong></h5>
+  <div class="markdown level0 remarks"><p>The <a class="xref" href="ZedGraph.ErrorBarItem.html">ErrorBarItem</a> type is intended for displaying
+confidence intervals, candlesticks, stock High-Low charts, etc.  It is
+technically not a bar, since it is drawn as a vertical or horizontal line.
+The default symbol at each end of the &quot;bar&quot; is <a class="xref" href="ZedGraph.SymbolType.html#ZedGraph_SymbolType_HDash">HDash</a>,
+which creates an &quot;I-Beam&quot;.  For horizontal bars
+(<a class="xref" href="ZedGraph.BarBase.html#ZedGraph_BarBase_Y">Y</a> or
+<a class="xref" href="ZedGraph.BarBase.html#ZedGraph_BarBase_Y2">Y2</a>), you will need to change the symbol to
+<a class="xref" href="ZedGraph.SymbolType.html#ZedGraph_SymbolType_VDash">VDash</a> to get horizontal &quot;I-Beams&quot;.
+Since the horizontal segments are actually symbols, their widths are
+controlled by the symbol size in <a class="xref" href="ZedGraph.ErrorBar.html#ZedGraph_ErrorBar_Symbol">Symbol</a>,
+specified in points (1/72nd inch).  The position of each &quot;I-Beam&quot; is set
+according to the <a class="xref" href="ZedGraph.PointPair.html">PointPair</a> values.  The independent axis
+is assigned with <a class="xref" href="ZedGraph.BarSettings.html#ZedGraph_BarSettings_Base">Base</a>, and is a
+<a class="xref" href="ZedGraph.BarBase.html">BarBase</a> enum type.</p>
+</div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_ErrorBarItem__ctor_System_Runtime_Serialization_SerializationInfo_System_Runtime_Serialization_StreamingContext_.md&amp;value=---%0Auid%3A%20ZedGraph.ErrorBarItem.%23ctor(System.Runtime.Serialization.SerializationInfo%2CSystem.Runtime.Serialization.StreamingContext)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/ErrorBarItem.cs/#L187">View Source</a>
+  </span>
+  <a id="ZedGraph_ErrorBarItem__ctor_" data-uid="ZedGraph.ErrorBarItem.#ctor*"></a>
+  <h4 id="ZedGraph_ErrorBarItem__ctor_System_Runtime_Serialization_SerializationInfo_System_Runtime_Serialization_StreamingContext_" data-uid="ZedGraph.ErrorBarItem.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">ErrorBarItem(SerializationInfo, StreamingContext)</h4>
+  <div class="markdown level1 summary"><p>Constructor for deserializing objects</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected ErrorBarItem(SerializationInfo info, StreamingContext context)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.runtime.serialization.serializationinfo">SerializationInfo</a></td>
+        <td><span class="parametername">info</span></td>
+        <td><p>A <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.runtime.serialization.serializationinfo">SerializationInfo</a> instance that defines the serialized data</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.runtime.serialization.streamingcontext">StreamingContext</a></td>
+        <td><span class="parametername">context</span></td>
+        <td><p>A <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.runtime.serialization.streamingcontext">StreamingContext</a> instance that contains the serialized data</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_ErrorBarItem__ctor_System_String_.md&amp;value=---%0Auid%3A%20ZedGraph.ErrorBarItem.%23ctor(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/ErrorBarItem.cs/#L105">View Source</a>
+  </span>
+  <a id="ZedGraph_ErrorBarItem__ctor_" data-uid="ZedGraph.ErrorBarItem.#ctor*"></a>
+  <h4 id="ZedGraph_ErrorBarItem__ctor_System_String_" data-uid="ZedGraph.ErrorBarItem.#ctor(System.String)">ErrorBarItem(String)</h4>
+  <div class="markdown level1 summary"><p>Create a new <a class="xref" href="ZedGraph.ErrorBarItem.html">ErrorBarItem</a>, specifying only the legend label.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ErrorBarItem(string label)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">label</span></td>
+        <td><p>The label that will appear in the legend.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_ErrorBarItem__ctor_System_String_System_Double___System_Double___System_Double___System_Drawing_Color_.md&amp;value=---%0Auid%3A%20ZedGraph.ErrorBarItem.%23ctor(System.String%2CSystem.Double%5B%5D%2CSystem.Double%5B%5D%2CSystem.Double%5B%5D%2CSystem.Drawing.Color)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/ErrorBarItem.cs/#L123">View Source</a>
+  </span>
+  <a id="ZedGraph_ErrorBarItem__ctor_" data-uid="ZedGraph.ErrorBarItem.#ctor*"></a>
+  <h4 id="ZedGraph_ErrorBarItem__ctor_System_String_System_Double___System_Double___System_Double___System_Drawing_Color_" data-uid="ZedGraph.ErrorBarItem.#ctor(System.String,System.Double[],System.Double[],System.Double[],System.Drawing.Color)">ErrorBarItem(String, Double[], Double[], Double[], Color)</h4>
+  <div class="markdown level1 summary"><p>Create a new <a class="xref" href="ZedGraph.ErrorBarItem.html">ErrorBarItem</a> using the specified properties.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ErrorBarItem(string label, double[] x, double[] y, double[] lowValue, Color color)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">label</span></td>
+        <td><p>The label that will appear in the legend.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.double">Double</a>[]</td>
+        <td><span class="parametername">x</span></td>
+        <td><p>An array of double precision values that define
+the X axis values for this curve</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.double">Double</a>[]</td>
+        <td><span class="parametername">y</span></td>
+        <td><p>An array of double precision values that define
+the Y axis values for this curve</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.double">Double</a>[]</td>
+        <td><span class="parametername">lowValue</span></td>
+        <td><p>An array of double precision values that define
+the lower dependent values for this curve</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.drawing.color">Color</a></td>
+        <td><span class="parametername">color</span></td>
+        <td><p>A <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.drawing.color">Color</a> value that will be applied to
+the <a class="xref" href="ZedGraph.Line.html">Line</a> properties.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_ErrorBarItem__ctor_System_String_ZedGraph_IPointList_System_Drawing_Color_.md&amp;value=---%0Auid%3A%20ZedGraph.ErrorBarItem.%23ctor(System.String%2CZedGraph.IPointList%2CSystem.Drawing.Color)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/ErrorBarItem.cs/#L138">View Source</a>
+  </span>
+  <a id="ZedGraph_ErrorBarItem__ctor_" data-uid="ZedGraph.ErrorBarItem.#ctor*"></a>
+  <h4 id="ZedGraph_ErrorBarItem__ctor_System_String_ZedGraph_IPointList_System_Drawing_Color_" data-uid="ZedGraph.ErrorBarItem.#ctor(System.String,ZedGraph.IPointList,System.Drawing.Color)">ErrorBarItem(String, IPointList, Color)</h4>
+  <div class="markdown level1 summary"><p>Create a new <a class="xref" href="ZedGraph.ErrorBarItem.html">ErrorBarItem</a> using the specified properties.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ErrorBarItem(string label, IPointList points, Color color)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">label</span></td>
+        <td><p>The label that will appear in the legend.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ZedGraph.IPointList.html">IPointList</a></td>
+        <td><span class="parametername">points</span></td>
+        <td><p>A <a class="xref" href="ZedGraph.IPointList.html">IPointList</a> of double precision values that define
+the X, Y and lower dependent values for this curve</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.drawing.color">Color</a></td>
+        <td><span class="parametername">color</span></td>
+        <td><p>A <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.drawing.color">Color</a> value that will be applied to
+the <a class="xref" href="ZedGraph.Line.html">Line</a> properties.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_ErrorBarItem__ctor_ZedGraph_ErrorBarItem_.md&amp;value=---%0Auid%3A%20ZedGraph.ErrorBarItem.%23ctor(ZedGraph.ErrorBarItem)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/ErrorBarItem.cs/#L148">View Source</a>
+  </span>
+  <a id="ZedGraph_ErrorBarItem__ctor_" data-uid="ZedGraph.ErrorBarItem.#ctor*"></a>
+  <h4 id="ZedGraph_ErrorBarItem__ctor_ZedGraph_ErrorBarItem_" data-uid="ZedGraph.ErrorBarItem.#ctor(ZedGraph.ErrorBarItem)">ErrorBarItem(ErrorBarItem)</h4>
+  <div class="markdown level1 summary"><p>The Copy Constructor</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ErrorBarItem(ErrorBarItem rhs)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ZedGraph.ErrorBarItem.html">ErrorBarItem</a></td>
+        <td><span class="parametername">rhs</span></td>
+        <td><p>The <a class="xref" href="ZedGraph.ErrorBarItem.html">ErrorBarItem</a> object from which to copy</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="fields">Fields
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_ErrorBarItem_schema2.md&amp;value=---%0Auid%3A%20ZedGraph.ErrorBarItem.schema2%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/ErrorBarItem.cs/#L178">View Source</a>
+  </span>
+  <h4 id="ZedGraph_ErrorBarItem_schema2" data-uid="ZedGraph.ErrorBarItem.schema2">schema2</h4>
+  <div class="markdown level1 summary"><p>Current schema value that defines the version of the serialized file</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int schema2 = 10</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_ErrorBarItem_Bar.md&amp;value=---%0Auid%3A%20ZedGraph.ErrorBarItem.Bar%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/ErrorBarItem.cs/#L71">View Source</a>
+  </span>
+  <a id="ZedGraph_ErrorBarItem_Bar_" data-uid="ZedGraph.ErrorBarItem.Bar*"></a>
+  <h4 id="ZedGraph_ErrorBarItem_Bar" data-uid="ZedGraph.ErrorBarItem.Bar">Bar</h4>
+  <div class="markdown level1 summary"><p>Gets a reference to the <a class="xref" href="ZedGraph.ErrorBar.html">ErrorBar</a> class defined
+for this <a class="xref" href="ZedGraph.ErrorBarItem.html">ErrorBarItem</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ErrorBar Bar { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ZedGraph.ErrorBar.html">ErrorBar</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_ErrorBarItem_Clone.md&amp;value=---%0Auid%3A%20ZedGraph.ErrorBarItem.Clone%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/ErrorBarItem.cs/#L167">View Source</a>
+  </span>
+  <a id="ZedGraph_ErrorBarItem_Clone_" data-uid="ZedGraph.ErrorBarItem.Clone*"></a>
+  <h4 id="ZedGraph_ErrorBarItem_Clone" data-uid="ZedGraph.ErrorBarItem.Clone">Clone()</h4>
+  <div class="markdown level1 summary"><p>Typesafe, deep-copy clone method.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ErrorBarItem Clone()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ZedGraph.ErrorBarItem.html">ErrorBarItem</a></td>
+        <td><p>A new, independent copy of this class</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_ErrorBarItem_Draw_System_Drawing_Graphics_ZedGraph_GraphPane_System_Int32_System_Single_.md&amp;value=---%0Auid%3A%20ZedGraph.ErrorBarItem.Draw(System.Drawing.Graphics%2CZedGraph.GraphPane%2CSystem.Int32%2CSystem.Single)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/ErrorBarItem.cs/#L238">View Source</a>
+  </span>
+  <a id="ZedGraph_ErrorBarItem_Draw_" data-uid="ZedGraph.ErrorBarItem.Draw*"></a>
+  <h4 id="ZedGraph_ErrorBarItem_Draw_System_Drawing_Graphics_ZedGraph_GraphPane_System_Int32_System_Single_" data-uid="ZedGraph.ErrorBarItem.Draw(System.Drawing.Graphics,ZedGraph.GraphPane,System.Int32,System.Single)">Draw(Graphics, GraphPane, Int32, Single)</h4>
+  <div class="markdown level1 summary"><p>Do all rendering associated with this <a class="xref" href="ZedGraph.ErrorBarItem.html">ErrorBarItem</a> to the specified
+<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.drawing.graphics">Graphics</a> device.  This method is normally only
+called by the Draw method of the parent <a class="xref" href="ZedGraph.CurveList.html">CurveList</a>
+collection object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void Draw(Graphics g, GraphPane pane, int pos, float scaleFactor)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.drawing.graphics">Graphics</a></td>
+        <td><span class="parametername">g</span></td>
+        <td><p>A graphic device object to be drawn into.  This is normally e.Graphics from the
+PaintEventArgs argument to the Paint() method.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ZedGraph.GraphPane.html">GraphPane</a></td>
+        <td><span class="parametername">pane</span></td>
+        <td><p>A reference to the <a class="xref" href="ZedGraph.GraphPane.html">GraphPane</a> object that is the parent or
+owner of this object.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">pos</span></td>
+        <td><p>The ordinal position of the current <a class="xref" href="ZedGraph.ErrorBarItem.html">ErrorBarItem</a>
+curve.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td><span class="parametername">scaleFactor</span></td>
+        <td><p>The scaling factor to be used for rendering objects.  This is calculated and
+passed down by the parent <a class="xref" href="ZedGraph.GraphPane.html">GraphPane</a> object using the
+<a class="xref" href="ZedGraph.PaneBase.html#ZedGraph_PaneBase_CalcScaleFactor">CalcScaleFactor()</a> method, and is used to proportionally adjust
+font sizes, etc. according to the actual size of the graph.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="ZedGraph.CurveItem.html#ZedGraph_CurveItem_Draw_System_Drawing_Graphics_ZedGraph_GraphPane_System_Int32_System_Single_">CurveItem.Draw(Graphics, GraphPane, Int32, Single)</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_ErrorBarItem_DrawLegendKey_System_Drawing_Graphics_ZedGraph_GraphPane_System_Drawing_RectangleF_System_Single_.md&amp;value=---%0Auid%3A%20ZedGraph.ErrorBarItem.DrawLegendKey(System.Drawing.Graphics%2CZedGraph.GraphPane%2CSystem.Drawing.RectangleF%2CSystem.Single)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/ErrorBarItem.cs/#L266">View Source</a>
+  </span>
+  <a id="ZedGraph_ErrorBarItem_DrawLegendKey_" data-uid="ZedGraph.ErrorBarItem.DrawLegendKey*"></a>
+  <h4 id="ZedGraph_ErrorBarItem_DrawLegendKey_System_Drawing_Graphics_ZedGraph_GraphPane_System_Drawing_RectangleF_System_Single_" data-uid="ZedGraph.ErrorBarItem.DrawLegendKey(System.Drawing.Graphics,ZedGraph.GraphPane,System.Drawing.RectangleF,System.Single)">DrawLegendKey(Graphics, GraphPane, RectangleF, Single)</h4>
+  <div class="markdown level1 summary"><p>Draw a legend key entry for this <a class="xref" href="ZedGraph.ErrorBarItem.html">ErrorBarItem</a> at the specified location</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void DrawLegendKey(Graphics g, GraphPane pane, RectangleF rect, float scaleFactor)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.drawing.graphics">Graphics</a></td>
+        <td><span class="parametername">g</span></td>
+        <td><p>A graphic device object to be drawn into.  This is normally e.Graphics from the
+PaintEventArgs argument to the Paint() method.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ZedGraph.GraphPane.html">GraphPane</a></td>
+        <td><span class="parametername">pane</span></td>
+        <td><p>A reference to the <a class="xref" href="ZedGraph.GraphPane.html">GraphPane</a> object that is the parent or
+owner of this object.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.drawing.rectanglef">RectangleF</a></td>
+        <td><span class="parametername">rect</span></td>
+        <td><p>The <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.drawing.rectanglef">RectangleF</a> struct that specifies the
+location for the legend key</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td><span class="parametername">scaleFactor</span></td>
+        <td><p>The scaling factor to be used for rendering objects.  This is calculated and
+passed down by the parent <a class="xref" href="ZedGraph.GraphPane.html">GraphPane</a> object using the
+<a class="xref" href="ZedGraph.PaneBase.html#ZedGraph_PaneBase_CalcScaleFactor">CalcScaleFactor()</a> method, and is used to proportionally adjust
+font sizes, etc. according to the actual size of the graph.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="ZedGraph.CurveItem.html#ZedGraph_CurveItem_DrawLegendKey_System_Drawing_Graphics_ZedGraph_GraphPane_System_Drawing_RectangleF_System_Single_">CurveItem.DrawLegendKey(Graphics, GraphPane, RectangleF, Single)</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_ErrorBarItem_GetCoords_ZedGraph_GraphPane_System_Int32_System_String__.md&amp;value=---%0Auid%3A%20ZedGraph.ErrorBarItem.GetCoords(ZedGraph.GraphPane%2CSystem.Int32%2CSystem.String%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/ErrorBarItem.cs/#L300">View Source</a>
+  </span>
+  <a id="ZedGraph_ErrorBarItem_GetCoords_" data-uid="ZedGraph.ErrorBarItem.GetCoords*"></a>
+  <h4 id="ZedGraph_ErrorBarItem_GetCoords_ZedGraph_GraphPane_System_Int32_System_String__" data-uid="ZedGraph.ErrorBarItem.GetCoords(ZedGraph.GraphPane,System.Int32,System.String@)">GetCoords(GraphPane, Int32, out String)</h4>
+  <div class="markdown level1 summary"><p>Determine the coords for the rectangle associated with a specified point for
+this <a class="xref" href="ZedGraph.CurveItem.html">CurveItem</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool GetCoords(GraphPane pane, int i, out string coords)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ZedGraph.GraphPane.html">GraphPane</a></td>
+        <td><span class="parametername">pane</span></td>
+        <td><p>The <a class="xref" href="ZedGraph.GraphPane.html">GraphPane</a> to which this curve belongs</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">i</span></td>
+        <td><p>The index of the point of interest</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">coords</span></td>
+        <td><p>A list of coordinates that represents the &quot;rect&quot; for
+this point (used in an html AREA tag)</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><p>true if it's a valid point, false otherwise</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="ZedGraph.CurveItem.html#ZedGraph_CurveItem_GetCoords_ZedGraph_GraphPane_System_Int32_System_String__">CurveItem.GetCoords(GraphPane, Int32, out String)</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_ErrorBarItem_GetObjectData_System_Runtime_Serialization_SerializationInfo_System_Runtime_Serialization_StreamingContext_.md&amp;value=---%0Auid%3A%20ZedGraph.ErrorBarItem.GetObjectData(System.Runtime.Serialization.SerializationInfo%2CSystem.Runtime.Serialization.StreamingContext)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/ErrorBarItem.cs/#L203">View Source</a>
+  </span>
+  <a id="ZedGraph_ErrorBarItem_GetObjectData_" data-uid="ZedGraph.ErrorBarItem.GetObjectData*"></a>
+  <h4 id="ZedGraph_ErrorBarItem_GetObjectData_System_Runtime_Serialization_SerializationInfo_System_Runtime_Serialization_StreamingContext_" data-uid="ZedGraph.ErrorBarItem.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">GetObjectData(SerializationInfo, StreamingContext)</h4>
+  <div class="markdown level1 summary"><p>Populates a <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.runtime.serialization.serializationinfo">SerializationInfo</a> instance with the data needed to serialize the target object</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[SecurityPermission(SecurityAction.Demand, SerializationFormatter = true)]
+public override void GetObjectData(SerializationInfo info, StreamingContext context)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.runtime.serialization.serializationinfo">SerializationInfo</a></td>
+        <td><span class="parametername">info</span></td>
+        <td><p>A <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.runtime.serialization.serializationinfo">SerializationInfo</a> instance that defines the serialized data</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.runtime.serialization.streamingcontext">StreamingContext</a></td>
+        <td><span class="parametername">context</span></td>
+        <td><p>A <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.runtime.serialization.streamingcontext">StreamingContext</a> instance that contains the serialized data</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="ZedGraph.CurveItem.html#ZedGraph_CurveItem_GetObjectData_System_Runtime_Serialization_SerializationInfo_System_Runtime_Serialization_StreamingContext_">CurveItem.GetObjectData(SerializationInfo, StreamingContext)</a></div>
+  <h3 id="eii">Explicit Interface Implementations
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_ErrorBarItem_System_ICloneable_Clone.md&amp;value=---%0Auid%3A%20ZedGraph.ErrorBarItem.System%23ICloneable%23Clone%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/ErrorBarItem.cs/#L158">View Source</a>
+  </span>
+  <a id="ZedGraph_ErrorBarItem_System_ICloneable_Clone_" data-uid="ZedGraph.ErrorBarItem.System#ICloneable#Clone*"></a>
+  <h4 id="ZedGraph_ErrorBarItem_System_ICloneable_Clone" data-uid="ZedGraph.ErrorBarItem.System#ICloneable#Clone">ICloneable.Clone()</h4>
+  <div class="markdown level1 summary"><p>Implement the <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.icloneable">ICloneable</a> interface in a typesafe manner by just
+calling the typed version of <a class="xref" href="ZedGraph.ErrorBarItem.html#ZedGraph_ErrorBarItem_Clone">Clone()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">object ICloneable.Clone()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></td>
+        <td><p>A deep copy of this object</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.icloneable">System.ICloneable</a>
+  </div>
+  <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.runtime.serialization.iserializable">System.Runtime.Serialization.ISerializable</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_ErrorBarItem.md&amp;value=---%0Auid%3A%20ZedGraph.ErrorBarItem%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/ErrorBarItem.cs/#L53" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

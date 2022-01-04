@@ -1,0 +1,802 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class ZoomStateStack
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class ZoomStateStack
+   ">
+    <meta name="generator" content="docfx 2.56.7.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="ZedGraph.ZoomStateStack">
+  
+  
+  <h1 id="ZedGraph_ZoomStateStack" data-uid="ZedGraph.ZoomStateStack" class="text-break">Class ZoomStateStack
+  </h1>
+  <div class="markdown level0 summary"><p>A LIFO stack of prior <a class="xref" href="ZedGraph.ZoomState.html">ZoomState</a> objects, used to allow zooming out to prior
+states (of scale range settings).</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
+    <div class="level1"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="ZedGraph.ZoomState.html">ZoomState</a>&gt;</div>
+    <div class="level2"><span class="xref">ZoomStateStack</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList</a>&lt;<a class="xref" href="ZedGraph.ZoomState.html">ZoomState</a>&gt;</div>
+    <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.icollection-1">ICollection</a>&lt;<a class="xref" href="ZedGraph.ZoomState.html">ZoomState</a>&gt;</div>
+    <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="ZedGraph.ZoomState.html">ZoomState</a>&gt;</div>
+    <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.ilist">IList</a></div>
+    <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.icollection">ICollection</a></div>
+    <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.ienumerable">IEnumerable</a></div>
+    <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.icloneable">ICloneable</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Collections.Generic.List&lt;ZedGraph.ZoomState&gt;.System.Collections.IList.get_Item(System.Int32)</span>
+    </div>
+    <div>
+      <span class="xref">System.Collections.Generic.List&lt;ZedGraph.ZoomState&gt;.System.Collections.IList.set_Item(System.Int32, System.Object)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.add#System_Collections_Generic_List_1_Add__0_">List&lt;ZoomState&gt;.Add(ZoomState)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.addrange#System_Collections_Generic_List_1_AddRange_System_Collections_Generic_IEnumerable__0__">List&lt;ZoomState&gt;.AddRange(IEnumerable&lt;ZoomState&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.asreadonly#System_Collections_Generic_List_1_AsReadOnly">List&lt;ZoomState&gt;.AsReadOnly()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.binarysearch#System_Collections_Generic_List_1_BinarySearch_System_Int32_System_Int32__0_System_Collections_Generic_IComparer__0__">List&lt;ZoomState&gt;.BinarySearch(Int32, Int32, ZoomState, IComparer&lt;ZoomState&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.binarysearch#System_Collections_Generic_List_1_BinarySearch__0_">List&lt;ZoomState&gt;.BinarySearch(ZoomState)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.binarysearch#System_Collections_Generic_List_1_BinarySearch__0_System_Collections_Generic_IComparer__0__">List&lt;ZoomState&gt;.BinarySearch(ZoomState, IComparer&lt;ZoomState&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.clear#System_Collections_Generic_List_1_Clear">List&lt;ZoomState&gt;.Clear()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.contains#System_Collections_Generic_List_1_Contains__0_">List&lt;ZoomState&gt;.Contains(ZoomState)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.convertall#System_Collections_Generic_List_1_ConvertAll__1_System_Converter__0___0__">List&lt;ZoomState&gt;.ConvertAll&lt;TOutput&gt;(Converter&lt;ZoomState, TOutput&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.copyto#System_Collections_Generic_List_1_CopyTo_System_Int32__0___System_Int32_System_Int32_">List&lt;ZoomState&gt;.CopyTo(Int32, ZoomState[], Int32, Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.copyto#System_Collections_Generic_List_1_CopyTo__0___">List&lt;ZoomState&gt;.CopyTo(ZoomState[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.copyto#System_Collections_Generic_List_1_CopyTo__0___System_Int32_">List&lt;ZoomState&gt;.CopyTo(ZoomState[], Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.exists#System_Collections_Generic_List_1_Exists_System_Predicate__0__">List&lt;ZoomState&gt;.Exists(Predicate&lt;ZoomState&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.find#System_Collections_Generic_List_1_Find_System_Predicate__0__">List&lt;ZoomState&gt;.Find(Predicate&lt;ZoomState&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.findall#System_Collections_Generic_List_1_FindAll_System_Predicate__0__">List&lt;ZoomState&gt;.FindAll(Predicate&lt;ZoomState&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.findindex#System_Collections_Generic_List_1_FindIndex_System_Int32_System_Int32_System_Predicate__0__">List&lt;ZoomState&gt;.FindIndex(Int32, Int32, Predicate&lt;ZoomState&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.findindex#System_Collections_Generic_List_1_FindIndex_System_Int32_System_Predicate__0__">List&lt;ZoomState&gt;.FindIndex(Int32, Predicate&lt;ZoomState&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.findindex#System_Collections_Generic_List_1_FindIndex_System_Predicate__0__">List&lt;ZoomState&gt;.FindIndex(Predicate&lt;ZoomState&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.findlast#System_Collections_Generic_List_1_FindLast_System_Predicate__0__">List&lt;ZoomState&gt;.FindLast(Predicate&lt;ZoomState&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.findlastindex#System_Collections_Generic_List_1_FindLastIndex_System_Int32_System_Int32_System_Predicate__0__">List&lt;ZoomState&gt;.FindLastIndex(Int32, Int32, Predicate&lt;ZoomState&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.findlastindex#System_Collections_Generic_List_1_FindLastIndex_System_Int32_System_Predicate__0__">List&lt;ZoomState&gt;.FindLastIndex(Int32, Predicate&lt;ZoomState&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.findlastindex#System_Collections_Generic_List_1_FindLastIndex_System_Predicate__0__">List&lt;ZoomState&gt;.FindLastIndex(Predicate&lt;ZoomState&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.foreach#System_Collections_Generic_List_1_ForEach_System_Action__0__">List&lt;ZoomState&gt;.ForEach(Action&lt;ZoomState&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.getenumerator#System_Collections_Generic_List_1_GetEnumerator">List&lt;ZoomState&gt;.GetEnumerator()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.getrange#System_Collections_Generic_List_1_GetRange_System_Int32_System_Int32_">List&lt;ZoomState&gt;.GetRange(Int32, Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.indexof#System_Collections_Generic_List_1_IndexOf__0_">List&lt;ZoomState&gt;.IndexOf(ZoomState)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.indexof#System_Collections_Generic_List_1_IndexOf__0_System_Int32_">List&lt;ZoomState&gt;.IndexOf(ZoomState, Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.indexof#System_Collections_Generic_List_1_IndexOf__0_System_Int32_System_Int32_">List&lt;ZoomState&gt;.IndexOf(ZoomState, Int32, Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.insert#System_Collections_Generic_List_1_Insert_System_Int32__0_">List&lt;ZoomState&gt;.Insert(Int32, ZoomState)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.insertrange#System_Collections_Generic_List_1_InsertRange_System_Int32_System_Collections_Generic_IEnumerable__0__">List&lt;ZoomState&gt;.InsertRange(Int32, IEnumerable&lt;ZoomState&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.lastindexof#System_Collections_Generic_List_1_LastIndexOf__0_">List&lt;ZoomState&gt;.LastIndexOf(ZoomState)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.lastindexof#System_Collections_Generic_List_1_LastIndexOf__0_System_Int32_">List&lt;ZoomState&gt;.LastIndexOf(ZoomState, Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.lastindexof#System_Collections_Generic_List_1_LastIndexOf__0_System_Int32_System_Int32_">List&lt;ZoomState&gt;.LastIndexOf(ZoomState, Int32, Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.remove#System_Collections_Generic_List_1_Remove__0_">List&lt;ZoomState&gt;.Remove(ZoomState)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.removeall#System_Collections_Generic_List_1_RemoveAll_System_Predicate__0__">List&lt;ZoomState&gt;.RemoveAll(Predicate&lt;ZoomState&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.removeat#System_Collections_Generic_List_1_RemoveAt_System_Int32_">List&lt;ZoomState&gt;.RemoveAt(Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.removerange#System_Collections_Generic_List_1_RemoveRange_System_Int32_System_Int32_">List&lt;ZoomState&gt;.RemoveRange(Int32, Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.reverse#System_Collections_Generic_List_1_Reverse">List&lt;ZoomState&gt;.Reverse()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.reverse#System_Collections_Generic_List_1_Reverse_System_Int32_System_Int32_">List&lt;ZoomState&gt;.Reverse(Int32, Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.sort#System_Collections_Generic_List_1_Sort">List&lt;ZoomState&gt;.Sort()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.sort#System_Collections_Generic_List_1_Sort_System_Collections_Generic_IComparer__0__">List&lt;ZoomState&gt;.Sort(IComparer&lt;ZoomState&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.sort#System_Collections_Generic_List_1_Sort_System_Comparison__0__">List&lt;ZoomState&gt;.Sort(Comparison&lt;ZoomState&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.sort#System_Collections_Generic_List_1_Sort_System_Int32_System_Int32_System_Collections_Generic_IComparer__0__">List&lt;ZoomState&gt;.Sort(Int32, Int32, IComparer&lt;ZoomState&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.system-collections-generic-ienumerable-t--getenumerator#System_Collections_Generic_List_1_System_Collections_Generic_IEnumerable_T__GetEnumerator">List&lt;ZoomState&gt;.IEnumerable&lt;ZoomState&gt;.GetEnumerator()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.system-collections-icollection-copyto#System_Collections_Generic_List_1_System_Collections_ICollection_CopyTo_System_Array_System_Int32_">List&lt;ZoomState&gt;.ICollection.CopyTo(Array, Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.system-collections-ienumerable-getenumerator#System_Collections_Generic_List_1_System_Collections_IEnumerable_GetEnumerator">List&lt;ZoomState&gt;.IEnumerable.GetEnumerator()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.system-collections-ilist-add#System_Collections_Generic_List_1_System_Collections_IList_Add_System_Object_">List&lt;ZoomState&gt;.IList.Add(Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.system-collections-ilist-contains#System_Collections_Generic_List_1_System_Collections_IList_Contains_System_Object_">List&lt;ZoomState&gt;.IList.Contains(Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.system-collections-ilist-indexof#System_Collections_Generic_List_1_System_Collections_IList_IndexOf_System_Object_">List&lt;ZoomState&gt;.IList.IndexOf(Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.system-collections-ilist-insert#System_Collections_Generic_List_1_System_Collections_IList_Insert_System_Int32_System_Object_">List&lt;ZoomState&gt;.IList.Insert(Int32, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.system-collections-ilist-remove#System_Collections_Generic_List_1_System_Collections_IList_Remove_System_Object_">List&lt;ZoomState&gt;.IList.Remove(Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.toarray#System_Collections_Generic_List_1_ToArray">List&lt;ZoomState&gt;.ToArray()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.trimexcess#System_Collections_Generic_List_1_TrimExcess">List&lt;ZoomState&gt;.TrimExcess()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.trueforall#System_Collections_Generic_List_1_TrueForAll_System_Predicate__0__">List&lt;ZoomState&gt;.TrueForAll(Predicate&lt;ZoomState&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.capacity#System_Collections_Generic_List_1_Capacity">List&lt;ZoomState&gt;.Capacity</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.count#System_Collections_Generic_List_1_Count">List&lt;ZoomState&gt;.Count</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.item#System_Collections_Generic_List_1_Item_System_Int32_">List&lt;ZoomState&gt;.Item[Int32]</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.system-collections-generic-icollection-t--isreadonly#System_Collections_Generic_List_1_System_Collections_Generic_ICollection_T__IsReadOnly">List&lt;ZoomState&gt;.ICollection&lt;ZoomState&gt;.IsReadOnly</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.system-collections-icollection-issynchronized#System_Collections_Generic_List_1_System_Collections_ICollection_IsSynchronized">List&lt;ZoomState&gt;.ICollection.IsSynchronized</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.system-collections-icollection-syncroot#System_Collections_Generic_List_1_System_Collections_ICollection_SyncRoot">List&lt;ZoomState&gt;.ICollection.SyncRoot</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.system-collections-ilist-isfixedsize#System_Collections_Generic_List_1_System_Collections_IList_IsFixedSize">List&lt;ZoomState&gt;.IList.IsFixedSize</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.system-collections-ilist-isreadonly#System_Collections_Generic_List_1_System_Collections_IList_IsReadOnly">List&lt;ZoomState&gt;.IList.IsReadOnly</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.system-collections-ilist-item#System_Collections_Generic_List_1_System_Collections_IList_Item_System_Int32_">List&lt;ZoomState&gt;.IList.Item[Int32]</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#System_Object_Equals_System_Object_">Object.Equals(Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#System_Object_Equals_System_Object_System_Object_">Object.Equals(Object, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gethashcode#System_Object_GetHashCode">Object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gettype#System_Object_GetType">Object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.memberwiseclone#System_Object_MemberwiseClone">Object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.referenceequals#System_Object_ReferenceEquals_System_Object_System_Object_">Object.ReferenceEquals(Object, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.tostring#System_Object_ToString">Object.ToString()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="ZedGraph.html">ZedGraph</a></h6>
+  <h6><strong>Assembly</strong>: ZedGraph.dll</h6>
+  <h5 id="ZedGraph_ZoomStateStack_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class ZoomStateStack : List&lt;ZoomState&gt;, IList&lt;ZoomState&gt;, ICollection&lt;ZoomState&gt;, IEnumerable&lt;ZoomState&gt;, IList, ICollection, IEnumerable, ICloneable</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_ZoomStateStack__ctor.md&amp;value=---%0Auid%3A%20ZedGraph.ZoomStateStack.%23ctor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/ZoomStateStack.cs/#L41">View Source</a>
+  </span>
+  <a id="ZedGraph_ZoomStateStack__ctor_" data-uid="ZedGraph.ZoomStateStack.#ctor*"></a>
+  <h4 id="ZedGraph_ZoomStateStack__ctor" data-uid="ZedGraph.ZoomStateStack.#ctor">ZoomStateStack()</h4>
+  <div class="markdown level1 summary"><p>Default Constructor</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ZoomStateStack()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_ZoomStateStack__ctor_ZedGraph_ZoomStateStack_.md&amp;value=---%0Auid%3A%20ZedGraph.ZoomStateStack.%23ctor(ZedGraph.ZoomStateStack)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/ZoomStateStack.cs/#L49">View Source</a>
+  </span>
+  <a id="ZedGraph_ZoomStateStack__ctor_" data-uid="ZedGraph.ZoomStateStack.#ctor*"></a>
+  <h4 id="ZedGraph_ZoomStateStack__ctor_ZedGraph_ZoomStateStack_" data-uid="ZedGraph.ZoomStateStack.#ctor(ZedGraph.ZoomStateStack)">ZoomStateStack(ZoomStateStack)</h4>
+  <div class="markdown level1 summary"><p>The Copy Constructor</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ZoomStateStack(ZoomStateStack rhs)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ZedGraph.ZoomStateStack.html">ZoomStateStack</a></td>
+        <td><span class="parametername">rhs</span></td>
+        <td><p>The <a class="xref" href="ZedGraph.ZoomStateStack.html">ZoomStateStack</a> object from which to copy</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_ZoomStateStack_IsEmpty.md&amp;value=---%0Auid%3A%20ZedGraph.ZoomStateStack.IsEmpty%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/ZoomStateStack.cs/#L81">View Source</a>
+  </span>
+  <a id="ZedGraph_ZoomStateStack_IsEmpty_" data-uid="ZedGraph.ZoomStateStack.IsEmpty*"></a>
+  <h4 id="ZedGraph_ZoomStateStack_IsEmpty" data-uid="ZedGraph.ZoomStateStack.IsEmpty">IsEmpty</h4>
+  <div class="markdown level1 summary"><p>Public readonly property that indicates if the stack is empty</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsEmpty { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><p>true for an empty stack, false otherwise</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_ZoomStateStack_Top.md&amp;value=---%0Auid%3A%20ZedGraph.ZoomStateStack.Top%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/ZoomStateStack.cs/#L167">View Source</a>
+  </span>
+  <a id="ZedGraph_ZoomStateStack_Top_" data-uid="ZedGraph.ZoomStateStack.Top*"></a>
+  <h4 id="ZedGraph_ZoomStateStack_Top" data-uid="ZedGraph.ZoomStateStack.Top">Top</h4>
+  <div class="markdown level1 summary"><p>Gets a reference to the <a class="xref" href="ZedGraph.ZoomState.html">ZoomState</a> object at the top of the stack,
+without actually removing it from the stack.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ZoomState Top { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ZedGraph.ZoomState.html">ZoomState</a></td>
+        <td><p>A <a class="xref" href="ZedGraph.ZoomState.html">ZoomState</a> object reference, or null if the stack is empty.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_ZoomStateStack_Clone.md&amp;value=---%0Auid%3A%20ZedGraph.ZoomStateStack.Clone%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/ZoomStateStack.cs/#L71">View Source</a>
+  </span>
+  <a id="ZedGraph_ZoomStateStack_Clone_" data-uid="ZedGraph.ZoomStateStack.Clone*"></a>
+  <h4 id="ZedGraph_ZoomStateStack_Clone" data-uid="ZedGraph.ZoomStateStack.Clone">Clone()</h4>
+  <div class="markdown level1 summary"><p>Typesafe, deep-copy clone method.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ZoomStateStack Clone()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ZedGraph.ZoomStateStack.html">ZoomStateStack</a></td>
+        <td><p>A new, independent copy of this class</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_ZoomStateStack_Pop_ZedGraph_GraphPane_.md&amp;value=---%0Auid%3A%20ZedGraph.ZoomStateStack.Pop(ZedGraph.GraphPane)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/ZoomStateStack.cs/#L124">View Source</a>
+  </span>
+  <a id="ZedGraph_ZoomStateStack_Pop_" data-uid="ZedGraph.ZoomStateStack.Pop*"></a>
+  <h4 id="ZedGraph_ZoomStateStack_Pop_ZedGraph_GraphPane_" data-uid="ZedGraph.ZoomStateStack.Pop(ZedGraph.GraphPane)">Pop(GraphPane)</h4>
+  <div class="markdown level1 summary"><p>Pop a <a class="xref" href="ZedGraph.ZoomState.html">ZoomState</a> entry from the top of the stack, and apply the properties
+to the specified <a class="xref" href="ZedGraph.GraphPane.html">GraphPane</a> object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ZoomState Pop(GraphPane pane)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ZedGraph.GraphPane.html">GraphPane</a></td>
+        <td><span class="parametername">pane</span></td>
+        <td><p>The <a class="xref" href="ZedGraph.GraphPane.html">GraphPane</a> object to which the scale range
+information should be copied.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ZedGraph.ZoomState.html">ZoomState</a></td>
+        <td><p>The <a class="xref" href="ZedGraph.ZoomState.html">ZoomState</a> object that was &quot;popped&quot; from the stack and applied
+to the specified <a class="xref" href="ZedGraph.GraphPane.html">GraphPane</a>.  null if no <a class="xref" href="ZedGraph.ZoomState.html">ZoomState</a> was
+available (the stack was empty).</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_ZoomStateStack_PopAll_ZedGraph_GraphPane_.md&amp;value=---%0Auid%3A%20ZedGraph.ZoomStateStack.PopAll(ZedGraph.GraphPane)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/ZoomStateStack.cs/#L147">View Source</a>
+  </span>
+  <a id="ZedGraph_ZoomStateStack_PopAll_" data-uid="ZedGraph.ZoomStateStack.PopAll*"></a>
+  <h4 id="ZedGraph_ZoomStateStack_PopAll_ZedGraph_GraphPane_" data-uid="ZedGraph.ZoomStateStack.PopAll(ZedGraph.GraphPane)">PopAll(GraphPane)</h4>
+  <div class="markdown level1 summary"><p>Pop the <a class="xref" href="ZedGraph.ZoomState.html">ZoomState</a> entry from the bottom of the stack, and apply the properties
+to the specified <a class="xref" href="ZedGraph.GraphPane.html">GraphPane</a> object.  Clear the stack completely.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ZoomState PopAll(GraphPane pane)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ZedGraph.GraphPane.html">GraphPane</a></td>
+        <td><span class="parametername">pane</span></td>
+        <td><p>The <a class="xref" href="ZedGraph.GraphPane.html">GraphPane</a> object to which the scale range
+information should be copied.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ZedGraph.ZoomState.html">ZoomState</a></td>
+        <td><p>The <a class="xref" href="ZedGraph.ZoomState.html">ZoomState</a> object at the bottom of the stack that was applied
+to the specified <a class="xref" href="ZedGraph.GraphPane.html">GraphPane</a>.  null if no <a class="xref" href="ZedGraph.ZoomState.html">ZoomState</a> was
+available (the stack was empty).</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_ZoomStateStack_Push_ZedGraph_GraphPane_ZedGraph_ZoomState_StateType_.md&amp;value=---%0Auid%3A%20ZedGraph.ZoomStateStack.Push(ZedGraph.GraphPane%2CZedGraph.ZoomState.StateType)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/ZoomStateStack.cs/#L95">View Source</a>
+  </span>
+  <a id="ZedGraph_ZoomStateStack_Push_" data-uid="ZedGraph.ZoomStateStack.Push*"></a>
+  <h4 id="ZedGraph_ZoomStateStack_Push_ZedGraph_GraphPane_ZedGraph_ZoomState_StateType_" data-uid="ZedGraph.ZoomStateStack.Push(ZedGraph.GraphPane,ZedGraph.ZoomState.StateType)">Push(GraphPane, ZoomState.StateType)</h4>
+  <div class="markdown level1 summary"><p>Add the scale range information from the specified <a class="xref" href="ZedGraph.GraphPane.html">GraphPane</a> object as a
+new <a class="xref" href="ZedGraph.ZoomState.html">ZoomState</a> entry on the stack.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ZoomState Push(GraphPane pane, ZoomState.StateType type)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ZedGraph.GraphPane.html">GraphPane</a></td>
+        <td><span class="parametername">pane</span></td>
+        <td><p>The <a class="xref" href="ZedGraph.GraphPane.html">GraphPane</a> object from which the scale range
+information should be copied.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ZedGraph.ZoomState.StateType.html">ZoomState.StateType</a></td>
+        <td><span class="parametername">type</span></td>
+        <td><p>A <a class="xref" href="ZedGraph.ZoomState.StateType.html">ZoomState.StateType</a> enumeration that indicates whether this
+state is the result of a zoom or pan operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ZedGraph.ZoomState.html">ZoomState</a></td>
+        <td><p>The resultant <a class="xref" href="ZedGraph.ZoomState.html">ZoomState</a> object that was pushed on the stack.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_ZoomStateStack_Push_ZedGraph_ZoomState_.md&amp;value=---%0Auid%3A%20ZedGraph.ZoomStateStack.Push(ZedGraph.ZoomState)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/ZoomStateStack.cs/#L109">View Source</a>
+  </span>
+  <a id="ZedGraph_ZoomStateStack_Push_" data-uid="ZedGraph.ZoomStateStack.Push*"></a>
+  <h4 id="ZedGraph_ZoomStateStack_Push_ZedGraph_ZoomState_" data-uid="ZedGraph.ZoomStateStack.Push(ZedGraph.ZoomState)">Push(ZoomState)</h4>
+  <div class="markdown level1 summary"><p>Add the scale range information from the specified <a class="xref" href="ZedGraph.ZoomState.html">ZoomState</a> object as a
+new <a class="xref" href="ZedGraph.ZoomState.html">ZoomState</a> entry on the stack.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ZoomState Push(ZoomState state)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ZedGraph.ZoomState.html">ZoomState</a></td>
+        <td><span class="parametername">state</span></td>
+        <td><p>The <a class="xref" href="ZedGraph.ZoomState.html">ZoomState</a> object to be placed on the stack.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ZedGraph.ZoomState.html">ZoomState</a></td>
+        <td><p>The <a class="xref" href="ZedGraph.ZoomState.html">ZoomState</a> object (same as the <see paramref="state"></see>
+parameter).</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="eii">Explicit Interface Implementations
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_ZoomStateStack_System_ICloneable_Clone.md&amp;value=---%0Auid%3A%20ZedGraph.ZoomStateStack.System%23ICloneable%23Clone%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/ZoomStateStack.cs/#L62">View Source</a>
+  </span>
+  <a id="ZedGraph_ZoomStateStack_System_ICloneable_Clone_" data-uid="ZedGraph.ZoomStateStack.System#ICloneable#Clone*"></a>
+  <h4 id="ZedGraph_ZoomStateStack_System_ICloneable_Clone" data-uid="ZedGraph.ZoomStateStack.System#ICloneable#Clone">ICloneable.Clone()</h4>
+  <div class="markdown level1 summary"><p>Implement the <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.icloneable">ICloneable</a> interface in a typesafe manner by just
+calling the typed version of <a class="xref" href="ZedGraph.ZoomStateStack.html#ZedGraph_ZoomStateStack_Clone">Clone()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">object ICloneable.Clone()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></td>
+        <td><p>A deep copy of this object</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ilist-1">System.Collections.Generic.IList&lt;T&gt;</a>
+  </div>
+  <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.icollection-1">System.Collections.Generic.ICollection&lt;T&gt;</a>
+  </div>
+  <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">System.Collections.Generic.IEnumerable&lt;T&gt;</a>
+  </div>
+  <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.ilist">System.Collections.IList</a>
+  </div>
+  <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.icollection">System.Collections.ICollection</a>
+  </div>
+  <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.ienumerable">System.Collections.IEnumerable</a>
+  </div>
+  <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.icloneable">System.ICloneable</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_ZoomStateStack.md&amp;value=---%0Auid%3A%20ZedGraph.ZoomStateStack%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/ZoomStateStack.cs/#L36" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

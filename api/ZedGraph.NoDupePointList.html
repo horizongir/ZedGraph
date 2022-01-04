@@ -1,0 +1,1065 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class NoDupePointList
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class NoDupePointList
+   ">
+    <meta name="generator" content="docfx 2.56.7.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="ZedGraph.NoDupePointList">
+  
+  
+  <h1 id="ZedGraph_NoDupePointList" data-uid="ZedGraph.NoDupePointList" class="text-break">Class NoDupePointList
+  </h1>
+  <div class="markdown level0 summary"><p>A collection class to maintain a set of samples.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
+    <div class="level1"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="ZedGraph.DataPoint.html">DataPoint</a>&gt;</div>
+    <div class="level2"><span class="xref">NoDupePointList</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList</a>&lt;<a class="xref" href="ZedGraph.DataPoint.html">DataPoint</a>&gt;</div>
+    <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.icollection-1">ICollection</a>&lt;<a class="xref" href="ZedGraph.DataPoint.html">DataPoint</a>&gt;</div>
+    <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="ZedGraph.DataPoint.html">DataPoint</a>&gt;</div>
+    <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.ilist">IList</a></div>
+    <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.icollection">ICollection</a></div>
+    <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.ienumerable">IEnumerable</a></div>
+    <div><a class="xref" href="ZedGraph.IPointListEdit.html">IPointListEdit</a></div>
+    <div><a class="xref" href="ZedGraph.IPointList.html">IPointList</a></div>
+    <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.icloneable">ICloneable</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Collections.Generic.List&lt;ZedGraph.DataPoint&gt;.System.Collections.IList.get_Item(System.Int32)</span>
+    </div>
+    <div>
+      <span class="xref">System.Collections.Generic.List&lt;ZedGraph.DataPoint&gt;.System.Collections.IList.set_Item(System.Int32, System.Object)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.add#System_Collections_Generic_List_1_Add__0_">List&lt;DataPoint&gt;.Add(DataPoint)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.addrange#System_Collections_Generic_List_1_AddRange_System_Collections_Generic_IEnumerable__0__">List&lt;DataPoint&gt;.AddRange(IEnumerable&lt;DataPoint&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.asreadonly#System_Collections_Generic_List_1_AsReadOnly">List&lt;DataPoint&gt;.AsReadOnly()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.binarysearch#System_Collections_Generic_List_1_BinarySearch_System_Int32_System_Int32__0_System_Collections_Generic_IComparer__0__">List&lt;DataPoint&gt;.BinarySearch(Int32, Int32, DataPoint, IComparer&lt;DataPoint&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.binarysearch#System_Collections_Generic_List_1_BinarySearch__0_">List&lt;DataPoint&gt;.BinarySearch(DataPoint)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.binarysearch#System_Collections_Generic_List_1_BinarySearch__0_System_Collections_Generic_IComparer__0__">List&lt;DataPoint&gt;.BinarySearch(DataPoint, IComparer&lt;DataPoint&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.clear#System_Collections_Generic_List_1_Clear">List&lt;DataPoint&gt;.Clear()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.contains#System_Collections_Generic_List_1_Contains__0_">List&lt;DataPoint&gt;.Contains(DataPoint)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.convertall#System_Collections_Generic_List_1_ConvertAll__1_System_Converter__0___0__">List&lt;DataPoint&gt;.ConvertAll&lt;TOutput&gt;(Converter&lt;DataPoint, TOutput&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.copyto#System_Collections_Generic_List_1_CopyTo_System_Int32__0___System_Int32_System_Int32_">List&lt;DataPoint&gt;.CopyTo(Int32, DataPoint[], Int32, Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.copyto#System_Collections_Generic_List_1_CopyTo__0___">List&lt;DataPoint&gt;.CopyTo(DataPoint[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.copyto#System_Collections_Generic_List_1_CopyTo__0___System_Int32_">List&lt;DataPoint&gt;.CopyTo(DataPoint[], Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.exists#System_Collections_Generic_List_1_Exists_System_Predicate__0__">List&lt;DataPoint&gt;.Exists(Predicate&lt;DataPoint&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.find#System_Collections_Generic_List_1_Find_System_Predicate__0__">List&lt;DataPoint&gt;.Find(Predicate&lt;DataPoint&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.findall#System_Collections_Generic_List_1_FindAll_System_Predicate__0__">List&lt;DataPoint&gt;.FindAll(Predicate&lt;DataPoint&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.findindex#System_Collections_Generic_List_1_FindIndex_System_Int32_System_Int32_System_Predicate__0__">List&lt;DataPoint&gt;.FindIndex(Int32, Int32, Predicate&lt;DataPoint&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.findindex#System_Collections_Generic_List_1_FindIndex_System_Int32_System_Predicate__0__">List&lt;DataPoint&gt;.FindIndex(Int32, Predicate&lt;DataPoint&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.findindex#System_Collections_Generic_List_1_FindIndex_System_Predicate__0__">List&lt;DataPoint&gt;.FindIndex(Predicate&lt;DataPoint&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.findlast#System_Collections_Generic_List_1_FindLast_System_Predicate__0__">List&lt;DataPoint&gt;.FindLast(Predicate&lt;DataPoint&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.findlastindex#System_Collections_Generic_List_1_FindLastIndex_System_Int32_System_Int32_System_Predicate__0__">List&lt;DataPoint&gt;.FindLastIndex(Int32, Int32, Predicate&lt;DataPoint&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.findlastindex#System_Collections_Generic_List_1_FindLastIndex_System_Int32_System_Predicate__0__">List&lt;DataPoint&gt;.FindLastIndex(Int32, Predicate&lt;DataPoint&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.findlastindex#System_Collections_Generic_List_1_FindLastIndex_System_Predicate__0__">List&lt;DataPoint&gt;.FindLastIndex(Predicate&lt;DataPoint&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.foreach#System_Collections_Generic_List_1_ForEach_System_Action__0__">List&lt;DataPoint&gt;.ForEach(Action&lt;DataPoint&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.getenumerator#System_Collections_Generic_List_1_GetEnumerator">List&lt;DataPoint&gt;.GetEnumerator()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.getrange#System_Collections_Generic_List_1_GetRange_System_Int32_System_Int32_">List&lt;DataPoint&gt;.GetRange(Int32, Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.indexof#System_Collections_Generic_List_1_IndexOf__0_">List&lt;DataPoint&gt;.IndexOf(DataPoint)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.indexof#System_Collections_Generic_List_1_IndexOf__0_System_Int32_">List&lt;DataPoint&gt;.IndexOf(DataPoint, Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.indexof#System_Collections_Generic_List_1_IndexOf__0_System_Int32_System_Int32_">List&lt;DataPoint&gt;.IndexOf(DataPoint, Int32, Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.insert#System_Collections_Generic_List_1_Insert_System_Int32__0_">List&lt;DataPoint&gt;.Insert(Int32, DataPoint)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.insertrange#System_Collections_Generic_List_1_InsertRange_System_Int32_System_Collections_Generic_IEnumerable__0__">List&lt;DataPoint&gt;.InsertRange(Int32, IEnumerable&lt;DataPoint&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.lastindexof#System_Collections_Generic_List_1_LastIndexOf__0_">List&lt;DataPoint&gt;.LastIndexOf(DataPoint)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.lastindexof#System_Collections_Generic_List_1_LastIndexOf__0_System_Int32_">List&lt;DataPoint&gt;.LastIndexOf(DataPoint, Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.lastindexof#System_Collections_Generic_List_1_LastIndexOf__0_System_Int32_System_Int32_">List&lt;DataPoint&gt;.LastIndexOf(DataPoint, Int32, Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.remove#System_Collections_Generic_List_1_Remove__0_">List&lt;DataPoint&gt;.Remove(DataPoint)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.removeall#System_Collections_Generic_List_1_RemoveAll_System_Predicate__0__">List&lt;DataPoint&gt;.RemoveAll(Predicate&lt;DataPoint&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.removeat#System_Collections_Generic_List_1_RemoveAt_System_Int32_">List&lt;DataPoint&gt;.RemoveAt(Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.removerange#System_Collections_Generic_List_1_RemoveRange_System_Int32_System_Int32_">List&lt;DataPoint&gt;.RemoveRange(Int32, Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.reverse#System_Collections_Generic_List_1_Reverse">List&lt;DataPoint&gt;.Reverse()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.reverse#System_Collections_Generic_List_1_Reverse_System_Int32_System_Int32_">List&lt;DataPoint&gt;.Reverse(Int32, Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.sort#System_Collections_Generic_List_1_Sort">List&lt;DataPoint&gt;.Sort()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.sort#System_Collections_Generic_List_1_Sort_System_Collections_Generic_IComparer__0__">List&lt;DataPoint&gt;.Sort(IComparer&lt;DataPoint&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.sort#System_Collections_Generic_List_1_Sort_System_Comparison__0__">List&lt;DataPoint&gt;.Sort(Comparison&lt;DataPoint&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.sort#System_Collections_Generic_List_1_Sort_System_Int32_System_Int32_System_Collections_Generic_IComparer__0__">List&lt;DataPoint&gt;.Sort(Int32, Int32, IComparer&lt;DataPoint&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.system-collections-generic-ienumerable-t--getenumerator#System_Collections_Generic_List_1_System_Collections_Generic_IEnumerable_T__GetEnumerator">List&lt;DataPoint&gt;.IEnumerable&lt;DataPoint&gt;.GetEnumerator()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.system-collections-icollection-copyto#System_Collections_Generic_List_1_System_Collections_ICollection_CopyTo_System_Array_System_Int32_">List&lt;DataPoint&gt;.ICollection.CopyTo(Array, Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.system-collections-ienumerable-getenumerator#System_Collections_Generic_List_1_System_Collections_IEnumerable_GetEnumerator">List&lt;DataPoint&gt;.IEnumerable.GetEnumerator()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.system-collections-ilist-add#System_Collections_Generic_List_1_System_Collections_IList_Add_System_Object_">List&lt;DataPoint&gt;.IList.Add(Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.system-collections-ilist-contains#System_Collections_Generic_List_1_System_Collections_IList_Contains_System_Object_">List&lt;DataPoint&gt;.IList.Contains(Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.system-collections-ilist-indexof#System_Collections_Generic_List_1_System_Collections_IList_IndexOf_System_Object_">List&lt;DataPoint&gt;.IList.IndexOf(Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.system-collections-ilist-insert#System_Collections_Generic_List_1_System_Collections_IList_Insert_System_Int32_System_Object_">List&lt;DataPoint&gt;.IList.Insert(Int32, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.system-collections-ilist-remove#System_Collections_Generic_List_1_System_Collections_IList_Remove_System_Object_">List&lt;DataPoint&gt;.IList.Remove(Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.toarray#System_Collections_Generic_List_1_ToArray">List&lt;DataPoint&gt;.ToArray()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.trimexcess#System_Collections_Generic_List_1_TrimExcess">List&lt;DataPoint&gt;.TrimExcess()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.trueforall#System_Collections_Generic_List_1_TrueForAll_System_Predicate__0__">List&lt;DataPoint&gt;.TrueForAll(Predicate&lt;DataPoint&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.capacity#System_Collections_Generic_List_1_Capacity">List&lt;DataPoint&gt;.Capacity</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.system-collections-generic-icollection-t--isreadonly#System_Collections_Generic_List_1_System_Collections_Generic_ICollection_T__IsReadOnly">List&lt;DataPoint&gt;.ICollection&lt;DataPoint&gt;.IsReadOnly</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.system-collections-icollection-issynchronized#System_Collections_Generic_List_1_System_Collections_ICollection_IsSynchronized">List&lt;DataPoint&gt;.ICollection.IsSynchronized</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.system-collections-icollection-syncroot#System_Collections_Generic_List_1_System_Collections_ICollection_SyncRoot">List&lt;DataPoint&gt;.ICollection.SyncRoot</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.system-collections-ilist-isfixedsize#System_Collections_Generic_List_1_System_Collections_IList_IsFixedSize">List&lt;DataPoint&gt;.IList.IsFixedSize</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.system-collections-ilist-isreadonly#System_Collections_Generic_List_1_System_Collections_IList_IsReadOnly">List&lt;DataPoint&gt;.IList.IsReadOnly</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.system-collections-ilist-item#System_Collections_Generic_List_1_System_Collections_IList_Item_System_Int32_">List&lt;DataPoint&gt;.IList.Item[Int32]</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#System_Object_Equals_System_Object_">Object.Equals(Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#System_Object_Equals_System_Object_System_Object_">Object.Equals(Object, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gethashcode#System_Object_GetHashCode">Object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gettype#System_Object_GetType">Object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.memberwiseclone#System_Object_MemberwiseClone">Object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.referenceequals#System_Object_ReferenceEquals_System_Object_System_Object_">Object.ReferenceEquals(Object, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.tostring#System_Object_ToString">Object.ToString()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="ZedGraph.html">ZedGraph</a></h6>
+  <h6><strong>Assembly</strong>: ZedGraph.dll</h6>
+  <h5 id="ZedGraph_NoDupePointList_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Serializable]
+public class NoDupePointList : List&lt;DataPoint&gt;, IList&lt;DataPoint&gt;, ICollection&lt;DataPoint&gt;, IEnumerable&lt;DataPoint&gt;, IList, ICollection, IEnumerable, IPointListEdit, IPointList, ICloneable</code></pre>
+  </div>
+  <h5 id="ZedGraph_NoDupePointList_remarks"><strong>Remarks</strong></h5>
+  <div class="markdown level0 remarks"><p>This type, intended for very
+large datasets, will reduce the number of points displayed by eliminating
+individual points that overlay (at the same pixel location) on the graph.
+Note that this type probably does not make sense for line plots, but is intended
+primarily for scatter plots.</p>
+</div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_NoDupePointList__ctor.md&amp;value=---%0Auid%3A%20ZedGraph.NoDupePointList.%23ctor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/NoDupePointList.cs/#L231">View Source</a>
+  </span>
+  <a id="ZedGraph_NoDupePointList__ctor_" data-uid="ZedGraph.NoDupePointList.#ctor*"></a>
+  <h4 id="ZedGraph_NoDupePointList__ctor" data-uid="ZedGraph.NoDupePointList.#ctor">NoDupePointList()</h4>
+  <div class="markdown level1 summary"><p>default constructor</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public NoDupePointList()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_NoDupePointList__ctor_ZedGraph_NoDupePointList_.md&amp;value=---%0Auid%3A%20ZedGraph.NoDupePointList.%23ctor(ZedGraph.NoDupePointList)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/NoDupePointList.cs/#L244">View Source</a>
+  </span>
+  <a id="ZedGraph_NoDupePointList__ctor_" data-uid="ZedGraph.NoDupePointList.#ctor*"></a>
+  <h4 id="ZedGraph_NoDupePointList__ctor_ZedGraph_NoDupePointList_" data-uid="ZedGraph.NoDupePointList.#ctor(ZedGraph.NoDupePointList)">NoDupePointList(NoDupePointList)</h4>
+  <div class="markdown level1 summary"><p>copy constructor -- this returns a copy of the structure,
+but it does not duplicate the data (it just keeps a reference to the original)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public NoDupePointList(NoDupePointList rhs)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ZedGraph.NoDupePointList.html">NoDupePointList</a></td>
+        <td><span class="parametername">rhs</span></td>
+        <td><p>The NoDupePointList to be copied</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="fields">Fields
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_NoDupePointList__filteredCount.md&amp;value=---%0Auid%3A%20ZedGraph.NoDupePointList._filteredCount%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/NoDupePointList.cs/#L74">View Source</a>
+  </span>
+  <h4 id="ZedGraph_NoDupePointList__filteredCount" data-uid="ZedGraph.NoDupePointList._filteredCount">_filteredCount</h4>
+  <div class="markdown level1 summary"><p>Protected field that stores the number of data points after filtering (e.g.,
+<a class="xref" href="ZedGraph.NoDupePointList.html#ZedGraph_NoDupePointList_FilterData_ZedGraph_GraphPane_ZedGraph_Axis_ZedGraph_Axis_">FilterData(GraphPane, Axis, Axis)</a> has been called).  The <a class="xref" href="ZedGraph.NoDupePointList.html#ZedGraph_NoDupePointList_Count">Count</a> property
+returns the total count for an unfiltered dataset, or <a class="xref" href="ZedGraph.NoDupePointList.html#ZedGraph_NoDupePointList__filteredCount">_filteredCount</a>
+for a dataset that has been filtered.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[CLSCompliant(false)]
+protected int _filteredCount</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_NoDupePointList__filterMode.md&amp;value=---%0Auid%3A%20ZedGraph.NoDupePointList._filterMode%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/NoDupePointList.cs/#L89">View Source</a>
+  </span>
+  <h4 id="ZedGraph_NoDupePointList__filterMode" data-uid="ZedGraph.NoDupePointList._filterMode">_filterMode</h4>
+  <div class="markdown level1 summary"><p>Protected field that stores a value that determines how close a point must be to a prior
+neighbor in order to be filtered out.  Use the public property <a class="xref" href="ZedGraph.NoDupePointList.html#ZedGraph_NoDupePointList_FilterMode">FilterMode</a>
+to access this value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[CLSCompliant(false)]
+protected int _filterMode</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_NoDupePointList__isFiltered.md&amp;value=---%0Auid%3A%20ZedGraph.NoDupePointList._isFiltered%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/NoDupePointList.cs/#L66">View Source</a>
+  </span>
+  <h4 id="ZedGraph_NoDupePointList__isFiltered" data-uid="ZedGraph.NoDupePointList._isFiltered">_isFiltered</h4>
+  <div class="markdown level1 summary"><p>Protected field that stores a value indicating whether or not the data have been filtered.
+If the data have not been filtered, then <a class="xref" href="ZedGraph.NoDupePointList.html#ZedGraph_NoDupePointList_Count">Count</a> will be equal to
+<a class="xref" href="ZedGraph.NoDupePointList.html#ZedGraph_NoDupePointList_TotalCount">TotalCount</a>.  Use the public property <a class="xref" href="ZedGraph.NoDupePointList.html#ZedGraph_NoDupePointList_IsFiltered">IsFiltered</a> to
+access this value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[CLSCompliant(false)]
+protected bool _isFiltered</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_NoDupePointList__visibleIndicies.md&amp;value=---%0Auid%3A%20ZedGraph.NoDupePointList._visibleIndicies%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/NoDupePointList.cs/#L80">View Source</a>
+  </span>
+  <h4 id="ZedGraph_NoDupePointList__visibleIndicies" data-uid="ZedGraph.NoDupePointList._visibleIndicies">_visibleIndicies</h4>
+  <div class="markdown level1 summary"><p>Protected array of indices for all the points that are currently visible.  This only
+applies if <a class="xref" href="ZedGraph.NoDupePointList.html#ZedGraph_NoDupePointList_IsFiltered">IsFiltered</a> is true.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[CLSCompliant(false)]
+protected int[] _visibleIndicies</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_NoDupePointList_Count.md&amp;value=---%0Auid%3A%20ZedGraph.NoDupePointList.Count%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/NoDupePointList.cs/#L164">View Source</a>
+  </span>
+  <a id="ZedGraph_NoDupePointList_Count_" data-uid="ZedGraph.NoDupePointList.Count*"></a>
+  <h4 id="ZedGraph_NoDupePointList_Count" data-uid="ZedGraph.NoDupePointList.Count">Count</h4>
+  <div class="markdown level1 summary"><p>Gets the number of active samples in the collection.  This is the number of
+samples that are non-duplicates.  See the <a class="xref" href="ZedGraph.NoDupePointList.html#ZedGraph_NoDupePointList_TotalCount">TotalCount</a> property
+to get the total number of samples in the list.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Count { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_NoDupePointList_FilterMode.md&amp;value=---%0Auid%3A%20ZedGraph.NoDupePointList.FilterMode%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/NoDupePointList.cs/#L104">View Source</a>
+  </span>
+  <a id="ZedGraph_NoDupePointList_FilterMode_" data-uid="ZedGraph.NoDupePointList.FilterMode*"></a>
+  <h4 id="ZedGraph_NoDupePointList_FilterMode" data-uid="ZedGraph.NoDupePointList.FilterMode">FilterMode</h4>
+  <div class="markdown level1 summary"><p>Gets or sets a value that determines how close a point must be to a prior
+neighbor in order to be filtered out.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int FilterMode { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="ZedGraph_NoDupePointList_FilterMode_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>A value of 0 indicates that subsequent
+points must coincide exactly at the same pixel location.  A value of 1 or more
+indicates that number of pixels distance from a prior point that will cause
+a new point to be filtered out.  For example, a value of 2 means that, once
+a particular pixel location is taken, any subsequent point that lies within 2
+pixels of that location will be filtered out.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_NoDupePointList_IsFiltered.md&amp;value=---%0Auid%3A%20ZedGraph.NoDupePointList.IsFiltered%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/NoDupePointList.cs/#L115">View Source</a>
+  </span>
+  <a id="ZedGraph_NoDupePointList_IsFiltered_" data-uid="ZedGraph.NoDupePointList.IsFiltered*"></a>
+  <h4 id="ZedGraph_NoDupePointList_IsFiltered" data-uid="ZedGraph.NoDupePointList.IsFiltered">IsFiltered</h4>
+  <div class="markdown level1 summary"><p>Gets a value indicating whether or not the data have been filtered.  If the data
+have not been filtered, then <a class="xref" href="ZedGraph.NoDupePointList.html#ZedGraph_NoDupePointList_Count">Count</a> will be equal to
+<a class="xref" href="ZedGraph.NoDupePointList.html#ZedGraph_NoDupePointList_TotalCount">TotalCount</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsFiltered { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_NoDupePointList_Item_System_Int32_.md&amp;value=---%0Auid%3A%20ZedGraph.NoDupePointList.Item(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/NoDupePointList.cs/#L134">View Source</a>
+  </span>
+  <a id="ZedGraph_NoDupePointList_Item_" data-uid="ZedGraph.NoDupePointList.Item*"></a>
+  <h4 id="ZedGraph_NoDupePointList_Item_System_Int32_" data-uid="ZedGraph.NoDupePointList.Item(System.Int32)">Item[Int32]</h4>
+  <div class="markdown level1 summary"><p>Indexer: get the DataPoint instance at the specified ordinal position in the list</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PointPair this[int index] { get; set; }</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">index</span></td>
+        <td><p>The ordinal position in the list of points</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ZedGraph.PointPair.html">PointPair</a></td>
+        <td><p>Returns a <a class="xref" href="ZedGraph.PointPair.html">PointPair</a> instance.  The <a class="xref" href="ZedGraph.PointPair.html#ZedGraph_PointPair_Z">Z</a>
+and <a class="xref" href="ZedGraph.PointPair.html#ZedGraph_PointPair_Tag">Tag</a> properties will be defaulted to
+<a class="xref" href="ZedGraph.PointPairBase.html#ZedGraph_PointPairBase_Missing">Missing</a> and null, respectively.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="ZedGraph_NoDupePointList_Item_System_Int32__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This method will throw an exception if the index is out of range.  This can happen
+if the index is less than the number of filtered values, or if data points are
+removed from a filtered dataset with updating the filter (by calling
+<a class="xref" href="ZedGraph.NoDupePointList.html#ZedGraph_NoDupePointList_FilterData_ZedGraph_GraphPane_ZedGraph_Axis_ZedGraph_Axis_">FilterData(GraphPane, Axis, Axis)</a>).</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_NoDupePointList_TotalCount.md&amp;value=---%0Auid%3A%20ZedGraph.NoDupePointList.TotalCount%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/NoDupePointList.cs/#L179">View Source</a>
+  </span>
+  <a id="ZedGraph_NoDupePointList_TotalCount_" data-uid="ZedGraph.NoDupePointList.TotalCount*"></a>
+  <h4 id="ZedGraph_NoDupePointList_TotalCount" data-uid="ZedGraph.NoDupePointList.TotalCount">TotalCount</h4>
+  <div class="markdown level1 summary"><p>Gets the total number of samples in the collection.  See the <a class="xref" href="ZedGraph.NoDupePointList.html#ZedGraph_NoDupePointList_Count">Count</a>
+property to get the number of active (non-duplicate) samples in the list.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int TotalCount { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_NoDupePointList_Add_System_Double_System_Double_.md&amp;value=---%0Auid%3A%20ZedGraph.NoDupePointList.Add(System.Double%2CSystem.Double)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/NoDupePointList.cs/#L202">View Source</a>
+  </span>
+  <a id="ZedGraph_NoDupePointList_Add_" data-uid="ZedGraph.NoDupePointList.Add*"></a>
+  <h4 id="ZedGraph_NoDupePointList_Add_System_Double_System_Double_" data-uid="ZedGraph.NoDupePointList.Add(System.Double,System.Double)">Add(Double, Double)</h4>
+  <div class="markdown level1 summary"><p>Append a point to the collection</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Add(double x, double y)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.double">Double</a></td>
+        <td><span class="parametername">x</span></td>
+        <td><p>The x value of the point to append</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.double">Double</a></td>
+        <td><span class="parametername">y</span></td>
+        <td><p>The y value of the point to append</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_NoDupePointList_Add_ZedGraph_PointPair_.md&amp;value=---%0Auid%3A%20ZedGraph.NoDupePointList.Add(ZedGraph.PointPair)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/NoDupePointList.cs/#L188">View Source</a>
+  </span>
+  <a id="ZedGraph_NoDupePointList_Add_" data-uid="ZedGraph.NoDupePointList.Add*"></a>
+  <h4 id="ZedGraph_NoDupePointList_Add_ZedGraph_PointPair_" data-uid="ZedGraph.NoDupePointList.Add(ZedGraph.PointPair)">Add(PointPair)</h4>
+  <div class="markdown level1 summary"><p>Append a data point to the collection</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Add(PointPair pt)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ZedGraph.PointPair.html">PointPair</a></td>
+        <td><span class="parametername">pt</span></td>
+        <td><p>The <a class="xref" href="ZedGraph.PointPair.html">PointPair</a> value to append</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_NoDupePointList_ClearFilter.md&amp;value=---%0Auid%3A%20ZedGraph.NoDupePointList.ClearFilter%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/NoDupePointList.cs/#L275">View Source</a>
+  </span>
+  <a id="ZedGraph_NoDupePointList_ClearFilter_" data-uid="ZedGraph.NoDupePointList.ClearFilter*"></a>
+  <h4 id="ZedGraph_NoDupePointList_ClearFilter" data-uid="ZedGraph.NoDupePointList.ClearFilter">ClearFilter()</h4>
+  <div class="markdown level1 summary"><p>Clears any filtering previously done by a call to <a class="xref" href="ZedGraph.NoDupePointList.html#ZedGraph_NoDupePointList_FilterData_ZedGraph_GraphPane_ZedGraph_Axis_ZedGraph_Axis_">FilterData(GraphPane, Axis, Axis)</a>.
+After calling this method, all data points will be visible, and
+<a class="xref" href="ZedGraph.NoDupePointList.html#ZedGraph_NoDupePointList_Count">Count</a> will be equal to <a class="xref" href="ZedGraph.NoDupePointList.html#ZedGraph_NoDupePointList_TotalCount">TotalCount</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ClearFilter()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_NoDupePointList_Clone.md&amp;value=---%0Auid%3A%20ZedGraph.NoDupePointList.Clone%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/NoDupePointList.cs/#L223">View Source</a>
+  </span>
+  <a id="ZedGraph_NoDupePointList_Clone_" data-uid="ZedGraph.NoDupePointList.Clone*"></a>
+  <h4 id="ZedGraph_NoDupePointList_Clone" data-uid="ZedGraph.NoDupePointList.Clone">Clone()</h4>
+  <div class="markdown level1 summary"><p>typesafe clone method</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public NoDupePointList Clone()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ZedGraph.NoDupePointList.html">NoDupePointList</a></td>
+        <td><p>A new cloned NoDupePointList.  This returns a copy of the structure,
+but it does not duplicate the data (it just keeps a reference to the original)</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_NoDupePointList_FilterData_ZedGraph_GraphPane_ZedGraph_Axis_ZedGraph_Axis_.md&amp;value=---%0Auid%3A%20ZedGraph.NoDupePointList.FilterData(ZedGraph.GraphPane%2CZedGraph.Axis%2CZedGraph.Axis)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/NoDupePointList.cs/#L309">View Source</a>
+  </span>
+  <a id="ZedGraph_NoDupePointList_FilterData_" data-uid="ZedGraph.NoDupePointList.FilterData*"></a>
+  <h4 id="ZedGraph_NoDupePointList_FilterData_ZedGraph_GraphPane_ZedGraph_Axis_ZedGraph_Axis_" data-uid="ZedGraph.NoDupePointList.FilterData(ZedGraph.GraphPane,ZedGraph.Axis,ZedGraph.Axis)">FilterData(GraphPane, Axis, Axis)</h4>
+  <div class="markdown level1 summary"><p>Go through the collection, and hide (filter out) any points that fall on the
+same pixel location as a previously included point.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void FilterData(GraphPane pane, Axis xAxis, Axis yAxis)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ZedGraph.GraphPane.html">GraphPane</a></td>
+        <td><span class="parametername">pane</span></td>
+        <td><p>The <a class="xref" href="ZedGraph.GraphPane.html">GraphPane</a> into which the data
+will be plotted.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ZedGraph.Axis.html">Axis</a></td>
+        <td><span class="parametername">xAxis</span></td>
+        <td><p>The <a class="xref" href="ZedGraph.Axis.html">Axis</a> class to be used in the X direction
+for plotting these data.  This can be an <a class="xref" href="ZedGraph.XAxis.html">XAxis</a> or a
+<a class="xref" href="ZedGraph.X2Axis.html">X2Axis</a>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ZedGraph.Axis.html">Axis</a></td>
+        <td><span class="parametername">yAxis</span></td>
+        <td><p>The <a class="xref" href="ZedGraph.Axis.html">Axis</a> class to be used in the Y direction
+for plotting these data.  This can be a <a class="xref" href="ZedGraph.YAxis.html">YAxis</a> or a
+<a class="xref" href="ZedGraph.Y2Axis.html">Y2Axis</a>, and can be a primary or secondary axis (if multiple Y or Y2
+axes are being used).</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="ZedGraph_NoDupePointList_FilterData_ZedGraph_GraphPane_ZedGraph_Axis_ZedGraph_Axis__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This method does not delete any points, it just temporarily hides them until
+the next call to <a class="xref" href="ZedGraph.NoDupePointList.html#ZedGraph_NoDupePointList_FilterData_ZedGraph_GraphPane_ZedGraph_Axis_ZedGraph_Axis_">FilterData(GraphPane, Axis, Axis)</a> or <a class="xref" href="ZedGraph.NoDupePointList.html#ZedGraph_NoDupePointList_ClearFilter">ClearFilter()</a>.
+You should call <a class="xref" href="ZedGraph.NoDupePointList.html#ZedGraph_NoDupePointList_FilterData_ZedGraph_GraphPane_ZedGraph_Axis_ZedGraph_Axis_">FilterData(GraphPane, Axis, Axis)</a> once your collection of points has
+been constructed.  You may need to call <a class="xref" href="ZedGraph.NoDupePointList.html#ZedGraph_NoDupePointList_FilterData_ZedGraph_GraphPane_ZedGraph_Axis_ZedGraph_Axis_">FilterData(GraphPane, Axis, Axis)</a> again if
+you add points, or if the chart rect changes size (by resizing, printing,
+image save, etc.), or if the scale range changes.
+You must call <a class="xref" href="ZedGraph.GraphPane.html#ZedGraph_GraphPane_AxisChange">AxisChange()</a> before calling
+this method so that the <a class="xref" href="ZedGraph.Chart.html#ZedGraph_Chart_Rect">Rect</a>
+and the scale ranges are valid.  This method is not valid for
+ordinal axes (but ordinal axes don't make sense for very large datasets
+anyway).</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_NoDupePointList_GetDataPointAt_System_Int32_.md&amp;value=---%0Auid%3A%20ZedGraph.NoDupePointList.GetDataPointAt(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/NoDupePointList.cs/#L265">View Source</a>
+  </span>
+  <a id="ZedGraph_NoDupePointList_GetDataPointAt_" data-uid="ZedGraph.NoDupePointList.GetDataPointAt*"></a>
+  <h4 id="ZedGraph_NoDupePointList_GetDataPointAt_System_Int32_" data-uid="ZedGraph.NoDupePointList.GetDataPointAt(System.Int32)">GetDataPointAt(Int32)</h4>
+  <div class="markdown level1 summary"><p>Protected method to access the internal DataPoint collection, without any
+translation to a PointPair.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected DataPoint GetDataPointAt(int index)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">index</span></td>
+        <td><p>The ordinal position of the DataPoint of interest</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ZedGraph.DataPoint.html">DataPoint</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="eii">Explicit Interface Implementations
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_NoDupePointList_System_ICloneable_Clone.md&amp;value=---%0Auid%3A%20ZedGraph.NoDupePointList.System%23ICloneable%23Clone%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/NoDupePointList.cs/#L212">View Source</a>
+  </span>
+  <a id="ZedGraph_NoDupePointList_System_ICloneable_Clone_" data-uid="ZedGraph.NoDupePointList.System#ICloneable#Clone*"></a>
+  <h4 id="ZedGraph_NoDupePointList_System_ICloneable_Clone" data-uid="ZedGraph.NoDupePointList.System#ICloneable#Clone">ICloneable.Clone()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">object ICloneable.Clone()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ilist-1">System.Collections.Generic.IList&lt;T&gt;</a>
+  </div>
+  <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.icollection-1">System.Collections.Generic.ICollection&lt;T&gt;</a>
+  </div>
+  <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">System.Collections.Generic.IEnumerable&lt;T&gt;</a>
+  </div>
+  <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.ilist">System.Collections.IList</a>
+  </div>
+  <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.icollection">System.Collections.ICollection</a>
+  </div>
+  <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.ienumerable">System.Collections.IEnumerable</a>
+  </div>
+  <div>
+      <a class="xref" href="ZedGraph.IPointListEdit.html">IPointListEdit</a>
+  </div>
+  <div>
+      <a class="xref" href="ZedGraph.IPointList.html">IPointList</a>
+  </div>
+  <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.icloneable">System.ICloneable</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_NoDupePointList.md&amp;value=---%0Auid%3A%20ZedGraph.NoDupePointList%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/NoDupePointList.cs/#L56" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

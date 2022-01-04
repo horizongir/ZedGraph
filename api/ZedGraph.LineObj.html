@@ -1,0 +1,845 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class LineObj
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class LineObj
+   ">
+    <meta name="generator" content="docfx 2.56.7.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="ZedGraph.LineObj">
+  
+  
+  <h1 id="ZedGraph_LineObj" data-uid="ZedGraph.LineObj" class="text-break">Class LineObj
+  </h1>
+  <div class="markdown level0 summary"><p>A class that represents a line segment object on the graph.  A list of
+GraphObj objects is maintained by the <a class="xref" href="ZedGraph.GraphObjList.html">GraphObjList</a> collection class.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
+    <div class="level1"><a class="xref" href="ZedGraph.GraphObj.html">GraphObj</a></div>
+    <div class="level2"><span class="xref">LineObj</span></div>
+      <div class="level3"><a class="xref" href="ZedGraph.ArrowObj.html">ArrowObj</a></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.icloneable">ICloneable</a></div>
+    <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.runtime.serialization.iserializable">ISerializable</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="ZedGraph.GraphObj.html#ZedGraph_GraphObj__location">GraphObj._location</a>
+    </div>
+    <div>
+      <a class="xref" href="ZedGraph.GraphObj.html#ZedGraph_GraphObj__isVisible">GraphObj._isVisible</a>
+    </div>
+    <div>
+      <a class="xref" href="ZedGraph.GraphObj.html#ZedGraph_GraphObj__isClippedToChartRect">GraphObj._isClippedToChartRect</a>
+    </div>
+    <div>
+      <a class="xref" href="ZedGraph.GraphObj.html#ZedGraph_GraphObj_Tag">GraphObj.Tag</a>
+    </div>
+    <div>
+      <a class="xref" href="ZedGraph.GraphObj.html#ZedGraph_GraphObj_Location">GraphObj.Location</a>
+    </div>
+    <div>
+      <a class="xref" href="ZedGraph.GraphObj.html#ZedGraph_GraphObj_ZOrder">GraphObj.ZOrder</a>
+    </div>
+    <div>
+      <a class="xref" href="ZedGraph.GraphObj.html#ZedGraph_GraphObj_IsVisible">GraphObj.IsVisible</a>
+    </div>
+    <div>
+      <a class="xref" href="ZedGraph.GraphObj.html#ZedGraph_GraphObj_IsClippedToChartRect">GraphObj.IsClippedToChartRect</a>
+    </div>
+    <div>
+      <a class="xref" href="ZedGraph.GraphObj.html#ZedGraph_GraphObj_Link">GraphObj.Link</a>
+    </div>
+    <div>
+      <a class="xref" href="ZedGraph.GraphObj.html#ZedGraph_GraphObj_IsInFrontOfData">GraphObj.IsInFrontOfData</a>
+    </div>
+    <div>
+      <a class="xref" href="ZedGraph.GraphObj.html#ZedGraph_GraphObj_schema">GraphObj.schema</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#System_Object_Equals_System_Object_">Object.Equals(Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#System_Object_Equals_System_Object_System_Object_">Object.Equals(Object, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gethashcode#System_Object_GetHashCode">Object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gettype#System_Object_GetType">Object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.memberwiseclone#System_Object_MemberwiseClone">Object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.referenceequals#System_Object_ReferenceEquals_System_Object_System_Object_">Object.ReferenceEquals(Object, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.tostring#System_Object_ToString">Object.ToString()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="ZedGraph.html">ZedGraph</a></h6>
+  <h6><strong>Assembly</strong>: ZedGraph.dll</h6>
+  <h5 id="ZedGraph_LineObj_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Serializable]
+public class LineObj : GraphObj, ICloneable, ISerializable</code></pre>
+  </div>
+  <h5 id="ZedGraph_LineObj_remarks"><strong>Remarks</strong></h5>
+  <div class="markdown level0 remarks"><p>This should not be confused with the <a class="xref" href="ZedGraph.LineItem.html">LineItem</a> class, which represents
+a set of points plotted together as a &quot;curve&quot;.  The <a class="xref" href="ZedGraph.LineObj.html">LineObj</a> class is
+a single line segment, drawn as a &quot;decoration&quot; on the chart.</p>
+</div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_LineObj__ctor.md&amp;value=---%0Auid%3A%20ZedGraph.LineObj.%23ctor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/LineObj.cs/#L124">View Source</a>
+  </span>
+  <a id="ZedGraph_LineObj__ctor_" data-uid="ZedGraph.LineObj.#ctor*"></a>
+  <h4 id="ZedGraph_LineObj__ctor" data-uid="ZedGraph.LineObj.#ctor">LineObj()</h4>
+  <div class="markdown level1 summary"><p>Default constructor -- places the <a class="xref" href="ZedGraph.LineObj.html">LineObj</a> at location
+(0,0) to (1,1).  All other values are defaulted.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public LineObj()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_LineObj__ctor_System_Double_System_Double_System_Double_System_Double_.md&amp;value=---%0Auid%3A%20ZedGraph.LineObj.%23ctor(System.Double%2CSystem.Double%2CSystem.Double%2CSystem.Double)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/LineObj.cs/#L115">View Source</a>
+  </span>
+  <a id="ZedGraph_LineObj__ctor_" data-uid="ZedGraph.LineObj.#ctor*"></a>
+  <h4 id="ZedGraph_LineObj__ctor_System_Double_System_Double_System_Double_System_Double_" data-uid="ZedGraph.LineObj.#ctor(System.Double,System.Double,System.Double,System.Double)">LineObj(Double, Double, Double, Double)</h4>
+  <div class="markdown level1 summary"><p>A constructor that allows only the position of the
+line to be pre-specified.  All other properties are set to
+default values</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public LineObj(double x1, double y1, double x2, double y2)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.double">Double</a></td>
+        <td><span class="parametername">x1</span></td>
+        <td><p>The x position of the starting point that defines the
+<a class="xref" href="ZedGraph.LineObj.html">LineObj</a>.  The units of this position are specified by the
+<a class="xref" href="ZedGraph.Location.html#ZedGraph_Location_CoordinateFrame">CoordinateFrame</a> property.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.double">Double</a></td>
+        <td><span class="parametername">y1</span></td>
+        <td><p>The y position of the starting point that defines the
+<a class="xref" href="ZedGraph.LineObj.html">LineObj</a>.  The units of this position are specified by the
+<a class="xref" href="ZedGraph.Location.html#ZedGraph_Location_CoordinateFrame">CoordinateFrame</a> property.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.double">Double</a></td>
+        <td><span class="parametername">x2</span></td>
+        <td><p>The x position of the ending point that defines the
+<a class="xref" href="ZedGraph.LineObj.html">LineObj</a>.  The units of this position are specified by the
+<a class="xref" href="ZedGraph.Location.html#ZedGraph_Location_CoordinateFrame">CoordinateFrame</a> property.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.double">Double</a></td>
+        <td><span class="parametername">y2</span></td>
+        <td><p>The y position of the ending point that defines the
+<a class="xref" href="ZedGraph.LineObj.html">LineObj</a>.  The units of this position are specified by the
+<a class="xref" href="ZedGraph.Location.html#ZedGraph_Location_CoordinateFrame">CoordinateFrame</a> property.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_LineObj__ctor_System_Drawing_Color_System_Double_System_Double_System_Double_System_Double_.md&amp;value=---%0Auid%3A%20ZedGraph.LineObj.%23ctor(System.Drawing.Color%2CSystem.Double%2CSystem.Double%2CSystem.Double%2CSystem.Double)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/LineObj.cs/#L90">View Source</a>
+  </span>
+  <a id="ZedGraph_LineObj__ctor_" data-uid="ZedGraph.LineObj.#ctor*"></a>
+  <h4 id="ZedGraph_LineObj__ctor_System_Drawing_Color_System_Double_System_Double_System_Double_System_Double_" data-uid="ZedGraph.LineObj.#ctor(System.Drawing.Color,System.Double,System.Double,System.Double,System.Double)">LineObj(Color, Double, Double, Double, Double)</h4>
+  <div class="markdown level1 summary"><p>A constructor that allows the position, color, and size of the
+<a class="xref" href="ZedGraph.LineObj.html">LineObj</a> to be pre-specified.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public LineObj(Color color, double x1, double y1, double x2, double y2)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.drawing.color">Color</a></td>
+        <td><span class="parametername">color</span></td>
+        <td><p>An arbitrary <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.drawing.color">Color</a> specification
+for the arrow</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.double">Double</a></td>
+        <td><span class="parametername">x1</span></td>
+        <td><p>The x position of the starting point that defines the
+line.  The units of this position are specified by the
+<a class="xref" href="ZedGraph.Location.html#ZedGraph_Location_CoordinateFrame">CoordinateFrame</a> property.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.double">Double</a></td>
+        <td><span class="parametername">y1</span></td>
+        <td><p>The y position of the starting point that defines the
+line.  The units of this position are specified by the
+<a class="xref" href="ZedGraph.Location.html#ZedGraph_Location_CoordinateFrame">CoordinateFrame</a> property.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.double">Double</a></td>
+        <td><span class="parametername">x2</span></td>
+        <td><p>The x position of the ending point that defines the
+line.  The units of this position are specified by the
+<a class="xref" href="ZedGraph.Location.html#ZedGraph_Location_CoordinateFrame">CoordinateFrame</a> property.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.double">Double</a></td>
+        <td><span class="parametername">y2</span></td>
+        <td><p>The y position of the ending point that defines the
+line.  The units of this position are specified by the
+<a class="xref" href="ZedGraph.Location.html#ZedGraph_Location_CoordinateFrame">CoordinateFrame</a> property.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_LineObj__ctor_System_Runtime_Serialization_SerializationInfo_System_Runtime_Serialization_StreamingContext_.md&amp;value=---%0Auid%3A%20ZedGraph.LineObj.%23ctor(System.Runtime.Serialization.SerializationInfo%2CSystem.Runtime.Serialization.StreamingContext)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/LineObj.cs/#L173">View Source</a>
+  </span>
+  <a id="ZedGraph_LineObj__ctor_" data-uid="ZedGraph.LineObj.#ctor*"></a>
+  <h4 id="ZedGraph_LineObj__ctor_System_Runtime_Serialization_SerializationInfo_System_Runtime_Serialization_StreamingContext_" data-uid="ZedGraph.LineObj.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">LineObj(SerializationInfo, StreamingContext)</h4>
+  <div class="markdown level1 summary"><p>Constructor for deserializing objects</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected LineObj(SerializationInfo info, StreamingContext context)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.runtime.serialization.serializationinfo">SerializationInfo</a></td>
+        <td><span class="parametername">info</span></td>
+        <td><p>A <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.runtime.serialization.serializationinfo">SerializationInfo</a> instance that defines the serialized data</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.runtime.serialization.streamingcontext">StreamingContext</a></td>
+        <td><span class="parametername">context</span></td>
+        <td><p>A <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.runtime.serialization.streamingcontext">StreamingContext</a> instance that contains the serialized data</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_LineObj__ctor_ZedGraph_LineObj_.md&amp;value=---%0Auid%3A%20ZedGraph.LineObj.%23ctor(ZedGraph.LineObj)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/LineObj.cs/#L132">View Source</a>
+  </span>
+  <a id="ZedGraph_LineObj__ctor_" data-uid="ZedGraph.LineObj.#ctor*"></a>
+  <h4 id="ZedGraph_LineObj__ctor_ZedGraph_LineObj_" data-uid="ZedGraph.LineObj.#ctor(ZedGraph.LineObj)">LineObj(LineObj)</h4>
+  <div class="markdown level1 summary"><p>The Copy Constructor</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public LineObj(LineObj rhs)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ZedGraph.LineObj.html">LineObj</a></td>
+        <td><span class="parametername">rhs</span></td>
+        <td><p>The <a class="xref" href="ZedGraph.LineObj.html">LineObj</a> object from which to copy</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="fields">Fields
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_LineObj__line.md&amp;value=---%0Auid%3A%20ZedGraph.LineObj._line%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/LineObj.cs/#L50">View Source</a>
+  </span>
+  <h4 id="ZedGraph_LineObj__line" data-uid="ZedGraph.LineObj._line">_line</h4>
+  <div class="markdown level1 summary"><p>protected field that maintains the attributes of the line using an
+instance of the <a class="xref" href="ZedGraph.LineBase.html">LineBase</a> class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[CLSCompliant(false)]
+protected LineBase _line</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ZedGraph.LineBase.html">LineBase</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_LineObj_schema2.md&amp;value=---%0Auid%3A%20ZedGraph.LineObj.schema2%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/LineObj.cs/#L164">View Source</a>
+  </span>
+  <h4 id="ZedGraph_LineObj_schema2" data-uid="ZedGraph.LineObj.schema2">schema2</h4>
+  <div class="markdown level1 summary"><p>Current schema value that defines the version of the serialized file</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int schema2 = 11</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_LineObj_Line.md&amp;value=---%0Auid%3A%20ZedGraph.LineObj.Line%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/LineObj.cs/#L60">View Source</a>
+  </span>
+  <a id="ZedGraph_LineObj_Line_" data-uid="ZedGraph.LineObj.Line*"></a>
+  <h4 id="ZedGraph_LineObj_Line" data-uid="ZedGraph.LineObj.Line">Line</h4>
+  <div class="markdown level1 summary"><p>A <a class="xref" href="ZedGraph.LineBase.html">LineBase</a> class that contains the attributes for drawing this
+<a class="xref" href="ZedGraph.LineObj.html">LineObj</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public LineBase Line { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ZedGraph.LineBase.html">LineBase</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_LineObj_Clone.md&amp;value=---%0Auid%3A%20ZedGraph.LineObj.Clone%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/LineObj.cs/#L151">View Source</a>
+  </span>
+  <a id="ZedGraph_LineObj_Clone_" data-uid="ZedGraph.LineObj.Clone*"></a>
+  <h4 id="ZedGraph_LineObj_Clone" data-uid="ZedGraph.LineObj.Clone">Clone()</h4>
+  <div class="markdown level1 summary"><p>Typesafe, deep-copy clone method.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public LineObj Clone()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ZedGraph.LineObj.html">LineObj</a></td>
+        <td><p>A new, independent copy of this class</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_LineObj_Draw_System_Drawing_Graphics_ZedGraph_PaneBase_System_Single_.md&amp;value=---%0Auid%3A%20ZedGraph.LineObj.Draw(System.Drawing.Graphics%2CZedGraph.PaneBase%2CSystem.Single)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/LineObj.cs/#L219">View Source</a>
+  </span>
+  <a id="ZedGraph_LineObj_Draw_" data-uid="ZedGraph.LineObj.Draw*"></a>
+  <h4 id="ZedGraph_LineObj_Draw_System_Drawing_Graphics_ZedGraph_PaneBase_System_Single_" data-uid="ZedGraph.LineObj.Draw(System.Drawing.Graphics,ZedGraph.PaneBase,System.Single)">Draw(Graphics, PaneBase, Single)</h4>
+  <div class="markdown level1 summary"><p>Render this object to the specified <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.drawing.graphics">Graphics</a> device.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void Draw(Graphics g, PaneBase pane, float scaleFactor)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.drawing.graphics">Graphics</a></td>
+        <td><span class="parametername">g</span></td>
+        <td><p>A graphic device object to be drawn into.  This is normally e.Graphics from the
+PaintEventArgs argument to the Paint() method.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ZedGraph.PaneBase.html">PaneBase</a></td>
+        <td><span class="parametername">pane</span></td>
+        <td><p>A reference to the <a class="xref" href="ZedGraph.PaneBase.html">PaneBase</a> object that is the parent or
+owner of this object.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td><span class="parametername">scaleFactor</span></td>
+        <td><p>The scaling factor to be used for rendering objects.  This is calculated and
+passed down by the parent <a class="xref" href="ZedGraph.GraphPane.html">GraphPane</a> object using the
+<a class="xref" href="ZedGraph.PaneBase.html#ZedGraph_PaneBase_CalcScaleFactor">CalcScaleFactor()</a> method, and is used to proportionally adjust
+font sizes, etc. according to the actual size of the graph.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="ZedGraph.GraphObj.html#ZedGraph_GraphObj_Draw_System_Drawing_Graphics_ZedGraph_PaneBase_System_Single_">GraphObj.Draw(Graphics, PaneBase, Single)</a></div>
+  <h5 id="ZedGraph_LineObj_Draw_System_Drawing_Graphics_ZedGraph_PaneBase_System_Single__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This method is normally only called by the Draw method
+of the parent <a class="xref" href="ZedGraph.GraphObjList.html">GraphObjList</a> collection object.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_LineObj_GetCoords_ZedGraph_PaneBase_System_Drawing_Graphics_System_Single_System_String__System_String__.md&amp;value=---%0Auid%3A%20ZedGraph.LineObj.GetCoords(ZedGraph.PaneBase%2CSystem.Drawing.Graphics%2CSystem.Single%2CSystem.String%40%2CSystem.String%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/LineObj.cs/#L304">View Source</a>
+  </span>
+  <a id="ZedGraph_LineObj_GetCoords_" data-uid="ZedGraph.LineObj.GetCoords*"></a>
+  <h4 id="ZedGraph_LineObj_GetCoords_ZedGraph_PaneBase_System_Drawing_Graphics_System_Single_System_String__System_String__" data-uid="ZedGraph.LineObj.GetCoords(ZedGraph.PaneBase,System.Drawing.Graphics,System.Single,System.String@,System.String@)">GetCoords(PaneBase, Graphics, Single, out String, out String)</h4>
+  <div class="markdown level1 summary"><p>Determines the shape type and Coords values for this GraphObj</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void GetCoords(PaneBase pane, Graphics g, float scaleFactor, out string shape, out string coords)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ZedGraph.PaneBase.html">PaneBase</a></td>
+        <td><span class="parametername">pane</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.drawing.graphics">Graphics</a></td>
+        <td><span class="parametername">g</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td><span class="parametername">scaleFactor</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">shape</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">coords</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="ZedGraph.GraphObj.html#ZedGraph_GraphObj_GetCoords_ZedGraph_PaneBase_System_Drawing_Graphics_System_Single_System_String__System_String__">GraphObj.GetCoords(PaneBase, Graphics, Single, out String, out String)</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_LineObj_GetObjectData_System_Runtime_Serialization_SerializationInfo_System_Runtime_Serialization_StreamingContext_.md&amp;value=---%0Auid%3A%20ZedGraph.LineObj.GetObjectData(System.Runtime.Serialization.SerializationInfo%2CSystem.Runtime.Serialization.StreamingContext)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/LineObj.cs/#L186">View Source</a>
+  </span>
+  <a id="ZedGraph_LineObj_GetObjectData_" data-uid="ZedGraph.LineObj.GetObjectData*"></a>
+  <h4 id="ZedGraph_LineObj_GetObjectData_System_Runtime_Serialization_SerializationInfo_System_Runtime_Serialization_StreamingContext_" data-uid="ZedGraph.LineObj.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">GetObjectData(SerializationInfo, StreamingContext)</h4>
+  <div class="markdown level1 summary"><p>Populates a <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.runtime.serialization.serializationinfo">SerializationInfo</a> instance with the data needed to serialize the target object</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[SecurityPermission(SecurityAction.Demand, SerializationFormatter = true)]
+public override void GetObjectData(SerializationInfo info, StreamingContext context)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.runtime.serialization.serializationinfo">SerializationInfo</a></td>
+        <td><span class="parametername">info</span></td>
+        <td><p>A <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.runtime.serialization.serializationinfo">SerializationInfo</a> instance that defines the serialized data</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.runtime.serialization.streamingcontext">StreamingContext</a></td>
+        <td><span class="parametername">context</span></td>
+        <td><p>A <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.runtime.serialization.streamingcontext">StreamingContext</a> instance that contains the serialized data</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="ZedGraph.GraphObj.html#ZedGraph_GraphObj_GetObjectData_System_Runtime_Serialization_SerializationInfo_System_Runtime_Serialization_StreamingContext_">GraphObj.GetObjectData(SerializationInfo, StreamingContext)</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_LineObj_PointInBox_System_Drawing_PointF_ZedGraph_PaneBase_System_Drawing_Graphics_System_Single_.md&amp;value=---%0Auid%3A%20ZedGraph.LineObj.PointInBox(System.Drawing.PointF%2CZedGraph.PaneBase%2CSystem.Drawing.Graphics%2CSystem.Single)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/LineObj.cs/#L281">View Source</a>
+  </span>
+  <a id="ZedGraph_LineObj_PointInBox_" data-uid="ZedGraph.LineObj.PointInBox*"></a>
+  <h4 id="ZedGraph_LineObj_PointInBox_System_Drawing_PointF_ZedGraph_PaneBase_System_Drawing_Graphics_System_Single_" data-uid="ZedGraph.LineObj.PointInBox(System.Drawing.PointF,ZedGraph.PaneBase,System.Drawing.Graphics,System.Single)">PointInBox(PointF, PaneBase, Graphics, Single)</h4>
+  <div class="markdown level1 summary"><p>Determine if the specified screen point lies inside the bounding box of this
+<a class="xref" href="ZedGraph.LineObj.html">LineObj</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool PointInBox(PointF pt, PaneBase pane, Graphics g, float scaleFactor)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.drawing.pointf">PointF</a></td>
+        <td><span class="parametername">pt</span></td>
+        <td><p>The screen point, in pixels</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ZedGraph.PaneBase.html">PaneBase</a></td>
+        <td><span class="parametername">pane</span></td>
+        <td><p>A reference to the <a class="xref" href="ZedGraph.PaneBase.html">PaneBase</a> object that is the parent or
+owner of this object.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.drawing.graphics">Graphics</a></td>
+        <td><span class="parametername">g</span></td>
+        <td><p>A graphic device object to be drawn into.  This is normally e.Graphics from the
+PaintEventArgs argument to the Paint() method.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td><span class="parametername">scaleFactor</span></td>
+        <td><p>The scaling factor to be used for rendering objects.  This is calculated and
+passed down by the parent <a class="xref" href="ZedGraph.GraphPane.html">GraphPane</a> object using the
+<a class="xref" href="ZedGraph.PaneBase.html#ZedGraph_PaneBase_CalcScaleFactor">CalcScaleFactor()</a> method, and is used to proportionally adjust
+font sizes, etc. according to the actual size of the graph.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><p>true if the point lies in the bounding box, false otherwise</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="ZedGraph.GraphObj.html#ZedGraph_GraphObj_PointInBox_System_Drawing_PointF_ZedGraph_PaneBase_System_Drawing_Graphics_System_Single_">GraphObj.PointInBox(PointF, PaneBase, Graphics, Single)</a></div>
+  <h5 id="ZedGraph_LineObj_PointInBox_System_Drawing_PointF_ZedGraph_PaneBase_System_Drawing_Graphics_System_Single__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The bounding box is calculated assuming a distance
+of <a class="xref" href="ZedGraph.GraphPane.Default.html#ZedGraph_GraphPane_Default_NearestTol">NearestTol</a> pixels around the arrow segment.</p>
+</div>
+  <h3 id="eii">Explicit Interface Implementations
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_LineObj_System_ICloneable_Clone.md&amp;value=---%0Auid%3A%20ZedGraph.LineObj.System%23ICloneable%23Clone%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/LineObj.cs/#L142">View Source</a>
+  </span>
+  <a id="ZedGraph_LineObj_System_ICloneable_Clone_" data-uid="ZedGraph.LineObj.System#ICloneable#Clone*"></a>
+  <h4 id="ZedGraph_LineObj_System_ICloneable_Clone" data-uid="ZedGraph.LineObj.System#ICloneable#Clone">ICloneable.Clone()</h4>
+  <div class="markdown level1 summary"><p>Implement the <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.icloneable">ICloneable</a> interface in a typesafe manner by just
+calling the typed version of <a class="xref" href="ZedGraph.LineObj.html#ZedGraph_LineObj_Clone">Clone()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">object ICloneable.Clone()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></td>
+        <td><p>A deep copy of this object</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.icloneable">System.ICloneable</a>
+  </div>
+  <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.runtime.serialization.iserializable">System.Runtime.Serialization.ISerializable</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_LineObj.md&amp;value=---%0Auid%3A%20ZedGraph.LineObj%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/LineObj.cs/#L40" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

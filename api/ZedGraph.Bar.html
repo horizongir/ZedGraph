@@ -1,0 +1,982 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class Bar
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class Bar
+   ">
+    <meta name="generator" content="docfx 2.56.7.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="ZedGraph.Bar">
+  
+  
+  <h1 id="ZedGraph_Bar" data-uid="ZedGraph.Bar" class="text-break">Class Bar
+  </h1>
+  <div class="markdown level0 summary"><p>A class representing all the characteristics of the bar
+segments that make up a curve on the graph.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
+    <div class="level1"><span class="xref">Bar</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.icloneable">ICloneable</a></div>
+    <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.runtime.serialization.iserializable">ISerializable</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#System_Object_Equals_System_Object_">Object.Equals(Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#System_Object_Equals_System_Object_System_Object_">Object.Equals(Object, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gethashcode#System_Object_GetHashCode">Object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gettype#System_Object_GetType">Object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.memberwiseclone#System_Object_MemberwiseClone">Object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.referenceequals#System_Object_ReferenceEquals_System_Object_System_Object_">Object.ReferenceEquals(Object, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.tostring#System_Object_ToString">Object.ToString()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="ZedGraph.html">ZedGraph</a></h6>
+  <h6><strong>Assembly</strong>: ZedGraph.dll</h6>
+  <h5 id="ZedGraph_Bar_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Serializable]
+public class Bar : ICloneable, ISerializable</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_Bar__ctor.md&amp;value=---%0Auid%3A%20ZedGraph.Bar.%23ctor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/Bar.cs/#L100">View Source</a>
+  </span>
+  <a id="ZedGraph_Bar__ctor_" data-uid="ZedGraph.Bar.#ctor*"></a>
+  <h4 id="ZedGraph_Bar__ctor" data-uid="ZedGraph.Bar.#ctor">Bar()</h4>
+  <div class="markdown level1 summary"><p>Default constructor that sets all <a class="xref" href="ZedGraph.Bar.html">Bar</a> properties to default
+values as defined in the <a class="xref" href="ZedGraph.Bar.Default.html">Bar.Default</a> class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Bar()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_Bar__ctor_System_Drawing_Color_.md&amp;value=---%0Auid%3A%20ZedGraph.Bar.%23ctor(System.Drawing.Color)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/Bar.cs/#L117">View Source</a>
+  </span>
+  <a id="ZedGraph_Bar__ctor_" data-uid="ZedGraph.Bar.#ctor*"></a>
+  <h4 id="ZedGraph_Bar__ctor_System_Drawing_Color_" data-uid="ZedGraph.Bar.#ctor(System.Drawing.Color)">Bar(Color)</h4>
+  <div class="markdown level1 summary"><p>Default constructor that sets the
+<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.drawing.color">Color</a> as specified, and the remaining
+<a class="xref" href="ZedGraph.Bar.html">Bar</a> properties to default
+values as defined in the <a class="xref" href="ZedGraph.Bar.Default.html">Bar.Default</a> class.
+The specified color is only applied to the
+<a class="xref" href="ZedGraph.Fill.html#ZedGraph_Fill_Color">Color</a>, and the <a class="xref" href="ZedGraph.LineBase.html#ZedGraph_LineBase_Color">Color</a>
+will be defaulted.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Bar(Color color)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.drawing.color">Color</a></td>
+        <td><span class="parametername">color</span></td>
+        <td><p>A <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.drawing.color">Color</a> value indicating
+the <a class="xref" href="ZedGraph.Fill.html#ZedGraph_Fill_Color">Color</a>
+of the Bar.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_Bar__ctor_System_Runtime_Serialization_SerializationInfo_System_Runtime_Serialization_StreamingContext_.md&amp;value=---%0Auid%3A%20ZedGraph.Bar.%23ctor(System.Runtime.Serialization.SerializationInfo%2CSystem.Runtime.Serialization.StreamingContext)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/Bar.cs/#L168">View Source</a>
+  </span>
+  <a id="ZedGraph_Bar__ctor_" data-uid="ZedGraph.Bar.#ctor*"></a>
+  <h4 id="ZedGraph_Bar__ctor_System_Runtime_Serialization_SerializationInfo_System_Runtime_Serialization_StreamingContext_" data-uid="ZedGraph.Bar.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">Bar(SerializationInfo, StreamingContext)</h4>
+  <div class="markdown level1 summary"><p>Constructor for deserializing objects</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Bar(SerializationInfo info, StreamingContext context)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.runtime.serialization.serializationinfo">SerializationInfo</a></td>
+        <td><span class="parametername">info</span></td>
+        <td><p>A <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.runtime.serialization.serializationinfo">SerializationInfo</a> instance that defines the serialized data</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.runtime.serialization.streamingcontext">StreamingContext</a></td>
+        <td><span class="parametername">context</span></td>
+        <td><p>A <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.runtime.serialization.streamingcontext">StreamingContext</a> instance that contains the serialized data</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_Bar__ctor_ZedGraph_Bar_.md&amp;value=---%0Auid%3A%20ZedGraph.Bar.%23ctor(ZedGraph.Bar)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/Bar.cs/#L128">View Source</a>
+  </span>
+  <a id="ZedGraph_Bar__ctor_" data-uid="ZedGraph.Bar.#ctor*"></a>
+  <h4 id="ZedGraph_Bar__ctor_ZedGraph_Bar_" data-uid="ZedGraph.Bar.#ctor(ZedGraph.Bar)">Bar(Bar)</h4>
+  <div class="markdown level1 summary"><p>The Copy Constructor</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Bar(Bar rhs)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ZedGraph.Bar.html">Bar</a></td>
+        <td><span class="parametername">rhs</span></td>
+        <td><p>The Bar object from which to copy</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="fields">Fields
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_Bar_schema.md&amp;value=---%0Auid%3A%20ZedGraph.Bar.schema%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/Bar.cs/#L159">View Source</a>
+  </span>
+  <h4 id="ZedGraph_Bar_schema" data-uid="ZedGraph.Bar.schema">schema</h4>
+  <div class="markdown level1 summary"><p>Current schema value that defines the version of the serialized file</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int schema = 10</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_Bar_Border.md&amp;value=---%0Auid%3A%20ZedGraph.Bar.Border%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/Bar.cs/#L198">View Source</a>
+  </span>
+  <a id="ZedGraph_Bar_Border_" data-uid="ZedGraph.Bar.Border*"></a>
+  <h4 id="ZedGraph_Bar_Border" data-uid="ZedGraph.Bar.Border">Border</h4>
+  <div class="markdown level1 summary"><p>The <a class="xref" href="ZedGraph.Bar.html#ZedGraph_Bar_Border">Border</a> object used to draw the border around the <a class="xref" href="ZedGraph.Bar.html">Bar</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Border Border { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ZedGraph.Border.html">Border</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="ZedGraph_Bar_Border_seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="ZedGraph.Bar.Default.html#ZedGraph_Bar_Default_IsBorderVisible">IsBorderVisible</a></div>
+      <div><a class="xref" href="ZedGraph.Bar.Default.html#ZedGraph_Bar_Default_BorderWidth">BorderWidth</a></div>
+      <div><a class="xref" href="ZedGraph.Bar.Default.html#ZedGraph_Bar_Default_BorderColor">BorderColor</a></div>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_Bar_Fill.md&amp;value=---%0Auid%3A%20ZedGraph.Bar.Fill%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/Bar.cs/#L207">View Source</a>
+  </span>
+  <a id="ZedGraph_Bar_Fill_" data-uid="ZedGraph.Bar.Fill*"></a>
+  <h4 id="ZedGraph_Bar_Fill" data-uid="ZedGraph.Bar.Fill">Fill</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the <a class="xref" href="ZedGraph.Fill.html">Fill</a> data for this
+<a class="xref" href="ZedGraph.Bar.html">Bar</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Fill Fill { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ZedGraph.Fill.html">Fill</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_Bar_Clone.md&amp;value=---%0Auid%3A%20ZedGraph.Bar.Clone%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/Bar.cs/#L148">View Source</a>
+  </span>
+  <a id="ZedGraph_Bar_Clone_" data-uid="ZedGraph.Bar.Clone*"></a>
+  <h4 id="ZedGraph_Bar_Clone" data-uid="ZedGraph.Bar.Clone">Clone()</h4>
+  <div class="markdown level1 summary"><p>Typesafe, deep-copy clone method.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Bar Clone()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ZedGraph.Bar.html">Bar</a></td>
+        <td><p>A new, independent copy of this class</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_Bar_Draw_System_Drawing_Graphics_ZedGraph_GraphPane_System_Drawing_RectangleF_System_Single_System_Boolean_System_Boolean_ZedGraph_PointPair_.md&amp;value=---%0Auid%3A%20ZedGraph.Bar.Draw(System.Drawing.Graphics%2CZedGraph.GraphPane%2CSystem.Drawing.RectangleF%2CSystem.Single%2CSystem.Boolean%2CSystem.Boolean%2CZedGraph.PointPair)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/Bar.cs/#L318">View Source</a>
+  </span>
+  <a id="ZedGraph_Bar_Draw_" data-uid="ZedGraph.Bar.Draw*"></a>
+  <h4 id="ZedGraph_Bar_Draw_System_Drawing_Graphics_ZedGraph_GraphPane_System_Drawing_RectangleF_System_Single_System_Boolean_System_Boolean_ZedGraph_PointPair_" data-uid="ZedGraph.Bar.Draw(System.Drawing.Graphics,ZedGraph.GraphPane,System.Drawing.RectangleF,System.Single,System.Boolean,System.Boolean,ZedGraph.PointPair)">Draw(Graphics, GraphPane, RectangleF, Single, Boolean, Boolean, PointPair)</h4>
+  <div class="markdown level1 summary"><p>Draw the <a class="xref" href="ZedGraph.Bar.html">Bar</a> to the specified <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.drawing.graphics">Graphics</a> device
+at the specified location.  This routine draws a single bar.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Draw(Graphics g, GraphPane pane, RectangleF rect, float scaleFactor, bool fullFrame, bool isSelected, PointPair dataValue)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.drawing.graphics">Graphics</a></td>
+        <td><span class="parametername">g</span></td>
+        <td><p>A graphic device object to be drawn into.  This is normally e.Graphics from the
+PaintEventArgs argument to the Paint() method.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ZedGraph.GraphPane.html">GraphPane</a></td>
+        <td><span class="parametername">pane</span></td>
+        <td><p>A reference to the <a class="xref" href="ZedGraph.GraphPane.html">GraphPane</a> object that is the parent or
+owner of this object.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.drawing.rectanglef">RectangleF</a></td>
+        <td><span class="parametername">rect</span></td>
+        <td><p>The rectangle (pixels) to contain the bar</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td><span class="parametername">scaleFactor</span></td>
+        <td><p>The scaling factor for the features of the graph based on the <a class="xref" href="ZedGraph.PaneBase.html#ZedGraph_PaneBase_BaseDimension">BaseDimension</a>.  This
+scaling factor is calculated by the <a class="xref" href="ZedGraph.PaneBase.html#ZedGraph_PaneBase_CalcScaleFactor">CalcScaleFactor()</a> method.  The scale factor
+represents a linear multiple to be applied to font sizes, symbol sizes, etc.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="parametername">fullFrame</span></td>
+        <td><p>true to draw the bottom portion of the border around the
+bar (this is for legend entries)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="parametername">isSelected</span></td>
+        <td><p>Indicates that the <a class="xref" href="ZedGraph.Bar.html">Bar</a> should be drawn
+with attributes from the <a class="xref" href="ZedGraph.Selection.html">Selection</a> class.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ZedGraph.PointPair.html">PointPair</a></td>
+        <td><span class="parametername">dataValue</span></td>
+        <td><p>The data value to be used for a value-based
+color gradient.  This is only applicable for <a class="xref" href="ZedGraph.FillType.html#ZedGraph_FillType_GradientByX">GradientByX</a>,
+<a class="xref" href="ZedGraph.FillType.html#ZedGraph_FillType_GradientByY">GradientByY</a> or <a class="xref" href="ZedGraph.FillType.html#ZedGraph_FillType_GradientByZ">GradientByZ</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_Bar_Draw_System_Drawing_Graphics_ZedGraph_GraphPane_System_Single_System_Single_System_Single_System_Single_System_Single_System_Boolean_System_Boolean_ZedGraph_PointPair_.md&amp;value=---%0Auid%3A%20ZedGraph.Bar.Draw(System.Drawing.Graphics%2CZedGraph.GraphPane%2CSystem.Single%2CSystem.Single%2CSystem.Single%2CSystem.Single%2CSystem.Single%2CSystem.Boolean%2CSystem.Boolean%2CZedGraph.PointPair)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/Bar.cs/#L249">View Source</a>
+  </span>
+  <a id="ZedGraph_Bar_Draw_" data-uid="ZedGraph.Bar.Draw*"></a>
+  <h4 id="ZedGraph_Bar_Draw_System_Drawing_Graphics_ZedGraph_GraphPane_System_Single_System_Single_System_Single_System_Single_System_Single_System_Boolean_System_Boolean_ZedGraph_PointPair_" data-uid="ZedGraph.Bar.Draw(System.Drawing.Graphics,ZedGraph.GraphPane,System.Single,System.Single,System.Single,System.Single,System.Single,System.Boolean,System.Boolean,ZedGraph.PointPair)">Draw(Graphics, GraphPane, Single, Single, Single, Single, Single, Boolean, Boolean, PointPair)</h4>
+  <div class="markdown level1 summary"><p>Draw the <a class="xref" href="ZedGraph.Bar.html">Bar</a> to the specified <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.drawing.graphics">Graphics</a> device
+at the specified location.  This routine draws a single bar.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Draw(Graphics g, GraphPane pane, float left, float right, float top, float bottom, float scaleFactor, bool fullFrame, bool isSelected, PointPair dataValue)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.drawing.graphics">Graphics</a></td>
+        <td><span class="parametername">g</span></td>
+        <td><p>A graphic device object to be drawn into.  This is normally e.Graphics from the
+PaintEventArgs argument to the Paint() method.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ZedGraph.GraphPane.html">GraphPane</a></td>
+        <td><span class="parametername">pane</span></td>
+        <td><p>A reference to the <a class="xref" href="ZedGraph.GraphPane.html">GraphPane</a> object that is the parent or
+owner of this object.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td><span class="parametername">left</span></td>
+        <td><p>The x position of the left side of the bar in
+pixel units</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td><span class="parametername">right</span></td>
+        <td><p>The x position of the right side of the bar in
+pixel units</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td><span class="parametername">top</span></td>
+        <td><p>The y position of the top of the bar in
+pixel units</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td><span class="parametername">bottom</span></td>
+        <td><p>The y position of the bottom of the bar in
+pixel units</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td><span class="parametername">scaleFactor</span></td>
+        <td><p>The scaling factor for the features of the graph based on the <a class="xref" href="ZedGraph.PaneBase.html#ZedGraph_PaneBase_BaseDimension">BaseDimension</a>.  This
+scaling factor is calculated by the <a class="xref" href="ZedGraph.PaneBase.html#ZedGraph_PaneBase_CalcScaleFactor">CalcScaleFactor()</a> method.  The scale factor
+represents a linear multiple to be applied to font sizes, symbol sizes, etc.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="parametername">fullFrame</span></td>
+        <td><p>true to draw the bottom portion of the border around the
+bar (this is for legend entries)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="parametername">isSelected</span></td>
+        <td><p>Indicates that the <a class="xref" href="ZedGraph.Bar.html">Bar</a> should be drawn
+with attributes from the <a class="xref" href="ZedGraph.Selection.html">Selection</a> class.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ZedGraph.PointPair.html">PointPair</a></td>
+        <td><span class="parametername">dataValue</span></td>
+        <td><p>The data value to be used for a value-based
+color gradient.  This is only applicable for <a class="xref" href="ZedGraph.FillType.html#ZedGraph_FillType_GradientByX">GradientByX</a>,
+<a class="xref" href="ZedGraph.FillType.html#ZedGraph_FillType_GradientByY">GradientByY</a> or <a class="xref" href="ZedGraph.FillType.html#ZedGraph_FillType_GradientByZ">GradientByZ</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_Bar_DrawBars_System_Drawing_Graphics_ZedGraph_GraphPane_ZedGraph_CurveItem_ZedGraph_Axis_ZedGraph_Axis_System_Single_System_Int32_System_Single_.md&amp;value=---%0Auid%3A%20ZedGraph.Bar.DrawBars(System.Drawing.Graphics%2CZedGraph.GraphPane%2CZedGraph.CurveItem%2CZedGraph.Axis%2CZedGraph.Axis%2CSystem.Single%2CSystem.Int32%2CSystem.Single)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/Bar.cs/#L366">View Source</a>
+  </span>
+  <a id="ZedGraph_Bar_DrawBars_" data-uid="ZedGraph.Bar.DrawBars*"></a>
+  <h4 id="ZedGraph_Bar_DrawBars_System_Drawing_Graphics_ZedGraph_GraphPane_ZedGraph_CurveItem_ZedGraph_Axis_ZedGraph_Axis_System_Single_System_Int32_System_Single_" data-uid="ZedGraph.Bar.DrawBars(System.Drawing.Graphics,ZedGraph.GraphPane,ZedGraph.CurveItem,ZedGraph.Axis,ZedGraph.Axis,System.Single,System.Int32,System.Single)">DrawBars(Graphics, GraphPane, CurveItem, Axis, Axis, Single, Int32, Single)</h4>
+  <div class="markdown level1 summary"><p>Draw the this <a class="xref" href="ZedGraph.Bar.html">Bar</a> to the specified <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.drawing.graphics">Graphics</a>
+device as a bar at each defined point. This method
+is normally only called by the <a class="xref" href="ZedGraph.BarItem.html#ZedGraph_BarItem_Draw_System_Drawing_Graphics_ZedGraph_GraphPane_System_Int32_System_Single_">Draw(Graphics, GraphPane, Int32, Single)</a> method of the
+<a class="xref" href="ZedGraph.BarItem.html">BarItem</a> object</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DrawBars(Graphics g, GraphPane pane, CurveItem curve, Axis baseAxis, Axis valueAxis, float barWidth, int pos, float scaleFactor)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.drawing.graphics">Graphics</a></td>
+        <td><span class="parametername">g</span></td>
+        <td><p>A graphic device object to be drawn into.  This is normally e.Graphics from the
+PaintEventArgs argument to the Paint() method.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ZedGraph.GraphPane.html">GraphPane</a></td>
+        <td><span class="parametername">pane</span></td>
+        <td><p>A reference to the <a class="xref" href="ZedGraph.GraphPane.html">GraphPane</a> object that is the parent or
+owner of this object.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ZedGraph.CurveItem.html">CurveItem</a></td>
+        <td><span class="parametername">curve</span></td>
+        <td><p>A <a class="xref" href="ZedGraph.CurveItem.html">CurveItem</a> object representing the
+<a class="xref" href="ZedGraph.Bar.html">Bar</a>'s to be drawn.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ZedGraph.Axis.html">Axis</a></td>
+        <td><span class="parametername">baseAxis</span></td>
+        <td><p>The <a class="xref" href="ZedGraph.Axis.html">Axis</a> class instance that defines the base (independent)
+axis for the <a class="xref" href="ZedGraph.Bar.html">Bar</a></p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ZedGraph.Axis.html">Axis</a></td>
+        <td><span class="parametername">valueAxis</span></td>
+        <td><p>The <a class="xref" href="ZedGraph.Axis.html">Axis</a> class instance that defines the value (dependent)
+axis for the <a class="xref" href="ZedGraph.Bar.html">Bar</a></p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td><span class="parametername">barWidth</span></td>
+        <td><p>The width of each bar, in pixels.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">pos</span></td>
+        <td><p>The ordinal position of the this bar series (0=first bar, 1=second bar, etc.)
+in the cluster of bars.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td><span class="parametername">scaleFactor</span></td>
+        <td><p>The scaling factor to be used for rendering objects.  This is calculated and
+passed down by the parent <a class="xref" href="ZedGraph.GraphPane.html">GraphPane</a> object using the
+<a class="xref" href="ZedGraph.PaneBase.html#ZedGraph_PaneBase_CalcScaleFactor">CalcScaleFactor()</a> method, and is used to proportionally adjust
+font sizes, etc. according to the actual size of the graph.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_Bar_DrawSingleBar_System_Drawing_Graphics_ZedGraph_GraphPane_ZedGraph_CurveItem_System_Int32_System_Int32_ZedGraph_Axis_ZedGraph_Axis_System_Single_System_Single_.md&amp;value=---%0Auid%3A%20ZedGraph.Bar.DrawSingleBar(System.Drawing.Graphics%2CZedGraph.GraphPane%2CZedGraph.CurveItem%2CSystem.Int32%2CSystem.Int32%2CZedGraph.Axis%2CZedGraph.Axis%2CSystem.Single%2CSystem.Single)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/Bar.cs/#L470">View Source</a>
+  </span>
+  <a id="ZedGraph_Bar_DrawSingleBar_" data-uid="ZedGraph.Bar.DrawSingleBar*"></a>
+  <h4 id="ZedGraph_Bar_DrawSingleBar_System_Drawing_Graphics_ZedGraph_GraphPane_ZedGraph_CurveItem_System_Int32_System_Int32_ZedGraph_Axis_ZedGraph_Axis_System_Single_System_Single_" data-uid="ZedGraph.Bar.DrawSingleBar(System.Drawing.Graphics,ZedGraph.GraphPane,ZedGraph.CurveItem,System.Int32,System.Int32,ZedGraph.Axis,ZedGraph.Axis,System.Single,System.Single)">DrawSingleBar(Graphics, GraphPane, CurveItem, Int32, Int32, Axis, Axis, Single, Single)</h4>
+  <div class="markdown level1 summary"><p>Protected internal routine that draws the specified single bar (an individual &quot;point&quot;)
+of this series to the specified <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.drawing.graphics">Graphics</a> device.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void DrawSingleBar(Graphics g, GraphPane pane, CurveItem curve, int index, int pos, Axis baseAxis, Axis valueAxis, float barWidth, float scaleFactor)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.drawing.graphics">Graphics</a></td>
+        <td><span class="parametername">g</span></td>
+        <td><p>A graphic device object to be drawn into.  This is normally e.Graphics from the
+PaintEventArgs argument to the Paint() method.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ZedGraph.GraphPane.html">GraphPane</a></td>
+        <td><span class="parametername">pane</span></td>
+        <td><p>A reference to the <a class="xref" href="ZedGraph.GraphPane.html">GraphPane</a> object that is the parent or
+owner of this object.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ZedGraph.CurveItem.html">CurveItem</a></td>
+        <td><span class="parametername">curve</span></td>
+        <td><p>A <a class="xref" href="ZedGraph.CurveItem.html">CurveItem</a> object representing the
+<a class="xref" href="ZedGraph.Bar.html">Bar</a>'s to be drawn.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">index</span></td>
+        <td><p>The zero-based index number for the single bar to be drawn.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">pos</span></td>
+        <td><p>The ordinal position of the this bar series (0=first bar, 1=second bar, etc.)
+in the cluster of bars.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ZedGraph.Axis.html">Axis</a></td>
+        <td><span class="parametername">baseAxis</span></td>
+        <td><p>The <a class="xref" href="ZedGraph.Axis.html">Axis</a> class instance that defines the base (independent)
+axis for the <a class="xref" href="ZedGraph.Bar.html">Bar</a></p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ZedGraph.Axis.html">Axis</a></td>
+        <td><span class="parametername">valueAxis</span></td>
+        <td><p>The <a class="xref" href="ZedGraph.Axis.html">Axis</a> class instance that defines the value (dependent)
+axis for the <a class="xref" href="ZedGraph.Bar.html">Bar</a></p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td><span class="parametername">barWidth</span></td>
+        <td><p>The width of each bar, in pixels.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td><span class="parametername">scaleFactor</span></td>
+        <td><p>The scaling factor to be used for rendering objects.  This is calculated and
+passed down by the parent <a class="xref" href="ZedGraph.GraphPane.html">GraphPane</a> object using the
+<a class="xref" href="ZedGraph.PaneBase.html#ZedGraph_PaneBase_CalcScaleFactor">CalcScaleFactor()</a> method, and is used to proportionally adjust
+font sizes, etc. according to the actual size of the graph.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_Bar_DrawSingleBar_System_Drawing_Graphics_ZedGraph_GraphPane_ZedGraph_CurveItem_ZedGraph_Axis_ZedGraph_Axis_System_Int32_System_Int32_System_Single_System_Single_.md&amp;value=---%0Auid%3A%20ZedGraph.Bar.DrawSingleBar(System.Drawing.Graphics%2CZedGraph.GraphPane%2CZedGraph.CurveItem%2CZedGraph.Axis%2CZedGraph.Axis%2CSystem.Int32%2CSystem.Int32%2CSystem.Single%2CSystem.Single)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/Bar.cs/#L418">View Source</a>
+  </span>
+  <a id="ZedGraph_Bar_DrawSingleBar_" data-uid="ZedGraph.Bar.DrawSingleBar*"></a>
+  <h4 id="ZedGraph_Bar_DrawSingleBar_System_Drawing_Graphics_ZedGraph_GraphPane_ZedGraph_CurveItem_ZedGraph_Axis_ZedGraph_Axis_System_Int32_System_Int32_System_Single_System_Single_" data-uid="ZedGraph.Bar.DrawSingleBar(System.Drawing.Graphics,ZedGraph.GraphPane,ZedGraph.CurveItem,ZedGraph.Axis,ZedGraph.Axis,System.Int32,System.Int32,System.Single,System.Single)">DrawSingleBar(Graphics, GraphPane, CurveItem, Axis, Axis, Int32, Int32, Single, Single)</h4>
+  <div class="markdown level1 summary"><p>Draw the specified single bar (an individual &quot;point&quot;) of this series to the specified
+<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.drawing.graphics">Graphics</a> device.  This method is not as efficient as
+<a class="xref" href="ZedGraph.Bar.html#ZedGraph_Bar_DrawBars_System_Drawing_Graphics_ZedGraph_GraphPane_ZedGraph_CurveItem_ZedGraph_Axis_ZedGraph_Axis_System_Single_System_Int32_System_Single_">DrawBars(Graphics, GraphPane, CurveItem, Axis, Axis, Single, Int32, Single)</a>, which draws the bars for all points.  It is intended to be used
+only for <a class="xref" href="ZedGraph.BarType.html#ZedGraph_BarType_SortedOverlay">SortedOverlay</a>, which requires special handling of each bar.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DrawSingleBar(Graphics g, GraphPane pane, CurveItem curve, Axis baseAxis, Axis valueAxis, int pos, int index, float barWidth, float scaleFactor)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.drawing.graphics">Graphics</a></td>
+        <td><span class="parametername">g</span></td>
+        <td><p>A graphic device object to be drawn into.  This is normally e.Graphics from the
+PaintEventArgs argument to the Paint() method.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ZedGraph.GraphPane.html">GraphPane</a></td>
+        <td><span class="parametername">pane</span></td>
+        <td><p>A reference to the <a class="xref" href="ZedGraph.GraphPane.html">GraphPane</a> object that is the parent or
+owner of this object.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ZedGraph.CurveItem.html">CurveItem</a></td>
+        <td><span class="parametername">curve</span></td>
+        <td><p>A <a class="xref" href="ZedGraph.CurveItem.html">CurveItem</a> object representing the
+<a class="xref" href="ZedGraph.Bar.html">Bar</a>'s to be drawn.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ZedGraph.Axis.html">Axis</a></td>
+        <td><span class="parametername">baseAxis</span></td>
+        <td><p>The <a class="xref" href="ZedGraph.Axis.html">Axis</a> class instance that defines the base (independent)
+axis for the <a class="xref" href="ZedGraph.Bar.html">Bar</a></p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ZedGraph.Axis.html">Axis</a></td>
+        <td><span class="parametername">valueAxis</span></td>
+        <td><p>The <a class="xref" href="ZedGraph.Axis.html">Axis</a> class instance that defines the value (dependent)
+axis for the <a class="xref" href="ZedGraph.Bar.html">Bar</a></p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">pos</span></td>
+        <td><p>The ordinal position of the this bar series (0=first bar, 1=second bar, etc.)
+in the cluster of bars.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">index</span></td>
+        <td><p>The zero-based index number for the single bar to be drawn.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td><span class="parametername">barWidth</span></td>
+        <td><p>The width of each bar, in pixels.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td><span class="parametername">scaleFactor</span></td>
+        <td><p>The scaling factor to be used for rendering objects.  This is calculated and
+passed down by the parent <a class="xref" href="ZedGraph.GraphPane.html">GraphPane</a> object using the
+<a class="xref" href="ZedGraph.PaneBase.html#ZedGraph_PaneBase_CalcScaleFactor">CalcScaleFactor()</a> method, and is used to proportionally adjust
+font sizes, etc. according to the actual size of the graph.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_Bar_GetObjectData_System_Runtime_Serialization_SerializationInfo_System_Runtime_Serialization_StreamingContext_.md&amp;value=---%0Auid%3A%20ZedGraph.Bar.GetObjectData(System.Runtime.Serialization.SerializationInfo%2CSystem.Runtime.Serialization.StreamingContext)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/Bar.cs/#L182">View Source</a>
+  </span>
+  <a id="ZedGraph_Bar_GetObjectData_" data-uid="ZedGraph.Bar.GetObjectData*"></a>
+  <h4 id="ZedGraph_Bar_GetObjectData_System_Runtime_Serialization_SerializationInfo_System_Runtime_Serialization_StreamingContext_" data-uid="ZedGraph.Bar.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">GetObjectData(SerializationInfo, StreamingContext)</h4>
+  <div class="markdown level1 summary"><p>Populates a <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.runtime.serialization.serializationinfo">SerializationInfo</a> instance with the data needed to serialize the target object</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[SecurityPermission(SecurityAction.Demand, SerializationFormatter = true)]
+public virtual void GetObjectData(SerializationInfo info, StreamingContext context)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.runtime.serialization.serializationinfo">SerializationInfo</a></td>
+        <td><span class="parametername">info</span></td>
+        <td><p>A <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.runtime.serialization.serializationinfo">SerializationInfo</a> instance that defines the serialized data</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.runtime.serialization.streamingcontext">StreamingContext</a></td>
+        <td><span class="parametername">context</span></td>
+        <td><p>A <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.runtime.serialization.streamingcontext">StreamingContext</a> instance that contains the serialized data</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="eii">Explicit Interface Implementations
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_Bar_System_ICloneable_Clone.md&amp;value=---%0Auid%3A%20ZedGraph.Bar.System%23ICloneable%23Clone%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/Bar.cs/#L139">View Source</a>
+  </span>
+  <a id="ZedGraph_Bar_System_ICloneable_Clone_" data-uid="ZedGraph.Bar.System#ICloneable#Clone*"></a>
+  <h4 id="ZedGraph_Bar_System_ICloneable_Clone" data-uid="ZedGraph.Bar.System#ICloneable#Clone">ICloneable.Clone()</h4>
+  <div class="markdown level1 summary"><p>Implement the <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.icloneable">ICloneable</a> interface in a typesafe manner by just
+calling the typed version of <a class="xref" href="ZedGraph.Bar.html#ZedGraph_Bar_Clone">Clone()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">object ICloneable.Clone()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></td>
+        <td><p>A deep copy of this object</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.icloneable">System.ICloneable</a>
+  </div>
+  <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.runtime.serialization.iserializable">System.Runtime.Serialization.ISerializable</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_Bar.md&amp;value=---%0Auid%3A%20ZedGraph.Bar%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/Bar.cs/#L36" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,1689 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class Axis
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class Axis
+   ">
+    <meta name="generator" content="docfx 2.56.7.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="ZedGraph.Axis">
+  
+  
+  <h1 id="ZedGraph_Axis" data-uid="ZedGraph.Axis" class="text-break">Class Axis
+  </h1>
+  <div class="markdown level0 summary"><p>The Axis class is an abstract base class that encompasses all properties
+and methods required to define a graph Axis.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
+    <div class="level1"><span class="xref">Axis</span></div>
+      <div class="level2"><a class="xref" href="ZedGraph.X2Axis.html">X2Axis</a></div>
+      <div class="level2"><a class="xref" href="ZedGraph.XAxis.html">XAxis</a></div>
+      <div class="level2"><a class="xref" href="ZedGraph.Y2Axis.html">Y2Axis</a></div>
+      <div class="level2"><a class="xref" href="ZedGraph.YAxis.html">YAxis</a></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.runtime.serialization.iserializable">ISerializable</a></div>
+    <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.icloneable">ICloneable</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#System_Object_Equals_System_Object_">Object.Equals(Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#System_Object_Equals_System_Object_System_Object_">Object.Equals(Object, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gethashcode#System_Object_GetHashCode">Object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gettype#System_Object_GetType">Object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.memberwiseclone#System_Object_MemberwiseClone">Object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.referenceequals#System_Object_ReferenceEquals_System_Object_System_Object_">Object.ReferenceEquals(Object, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.tostring#System_Object_ToString">Object.ToString()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="ZedGraph.html">ZedGraph</a></h6>
+  <h6><strong>Assembly</strong>: ZedGraph.dll</h6>
+  <h5 id="ZedGraph_Axis_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Serializable]
+public abstract class Axis : ISerializable, ICloneable</code></pre>
+  </div>
+  <h5 id="ZedGraph_Axis_remarks"><strong>Remarks</strong></h5>
+  <div class="markdown level0 remarks"><p>This class is inherited by the
+<a class="xref" href="ZedGraph.XAxis.html">XAxis</a>, <a class="xref" href="ZedGraph.YAxis.html">YAxis</a>, and <a class="xref" href="ZedGraph.Y2Axis.html">Y2Axis</a> classes
+to define specific characteristics for those types.</p>
+</div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_Axis__ctor.md&amp;value=---%0Auid%3A%20ZedGraph.Axis.%23ctor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/Axis.cs/#L295">View Source</a>
+  </span>
+  <a id="ZedGraph_Axis__ctor_" data-uid="ZedGraph.Axis.#ctor*"></a>
+  <h4 id="ZedGraph_Axis__ctor" data-uid="ZedGraph.Axis.#ctor">Axis()</h4>
+  <div class="markdown level1 summary"><p>Default constructor for <a class="xref" href="ZedGraph.Axis.html">Axis</a> that sets all axis properties
+to default values as defined in the <a class="xref" href="ZedGraph.Axis.Default.html">Axis.Default</a> class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Axis()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_Axis__ctor_System_Runtime_Serialization_SerializationInfo_System_Runtime_Serialization_StreamingContext_.md&amp;value=---%0Auid%3A%20ZedGraph.Axis.%23ctor(System.Runtime.Serialization.SerializationInfo%2CSystem.Runtime.Serialization.StreamingContext)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/Axis.cs/#L410">View Source</a>
+  </span>
+  <a id="ZedGraph_Axis__ctor_" data-uid="ZedGraph.Axis.#ctor*"></a>
+  <h4 id="ZedGraph_Axis__ctor_System_Runtime_Serialization_SerializationInfo_System_Runtime_Serialization_StreamingContext_" data-uid="ZedGraph.Axis.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">Axis(SerializationInfo, StreamingContext)</h4>
+  <div class="markdown level1 summary"><p>Constructor for deserializing objects</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Axis(SerializationInfo info, StreamingContext context)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.runtime.serialization.serializationinfo">SerializationInfo</a></td>
+        <td><span class="parametername">info</span></td>
+        <td><p>A <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.runtime.serialization.serializationinfo">SerializationInfo</a> instance that defines the serialized data</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.runtime.serialization.streamingcontext">StreamingContext</a></td>
+        <td><span class="parametername">context</span></td>
+        <td><p>A <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.runtime.serialization.streamingcontext">StreamingContext</a> instance that contains the serialized data</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_Axis__ctor_System_String_.md&amp;value=---%0Auid%3A%20ZedGraph.Axis.%23ctor(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/Axis.cs/#L335">View Source</a>
+  </span>
+  <a id="ZedGraph_Axis__ctor_" data-uid="ZedGraph.Axis.#ctor*"></a>
+  <h4 id="ZedGraph_Axis__ctor_System_String_" data-uid="ZedGraph.Axis.#ctor(System.String)">Axis(String)</h4>
+  <div class="markdown level1 summary"><p>Constructor for <a class="xref" href="ZedGraph.Axis.html">Axis</a> that sets all axis properties
+to default values as defined in the <a class="xref" href="ZedGraph.Axis.Default.html">Axis.Default</a> class,
+except for the <a class="xref" href="ZedGraph.Axis.html#ZedGraph_Axis_Title">Title</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Axis(string title)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">title</span></td>
+        <td><p>A string containing the axis title</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_Axis__ctor_ZedGraph_Axis_.md&amp;value=---%0Auid%3A%20ZedGraph.Axis.%23ctor(ZedGraph.Axis)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/Axis.cs/#L345">View Source</a>
+  </span>
+  <a id="ZedGraph_Axis__ctor_" data-uid="ZedGraph.Axis.#ctor*"></a>
+  <h4 id="ZedGraph_Axis__ctor_ZedGraph_Axis_" data-uid="ZedGraph.Axis.#ctor(ZedGraph.Axis)">Axis(Axis)</h4>
+  <div class="markdown level1 summary"><p>The Copy Constructor.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Axis(Axis rhs)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ZedGraph.Axis.html">Axis</a></td>
+        <td><span class="parametername">rhs</span></td>
+        <td><p>The Axis object from which to copy</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="fields">Fields
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_Axis__isAxisSegmentVisible.md&amp;value=---%0Auid%3A%20ZedGraph.Axis._isAxisSegmentVisible%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/Axis.cs/#L91">View Source</a>
+  </span>
+  <h4 id="ZedGraph_Axis__isAxisSegmentVisible" data-uid="ZedGraph.Axis._isAxisSegmentVisible">_isAxisSegmentVisible</h4>
+  <div class="markdown level1 summary"><p>Private fields for the <a class="xref" href="ZedGraph.Axis.html">Axis</a> attributes.
+Use the public properties <a class="xref" href="ZedGraph.Axis.html#ZedGraph_Axis_IsVisible">IsVisible</a>, <a class="xref" href="ZedGraph.Axis.html#ZedGraph_Axis_IsAxisSegmentVisible">IsAxisSegmentVisible</a>
+for access to these values.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[CLSCompliant(false)]
+protected bool _isAxisSegmentVisible</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_Axis__isVisible.md&amp;value=---%0Auid%3A%20ZedGraph.Axis._isVisible%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/Axis.cs/#L90">View Source</a>
+  </span>
+  <h4 id="ZedGraph_Axis__isVisible" data-uid="ZedGraph.Axis._isVisible">_isVisible</h4>
+  <div class="markdown level1 summary"><p>Private fields for the <a class="xref" href="ZedGraph.Axis.html">Axis</a> attributes.
+Use the public properties <a class="xref" href="ZedGraph.Axis.html#ZedGraph_Axis_IsVisible">IsVisible</a>, <a class="xref" href="ZedGraph.Axis.html#ZedGraph_Axis_IsAxisSegmentVisible">IsAxisSegmentVisible</a>
+for access to these values.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[CLSCompliant(false)]
+protected bool _isVisible</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_Axis__title.md&amp;value=---%0Auid%3A%20ZedGraph.Axis._title%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/Axis.cs/#L97">View Source</a>
+  </span>
+  <h4 id="ZedGraph_Axis__title" data-uid="ZedGraph.Axis._title">_title</h4>
+  <div class="markdown level1 summary"><p>Private field for the <a class="xref" href="ZedGraph.Axis.html">Axis</a> title string.
+Use the public property <a class="xref" href="ZedGraph.Axis.html#ZedGraph_Axis_Title">Title</a> for access to this value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[CLSCompliant(false)]
+protected AxisLabel _title</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ZedGraph.AxisLabel.html">AxisLabel</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_Axis_schema.md&amp;value=---%0Auid%3A%20ZedGraph.Axis.schema%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/Axis.cs/#L401">View Source</a>
+  </span>
+  <h4 id="ZedGraph_Axis_schema" data-uid="ZedGraph.Axis.schema">schema</h4>
+  <div class="markdown level1 summary"><p>Current schema value that defines the version of the serialized file</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int schema = 10</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_Axis_Tag.md&amp;value=---%0Auid%3A%20ZedGraph.Axis.Tag%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/Axis.cs/#L109">View Source</a>
+  </span>
+  <h4 id="ZedGraph_Axis_Tag" data-uid="ZedGraph.Axis.Tag">Tag</h4>
+  <div class="markdown level1 summary"><p>A tag object for use by the user.  This can be used to store additional
+information associated with the <a class="xref" href="ZedGraph.Axis.html">Axis</a>.  ZedGraph does
+not use this value for any purpose.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public object Tag</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="ZedGraph_Axis_Tag_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Note that, if you are going to Serialize ZedGraph data, then any type
+that you store in <a class="xref" href="ZedGraph.Axis.html#ZedGraph_Axis_Tag">Tag</a> must be a serializable type (or
+it will cause an exception).</p>
+</div>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_Axis_AxisGap.md&amp;value=---%0Auid%3A%20ZedGraph.Axis.AxisGap%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/Axis.cs/#L695">View Source</a>
+  </span>
+  <a id="ZedGraph_Axis_AxisGap_" data-uid="ZedGraph.Axis.AxisGap*"></a>
+  <h4 id="ZedGraph_Axis_AxisGap" data-uid="ZedGraph.Axis.AxisGap">AxisGap</h4>
+  <div class="markdown level1 summary"><p>The size of the gap between multiple axes (see <a class="xref" href="ZedGraph.GraphPane.html#ZedGraph_GraphPane_YAxisList">YAxisList</a> and
+<a class="xref" href="ZedGraph.GraphPane.html#ZedGraph_GraphPane_Y2AxisList">Y2AxisList</a>).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float AxisGap { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td><p>The axis gap is measured in points (1/72 inch)</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="ZedGraph_Axis_AxisGap_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This size will be scaled
+according to the <a class="xref" href="ZedGraph.PaneBase.html#ZedGraph_PaneBase_CalcScaleFactor">CalcScaleFactor()</a> for the
+<a class="xref" href="ZedGraph.GraphPane.html">GraphPane</a></p>
+</div>
+  <h5 id="ZedGraph_Axis_AxisGap_seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="ZedGraph.Axis.Default.html#ZedGraph_Axis_Default_AxisGap">AxisGap</a></div>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_Axis_Color.md&amp;value=---%0Auid%3A%20ZedGraph.Axis.Color%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/Axis.cs/#L559">View Source</a>
+  </span>
+  <a id="ZedGraph_Axis_Color_" data-uid="ZedGraph.Axis.Color*"></a>
+  <h4 id="ZedGraph_Axis_Color" data-uid="ZedGraph.Axis.Color">Color</h4>
+  <div class="markdown level1 summary"><p>The color to use for drawing this <a class="xref" href="ZedGraph.Axis.html">Axis</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Color Color { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.drawing.color">Color</a></td>
+        <td><p>The color is defined using the
+<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.drawing.color">Color</a> class</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="ZedGraph_Axis_Color_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This affects only the axis segment (see <a class="xref" href="ZedGraph.Axis.html#ZedGraph_Axis_IsAxisSegmentVisible">IsAxisSegmentVisible</a>),
+since the <a class="xref" href="ZedGraph.Axis.html#ZedGraph_Axis_Title">Title</a>,
+<a class="xref" href="ZedGraph.Axis.html#ZedGraph_Axis_Scale">Scale</a>, <a class="xref" href="ZedGraph.Axis.html#ZedGraph_Axis_MajorTic">MajorTic</a>, <a class="xref" href="ZedGraph.Axis.html#ZedGraph_Axis_MinorTic">MinorTic</a>,
+<a class="xref" href="ZedGraph.Axis.html#ZedGraph_Axis_MajorGrid">MajorGrid</a>, and <a class="xref" href="ZedGraph.Axis.html#ZedGraph_Axis_MinorGrid">MinorGrid</a>
+all have their own color specification.</p>
+</div>
+  <h5 id="ZedGraph_Axis_Color_seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="ZedGraph.Axis.Default.html#ZedGraph_Axis_Default_Color">Color</a></div>
+      <div><a class="xref" href="ZedGraph.Axis.html#ZedGraph_Axis_IsVisible">IsVisible</a></div>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_Axis_Cross.md&amp;value=---%0Auid%3A%20ZedGraph.Axis.Cross%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/Axis.cs/#L503">View Source</a>
+  </span>
+  <a id="ZedGraph_Axis_Cross_" data-uid="ZedGraph.Axis.Cross*"></a>
+  <h4 id="ZedGraph_Axis_Cross" data-uid="ZedGraph.Axis.Cross">Cross</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the scale value at which this axis should cross the &quot;other&quot; axis.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double Cross { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.double">Double</a></td>
+        <td><p>The value is defined in user scale units</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="ZedGraph_Axis_Cross_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This property allows the axis to be shifted away from its default location.
+For example, for a graph with an X range from -100 to +100, the Y Axis can be located
+at the X=0 value rather than the left edge of the ChartRect.  This value can be set
+automatically based on the state of <a class="xref" href="ZedGraph.Axis.html#ZedGraph_Axis_CrossAuto">CrossAuto</a>.  If
+this value is set manually, then <a class="xref" href="ZedGraph.Axis.html#ZedGraph_Axis_CrossAuto">CrossAuto</a> will
+also be set to false.  The &quot;other&quot; axis is the axis the handles the second dimension
+for the graph.  For the XAxis, the &quot;other&quot; axis is the YAxis.  For the YAxis or
+Y2Axis, the &quot;other&quot; axis is the XAxis.</p>
+</div>
+  <h5 id="ZedGraph_Axis_Cross_seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="ZedGraph.Scale.html#ZedGraph_Scale_Min">Min</a></div>
+      <div><a class="xref" href="ZedGraph.Scale.html#ZedGraph_Scale_Max">Max</a></div>
+      <div><a class="xref" href="ZedGraph.Scale.html#ZedGraph_Scale_MajorStep">MajorStep</a></div>
+      <div><a class="xref" href="ZedGraph.Axis.html#ZedGraph_Axis_CrossAuto">CrossAuto</a></div>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_Axis_CrossAuto.md&amp;value=---%0Auid%3A%20ZedGraph.Axis.CrossAuto%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/Axis.cs/#L518">View Source</a>
+  </span>
+  <a id="ZedGraph_Axis_CrossAuto_" data-uid="ZedGraph.Axis.CrossAuto*"></a>
+  <h4 id="ZedGraph_Axis_CrossAuto" data-uid="ZedGraph.Axis.CrossAuto">CrossAuto</h4>
+  <div class="markdown level1 summary"><p>Gets or sets a value that determines whether or not the <a class="xref" href="ZedGraph.Axis.html#ZedGraph_Axis_Cross">Cross</a> value
+is set automatically.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool CrossAuto { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><p>Set to true to have ZedGraph put the axis in the default location, or false
+to specify the axis location manually with a <a class="xref" href="ZedGraph.Axis.html#ZedGraph_Axis_Cross">Cross</a> value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="ZedGraph_Axis_CrossAuto_seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="ZedGraph.Scale.html#ZedGraph_Scale_Min">Min</a></div>
+      <div><a class="xref" href="ZedGraph.Scale.html#ZedGraph_Scale_Max">Max</a></div>
+      <div><a class="xref" href="ZedGraph.Scale.html#ZedGraph_Scale_MajorStep">MajorStep</a></div>
+      <div><a class="xref" href="ZedGraph.Axis.html#ZedGraph_Axis_Cross">Cross</a></div>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_Axis_IsAxisSegmentVisible.md&amp;value=---%0Auid%3A%20ZedGraph.Axis.IsAxisSegmentVisible%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/Axis.cs/#L638">View Source</a>
+  </span>
+  <a id="ZedGraph_Axis_IsAxisSegmentVisible_" data-uid="ZedGraph.Axis.IsAxisSegmentVisible*"></a>
+  <h4 id="ZedGraph_Axis_IsAxisSegmentVisible" data-uid="ZedGraph.Axis.IsAxisSegmentVisible">IsAxisSegmentVisible</h4>
+  <div class="markdown level1 summary"><p>Gets or sets a property that determines whether or not the axis segment (the line that
+represents the axis itself) is drawn.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsAxisSegmentVisible { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="ZedGraph_Axis_IsAxisSegmentVisible_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Under normal circumstances, this value won't affect the appearance of the display because
+the Axis segment is overlain by the Axis border (see <a class="xref" href="ZedGraph.Chart.html#ZedGraph_Chart_Border">Border</a>).
+However, when the border is not visible, or when <a class="xref" href="ZedGraph.Axis.html#ZedGraph_Axis_CrossAuto">CrossAuto</a> is set to
+false, this value will make a difference.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_Axis_IsVisible.md&amp;value=---%0Auid%3A%20ZedGraph.Axis.IsVisible%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/Axis.cs/#L622">View Source</a>
+  </span>
+  <a id="ZedGraph_Axis_IsVisible_" data-uid="ZedGraph.Axis.IsVisible*"></a>
+  <h4 id="ZedGraph_Axis_IsVisible" data-uid="ZedGraph.Axis.IsVisible">IsVisible</h4>
+  <div class="markdown level1 summary"><p>This property determines whether or not the <a class="xref" href="ZedGraph.Axis.html">Axis</a> is shown.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsVisible { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><p>true to show the axis, false to disable all drawing of this axis</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="ZedGraph_Axis_IsVisible_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Note that even if
+the axis is not visible, it can still be actively used to draw curves on a
+graph, it will just be invisible to the user</p>
+</div>
+  <h5 id="ZedGraph_Axis_IsVisible_seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="ZedGraph.Scale.html#ZedGraph_Scale_IsVisible">IsVisible</a></div>
+      <div><a class="xref" href="ZedGraph.XAxis.Default.html#ZedGraph_XAxis_Default_IsVisible">IsVisible</a></div>
+      <div><a class="xref" href="ZedGraph.YAxis.Default.html#ZedGraph_YAxis_Default_IsVisible">IsVisible</a></div>
+      <div><a class="xref" href="ZedGraph.Y2Axis.Default.html#ZedGraph_Y2Axis_Default_IsVisible">IsVisible</a></div>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_Axis_MajorGrid.md&amp;value=---%0Auid%3A%20ZedGraph.Axis.MajorGrid%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/Axis.cs/#L590">View Source</a>
+  </span>
+  <a id="ZedGraph_Axis_MajorGrid_" data-uid="ZedGraph.Axis.MajorGrid*"></a>
+  <h4 id="ZedGraph_Axis_MajorGrid" data-uid="ZedGraph.Axis.MajorGrid">MajorGrid</h4>
+  <div class="markdown level1 summary"><p>Gets a reference to the <a class="xref" href="ZedGraph.Axis.html#ZedGraph_Axis_MajorGrid">MajorGrid</a> class that contains the properties
+of the major grid.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MajorGrid MajorGrid { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ZedGraph.MajorGrid.html">MajorGrid</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_Axis_MajorTic.md&amp;value=---%0Auid%3A%20ZedGraph.Axis.MajorTic%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/Axis.cs/#L569">View Source</a>
+  </span>
+  <a id="ZedGraph_Axis_MajorTic_" data-uid="ZedGraph.Axis.MajorTic*"></a>
+  <h4 id="ZedGraph_Axis_MajorTic" data-uid="ZedGraph.Axis.MajorTic">MajorTic</h4>
+  <div class="markdown level1 summary"><p>Gets a reference to the <a class="xref" href="ZedGraph.MajorTic.html">MajorTic</a> class instance
+for this <a class="xref" href="ZedGraph.Axis.html">Axis</a>.  This class stores all the major tic settings.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MajorTic MajorTic { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ZedGraph.MajorTic.html">MajorTic</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_Axis_MinorGrid.md&amp;value=---%0Auid%3A%20ZedGraph.Axis.MinorGrid%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/Axis.cs/#L599">View Source</a>
+  </span>
+  <a id="ZedGraph_Axis_MinorGrid_" data-uid="ZedGraph.Axis.MinorGrid*"></a>
+  <h4 id="ZedGraph_Axis_MinorGrid" data-uid="ZedGraph.Axis.MinorGrid">MinorGrid</h4>
+  <div class="markdown level1 summary"><p>Gets a reference to the <a class="xref" href="ZedGraph.Axis.html#ZedGraph_Axis_MinorGrid">MinorGrid</a> class that contains the properties
+of the minor grid.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MinorGrid MinorGrid { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ZedGraph.MinorGrid.html">MinorGrid</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_Axis_MinorTic.md&amp;value=---%0Auid%3A%20ZedGraph.Axis.MinorTic%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/Axis.cs/#L577">View Source</a>
+  </span>
+  <a id="ZedGraph_Axis_MinorTic_" data-uid="ZedGraph.Axis.MinorTic*"></a>
+  <h4 id="ZedGraph_Axis_MinorTic" data-uid="ZedGraph.Axis.MinorTic">MinorTic</h4>
+  <div class="markdown level1 summary"><p>Gets a reference to the <a class="xref" href="ZedGraph.MinorTic.html">MinorTic</a> class instance
+for this <a class="xref" href="ZedGraph.Axis.html">Axis</a>.  This class stores all the minor tic settings.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MinorTic MinorTic { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ZedGraph.MinorTic.html">MinorTic</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_Axis_MinSpace.md&amp;value=---%0Auid%3A%20ZedGraph.Axis.MinSpace%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/Axis.cs/#L535">View Source</a>
+  </span>
+  <a id="ZedGraph_Axis_MinSpace_" data-uid="ZedGraph.Axis.MinSpace*"></a>
+  <h4 id="ZedGraph_Axis_MinSpace" data-uid="ZedGraph.Axis.MinSpace">MinSpace</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the minimum axis space allocation.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float MinSpace { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="ZedGraph_Axis_MinSpace_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This term, expressed in
+points (1/72 inch) and scaled according to <a class="xref" href="ZedGraph.PaneBase.html#ZedGraph_PaneBase_CalcScaleFactor">CalcScaleFactor()</a>
+for the <a class="xref" href="ZedGraph.GraphPane.html">GraphPane</a>, determines the minimum amount of space
+an axis must have between the <a class="xref" href="ZedGraph.Chart.html#ZedGraph_Chart_Rect">Rect</a> and the
+<a class="xref" href="ZedGraph.PaneBase.html#ZedGraph_PaneBase_Rect">Rect</a>.  This minimum space
+applies whether <a class="xref" href="ZedGraph.Axis.html#ZedGraph_Axis_IsVisible">IsVisible</a> is true or false.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_Axis_Scale.md&amp;value=---%0Auid%3A%20ZedGraph.Axis.Scale%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/Axis.cs/#L482">View Source</a>
+  </span>
+  <a id="ZedGraph_Axis_Scale_" data-uid="ZedGraph.Axis.Scale*"></a>
+  <h4 id="ZedGraph_Axis_Scale" data-uid="ZedGraph.Axis.Scale">Scale</h4>
+  <div class="markdown level1 summary"><p>Gets the <a class="xref" href="ZedGraph.Axis.html#ZedGraph_Axis_Scale">Scale</a> instance associated with this <a class="xref" href="ZedGraph.Axis.html">Axis</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Scale Scale { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ZedGraph.Scale.html">Scale</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_Axis_Title.md&amp;value=---%0Auid%3A%20ZedGraph.Axis.Title%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/Axis.cs/#L678">View Source</a>
+  </span>
+  <a id="ZedGraph_Axis_Title_" data-uid="ZedGraph.Axis.Title*"></a>
+  <h4 id="ZedGraph_Axis_Title" data-uid="ZedGraph.Axis.Title">Title</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the <a class="xref" href="ZedGraph.Label.html">Label</a> class that contains the title of this
+<a class="xref" href="ZedGraph.Axis.html">Axis</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AxisLabel Title { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ZedGraph.AxisLabel.html">AxisLabel</a></td>
+        <td><p>the title is a string value</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="ZedGraph_Axis_Title_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The title normally shows the basis and dimensions of
+the scale range, such as &quot;Time (Years)&quot;.  The title is only shown if the
+<a class="xref" href="ZedGraph.Label.html#ZedGraph_Label_IsVisible">IsVisible</a> property is set to true.  If the Title text is empty,
+then no title is shown, and no space is &quot;reserved&quot; for the title on the graph.</p>
+</div>
+  <h5 id="ZedGraph_Axis_Title_seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="ZedGraph.AxisLabel.html#ZedGraph_AxisLabel_IsOmitMag">IsOmitMag</a></div>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_Axis_Type.md&amp;value=---%0Auid%3A%20ZedGraph.Axis.Type%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/Axis.cs/#L657">View Source</a>
+  </span>
+  <a id="ZedGraph_Axis_Type_" data-uid="ZedGraph.Axis.Type*"></a>
+  <h4 id="ZedGraph_Axis_Type" data-uid="ZedGraph.Axis.Type">Type</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the <a class="xref" href="ZedGraph.AxisType.html">AxisType</a> for this <a class="xref" href="ZedGraph.Axis.html">Axis</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AxisType Type { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ZedGraph.AxisType.html">AxisType</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="ZedGraph_Axis_Type_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The type can be either <a class="xref" href="ZedGraph.AxisType.html#ZedGraph_AxisType_Linear">Linear</a>,
+<a class="xref" href="ZedGraph.AxisType.html#ZedGraph_AxisType_Log">Log</a>, <a class="xref" href="ZedGraph.AxisType.html#ZedGraph_AxisType_Date">Date</a>,
+or <a class="xref" href="ZedGraph.AxisType.html#ZedGraph_AxisType_Text">Text</a>.</p>
+</div>
+  <h5 id="ZedGraph_Axis_Type_seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="ZedGraph.Scale.html#ZedGraph_Scale_IsLog">IsLog</a></div>
+      <div><a class="xref" href="ZedGraph.Scale.html#ZedGraph_Scale_IsText">IsText</a></div>
+      <div><a class="xref" href="ZedGraph.Scale.html#ZedGraph_Scale_IsOrdinal">IsOrdinal</a></div>
+      <div><a class="xref" href="ZedGraph.Scale.html#ZedGraph_Scale_IsDate">IsDate</a></div>
+      <div><a class="xref" href="ZedGraph.Scale.html#ZedGraph_Scale_IsReverse">IsReverse</a></div>
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_Axis_CalcSpace_System_Drawing_Graphics_ZedGraph_GraphPane_System_Single_System_Single__.md&amp;value=---%0Auid%3A%20ZedGraph.Axis.CalcSpace(System.Drawing.Graphics%2CZedGraph.GraphPane%2CSystem.Single%2CSystem.Single%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/Axis.cs/#L1075">View Source</a>
+  </span>
+  <a id="ZedGraph_Axis_CalcSpace_" data-uid="ZedGraph.Axis.CalcSpace*"></a>
+  <h4 id="ZedGraph_Axis_CalcSpace_System_Drawing_Graphics_ZedGraph_GraphPane_System_Single_System_Single__" data-uid="ZedGraph.Axis.CalcSpace(System.Drawing.Graphics,ZedGraph.GraphPane,System.Single,System.Single@)">CalcSpace(Graphics, GraphPane, Single, out Single)</h4>
+  <div class="markdown level1 summary"><p>Calculate the space required (pixels) for this <a class="xref" href="ZedGraph.Axis.html">Axis</a> object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float CalcSpace(Graphics g, GraphPane pane, float scaleFactor, out float fixedSpace)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.drawing.graphics">Graphics</a></td>
+        <td><span class="parametername">g</span></td>
+        <td><p>A graphic device object to be drawn into.  This is normally e.Graphics from the
+PaintEventArgs argument to the Paint() method.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ZedGraph.GraphPane.html">GraphPane</a></td>
+        <td><span class="parametername">pane</span></td>
+        <td><p>A reference to the <a class="xref" href="ZedGraph.GraphPane.html">GraphPane</a> object that is the parent or
+owner of this object.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td><span class="parametername">scaleFactor</span></td>
+        <td><p>The scaling factor to be used for rendering objects.  This is calculated and
+passed down by the parent <a class="xref" href="ZedGraph.GraphPane.html">GraphPane</a> object using the
+<a class="xref" href="ZedGraph.PaneBase.html#ZedGraph_PaneBase_CalcScaleFactor">CalcScaleFactor()</a> method, and is used to proportionally adjust
+font sizes, etc. according to the actual size of the graph.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td><span class="parametername">fixedSpace</span></td>
+        <td><p>The amount of space (pixels) at the edge of the ChartRect
+that is always required for this axis, even if the axis is shifted by the
+<a class="xref" href="ZedGraph.Axis.html#ZedGraph_Axis_Cross">Cross</a> value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td><p>Returns the space, in pixels, required for this axis (between the
+rect and ChartRect)</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="ZedGraph_Axis_CalcSpace_System_Drawing_Graphics_ZedGraph_GraphPane_System_Single_System_Single___remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This is the total space (vertical space for the X axis, horizontal space for
+the Y axes) required to contain the axis.  If <a class="xref" href="ZedGraph.Axis.html#ZedGraph_Axis_Cross">Cross</a> is zero, then
+this space will be the space required between the <a class="xref" href="ZedGraph.Chart.html#ZedGraph_Chart_Rect">Rect</a> and
+the <a class="xref" href="ZedGraph.PaneBase.html#ZedGraph_PaneBase_Rect">Rect</a>.  This method sets the internal values of
+<span class="xref">ZedGraph.Axis._tmpSpace</span> for use by the <a class="xref" href="ZedGraph.GraphPane.html#ZedGraph_GraphPane_CalcChartRect_System_Drawing_Graphics_">CalcChartRect(Graphics)</a>
+method.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_Axis_Draw_System_Drawing_Graphics_ZedGraph_GraphPane_System_Single_System_Single_.md&amp;value=---%0Auid%3A%20ZedGraph.Axis.Draw(System.Drawing.Graphics%2CZedGraph.GraphPane%2CSystem.Single%2CSystem.Single)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/Axis.cs/#L761">View Source</a>
+  </span>
+  <a id="ZedGraph_Axis_Draw_" data-uid="ZedGraph.Axis.Draw*"></a>
+  <h4 id="ZedGraph_Axis_Draw_System_Drawing_Graphics_ZedGraph_GraphPane_System_Single_System_Single_" data-uid="ZedGraph.Axis.Draw(System.Drawing.Graphics,ZedGraph.GraphPane,System.Single,System.Single)">Draw(Graphics, GraphPane, Single, Single)</h4>
+  <div class="markdown level1 summary"><p>Do all rendering associated with this <a class="xref" href="ZedGraph.Axis.html">Axis</a> to the specified
+<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.drawing.graphics">Graphics</a> device.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Draw(Graphics g, GraphPane pane, float scaleFactor, float shiftPos)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.drawing.graphics">Graphics</a></td>
+        <td><span class="parametername">g</span></td>
+        <td><p>A graphic device object to be drawn into.  This is normally e.Graphics from the
+PaintEventArgs argument to the Paint() method.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ZedGraph.GraphPane.html">GraphPane</a></td>
+        <td><span class="parametername">pane</span></td>
+        <td><p>A reference to the <a class="xref" href="ZedGraph.GraphPane.html">GraphPane</a> object that is the parent or
+owner of this object.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td><span class="parametername">scaleFactor</span></td>
+        <td><p>The scaling factor to be used for rendering objects.  This is calculated and
+passed down by the parent <a class="xref" href="ZedGraph.GraphPane.html">GraphPane</a> object using the
+<a class="xref" href="ZedGraph.PaneBase.html#ZedGraph_PaneBase_CalcScaleFactor">CalcScaleFactor()</a> method, and is used to proportionally adjust
+font sizes, etc. according to the actual size of the graph.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td><span class="parametername">shiftPos</span></td>
+        <td><p>The number of pixels to shift to account for non-primary axis position (e.g.,
+the second, third, fourth, etc. <a class="xref" href="ZedGraph.YAxis.html">YAxis</a> or <a class="xref" href="ZedGraph.Y2Axis.html">Y2Axis</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="ZedGraph_Axis_Draw_System_Drawing_Graphics_ZedGraph_GraphPane_System_Single_System_Single__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This method is normally only
+called by the Draw method of the parent <a class="xref" href="ZedGraph.GraphPane.html">GraphPane</a> object.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_Axis_DrawMinorTics_System_Drawing_Graphics_ZedGraph_GraphPane_System_Double_System_Single_System_Single_System_Single_.md&amp;value=---%0Auid%3A%20ZedGraph.Axis.DrawMinorTics(System.Drawing.Graphics%2CZedGraph.GraphPane%2CSystem.Double%2CSystem.Single%2CSystem.Single%2CSystem.Single)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/Axis.cs/#L1242">View Source</a>
+  </span>
+  <a id="ZedGraph_Axis_DrawMinorTics_" data-uid="ZedGraph.Axis.DrawMinorTics*"></a>
+  <h4 id="ZedGraph_Axis_DrawMinorTics_System_Drawing_Graphics_ZedGraph_GraphPane_System_Double_System_Single_System_Single_System_Single_" data-uid="ZedGraph.Axis.DrawMinorTics(System.Drawing.Graphics,ZedGraph.GraphPane,System.Double,System.Single,System.Single,System.Single)">DrawMinorTics(Graphics, GraphPane, Double, Single, Single, Single)</h4>
+  <div class="markdown level1 summary"><p>Draw the minor tic marks as required for this <a class="xref" href="ZedGraph.Axis.html">Axis</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DrawMinorTics(Graphics g, GraphPane pane, double baseVal, float shift, float scaleFactor, float topPix)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.drawing.graphics">Graphics</a></td>
+        <td><span class="parametername">g</span></td>
+        <td><p>A graphic device object to be drawn into.  This is normally e.Graphics from the
+PaintEventArgs argument to the Paint() method.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ZedGraph.GraphPane.html">GraphPane</a></td>
+        <td><span class="parametername">pane</span></td>
+        <td><p>A reference to the <a class="xref" href="ZedGraph.GraphPane.html">GraphPane</a> object that is the parent or
+owner of this object.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.double">Double</a></td>
+        <td><span class="parametername">baseVal</span></td>
+        <td><p>The scale value for the first major tic position.  This is the reference point
+for all other tic marks.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td><span class="parametername">shift</span></td>
+        <td><p>The number of pixels to shift this axis, based on the
+value of <a class="xref" href="ZedGraph.Axis.html#ZedGraph_Axis_Cross">Cross</a>.  A positive value is into the ChartRect relative to
+the default axis position.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td><span class="parametername">scaleFactor</span></td>
+        <td><p>The scaling factor to be used for rendering objects.  This is calculated and
+passed down by the parent <a class="xref" href="ZedGraph.GraphPane.html">GraphPane</a> object using the
+<a class="xref" href="ZedGraph.PaneBase.html#ZedGraph_PaneBase_CalcScaleFactor">CalcScaleFactor()</a> method, and is used to proportionally adjust
+font sizes, etc. according to the actual size of the graph.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td><span class="parametername">topPix</span></td>
+        <td><p>The pixel location of the far side of the ChartRect from this axis.
+This value is the ChartRect.Height for the XAxis, or the ChartRect.Width
+for the YAxis and Y2Axis.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_Axis_DrawTitle_System_Drawing_Graphics_ZedGraph_GraphPane_System_Single_System_Single_.md&amp;value=---%0Auid%3A%20ZedGraph.Axis.DrawTitle(System.Drawing.Graphics%2CZedGraph.GraphPane%2CSystem.Single%2CSystem.Single)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/Axis.cs/#L1327">View Source</a>
+  </span>
+  <a id="ZedGraph_Axis_DrawTitle_" data-uid="ZedGraph.Axis.DrawTitle*"></a>
+  <h4 id="ZedGraph_Axis_DrawTitle_System_Drawing_Graphics_ZedGraph_GraphPane_System_Single_System_Single_" data-uid="ZedGraph.Axis.DrawTitle(System.Drawing.Graphics,ZedGraph.GraphPane,System.Single,System.Single)">DrawTitle(Graphics, GraphPane, Single, Single)</h4>
+  <div class="markdown level1 summary"><p>Draw the title for this <a class="xref" href="ZedGraph.Axis.html">Axis</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DrawTitle(Graphics g, GraphPane pane, float shiftPos, float scaleFactor)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.drawing.graphics">Graphics</a></td>
+        <td><span class="parametername">g</span></td>
+        <td><p>A graphic device object to be drawn into.  This is normally e.Graphics from the
+PaintEventArgs argument to the Paint() method.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ZedGraph.GraphPane.html">GraphPane</a></td>
+        <td><span class="parametername">pane</span></td>
+        <td><p>A reference to the <a class="xref" href="ZedGraph.GraphPane.html">GraphPane</a> object that is the parent or
+owner of this object.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td><span class="parametername">shiftPos</span></td>
+        <td><p>The number of pixels to shift this axis, based on the
+value of <a class="xref" href="ZedGraph.Axis.html#ZedGraph_Axis_Cross">Cross</a>.  A positive value is into the ChartRect relative to
+the default axis position.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td><span class="parametername">scaleFactor</span></td>
+        <td><p>The scaling factor to be used for rendering objects.  This is calculated and
+passed down by the parent <a class="xref" href="ZedGraph.GraphPane.html">GraphPane</a> object using the
+<a class="xref" href="ZedGraph.PaneBase.html#ZedGraph_PaneBase_CalcScaleFactor">CalcScaleFactor()</a> method, and is used to proportionally adjust
+font sizes, etc. according to the actual size of the graph.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="ZedGraph_Axis_DrawTitle_System_Drawing_Graphics_ZedGraph_GraphPane_System_Single_System_Single__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>On entry, it is assumed that the
+graphics transform has been configured so that the origin is at the left side
+of this axis, and the axis is aligned along the X coordinate direction.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_Axis_GetCrossAxis_ZedGraph_GraphPane_.md&amp;value=---%0Auid%3A%20ZedGraph.Axis.GetCrossAxis(ZedGraph.GraphPane)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/Axis.cs/#L888">View Source</a>
+  </span>
+  <a id="ZedGraph_Axis_GetCrossAxis_" data-uid="ZedGraph.Axis.GetCrossAxis*"></a>
+  <h4 id="ZedGraph_Axis_GetCrossAxis_ZedGraph_GraphPane_" data-uid="ZedGraph.Axis.GetCrossAxis(ZedGraph.GraphPane)">GetCrossAxis(GraphPane)</h4>
+  <div class="markdown level1 summary"><p>Gets the &quot;Cross&quot; axis that corresponds to this axis.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract Axis GetCrossAxis(GraphPane pane)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ZedGraph.GraphPane.html">GraphPane</a></td>
+        <td><span class="parametername">pane</span></td>
+        <td><p>A reference to the <a class="xref" href="ZedGraph.GraphPane.html">GraphPane</a> object that is the parent or
+owner of this object.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ZedGraph.Axis.html">Axis</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="ZedGraph_Axis_GetCrossAxis_ZedGraph_GraphPane__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The cross axis is the axis which determines the of this Axis when the
+<a class="xref" href="ZedGraph.Axis.html#ZedGraph_Axis_Cross">Cross</a> property is used.  The
+cross axis for any <a class="xref" href="ZedGraph.XAxis.html">XAxis</a> or <a class="xref" href="ZedGraph.X2Axis.html">X2Axis</a>
+is always the primary <a class="xref" href="ZedGraph.YAxis.html">YAxis</a>, and
+the cross axis for any <a class="xref" href="ZedGraph.YAxis.html">YAxis</a> or <a class="xref" href="ZedGraph.Y2Axis.html">Y2Axis</a> is
+always the primary <a class="xref" href="ZedGraph.XAxis.html">XAxis</a>.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_Axis_GetObjectData_System_Runtime_Serialization_SerializationInfo_System_Runtime_Serialization_StreamingContext_.md&amp;value=---%0Auid%3A%20ZedGraph.Axis.GetObjectData(System.Runtime.Serialization.SerializationInfo%2CSystem.Runtime.Serialization.StreamingContext)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/Axis.cs/#L446">View Source</a>
+  </span>
+  <a id="ZedGraph_Axis_GetObjectData_" data-uid="ZedGraph.Axis.GetObjectData*"></a>
+  <h4 id="ZedGraph_Axis_GetObjectData_System_Runtime_Serialization_SerializationInfo_System_Runtime_Serialization_StreamingContext_" data-uid="ZedGraph.Axis.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">GetObjectData(SerializationInfo, StreamingContext)</h4>
+  <div class="markdown level1 summary"><p>Populates a <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.runtime.serialization.serializationinfo">SerializationInfo</a> instance with the data needed to serialize the target object</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[SecurityPermission(SecurityAction.Demand, SerializationFormatter = true)]
+public virtual void GetObjectData(SerializationInfo info, StreamingContext context)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.runtime.serialization.serializationinfo">SerializationInfo</a></td>
+        <td><span class="parametername">info</span></td>
+        <td><p>A <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.runtime.serialization.serializationinfo">SerializationInfo</a> instance that defines the serialized data</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.runtime.serialization.streamingcontext">StreamingContext</a></td>
+        <td><span class="parametername">context</span></td>
+        <td><p>A <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.runtime.serialization.streamingcontext">StreamingContext</a> instance that contains the serialized data</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_Axis_ResetAutoScale_ZedGraph_GraphPane_System_Drawing_Graphics_.md&amp;value=---%0Auid%3A%20ZedGraph.Axis.ResetAutoScale(ZedGraph.GraphPane%2CSystem.Drawing.Graphics)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/Axis.cs/#L722">View Source</a>
+  </span>
+  <a id="ZedGraph_Axis_ResetAutoScale_" data-uid="ZedGraph.Axis.ResetAutoScale*"></a>
+  <h4 id="ZedGraph_Axis_ResetAutoScale_ZedGraph_GraphPane_System_Drawing_Graphics_" data-uid="ZedGraph.Axis.ResetAutoScale(ZedGraph.GraphPane,System.Drawing.Graphics)">ResetAutoScale(GraphPane, Graphics)</h4>
+  <div class="markdown level1 summary"><p>Restore the scale ranging to automatic mode, and recalculate the
+<a class="xref" href="ZedGraph.Axis.html">Axis</a> scale ranges</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ResetAutoScale(GraphPane pane, Graphics g)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ZedGraph.GraphPane.html">GraphPane</a></td>
+        <td><span class="parametername">pane</span></td>
+        <td><p>A reference to the <a class="xref" href="ZedGraph.GraphPane.html">GraphPane</a> object that is the parent or
+owner of this object.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.drawing.graphics">Graphics</a></td>
+        <td><span class="parametername">g</span></td>
+        <td><p>A graphic device object to be drawn into.  This is normally e.Graphics from the
+PaintEventArgs argument to the Paint() method.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="ZedGraph_Axis_ResetAutoScale_ZedGraph_GraphPane_System_Drawing_Graphics__seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="ZedGraph.Scale.html#ZedGraph_Scale_MinAuto">MinAuto</a></div>
+      <div><a class="xref" href="ZedGraph.Scale.html#ZedGraph_Scale_MaxAuto">MaxAuto</a></div>
+      <div><a class="xref" href="ZedGraph.Scale.html#ZedGraph_Scale_MajorStepAuto">MajorStepAuto</a></div>
+      <div><a class="xref" href="ZedGraph.Scale.html#ZedGraph_Scale_MagAuto">MagAuto</a></div>
+      <div><a class="xref" href="ZedGraph.Scale.html#ZedGraph_Scale_FormatAuto">FormatAuto</a></div>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_Axis_SetMinSpaceBuffer_System_Drawing_Graphics_ZedGraph_GraphPane_System_Single_System_Boolean_.md&amp;value=---%0Auid%3A%20ZedGraph.Axis.SetMinSpaceBuffer(System.Drawing.Graphics%2CZedGraph.GraphPane%2CSystem.Single%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/Axis.cs/#L824">View Source</a>
+  </span>
+  <a id="ZedGraph_Axis_SetMinSpaceBuffer_" data-uid="ZedGraph.Axis.SetMinSpaceBuffer*"></a>
+  <h4 id="ZedGraph_Axis_SetMinSpaceBuffer_System_Drawing_Graphics_ZedGraph_GraphPane_System_Single_System_Boolean_" data-uid="ZedGraph.Axis.SetMinSpaceBuffer(System.Drawing.Graphics,ZedGraph.GraphPane,System.Single,System.Boolean)">SetMinSpaceBuffer(Graphics, GraphPane, Single, Boolean)</h4>
+  <div class="markdown level1 summary"><p>This method will set the <a class="xref" href="ZedGraph.Axis.html#ZedGraph_Axis_MinSpace">MinSpace</a> property for this <a class="xref" href="ZedGraph.Axis.html">Axis</a>
+using the currently required space multiplied by a fraction ().</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetMinSpaceBuffer(Graphics g, GraphPane pane, float bufferFraction, bool isGrowOnly)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.drawing.graphics">Graphics</a></td>
+        <td><span class="parametername">g</span></td>
+        <td><p>A graphic device object to be drawn into.  This is normally e.Graphics from the
+PaintEventArgs argument to the Paint() method.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ZedGraph.GraphPane.html">GraphPane</a></td>
+        <td><span class="parametername">pane</span></td>
+        <td><p>A reference to the <a class="xref" href="ZedGraph.GraphPane.html">GraphPane</a> object that is the parent or
+owner of this object.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td><span class="parametername">bufferFraction</span></td>
+        <td><p>The amount of space to allocate for the axis, expressed
+as a fraction of the currently required space.  For example, a value of 1.2 would
+allow for 20% extra above the currently required space.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="parametername">isGrowOnly</span></td>
+        <td><p>If true, then this method will only modify the <a class="xref" href="ZedGraph.Axis.html#ZedGraph_Axis_MinSpace">MinSpace</a>
+property if the calculated result is more than the current value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="ZedGraph_Axis_SetMinSpaceBuffer_System_Drawing_Graphics_ZedGraph_GraphPane_System_Single_System_Boolean__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The currently required space is calculated using <a class="xref" href="ZedGraph.Axis.html#ZedGraph_Axis_CalcSpace_System_Drawing_Graphics_ZedGraph_GraphPane_System_Single_System_Single__">CalcSpace(Graphics, GraphPane, Single, out Single)</a>, and is
+based on current data ranges, font sizes, etc.  The &quot;space&quot; is actually the amount of space
+required to fit the tic marks, scale labels, and axis title.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_Axis_SetTransformMatrix_System_Drawing_Graphics_ZedGraph_GraphPane_System_Single_.md&amp;value=---%0Auid%3A%20ZedGraph.Axis.SetTransformMatrix(System.Drawing.Graphics%2CZedGraph.GraphPane%2CSystem.Single)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/Axis.cs/#L859">View Source</a>
+  </span>
+  <a id="ZedGraph_Axis_SetTransformMatrix_" data-uid="ZedGraph.Axis.SetTransformMatrix*"></a>
+  <h4 id="ZedGraph_Axis_SetTransformMatrix_System_Drawing_Graphics_ZedGraph_GraphPane_System_Single_" data-uid="ZedGraph.Axis.SetTransformMatrix(System.Drawing.Graphics,ZedGraph.GraphPane,System.Single)">SetTransformMatrix(Graphics, GraphPane, Single)</h4>
+  <div class="markdown level1 summary"><p>Setup the Transform Matrix to handle drawing of this <a class="xref" href="ZedGraph.Axis.html">Axis</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract void SetTransformMatrix(Graphics g, GraphPane pane, float scaleFactor)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.drawing.graphics">Graphics</a></td>
+        <td><span class="parametername">g</span></td>
+        <td><p>A graphic device object to be drawn into.  This is normally e.Graphics from the
+PaintEventArgs argument to the Paint() method.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ZedGraph.GraphPane.html">GraphPane</a></td>
+        <td><span class="parametername">pane</span></td>
+        <td><p>A reference to the <a class="xref" href="ZedGraph.GraphPane.html">GraphPane</a> object that is the parent or
+owner of this object.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td><span class="parametername">scaleFactor</span></td>
+        <td><p>The scaling factor to be used for rendering objects.  This is calculated and
+passed down by the parent <a class="xref" href="ZedGraph.GraphPane.html">GraphPane</a> object using the
+<a class="xref" href="ZedGraph.PaneBase.html#ZedGraph_PaneBase_CalcScaleFactor">CalcScaleFactor()</a> method, and is used to proportionally adjust
+font sizes, etc. according to the actual size of the graph.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="events">Events
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_Axis_ScaleFormatEvent.md&amp;value=---%0Auid%3A%20ZedGraph.Axis.ScaleFormatEvent%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/Axis.cs/#L154">View Source</a>
+  </span>
+  <h4 id="ZedGraph_Axis_ScaleFormatEvent" data-uid="ZedGraph.Axis.ScaleFormatEvent">ScaleFormatEvent</h4>
+  <div class="markdown level1 summary"><p>Subscribe to this event to handle custom formatting of the scale labels.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event Axis.ScaleFormatHandler ScaleFormatEvent</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ZedGraph.Axis.ScaleFormatHandler.html">Axis.ScaleFormatHandler</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_Axis_ScaleTitleEvent.md&amp;value=---%0Auid%3A%20ZedGraph.Axis.ScaleTitleEvent%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/Axis.cs/#L173">View Source</a>
+  </span>
+  <h4 id="ZedGraph_Axis_ScaleTitleEvent" data-uid="ZedGraph.Axis.ScaleTitleEvent">ScaleTitleEvent</h4>
+  <div class="markdown level1 summary"><p>Allow customization of the title when the scale is very large
+Subscribe to this event to handle custom formatting of the scale axis label.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event Axis.ScaleTitleEventHandler ScaleTitleEvent</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ZedGraph.Axis.ScaleTitleEventHandler.html">Axis.ScaleTitleEventHandler</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="eii">Explicit Interface Implementations
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_Axis_System_ICloneable_Clone.md&amp;value=---%0Auid%3A%20ZedGraph.Axis.System%23ICloneable%23Clone%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/Axis.cs/#L388">View Source</a>
+  </span>
+  <a id="ZedGraph_Axis_System_ICloneable_Clone_" data-uid="ZedGraph.Axis.System#ICloneable#Clone*"></a>
+  <h4 id="ZedGraph_Axis_System_ICloneable_Clone" data-uid="ZedGraph.Axis.System#ICloneable#Clone">ICloneable.Clone()</h4>
+  <div class="markdown level1 summary"><p>Implement the <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.icloneable">ICloneable</a> interface in a typesafe manner by just
+calling the typed version of Clone.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">object ICloneable.Clone()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></td>
+        <td><p>A deep copy of this object</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="ZedGraph_Axis_System_ICloneable_Clone_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Note that this method must be called with an explicit cast to ICloneable, and
+that it is inherently virtual.  For example:</p>
+<pre><code>ParentClass foo = new ChildClass();
+ChildClass bar = (ChildClass) ((ICloneable)foo).Clone();</code></pre>
+<p>Assume that ChildClass is inherited from ParentClass.  Even though foo is declared with
+ParentClass, it is actually an instance of ChildClass.  Calling the ICloneable implementation
+of Clone() on foo actually calls ChildClass.Clone() as if it were a virtual function.</p>
+</div>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.runtime.serialization.iserializable">System.Runtime.Serialization.ISerializable</a>
+  </div>
+  <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.icloneable">System.ICloneable</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_Axis.md&amp;value=---%0Auid%3A%20ZedGraph.Axis%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/Axis.cs/#L39" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

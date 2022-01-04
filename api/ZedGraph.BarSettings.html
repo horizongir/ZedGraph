@@ -1,0 +1,697 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class BarSettings
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class BarSettings
+   ">
+    <meta name="generator" content="docfx 2.56.7.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="ZedGraph.BarSettings">
+  
+  
+  <h1 id="ZedGraph_BarSettings" data-uid="ZedGraph.BarSettings" class="text-break">Class BarSettings
+  </h1>
+  <div class="markdown level0 summary"><p>Class that handles the global settings for bar charts</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
+    <div class="level1"><span class="xref">BarSettings</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.runtime.serialization.iserializable">ISerializable</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#System_Object_Equals_System_Object_">Object.Equals(Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#System_Object_Equals_System_Object_System_Object_">Object.Equals(Object, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gethashcode#System_Object_GetHashCode">Object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gettype#System_Object_GetType">Object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.memberwiseclone#System_Object_MemberwiseClone">Object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.referenceequals#System_Object_ReferenceEquals_System_Object_System_Object_">Object.ReferenceEquals(Object, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.tostring#System_Object_ToString">Object.ToString()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="ZedGraph.html">ZedGraph</a></h6>
+  <h6><strong>Assembly</strong>: ZedGraph.dll</h6>
+  <h5 id="ZedGraph_BarSettings_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Serializable]
+public class BarSettings : ISerializable</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_BarSettings__ctor_ZedGraph_BarSettings_ZedGraph_GraphPane_.md&amp;value=---%0Auid%3A%20ZedGraph.BarSettings.%23ctor(ZedGraph.BarSettings%2CZedGraph.GraphPane)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/BarSettings.cs/#L109">View Source</a>
+  </span>
+  <a id="ZedGraph_BarSettings__ctor_" data-uid="ZedGraph.BarSettings.#ctor*"></a>
+  <h4 id="ZedGraph_BarSettings__ctor_ZedGraph_BarSettings_ZedGraph_GraphPane_" data-uid="ZedGraph.BarSettings.#ctor(ZedGraph.BarSettings,ZedGraph.GraphPane)">BarSettings(BarSettings, GraphPane)</h4>
+  <div class="markdown level1 summary"><p>Copy constructor</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public BarSettings(BarSettings rhs, GraphPane parentPane)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ZedGraph.BarSettings.html">BarSettings</a></td>
+        <td><span class="parametername">rhs</span></td>
+        <td><p>the <a class="xref" href="ZedGraph.BarSettings.html">BarSettings</a> instance to be copied.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ZedGraph.GraphPane.html">GraphPane</a></td>
+        <td><span class="parametername">parentPane</span></td>
+        <td><p>The <a class="xref" href="ZedGraph.GraphPane.html">GraphPane</a> that will be the
+parent of this new BarSettings object.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_BarSettings__ctor_ZedGraph_GraphPane_.md&amp;value=---%0Auid%3A%20ZedGraph.BarSettings.%23ctor(ZedGraph.GraphPane)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/BarSettings.cs/#L91">View Source</a>
+  </span>
+  <a id="ZedGraph_BarSettings__ctor_" data-uid="ZedGraph.BarSettings.#ctor*"></a>
+  <h4 id="ZedGraph_BarSettings__ctor_ZedGraph_GraphPane_" data-uid="ZedGraph.BarSettings.#ctor(ZedGraph.GraphPane)">BarSettings(GraphPane)</h4>
+  <div class="markdown level1 summary"><p>Constructor to build a <a class="xref" href="ZedGraph.BarSettings.html">BarSettings</a> instance from the defaults.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public BarSettings(GraphPane parentPane)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ZedGraph.GraphPane.html">GraphPane</a></td>
+        <td><span class="parametername">parentPane</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="fields">Fields
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_BarSettings_schema.md&amp;value=---%0Auid%3A%20ZedGraph.BarSettings.schema%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/BarSettings.cs/#L223">View Source</a>
+  </span>
+  <h4 id="ZedGraph_BarSettings_schema" data-uid="ZedGraph.BarSettings.schema">schema</h4>
+  <div class="markdown level1 summary"><p>Current schema value that defines the version of the serialized file</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int schema = 10</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_BarSettings_Base.md&amp;value=---%0Auid%3A%20ZedGraph.BarSettings.Base%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/BarSettings.cs/#L157">View Source</a>
+  </span>
+  <a id="ZedGraph_BarSettings_Base_" data-uid="ZedGraph.BarSettings.Base*"></a>
+  <h4 id="ZedGraph_BarSettings_Base" data-uid="ZedGraph.BarSettings.Base">Base</h4>
+  <div class="markdown level1 summary"><p>Determines the base axis from which <a class="xref" href="ZedGraph.Bar.html">Bar</a>
+graphs will be displayed.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public BarBase Base { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ZedGraph.BarBase.html">BarBase</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="ZedGraph_BarSettings_Base_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The base axis is the axis from which the bars grow with
+increasing value. The value is of the enumeration type <a class="xref" href="ZedGraph.BarBase.html">BarBase</a>.</p>
+</div>
+  <h5 id="ZedGraph_BarSettings_Base_seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="ZedGraph.BarSettings.Default.html#ZedGraph_BarSettings_Default_Base">Base</a></div>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_BarSettings_ClusterScaleWidth.md&amp;value=---%0Auid%3A%20ZedGraph.BarSettings.ClusterScaleWidth%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/BarSettings.cs/#L193">View Source</a>
+  </span>
+  <a id="ZedGraph_BarSettings_ClusterScaleWidth_" data-uid="ZedGraph.BarSettings.ClusterScaleWidth*"></a>
+  <h4 id="ZedGraph_BarSettings_ClusterScaleWidth" data-uid="ZedGraph.BarSettings.ClusterScaleWidth">ClusterScaleWidth</h4>
+  <div class="markdown level1 summary"><p>The width of an individual bar cluster on a <a class="xref" href="ZedGraph.Bar.html">Bar</a> graph.
+This value only applies to bar graphs plotted on non-ordinal X axis
+types (<a class="xref" href="ZedGraph.AxisType.html#ZedGraph_AxisType_Linear">Linear</a>, <a class="xref" href="ZedGraph.AxisType.html#ZedGraph_AxisType_Log">Log</a>, and
+<a class="xref" href="ZedGraph.AxisType.html#ZedGraph_AxisType_Date">Date</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double ClusterScaleWidth { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.double">Double</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="ZedGraph_BarSettings_ClusterScaleWidth_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This value can be calculated automatically if <a class="xref" href="ZedGraph.BarSettings.html#ZedGraph_BarSettings_ClusterScaleWidthAuto">ClusterScaleWidthAuto</a>
+is set to true.  In this case, ClusterScaleWidth will be calculated if
+<a class="xref" href="ZedGraph.BarSettings.html#ZedGraph_BarSettings_Base">Base</a> refers to an <a class="xref" href="ZedGraph.Axis.html">Axis</a> of a non-ordinal type
+(<a class="xref" href="ZedGraph.Scale.html#ZedGraph_Scale_IsAnyOrdinal">IsAnyOrdinal</a> is false).  The ClusterScaleWidth is calculated
+from the minimum difference found between any two points on the <a class="xref" href="ZedGraph.BarSettings.html#ZedGraph_BarSettings_Base">Base</a>
+<a class="xref" href="ZedGraph.Axis.html">Axis</a> for any <a class="xref" href="ZedGraph.BarItem.html">BarItem</a> in the
+<a class="xref" href="ZedGraph.GraphPane.html#ZedGraph_GraphPane_CurveList">CurveList</a>.  The ClusterScaleWidth is set automatically
+each time <a class="xref" href="ZedGraph.GraphPane.html#ZedGraph_GraphPane_AxisChange">AxisChange()</a> is called.  Calculations are
+done by the <a class="xref" href="ZedGraph.BarSettings.html#ZedGraph_BarSettings_CalcClusterScaleWidth">CalcClusterScaleWidth()</a> method.</p>
+</div>
+  <h5 id="ZedGraph_BarSettings_ClusterScaleWidth_seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="ZedGraph.BarSettings.Default.html#ZedGraph_BarSettings_Default_ClusterScaleWidth">ClusterScaleWidth</a></div>
+      <div><a class="xref" href="ZedGraph.BarSettings.html#ZedGraph_BarSettings_ClusterScaleWidthAuto">ClusterScaleWidthAuto</a></div>
+      <div><a class="xref" href="ZedGraph.BarSettings.html#ZedGraph_BarSettings_MinBarGap">MinBarGap</a></div>
+      <div><a class="xref" href="ZedGraph.BarSettings.html#ZedGraph_BarSettings_MinClusterGap">MinClusterGap</a></div>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_BarSettings_ClusterScaleWidthAuto.md&amp;value=---%0Auid%3A%20ZedGraph.BarSettings.ClusterScaleWidthAuto%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/BarSettings.cs/#L210">View Source</a>
+  </span>
+  <a id="ZedGraph_BarSettings_ClusterScaleWidthAuto_" data-uid="ZedGraph.BarSettings.ClusterScaleWidthAuto*"></a>
+  <h4 id="ZedGraph_BarSettings_ClusterScaleWidthAuto" data-uid="ZedGraph.BarSettings.ClusterScaleWidthAuto">ClusterScaleWidthAuto</h4>
+  <div class="markdown level1 summary"><p>Gets or sets a property that determines if the <a class="xref" href="ZedGraph.BarSettings.html#ZedGraph_BarSettings_ClusterScaleWidth">ClusterScaleWidth</a> will be
+calculated automatically.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool ClusterScaleWidthAuto { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="ZedGraph_BarSettings_ClusterScaleWidthAuto_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>true for the <a class="xref" href="ZedGraph.BarSettings.html#ZedGraph_BarSettings_ClusterScaleWidth">ClusterScaleWidth</a> to be calculated
+automatically based on the available data, false otherwise.  This value will
+be set to false automatically if the <a class="xref" href="ZedGraph.BarSettings.html#ZedGraph_BarSettings_ClusterScaleWidth">ClusterScaleWidth</a> value
+is changed by the user.</p>
+</div>
+  <h5 id="ZedGraph_BarSettings_ClusterScaleWidthAuto_seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="ZedGraph.BarSettings.Default.html#ZedGraph_BarSettings_Default_ClusterScaleWidthAuto">ClusterScaleWidthAuto</a></div>
+      <div><a class="xref" href="ZedGraph.BarSettings.html#ZedGraph_BarSettings_ClusterScaleWidth">ClusterScaleWidth</a></div>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_BarSettings_MinBarGap.md&amp;value=---%0Auid%3A%20ZedGraph.BarSettings.MinBarGap%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/BarSettings.cs/#L145">View Source</a>
+  </span>
+  <a id="ZedGraph_BarSettings_MinBarGap_" data-uid="ZedGraph.BarSettings.MinBarGap*"></a>
+  <h4 id="ZedGraph_BarSettings_MinBarGap" data-uid="ZedGraph.BarSettings.MinBarGap">MinBarGap</h4>
+  <div class="markdown level1 summary"><p>The minimum space between individual <a class="xref" href="ZedGraph.Bar.html">Bar</a>
+within a cluster, expressed as a
+fraction of the bar size.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float MinBarGap { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="ZedGraph_BarSettings_MinBarGap_seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="ZedGraph.BarSettings.Default.html#ZedGraph_BarSettings_Default_MinBarGap">MinBarGap</a></div>
+      <div><a class="xref" href="ZedGraph.BarSettings.html#ZedGraph_BarSettings_MinClusterGap">MinClusterGap</a></div>
+      <div><a class="xref" href="ZedGraph.BarSettings.html#ZedGraph_BarSettings_ClusterScaleWidth">ClusterScaleWidth</a></div>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_BarSettings_MinClusterGap.md&amp;value=---%0Auid%3A%20ZedGraph.BarSettings.MinClusterGap%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/BarSettings.cs/#L132">View Source</a>
+  </span>
+  <a id="ZedGraph_BarSettings_MinClusterGap_" data-uid="ZedGraph.BarSettings.MinClusterGap*"></a>
+  <h4 id="ZedGraph_BarSettings_MinClusterGap" data-uid="ZedGraph.BarSettings.MinClusterGap">MinClusterGap</h4>
+  <div class="markdown level1 summary"><p>The minimum space between <a class="xref" href="ZedGraph.Bar.html">Bar</a> clusters, expressed as a
+fraction of the bar size.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float MinClusterGap { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="ZedGraph_BarSettings_MinClusterGap_seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="ZedGraph.BarSettings.Default.html#ZedGraph_BarSettings_Default_MinClusterGap">MinClusterGap</a></div>
+      <div><a class="xref" href="ZedGraph.BarSettings.html#ZedGraph_BarSettings_MinBarGap">MinBarGap</a></div>
+      <div><a class="xref" href="ZedGraph.BarSettings.html#ZedGraph_BarSettings_ClusterScaleWidth">ClusterScaleWidth</a></div>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_BarSettings_Type.md&amp;value=---%0Auid%3A%20ZedGraph.BarSettings.Type%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/BarSettings.cs/#L167">View Source</a>
+  </span>
+  <a id="ZedGraph_BarSettings_Type_" data-uid="ZedGraph.BarSettings.Type*"></a>
+  <h4 id="ZedGraph_BarSettings_Type" data-uid="ZedGraph.BarSettings.Type">Type</h4>
+  <div class="markdown level1 summary"><p>Determines how the <a class="xref" href="ZedGraph.BarItem.html">BarItem</a>
+graphs will be displayed. See the <a class="xref" href="ZedGraph.BarType.html">BarType</a> enum
+for the individual types available.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public BarType Type { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ZedGraph.BarType.html">BarType</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="ZedGraph_BarSettings_Type_seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="ZedGraph.BarSettings.Default.html#ZedGraph_BarSettings_Default_Type">Type</a></div>
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_BarSettings_BarBaseAxis.md&amp;value=---%0Auid%3A%20ZedGraph.BarSettings.BarBaseAxis%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/BarSettings.cs/#L415">View Source</a>
+  </span>
+  <a id="ZedGraph_BarSettings_BarBaseAxis_" data-uid="ZedGraph.BarSettings.BarBaseAxis*"></a>
+  <h4 id="ZedGraph_BarSettings_BarBaseAxis" data-uid="ZedGraph.BarSettings.BarBaseAxis">BarBaseAxis()</h4>
+  <div class="markdown level1 summary"><p>Determine the <a class="xref" href="ZedGraph.Axis.html">Axis</a> from which the <a class="xref" href="ZedGraph.Bar.html">Bar</a> charts are based.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Axis BarBaseAxis()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ZedGraph.Axis.html">Axis</a></td>
+        <td><p>The <a class="xref" href="ZedGraph.Axis.html">Axis</a> class for the axis from which the bars are based</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="ZedGraph_BarSettings_BarBaseAxis_seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="ZedGraph.BarBase.html">BarBase</a></div>
+      <div><a class="xref" href="ZedGraph.BarSettings.html">BarSettings</a></div>
+      <div><a class="xref" href="ZedGraph.BarSettings.html#ZedGraph_BarSettings_Base">Base</a></div>
+      <div><a class="xref" href="ZedGraph.Scale.html#ZedGraph_Scale_GetClusterWidth_ZedGraph_GraphPane_">GetClusterWidth(GraphPane)</a></div>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_BarSettings_CalcClusterScaleWidth.md&amp;value=---%0Auid%3A%20ZedGraph.BarSettings.CalcClusterScaleWidth%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/BarSettings.cs/#L291">View Source</a>
+  </span>
+  <a id="ZedGraph_BarSettings_CalcClusterScaleWidth_" data-uid="ZedGraph.BarSettings.CalcClusterScaleWidth*"></a>
+  <h4 id="ZedGraph_BarSettings_CalcClusterScaleWidth" data-uid="ZedGraph.BarSettings.CalcClusterScaleWidth">CalcClusterScaleWidth()</h4>
+  <div class="markdown level1 summary"><p>Calculate the width of an individual bar cluster on a <a class="xref" href="ZedGraph.BarItem.html">BarItem</a> graph.
+This value only applies to bar graphs plotted on non-ordinal X axis
+types (<a class="xref" href="ZedGraph.Scale.html#ZedGraph_Scale_IsAnyOrdinal">IsAnyOrdinal</a> is false).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CalcClusterScaleWidth()</code></pre>
+  </div>
+  <h5 id="ZedGraph_BarSettings_CalcClusterScaleWidth_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This value can be calculated automatically if <a class="xref" href="ZedGraph.BarSettings.html#ZedGraph_BarSettings_ClusterScaleWidthAuto">ClusterScaleWidthAuto</a>
+is set to true.  In this case, ClusterScaleWidth will be calculated if
+<a class="xref" href="ZedGraph.BarSettings.html#ZedGraph_BarSettings_Base">Base</a> refers to an <a class="xref" href="ZedGraph.Axis.html">Axis</a> of a non-ordinal type
+(<a class="xref" href="ZedGraph.Scale.html#ZedGraph_Scale_IsAnyOrdinal">IsAnyOrdinal</a> is false).  The ClusterScaleWidth is calculated
+from the minimum difference found between any two points on the <a class="xref" href="ZedGraph.BarSettings.html#ZedGraph_BarSettings_Base">Base</a>
+<a class="xref" href="ZedGraph.Axis.html">Axis</a> for any <a class="xref" href="ZedGraph.BarItem.html">BarItem</a> in the
+<a class="xref" href="ZedGraph.GraphPane.html#ZedGraph_GraphPane_CurveList">CurveList</a>.  The ClusterScaleWidth is set automatically
+each time <a class="xref" href="ZedGraph.GraphPane.html#ZedGraph_GraphPane_AxisChange">AxisChange()</a> is called.</p>
+</div>
+  <h5 id="ZedGraph_BarSettings_CalcClusterScaleWidth_seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="ZedGraph.BarSettings.Default.html#ZedGraph_BarSettings_Default_ClusterScaleWidth">ClusterScaleWidth</a></div>
+      <div><a class="xref" href="ZedGraph.BarSettings.html#ZedGraph_BarSettings_ClusterScaleWidthAuto">ClusterScaleWidthAuto</a></div>
+      <div><a class="xref" href="ZedGraph.BarSettings.html#ZedGraph_BarSettings_MinBarGap">MinBarGap</a></div>
+      <div><a class="xref" href="ZedGraph.BarSettings.html#ZedGraph_BarSettings_MinClusterGap">MinClusterGap</a></div>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_BarSettings_GetClusterWidth.md&amp;value=---%0Auid%3A%20ZedGraph.BarSettings.GetClusterWidth%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/BarSettings.cs/#L402">View Source</a>
+  </span>
+  <a id="ZedGraph_BarSettings_GetClusterWidth_" data-uid="ZedGraph.BarSettings.GetClusterWidth*"></a>
+  <h4 id="ZedGraph_BarSettings_GetClusterWidth" data-uid="ZedGraph.BarSettings.GetClusterWidth">GetClusterWidth()</h4>
+  <div class="markdown level1 summary"><p>Determine the width, in screen pixel units, of each bar cluster including
+the cluster gaps and bar gaps.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float GetClusterWidth()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td><p>The width of each bar cluster, in pixel units</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="ZedGraph_BarSettings_GetClusterWidth_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This method calls the <a class="xref" href="ZedGraph.Scale.html#ZedGraph_Scale_GetClusterWidth_ZedGraph_GraphPane_">GetClusterWidth(GraphPane)</a>
+method for the base <a class="xref" href="ZedGraph.Axis.html">Axis</a> for <a class="xref" href="ZedGraph.Bar.html">Bar</a> graphs
+(the base <a class="xref" href="ZedGraph.Axis.html">Axis</a> is assigned by the <a class="xref" href="ZedGraph.BarSettings.html#ZedGraph_BarSettings_Base">Base</a>
+property).</p>
+</div>
+  <h5 id="ZedGraph_BarSettings_GetClusterWidth_seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="ZedGraph.BarBase.html">BarBase</a></div>
+      <div><a class="xref" href="ZedGraph.BarSettings.html">BarSettings</a></div>
+      <div><a class="xref" href="ZedGraph.Scale.html#ZedGraph_Scale_GetClusterWidth_ZedGraph_GraphPane_">GetClusterWidth(GraphPane)</a></div>
+      <div><a class="xref" href="ZedGraph.BarSettings.html#ZedGraph_BarSettings_Type">Type</a></div>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_BarSettings_GetObjectData_System_Runtime_Serialization_SerializationInfo_System_Runtime_Serialization_StreamingContext_.md&amp;value=---%0Auid%3A%20ZedGraph.BarSettings.GetObjectData(System.Runtime.Serialization.SerializationInfo%2CSystem.Runtime.Serialization.StreamingContext)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/BarSettings.cs/#L255">View Source</a>
+  </span>
+  <a id="ZedGraph_BarSettings_GetObjectData_" data-uid="ZedGraph.BarSettings.GetObjectData*"></a>
+  <h4 id="ZedGraph_BarSettings_GetObjectData_System_Runtime_Serialization_SerializationInfo_System_Runtime_Serialization_StreamingContext_" data-uid="ZedGraph.BarSettings.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">GetObjectData(SerializationInfo, StreamingContext)</h4>
+  <div class="markdown level1 summary"><p>Populates a <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.runtime.serialization.serializationinfo">SerializationInfo</a> instance with the data needed to serialize the target object</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[SecurityPermission(SecurityAction.Demand, SerializationFormatter = true)]
+public virtual void GetObjectData(SerializationInfo info, StreamingContext context)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.runtime.serialization.serializationinfo">SerializationInfo</a></td>
+        <td><span class="parametername">info</span></td>
+        <td><p>A <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.runtime.serialization.serializationinfo">SerializationInfo</a> instance that defines the serialized data</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.runtime.serialization.streamingcontext">StreamingContext</a></td>
+        <td><span class="parametername">context</span></td>
+        <td><p>A <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.runtime.serialization.streamingcontext">StreamingContext</a> instance that contains the serialized data</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.runtime.serialization.iserializable">System.Runtime.Serialization.ISerializable</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_BarSettings.md&amp;value=---%0Auid%3A%20ZedGraph.BarSettings%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/BarSettings.cs/#L34" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,3211 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class Scale
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class Scale
+   ">
+    <meta name="generator" content="docfx 2.56.7.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="ZedGraph.Scale">
+  
+  
+  <h1 id="ZedGraph_Scale" data-uid="ZedGraph.Scale" class="text-break">Class Scale
+  </h1>
+  <div class="markdown level0 summary"><p>The Scale class is an abstract base class that encompasses the properties
+and methods associated with a scale of data.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
+    <div class="level1"><span class="xref">Scale</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.runtime.serialization.iserializable">ISerializable</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#System_Object_Equals_System_Object_">Object.Equals(Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#System_Object_Equals_System_Object_System_Object_">Object.Equals(Object, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gethashcode#System_Object_GetHashCode">Object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gettype#System_Object_GetType">Object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.memberwiseclone#System_Object_MemberwiseClone">Object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.referenceequals#System_Object_ReferenceEquals_System_Object_System_Object_">Object.ReferenceEquals(Object, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.tostring#System_Object_ToString">Object.ToString()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="ZedGraph.html">ZedGraph</a></h6>
+  <h6><strong>Assembly</strong>: ZedGraph.dll</h6>
+  <h5 id="ZedGraph_Scale_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Serializable]
+public abstract class Scale : ISerializable</code></pre>
+  </div>
+  <h5 id="ZedGraph_Scale_remarks"><strong>Remarks</strong></h5>
+  <div class="markdown level0 remarks"><p>This class is inherited by the
+<span class="xref">ZedGraph.LinearScale</span>, <span class="xref">ZedGraph.LogScale</span>, <span class="xref">ZedGraph.OrdinalScale</span>,
+<span class="xref">ZedGraph.TextScale</span>, <span class="xref">ZedGraph.DateScale</span>, <span class="xref">ZedGraph.ExponentScale</span>,
+<span class="xref">ZedGraph.DateAsOrdinalScale</span>, and <span class="xref">ZedGraph.LinearAsOrdinalScale</span>
+classes to define specific characteristics for those types.</p>
+</div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_Scale__ctor_System_Runtime_Serialization_SerializationInfo_System_Runtime_Serialization_StreamingContext_.md&amp;value=---%0Auid%3A%20ZedGraph.Scale.%23ctor(System.Runtime.Serialization.SerializationInfo%2CSystem.Runtime.Serialization.StreamingContext)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/Scale.cs/#L842">View Source</a>
+  </span>
+  <a id="ZedGraph_Scale__ctor_" data-uid="ZedGraph.Scale.#ctor*"></a>
+  <h4 id="ZedGraph_Scale__ctor_System_Runtime_Serialization_SerializationInfo_System_Runtime_Serialization_StreamingContext_" data-uid="ZedGraph.Scale.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">Scale(SerializationInfo, StreamingContext)</h4>
+  <div class="markdown level1 summary"><p>Constructor for deserializing objects</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Scale(SerializationInfo info, StreamingContext context)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.runtime.serialization.serializationinfo">SerializationInfo</a></td>
+        <td><span class="parametername">info</span></td>
+        <td><p>A <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.runtime.serialization.serializationinfo">SerializationInfo</a> instance that defines the serialized data</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.runtime.serialization.streamingcontext">StreamingContext</a></td>
+        <td><span class="parametername">context</span></td>
+        <td><p>A <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.runtime.serialization.streamingcontext">StreamingContext</a> instance that contains the serialized data</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_Scale__ctor_ZedGraph_Axis_.md&amp;value=---%0Auid%3A%20ZedGraph.Scale.%23ctor(ZedGraph.Axis)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/Scale.cs/#L646">View Source</a>
+  </span>
+  <a id="ZedGraph_Scale__ctor_" data-uid="ZedGraph.Scale.#ctor*"></a>
+  <h4 id="ZedGraph_Scale__ctor_ZedGraph_Axis_" data-uid="ZedGraph.Scale.#ctor(ZedGraph.Axis)">Scale(Axis)</h4>
+  <div class="markdown level1 summary"><p>Basic constructor -- requires that the <a class="xref" href="ZedGraph.Scale.html">Scale</a> object be intialized with
+a pre-existing owner <a class="xref" href="ZedGraph.Axis.html">Axis</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Scale(Axis ownerAxis)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ZedGraph.Axis.html">Axis</a></td>
+        <td><span class="parametername">ownerAxis</span></td>
+        <td><p>The <a class="xref" href="ZedGraph.Axis.html">Axis</a> object that is the owner of this
+<a class="xref" href="ZedGraph.Scale.html">Scale</a> instance.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_Scale__ctor_ZedGraph_Scale_ZedGraph_Axis_.md&amp;value=---%0Auid%3A%20ZedGraph.Scale.%23ctor(ZedGraph.Scale%2CZedGraph.Axis)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/Scale.cs/#L704">View Source</a>
+  </span>
+  <a id="ZedGraph_Scale__ctor_" data-uid="ZedGraph.Scale.#ctor*"></a>
+  <h4 id="ZedGraph_Scale__ctor_ZedGraph_Scale_ZedGraph_Axis_" data-uid="ZedGraph.Scale.#ctor(ZedGraph.Scale,ZedGraph.Axis)">Scale(Scale, Axis)</h4>
+  <div class="markdown level1 summary"><p>Copy Constructor.  Create a new <a class="xref" href="ZedGraph.Scale.html">Scale</a> object based on the specified
+existing one.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Scale(Scale rhs, Axis owner)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ZedGraph.Scale.html">Scale</a></td>
+        <td><span class="parametername">rhs</span></td>
+        <td><p>The <a class="xref" href="ZedGraph.Scale.html">Scale</a> object to be copied.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ZedGraph.Axis.html">Axis</a></td>
+        <td><span class="parametername">owner</span></td>
+        <td><p>The <a class="xref" href="ZedGraph.Axis.html">Axis</a> object that will own the
+new instance of <a class="xref" href="ZedGraph.Scale.html">Scale</a></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="fields">Fields
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_Scale_schema.md&amp;value=---%0Auid%3A%20ZedGraph.Scale.schema%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/Scale.cs/#L833">View Source</a>
+  </span>
+  <h4 id="ZedGraph_Scale_schema" data-uid="ZedGraph.Scale.schema">schema</h4>
+  <div class="markdown level1 summary"><p>Current schema value that defines the version of the serialized file</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int schema = 11</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_Scale_Align.md&amp;value=---%0Auid%3A%20ZedGraph.Scale.Align%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/Scale.cs/#L1433">View Source</a>
+  </span>
+  <a id="ZedGraph_Scale_Align_" data-uid="ZedGraph.Scale.Align*"></a>
+  <h4 id="ZedGraph_Scale_Align" data-uid="ZedGraph.Scale.Align">Align</h4>
+  <div class="markdown level1 summary"><p>Controls the alignment of the <a class="xref" href="ZedGraph.Axis.html">Axis</a> tic labels.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AlignP Align { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ZedGraph.AlignP.html">AlignP</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="ZedGraph_Scale_Align_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This property controls whether the inside, center, or outside edges of the
+text labels are aligned.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_Scale_AlignH.md&amp;value=---%0Auid%3A%20ZedGraph.Scale.AlignH%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/Scale.cs/#L1445">View Source</a>
+  </span>
+  <a id="ZedGraph_Scale_AlignH_" data-uid="ZedGraph.Scale.AlignH*"></a>
+  <h4 id="ZedGraph_Scale_AlignH" data-uid="ZedGraph.Scale.AlignH">AlignH</h4>
+  <div class="markdown level1 summary"><p>Controls the alignment of the <a class="xref" href="ZedGraph.Axis.html">Axis</a> tic labels.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AlignH AlignH { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ZedGraph.AlignH.html">AlignH</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="ZedGraph_Scale_AlignH_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This property controls whether the left, center, or right edges of the
+text labels are aligned.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_Scale_BaseTic.md&amp;value=---%0Auid%3A%20ZedGraph.Scale.BaseTic%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/Scale.cs/#L1174">View Source</a>
+  </span>
+  <a id="ZedGraph_Scale_BaseTic_" data-uid="ZedGraph.Scale.BaseTic*"></a>
+  <h4 id="ZedGraph_Scale_BaseTic" data-uid="ZedGraph.Scale.BaseTic">BaseTic</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the scale value at which the first major tic label will appear.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double BaseTic { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.double">Double</a></td>
+        <td><p>The value is defined in user scale units</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="ZedGraph_Scale_BaseTic_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This property allows the scale labels to start at an irregular value.
+For example, on a scale range with <a class="xref" href="ZedGraph.Scale.html#ZedGraph_Scale_Min">Min</a> = 0, <a class="xref" href="ZedGraph.Scale.html#ZedGraph_Scale_Max">Max</a> = 1000,
+and <a class="xref" href="ZedGraph.Scale.html#ZedGraph_Scale_MajorStep">MajorStep</a> = 200, a <a class="xref" href="ZedGraph.Scale.html#ZedGraph_Scale_BaseTic">BaseTic</a> value of 50 would cause
+the scale labels to appear at values 50, 250, 450, 650, and 850.  Note that the
+default value for this property is <a class="xref" href="ZedGraph.PointPairBase.html#ZedGraph_PointPairBase_Missing">Missing</a>, which means the
+value is not used.  Setting this property to any value other than
+<a class="xref" href="ZedGraph.PointPairBase.html#ZedGraph_PointPairBase_Missing">Missing</a> will activate the effect.  The value specified must
+coincide with the first major tic.  That is, if <a class="xref" href="ZedGraph.Scale.html#ZedGraph_Scale_BaseTic">BaseTic</a> were set to
+650 in the example above, then the major tics would only occur at 650 and 850.  This
+setting may affect the minor tics, since the minor tics are always referenced to the
+<a class="xref" href="ZedGraph.Scale.html#ZedGraph_Scale_BaseTic">BaseTic</a>.  That is, in the example above, if the <a class="xref" href="ZedGraph.Scale.html#ZedGraph_Scale_MinorStep">MinorStep</a>
+were set to 30 (making it a non-multiple of the major step), then the minor tics would
+occur at 20, 50 (so it lines up with the BaseTic), 80, 110, 140, etc.</p>
+</div>
+  <h5 id="ZedGraph_Scale_BaseTic_seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="ZedGraph.Scale.html#ZedGraph_Scale_Min">Min</a></div>
+      <div><a class="xref" href="ZedGraph.Scale.html#ZedGraph_Scale_Max">Max</a></div>
+      <div><a class="xref" href="ZedGraph.Scale.html#ZedGraph_Scale_MajorStep">MajorStep</a></div>
+      <div><a class="xref" href="ZedGraph.Scale.html#ZedGraph_Scale_MinorStep">MinorStep</a></div>
+      <div><a class="xref" href="ZedGraph.Axis.html#ZedGraph_Axis_Cross">Cross</a></div>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_Scale_Exponent.md&amp;value=---%0Auid%3A%20ZedGraph.Scale.Exponent%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/Scale.cs/#L1145">View Source</a>
+  </span>
+  <a id="ZedGraph_Scale_Exponent_" data-uid="ZedGraph.Scale.Exponent*"></a>
+  <h4 id="ZedGraph_Scale_Exponent" data-uid="ZedGraph.Scale.Exponent">Exponent</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the scale exponent value.  This only applies to <a class="xref" href="ZedGraph.AxisType.html#ZedGraph_AxisType_Exponent">Exponent</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double Exponent { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.double">Double</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="ZedGraph_Scale_Exponent_seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="ZedGraph.Scale.html#ZedGraph_Scale_Min">Min</a></div>
+      <div><a class="xref" href="ZedGraph.Scale.html#ZedGraph_Scale_Max">Max</a></div>
+      <div><a class="xref" href="ZedGraph.Scale.html#ZedGraph_Scale_MinorStep">MinorStep</a></div>
+      <div><a class="xref" href="ZedGraph.Scale.html#ZedGraph_Scale_MajorStepAuto">MajorStepAuto</a></div>
+      <div><a class="xref" href="ZedGraph.Scale.Default.html#ZedGraph_Scale_Default_TargetXSteps">TargetXSteps</a></div>
+      <div><a class="xref" href="ZedGraph.Scale.Default.html#ZedGraph_Scale_Default_TargetYSteps">TargetYSteps</a></div>
+      <div><a class="xref" href="ZedGraph.Scale.Default.html#ZedGraph_Scale_Default_ZeroLever">ZeroLever</a></div>
+      <div><a class="xref" href="ZedGraph.Scale.Default.html#ZedGraph_Scale_Default_MaxTextLabels">MaxTextLabels</a></div>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_Scale_FontSpec.md&amp;value=---%0Auid%3A%20ZedGraph.Scale.FontSpec%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/Scale.cs/#L1461">View Source</a>
+  </span>
+  <a id="ZedGraph_Scale_FontSpec_" data-uid="ZedGraph.Scale.FontSpec*"></a>
+  <h4 id="ZedGraph_Scale_FontSpec" data-uid="ZedGraph.Scale.FontSpec">FontSpec</h4>
+  <div class="markdown level1 summary"><p>Gets a reference to the <a class="xref" href="ZedGraph.FontSpec.html">FontSpec</a> class used to render
+the scale values</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FontSpec FontSpec { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ZedGraph.FontSpec.html">FontSpec</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="ZedGraph_Scale_FontSpec_seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="ZedGraph.Scale.Default.html#ZedGraph_Scale_Default_FontFamily">FontFamily</a></div>
+      <div><a class="xref" href="ZedGraph.Scale.Default.html#ZedGraph_Scale_Default_FontSize">FontSize</a></div>
+      <div><a class="xref" href="ZedGraph.Scale.Default.html#ZedGraph_Scale_Default_FontColor">FontColor</a></div>
+      <div><a class="xref" href="ZedGraph.Scale.Default.html#ZedGraph_Scale_Default_FontBold">FontBold</a></div>
+      <div><a class="xref" href="ZedGraph.Scale.Default.html#ZedGraph_Scale_Default_FontUnderline">FontUnderline</a></div>
+      <div><a class="xref" href="ZedGraph.Scale.Default.html#ZedGraph_Scale_Default_FontItalic">FontItalic</a></div>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_Scale_Format.md&amp;value=---%0Auid%3A%20ZedGraph.Scale.Format%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/Scale.cs/#L1342">View Source</a>
+  </span>
+  <a id="ZedGraph_Scale_Format_" data-uid="ZedGraph.Scale.Format*"></a>
+  <h4 id="ZedGraph_Scale_Format" data-uid="ZedGraph.Scale.Format">Format</h4>
+  <div class="markdown level1 summary"><p>The format of the <a class="xref" href="ZedGraph.Axis.html">Axis</a> tic labels.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Format { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><p>The format string conforms to the
+<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.globalization.datetimeformatinfo">DateTimeFormatInfo</a> for date formats, and
+<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.globalization.numberformatinfo">NumberFormatInfo</a> for numeric formats.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="ZedGraph_Scale_Format_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This property may be a date format or a numeric format, depending on the setting of
+<a class="xref" href="ZedGraph.Scale.html#ZedGraph_Scale_Type">Type</a>.
+This property may be set automatically by ZedGraph, depending on the state of
+<a class="xref" href="ZedGraph.Scale.html#ZedGraph_Scale_FormatAuto">FormatAuto</a>.</p>
+</div>
+  <h5 id="ZedGraph_Scale_Format_seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="ZedGraph.Scale.html#ZedGraph_Scale_Mag">Mag</a></div>
+      <div><a class="xref" href="ZedGraph.Scale.html#ZedGraph_Scale_FormatAuto">FormatAuto</a></div>
+      <div><a class="xref" href="ZedGraph.Scale.html#ZedGraph_Scale_FontSpec">FontSpec</a></div>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_Scale_FormatAuto.md&amp;value=---%0Auid%3A%20ZedGraph.Scale.FormatAuto%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/Scale.cs/#L1319">View Source</a>
+  </span>
+  <a id="ZedGraph_Scale_FormatAuto_" data-uid="ZedGraph.Scale.FormatAuto*"></a>
+  <h4 id="ZedGraph_Scale_FormatAuto" data-uid="ZedGraph.Scale.FormatAuto">FormatAuto</h4>
+  <div class="markdown level1 summary"><p>Determines whether or not the scale label format <a class="xref" href="ZedGraph.Scale.html#ZedGraph_Scale_Format">Format</a>
+is determined automatically based on the range of data values.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool FormatAuto { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><p>true if <a class="xref" href="ZedGraph.Scale.html#ZedGraph_Scale_Format">Format</a> will be set automatically, false
+if it is to be set manually by the user</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="ZedGraph_Scale_FormatAuto_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This value will be set to false if
+<a class="xref" href="ZedGraph.Scale.html#ZedGraph_Scale_Format">Format</a> is manually changed.</p>
+</div>
+  <h5 id="ZedGraph_Scale_FormatAuto_seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="ZedGraph.Scale.html#ZedGraph_Scale_Mag">Mag</a></div>
+      <div><a class="xref" href="ZedGraph.Scale.html#ZedGraph_Scale_Format">Format</a></div>
+      <div><a class="xref" href="ZedGraph.Scale.html#ZedGraph_Scale_FontSpec">FontSpec</a></div>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_Scale_IsAnyOrdinal.md&amp;value=---%0Auid%3A%20ZedGraph.Scale.IsAnyOrdinal%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/Scale.cs/#L988">View Source</a>
+  </span>
+  <a id="ZedGraph_Scale_IsAnyOrdinal_" data-uid="ZedGraph.Scale.IsAnyOrdinal*"></a>
+  <h4 id="ZedGraph_Scale_IsAnyOrdinal" data-uid="ZedGraph.Scale.IsAnyOrdinal">IsAnyOrdinal</h4>
+  <div class="markdown level1 summary"><p>Gets a value that indicates if this <a class="xref" href="ZedGraph.Scale.html">Scale</a> is of any of the
+ordinal types in the <a class="xref" href="ZedGraph.AxisType.html">AxisType</a> enumeration.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsAnyOrdinal { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="ZedGraph_Scale_IsAnyOrdinal_seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="ZedGraph.Scale.html#ZedGraph_Scale_Type">Type</a></div>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_Scale_IsDate.md&amp;value=---%0Auid%3A%20ZedGraph.Scale.IsDate%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/Scale.cs/#L966">View Source</a>
+  </span>
+  <a id="ZedGraph_Scale_IsDate_" data-uid="ZedGraph.Scale.IsDate*"></a>
+  <h4 id="ZedGraph_Scale_IsDate" data-uid="ZedGraph.Scale.IsDate">IsDate</h4>
+  <div class="markdown level1 summary"><p>True if this scale is <a class="xref" href="ZedGraph.AxisType.html#ZedGraph_AxisType_Date">Date</a>, false otherwise.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsDate { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_Scale_IsExponent.md&amp;value=---%0Auid%3A%20ZedGraph.Scale.IsExponent%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/Scale.cs/#L962">View Source</a>
+  </span>
+  <a id="ZedGraph_Scale_IsExponent_" data-uid="ZedGraph.Scale.IsExponent*"></a>
+  <h4 id="ZedGraph_Scale_IsExponent" data-uid="ZedGraph.Scale.IsExponent">IsExponent</h4>
+  <div class="markdown level1 summary"><p>True if this scale is <a class="xref" href="ZedGraph.AxisType.html#ZedGraph_AxisType_Exponent">Exponent</a>, false otherwise.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsExponent { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_Scale_IsLabelsInside.md&amp;value=---%0Auid%3A%20ZedGraph.Scale.IsLabelsInside%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/Scale.cs/#L1495">View Source</a>
+  </span>
+  <a id="ZedGraph_Scale_IsLabelsInside_" data-uid="ZedGraph.Scale.IsLabelsInside*"></a>
+  <h4 id="ZedGraph_Scale_IsLabelsInside" data-uid="ZedGraph.Scale.IsLabelsInside">IsLabelsInside</h4>
+  <div class="markdown level1 summary"><p>Gets or sets a value that causes the axis scale labels and title to appear on the
+opposite side of the axis.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsLabelsInside { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="ZedGraph_Scale_IsLabelsInside_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>For example, setting this flag to true for the <a class="xref" href="ZedGraph.YAxis.html">YAxis</a> will shift the
+axis labels and title to the right side of the <a class="xref" href="ZedGraph.YAxis.html">YAxis</a> instead of the
+normal left-side location.  Set this property to true for the <a class="xref" href="ZedGraph.XAxis.html">XAxis</a>,
+and set the <a class="xref" href="ZedGraph.Axis.html#ZedGraph_Axis_Cross">Cross</a> property for the <a class="xref" href="ZedGraph.XAxis.html">XAxis</a> to an arbitrarily
+large value (assuming <a class="xref" href="ZedGraph.Scale.html#ZedGraph_Scale_IsReverse">IsReverse</a> is false for the <a class="xref" href="ZedGraph.YAxis.html">YAxis</a>) in
+order to have the <a class="xref" href="ZedGraph.XAxis.html">XAxis</a> appear at the top of the <a class="xref" href="ZedGraph.Chart.html#ZedGraph_Chart_Rect">Rect</a>.</p>
+</div>
+  <h5 id="ZedGraph_Scale_IsLabelsInside_seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="ZedGraph.Scale.html#ZedGraph_Scale_IsReverse">IsReverse</a></div>
+      <div><a class="xref" href="ZedGraph.Axis.html#ZedGraph_Axis_Cross">Cross</a></div>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_Scale_IsLog.md&amp;value=---%0Auid%3A%20ZedGraph.Scale.IsLog%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/Scale.cs/#L958">View Source</a>
+  </span>
+  <a id="ZedGraph_Scale_IsLog_" data-uid="ZedGraph.Scale.IsLog*"></a>
+  <h4 id="ZedGraph_Scale_IsLog" data-uid="ZedGraph.Scale.IsLog">IsLog</h4>
+  <div class="markdown level1 summary"><p>True if this scale is <a class="xref" href="ZedGraph.AxisType.html#ZedGraph_AxisType_Log">Log</a>, false otherwise.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsLog { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_Scale_IsOrdinal.md&amp;value=---%0Auid%3A%20ZedGraph.Scale.IsOrdinal%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/Scale.cs/#L981">View Source</a>
+  </span>
+  <a id="ZedGraph_Scale_IsOrdinal_" data-uid="ZedGraph.Scale.IsOrdinal*"></a>
+  <h4 id="ZedGraph_Scale_IsOrdinal" data-uid="ZedGraph.Scale.IsOrdinal">IsOrdinal</h4>
+  <div class="markdown level1 summary"><p>True if this scale is <a class="xref" href="ZedGraph.AxisType.html#ZedGraph_AxisType_Ordinal">Ordinal</a>, false otherwise.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsOrdinal { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="ZedGraph_Scale_IsOrdinal_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Note that this is only true for an actual <span class="xref">ZedGraph.OrdinalScale</span> class.
+This property will be false for other ordinal types such as
+<a class="xref" href="ZedGraph.AxisType.html#ZedGraph_AxisType_Text">Text</a>, <a class="xref" href="ZedGraph.AxisType.html#ZedGraph_AxisType_LinearAsOrdinal">LinearAsOrdinal</a>,
+or <a class="xref" href="ZedGraph.AxisType.html#ZedGraph_AxisType_DateAsOrdinal">DateAsOrdinal</a>.  Use the <a class="xref" href="ZedGraph.Scale.html#ZedGraph_Scale_IsAnyOrdinal">IsAnyOrdinal</a>
+as a &quot;catchall&quot; for all ordinal type axes.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_Scale_IsPreventLabelOverlap.md&amp;value=---%0Auid%3A%20ZedGraph.Scale.IsPreventLabelOverlap%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/Scale.cs/#L1587">View Source</a>
+  </span>
+  <a id="ZedGraph_Scale_IsPreventLabelOverlap_" data-uid="ZedGraph.Scale.IsPreventLabelOverlap*"></a>
+  <h4 id="ZedGraph_Scale_IsPreventLabelOverlap" data-uid="ZedGraph.Scale.IsPreventLabelOverlap">IsPreventLabelOverlap</h4>
+  <div class="markdown level1 summary"><p>Gets or sets a <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a> value that determines if ZedGraph will check to
+see if the <a class="xref" href="ZedGraph.Axis.html">Axis</a> scale labels are close enough to overlap.  If so,
+ZedGraph will adjust the step size to prevent overlap.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsPreventLabelOverlap { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><p>boolean value; true to check for overlap, false otherwise</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="ZedGraph_Scale_IsPreventLabelOverlap_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The process of checking for overlap is done during the <a class="xref" href="ZedGraph.GraphPane.html#ZedGraph_GraphPane_AxisChange">AxisChange()</a>
+method call, and affects the selection of the major step size (<a class="xref" href="ZedGraph.Scale.html#ZedGraph_Scale_MajorStep">MajorStep</a>).</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_Scale_IsReverse.md&amp;value=---%0Auid%3A%20ZedGraph.Scale.IsReverse%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/Scale.cs/#L1556">View Source</a>
+  </span>
+  <a id="ZedGraph_Scale_IsReverse_" data-uid="ZedGraph.Scale.IsReverse*"></a>
+  <h4 id="ZedGraph_Scale_IsReverse" data-uid="ZedGraph.Scale.IsReverse">IsReverse</h4>
+  <div class="markdown level1 summary"><p>Determines if the scale values are reversed for this <a class="xref" href="ZedGraph.Axis.html">Axis</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsReverse { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><p>true for the X values to decrease to the right or the Y values to
+decrease upwards, false otherwise</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="ZedGraph_Scale_IsReverse_seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="ZedGraph.Scale.Default.html#ZedGraph_Scale_Default_IsReverse">IsReverse</a></div>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_Scale_IsSkipCrossLabel.md&amp;value=---%0Auid%3A%20ZedGraph.Scale.IsSkipCrossLabel%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/Scale.cs/#L1544">View Source</a>
+  </span>
+  <a id="ZedGraph_Scale_IsSkipCrossLabel_" data-uid="ZedGraph.Scale.IsSkipCrossLabel*"></a>
+  <h4 id="ZedGraph_Scale_IsSkipCrossLabel" data-uid="ZedGraph.Scale.IsSkipCrossLabel">IsSkipCrossLabel</h4>
+  <div class="markdown level1 summary"><p>Gets or sets a value that causes the scale label that is located at the <a class="xref" href="ZedGraph.Axis.html#ZedGraph_Axis_Cross">Cross</a>
+value for this <a class="xref" href="ZedGraph.Axis.html">Axis</a> to be hidden.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsSkipCrossLabel { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="ZedGraph_Scale_IsSkipCrossLabel_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>For axes that have an active <a class="xref" href="ZedGraph.Axis.html#ZedGraph_Axis_Cross">Cross</a> setting (e.g., <a class="xref" href="ZedGraph.Axis.html#ZedGraph_Axis_CrossAuto">CrossAuto</a>
+is false), the scale label at the <a class="xref" href="ZedGraph.Axis.html#ZedGraph_Axis_Cross">Cross</a> value is overlapped by opposing axes.
+Use this property to hide the scale label to avoid the overlap.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_Scale_IsSkipFirstLabel.md&amp;value=---%0Auid%3A%20ZedGraph.Scale.IsSkipFirstLabel%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/Scale.cs/#L1512">View Source</a>
+  </span>
+  <a id="ZedGraph_Scale_IsSkipFirstLabel_" data-uid="ZedGraph.Scale.IsSkipFirstLabel*"></a>
+  <h4 id="ZedGraph_Scale_IsSkipFirstLabel" data-uid="ZedGraph.Scale.IsSkipFirstLabel">IsSkipFirstLabel</h4>
+  <div class="markdown level1 summary"><p>Gets or sets a value that causes the first scale label for this <a class="xref" href="ZedGraph.Axis.html">Axis</a> to be
+hidden.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsSkipFirstLabel { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="ZedGraph_Scale_IsSkipFirstLabel_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Often, for axis that have an active <a class="xref" href="ZedGraph.Axis.html#ZedGraph_Axis_Cross">Cross</a> setting (e.g., <a class="xref" href="ZedGraph.Axis.html#ZedGraph_Axis_CrossAuto">CrossAuto</a>
+is false), the first and/or last scale label are overlapped by opposing axes.  Use this
+property to hide the first scale label to avoid the overlap.  Note that setting this value
+to true will hide any scale label that appears within <a class="xref" href="ZedGraph.Scale.Default.html#ZedGraph_Scale_Default_EdgeTolerance">EdgeTolerance</a> of the
+beginning of the <a class="xref" href="ZedGraph.Axis.html">Axis</a>.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_Scale_IsSkipLastLabel.md&amp;value=---%0Auid%3A%20ZedGraph.Scale.IsSkipLastLabel%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/Scale.cs/#L1529">View Source</a>
+  </span>
+  <a id="ZedGraph_Scale_IsSkipLastLabel_" data-uid="ZedGraph.Scale.IsSkipLastLabel*"></a>
+  <h4 id="ZedGraph_Scale_IsSkipLastLabel" data-uid="ZedGraph.Scale.IsSkipLastLabel">IsSkipLastLabel</h4>
+  <div class="markdown level1 summary"><p>Gets or sets a value that causes the last scale label for this <a class="xref" href="ZedGraph.Axis.html">Axis</a> to be
+hidden.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsSkipLastLabel { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="ZedGraph_Scale_IsSkipLastLabel_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Often, for axis that have an active <a class="xref" href="ZedGraph.Axis.html#ZedGraph_Axis_Cross">Cross</a> setting (e.g., <a class="xref" href="ZedGraph.Axis.html#ZedGraph_Axis_CrossAuto">CrossAuto</a>
+is false), the first and/or last scale label are overlapped by opposing axes.  Use this
+property to hide the last scale label to avoid the overlap.  Note that setting this value
+to true will hide any scale label that appears within <a class="xref" href="ZedGraph.Scale.Default.html#ZedGraph_Scale_Default_EdgeTolerance">EdgeTolerance</a> of the
+end of the <a class="xref" href="ZedGraph.Axis.html">Axis</a>.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_Scale_IsText.md&amp;value=---%0Auid%3A%20ZedGraph.Scale.IsText%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/Scale.cs/#L970">View Source</a>
+  </span>
+  <a id="ZedGraph_Scale_IsText_" data-uid="ZedGraph.Scale.IsText*"></a>
+  <h4 id="ZedGraph_Scale_IsText" data-uid="ZedGraph.Scale.IsText">IsText</h4>
+  <div class="markdown level1 summary"><p>True if this scale is <a class="xref" href="ZedGraph.AxisType.html#ZedGraph_AxisType_Text">Text</a>, false otherwise.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsText { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_Scale_IsUseTenPower.md&amp;value=---%0Auid%3A%20ZedGraph.Scale.IsUseTenPower%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/Scale.cs/#L1571">View Source</a>
+  </span>
+  <a id="ZedGraph_Scale_IsUseTenPower_" data-uid="ZedGraph.Scale.IsUseTenPower*"></a>
+  <h4 id="ZedGraph_Scale_IsUseTenPower" data-uid="ZedGraph.Scale.IsUseTenPower">IsUseTenPower</h4>
+  <div class="markdown level1 summary"><p>Determines if powers-of-ten notation will be used for the numeric value labels.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsUseTenPower { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><p>boolean value; true to show the title as a power of ten, false to
+show a regular numeric value (e.g., &quot;0.01&quot;, &quot;10&quot;, &quot;1000&quot;)</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="ZedGraph_Scale_IsUseTenPower_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The powers-of-ten notation is just the text &quot;10&quot; followed by a superscripted value
+indicating the magnitude.  This mode is only valid for log scales (see
+<a class="xref" href="ZedGraph.Scale.html#ZedGraph_Scale_IsLog">IsLog</a> and <a class="xref" href="ZedGraph.Scale.html#ZedGraph_Scale_Type">Type</a>).</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_Scale_IsVisible.md&amp;value=---%0Auid%3A%20ZedGraph.Scale.IsVisible%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/Scale.cs/#L1598">View Source</a>
+  </span>
+  <a id="ZedGraph_Scale_IsVisible_" data-uid="ZedGraph.Scale.IsVisible*"></a>
+  <h4 id="ZedGraph_Scale_IsVisible" data-uid="ZedGraph.Scale.IsVisible">IsVisible</h4>
+  <div class="markdown level1 summary"><p>Gets or sets a property that determines whether or not the scale values will be shown.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsVisible { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><p>true to show the scale values, false otherwise</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="ZedGraph_Scale_IsVisible_seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="ZedGraph.Axis.html#ZedGraph_Axis_IsVisible">IsVisible</a></div>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_Scale_LabelGap.md&amp;value=---%0Auid%3A%20ZedGraph.Scale.LabelGap%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/Scale.cs/#L1475">View Source</a>
+  </span>
+  <a id="ZedGraph_Scale_LabelGap_" data-uid="ZedGraph.Scale.LabelGap*"></a>
+  <h4 id="ZedGraph_Scale_LabelGap" data-uid="ZedGraph.Scale.LabelGap">LabelGap</h4>
+  <div class="markdown level1 summary"><p>The gap between the scale labels and the tics.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float LabelGap { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_Scale_Mag.md&amp;value=---%0Auid%3A%20ZedGraph.Scale.Mag%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/Scale.cs/#L1367">View Source</a>
+  </span>
+  <a id="ZedGraph_Scale_Mag_" data-uid="ZedGraph.Scale.Mag*"></a>
+  <h4 id="ZedGraph_Scale_Mag" data-uid="ZedGraph.Scale.Mag">Mag</h4>
+  <div class="markdown level1 summary"><p>The magnitude multiplier for scale values.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Mag { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><p>The magnitude multiplier (power of 10) for the scale
+value labels</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="ZedGraph_Scale_Mag_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This is used to limit
+the size of the displayed value labels.  For example, if the value
+is really 2000000, then the graph will display 2000 with a 10^3
+magnitude multiplier.  This value can be determined automatically
+depending on the state of <a class="xref" href="ZedGraph.Scale.html#ZedGraph_Scale_MagAuto">MagAuto</a>.
+If this value is set manually by the user,
+then <a class="xref" href="ZedGraph.Scale.html#ZedGraph_Scale_MagAuto">MagAuto</a> will also be set to false.</p>
+</div>
+  <h5 id="ZedGraph_Scale_Mag_seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="ZedGraph.AxisLabel.html#ZedGraph_AxisLabel_IsOmitMag">IsOmitMag</a></div>
+      <div><a class="xref" href="ZedGraph.Axis.html#ZedGraph_Axis_Title">Title</a></div>
+      <div><a class="xref" href="ZedGraph.Scale.html#ZedGraph_Scale_Format">Format</a></div>
+      <div><a class="xref" href="ZedGraph.Scale.html#ZedGraph_Scale_FontSpec">FontSpec</a></div>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_Scale_MagAuto.md&amp;value=---%0Auid%3A%20ZedGraph.Scale.MagAuto%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/Scale.cs/#L1385">View Source</a>
+  </span>
+  <a id="ZedGraph_Scale_MagAuto_" data-uid="ZedGraph.Scale.MagAuto*"></a>
+  <h4 id="ZedGraph_Scale_MagAuto" data-uid="ZedGraph.Scale.MagAuto">MagAuto</h4>
+  <div class="markdown level1 summary"><p>Determines whether the <a class="xref" href="ZedGraph.Scale.html#ZedGraph_Scale_Mag">Mag</a> value will be set
+automatically based on the data, or manually by the user.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool MagAuto { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><p>true to have <a class="xref" href="ZedGraph.Scale.html#ZedGraph_Scale_Mag">Mag</a> set automatically,
+false otherwise</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="ZedGraph_Scale_MagAuto_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>If the user manually sets the <a class="xref" href="ZedGraph.Scale.html#ZedGraph_Scale_Mag">Mag</a> value, then this
+flag will be set to false.</p>
+</div>
+  <h5 id="ZedGraph_Scale_MagAuto_seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="ZedGraph.AxisLabel.html#ZedGraph_AxisLabel_IsOmitMag">IsOmitMag</a></div>
+      <div><a class="xref" href="ZedGraph.Axis.html#ZedGraph_Axis_Title">Title</a></div>
+      <div><a class="xref" href="ZedGraph.Scale.html#ZedGraph_Scale_Mag">Mag</a></div>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_Scale_MajorStep.md&amp;value=---%0Auid%3A%20ZedGraph.Scale.MajorStep%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/Scale.cs/#L1086">View Source</a>
+  </span>
+  <a id="ZedGraph_Scale_MajorStep_" data-uid="ZedGraph.Scale.MajorStep*"></a>
+  <h4 id="ZedGraph_Scale_MajorStep" data-uid="ZedGraph.Scale.MajorStep">MajorStep</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the scale step size for this <a class="xref" href="ZedGraph.Scale.html">Scale</a> (the increment between
+labeled axis values).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double MajorStep { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.double">Double</a></td>
+        <td><p>The value is defined in user scale units</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="ZedGraph_Scale_MajorStep_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This value can be set
+automatically based on the state of <a class="xref" href="ZedGraph.Scale.html#ZedGraph_Scale_MajorStepAuto">MajorStepAuto</a>.  If
+this value is set manually, then <a class="xref" href="ZedGraph.Scale.html#ZedGraph_Scale_MajorStepAuto">MajorStepAuto</a> will
+also be set to false.  This value is ignored for <a class="xref" href="ZedGraph.AxisType.html#ZedGraph_AxisType_Log">Log</a>
+axes.  For <a class="xref" href="ZedGraph.AxisType.html#ZedGraph_AxisType_Date">Date</a> axes, this
+value is defined in units of <a class="xref" href="ZedGraph.Scale.html#ZedGraph_Scale_MajorUnit">MajorUnit</a>.</p>
+</div>
+  <h5 id="ZedGraph_Scale_MajorStep_seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="ZedGraph.Scale.html#ZedGraph_Scale_Min">Min</a></div>
+      <div><a class="xref" href="ZedGraph.Scale.html#ZedGraph_Scale_Max">Max</a></div>
+      <div><a class="xref" href="ZedGraph.Scale.html#ZedGraph_Scale_MinorStep">MinorStep</a></div>
+      <div><a class="xref" href="ZedGraph.Scale.html#ZedGraph_Scale_MajorStepAuto">MajorStepAuto</a></div>
+      <div><a class="xref" href="ZedGraph.Scale.Default.html#ZedGraph_Scale_Default_TargetXSteps">TargetXSteps</a></div>
+      <div><a class="xref" href="ZedGraph.Scale.Default.html#ZedGraph_Scale_Default_TargetYSteps">TargetYSteps</a></div>
+      <div><a class="xref" href="ZedGraph.Scale.Default.html#ZedGraph_Scale_Default_ZeroLever">ZeroLever</a></div>
+      <div><a class="xref" href="ZedGraph.Scale.Default.html#ZedGraph_Scale_Default_MaxTextLabels">MaxTextLabels</a></div>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_Scale_MajorStepAuto.md&amp;value=---%0Auid%3A%20ZedGraph.Scale.MajorStepAuto%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/Scale.cs/#L1285">View Source</a>
+  </span>
+  <a id="ZedGraph_Scale_MajorStepAuto_" data-uid="ZedGraph.Scale.MajorStepAuto*"></a>
+  <h4 id="ZedGraph_Scale_MajorStepAuto" data-uid="ZedGraph.Scale.MajorStepAuto">MajorStepAuto</h4>
+  <div class="markdown level1 summary"><p>Gets or sets a value that determines whether or not the scale step size <a class="xref" href="ZedGraph.Scale.html#ZedGraph_Scale_MajorStep">MajorStep</a>
+is set automatically.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool MajorStepAuto { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><p>true for automatic mode, false for manual mode</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="ZedGraph_Scale_MajorStepAuto_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This value will be set to false if
+<a class="xref" href="ZedGraph.Scale.html#ZedGraph_Scale_MajorStep">MajorStep</a> is manually changed.</p>
+</div>
+  <h5 id="ZedGraph_Scale_MajorStepAuto_seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="ZedGraph.Scale.html#ZedGraph_Scale_MajorStep">MajorStep</a></div>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_Scale_MajorUnit.md&amp;value=---%0Auid%3A%20ZedGraph.Scale.MajorUnit%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/Scale.cs/#L1194">View Source</a>
+  </span>
+  <a id="ZedGraph_Scale_MajorUnit_" data-uid="ZedGraph.Scale.MajorUnit*"></a>
+  <h4 id="ZedGraph_Scale_MajorUnit" data-uid="ZedGraph.Scale.MajorUnit">MajorUnit</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the type of units used for the major step size (<a class="xref" href="ZedGraph.Scale.html#ZedGraph_Scale_MajorStep">MajorStep</a>).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DateUnit MajorUnit { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ZedGraph.DateUnit.html">DateUnit</a></td>
+        <td><p>The value is a <a class="xref" href="ZedGraph.DateUnit.html">DateUnit</a> enum type</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="ZedGraph_Scale_MajorUnit_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This unit type only applies to Date-Time axes (<a class="xref" href="ZedGraph.AxisType.html#ZedGraph_AxisType_Date">Date</a> = true).
+The axis is set to date type with the <a class="xref" href="ZedGraph.Scale.html#ZedGraph_Scale_Type">Type</a> property.
+The unit types are defined as <a class="xref" href="ZedGraph.DateUnit.html">DateUnit</a>.</p>
+</div>
+  <h5 id="ZedGraph_Scale_MajorUnit_seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="ZedGraph.Scale.html#ZedGraph_Scale_Min">Min</a></div>
+      <div><a class="xref" href="ZedGraph.Scale.html#ZedGraph_Scale_Max">Max</a></div>
+      <div><a class="xref" href="ZedGraph.Scale.html#ZedGraph_Scale_MajorStep">MajorStep</a></div>
+      <div><a class="xref" href="ZedGraph.Scale.html#ZedGraph_Scale_MinorStep">MinorStep</a></div>
+      <div><a class="xref" href="ZedGraph.Scale.html#ZedGraph_Scale_MajorStepAuto">MajorStepAuto</a></div>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_Scale_Max.md&amp;value=---%0Auid%3A%20ZedGraph.Scale.Max%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/Scale.cs/#L1060">View Source</a>
+  </span>
+  <a id="ZedGraph_Scale_Max_" data-uid="ZedGraph.Scale.Max*"></a>
+  <h4 id="ZedGraph_Scale_Max" data-uid="ZedGraph.Scale.Max">Max</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the maximum scale value for this <a class="xref" href="ZedGraph.Scale.html">Scale</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual double Max { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.double">Double</a></td>
+        <td><p>The value is defined in user scale units for <a class="xref" href="ZedGraph.AxisType.html#ZedGraph_AxisType_Log">Log</a>
+and <a class="xref" href="ZedGraph.AxisType.html#ZedGraph_AxisType_Linear">Linear</a> axes. For <a class="xref" href="ZedGraph.AxisType.html#ZedGraph_AxisType_Text">Text</a>
+and <a class="xref" href="ZedGraph.AxisType.html#ZedGraph_AxisType_Ordinal">Ordinal</a> axes,
+this value is an ordinal starting with 1.0.  For <a class="xref" href="ZedGraph.AxisType.html#ZedGraph_AxisType_Date">Date</a>
+axes, this value is in XL Date format (see <a class="xref" href="ZedGraph.XDate.html">XDate</a>, which is the
+number of days since the reference date of January 1, 1900.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="ZedGraph_Scale_Max_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This value can be set
+automatically based on the state of <a class="xref" href="ZedGraph.Scale.html#ZedGraph_Scale_MaxAuto">MaxAuto</a>.  If
+this value is set manually, then <a class="xref" href="ZedGraph.Scale.html#ZedGraph_Scale_MaxAuto">MaxAuto</a> will
+also be set to false.</p>
+</div>
+  <h5 id="ZedGraph_Scale_Max_seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="ZedGraph.Scale.html#ZedGraph_Scale_Min">Min</a></div>
+      <div><a class="xref" href="ZedGraph.Scale.html#ZedGraph_Scale_MajorStep">MajorStep</a></div>
+      <div><a class="xref" href="ZedGraph.Scale.html#ZedGraph_Scale_MinorStep">MinorStep</a></div>
+      <div><a class="xref" href="ZedGraph.Scale.html#ZedGraph_Scale_MaxAuto">MaxAuto</a></div>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_Scale_MaxAuto.md&amp;value=---%0Auid%3A%20ZedGraph.Scale.MaxAuto%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/Scale.cs/#L1270">View Source</a>
+  </span>
+  <a id="ZedGraph_Scale_MaxAuto_" data-uid="ZedGraph.Scale.MaxAuto*"></a>
+  <h4 id="ZedGraph_Scale_MaxAuto" data-uid="ZedGraph.Scale.MaxAuto">MaxAuto</h4>
+  <div class="markdown level1 summary"><p>Gets or sets a value that determines whether or not the maximum scale value <a class="xref" href="ZedGraph.Scale.html#ZedGraph_Scale_Max">Max</a>
+is set automatically.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool MaxAuto { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><p>true for automatic mode, false for manual mode</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="ZedGraph_Scale_MaxAuto_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This value will be set to false if
+<a class="xref" href="ZedGraph.Scale.html#ZedGraph_Scale_Max">Max</a> is manually changed.</p>
+</div>
+  <h5 id="ZedGraph_Scale_MaxAuto_seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="ZedGraph.Scale.html#ZedGraph_Scale_Max">Max</a></div>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_Scale_MaxGrace.md&amp;value=---%0Auid%3A%20ZedGraph.Scale.MaxGrace%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/Scale.cs/#L1421">View Source</a>
+  </span>
+  <a id="ZedGraph_Scale_MaxGrace_" data-uid="ZedGraph.Scale.MaxGrace*"></a>
+  <h4 id="ZedGraph_Scale_MaxGrace" data-uid="ZedGraph.Scale.MaxGrace">MaxGrace</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the &quot;grace&quot; value applied to the maximum data range.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double MaxGrace { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.double">Double</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="ZedGraph_Scale_MaxGrace_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This values determines how much extra space is left after the last data value.
+This value is
+expressed as a fraction of the total data range.  For example, assume the data
+range is from 4.0 to 16.0, leaving a range of 12.0.  If MaxGrace is set to
+0.1, then 10% of the range, or 1.2 will be added to the maximum data value.
+The scale will then be ranged to cover at least 4.0 to 17.2.</p>
+</div>
+  <h5 id="ZedGraph_Scale_MaxGrace_seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="ZedGraph.Scale.html#ZedGraph_Scale_Max">Max</a></div>
+      <div><a class="xref" href="ZedGraph.Scale.Default.html#ZedGraph_Scale_Default_MaxGrace">MaxGrace</a></div>
+      <div><a class="xref" href="ZedGraph.Scale.html#ZedGraph_Scale_MinGrace">MinGrace</a></div>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_Scale_Min.md&amp;value=---%0Auid%3A%20ZedGraph.Scale.Min%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/Scale.cs/#L1036">View Source</a>
+  </span>
+  <a id="ZedGraph_Scale_Min_" data-uid="ZedGraph.Scale.Min*"></a>
+  <h4 id="ZedGraph_Scale_Min" data-uid="ZedGraph.Scale.Min">Min</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the minimum scale value for this <a class="xref" href="ZedGraph.Scale.html">Scale</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual double Min { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.double">Double</a></td>
+        <td><p>The value is defined in user scale units for <a class="xref" href="ZedGraph.AxisType.html#ZedGraph_AxisType_Log">Log</a>
+and <a class="xref" href="ZedGraph.AxisType.html#ZedGraph_AxisType_Linear">Linear</a> axes. For <a class="xref" href="ZedGraph.AxisType.html#ZedGraph_AxisType_Text">Text</a>
+and <a class="xref" href="ZedGraph.AxisType.html#ZedGraph_AxisType_Ordinal">Ordinal</a> axes,
+this value is an ordinal starting with 1.0.  For <a class="xref" href="ZedGraph.AxisType.html#ZedGraph_AxisType_Date">Date</a>
+axes, this value is in XL Date format (see <a class="xref" href="ZedGraph.XDate.html">XDate</a>, which is the
+number of days since the reference date of January 1, 1900.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="ZedGraph_Scale_Min_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This value can be set
+automatically based on the state of <a class="xref" href="ZedGraph.Scale.html#ZedGraph_Scale_MinAuto">MinAuto</a>.  If
+this value is set manually, then <a class="xref" href="ZedGraph.Scale.html#ZedGraph_Scale_MinAuto">MinAuto</a> will
+also be set to false.</p>
+</div>
+  <h5 id="ZedGraph_Scale_Min_seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="ZedGraph.Scale.html#ZedGraph_Scale_Max">Max</a></div>
+      <div><a class="xref" href="ZedGraph.Scale.html#ZedGraph_Scale_MajorStep">MajorStep</a></div>
+      <div><a class="xref" href="ZedGraph.Scale.html#ZedGraph_Scale_MinorStep">MinorStep</a></div>
+      <div><a class="xref" href="ZedGraph.Scale.html#ZedGraph_Scale_MinAuto">MinAuto</a></div>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_Scale_MinAuto.md&amp;value=---%0Auid%3A%20ZedGraph.Scale.MinAuto%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/Scale.cs/#L1255">View Source</a>
+  </span>
+  <a id="ZedGraph_Scale_MinAuto_" data-uid="ZedGraph.Scale.MinAuto*"></a>
+  <h4 id="ZedGraph_Scale_MinAuto" data-uid="ZedGraph.Scale.MinAuto">MinAuto</h4>
+  <div class="markdown level1 summary"><p>Gets or sets a value that determines whether or not the minimum scale value <a class="xref" href="ZedGraph.Scale.html#ZedGraph_Scale_Min">Min</a>
+is set automatically.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool MinAuto { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><p>true for automatic mode, false for manual mode</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="ZedGraph_Scale_MinAuto_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This value will be set to false if
+<a class="xref" href="ZedGraph.Scale.html#ZedGraph_Scale_Min">Min</a> is manually changed.</p>
+</div>
+  <h5 id="ZedGraph_Scale_MinAuto_seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="ZedGraph.Scale.html#ZedGraph_Scale_Min">Min</a></div>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_Scale_MinGrace.md&amp;value=---%0Auid%3A%20ZedGraph.Scale.MinGrace%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/Scale.cs/#L1403">View Source</a>
+  </span>
+  <a id="ZedGraph_Scale_MinGrace_" data-uid="ZedGraph.Scale.MinGrace*"></a>
+  <h4 id="ZedGraph_Scale_MinGrace" data-uid="ZedGraph.Scale.MinGrace">MinGrace</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the &quot;grace&quot; value applied to the minimum data range.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double MinGrace { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.double">Double</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="ZedGraph_Scale_MinGrace_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This value is
+expressed as a fraction of the total data range.  For example, assume the data
+range is from 4.0 to 16.0, leaving a range of 12.0.  If MinGrace is set to
+0.1, then 10% of the range, or 1.2 will be subtracted from the minimum data value.
+The scale will then be ranged to cover at least 2.8 to 16.0.</p>
+</div>
+  <h5 id="ZedGraph_Scale_MinGrace_seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="ZedGraph.Scale.html#ZedGraph_Scale_Min">Min</a></div>
+      <div><a class="xref" href="ZedGraph.Scale.Default.html#ZedGraph_Scale_Default_MinGrace">MinGrace</a></div>
+      <div><a class="xref" href="ZedGraph.Scale.html#ZedGraph_Scale_MaxGrace">MaxGrace</a></div>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_Scale_MinorStep.md&amp;value=---%0Auid%3A%20ZedGraph.Scale.MinorStep%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/Scale.cs/#L1118">View Source</a>
+  </span>
+  <a id="ZedGraph_Scale_MinorStep_" data-uid="ZedGraph.Scale.MinorStep*"></a>
+  <h4 id="ZedGraph_Scale_MinorStep" data-uid="ZedGraph.Scale.MinorStep">MinorStep</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the scale minor step size for this <a class="xref" href="ZedGraph.Scale.html">Scale</a> (the spacing between
+minor tics).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double MinorStep { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.double">Double</a></td>
+        <td><p>The value is defined in user scale units</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="ZedGraph_Scale_MinorStep_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This value can be set
+automatically based on the state of <a class="xref" href="ZedGraph.Scale.html#ZedGraph_Scale_MinorStepAuto">MinorStepAuto</a>.  If
+this value is set manually, then <a class="xref" href="ZedGraph.Scale.html#ZedGraph_Scale_MinorStepAuto">MinorStepAuto</a> will
+also be set to false.  This value is ignored for <a class="xref" href="ZedGraph.AxisType.html#ZedGraph_AxisType_Log">Log</a> and
+<a class="xref" href="ZedGraph.AxisType.html#ZedGraph_AxisType_Text">Text</a> axes.  For <a class="xref" href="ZedGraph.AxisType.html#ZedGraph_AxisType_Date">Date</a> axes, this
+value is defined in units of <a class="xref" href="ZedGraph.Scale.html#ZedGraph_Scale_MinorUnit">MinorUnit</a>.</p>
+</div>
+  <h5 id="ZedGraph_Scale_MinorStep_seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="ZedGraph.Scale.html#ZedGraph_Scale_Min">Min</a></div>
+      <div><a class="xref" href="ZedGraph.Scale.html#ZedGraph_Scale_Max">Max</a></div>
+      <div><a class="xref" href="ZedGraph.Scale.html#ZedGraph_Scale_MajorStep">MajorStep</a></div>
+      <div><a class="xref" href="ZedGraph.Scale.html#ZedGraph_Scale_MinorStepAuto">MinorStepAuto</a></div>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_Scale_MinorStepAuto.md&amp;value=---%0Auid%3A%20ZedGraph.Scale.MinorStepAuto%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/Scale.cs/#L1300">View Source</a>
+  </span>
+  <a id="ZedGraph_Scale_MinorStepAuto_" data-uid="ZedGraph.Scale.MinorStepAuto*"></a>
+  <h4 id="ZedGraph_Scale_MinorStepAuto" data-uid="ZedGraph.Scale.MinorStepAuto">MinorStepAuto</h4>
+  <div class="markdown level1 summary"><p>Gets or sets a value that determines whether or not the minor scale step size <a class="xref" href="ZedGraph.Scale.html#ZedGraph_Scale_MinorStep">MinorStep</a>
+is set automatically.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool MinorStepAuto { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><p>true for automatic mode, false for manual mode</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="ZedGraph_Scale_MinorStepAuto_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This value will be set to false if
+<a class="xref" href="ZedGraph.Scale.html#ZedGraph_Scale_MinorStep">MinorStep</a> is manually changed.</p>
+</div>
+  <h5 id="ZedGraph_Scale_MinorStepAuto_seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="ZedGraph.Scale.html#ZedGraph_Scale_MinorStep">MinorStep</a></div>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_Scale_MinorUnit.md&amp;value=---%0Auid%3A%20ZedGraph.Scale.MinorUnit%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/Scale.cs/#L1213">View Source</a>
+  </span>
+  <a id="ZedGraph_Scale_MinorUnit_" data-uid="ZedGraph.Scale.MinorUnit*"></a>
+  <h4 id="ZedGraph_Scale_MinorUnit" data-uid="ZedGraph.Scale.MinorUnit">MinorUnit</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the type of units used for the minor step size (<a class="xref" href="ZedGraph.Scale.html#ZedGraph_Scale_MinorStep">MinorStep</a>).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DateUnit MinorUnit { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ZedGraph.DateUnit.html">DateUnit</a></td>
+        <td><p>The value is a <a class="xref" href="ZedGraph.DateUnit.html">DateUnit</a> enum type</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="ZedGraph_Scale_MinorUnit_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This unit type only applies to Date-Time axes (<a class="xref" href="ZedGraph.AxisType.html#ZedGraph_AxisType_Date">Date</a> = true).
+The axis is set to date type with the <a class="xref" href="ZedGraph.Scale.html#ZedGraph_Scale_Type">Type</a> property.
+The unit types are defined as <a class="xref" href="ZedGraph.DateUnit.html">DateUnit</a>.</p>
+</div>
+  <h5 id="ZedGraph_Scale_MinorUnit_seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="ZedGraph.Scale.html#ZedGraph_Scale_Min">Min</a></div>
+      <div><a class="xref" href="ZedGraph.Scale.html#ZedGraph_Scale_Max">Max</a></div>
+      <div><a class="xref" href="ZedGraph.Scale.html#ZedGraph_Scale_MajorStep">MajorStep</a></div>
+      <div><a class="xref" href="ZedGraph.Scale.html#ZedGraph_Scale_MinorStep">MinorStep</a></div>
+      <div><a class="xref" href="ZedGraph.Scale.html#ZedGraph_Scale_MinorStepAuto">MinorStepAuto</a></div>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_Scale_TextLabels.md&amp;value=---%0Auid%3A%20ZedGraph.Scale.TextLabels%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/Scale.cs/#L1611">View Source</a>
+  </span>
+  <a id="ZedGraph_Scale_TextLabels_" data-uid="ZedGraph.Scale.TextLabels*"></a>
+  <h4 id="ZedGraph_Scale_TextLabels" data-uid="ZedGraph.Scale.TextLabels">TextLabels</h4>
+  <div class="markdown level1 summary"><p>The text labels for this <a class="xref" href="ZedGraph.Axis.html">Axis</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string[] TextLabels { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="ZedGraph_Scale_TextLabels_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This property is only
+applicable if <a class="xref" href="ZedGraph.Scale.html#ZedGraph_Scale_Type">Type</a> is set to <a class="xref" href="ZedGraph.AxisType.html#ZedGraph_AxisType_Text">Text</a>.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_Scale_Type.md&amp;value=---%0Auid%3A%20ZedGraph.Scale.Type%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/Scale.cs/#L953">View Source</a>
+  </span>
+  <a id="ZedGraph_Scale_Type_" data-uid="ZedGraph.Scale.Type*"></a>
+  <h4 id="ZedGraph_Scale_Type" data-uid="ZedGraph.Scale.Type">Type</h4>
+  <div class="markdown level1 summary"><p>Get an <a class="xref" href="ZedGraph.AxisType.html">AxisType</a> enumeration that indicates the type of this scale.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract AxisType Type { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ZedGraph.AxisType.html">AxisType</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_Scale_CalcBoundedStepSize_System_Double_System_Double_.md&amp;value=---%0Auid%3A%20ZedGraph.Scale.CalcBoundedStepSize(System.Double%2CSystem.Double)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/Scale.cs/#L2629">View Source</a>
+  </span>
+  <a id="ZedGraph_Scale_CalcBoundedStepSize_" data-uid="ZedGraph.Scale.CalcBoundedStepSize*"></a>
+  <h4 id="ZedGraph_Scale_CalcBoundedStepSize_System_Double_System_Double_" data-uid="ZedGraph.Scale.CalcBoundedStepSize(System.Double,System.Double)">CalcBoundedStepSize(Double, Double)</h4>
+  <div class="markdown level1 summary"><p>Calculate a step size based on a data range, limited to a maximum number of steps.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected double CalcBoundedStepSize(double range, double maxSteps)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.double">Double</a></td>
+        <td><span class="parametername">range</span></td>
+        <td><p>The range of data in user scale units.  This can
+be a full range of the data for the major step size, or just the
+value of the major step size to calculate the minor step size</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.double">Double</a></td>
+        <td><span class="parametername">maxSteps</span></td>
+        <td><p>The maximum allowable number of steps
+to divide the range into</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.double">Double</a></td>
+        <td><p>The calculated step size for the specified data range.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="ZedGraph_Scale_CalcBoundedStepSize_System_Double_System_Double__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This utility method
+will calculate a step size, of no more than maxSteps,
+using a rational increment (1, 2, or 5 -- which are
+even divisors of 10).  This method is used by <a class="xref" href="ZedGraph.Scale.html#ZedGraph_Scale_PickScale_ZedGraph_GraphPane_System_Drawing_Graphics_System_Single_">PickScale(GraphPane, Graphics, Single)</a>.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_Scale_CalcMaxLabels_System_Drawing_Graphics_ZedGraph_GraphPane_System_Single_.md&amp;value=---%0Auid%3A%20ZedGraph.Scale.CalcMaxLabels(System.Drawing.Graphics%2CZedGraph.GraphPane%2CSystem.Single)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/Scale.cs/#L2478">View Source</a>
+  </span>
+  <a id="ZedGraph_Scale_CalcMaxLabels_" data-uid="ZedGraph.Scale.CalcMaxLabels*"></a>
+  <h4 id="ZedGraph_Scale_CalcMaxLabels_System_Drawing_Graphics_ZedGraph_GraphPane_System_Single_" data-uid="ZedGraph.Scale.CalcMaxLabels(System.Drawing.Graphics,ZedGraph.GraphPane,System.Single)">CalcMaxLabels(Graphics, GraphPane, Single)</h4>
+  <div class="markdown level1 summary"><p>Calculate the maximum number of labels that will fit on this axis.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int CalcMaxLabels(Graphics g, GraphPane pane, float scaleFactor)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.drawing.graphics">Graphics</a></td>
+        <td><span class="parametername">g</span></td>
+        <td><p>A graphic device object to be drawn into.  This is normally e.Graphics from the
+PaintEventArgs argument to the Paint() method.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ZedGraph.GraphPane.html">GraphPane</a></td>
+        <td><span class="parametername">pane</span></td>
+        <td><p>A reference to the <a class="xref" href="ZedGraph.GraphPane.html">GraphPane</a> object
+associated with this <a class="xref" href="ZedGraph.Axis.html">Axis</a></p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td><span class="parametername">scaleFactor</span></td>
+        <td><p>The scaling factor to be used for rendering objects.  This is calculated and
+passed down by the parent <a class="xref" href="ZedGraph.GraphPane.html">GraphPane</a> object using the
+<a class="xref" href="ZedGraph.PaneBase.html#ZedGraph_PaneBase_CalcScaleFactor">CalcScaleFactor()</a> method, and is used to proportionally adjust
+font sizes, etc. according to the actual size of the graph.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="ZedGraph_Scale_CalcMaxLabels_System_Drawing_Graphics_ZedGraph_GraphPane_System_Single__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This method works for
+both X and Y direction axes, and it works for angled text (assuming that a bounding box
+is an appropriate measure).  Technically, labels at 45 degree angles could fit better than
+the return value of this method since the bounding boxes can overlap without the labels actually
+overlapping.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_Scale_CalcStepSize_System_Double_System_Double_.md&amp;value=---%0Auid%3A%20ZedGraph.Scale.CalcStepSize(System.Double%2CSystem.Double)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/Scale.cs/#L2591">View Source</a>
+  </span>
+  <a id="ZedGraph_Scale_CalcStepSize_" data-uid="ZedGraph.Scale.CalcStepSize*"></a>
+  <h4 id="ZedGraph_Scale_CalcStepSize_System_Double_System_Double_" data-uid="ZedGraph.Scale.CalcStepSize(System.Double,System.Double)">CalcStepSize(Double, Double)</h4>
+  <div class="markdown level1 summary"><p>Calculate a step size based on a data range.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected static double CalcStepSize(double range, double targetSteps)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.double">Double</a></td>
+        <td><span class="parametername">range</span></td>
+        <td><p>The range of data in user scale units.  This can
+be a full range of the data for the major step size, or just the
+value of the major step size to calculate the minor step size</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.double">Double</a></td>
+        <td><span class="parametername">targetSteps</span></td>
+        <td><p>The desired &quot;typical&quot; number of steps
+to divide the range into</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.double">Double</a></td>
+        <td><p>The calculated step size for the specified data range.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="ZedGraph_Scale_CalcStepSize_System_Double_System_Double__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This utility method
+will try to honor the <a class="xref" href="ZedGraph.Scale.Default.html#ZedGraph_Scale_Default_TargetXSteps">TargetXSteps</a> and
+<a class="xref" href="ZedGraph.Scale.Default.html#ZedGraph_Scale_Default_TargetYSteps">TargetYSteps</a> number of
+steps while using a rational increment (1, 2, or 5 -- which are
+even divisors of 10).  This method is used by <a class="xref" href="ZedGraph.Scale.html#ZedGraph_Scale_PickScale_ZedGraph_GraphPane_System_Drawing_Graphics_System_Single_">PickScale(GraphPane, Graphics, Single)</a>.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_Scale_CalculateScrollRange_System_Double_System_Boolean_.md&amp;value=---%0Auid%3A%20ZedGraph.Scale.CalculateScrollRange(System.Double%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/Scale.cs/#L3019">View Source</a>
+  </span>
+  <a id="ZedGraph_Scale_CalculateScrollRange_" data-uid="ZedGraph.Scale.CalculateScrollRange*"></a>
+  <h4 id="ZedGraph_Scale_CalculateScrollRange_System_Double_System_Boolean_" data-uid="ZedGraph.Scale.CalculateScrollRange(System.Double,System.Boolean)">CalculateScrollRange(Double, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Calculates the scroll range with the specified grace value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ScrollRange CalculateScrollRange(double grace, bool isScrollable)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.double">Double</a></td>
+        <td><span class="parametername">grace</span></td>
+        <td><p>The grace or margin percentage to apply to the scale's range.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="parametername">isScrollable</span></td>
+        <td><p>The desired <a class="xref" href="ZedGraph.ScrollRange.html#ZedGraph_ScrollRange_IsScrollable">IsScrollable</a> value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ZedGraph.ScrollRange.html">ScrollRange</a></td>
+        <td><p>The <a class="xref" href="ZedGraph.ScrollRange.html">ScrollRange</a> value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_Scale_Clone_ZedGraph_Axis_.md&amp;value=---%0Auid%3A%20ZedGraph.Scale.Clone(ZedGraph.Axis)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/Scale.cs/#L760">View Source</a>
+  </span>
+  <a id="ZedGraph_Scale_Clone_" data-uid="ZedGraph.Scale.Clone*"></a>
+  <h4 id="ZedGraph_Scale_Clone_ZedGraph_Axis_" data-uid="ZedGraph.Scale.Clone(ZedGraph.Axis)">Clone(Axis)</h4>
+  <div class="markdown level1 summary"><p>Create a new clone of the current item, with a new owner assignment</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract Scale Clone(Axis owner)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ZedGraph.Axis.html">Axis</a></td>
+        <td><span class="parametername">owner</span></td>
+        <td><p>The new <a class="xref" href="ZedGraph.Axis.html">Axis</a> instance that will be
+the owner of the new Scale</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ZedGraph.Scale.html">Scale</a></td>
+        <td><p>A new <a class="xref" href="ZedGraph.Scale.html">Scale</a> clone.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_Scale_DeLinearize_System_Double_.md&amp;value=---%0Auid%3A%20ZedGraph.Scale.DeLinearize(System.Double)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/Scale.cs/#L1713">View Source</a>
+  </span>
+  <a id="ZedGraph_Scale_DeLinearize_" data-uid="ZedGraph.Scale.DeLinearize*"></a>
+  <h4 id="ZedGraph_Scale_DeLinearize_System_Double_" data-uid="ZedGraph.Scale.DeLinearize(System.Double)">DeLinearize(Double)</h4>
+  <div class="markdown level1 summary"><p>Convert a value from its linear equivalent to its actual scale value
+for this type of scale.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual double DeLinearize(double val)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.double">Double</a></td>
+        <td><span class="parametername">val</span></td>
+        <td><p>The value to be converted</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.double">Double</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="ZedGraph_Scale_DeLinearize_System_Double__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The default behavior is to just return the value unchanged.  However,
+for <a class="xref" href="ZedGraph.AxisType.html#ZedGraph_AxisType_Log">Log</a> and <a class="xref" href="ZedGraph.AxisType.html#ZedGraph_AxisType_Exponent">Exponent</a>,
+it returns the anti-log or inverse-power equivalent.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_Scale_GetClusterWidth_System_Double_.md&amp;value=---%0Auid%3A%20ZedGraph.Scale.GetClusterWidth(System.Double)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/Scale.cs/#L2351">View Source</a>
+  </span>
+  <a id="ZedGraph_Scale_GetClusterWidth_" data-uid="ZedGraph.Scale.GetClusterWidth*"></a>
+  <h4 id="ZedGraph_Scale_GetClusterWidth_System_Double_" data-uid="ZedGraph.Scale.GetClusterWidth(System.Double)">GetClusterWidth(Double)</h4>
+  <div class="markdown level1 summary"><p>Calculates the cluster width, in pixels, by transforming the specified
+clusterScaleWidth.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float GetClusterWidth(double clusterScaleWidth)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.double">Double</a></td>
+        <td><span class="parametername">clusterScaleWidth</span></td>
+        <td><p>The width in user scale units of each
+bar cluster</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td><p>The equivalent pixel size of the bar cluster</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_Scale_GetClusterWidth_ZedGraph_GraphPane_.md&amp;value=---%0Auid%3A%20ZedGraph.Scale.GetClusterWidth(ZedGraph.GraphPane)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/Scale.cs/#L2336">View Source</a>
+  </span>
+  <a id="ZedGraph_Scale_GetClusterWidth_" data-uid="ZedGraph.Scale.GetClusterWidth*"></a>
+  <h4 id="ZedGraph_Scale_GetClusterWidth_ZedGraph_GraphPane_" data-uid="ZedGraph.Scale.GetClusterWidth(ZedGraph.GraphPane)">GetClusterWidth(GraphPane)</h4>
+  <div class="markdown level1 summary"><p>Determine the width, in pixel units, of each bar cluster including
+the cluster gaps and bar gaps.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float GetClusterWidth(GraphPane pane)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ZedGraph.GraphPane.html">GraphPane</a></td>
+        <td><span class="parametername">pane</span></td>
+        <td><p>A reference to the <a class="xref" href="ZedGraph.GraphPane.html">GraphPane</a> object
+associated with this <a class="xref" href="ZedGraph.Axis.html">Axis</a></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td><p>The width of each bar cluster, in pixel units</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="ZedGraph_Scale_GetClusterWidth_ZedGraph_GraphPane__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This method uses the <a class="xref" href="ZedGraph.BarSettings.html#ZedGraph_BarSettings_ClusterScaleWidth">ClusterScaleWidth</a> for
+non-ordinal axes, or a cluster width of 1.0 for ordinal axes.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_Scale_GetObjectData_System_Runtime_Serialization_SerializationInfo_System_Runtime_Serialization_StreamingContext_.md&amp;value=---%0Auid%3A%20ZedGraph.Scale.GetObjectData(System.Runtime.Serialization.SerializationInfo%2CSystem.Runtime.Serialization.StreamingContext)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/Scale.cs/#L903">View Source</a>
+  </span>
+  <a id="ZedGraph_Scale_GetObjectData_" data-uid="ZedGraph.Scale.GetObjectData*"></a>
+  <h4 id="ZedGraph_Scale_GetObjectData_System_Runtime_Serialization_SerializationInfo_System_Runtime_Serialization_StreamingContext_" data-uid="ZedGraph.Scale.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">GetObjectData(SerializationInfo, StreamingContext)</h4>
+  <div class="markdown level1 summary"><p>Populates a <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.runtime.serialization.serializationinfo">SerializationInfo</a> instance with the data needed to
+serialize the target object</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[SecurityPermission(SecurityAction.Demand, SerializationFormatter = true)]
+public virtual void GetObjectData(SerializationInfo info, StreamingContext context)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.runtime.serialization.serializationinfo">SerializationInfo</a></td>
+        <td><span class="parametername">info</span></td>
+        <td><p>A <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.runtime.serialization.serializationinfo">SerializationInfo</a> instance that defines the serialized data</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.runtime.serialization.streamingcontext">StreamingContext</a></td>
+        <td><span class="parametername">context</span></td>
+        <td><p>A <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.runtime.serialization.streamingcontext">StreamingContext</a> instance that contains the serialized data</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="ZedGraph_Scale_GetObjectData_System_Runtime_Serialization_SerializationInfo_System_Runtime_Serialization_StreamingContext__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>You MUST set the _ownerAxis property after deserializing a BarSettings object.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_Scale_Linearize_System_Double_.md&amp;value=---%0Auid%3A%20ZedGraph.Scale.Linearize(System.Double)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/Scale.cs/#L1698">View Source</a>
+  </span>
+  <a id="ZedGraph_Scale_Linearize_" data-uid="ZedGraph.Scale.Linearize*"></a>
+  <h4 id="ZedGraph_Scale_Linearize_System_Double_" data-uid="ZedGraph.Scale.Linearize(System.Double)">Linearize(Double)</h4>
+  <div class="markdown level1 summary"><p>Convert a value to its linear equivalent for this type of scale.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual double Linearize(double val)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.double">Double</a></td>
+        <td><span class="parametername">val</span></td>
+        <td><p>The value to be converted</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.double">Double</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="ZedGraph_Scale_Linearize_System_Double__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The default behavior is to just return the value unchanged.  However,
+for <a class="xref" href="ZedGraph.AxisType.html#ZedGraph_AxisType_Log">Log</a> and <a class="xref" href="ZedGraph.AxisType.html#ZedGraph_AxisType_Exponent">Exponent</a>,
+it returns the log or power equivalent.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_Scale_LocalTransform_System_Double_.md&amp;value=---%0Auid%3A%20ZedGraph.Scale.LocalTransform(System.Double)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/Scale.cs/#L2892">View Source</a>
+  </span>
+  <a id="ZedGraph_Scale_LocalTransform_" data-uid="ZedGraph.Scale.LocalTransform*"></a>
+  <h4 id="ZedGraph_Scale_LocalTransform_System_Double_" data-uid="ZedGraph.Scale.LocalTransform(System.Double)">LocalTransform(Double)</h4>
+  <div class="markdown level1 summary"><p>Transform the coordinate value from user coordinates (scale value)
+to graphics device coordinates (pixels).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float LocalTransform(double x)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.double">Double</a></td>
+        <td><span class="parametername">x</span></td>
+        <td><p>The coordinate value, in linearized user scale units, to
+be transformed</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td><p>the coordinate value transformed to screen coordinates
+for use in calling the <span class="xref">ZedGraph.Scale.Draw(System.Drawing.Graphics,ZedGraph.GraphPane,System.Single,System.Single)</span> method</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="ZedGraph_Scale_LocalTransform_System_Double__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Assumes that the origin
+has been set to the &quot;left&quot; of this axis, facing from the label side.
+Note that the left side corresponds to the scale minimum for the X and
+Y2 axes, but it is the scale maximum for the Y axis.
+This method takes into
+account the scale range (<a class="xref" href="ZedGraph.Scale.html#ZedGraph_Scale_Min">Min</a> and <a class="xref" href="ZedGraph.Scale.html#ZedGraph_Scale_Max">Max</a>),
+logarithmic state (<a class="xref" href="ZedGraph.Scale.html#ZedGraph_Scale_IsLog">IsLog</a>), scale reverse state
+(<a class="xref" href="ZedGraph.Scale.html#ZedGraph_Scale_IsReverse">IsReverse</a>) and axis type (<a class="xref" href="ZedGraph.XAxis.html">XAxis</a>,
+<a class="xref" href="ZedGraph.YAxis.html">YAxis</a>, or <a class="xref" href="ZedGraph.Y2Axis.html">Y2Axis</a>).  Note that
+the <a class="xref" href="ZedGraph.Chart.html#ZedGraph_Chart_Rect">Rect</a> must be valid, and
+<a class="xref" href="ZedGraph.Scale.html#ZedGraph_Scale_SetupScaleData_ZedGraph_GraphPane_ZedGraph_Axis_">SetupScaleData(GraphPane, Axis)</a> must be called for the
+current configuration before using this method.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_Scale_MakeNewScale_ZedGraph_Scale_ZedGraph_AxisType_.md&amp;value=---%0Auid%3A%20ZedGraph.Scale.MakeNewScale(ZedGraph.Scale%2CZedGraph.AxisType)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/Scale.cs/#L801">View Source</a>
+  </span>
+  <a id="ZedGraph_Scale_MakeNewScale_" data-uid="ZedGraph.Scale.MakeNewScale*"></a>
+  <h4 id="ZedGraph_Scale_MakeNewScale_ZedGraph_Scale_ZedGraph_AxisType_" data-uid="ZedGraph.Scale.MakeNewScale(ZedGraph.Scale,ZedGraph.AxisType)">MakeNewScale(Scale, AxisType)</h4>
+  <div class="markdown level1 summary"><p>A construction method that creates a new <a class="xref" href="ZedGraph.Scale.html">Scale</a> object using the
+properties of an existing <a class="xref" href="ZedGraph.Scale.html">Scale</a> object, but specifying a new
+<a class="xref" href="ZedGraph.AxisType.html">AxisType</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Scale MakeNewScale(Scale oldScale, AxisType type)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ZedGraph.Scale.html">Scale</a></td>
+        <td><span class="parametername">oldScale</span></td>
+        <td><p>The existing <a class="xref" href="ZedGraph.Scale.html">Scale</a> object from which to
+copy the field data.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ZedGraph.AxisType.html">AxisType</a></td>
+        <td><span class="parametername">type</span></td>
+        <td><p>An <a class="xref" href="ZedGraph.AxisType.html">AxisType</a> representing the type of derived type
+of new <a class="xref" href="ZedGraph.Scale.html">Scale</a> object to create.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ZedGraph.Scale.html">Scale</a></td>
+        <td><p>The new <a class="xref" href="ZedGraph.Scale.html">Scale</a> object.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="ZedGraph_Scale_MakeNewScale_ZedGraph_Scale_ZedGraph_AxisType__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This constructor is used to change the type of an existing <a class="xref" href="ZedGraph.Axis.html">Axis</a>.
+By specifying the old <a class="xref" href="ZedGraph.Scale.html">Scale</a> object, you are giving a set of properties
+(which encompasses all fields associated with the scale, since the derived types
+have no fields) to be used in creating a new <a class="xref" href="ZedGraph.Scale.html">Scale</a> object, only this
+time having the newly specified object type.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_Scale_MyMod_System_Double_System_Double_.md&amp;value=---%0Auid%3A%20ZedGraph.Scale.MyMod(System.Double%2CSystem.Double)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/Scale.cs/#L2681">View Source</a>
+  </span>
+  <a id="ZedGraph_Scale_MyMod_" data-uid="ZedGraph.Scale.MyMod*"></a>
+  <h4 id="ZedGraph_Scale_MyMod_System_Double_System_Double_" data-uid="ZedGraph.Scale.MyMod(System.Double,System.Double)">MyMod(Double, Double)</h4>
+  <div class="markdown level1 summary"><p>Calculate the modulus (remainder) in a safe manner so that divide
+by zero errors are avoided</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected double MyMod(double x, double y)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.double">Double</a></td>
+        <td><span class="parametername">x</span></td>
+        <td><p>The divisor</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.double">Double</a></td>
+        <td><span class="parametername">y</span></td>
+        <td><p>The dividend</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.double">Double</a></td>
+        <td><p>the value of the modulus, or zero for the divide-by-zero
+case</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_Scale_Pan_System_Double_System_Double_.md&amp;value=---%0Auid%3A%20ZedGraph.Scale.Pan(System.Double%2CSystem.Double)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/Scale.cs/#L2978">View Source</a>
+  </span>
+  <a id="ZedGraph_Scale_Pan_" data-uid="ZedGraph.Scale.Pan*"></a>
+  <h4 id="ZedGraph_Scale_Pan_System_Double_System_Double_" data-uid="ZedGraph.Scale.Pan(System.Double,System.Double)">Pan(Double, Double)</h4>
+  <div class="markdown level1 summary"><p>Pan the scale given the current and destination values.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Pan(double value, double toValue)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.double">Double</a></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>The value to pan.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.double">Double</a></td>
+        <td><span class="parametername">toValue</span></td>
+        <td><p>The end value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_Scale_PickScale_ZedGraph_GraphPane_System_Drawing_Graphics_System_Single_.md&amp;value=---%0Auid%3A%20ZedGraph.Scale.PickScale(ZedGraph.GraphPane%2CSystem.Drawing.Graphics%2CSystem.Single)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/Scale.cs/#L2398">View Source</a>
+  </span>
+  <a id="ZedGraph_Scale_PickScale_" data-uid="ZedGraph.Scale.PickScale*"></a>
+  <h4 id="ZedGraph_Scale_PickScale_ZedGraph_GraphPane_System_Drawing_Graphics_System_Single_" data-uid="ZedGraph.Scale.PickScale(ZedGraph.GraphPane,System.Drawing.Graphics,System.Single)">PickScale(GraphPane, Graphics, Single)</h4>
+  <div class="markdown level1 summary"><p>Select a reasonable scale given a range of data values.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void PickScale(GraphPane pane, Graphics g, float scaleFactor)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ZedGraph.GraphPane.html">GraphPane</a></td>
+        <td><span class="parametername">pane</span></td>
+        <td><p>A reference to the <a class="xref" href="ZedGraph.GraphPane.html">GraphPane</a> object
+associated with this <a class="xref" href="ZedGraph.Axis.html">Axis</a></p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.drawing.graphics">Graphics</a></td>
+        <td><span class="parametername">g</span></td>
+        <td><p>A graphic device object to be drawn into.  This is normally e.Graphics from the
+PaintEventArgs argument to the Paint() method.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td><span class="parametername">scaleFactor</span></td>
+        <td><p>The scaling factor to be used for rendering objects.  This is calculated and
+passed down by the parent <a class="xref" href="ZedGraph.GraphPane.html">GraphPane</a> object using the
+<a class="xref" href="ZedGraph.PaneBase.html#ZedGraph_PaneBase_CalcScaleFactor">CalcScaleFactor()</a> method, and is used to proportionally adjust
+font sizes, etc. according to the actual size of the graph.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="ZedGraph_Scale_PickScale_ZedGraph_GraphPane_System_Drawing_Graphics_System_Single__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The scale range is chosen
+based on increments of 1, 2, or 5 (because they are even divisors of 10).  This
+routine honors the <a class="xref" href="ZedGraph.Scale.html#ZedGraph_Scale_MinAuto">MinAuto</a>, <a class="xref" href="ZedGraph.Scale.html#ZedGraph_Scale_MaxAuto">MaxAuto</a>,
+and <a class="xref" href="ZedGraph.Scale.html#ZedGraph_Scale_MajorStepAuto">MajorStepAuto</a> autorange settings as well as the <a class="xref" href="ZedGraph.Scale.html#ZedGraph_Scale_IsLog">IsLog</a>
+setting.  In the event that any of the autorange settings are false, the
+corresponding <a class="xref" href="ZedGraph.Scale.html#ZedGraph_Scale_Min">Min</a>, <a class="xref" href="ZedGraph.Scale.html#ZedGraph_Scale_Max">Max</a>, or <a class="xref" href="ZedGraph.Scale.html#ZedGraph_Scale_MajorStep">MajorStep</a>
+setting is explicitly honored, and the remaining autorange settings (if any) will
+be calculated to accomodate the non-autoranged values.  The basic defaults for
+scale selection are defined using <a class="xref" href="ZedGraph.Scale.Default.html#ZedGraph_Scale_Default_ZeroLever">ZeroLever</a>,
+<a class="xref" href="ZedGraph.Scale.Default.html#ZedGraph_Scale_Default_TargetXSteps">TargetXSteps</a>, and <a class="xref" href="ZedGraph.Scale.Default.html#ZedGraph_Scale_Default_TargetYSteps">TargetYSteps</a>
+from the <a class="xref" href="ZedGraph.Scale.Default.html">Scale.Default</a> default class.</p>
+<p>On Exit:</p>
+<p><a class="xref" href="ZedGraph.Scale.html#ZedGraph_Scale_Min">Min</a> is set to scale minimum (if <a class="xref" href="ZedGraph.Scale.html#ZedGraph_Scale_MinAuto">MinAuto</a> = true)</p>
+<p><a class="xref" href="ZedGraph.Scale.html#ZedGraph_Scale_Max">Max</a> is set to scale maximum (if <a class="xref" href="ZedGraph.Scale.html#ZedGraph_Scale_MaxAuto">MaxAuto</a> = true)</p>
+<p><a class="xref" href="ZedGraph.Scale.html#ZedGraph_Scale_MajorStep">MajorStep</a> is set to scale step size (if <a class="xref" href="ZedGraph.Scale.html#ZedGraph_Scale_MajorStepAuto">MajorStepAuto</a> = true)</p>
+<p><a class="xref" href="ZedGraph.Scale.html#ZedGraph_Scale_MinorStep">MinorStep</a> is set to scale minor step size (if <a class="xref" href="ZedGraph.Scale.html#ZedGraph_Scale_MinorStepAuto">MinorStepAuto</a> = true)</p>
+<p><a class="xref" href="ZedGraph.Scale.html#ZedGraph_Scale_Mag">Mag</a> is set to a magnitude multiplier according to the data</p>
+<p><a class="xref" href="ZedGraph.Scale.html#ZedGraph_Scale_Format">Format</a> is set to the display format for the values (this controls the
+number of decimal places, whether there are thousands separators, currency types, etc.)</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_Scale_ReverseTransform_System_Single_.md&amp;value=---%0Auid%3A%20ZedGraph.Scale.ReverseTransform(System.Single)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/Scale.cs/#L2853">View Source</a>
+  </span>
+  <a id="ZedGraph_Scale_ReverseTransform_" data-uid="ZedGraph.Scale.ReverseTransform*"></a>
+  <h4 id="ZedGraph_Scale_ReverseTransform_System_Single_" data-uid="ZedGraph.Scale.ReverseTransform(System.Single)">ReverseTransform(Single)</h4>
+  <div class="markdown level1 summary"><p>Reverse transform the user coordinates (scale value)
+given a graphics device coordinate (pixels).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double ReverseTransform(float pixVal)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td><span class="parametername">pixVal</span></td>
+        <td><p>The screen pixel value, in graphics device coordinates to
+be transformed</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.double">Double</a></td>
+        <td><p>The user scale value that corresponds to the screen pixel location</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="ZedGraph_Scale_ReverseTransform_System_Single__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This method takes into
+account the scale range (<a class="xref" href="ZedGraph.Scale.html#ZedGraph_Scale_Min">Min</a> and <a class="xref" href="ZedGraph.Scale.html#ZedGraph_Scale_Max">Max</a>),
+logarithmic state (<a class="xref" href="ZedGraph.Scale.html#ZedGraph_Scale_IsLog">IsLog</a>), scale reverse state
+(<a class="xref" href="ZedGraph.Scale.html#ZedGraph_Scale_IsReverse">IsReverse</a>) and axis type (<a class="xref" href="ZedGraph.XAxis.html">XAxis</a>,
+<a class="xref" href="ZedGraph.YAxis.html">YAxis</a>, or <a class="xref" href="ZedGraph.Y2Axis.html">Y2Axis</a>).
+Note that the <a class="xref" href="ZedGraph.Chart.html#ZedGraph_Chart_Rect">Rect</a> must be valid, and
+<a class="xref" href="ZedGraph.Scale.html#ZedGraph_Scale_SetupScaleData_ZedGraph_GraphPane_ZedGraph_Axis_">SetupScaleData(GraphPane, Axis)</a> must be called for the
+current configuration before using this method (this is called everytime
+the graph is drawn (i.e., <a class="xref" href="ZedGraph.GraphPane.html#ZedGraph_GraphPane_Draw_System_Drawing_Graphics_">Draw(Graphics)</a> is called).</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_Scale_SafeExp_System_Double_System_Double_.md&amp;value=---%0Auid%3A%20ZedGraph.Scale.SafeExp(System.Double%2CSystem.Double)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/Scale.cs/#L2930">View Source</a>
+  </span>
+  <a id="ZedGraph_Scale_SafeExp_" data-uid="ZedGraph.Scale.SafeExp*"></a>
+  <h4 id="ZedGraph_Scale_SafeExp_System_Double_System_Double_" data-uid="ZedGraph.Scale.SafeExp(System.Double,System.Double)">SafeExp(Double, Double)</h4>
+  <div class="markdown level1 summary"><p>Calculate an exponential in a safe manner to avoid math exceptions</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static double SafeExp(double x, double exponent)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.double">Double</a></td>
+        <td><span class="parametername">x</span></td>
+        <td><p>The value for which the exponential is to be calculated</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.double">Double</a></td>
+        <td><span class="parametername">exponent</span></td>
+        <td><p>The exponent value to use for calculating the exponential.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.double">Double</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_Scale_SafeLog_System_Double_.md&amp;value=---%0Auid%3A%20ZedGraph.Scale.SafeLog(System.Double)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/Scale.cs/#L2917">View Source</a>
+  </span>
+  <a id="ZedGraph_Scale_SafeLog_" data-uid="ZedGraph.Scale.SafeLog*"></a>
+  <h4 id="ZedGraph_Scale_SafeLog_System_Double_" data-uid="ZedGraph.Scale.SafeLog(System.Double)">SafeLog(Double)</h4>
+  <div class="markdown level1 summary"><p>Calculate a base 10 logarithm in a safe manner to avoid math exceptions</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static double SafeLog(double x)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.double">Double</a></td>
+        <td><span class="parametername">x</span></td>
+        <td><p>The value for which the logarithm is to be calculated</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.double">Double</a></td>
+        <td><p>The value of the logarithm, or 0 if the <code data-dev-comment-type="paramref" class="paramref">x</code>
+argument was negative or zero</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_Scale_Scroll_System_Double_System_Double_System_Double_.md&amp;value=---%0Auid%3A%20ZedGraph.Scale.Scroll(System.Double%2CSystem.Double%2CSystem.Double)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/Scale.cs/#L2997">View Source</a>
+  </span>
+  <a id="ZedGraph_Scale_Scroll_" data-uid="ZedGraph.Scale.Scroll*"></a>
+  <h4 id="ZedGraph_Scale_Scroll_System_Double_System_Double_System_Double_" data-uid="ZedGraph.Scale.Scroll(System.Double,System.Double,System.Double)">Scroll(Double, Double, Double)</h4>
+  <div class="markdown level1 summary"><p>Scrolls the scale to the specified position.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Scroll(double position, double scrollMin, double scrollMax)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.double">Double</a></td>
+        <td><span class="parametername">position</span></td>
+        <td><p>The position to srcoll within the window. 0..1.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.double">Double</a></td>
+        <td><span class="parametername">scrollMin</span></td>
+        <td><p>The minimum value of the scroll window.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.double">Double</a></td>
+        <td><span class="parametername">scrollMax</span></td>
+        <td><p>The maximum value of the scroll window.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_Scale_SetupScaleData_ZedGraph_GraphPane_ZedGraph_Axis_.md&amp;value=---%0Auid%3A%20ZedGraph.Scale.SetupScaleData(ZedGraph.GraphPane%2CZedGraph.Axis)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/Scale.cs/#L1662">View Source</a>
+  </span>
+  <a id="ZedGraph_Scale_SetupScaleData_" data-uid="ZedGraph.Scale.SetupScaleData*"></a>
+  <h4 id="ZedGraph_Scale_SetupScaleData_ZedGraph_GraphPane_ZedGraph_Axis_" data-uid="ZedGraph.Scale.SetupScaleData(ZedGraph.GraphPane,ZedGraph.Axis)">SetupScaleData(GraphPane, Axis)</h4>
+  <div class="markdown level1 summary"><p>Setup some temporary transform values in preparation for rendering the
+<a class="xref" href="ZedGraph.Axis.html">Axis</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void SetupScaleData(GraphPane pane, Axis axis)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ZedGraph.GraphPane.html">GraphPane</a></td>
+        <td><span class="parametername">pane</span></td>
+        <td><p>A reference to the <a class="xref" href="ZedGraph.GraphPane.html">GraphPane</a> object that is the parent or
+owner of this object.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ZedGraph.Axis.html">Axis</a></td>
+        <td><span class="parametername">axis</span></td>
+        <td><p>The parent <a class="xref" href="ZedGraph.Axis.html">Axis</a> for this <a class="xref" href="ZedGraph.Scale.html">Scale</a></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="ZedGraph_Scale_SetupScaleData_ZedGraph_GraphPane_ZedGraph_Axis__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This method is typically called by the parent <a class="xref" href="ZedGraph.GraphPane.html">GraphPane</a>
+object as part of the <a class="xref" href="ZedGraph.GraphPane.html#ZedGraph_GraphPane_Draw_System_Drawing_Graphics_">Draw(Graphics)</a> method.  It is also
+called by <a class="xref" href="ZedGraph.GraphPane.html#ZedGraph_GraphPane_GeneralTransform_System_Double_System_Double_ZedGraph_CoordType_">GeneralTransform(Double, Double, CoordType)</a> and
+<a class="xref" href="ZedGraph.GraphPane.html#ZedGraph_GraphPane_ReverseTransform_System_Drawing_PointF_System_Double__System_Double__">ReverseTransform(PointF, out Double, out Double)</a>
+methods to setup for coordinate transformations.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_Scale_Transform_System_Boolean_System_Int32_System_Double_.md&amp;value=---%0Auid%3A%20ZedGraph.Scale.Transform(System.Boolean%2CSystem.Int32%2CSystem.Double)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/Scale.cs/#L2826">View Source</a>
+  </span>
+  <a id="ZedGraph_Scale_Transform_" data-uid="ZedGraph.Scale.Transform*"></a>
+  <h4 id="ZedGraph_Scale_Transform_System_Boolean_System_Int32_System_Double_" data-uid="ZedGraph.Scale.Transform(System.Boolean,System.Int32,System.Double)">Transform(Boolean, Int32, Double)</h4>
+  <div class="markdown level1 summary"><p>Transform the coordinate value from user coordinates (scale value)
+to graphics device coordinates (pixels).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float Transform(bool isOverrideOrdinal, int i, double x)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="parametername">isOverrideOrdinal</span></td>
+        <td><p>true to force the axis to honor the data
+value, rather than replacing it with the ordinal value</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">i</span></td>
+        <td><p>The ordinal value of this point, just in case
+this is an <a class="xref" href="ZedGraph.AxisType.html#ZedGraph_AxisType_Ordinal">Ordinal</a> axis</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.double">Double</a></td>
+        <td><span class="parametername">x</span></td>
+        <td><p>The coordinate value, in user scale units, to
+be transformed</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td><p>the coordinate value transformed to screen coordinates
+for use in calling the <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.drawing.graphics">Graphics</a> draw routines</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="ZedGraph_Scale_Transform_System_Boolean_System_Int32_System_Double__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This method takes into
+account the scale range (<a class="xref" href="ZedGraph.Scale.html#ZedGraph_Scale_Min">Min</a> and <a class="xref" href="ZedGraph.Scale.html#ZedGraph_Scale_Max">Max</a>),
+logarithmic state (<a class="xref" href="ZedGraph.Scale.html#ZedGraph_Scale_IsLog">IsLog</a>), scale reverse state
+(<a class="xref" href="ZedGraph.Scale.html#ZedGraph_Scale_IsReverse">IsReverse</a>) and axis type (<a class="xref" href="ZedGraph.XAxis.html">XAxis</a>,
+<a class="xref" href="ZedGraph.YAxis.html">YAxis</a>, or <a class="xref" href="ZedGraph.Y2Axis.html">Y2Axis</a>).
+Note that the <a class="xref" href="ZedGraph.Chart.html#ZedGraph_Chart_Rect">Rect</a> must be valid, and
+<a class="xref" href="ZedGraph.Scale.html#ZedGraph_Scale_SetupScaleData_ZedGraph_GraphPane_ZedGraph_Axis_">SetupScaleData(GraphPane, Axis)</a> must be called for the
+current configuration before using this method (this is called everytime
+the graph is drawn (i.e., <a class="xref" href="ZedGraph.GraphPane.html#ZedGraph_GraphPane_Draw_System_Drawing_Graphics_">Draw(Graphics)</a> is called).</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_Scale_Transform_System_Double_.md&amp;value=---%0Auid%3A%20ZedGraph.Scale.Transform(System.Double)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/Scale.cs/#L2778">View Source</a>
+  </span>
+  <a id="ZedGraph_Scale_Transform_" data-uid="ZedGraph.Scale.Transform*"></a>
+  <h4 id="ZedGraph_Scale_Transform_System_Double_" data-uid="ZedGraph.Scale.Transform(System.Double)">Transform(Double)</h4>
+  <div class="markdown level1 summary"><p>Transform the coordinate value from user coordinates (scale value)
+to graphics device coordinates (pixels).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float Transform(double x)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.double">Double</a></td>
+        <td><span class="parametername">x</span></td>
+        <td><p>The coordinate value, in user scale units, to
+be transformed</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td><p>the coordinate value transformed to screen coordinates
+for use in calling the <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.drawing.graphics">Graphics</a> draw routines</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="ZedGraph_Scale_Transform_System_Double__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This method takes into
+account the scale range (<a class="xref" href="ZedGraph.Scale.html#ZedGraph_Scale_Min">Min</a> and <a class="xref" href="ZedGraph.Scale.html#ZedGraph_Scale_Max">Max</a>),
+logarithmic state (<a class="xref" href="ZedGraph.Scale.html#ZedGraph_Scale_IsLog">IsLog</a>), scale reverse state
+(<a class="xref" href="ZedGraph.Scale.html#ZedGraph_Scale_IsReverse">IsReverse</a>) and axis type (<a class="xref" href="ZedGraph.XAxis.html">XAxis</a>,
+<a class="xref" href="ZedGraph.YAxis.html">YAxis</a>, or <a class="xref" href="ZedGraph.Y2Axis.html">Y2Axis</a>).
+Note that the <a class="xref" href="ZedGraph.Chart.html#ZedGraph_Chart_Rect">Rect</a> must be valid, and
+<a class="xref" href="ZedGraph.Scale.html#ZedGraph_Scale_SetupScaleData_ZedGraph_GraphPane_ZedGraph_Axis_">SetupScaleData(GraphPane, Axis)</a> must be called for the
+current configuration before using this method (this is called everytime
+the graph is drawn (i.e., <a class="xref" href="ZedGraph.GraphPane.html#ZedGraph_GraphPane_Draw_System_Drawing_Graphics_">Draw(Graphics)</a> is called).</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_Scale_Zoom_System_Double_System_Double_System_Boolean_.md&amp;value=---%0Auid%3A%20ZedGraph.Scale.Zoom(System.Double%2CSystem.Double%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/Scale.cs/#L2953">View Source</a>
+  </span>
+  <a id="ZedGraph_Scale_Zoom_" data-uid="ZedGraph.Scale.Zoom*"></a>
+  <h4 id="ZedGraph_Scale_Zoom_System_Double_System_Double_System_Boolean_" data-uid="ZedGraph.Scale.Zoom(System.Double,System.Double,System.Boolean)">Zoom(Double, Double, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Zoom the scale by the specified fraction, around the center value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Zoom(double zoomFraction, double centerVal, bool isZoomOnCenter)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.double">Double</a></td>
+        <td><span class="parametername">zoomFraction</span></td>
+        <td><p>The amount to scale/zoom the scale.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.double">Double</a></td>
+        <td><span class="parametername">centerVal</span></td>
+        <td><p>The value to center the zoom around.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="parametername">isZoomOnCenter</span></td>
+        <td><p>if set to <code>true</code> the <see cref="!:centerVal"></see> is used, otherwise
+the current center of the scale is used.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="ZedGraph_Scale_Zoom_System_Double_System_Double_System_Boolean__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>When the fraction value is less than 0.0001 or greater than 1000.0
+the scale will not be zoomed to avoid invalid scale values.</p>
+</div>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.runtime.serialization.iserializable">System.Runtime.Serialization.ISerializable</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/horizongir/ZedGraph/new/docs/apiSpec/new?filename=ZedGraph_Scale.md&amp;value=---%0Auid%3A%20ZedGraph.Scale%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/horizongir/ZedGraph/blob/docs/source/ZedGraph/Scale.cs/#L45" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>
